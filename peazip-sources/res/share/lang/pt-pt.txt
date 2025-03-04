@@ -3,31 +3,31 @@ Portuguese (Portugal) - Português
 10.3
 Tradução: Hugo Carvalho, José Carlos, Sérgio Marques
 Revisão: Hugo Carvalho
-Revisto em: 20241029
+Revisto em: 20250304
 
 === PeaZip text group ===
 
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
+txt_10_3_classic: Clássics
+txt_10_3_ascii: Para o tipo de arquivo selecionado, recomendamos a utilização exclusiva de caracteres ASCII para as palavas-passe (letras maiúsculas e minúsculas, números e caracteres especiais).
 txt_10_3_minimal: Minimal
-txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explorar o Lixo
-txt_10_0_ptarzst: Compressão mais rápida, TAR.ZST
+txt_10_3_m: Moderno
+txt_10_3_pm: Poós-moderno
+txt_10_3_aw: Solução: assinale "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
+txt_10_2_savecopy: Guardar uma cópia
+txt_10_1_full: Completo
+txt_10_1_kdfw: Processos KDF
+txt_10_1_under: Sublinhado
+txt_10_0_exptrash: Explorar Lixo
+txt_10_0_ptarzst: Compressão rápida, TAR.ZST
 txt_10_0_ptarxz: Compressão alta, TAR.XZ
 txt_10_0_ptargz: Compressão média, TAR.GZ
 txt_10_0_comp: Os formatos de compressão pura apenas aceitam um ficheiro como entrada. A conversão de ficheiros para estes formatos falhará se a entrada consistir em vários ficheiros ou pastas (não determináveis ​​antecipadamente).
 txt_10_0_save: Guardar
-txt_10_0_tp: Pré-visualização do texto
-txt_9_9_uac: O utilizador atual não possui direitos de gravação para este destino. Deseja executar o PeaZip com elevação de UAC?
+txt_10_0_tp: Pré-visualização de texto
+txt_9_9_uac: O utilizador atual não possui direitos de escrita no destino. Deseja executar o PeaZip como administrador?
 TXT_9_9_kdf: Iterações KDF
 txt_9_9_utc: Data/hora como UTC
-txt_9_8_alwaysflat: Abrir ficheiros na vista plana
+txt_9_8_alwaysflat: Abrir ficheiros na vista simples
 txt_9_8_fnew: Extrair aqui (em nova pasta)
 txt_9_8_fsmart: Extrair aqui (nova pasta inteligente)
 txt_9_7_tarpipe: Utilizar canal 7z/p7zip
@@ -481,8 +481,8 @@ txt_4_8_t: Transformar
 txt_4_8_w: Largura
 txt_4_7_pk: Criar palavra-passe/ficheiro-chave aleatoriamente
 txt_4_7_spchar: Limitar caracteres a letras e números
-txt_4_7_recycleask: Mover seleção para a Reciclagem?
-txt_4_7_recycle: Mover para a Reciclagem
+txt_4_7_recycleask: Mover seleção para o Lixo?
+txt_4_7_recycle: Mover para o Lixo
 txt_4_7_pcomp: Compressão potencial
 txt_4_6_am: Gestor de arquivos
 txt_4_6_fm: Gestor de ficheiros
