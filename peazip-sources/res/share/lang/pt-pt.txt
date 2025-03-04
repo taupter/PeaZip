@@ -7,7 +7,7 @@ Revisto em: 20250304
 
 === PeaZip text group ===
 
-txt_10_3_classic: Clássics
+txt_10_3_classic: Clássico
 txt_10_3_ascii: Para o tipo de arquivo selecionado, recomendamos a utilização exclusiva de caracteres ASCII para as palavas-passe (letras maiúsculas e minúsculas, números e caracteres especiais).
 txt_10_3_minimal: Minimal
 txt_10_3_m: Moderno
