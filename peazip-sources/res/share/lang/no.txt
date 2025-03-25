@@ -3,16 +3,16 @@ Norwegian - Norsk
 10.3
 Oversatt av: Rune C. Akselsen, Arne Hanssen og Imre Kristoffer Eilertsen
 Sist rev. av: Arne Hanssen
-Sist revidert: 20250114
+Sist revidert: 20250323
 
 === PeaZip text group ===
 
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
+txt_10_3_classic: Klassisk
+txt_10_3_ascii: Det anbefales å kun bruke ASCII-tegn i passord til nåværende arkiv-format (store/små bokstaver, tall,  spesial-tegn).
 txt_10_3_minimal: Minimal
-txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
+txt_10_3_m: Moderne
+txt_10_3_pm: Postmoderne
+txt_10_3_aw: Workaround: huk av "Tving interaktiv passord-skriving" i passord-promptet, eller sett Konsol-modus for backend binær-filer.
 txt_10_2_savecopy: Lagre en kopi
 txt_10_1_full: Full
 txt_10_1_kdfw: KDF belastning
