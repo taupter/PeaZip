@@ -11,8 +11,8 @@ txt_10_3_classic: Clássico
 txt_10_3_ascii: Para o tipo de arquivo selecionado, recomendamos a utilização exclusiva de caracteres ASCII para as palavas-passe (letras maiúsculas e minúsculas, números e caracteres especiais).
 txt_10_3_minimal: Minimal
 txt_10_3_m: Moderno
-txt_10_3_pm: Poós-moderno
-txt_10_3_aw: Solução: assinale "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
+txt_10_3_pm: Pós-moderno
+txt_10_3_aw: Solução: assinale "Impor introdução interativa de palavras-passe" na solicitação de palavra-passe ou defina o modo Consola para binários de infraestrutura.
 txt_10_2_savecopy: Guardar uma cópia
 txt_10_1_full: Completo
 txt_10_1_kdfw: Processos KDF
