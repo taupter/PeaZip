@@ -237,12 +237,12 @@ PeaZip
 13
 1
 240
-72
-72
-72
-144
-48
-72
+80
+80
+80
+160
+60
+100
 0
 
 [extract to new folder]
@@ -675,7 +675,7 @@ Computer's root
 0
 0
 1
-144
+160
 
 [preferred checksum and hash algorithms]
 CRC32 CRC64 MD5 RIPEMD160 SHA1 BLAKE2S SHA256 SHA3_256
@@ -735,7 +735,7 @@ CRC32 CRC64 MD5 RIPEMD160 SHA1 BLAKE2S SHA256 SHA3_256
 0
 
 [WIM, TAR store symbolic links as links]
-0
+1
 
 [7z max memory usage %, 0 default]
 0
@@ -779,7 +779,7 @@ CRC32 CRC64 MD5 RIPEMD160 SHA1 BLAKE2S SHA256 SHA3_256
 
 [extended columns, comments]
 0
-72
+100
 
 [Manually set RAR binary]
 0
