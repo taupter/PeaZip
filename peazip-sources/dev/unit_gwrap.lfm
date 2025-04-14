@@ -773,6 +773,7 @@ object Form_gwrap: TForm_gwrap
           Caption = 'Halt system when job completes'
           ParentFont = False
           TabOrder = 0
+          Visible = False
         end
         object ldeleteinput: TLabel
           AnchorSideLeft.Control = Panel3

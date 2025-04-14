@@ -153,6 +153,7 @@ unit Unit_gwrap;
  1.10     20240204  G.Tani      Improved translations loading
  1.11     20241006  G.Tani      10.x GUI update
  1.12     20241216  G.Tani      It is now possible to delete input files from Options tab after execution of task, i.e. to delete faulty archive failing test
+ 1.13     20250331  G.Tani      Optimized performances and efficiency reducing CPU usage for the GUI task wrapper
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 
@@ -386,14 +387,14 @@ const
 
 var
   Form_gwrap: TForm_gwrap;
-  pprogn,pjobtype,ptsize,ppsize,pinputfile,poutname,poutnamet,pcl,paction,pcapt,pbackground,psubfun,pfun,parcstr:ansistring;
+  pprogn,pjobtype,ptsize,ppsize,pinputfile,poutname,poutnamet,pcl,paction,pcapt,pbackground,psubfun,pfun,parcstr,iact:ansistring;
   pprogbar,pprogbarprev,perrors,iperc,ipercp,remtime,temperature,contrast,alttabstyle,highlighttabs,
   modeofuse,max_l,ppriority,autoopen,exit_code,ws_gw_top,ws_gw_left,ws_gw_height,ws_gw_width,
   pbarh,pbarhsmall,pjobcommentrar,pjobuserar,instperc,instdelta:integer;
   pproglast,pprogfirst,pfromnativedrag,pgook,perrignore,pcanignore,launched,
   stopped,ended,ppause,pstarted,launchwithsemaphore,gocancelall, needinteraction,
   exbackground,pldesigned,okseven,ppiperar:boolean;
-  Binfo,Bp1,Bp2,Bp3,Bp4,Bp5,Bp6,Bp7,Bp8,Bsuccess,Berror: TBitmap;
+  Binfo,Bp1,Bsuccess,Berror: TBitmap;
   cl,cl1,outpath,executable_path,resource_path,binpath,sharepath,graphicsfolder,dummy,Color1,Color2,Color3,
   Color4,Color5,caption_build,delimiter,confpath,peazippath,in_name,rarcomment,ppipepw:ansistring;
   insize,progress,pinsize:qword;
@@ -403,7 +404,7 @@ var
   tsin:TTimestamp;
   activelabel_launcher :TLabel;
   //imported strings
-  txt_7_4_recover,txt_rr,txt_7_8_dd,txt_8_2_keep,txt_2_5_delete:ansistring;
+  txt_10_4_moving,txt_7_4_recover,txt_rr,txt_7_8_dd,txt_8_2_keep,txt_2_5_delete:ansistring;
   //translations
   txt_6_9_remaining,txt_6_5_abort,txt_6_5_error,txt_6_5_no,txt_6_5_yes,txt_6_5_yesall,txt_6_5_warning,
   txt_5_6_update,txt_5_6_cml,txt_5_6_donations,txt_5_6_localization,txt_5_6_runasadmin,
@@ -1440,7 +1441,7 @@ with Form_gwrap do
       3: Label1.Caption:=Label1.Caption+txt_idle;
       end;
    end;
-Form_gwrap.l7.Caption:=txt_input+' '+Form_gwrap.LabelInfo1.Caption+' '+txt_output+' '+Form_gwrap.LabelInfo2.Caption;
+Form_gwrap.l7.Caption:=iact+txt_input+' '+Form_gwrap.LabelInfo1.Caption+' '+txt_output+' '+Form_gwrap.LabelInfo2.Caption;
 Form_gwrap.Image1.Hint:=Form_gwrap.Label1.Caption;
 end;
 
@@ -1483,6 +1484,7 @@ for i:=l downto 1 do
        begin
        try
        iperc:=strtoint(copy(stri1,i-3,3));
+       if copy(stri1,i+2,1)=':' then iact:=txt_10_4_moving+' ' else iact:='';
        if (iperc<100) then break;
        except
        end;
@@ -1724,6 +1726,7 @@ Form_gwrap.PanelBench.Visible:=false;
 Form_gwrap.Shapeprogress.visible:=true;
 Form_gwrap.ShapeProgress.Width:=3;
 progress:=0;
+iact:='';
 Form_gwrap.Memo2.Clear;
 Form_gwrap.Memo2.Lines.Append(cl);
 //Form_gwrap.LabelTitle4.Visible:=false;
@@ -1940,7 +1943,7 @@ Form_gwrap.StringGrid1.Rowcount:=1;
          end
       else j:=0;
       if j > 0 then Inc(BytesRead2, j);
-      //if (i=0) and (j=0) then sleep(100);
+      if (modeofuse=0) and (i=0) and (j=0) then sleep(100); //sleep only in archive/extraction mode
       end;
    end;
    M2.Free;
@@ -2169,7 +2172,7 @@ if exit_code<>0 then
 //final actions, options
 if (pproglast=true) or (pprogn='') then
 begin
-if Form_gwrap.CheckBoxHalt.State=cbChecked then
+{if Form_gwrap.CheckBoxHalt.State=cbChecked then
    begin
    P:=TProcessUTF8.Create(nil);
    {$IFDEF MSWINDOWS}
@@ -2182,7 +2185,7 @@ if Form_gwrap.CheckBoxHalt.State=cbChecked then
    if validatecl(cl)<>0 then begin pMessageWarningOK(txt_2_7_validatecl+' '+cl); exit; end;
    P.Execute;
    P.Free;
-   end;
+   end;}
 if autoopen=1 then
    if (modeofuse<>1) and (modeofuse<>4) and (modeofuse<>5) and (modeofuse<>2) then
       if (psubfun<>'extract') and (psubfun<>'convert') then explore_out(''); //deferred (in peach unit) to let run move after extraction operations if needed

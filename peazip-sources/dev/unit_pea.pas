@@ -223,6 +223,8 @@ unit Unit_pea;
                                 Updated icons
  1.23     20250131  G.Tani      Fixed duplicated input on drag and drop from system to app
                                 Can now save reports to CSV selecting , and ; separator on the fly, regardless the configuration
+ 1.24     20250404  G.Tani      Updated for v6 themes
+                                Fixes, legacy code cleanup
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 
@@ -293,6 +295,7 @@ type
     ComboBoxUtils: TComboBox;
     EditConfirm1: TEdit;
     EditPW1: TEdit;
+    ImageList1_dark: TImageList;
     ImageUtils: TImage;
     Image7: TImage;
     Image3: TImage;
@@ -405,7 +408,7 @@ type
   Type fileofbyte = file of byte;
 
 const
-  P_RELEASE          = '1.23'; //declares release version for the whole build
+  P_RELEASE          = '1.24'; //declares release version for the whole build
   //PEAUTILS_RELEASE   = '1.3'; //declares for reference last peautils release
   PEA_FILEFORMAT_VER = 1;
   PEA_FILEFORMAT_REV = 6; //version and revision declared to be implemented must match with the ones in pea_utils, otherwise a warning will be raised (form caption)
@@ -919,7 +922,6 @@ var
    in_qualified_name,out_file,out_path,out_name,s:ansistring;
    ansi_qualified_name:ansistring;
    inskipped:boolean;
-label 1;
 
 procedure clean_variables;
 begin
@@ -1976,14 +1978,14 @@ n_dirs:=0;
 for i:=0 to n_input_files-1 do
    begin
    SetLength(obj_tags,length(obj_tags)+1);
-   if status_files[i]=false then goto 1; //the object, during creation of the list, was not accessible
+   if status_files[i]=false then continue; //the object, during creation of the list, was not accessible
    in_qualified_name:=in_files[i];
    addr:=i;
    k:=check_in(f_in,in_qualified_name,status_files,i);
    if k<>0 then
       begin
       inc(n_skipped,1);
-      goto 1; //the object is actually not accessible
+      continue; //the object is actually not accessible
       end;
    init_obj_control_algo;
    //2 byte (word) sized field for size of the input object qualified name, if = 0 then the object is a trigger
@@ -2052,7 +2054,6 @@ for i:=0 to n_input_files-1 do
       finish_obj_control_algo;
       write_obj_check;
       end;
-   1:
    end;
 //4) close stream: write trigger of end of archive (since PEA1.0 files contain a single stream) and write authentication tag (if applicable)
 write_eoa;
@@ -2218,7 +2219,6 @@ var
    nobj:int64;
    stream_error,obj_error,volume_error,end_of_archive,pwneeded,chunks_ok,filenamed,out_created,no_more_files,readingstream,readingheader,readingfns,readingtrigger,readingfn,readingfs,readingfage,readingfattrib,readingcompsize,fassigned,readingf,readingcompblock,readingobjauth,readingauth,singlevolume:boolean;
    subroot,basedir,s,in_file,in_name,in_folder,out_path,out_file,algo,obj_algo,volume_algo,compr,fn,finpre:ansistring;
-label 1;
 
 procedure clean_variables;
 begin
@@ -3476,7 +3476,10 @@ while (chunks_ok=true) and (end_of_archive=false) do
             readingfns:=true;
             end;
          end;
-      1:
+
+      while (total>0) and (end_of_archive=false) do
+         begin
+
       while ((total>0) and (readingfns=true)) do //read filename size;
          begin
          if total>2-addr then i:=2-addr else i:=total;
@@ -3813,6 +3816,7 @@ while (chunks_ok=true) and (end_of_archive=false) do
                readingobjauth:=true;
                end;
             end;
+
       //read object check field
       while ((total>0) and (readingobjauth=true)) do
          begin
@@ -3821,7 +3825,7 @@ while (chunks_ok=true) and (end_of_archive=false) do
             readingobjauth:=false;
             readingfns:=true;
             addr:=0;
-            if total>0 then goto 1;
+            if total>0 then continue;
             end;
          if total>obj_authsize-addr then i:=obj_authsize-addr else i:=total;
          try
@@ -3842,9 +3846,12 @@ while (chunks_ok=true) and (end_of_archive=false) do
             addr:=0;
             finish_obj_control_algo;
             check_obj;
-            if total>0 then goto 1;
+            if total>0 then continue;
             end;
          end;
+
+         end;
+
       //read auth block (if any);
       while (total>0) and (readingauth=true) do
          begin
@@ -6816,7 +6823,7 @@ else Form_report.StringGrid1.ColWidths[7]:=0;
 Form_report.StringGrid1.PopupMenu:=Form_report.PopupMenu1;
 Form_pea.ButtonToolsCancel.visible:=false;
 Form_pea.ProgressBar1.Position:=100;
-Form_pea.LabelTools2.Caption:='Checked ('+moded+') '+inttostr(paramcount-j+1)+' element(s), '+nicenumber(inttostr(tsize),0)+' ['+inttostr(tsize)+' B]';
+Form_pea.LabelTools2.Caption:='Checked ('+moded+') '+nicenumber(inttostr(tsize),0)+' ['+inttostr(tsize)+' B]';
 Form_pea.LabelTools3.Caption:='Processed '+inttostr(t)+' of '+inttostr(ntotalexp)+' items: '+inttostr(t-td-te)+' files, '+inttostr(td)+' directories, '+inttostr(te)+' errors';
 try
 if t>1 then Form_pea.LabelTools4.Caption:=
@@ -7850,7 +7857,7 @@ s:=graphicsfolder;
 if s<>'' then setlength(s,length(s)-1);
 theme_name:=extractfilename(s);
 //default and no graphic themes are in application's path, custom themes are in configuration path (application's path for portable versions, user's home/application data for installable versions)
-if (upcase(theme_name)<>upcase(DEFAULT_THEME)) and (upcase(theme_name)<>'NOGRAPHIC') then thpath:=confpath
+if ((theme_name)<>(DEFAULT_THEME)) then thpath:=confpath
 else thpath:=sharepath;
 end;
 
@@ -7873,34 +7880,39 @@ i16res:=(qscaleimages*16) div 100;
    Bcancel:=TBitmap.Create;
    Butils:=TBitmap.Create;
    Badmin:=TBitmap.Create;
-   if graphicsfolder<>'themes'+directoryseparator+'nographic'+directoryseparator then
-      begin
-      Form_pea.imagelist1.getbitmap(1,Bfd);
-      Form_pea.imagelist1.getbitmap(2,Bmail);
-      Form_pea.imagelist1.getbitmap(3,Bhd);
-      Form_pea.imagelist1.getbitmap(4,Bdvd);
-      Form_pea.imagelist1.getbitmap(5,Binfo);
-      Form_pea.imagelist1.getbitmap(6,Blog);
-      Form_pea.imagelist1.getbitmap(7,Bok);
-      Form_pea.imagelist1.getbitmap(8,Bcancel);
-      Form_pea.imagelist1.getbitmap(9,Butils);
-      Form_pea.imagelist1.getbitmap(10,Badmin);
-      end;
-   if graphicsfolder='themes'+directoryseparator+'nographic'+directoryseparator then
+   if evalcolor(clWindow)>128 then
       begin
       Form_pea.imagelist1.getbitmap(0,Bfd);
-      Form_pea.imagelist1.getbitmap(0,Bmail);
-      Form_pea.imagelist1.getbitmap(0,Bhd);
-      Form_pea.imagelist1.getbitmap(0,Bdvd);
-      Form_pea.imagelist1.getbitmap(0,Binfo);
-      Form_pea.imagelist1.getbitmap(0,Blog);
-      Form_pea.imagelist1.getbitmap(0,Bok);
-      Form_pea.imagelist1.getbitmap(0,Bcancel);
-      Form_pea.imagelist1.getbitmap(0,Butils);
-      Form_pea.imagelist1.getbitmap(0,Badmin);
-      end;
-   if (graphicsfolder<>'themes'+directoryseparator+'nographic'+directoryseparator) and (graphicsfolder<>'themes'+directoryseparator+'main-embedded'+directoryseparator) then
+      Form_pea.imagelist1.getbitmap(1,Bmail);
+      Form_pea.imagelist1.getbitmap(2,Bhd);
+      Form_pea.imagelist1.getbitmap(3,Bdvd);
+      Form_pea.imagelist1.getbitmap(4,Binfo);
+      Form_pea.imagelist1.getbitmap(5,Blog);
+      Form_pea.imagelist1.getbitmap(6,Bok);
+      Form_pea.imagelist1.getbitmap(7,Bcancel);
+      Form_pea.imagelist1.getbitmap(8,Butils);
+      Form_pea.imagelist1.getbitmap(9,Badmin);
+      end
+   else
       begin
+      Form_pea.ImageList1_dark.getbitmap(0,Bfd);
+      Form_pea.ImageList1_dark.getbitmap(1,Bmail);
+      Form_pea.ImageList1_dark.getbitmap(2,Bhd);
+      Form_pea.ImageList1_dark.getbitmap(3,Bdvd);
+      Form_pea.ImageList1_dark.getbitmap(4,Binfo);
+      Form_pea.ImageList1_dark.getbitmap(5,Blog);
+      Form_pea.ImageList1_dark.getbitmap(6,Bok);
+      Form_pea.ImageList1_dark.getbitmap(7,Bcancel);
+      Form_pea.ImageList1_dark.getbitmap(8,Butils);
+      Form_pea.ImageList1_dark.getbitmap(9,Badmin);
+      end;
+   if (graphicsfolder<>'themes'+directoryseparator+DEFAULT_THEME+directoryseparator) then
+      begin
+      try
+      getthemedbitmap(Butils,thpath+graphicsfolder+'16'+directoryseparator+'16-settings.png');
+      getthemedbitmap(Badmin,thpath+graphicsfolder+'16'+directoryseparator+'16-av.png');
+      except
+      end;
       getthemedbitmap(Binfo,thpath+graphicsfolder+'16'+directoryseparator+'16-info.png');
       getthemedbitmap(Blog,thpath+graphicsfolder+'16'+directoryseparator+'16-paste.png');
       getthemedbitmap(Bok,thpath+graphicsfolder+'16'+directoryseparator+'16-test.png');
@@ -8051,6 +8063,15 @@ try
    if color1='' then color1:=ColorToString(PAPPCOL);
    if color2='' then color2:=colortostring(clWindow);
    if color3='' then color3:=ColorToString(PTACOL);
+   if graphicsfolder='themes'+directoryseparator+DEFAULT_THEME+directoryseparator then
+      if evalcolor(clWindow)>128 then
+         begin
+         if color3=ColorToString(PAPPCOL) then color3:=ColorToString(PTACOL);
+         end
+      else
+         begin
+         if color3=ColorToString(PTACOL) then color3:=ColorToString(PAPPCOL);
+         end;
    if color4='' then color4:='$00669999';
    if color5='' then color5:=colortostring(clWindowText);
 except
@@ -8060,7 +8081,8 @@ except
    opacity:=100;
    color1:=ColorToString(PAPPCOL);
    color2:=colortostring(clWindow);
-   color3:=ColorToString(PTACOL);
+   if evalcolor(clWindow)>128 then color3:=ColorToString(PTACOL)
+   else color3:=ColorToString(PAPPCOL);
    color4:='$00669999';
    color5:=colortostring(clWindowText);
    closepolicy:=1;

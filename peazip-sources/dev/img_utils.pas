@@ -233,7 +233,7 @@ procedure loadlargeicon(srcbitmap:TBitmap; var destbitmap:Tbitmap; destsize:inte
 begin
 destbitmap.Assign(srcbitmap);
 setsize_bitmap(destbitmap,destsize,DECO_NONE);
-destbitmap.TransparentColor:=$00FFFFFF;
+destbitmap.TransparentColor:=clWindow; //$00FFFFFF;
 destbitmap.Transparent:=true;
 end;
 

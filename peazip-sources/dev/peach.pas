@@ -193,42 +193,41 @@ unit peach;
  1.76     20241109  G.Tani     10.1.0
  1.77     20241226  G.Tani     10.2.0
  1.78     20250218  G.Tani     10.3.0
+ 1.79     20250405  G.Tani     10.4.0
 
 BACKEND
-Pea 1.23
+Zstd 1.5.7
+Pea 1.24
 
 CODE
-project_pea and project_peach updated to optimization and debugging project-level options recommended for Lazarus 3.x line
-Optimized app startup reducing 25% time and 20% memory usage
+Expanded script samples for CLI usage and system integration in (peazip)/res/share/batch
+Legacy code cleanup
 Various fixes
+ Fixed compact side bar being invisible at low zoom levels
+ Fixed drag and drop operations failing for some formats
+ Fixed script generation (Advanced tab) when "TAR before" and "Delete files after archiving" options are both in use
 
 FILE MANAGER
-Auto browse TAR inside compressed TAR archives now can be limited to max size (100 MB, 1 GB, 10 GB, Always) in order to avoid automatic time consuming operation
-Can now save list of files/search results as csv (with , and ; separator), tsv, and txt
-Improved "Analyze content of folders" function, now reporting content size in separate column to allow sorting for smallest/largest folder
-Improved handling archives with errors, or containing extra data, i.e. container formats which are variants of archive formats
- With Options > Settings > Archive manager, "Browse non-canonical archive types" option flagged (default) the app will always try to open for browsing such archives
- Unflagging this option stops the app from browsing archives if errors are detected, which may be more safe, but is less flexible in terms of handling/recovering data
- More cases of warnings and errors are recognized and shown (warning icon in the navigation bar) for file formats supported through the 7z/p7zip backend
-Smart new folder toggle is now reachable also from quick extraction dropdown menu
-Style submenu in "..." style menu allows to quickly change app's file manager GUI applying multiple customizations at once to fit one of the pre-set styles: Minimal, Classic, Modern, and Postmodern
-Updated Themes to customize more items (menu dropdown, breadcrumb separator, settings icon), legacy themes are still supported
- New Tux-Alt theme for alternative look&feel on Linux systems
-(Windows) Improved rendering of exe files' icons
+Added alternative context menus for quick navigation in file/archive manager
+ Ctrl+RightClick shows breadcrumb context menu
+ Shift+RightClick shows session history context menu
+ Ctrl+Shift+RightClick shows navigation context menu
+Can now sort items in the Password Manager
+File browser popup now provides more information fields: attributes, compression/encryption method, content (compressed folders), object level comments, creation and last accessed time (compressed files and folder, if set), full path (in search and flat mode)
+New "90s" style in "..." > Style menu providing a simple old-school layout with treeview sidebar
+Embedded theme will now automatically adapt icons and accent colors when the system is set to light mode / dark mode
+Updated Themes to v.6
+ All in-app icons can now be customized in order to create themes optimized for different system color schemes, not limited to light or dark but also alternative color palettes (grey, cold/warm colors etc...)
+ New mac-dark, main-dark, ten-dark, and tux-dark available as custom themes, meant to improve app aspect on systems in dark mode (more alternative v.6 themes are available from the Custom entry)
+ The app can use older revision themes down to v.3, but it is recommended to update old theme packages (suggestion: new themes can be used as template for icons missing in previous versions of themes)
 
 EXTRACTION and ARCHIVING
-Improved displaying information in the task progress window and in the archive creation / extraction screen title
-Improved managing non-ASCII characters in passwords
- Added warning to prevent creation of archives using non-ASCII characters if not supported by the format (or otherwise not supported due to technical limitations)
- Fixed Windows drag and drop extraction not correctly communicating non-ASCII characters in passwords through pipe
-When directly sending items to compression without confirmation, file spanning (if set) is automatically disabled for the current operation
+(7z backend) By default symlinks are stored as links, option available in Advanced tab of archive creation screen
+Added error check to avoid automatic deletion of the intermediate tar archive if the compression step fails with "Delete files after archiving" option enabled
 
 INSTALLERS
-(Linux) Qt6 installable packages updated to create needed links to libQt6Pas.so out of the box
-(Linux) Updated information for context menu integration for Gnome and KDE in (peazip)/res/share/batch/freedesktop_integration
- sh scripts to automate context menu integration now available in KDE-servicemenus and Nautilus-scripts subfolders
 
-Added support for VmWare .ova files, and Minecraft archive file types .mcaddon, .mcmeta, .mcpack, .mcproject, .mcstructure, .mctemplate, .mcworld
+
 242 file extensions supported
 
 Translations updated and replaced in the package
@@ -643,6 +642,10 @@ type
      gbConsoleCreate1: TPanel;
      iConsoleCreateImport: TImage;
      iConsoleCreateImport1: TImage;
+     il_dtheme_16_dark: TImageList;
+     il_dtheme_96_dark: TImageList;
+     il_dtheme_tool32_dark: TImageList;
+     il_nonthemed_dark: TImageList;
      Image7zPj: TBitBtn;
      Image7zPj1: TBitBtn;
      Image7zPj3: TBitBtn;
@@ -976,6 +979,7 @@ type
      mccomment: TMenuItem;
      mbrowserccomment: TMenuItem;
      mcomment: TMenuItem;
+     pmspold: TMenuItem;
      mz175: TMenuItem;
      pmspminimal: TMenuItem;
      pmsppostmodern: TMenuItem;
@@ -3327,7 +3331,6 @@ type
       SaveDialog2: TSaveDialog;
       SaveDialogPJ: TSaveDialog;
       SelectDirectoryDialog1: TSelectDirectoryDialog;
-      StringGridTmp: TStringGrid;
       Timer1: TTimer;
       TreeView2: TTreeView;
       procedure abc0Click(Sender: TObject);
@@ -3794,6 +3797,7 @@ type
       procedure pmspclassicClick(Sender: TObject);
       procedure pmspminimalClick(Sender: TObject);
       procedure pmspmodernClick(Sender: TObject);
+      procedure pmspoldClick(Sender: TObject);
       procedure pmsppostmodernClick(Sender: TObject);
       procedure pmsaveascsvlClick(Sender: TObject);
       procedure pmsaveastsvClick(Sender: TObject);
@@ -5672,7 +5676,6 @@ function set_grid:boolean;
 procedure readcomment;
 procedure setcomment;
 procedure sort_az_stringgridlist(c:integer);
-procedure sort_za_stringgridlist(c:integer);
 
 const
   HLIBRE_DIR    = 0; //hardcoded "libre directive" 0 not hardcoded, read from configuration; 1 hardcoded to allow only using Free Software components; 2 hardcoded to allow only using Free Software components and open archive formats (not encumbered by patents for read nor write)
@@ -5683,7 +5686,7 @@ const
   HSHAREPATH    = '';//hardcoded path for other data (non binary, non configuration)
   WS_EX_LAYERED = $80000;
   LWA_ALPHA     = $2;
-  PEAZIPVERSION = '10.3';
+  PEAZIPVERSION = '10.4';
   PEAZIPREVISION= '.0';
   SPECEXTCONST  = '001 bat exe htm html msi r01 z01';
   PREFALGOCONST = 'CRC32 CRC64 MD5 RIPEMD160 SHA1 BLAKE2S SHA256 SHA3_256';
@@ -5714,7 +5717,7 @@ const
   READE_LIST    = '7Z, ACE, ARC/WRC, ARJ, BR, BZ/TBZ, CAB, CHM/CHW/HXS, COMPOUND (MSI, DOC, XLS, PPT), CPIO, GZ/TGZ, ISO, Java (JAR, EAR, WAR), LZH/LHA, Linux (DEB, PET/PUP, RPM, SLP), NSIS, OOo, PAK/PK3/PK4, PAQ/LPAQ/ZPAQ, PEA, QUAD/BALZ/BCM, RAR, TAR, WIM/SWM, XPI, Z/TZ, ZIP, ZST...';
   WRITEE_LIST   = '7Z, 7Z-sfx, ARC, ARC-sfx, BR, BZ2, GZ, *PAQ, PEA, QUAD/BALZ/BCM, split, TAR, UPX, WIM, XZ, ZIP, ZST';
   APPMAIN       = 'PeaZip';
-  APPLICATION1  = 'Pea 1.23 (LGPLv3, Giorgio Tani)';
+  APPLICATION1  = 'Pea 1.24 (LGPLv3, Giorgio Tani)';
   STR_7Z        = '7Z';
   STR_ARC       = 'ARC';
   STR_BROTLI    = 'Brotli';
@@ -5756,13 +5759,13 @@ const
   APPLICATION7  = 'FreeArc 0.67 alpha (GPL, Bulat Ziganshin)';
   APPLICATION8  = 'UNRAR 5.21 (freeware, royalty-free, source available with unrar restriction, Alexander Roshal)';
   APPLICATION9  = 'Brotli 1.1.0 (MIT License, Jyrki Alakuijala, Eugene Kliuchnikov, Robert Obryk, Zoltán Szabadka, Lode Vandevenne)';
-  APPLICATION10 = 'Zstd 1.5.6 (Dual license BSD / GPLv2, Yann Collet, Przemysław Skibiński)';
+  APPLICATION10 = 'Zstd 1.5.7 (Dual license BSD / GPLv2, Yann Collet, Przemysław Skibiński)';
   {$ENDIF}
   {$IFDEF LINUX}
   EXEEXT        = '';
   UNRARNAME     = 'unrar-nonfree';
   APPLICATION2  = 'Linux 7z 24.09 (LGPL, Igor Pavlov)';
-  APPLICATION10 = 'Zstd 1.5.6 (Dual license BSD / GPLv2, Yann Collet, Przemysław Skibiński)';
+  APPLICATION10 = 'Zstd 1.5.7 (Dual license BSD / GPLv2, Yann Collet, Przemysław Skibiński)';
   {$IFDEF CPUAARCH64}
   APPLICATION3  = '';
   APPLICATION4  = 'Strip (GPL, GNU binutils)';
@@ -5899,15 +5902,15 @@ var
    Btool_delete,Btool_dup,BTool_cut_small,BTool_copy_small,BTool_dup_small,
    Btool_properties_small,Btool_rename_small,BTool_resize,BTool_crop,
    BTool_rl,BTool_rr,BTool_resize_small,BTool_crop_small,
-   BTool_rl_small,BTool_rr_small,Bbrowserdetails,Bbrowserlist,Bbrowsericons,Bbrowserdetailslarge,Bbrowserlistlarge,Bdownloadfolder,Bcloudfolder,Bhomefolder,Bbrowsericonslarge,
+   BTool_rl_small,BTool_rr_small,Bdownloadfolder,Bcloudfolder,Bhomefolder,
    Bdvd_supported96,Bfd_supported96,BFolder96,Bhd_supported96,Bram_supported96,
    Bremote_supported96,Bremovable_supported96,Btxt96,Bspreadsheet96,Bvideo96,Baudio96,Bimage96,
    Bpresentation96,Bpdf96,Bsupported96,Bbat96,Bdll96,Bdb96,Bgif96,Bico96,Bvector96,Bjpeg96,BArchiveSupported96,
    BFileSupported96,BExesupported96,Bunsupported96,Blink96,Bweb96,Bmail96,
    Barc7z96,Barcrar96,Barczip96,Barcblock96,Barcdisk96,Barcinstaller96,
-   Bfm,Bnonthemed0,Bnonthemed1,Bnonthemed3,Bnonthemed4,Bnonthemed5,Bnonthemed6,
-   Bnonthemed7,Bnonthemed8,Bnonthemed9,Bnonthemed10,Bnonthemed11,
-   Bp1,Bp2,Bp3,Bp4,Bp5,Bp6,Bp7,Bp8,barc,bext,bextf,btest,blist,
+   Bfm,Bdetailsf,Blistf,Biconsf,Bnonthemed,
+   Bav,Bfilter,Bflat,Bcollapse,
+   Bp1,barc,bext,bextf,btest,blist,bmenu,bseparator,bsettings,
    binfodlg,bwarningdlg,bwarningsmall,berrordlg,Bdesk96,Bhomefolder96,
    Bdownloadfolder96,Bcloudfolder96: TBitmap;
 
@@ -5965,7 +5968,7 @@ var
    autosync,sys7zlin,i16res,i32res,i48res,i96res,tabheight,tablabelheight,tabheightl,pbarh,autoopentar,spansize,advopdictionary,
    advopword,advoppasses,advopblocksize,noconfdel,specialmoderar,pforceconsole,closeonsingleextract,movetorelativepath,
    forcebrowse,forceconvert,forcelayout,nitems,storecreated,max_cl,temperature,temperatured,contrast,
-   contrastd,lsize,ntoolstyle,pperc,dirbeforefiles,decostyle,decostyled,abt:integer;
+   contrastd,lsize,ntoolstyle,pperc,dirbeforefiles,decostyle,decostyled,abt,altmenu:integer;
 
    ltime,stime:longint;
 
@@ -5991,8 +5994,8 @@ var
    immediate_execution,defaultarchiveaction,showsearchbar,tar_atomic,tar_atomic_convert,syntaxlevel7z,convint,
    qdup,restoretabbar,scripttarpipe,scriptuntarpipe:byte;
 
-   call_validated,keyf_opened,no_more_files,
-   using_tarbefore,tarbeforenameexception,seemencrypted,az,az1,az2,azbook,imgloaded,imgloading,
+   call_validated,keyf_opened,no_more_files,az,
+   using_tarbefore,tarbeforenameexception,seemencrypted,imgloaded,imgloading,
    settingvalues,archiveopened,browsinghistory,filecopying,openstarted,dragcancelled,
    listingdir,control_listingdir,done_listingexe,waitdrawok,needwaitupdating,updatingarchive_inarchive,goarchiving,updatingarchive_sync,
    stayopen,completeshowpea,savetype,pcmenupopulated,updatinglistview,updatingsel,rowselect,smartsortenabled,showmenu,
@@ -6004,7 +6007,7 @@ var
    h_folders,nomatch,set_archivetree,aisexpanded,setsequenceerror,tmpextnf,settmpextnf,
    keeppreview,loadadvdefaults,havewinrar,singleextract,specialopen,pclicked,
    willbemoved,forcewillbemoved,forcenotwillbemoved,pdrop,prebrowsing,imported_tarbeforejob,
-   darwinsimulatedrop,starttaberror,updatingconf,intdd,consolecl,piperar:boolean;
+   darwinsimulatedrop,starttaberror,updatingconf,intdd,consolecl,piperar,settingadv,navbarhidden:boolean;
 
    activelabel_options,activelabel_add,activelabel_extract,activelabel_apps:TLabel;
 
@@ -6024,6 +6027,7 @@ var
 
    lang_file:ansistring;
    //text strings
+   txt_10_4_moving,
    txt_10_3_classic,txt_10_3_m,txt_10_3_pm,txt_10_3_minimal,txt_10_3_ascii,txt_10_3_aw,
    txt_10_2_savecopy,
    txt_10_1_full,txt_10_1_under,txt_10_1_kdfw,
@@ -6646,6 +6650,7 @@ begin
 valorize_text:=-1;
 try
 readln(t,s);
+readln(t,s); txt_10_4_moving:=copy(s,pos(':',s)+2,length(s)-pos(':',s));
 readln(t,s); txt_10_3_classic:=copy(s,pos(':',s)+2,length(s)-pos(':',s));
 readln(t,s); txt_10_3_ascii:=copy(s,pos(':',s)+2,length(s)-pos(':',s));
 readln(t,s); txt_10_3_minimal:=copy(s,pos(':',s)+2,length(s)-pos(':',s));
@@ -11457,6 +11462,7 @@ end;
 
 procedure load_default_texts;
 begin
+txt_10_4_moving:='(Moving)';
 txt_10_3_classic:='Classic';
 txt_10_3_ascii:='It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).';
 txt_10_3_minimal:='Minimal';
@@ -12734,7 +12740,7 @@ if theme_name='' then
    theme_name:=extractfilename(s);
    end;
 //default and no graphic themes are in application's path, custom themes are in configuration path (application's path for portable versions, user's home/application data for installable versions)
-if (upcase(theme_name)<>upcase(DEFAULT_THEME)) and (upcase(theme_name)<>'NOGRAPHIC-EMBEDDED') then thpath:=confpath
+if ((theme_name)<>(DEFAULT_THEME)) then thpath:=confpath
 else thpath:=sharepath;
 end;
 
@@ -13162,6 +13168,319 @@ procedure load_icons; //load icons from bitmaps
 var
    i:integer;
    thpath:ansistring;
+
+procedure loadlighticons;
+begin
+with Form_peach do
+   begin
+   il_nonthemed.getbitmap(0,Bav);
+   il_nonthemed.getbitmap(1,Bfilter);
+   il_nonthemed.getbitmap(2,Bflat);
+   il_nonthemed.getbitmap(3,Bcollapse);
+   il_dtheme_16.getbitmap(0,Bbookmarkadd);
+   il_dtheme_16.getbitmap(1,Bapps);
+   il_dtheme_16.getbitmap(2,BArchive);
+   il_dtheme_16.getbitmap(3,Bclearlayout);
+   il_dtheme_16.getbitmap(4,Bconvert);
+   il_dtheme_16.getbitmap(5,Bdelete);
+   il_dtheme_16.getbitmap(6,Bextractall);
+   il_dtheme_16.getbitmap(7,Bextractalln);
+   il_dtheme_16.getbitmap(8,Bloadlayout);
+   il_dtheme_16.getbitmap(9,Bpreview);
+   il_dtheme_16.getbitmap(10,Brun);
+   il_dtheme_16.getbitmap(11,Bsavelayout);
+   il_dtheme_16.getbitmap(12,Bwipe);
+   il_dtheme_16.getbitmap(13,Btestall);
+   il_dtheme_16.getbitmap(14,Bdvd_supported);
+   il_dtheme_16.getbitmap(15,Bfd_supported);
+   il_dtheme_16.getbitmap(16,Bhd_supported);
+   il_dtheme_16.getbitmap(17,Bram_supported);
+   il_dtheme_16.getbitmap(18,Bremote_supported);
+   il_dtheme_16.getbitmap(19,Bremovable_supported);
+   il_dtheme_16.getbitmap(20,BArchiveSupported);
+   il_dtheme_16.getbitmap(21,Baudio);
+   il_dtheme_16.getbitmap(22,Bdll);
+   il_dtheme_16.getbitmap(23,Bdb);
+   il_dtheme_16.getbitmap(24,BFileSupported);
+   il_dtheme_16.getbitmap(25,BExeSupported);
+   il_dtheme_16.getbitmap(26,Bimage);
+   il_dtheme_16.getbitmap(27,Bico);
+   il_dtheme_16.getbitmap(28,Bjpeg);
+   il_dtheme_16.getbitmap(29,Bgif);
+   il_dtheme_16.getbitmap(30,Bvector);
+   il_dtheme_16.getbitmap(31,Blink);
+   il_dtheme_16.getbitmap(32,Bmail);
+   il_dtheme_16.getbitmap(33,Bpdf);
+   il_dtheme_16.getbitmap(34,Bpresentation);
+   il_dtheme_16.getbitmap(35,Bbat);
+   il_dtheme_16.getbitmap(36,Bspreadsheet);
+   il_dtheme_16.getbitmap(37,Bsupported);
+   il_dtheme_16.getbitmap(38,Btxt);
+   il_dtheme_16.getbitmap(39,BUnsupported);
+   il_dtheme_16.getbitmap(40,Bvideo);
+   il_dtheme_16.getbitmap(41,Bweb);
+   il_dtheme_16.getbitmap(42,BFolder);
+   il_dtheme_16.getbitmap(43,Binfo);
+   il_dtheme_16.getbitmap(44,Bnav);
+   il_dtheme_16.getbitmap(45,Bkeyfile);
+   il_dtheme_16.getbitmap(46,Blocker);
+   il_dtheme_16.getbitmap(47,Blocker2);
+   il_dtheme_16.getbitmap(48,Bback);
+   il_dtheme_16.getbitmap(49,Bexpand);
+   il_dtheme_16.getbitmap(50,Bgo);
+   il_dtheme_16.getbitmap(51,Brefresh);
+   il_dtheme_16.getbitmap(52,Bsearch);
+   il_dtheme_16.getbitmap(53,Bgopath);
+   il_dtheme_16.getbitmap(54,Bresetpath);
+   il_dtheme_16.getbitmap(55,Bgoup);
+   il_dtheme_16.getbitmap(56,Bp0);
+   il_dtheme_16.getbitmap(57,Bbookmark);
+   il_dtheme_16.getbitmap(58,Bdesk);
+   il_dtheme_16.getbitmap(59,Bplaceshistory);
+   il_dtheme_16.getbitmap(60,Broot);
+   il_dtheme_16.getbitmap(61,Bsystemtools);
+   il_dtheme_16.getbitmap(62,BDefaults);
+   il_dtheme_16.getbitmap(63,Bstop);
+   il_dtheme_16.getbitmap(64,BTool_cut_small);
+   il_dtheme_16.getbitmap(65,BTool_copy_small);
+   il_dtheme_16.getbitmap(66,BTool_dup_small);
+   il_dtheme_16.getbitmap(67,Btool_properties_small);
+   il_dtheme_16.getbitmap(68,Btool_rename_small);
+   il_dtheme_16.getbitmap(69,Btool_resize_small);
+   il_dtheme_16.getbitmap(70,Btool_crop_small);
+   il_dtheme_16.getbitmap(71,BTool_rl_small);
+   il_dtheme_16.getbitmap(72,BTool_rr_small);
+   il_dtheme_16.getbitmap(73,Bmenu);
+   il_dtheme_16.getbitmap(74,Bseparator);
+   il_dtheme_16.getbitmap(75,Bsettings);
+   il_dtheme_16.getbitmap(76,Bdetailsf);
+   il_dtheme_16.getbitmap(77,Blistf);
+   il_dtheme_16.getbitmap(78,Biconsf);
+   il_dtheme_16.getbitmap(79,Bhomefolder);
+   il_dtheme_16.getbitmap(80,Bdownloadfolder);
+   il_dtheme_16.getbitmap(81,Bcloudfolder);
+   il_dtheme_16.getbitmap(82,Barc7z);
+   il_dtheme_16.getbitmap(83,Barcrar);
+   il_dtheme_16.getbitmap(84,Barczip);
+   il_dtheme_16.getbitmap(85,Barcblock);
+   il_dtheme_16.getbitmap(86,Barcdisk);
+   il_dtheme_16.getbitmap(87,Barcinstaller);
+   il_dtheme_96.getbitmap(0,Bdvd_supported96);
+   il_dtheme_96.getbitmap(1,Bfd_supported96);
+   il_dtheme_96.getbitmap(2,Bhd_supported96);
+   il_dtheme_96.getbitmap(3,Bram_supported96);
+   il_dtheme_96.getbitmap(4,Bremote_supported96);
+   il_dtheme_96.getbitmap(5,Bremovable_supported96);
+   il_dtheme_96.getbitmap(6,BArchiveSupported96);
+   il_dtheme_96.getbitmap(7,Baudio96);
+   il_dtheme_96.getbitmap(8,Bdll96);
+   il_dtheme_96.getbitmap(9,Bdb96);
+   il_dtheme_96.getbitmap(10,BFileSupported96);
+   il_dtheme_96.getbitmap(11,BExeSupported96);
+   il_dtheme_96.getbitmap(12,Bimage96);
+   il_dtheme_96.getbitmap(13,Bico96);
+   il_dtheme_96.getbitmap(14,Bjpeg96);
+   il_dtheme_96.getbitmap(15,Bgif96);
+   il_dtheme_96.getbitmap(16,Bvector96);
+   il_dtheme_96.getbitmap(17,Blink96);
+   il_dtheme_96.getbitmap(18,Bmail96);
+   il_dtheme_96.getbitmap(19,Bpdf96);
+   il_dtheme_96.getbitmap(20,Bpresentation96);
+   il_dtheme_96.getbitmap(21,Bbat96);
+   il_dtheme_96.getbitmap(22,Bspreadsheet96);
+   il_dtheme_96.getbitmap(23,Bsupported96);
+   il_dtheme_96.getbitmap(24,Btxt96);
+   il_dtheme_96.getbitmap(25,BUnsupported96);
+   il_dtheme_96.getbitmap(26,Bvideo96);
+   il_dtheme_96.getbitmap(27,Bweb96);
+   il_dtheme_96.getbitmap(28,BFolder96);
+   il_dtheme_96.getbitmap(29,Barc7z96);
+   il_dtheme_96.getbitmap(30,Barcrar96);
+   il_dtheme_96.getbitmap(31,Barczip96);
+   il_dtheme_96.getbitmap(32,Barcblock96);
+   il_dtheme_96.getbitmap(33,Barcdisk96);
+   il_dtheme_96.getbitmap(34,Barcinstaller96);
+   il_dtheme_96.getbitmap(35,Bcloudfolder96);
+   il_dtheme_96.getbitmap(36,Bdesk96);
+   il_dtheme_96.getbitmap(37,Bdownloadfolder96);
+   il_dtheme_96.getbitmap(38,bhomefolder96);
+   il_dtheme_tool32.getbitmap(0,Bdetailsfs);
+   il_dtheme_tool32.getbitmap(1,BArchive_big);
+   il_dtheme_tool32.getbitmap(2,Bconvert_big);
+   il_dtheme_tool32.getbitmap(3,Bextractall_big);
+   il_dtheme_tool32.getbitmap(4,Bextractalln_big);
+   il_dtheme_tool32.getbitmap(5,Btestall_big);
+   il_dtheme_tool32.getbitmap(6,Btool_cut);
+   il_dtheme_tool32.getbitmap(7,Btool_copy);
+   il_dtheme_tool32.getbitmap(8,Btool_paste);
+   il_dtheme_tool32.getbitmap(9,Btool_openw);
+   il_dtheme_tool32.getbitmap(10,Btool_properties);
+   il_dtheme_tool32.getbitmap(11,Btool_rename);
+   il_dtheme_tool32.getbitmap(12,Btool_delete);
+   il_dtheme_tool32.getbitmap(13,Btool_dup);
+   il_dtheme_tool32.getbitmap(14,Btool_resize);
+   il_dtheme_tool32.getbitmap(15,Btool_crop);
+   il_dtheme_tool32.getbitmap(16,BTool_rl);
+   il_dtheme_tool32.getbitmap(17,BTool_rr);
+   end;
+end;
+
+procedure loaddarkicons;
+begin
+with Form_peach do
+   begin
+   il_nonthemed_dark.getbitmap(0,Bav);
+   il_nonthemed_dark.getbitmap(1,Bfilter);
+   il_nonthemed_dark.getbitmap(4,Bflat);
+   il_nonthemed_dark.getbitmap(3,Bcollapse);
+   il_dtheme_16_dark.getbitmap(0,Bbookmarkadd);
+   il_dtheme_16_dark.getbitmap(1,Bapps);
+   il_dtheme_16_dark.getbitmap(2,BArchive);
+   il_dtheme_16_dark.getbitmap(3,Bclearlayout);
+   il_dtheme_16_dark.getbitmap(4,Bconvert);
+   il_dtheme_16_dark.getbitmap(5,Bdelete);
+   il_dtheme_16_dark.getbitmap(6,Bextractall);
+   il_dtheme_16_dark.getbitmap(7,Bextractalln);
+   il_dtheme_16_dark.getbitmap(8,Bloadlayout);
+   il_dtheme_16_dark.getbitmap(9,Bpreview);
+   il_dtheme_16_dark.getbitmap(10,Brun);
+   il_dtheme_16_dark.getbitmap(11,Bsavelayout);
+   il_dtheme_16_dark.getbitmap(12,Bwipe);
+   il_dtheme_16_dark.getbitmap(13,Btestall);
+   il_dtheme_16_dark.getbitmap(14,Bdvd_supported);
+   il_dtheme_16_dark.getbitmap(15,Bfd_supported);
+   il_dtheme_16_dark.getbitmap(16,Bhd_supported);
+   il_dtheme_16_dark.getbitmap(17,Bram_supported);
+   il_dtheme_16_dark.getbitmap(18,Bremote_supported);
+   il_dtheme_16_dark.getbitmap(19,Bremovable_supported);
+   il_dtheme_16_dark.getbitmap(20,BArchiveSupported);
+   il_dtheme_16_dark.getbitmap(21,Baudio);
+   il_dtheme_16_dark.getbitmap(22,Bdll);
+   il_dtheme_16_dark.getbitmap(23,Bdb);
+   il_dtheme_16_dark.getbitmap(24,BFileSupported);
+   il_dtheme_16_dark.getbitmap(25,BExeSupported);
+   il_dtheme_16_dark.getbitmap(26,Bimage);
+   il_dtheme_16_dark.getbitmap(27,Bico);
+   il_dtheme_16_dark.getbitmap(28,Bjpeg);
+   il_dtheme_16_dark.getbitmap(29,Bgif);
+   il_dtheme_16_dark.getbitmap(30,Bvector);
+   il_dtheme_16_dark.getbitmap(31,Blink);
+   il_dtheme_16_dark.getbitmap(32,Bmail);
+   il_dtheme_16_dark.getbitmap(33,Bpdf);
+   il_dtheme_16_dark.getbitmap(34,Bpresentation);
+   il_dtheme_16_dark.getbitmap(35,Bbat);
+   il_dtheme_16_dark.getbitmap(36,Bspreadsheet);
+   il_dtheme_16_dark.getbitmap(37,Bsupported);
+   il_dtheme_16_dark.getbitmap(38,Btxt);
+   il_dtheme_16_dark.getbitmap(39,BUnsupported);
+   il_dtheme_16_dark.getbitmap(40,Bvideo);
+   il_dtheme_16_dark.getbitmap(41,Bweb);
+   il_dtheme_16_dark.getbitmap(42,BFolder);
+   il_dtheme_16_dark.getbitmap(43,Binfo);
+   il_dtheme_16_dark.getbitmap(44,Bnav);
+   il_dtheme_16_dark.getbitmap(45,Bkeyfile);
+   il_dtheme_16_dark.getbitmap(46,Blocker);
+   il_dtheme_16_dark.getbitmap(47,Blocker2);
+   il_dtheme_16_dark.getbitmap(48,Bback);
+   il_dtheme_16_dark.getbitmap(49,Bexpand);
+   il_dtheme_16_dark.getbitmap(50,Bgo);
+   il_dtheme_16_dark.getbitmap(51,Brefresh);
+   il_dtheme_16_dark.getbitmap(52,Bsearch);
+   il_dtheme_16_dark.getbitmap(53,Bgopath);
+   il_dtheme_16_dark.getbitmap(54,Bresetpath);
+   il_dtheme_16_dark.getbitmap(55,Bgoup);
+   il_dtheme_16_dark.getbitmap(56,Bp0);
+   il_dtheme_16_dark.getbitmap(57,Bbookmark);
+   il_dtheme_16_dark.getbitmap(58,Bdesk);
+   il_dtheme_16_dark.getbitmap(59,Bplaceshistory);
+   il_dtheme_16_dark.getbitmap(60,Broot);
+   il_dtheme_16_dark.getbitmap(61,Bsystemtools);
+   il_dtheme_16_dark.getbitmap(62,BDefaults);
+   il_dtheme_16_dark.getbitmap(63,Bstop);
+   il_dtheme_16_dark.getbitmap(64,BTool_cut_small);
+   il_dtheme_16_dark.getbitmap(65,BTool_copy_small);
+   il_dtheme_16_dark.getbitmap(66,BTool_dup_small);
+   il_dtheme_16_dark.getbitmap(67,Btool_properties_small);
+   il_dtheme_16_dark.getbitmap(68,Btool_rename_small);
+   il_dtheme_16_dark.getbitmap(69,Btool_resize_small);
+   il_dtheme_16_dark.getbitmap(70,Btool_crop_small);
+   il_dtheme_16_dark.getbitmap(71,BTool_rl_small);
+   il_dtheme_16_dark.getbitmap(72,BTool_rr_small);
+   il_dtheme_16_dark.getbitmap(73,Bmenu);
+   il_dtheme_16_dark.getbitmap(74,Bseparator);
+   il_dtheme_16_dark.getbitmap(75,Bsettings);
+   il_dtheme_16_dark.getbitmap(76,Bdetailsf);
+   il_dtheme_16_dark.getbitmap(77,Blistf);
+   il_dtheme_16_dark.getbitmap(78,Biconsf);
+   il_dtheme_16_dark.getbitmap(79,Bhomefolder);
+   il_dtheme_16_dark.getbitmap(80,Bdownloadfolder);
+   il_dtheme_16_dark.getbitmap(81,Bcloudfolder);
+   il_dtheme_16_dark.getbitmap(82,Barc7z);
+   il_dtheme_16_dark.getbitmap(83,Barcrar);
+   il_dtheme_16_dark.getbitmap(84,Barczip);
+   il_dtheme_16_dark.getbitmap(85,Barcblock);
+   il_dtheme_16_dark.getbitmap(86,Barcdisk);
+   il_dtheme_16_dark.getbitmap(87,Barcinstaller);
+   il_dtheme_96_dark.getbitmap(0,Bdvd_supported96);
+   il_dtheme_96_dark.getbitmap(1,Bfd_supported96);
+   il_dtheme_96_dark.getbitmap(2,Bhd_supported96);
+   il_dtheme_96_dark.getbitmap(3,Bram_supported96);
+   il_dtheme_96_dark.getbitmap(4,Bremote_supported96);
+   il_dtheme_96_dark.getbitmap(5,Bremovable_supported96);
+   il_dtheme_96_dark.getbitmap(6,BArchiveSupported96);
+   il_dtheme_96_dark.getbitmap(7,Baudio96);
+   il_dtheme_96_dark.getbitmap(8,Bdll96);
+   il_dtheme_96_dark.getbitmap(9,Bdb96);
+   il_dtheme_96_dark.getbitmap(10,BFileSupported96);
+   il_dtheme_96_dark.getbitmap(11,BExeSupported96);
+   il_dtheme_96_dark.getbitmap(12,Bimage96);
+   il_dtheme_96_dark.getbitmap(13,Bico96);
+   il_dtheme_96_dark.getbitmap(14,Bjpeg96);
+   il_dtheme_96_dark.getbitmap(15,Bgif96);
+   il_dtheme_96_dark.getbitmap(16,Bvector96);
+   il_dtheme_96_dark.getbitmap(17,Blink96);
+   il_dtheme_96_dark.getbitmap(18,Bmail96);
+   il_dtheme_96_dark.getbitmap(19,Bpdf96);
+   il_dtheme_96_dark.getbitmap(20,Bpresentation96);
+   il_dtheme_96_dark.getbitmap(21,Bbat96);
+   il_dtheme_96_dark.getbitmap(22,Bspreadsheet96);
+   il_dtheme_96_dark.getbitmap(23,Bsupported96);
+   il_dtheme_96_dark.getbitmap(24,Btxt96);
+   il_dtheme_96_dark.getbitmap(25,BUnsupported96);
+   il_dtheme_96_dark.getbitmap(26,Bvideo96);
+   il_dtheme_96_dark.getbitmap(27,Bweb96);
+   il_dtheme_96_dark.getbitmap(28,BFolder96);
+   il_dtheme_96_dark.getbitmap(29,Barc7z96);
+   il_dtheme_96_dark.getbitmap(30,Barcrar96);
+   il_dtheme_96_dark.getbitmap(31,Barczip96);
+   il_dtheme_96_dark.getbitmap(32,Barcblock96);
+   il_dtheme_96_dark.getbitmap(33,Barcdisk96);
+   il_dtheme_96_dark.getbitmap(34,Barcinstaller96);
+   il_dtheme_96_dark.getbitmap(35,Bcloudfolder96);
+   il_dtheme_96_dark.getbitmap(36,Bdesk96);
+   il_dtheme_96_dark.getbitmap(37,Bdownloadfolder96);
+   il_dtheme_96_dark.getbitmap(38,bhomefolder96);
+   il_dtheme_tool32_dark.getbitmap(0,Bdetailsfs);
+   il_dtheme_tool32_dark.getbitmap(1,BArchive_big);
+   il_dtheme_tool32_dark.getbitmap(2,Bconvert_big);
+   il_dtheme_tool32_dark.getbitmap(3,Bextractall_big);
+   il_dtheme_tool32_dark.getbitmap(4,Bextractalln_big);
+   il_dtheme_tool32_dark.getbitmap(5,Btestall_big);
+   il_dtheme_tool32_dark.getbitmap(6,Btool_cut);
+   il_dtheme_tool32_dark.getbitmap(7,Btool_copy);
+   il_dtheme_tool32_dark.getbitmap(8,Btool_paste);
+   il_dtheme_tool32_dark.getbitmap(9,Btool_openw);
+   il_dtheme_tool32_dark.getbitmap(10,Btool_properties);
+   il_dtheme_tool32_dark.getbitmap(11,Btool_rename);
+   il_dtheme_tool32_dark.getbitmap(12,Btool_delete);
+   il_dtheme_tool32_dark.getbitmap(13,Btool_dup);
+   il_dtheme_tool32_dark.getbitmap(14,Btool_resize);
+   il_dtheme_tool32_dark.getbitmap(15,Btool_crop);
+   il_dtheme_tool32_dark.getbitmap(16,BTool_rl);
+   il_dtheme_tool32_dark.getbitmap(17,BTool_rr);
+   end;
+end;
+
 begin
 if imgloaded=true then exit;
 if imgloading=true then exit;
@@ -13184,101 +13503,35 @@ with Form_peach do
    begin
    try
    //set non-themed graphic
-   Bnonthemed0:=TBitmap.Create;
-   Bnonthemed1:=TBitmap.Create;
-   Bnonthemed3:=TBitmap.Create;
-   Bnonthemed4:=TBitmap.Create;
-   Bnonthemed5:=TBitmap.Create;
-   Bnonthemed6:=TBitmap.Create;
-   Bnonthemed7:=TBitmap.Create;
-   Bnonthemed8:=TBitmap.Create;
-   Bnonthemed9:=TBitmap.Create;
-   Bnonthemed10:=TBitmap.Create;
-   Bnonthemed11:=TBitmap.Create;
+   Bnonthemed:=TBitmap.Create;
    Bp1:=TBitmap.Create;
-   Bp2:=TBitmap.Create;
-   Bp3:=TBitmap.Create;
-   Bp4:=TBitmap.Create;
-   Bp5:=TBitmap.Create;
-   Bp6:=TBitmap.Create;
-   Bp7:=TBitmap.Create;
-   Bp8:=TBitmap.Create;
    binfodlg:=TBitmap.Create;
    bwarningdlg:=TBitmap.Create;
    bwarningsmall:=TBitmap.Create;
    berrordlg:=TBitmap.Create;
-   il_nonthemed.getbitmap(0,Bnonthemed0);
-   il_nonthemed.getbitmap(1,Bnonthemed1);
-   il_nonthemed.getbitmap(2,Bnonthemed3);
-   il_nonthemed.getbitmap(3,Bnonthemed4);
-   il_nonthemed.getbitmap(4,Bnonthemed5);
-   il_nonthemed.getbitmap(5,Bnonthemed6);
-   il_nonthemed.getbitmap(6,Bnonthemed7);
-   il_nonthemed.getbitmap(7,Bnonthemed8);
-   il_nonthemed.getbitmap(8,Bnonthemed9);
-   il_nonthemed.getbitmap(9,Bnonthemed10);
-   il_nonthemed.getbitmap(10,Bnonthemed11);
-   il_nonthemed.getbitmap(11,Bp1);
-   il_nonthemed.getbitmap(12,Bp2);
-   il_nonthemed.getbitmap(13,Bp3);
-   il_nonthemed.getbitmap(14,Bp4);
-   il_nonthemed.getbitmap(15,Bp5);
-   il_nonthemed.getbitmap(16,Bp6);
-   il_nonthemed.getbitmap(17,Bp7);
-   il_nonthemed.getbitmap(18,Bp8);
+   il_nonthemed.getbitmap(0,Bnonthemed);
+   il_nonthemed.getbitmap(5,Bp1);
    ImageListDlg.getbitmap(0,binfodlg);
    ImageListDlg.getbitmap(1,bwarningdlg);
    ImageListDlg.getbitmap(1,bwarningsmall);
    ImageListDlg.getbitmap(2,berrordlg);
-   setpbitmap(Bnonthemed0,i16res);
-   setpbitmap(Bnonthemed1,i16res);
-   setpbitmap(Bnonthemed3,i16res);
-   setpbitmap(Bnonthemed4,i16res);
-   setpbitmap(Bnonthemed5,i16res);
-   setpbitmap(Bnonthemed6,i16res);
-   setpbitmap(Bnonthemed7,i16res);
-   setpbitmap(Bnonthemed8,i16res);
-   setpbitmap(Bnonthemed9,i16res);
-   setpbitmap(Bnonthemed10,i16res);
-   setpbitmap(Bnonthemed11,i16res);
+   setpbitmap(Bnonthemed,i16res);
    setpbitmap(Bp1,i16res);
-   setpbitmap(Bp2,i16res);
-   setpbitmap(Bp3,i16res);
-   setpbitmap(Bp4,i16res);
-   setpbitmap(Bp5,i16res);
-   setpbitmap(Bp6,i16res);
-   setpbitmap(Bp7,i16res);
-   setpbitmap(Bp8,i16res);
    setpbitmap(binfodlg,i32res);
    setpbitmap(bwarningdlg,i32res);
    setpbitmap(bwarningsmall,i16res);
    setpbitmap(berrordlg,i32res);
-   //ImageBCtext.Picture.Bitmap:=Bnonthemed6;
-   mAdmin.Bitmap:=Bnonthemed7;
-   ctrlext.Glyph:=Bnonthemed10;
-   ctrlarc.Glyph:=Bnonthemed10;
-   Imageopenadvf.Width:=i16res;
-   Imageopenadvf.Height:=i16res;
-   Imageopenadvf.Picture.Bitmap:=Bnonthemed9;
-   Imageopenadvf1.Width:=i16res;
-   Imageopenadvf1.Height:=i16res;
-   Imageopenadvf1.Picture.Bitmap:=Bnonthemed9;
-   Imageopenadvf2.Width:=i16res;
-   Imageopenadvf2.Height:=i16res;
-   Imageopenadvf2.Picture.Bitmap:=Bnonthemed9;
-   imagesp.Width:=i16res;
-   imagesp.Height:=i16res;
-   imagesp.Picture.Bitmap:=Bnonthemed11;
-   imagesp1.Width:=i16res;
-   imagesp1.Height:=i16res;
-   imagesp1.Picture.Bitmap:=Bnonthemed11;
    //set themed graphic
-   Bbrowserdetails:=TBitmap.Create;
-   Bbrowserlist:=TBitmap.Create;
-   Bbrowsericons:=TBitmap.Create;
-   Bbrowserdetailslarge:=TBitmap.Create;
-   Bbrowserlistlarge:=TBitmap.Create;
-   Bbrowsericonslarge:=TBitmap.Create;
+   Bav:=TBitmap.Create;
+   Bfilter:=TBitmap.Create;
+   Bflat:=TBitmap.Create;
+   Bcollapse:=TBitmap.Create;
+   Bdetailsf:=TBitmap.Create;
+   Blistf:=TBitmap.Create;
+   Biconsf:=TBitmap.Create;
+   bmenu:=TBitmap.Create;
+   bseparator:=TBitmap.Create;
+   bsettings:=TBitmap.Create;
    Bapps:=TBitmap.Create;
    Barchive_bigger2:=TBitmap.Create;
    Bplaceshistory:=TBitmap.Create;
@@ -13424,319 +13677,27 @@ with Form_peach do
    try Bfm.LoadFromFile(thpath+graphicsfolder+'fm-theme.bmp'); except end;
    Bfm.Transparent:=True;
    ImageTheme.Picture.Bitmap:=Bfm;
-   if upcase(theme_name)<>'NOGRAPHIC-EMBEDDED' then
-   begin
-   il_dtheme_16.getbitmap(0,Bbookmarkadd);
-   il_dtheme_16.getbitmap(1,Bapps);
-   il_dtheme_16.getbitmap(2,BArchive);
-   il_dtheme_16.getbitmap(3,Bclearlayout);
-   il_dtheme_16.getbitmap(4,Bconvert);
-   il_dtheme_16.getbitmap(5,Bdelete);
-   il_dtheme_16.getbitmap(6,Bextractall);
-   il_dtheme_16.getbitmap(7,Bextractalln);
-   il_dtheme_16.getbitmap(8,Bloadlayout);
-   il_dtheme_16.getbitmap(9,Bpreview);
-   il_dtheme_16.getbitmap(10,Brun);
-   il_dtheme_16.getbitmap(11,Bsavelayout);
-   il_dtheme_16.getbitmap(12,Bwipe);
-   il_dtheme_16.getbitmap(13,Btestall);
-   il_dtheme_16.getbitmap(14,Bdvd_supported);
-   il_dtheme_16.getbitmap(15,Bfd_supported);
-   il_dtheme_16.getbitmap(16,Bhd_supported);
-   il_dtheme_16.getbitmap(17,Bram_supported);
-   il_dtheme_16.getbitmap(18,Bremote_supported);
-   il_dtheme_16.getbitmap(19,Bremovable_supported);
-   il_dtheme_16.getbitmap(20,BArchiveSupported);
-   il_dtheme_16.getbitmap(21,Baudio);
-   il_dtheme_16.getbitmap(22,Bdll);
-   il_dtheme_16.getbitmap(23,Bdb);
-   il_dtheme_16.getbitmap(24,BFileSupported);
-   il_dtheme_16.getbitmap(25,BExeSupported);
-   il_dtheme_16.getbitmap(26,Bimage);
-   il_dtheme_16.getbitmap(27,Bico);
-   il_dtheme_16.getbitmap(28,Bjpeg);
-   il_dtheme_16.getbitmap(29,Bgif);
-   il_dtheme_16.getbitmap(30,Bvector);
-   il_dtheme_16.getbitmap(31,Blink);
-   il_dtheme_16.getbitmap(32,Bmail);
-   il_dtheme_16.getbitmap(33,Bpdf);
-   il_dtheme_16.getbitmap(34,Bpresentation);
-   il_dtheme_16.getbitmap(35,Bbat);
-   il_dtheme_16.getbitmap(36,Bspreadsheet);
-   il_dtheme_16.getbitmap(37,Bsupported);
-   il_dtheme_16.getbitmap(38,Btxt);
-   il_dtheme_16.getbitmap(39,BUnsupported);
-   il_dtheme_16.getbitmap(40,Bvideo);
-   il_dtheme_16.getbitmap(41,Bweb);
-   il_dtheme_16.getbitmap(42,BFolder);
-   il_dtheme_16.getbitmap(43,Binfo);
-   il_dtheme_16.getbitmap(44,Bnav);
-   il_dtheme_16.getbitmap(45,Bkeyfile);
-   il_dtheme_16.getbitmap(46,Blocker);
-   il_dtheme_16.getbitmap(47,Blocker2);
-   il_dtheme_16.getbitmap(48,Bback);
-   il_dtheme_16.getbitmap(49,Bexpand);
-   il_dtheme_16.getbitmap(50,Bgo);
-   il_dtheme_16.getbitmap(51,Brefresh);
-   il_dtheme_16.getbitmap(52,Bsearch);
-   il_dtheme_16.getbitmap(53,Bgopath);
-   il_dtheme_16.getbitmap(54,Bresetpath);
-   il_dtheme_16.getbitmap(55,Bgoup);
-   il_dtheme_16.getbitmap(56,Bp0);
-   il_dtheme_16.getbitmap(57,Bbookmark);
-   il_dtheme_16.getbitmap(58,Bdesk);
-   il_dtheme_16.getbitmap(59,Bplaceshistory);
-   il_dtheme_16.getbitmap(60,Broot);
-   il_dtheme_16.getbitmap(61,Bsystemtools);
-   il_dtheme_16.getbitmap(62,BDefaults);
-   il_dtheme_16.getbitmap(63,Bstop);
-   il_dtheme_16.getbitmap(64,BTool_cut_small);
-   il_dtheme_16.getbitmap(65,BTool_copy_small);
-   il_dtheme_16.getbitmap(66,BTool_dup_small);
-   il_dtheme_16.getbitmap(67,Btool_properties_small);
-   il_dtheme_16.getbitmap(68,Btool_rename_small);
-   il_dtheme_16.getbitmap(69,Btool_resize_small);
-   il_dtheme_16.getbitmap(70,Btool_crop_small);
-   il_dtheme_16.getbitmap(71,BTool_rl_small);
-   il_dtheme_16.getbitmap(72,BTool_rr_small);
-   il_dtheme_16.getbitmap(73,Bbrowserdetails);
-   il_dtheme_16.getbitmap(74,Bbrowserlist);
-   il_dtheme_16.getbitmap(75,Bbrowsericons);
-   il_dtheme_16.getbitmap(76,Bbrowserdetailslarge);
-   il_dtheme_16.getbitmap(77,Bbrowserlistlarge);
-   il_dtheme_16.getbitmap(78,Bbrowsericonslarge);
-   il_dtheme_16.getbitmap(79,Bhomefolder);
-   il_dtheme_16.getbitmap(80,Bdownloadfolder);
-   il_dtheme_16.getbitmap(81,Bcloudfolder);
-   il_dtheme_16.getbitmap(82,Barc7z);
-   il_dtheme_16.getbitmap(83,Barcrar);
-   il_dtheme_16.getbitmap(84,Barczip);
-   il_dtheme_16.getbitmap(85,Barcblock);
-   il_dtheme_16.getbitmap(86,Barcdisk);
-   il_dtheme_16.getbitmap(87,Barcinstaller);
-   il_dtheme_96.getbitmap(0,Bdvd_supported96);
-   il_dtheme_96.getbitmap(1,Bfd_supported96);
-   il_dtheme_96.getbitmap(2,Bhd_supported96);
-   il_dtheme_96.getbitmap(3,Bram_supported96);
-   il_dtheme_96.getbitmap(4,Bremote_supported96);
-   il_dtheme_96.getbitmap(5,Bremovable_supported96);
-   il_dtheme_96.getbitmap(6,BArchiveSupported96);
-   il_dtheme_96.getbitmap(7,Baudio96);
-   il_dtheme_96.getbitmap(8,Bdll96);
-   il_dtheme_96.getbitmap(9,Bdb96);
-   il_dtheme_96.getbitmap(10,BFileSupported96);
-   il_dtheme_96.getbitmap(11,BExeSupported96);
-   il_dtheme_96.getbitmap(12,Bimage96);
-   il_dtheme_96.getbitmap(13,Bico96);
-   il_dtheme_96.getbitmap(14,Bjpeg96);
-   il_dtheme_96.getbitmap(15,Bgif96);
-   il_dtheme_96.getbitmap(16,Bvector96);
-   il_dtheme_96.getbitmap(17,Blink96);
-   il_dtheme_96.getbitmap(18,Bmail96);
-   il_dtheme_96.getbitmap(19,Bpdf96);
-   il_dtheme_96.getbitmap(20,Bpresentation96);
-   il_dtheme_96.getbitmap(21,Bbat96);
-   il_dtheme_96.getbitmap(22,Bspreadsheet96);
-   il_dtheme_96.getbitmap(23,Bsupported96);
-   il_dtheme_96.getbitmap(24,Btxt96);
-   il_dtheme_96.getbitmap(25,BUnsupported96);
-   il_dtheme_96.getbitmap(26,Bvideo96);
-   il_dtheme_96.getbitmap(27,Bweb96);
-   il_dtheme_96.getbitmap(28,BFolder96);
-   il_dtheme_96.getbitmap(29,Barc7z96);
-   il_dtheme_96.getbitmap(30,Barcrar96);
-   il_dtheme_96.getbitmap(31,Barczip96);
-   il_dtheme_96.getbitmap(32,Barcblock96);
-   il_dtheme_96.getbitmap(33,Barcdisk96);
-   il_dtheme_96.getbitmap(34,Barcinstaller96);
-   il_dtheme_96.getbitmap(35,Bcloudfolder96);
-   il_dtheme_96.getbitmap(36,Bdesk96);
-   il_dtheme_96.getbitmap(37,Bdownloadfolder96);
-   il_dtheme_96.getbitmap(38,bhomefolder96);
-   il_dtheme_tool32.getbitmap(0,Bdetailsfs);
-   il_dtheme_tool32.getbitmap(1,BArchive_big);
-   il_dtheme_tool32.getbitmap(2,Bconvert_big);
-   il_dtheme_tool32.getbitmap(3,Bextractall_big);
-   il_dtheme_tool32.getbitmap(4,Bextractalln_big);
-   il_dtheme_tool32.getbitmap(5,Btestall_big);
-   il_dtheme_tool32.getbitmap(6,Btool_cut);
-   il_dtheme_tool32.getbitmap(7,Btool_copy);
-   il_dtheme_tool32.getbitmap(8,Btool_paste);
-   il_dtheme_tool32.getbitmap(9,Btool_openw);
-   il_dtheme_tool32.getbitmap(10,Btool_properties);
-   il_dtheme_tool32.getbitmap(11,Btool_rename);
-   il_dtheme_tool32.getbitmap(12,Btool_delete);
-   il_dtheme_tool32.getbitmap(13,Btool_dup);
-   il_dtheme_tool32.getbitmap(14,Btool_resize);
-   il_dtheme_tool32.getbitmap(15,Btool_crop);
-   il_dtheme_tool32.getbitmap(16,BTool_rl);
-   il_dtheme_tool32.getbitmap(17,BTool_rr);
-   end;
-   if upcase(theme_name)='NOGRAPHIC-EMBEDDED' then
-   begin
-   il_nonthemed.getbitmap(6,Bbookmarkadd);
-   il_nonthemed.getbitmap(6,Bapps);
-   il_nonthemed.getbitmap(6,BArchive);
-   il_nonthemed.getbitmap(6,Bclearlayout);
-   il_nonthemed.getbitmap(6,Bconvert);
-   il_nonthemed.getbitmap(6,Bdelete);
-   il_nonthemed.getbitmap(6,Bextractall);
-   il_nonthemed.getbitmap(6,Bextractalln);
-   il_nonthemed.getbitmap(6,Bloadlayout);
-   il_nonthemed.getbitmap(6,Bpreview);
-   il_nonthemed.getbitmap(6,Brun);
-   il_nonthemed.getbitmap(6,Bsavelayout);
-   il_nonthemed.getbitmap(6,Bwipe);
-   il_nonthemed.getbitmap(6,Btestall);
-   il_nonthemed.getbitmap(6,Bdvd_supported);
-   il_nonthemed.getbitmap(6,Bfd_supported);
-   il_nonthemed.getbitmap(6,Bhd_supported);
-   il_nonthemed.getbitmap(6,Bram_supported);
-   il_nonthemed.getbitmap(6,Bremote_supported);
-   il_nonthemed.getbitmap(6,Bremovable_supported);
-   il_nonthemed.getbitmap(6,BArchiveSupported);
-   il_nonthemed.getbitmap(6,Baudio);
-   il_nonthemed.getbitmap(6,Bdll);
-   il_nonthemed.getbitmap(6,Bdb);
-   il_nonthemed.getbitmap(6,BFileSupported);
-   il_nonthemed.getbitmap(6,BExeSupported);
-   il_nonthemed.getbitmap(6,Bimage);
-   il_nonthemed.getbitmap(6,Bico);
-   il_nonthemed.getbitmap(6,Bjpeg);
-   il_nonthemed.getbitmap(6,Bgif);
-   il_nonthemed.getbitmap(6,Bvector);
-   il_nonthemed.getbitmap(6,Blink);
-   il_nonthemed.getbitmap(6,Bmail);
-   il_nonthemed.getbitmap(6,Bpdf);
-   il_nonthemed.getbitmap(6,Bpresentation);
-   il_nonthemed.getbitmap(6,Bbat);
-   il_nonthemed.getbitmap(6,Bspreadsheet);
-   il_nonthemed.getbitmap(6,Bsupported);
-   il_nonthemed.getbitmap(6,Btxt);
-   il_nonthemed.getbitmap(6,BUnsupported);
-   il_nonthemed.getbitmap(6,Bvideo);
-   il_nonthemed.getbitmap(6,Bweb);
-   il_nonthemed.getbitmap(6,BFolder);
-   il_nonthemed.getbitmap(6,Binfo);
-   il_nonthemed.getbitmap(6,Bnav);
-   il_nonthemed.getbitmap(6,Bkeyfile);
-   il_nonthemed.getbitmap(6,Blocker);
-   il_nonthemed.getbitmap(6,Blocker2);
-   il_nonthemed.getbitmap(6,Bback);
-   il_nonthemed.getbitmap(6,Bexpand);
-   il_nonthemed.getbitmap(6,Bgo);
-   il_nonthemed.getbitmap(6,Brefresh);
-   il_nonthemed.getbitmap(6,Bsearch);
-   il_nonthemed.getbitmap(6,Bgopath);
-   il_nonthemed.getbitmap(6,Bresetpath);
-   il_nonthemed.getbitmap(6,Bgoup);
-   il_nonthemed.getbitmap(6,Bp0);
-   il_nonthemed.getbitmap(6,Bbookmark);
-   il_nonthemed.getbitmap(6,Bdesk);
-   il_nonthemed.getbitmap(6,Bplaceshistory);
-   il_nonthemed.getbitmap(6,Broot);
-   il_nonthemed.getbitmap(6,Bsystemtools);
-   il_nonthemed.getbitmap(6,BDefaults);
-   il_nonthemed.getbitmap(6,Bstop);
-   il_nonthemed.getbitmap(6,BTool_cut_small);
-   il_nonthemed.getbitmap(6,BTool_copy_small);
-   il_nonthemed.getbitmap(6,BTool_dup_small);
-   il_nonthemed.getbitmap(6,Btool_properties_small);
-   il_nonthemed.getbitmap(6,Btool_rename_small);
-   il_nonthemed.getbitmap(6,Btool_resize_small);
-   il_nonthemed.getbitmap(6,Btool_crop_small);
-   il_nonthemed.getbitmap(6,BTool_rl_small);
-   il_nonthemed.getbitmap(6,BTool_rr_small);
-   il_nonthemed.getbitmap(6,Bbrowserdetails);
-   il_nonthemed.getbitmap(6,Bbrowserlist);
-   il_nonthemed.getbitmap(6,Bbrowsericons);
-   il_nonthemed.getbitmap(6,Bbrowserdetailslarge);
-   il_nonthemed.getbitmap(6,Bbrowserlistlarge);
-   il_nonthemed.getbitmap(6,Bbrowsericonslarge);
-   il_nonthemed.getbitmap(6,Bhomefolder);
-   il_nonthemed.getbitmap(6,Bdownloadfolder);
-   il_nonthemed.getbitmap(6,Bcloudfolder);
-   il_nonthemed.getbitmap(6,Barc7z);
-   il_nonthemed.getbitmap(6,Barcrar);
-   il_nonthemed.getbitmap(6,Barczip);
-   il_nonthemed.getbitmap(6,Barcblock);
-   il_nonthemed.getbitmap(6,Barcdisk);
-   il_nonthemed.getbitmap(6,Barcinstaller);
-   il_nonthemed.getbitmap(6,Bdvd_supported96);
-   il_nonthemed.getbitmap(6,Bfd_supported96);
-   il_nonthemed.getbitmap(6,Bhd_supported96);
-   il_nonthemed.getbitmap(6,Bram_supported96);
-   il_nonthemed.getbitmap(6,Bremote_supported96);
-   il_nonthemed.getbitmap(6,Bremovable_supported96);
-   il_nonthemed.getbitmap(6,BArchiveSupported96);
-   il_nonthemed.getbitmap(6,Baudio96);
-   il_nonthemed.getbitmap(6,Bdll96);
-   il_nonthemed.getbitmap(6,Bdb96);
-   il_nonthemed.getbitmap(6,BFileSupported96);
-   il_nonthemed.getbitmap(6,BExeSupported96);
-   il_nonthemed.getbitmap(6,Bimage96);
-   il_nonthemed.getbitmap(6,Bico96);
-   il_nonthemed.getbitmap(6,Bjpeg96);
-   il_nonthemed.getbitmap(6,Bgif96);
-   il_nonthemed.getbitmap(6,Bvector96);
-   il_nonthemed.getbitmap(6,Blink96);
-   il_nonthemed.getbitmap(6,Bmail96);
-   il_nonthemed.getbitmap(6,Bpdf96);
-   il_nonthemed.getbitmap(6,Bpresentation96);
-   il_nonthemed.getbitmap(6,Bbat96);
-   il_nonthemed.getbitmap(6,Bspreadsheet96);
-   il_nonthemed.getbitmap(6,Bsupported96);
-   il_nonthemed.getbitmap(6,Btxt96);
-   il_nonthemed.getbitmap(6,BUnsupported96);
-   il_nonthemed.getbitmap(6,Bvideo96);
-   il_nonthemed.getbitmap(6,Bweb96);
-   il_nonthemed.getbitmap(6,BFolder96);
-   il_nonthemed.getbitmap(6,Barc7z96);
-   il_nonthemed.getbitmap(6,Barcrar96);
-   il_nonthemed.getbitmap(6,Barczip96);
-   il_nonthemed.getbitmap(6,Barcblock96);
-   il_nonthemed.getbitmap(6,Barcdisk96);
-   il_nonthemed.getbitmap(6,Barcinstaller96);
-   il_nonthemed.getbitmap(6,Bcloudfolder96);
-   il_nonthemed.getbitmap(6,Bdesk96);
-   il_nonthemed.getbitmap(6,Bdownloadfolder96);
-   il_nonthemed.getbitmap(6,bhomefolder96);
-   il_nonthemed.getbitmap(6,Bdetailsfs);
-   il_nonthemed.getbitmap(6,BArchive_big);
-   il_nonthemed.getbitmap(6,Bconvert_big);
-   il_nonthemed.getbitmap(6,Bextractall_big);
-   il_nonthemed.getbitmap(6,Bextractalln_big);
-   il_nonthemed.getbitmap(6,Btestall_big);
-   il_nonthemed.getbitmap(6,Btool_cut);
-   il_nonthemed.getbitmap(6,Btool_copy);
-   il_nonthemed.getbitmap(6,Btool_paste);
-   il_nonthemed.getbitmap(6,Btool_openw);
-   il_nonthemed.getbitmap(6,Btool_properties);
-   il_nonthemed.getbitmap(6,Btool_rename);
-   il_nonthemed.getbitmap(6,Btool_delete);
-   il_nonthemed.getbitmap(6,Btool_dup);
-   il_nonthemed.getbitmap(6,Btool_resize);
-   il_nonthemed.getbitmap(6,Btool_crop);
-   il_nonthemed.getbitmap(6,BTool_rl);
-   il_nonthemed.getbitmap(6,BTool_rr);
-   end;
-   if (upcase(theme_name)<>'NOGRAPHIC-EMBEDDED') and (upcase(theme_name)<>'MAIN-EMBEDDED') then
+
+   if evalcolor(clWindow)>128 then loadlighticons
+   else loaddarkicons;
+
+   if ((theme_name)<>(DEFAULT_THEME)) then
    begin
    try
-   getthemedbitmap(Bnonthemed0,thpath+graphicsfolder+'16'+directoryseparator+'16-menu.png');
-   getthemedbitmap(Bnonthemed5,thpath+graphicsfolder+'16'+directoryseparator+'16-separator.png');
-   getthemedbitmap(Bnonthemed8,thpath+graphicsfolder+'16'+directoryseparator+'16-settings.png');
-   setpbitmap(Bnonthemed0,i16res);
-   setpbitmap(Bnonthemed5,i16res);
-   setpbitmap(Bnonthemed8,i16res);
-   except end;//10.3 theme update
-   try
+   getthemedbitmap(Bdetailsf,thpath+graphicsfolder+'16'+directoryseparator+'16-detailsf.png');
+   getthemedbitmap(Blistf,thpath+graphicsfolder+'16'+directoryseparator+'16-listf.png');
+   getthemedbitmap(Biconsf,thpath+graphicsfolder+'16'+directoryseparator+'16-iconsf.png');
+   getthemedbitmap(Bav,thpath+graphicsfolder+'16'+directoryseparator+'16-av.png');
+   getthemedbitmap(Bfilter,thpath+graphicsfolder+'16'+directoryseparator+'16-filter.png');
+   getthemedbitmap(Bflat,thpath+graphicsfolder+'16'+directoryseparator+'16-flat.png');
+   getthemedbitmap(Bcollapse,thpath+graphicsfolder+'16'+directoryseparator+'16-collapse.png');
+   getthemedbitmap(bmenu,thpath+graphicsfolder+'16'+directoryseparator+'16-menu.png');
+   getthemedbitmap(bseparator,thpath+graphicsfolder+'16'+directoryseparator+'16-separator.png');
+   getthemedbitmap(bsettings,thpath+graphicsfolder+'16'+directoryseparator+'16-settings.png');
    getthemedbitmap(Bcloudfolder96,thpath+graphicsfolder+'96'+directoryseparator+'96-cloud.png');
    getthemedbitmap(Bdesk96,thpath+graphicsfolder+'96'+directoryseparator+'96-desktop.png');
    getthemedbitmap(Bdownloadfolder96,thpath+graphicsfolder+'96'+directoryseparator+'96-downloads.png');
    getthemedbitmap(Bhomefolder96,thpath+graphicsfolder+'96'+directoryseparator+'96-home.png');
-   except end;//10.0 theme update
-   try
    getthemedbitmap(BArchiveSupported,thpath+graphicsfolder+'16'+directoryseparator+'16-archive.png');
    getthemedbitmap(Barc7z,thpath+graphicsfolder+'16'+directoryseparator+'16-7z.png');
    getthemedbitmap(Barcrar,thpath+graphicsfolder+'16'+directoryseparator+'16-rar.png');
@@ -13751,7 +13712,7 @@ with Form_peach do
    getthemedbitmap(Barcblock96,thpath+graphicsfolder+'96'+directoryseparator+'96-spanned.png');
    getthemedbitmap(Barcdisk96,thpath+graphicsfolder+'96'+directoryseparator+'96-diskimage.png');
    getthemedbitmap(Barcinstaller96,thpath+graphicsfolder+'96'+directoryseparator+'96-package.png');
-   except end;//9.3 theme update
+   except end;//10.4 to 9.3 theme update
    getthemedbitmap(Bhomefolder,thpath+graphicsfolder+'16'+directoryseparator+'16-home.png');
    getthemedbitmap(Bdownloadfolder,thpath+graphicsfolder+'16'+directoryseparator+'16-downloads.png');
    getthemedbitmap(Bcloudfolder,thpath+graphicsfolder+'16'+directoryseparator+'16-cloud.png');
@@ -13826,7 +13787,34 @@ with Form_peach do
    getthemedbitmap(BExeSupported96,thpath+graphicsfolder+'96'+directoryseparator+'96-file-executable.png');
    getthemedbitmap(Bbat96,thpath+graphicsfolder+'96'+directoryseparator+'96-file-script.png');
    end;
-
+   setpbitmap(Bav,i16res);
+   setpbitmap(Bfilter,i16res);
+   setpbitmap(Bflat,i16res);
+   setpbitmap(Bcollapse,i16res);
+   mAdmin.Bitmap:=Bav;
+   ctrlext.Glyph:=Bflat;
+   ctrlarc.Glyph:=Bflat;
+   Imageopenadvf.Width:=i16res;
+   Imageopenadvf.Height:=i16res;
+   Imageopenadvf.Picture.Bitmap:=Bfilter;
+   Imageopenadvf1.Width:=i16res;
+   Imageopenadvf1.Height:=i16res;
+   Imageopenadvf1.Picture.Bitmap:=Bfilter;
+   Imageopenadvf2.Width:=i16res;
+   Imageopenadvf2.Height:=i16res;
+   Imageopenadvf2.Picture.Bitmap:=Bfilter;
+   imagesp.Width:=i16res;
+   imagesp.Height:=i16res;
+   imagesp.Picture.Bitmap:=Bcollapse;
+   imagesp1.Width:=i16res;
+   imagesp1.Height:=i16res;
+   imagesp1.Picture.Bitmap:=Bcollapse;
+   setpbitmap(Bdetailsf,i16res);
+   setpbitmap(Blistf,i16res);
+   setpbitmap(Biconsf,i16res);
+   setpbitmap(bmenu,i16res);
+   setpbitmap(bseparator,i16res);
+   setpbitmap(bsettings,i16res);
    setpbitmap(Bbookmarkadd,i16res);
    setpbitmap(Bapps,i16res);
    setpbitmap(BArchive,i16res);
@@ -13900,12 +13888,6 @@ with Form_peach do
    setpbitmap(Btool_crop_small,i16res);
    setpbitmap(BTool_rl_small,i16res);
    setpbitmap(BTool_rr_small,i16res);
-   setpbitmap(Bbrowserdetails,i16res);
-   setpbitmap(Bbrowserlist,i16res);
-   setpbitmap(Bbrowsericons,i16res);
-   setpbitmap(Bbrowserdetailslarge,i16res);
-   setpbitmap(Bbrowserlistlarge,i16res);
-   setpbitmap(Bbrowsericonslarge,i16res);
    setpbitmap(Bhomefolder,i16res);
    setpbitmap(Bdownloadfolder,i16res);
    setpbitmap(Bcloudfolder,i16res);
@@ -13996,9 +13978,9 @@ with Form_peach do
    BFolder96.Canvas.FloodFill(BFolder96.Width div 2,BFolder96.Height div 2,clWindow,fsborder);}
 
    for i:=1 to 26 do devicon[i]:=Bunsupported;//show "unsupported" icon if the bookmarked unit is not mounted
-   pmstyle1.Bitmap:=Bbrowserdetailslarge;
-   pmstyle3.Bitmap:=Bbrowserlistlarge;
-   pmstyle5.Bitmap:=Bbrowsericonslarge;
+   pmstyle1.Bitmap:=Bdetailsf;
+   pmstyle3.Bitmap:=Blistf;
+   pmstyle5.Bitmap:=Biconsf;
    mlang.Bitmap:=Binfo;
    mDefaults.Bitmap:=BDefaults;
    msettings.Bitmap:=BDefaults;
@@ -14175,8 +14157,8 @@ with Form_peach do
    po_setpw.Bitmap:=Blocker2;
    menupw.Bitmap:=Blocker2;
    pmqesetpw.Bitmap:=Blocker2;
-   imageflat.Glyph:=Bnonthemed8;
-   panelnav4.Glyph:=Bnonthemed8;
+   imageflat.Glyph:=bsettings;
+   panelnav4.Glyph:=bsettings;
    imageflatadd.Glyph:=Barchive;
    imageflatconvert.Glyph:=Bconvert;
    imageflatext.Glyph:=Bextractall;
@@ -14185,38 +14167,38 @@ with Form_peach do
    imageflatren.Glyph:=Btool_rename_small;
    ImageFlattransform.Glyph:=Btool_resize_small;
    ImageFlatcrop.Glyph:=Btool_crop_small;
-   ImageFlattestmore.Glyph:=Bnonthemed0;
-   ButtonUn7za6.Glyph:=Bnonthemed0;
-   ButtonUn7za7.Glyph:=Bnonthemed0;
-   ButtonUn7za8.Glyph:=Bnonthemed0;
-   ButtonUn7za11.Glyph:=Bnonthemed0;
-   ButtonUn7za9.Glyph:=Bnonthemed0;
-   Buttoncmto.Glyph:=Bnonthemed0;
-   Buttonopenactions.Glyph:=Bnonthemed0;
-   Buttonfmactions.Glyph:=Bnonthemed0;
-   Buttonfmactions1.Glyph:=Bnonthemed0;
-   ButtonImg6.Glyph:=Bnonthemed0;
-   ButtonImgR.Glyph:=Bnonthemed0;
-   ButtonImgRes.Glyph:=Bnonthemed0;
-   Imagelistroot.Picture.Bitmap:=Bnonthemed0;
-   ButtonEditname12.Glyph:=Bnonthemed0;
-   ButtonEditname14.Glyph:=Bnonthemed0;
-   ButtonEditname8.Glyph:=Bnonthemed0;
-   ButtonEditname13.Glyph:=Bnonthemed0;
-   ButtonUn7za10.Glyph:=Bnonthemed0;
-   ButtonEditname4.Glyph:=Bnonthemed0;
-   ImageAddress0.Picture.Bitmap:=Bnonthemed5;
-   ImageAddress1.Picture.Bitmap:=Bnonthemed5;
-   ImageAddress2.Picture.Bitmap:=Bnonthemed5;
-   ImageAddress3.Picture.Bitmap:=Bnonthemed5;
-   ImageAddress4.Picture.Bitmap:=Bnonthemed5;
-   ImageAddress5.Picture.Bitmap:=Bnonthemed5;
-   ImageAddress6.Picture.Bitmap:=Bnonthemed5;
-   ImageAddress7.Picture.Bitmap:=Bnonthemed5;
-   ImageAdArchive0.Picture.Bitmap:=Bnonthemed5;
-   ImageAdArchive1.Picture.Bitmap:=Bnonthemed5;
-   ImageAdArchive2.Picture.Bitmap:=Bnonthemed5;
-   ImageAdArchive3.Picture.Bitmap:=Bnonthemed5;
+   ImageFlattestmore.Glyph:=bmenu;
+   ButtonUn7za6.Glyph:=bmenu;
+   ButtonUn7za7.Glyph:=bmenu;
+   ButtonUn7za8.Glyph:=bmenu;
+   ButtonUn7za11.Glyph:=bmenu;
+   ButtonUn7za9.Glyph:=bmenu;
+   Buttoncmto.Glyph:=bmenu;
+   Buttonopenactions.Glyph:=bmenu;
+   Buttonfmactions.Glyph:=bmenu;
+   Buttonfmactions1.Glyph:=bmenu;
+   ButtonImg6.Glyph:=bmenu;
+   ButtonImgR.Glyph:=bmenu;
+   ButtonImgRes.Glyph:=bmenu;
+   Imagelistroot.Picture.Bitmap:=bmenu;
+   ButtonEditname12.Glyph:=bmenu;
+   ButtonEditname14.Glyph:=bmenu;
+   ButtonEditname8.Glyph:=bmenu;
+   ButtonEditname13.Glyph:=bmenu;
+   ButtonUn7za10.Glyph:=bmenu;
+   ButtonEditname4.Glyph:=bmenu;
+   ImageAddress0.Picture.Bitmap:=bseparator;
+   ImageAddress1.Picture.Bitmap:=bseparator;
+   ImageAddress2.Picture.Bitmap:=bseparator;
+   ImageAddress3.Picture.Bitmap:=bseparator;
+   ImageAddress4.Picture.Bitmap:=bseparator;
+   ImageAddress5.Picture.Bitmap:=bseparator;
+   ImageAddress6.Picture.Bitmap:=bseparator;
+   ImageAddress7.Picture.Bitmap:=bseparator;
+   ImageAdArchive0.Picture.Bitmap:=bseparator;
+   ImageAdArchive1.Picture.Bitmap:=bseparator;
+   ImageAdArchive2.Picture.Bitmap:=bseparator;
+   ImageAdArchive3.Picture.Bitmap:=bseparator;
    MenuItemOpen_Flat.Bitmap:=Bexpand;
    MenuItemOpen_fwd.Bitmap:=Bgo;
    MenuItemOpen_refresh.Bitmap:=Brefresh;
@@ -14485,7 +14467,7 @@ tartime:=0;//0 windows 100 ns (default), 1 unix 1 sec, 2 linux 1 ns mapped to 3 
 sni7z:=0; //manage NT security information default off
 sns7z:=1; //manage NTFS alternate streams default on
 snh7z:=0; //do not follow hard links
-snl7z:=0; //do not follow sym links
+snl7z:=1; //do not follow sym links
 snz7z:=1; //propagate zone.identifier default on
 stl7z:=0;//set 7z / p7zip archive time from most recent file time
 ssp7z:=0;
@@ -15237,7 +15219,7 @@ if (tartime>2) then tartime:=0;
 if (sni7z>1) then sni7z:=0;
 if (sns7z>1) then sns7z:=1;
 if (snh7z>1) then snh7z:=0;
-if (snl7z>1) then snl7z:=0;
+if (snl7z>1) then snl7z:=1;
 if (snz7z>1) then snz7z:=1;
 if (stl7z>1) then stl7z:=0;
 if (ssp7z>1) then ssp7z:=0;
@@ -16563,6 +16545,15 @@ readln(conf,opacity);//opactity
 readln(conf,color1);//accent color
 readln(conf,color2);//background color, used to derivate grayed colors
 readln(conf,color3);//accent text color
+if ((theme_name)=(DEFAULT_THEME)) then
+   if evalcolor(clWindow)>128 then
+      begin
+      if color3=ColorToString(PAPPCOL) then color3:=ColorToString(PTACOL);
+      end
+   else
+      begin
+      if color3=ColorToString(PTACOL) then color3:=ColorToString(PAPPCOL);
+      end;
 readln(conf,color4);//unused
 readln(conf,color5);//text, currently unsupported
 readln(conf,s); decodebintheming(s,usealtcolor,highlighttabs,accenttoolbar,toolcentered,altaddressstyle,solidaddressstyle,alttabstyle,ensmall,contrast,decostyle);
@@ -17645,6 +17636,7 @@ readln(conf,s);
 readln(conf,s); browsertype:=strtoint(s);
 readln(conf,s); listsortcol:=strtoint(s);
 readln(conf,s); if strtoint(s)=1 then az:=true else az:=false;
+if az=true then Form_peach.StringGridlist.SortOrder:=soAscending else Form_peach.StringGridlist.SortOrder:=soDescending;
 readln(conf,s); col1size:=strtoint(s);
 readln(conf,s); col2size:=strtoint(s);
 readln(conf,s); col3size:=strtoint(s);
@@ -18535,6 +18527,7 @@ writeln(conf,'');
 writeln(conf,'[browser''s style and settings]');
 writeln(conf,inttostr(browsertype));
 writeln(conf,inttostr(listsortcol));
+if Form_peach.StringGridlist.SortOrder=soAscending then az:=true else az:=false;
 if az=true then writeln(conf,'1') else writeln(conf,'0');
 if (browsertype=0) and (Form_Peach.EditOpenIn.Caption<>txt_mypc) then
    begin
@@ -20333,7 +20326,7 @@ begin
 if theme_path='' then exit;
 if theme_path[1]='r' then theme_path:='themes'+directoryseparator+DEFAULT_THEME+directoryseparator+'theme.txt';
 getthemepath(thpath);
-if (upcase(theme_name)<>upcase(DEFAULT_THEME)) and (upcase(theme_name)<>upcase('nographic-embedded')) then
+if ((theme_name)<>(DEFAULT_THEME)) then
    begin
    assignfile(conf,(thpath+theme_path));
    filemode:=0;
@@ -20345,17 +20338,18 @@ if (upcase(theme_name)<>upcase(DEFAULT_THEME)) and (upcase(theme_name)<>upcase('
    readconf_default_colors;
    CloseFile(conf);
    end;
-if (upcase(theme_name)=upcase(DEFAULT_THEME)) then
+if ((theme_name)=(DEFAULT_THEME)) then
    begin
-   theme_name:='main-embedded';
+   theme_name:=DEFAULT_THEME;
    theme_author:='Giorgio Tani';
    theme_license:='LGPLv3';
-   graphicsfolderd:='themes'+DirectorySeparator+'main-embedded'+DirectorySeparator;
+   graphicsfolderd:='themes'+DirectorySeparator+DEFAULT_THEME+DirectorySeparator;
    dodirseparators(graphicsfolderd);
    opacityd:=100;
    color1d:=ColorToString(PAPPCOL);
    color2d:=ColorToString(clWindow);
-   color3d:=ColorToString(PTACOL);
+   if evalcolor(clWindow)>128 then color3d:=ColorToString(PTACOL)
+   else color3d:=ColorToString(PAPPCOL);
    color4d:=ColorToString(clAppWorkspace);
    color5d:=ColorToString(clWindowText);
    usealtcolord:=0;
@@ -20372,45 +20366,21 @@ if (upcase(theme_name)=upcase(DEFAULT_THEME)) then
    temperatured:=0;
    contrastd:=4;
    end;
-if (upcase(theme_name)=upcase('nographic-embedded')) then
-   begin
-   theme_name:='nographic-embedded';
-   theme_author:='Giorgio Tani';
-   theme_license:='LGPLv3';
-   graphicsfolderd:='themes'+DirectorySeparator+'nographic-embedded'+DirectorySeparator;
-   dodirseparators(graphicsfolderd);
-   opacityd:=100;
-   color1d:=ColorToString(PAPPCOL);
-   usealtcolord:=0;
-   highlighttabsd:=0;
-   accenttoolbard:=0;
-   toolcenteredd:=0;
-   altaddressstyled:=1;
-   solidaddressstyled:=0;
-   alttabstyled:=2;
-   decostyled:=0;
-   pzoomd:=100;
-   ensmalld:=0;
-   pspacingd:=6;
-   temperatured:=0;
-   contrastd:=4;
-   end;
-if upcase(theme_name)='MAIN-EMBEDDED' then Form_peach.ComboBoxTheme.ItemIndex:=0
-else
-   if upcase(theme_name)='MAC' then Form_peach.ComboBoxTheme.ItemIndex:=1
-   else
-      if upcase(theme_name)='MAIN' then Form_peach.ComboBoxTheme.ItemIndex:=2
-      else
-         if upcase(theme_name)='TEN' then Form_peach.ComboBoxTheme.ItemIndex:=3
-         else
-            if upcase(theme_name)='TUX' then Form_peach.ComboBoxTheme.ItemIndex:=4
-            else
-               Form_peach.ComboBoxTheme.ItemIndex:=5;
+
+case theme_name of
+   DEFAULT_THEME: Form_peach.ComboBoxTheme.ItemIndex:=0;
+   'mac': Form_peach.ComboBoxTheme.ItemIndex:=1;
+   'main': Form_peach.ComboBoxTheme.ItemIndex:=2;
+   'ten': Form_peach.ComboBoxTheme.ItemIndex:=3;
+   'tux': Form_peach.ComboBoxTheme.ItemIndex:=4;
+   else Form_peach.ComboBoxTheme.ItemIndex:=5;
+end;
+if theme_name=DEFAULT_THEME then Form_peach.themesave_label.enabled:=false else Form_peach.themesave_label.enabled:=true;
 end;
 
 procedure load_default_theme;
 begin
-theme_name:='main-embedded';
+theme_name:=DEFAULT_THEME;
 theme_path:='themes'+directoryseparator+DEFAULT_THEME+directoryseparator+'theme.txt';
 load_theme;
 end;
@@ -22042,12 +22012,7 @@ if Form_peach.visible=true then
    Form_peach.Caption:=s;
    if listsortcol=14 then
       begin
-      if az=true then sort_az_stringgridlist(14)
-      else
-         begin
-         sort_az_stringgridlist(14);
-         sort_za_stringgridlist(14);
-         end;
+      sort_az_stringgridlist(14);
       update_listview;
       end;
    end;
@@ -22675,7 +22640,7 @@ else
 s:=extractfilepath(theme_path);
 if s<>'' then setlength(s,length(s)-1);
 theme_name:=extractfilename(s);
-if theme_name<>'main-embedded' then
+if theme_name<>DEFAULT_THEME then
    try
    imgloaded:=false;
    load_theme;
@@ -26311,7 +26276,6 @@ if rc>1 then
       Form_peach.StringGridList.Cells[17,i]:=s;
       end;
 Form_peach.StringGridList.SortColRow(true,17);
-az:=true;
 end;
 
 procedure sort_az_stringgridlist_special(c:integer);
@@ -26331,44 +26295,6 @@ if rc>1 then
       Form_peach.StringGridList.Cells[17,i]:=s;
       end;
 Form_peach.StringGridList.SortColRow(true,17);
-end;
-
-procedure sort_za_stringgridlist(c:integer);
-var
-   s:ansistring;
-   i,rc:integer;
-begin
-//if refreshstatus<>0 then exit;
-
-if c=2 then //for column = type sort folder always on top
-   begin
-   rc:=Form_peach.StringGridList.Rowcount;
-   if rc>1 then
-      begin
-      for i:=1 to rc-1 do
-         begin
-         if Form_peach.StringGridList.Cells[2,i]=txt_list_isfolder then
-            begin
-            s:=prefixdza+Form_peach.StringGridList.Cells[c,i];//+'  '+Form_peach.StringGridList.Cells[1,i];
-            if length(s)>256 then setlength(s,256);
-            Form_peach.StringGridList.Cells[17,i]:=s;
-            end;
-         end;
-      Form_peach.StringGridList.SortColRow(true,17);
-      end;
-   end;
-
-Form_peach.StringGridTmp.ColCount:=Form_peach.StringGridList.ColCount;
-Form_peach.StringGridTmp.RowCount:=Form_peach.StringGridList.RowCount;
-rc:=Form_peach.StringGridList.Rowcount;
-if rc>1 then
-   begin
-   for i:=1 to rc-1 do Form_peach.StringGridTmp.Rows[i]:=Form_peach.StringGridList.Rows[rc-i];
-   for i:=1 to rc-1 do Form_peach.StringGridList.Rows[i]:=Form_peach.StringGridTmp.Rows[i];
-   Form_peach.StringGridList.Row:=rc-Form_peach.StringGridList.Row;
-   end;
-az:=false;
-Form_peach.StringGridTmp.Clear;
 end;
 
 procedure tempcharcodefix(var s:ansistring);
@@ -26740,7 +26666,6 @@ if (mode='browse') or (mode='flat') then
       begin
       Form_peach.StringGridList.SortColRow(true,listsortcol);
       sort_az_stringgridlist_special(listsortcol);
-      if az=false then sort_za_stringgridlist(listsortcol);
       end;
 
 if mode='silent' then
@@ -27130,7 +27055,6 @@ if (mode='browse') or (mode='flat') then
    begin
    if Form_peach.StringGridList.RowCount>1 then Form_peach.StringGridList.SortColRow(true,listsortcol);
    sort_az_stringgridlist_special(listsortcol);
-   if az=false then sort_za_stringgridlist(listsortcol);
    end;
 
 if (mode='silent') then
@@ -27289,7 +27213,6 @@ if (mode='browse') or (mode='flat') then
    begin
    if Form_peach.StringGridList.RowCount>1 then Form_peach.StringGridList.SortColRow(true,listsortcol);
    sort_az_stringgridlist_special(listsortcol);
-   if az=false then sort_za_stringgridlist(listsortcol);
    end;
 Form_peach.StringGridList.EndUpdate(true);
 end;
@@ -30632,7 +30555,7 @@ if c=15 then c:=4;
 if c>12 then c:=1;
 c:=c-1;
 if c>=0 then
-   if az=true then Form_Peach.ListView1.Column[c].Caption:=Form_Peach.ListView1.Column[c].Caption+' <'
+   if Form_peach.StringGridlist.SortOrder=soAscending then Form_Peach.ListView1.Column[c].Caption:=Form_Peach.ListView1.Column[c].Caption+' <'
    else Form_Peach.ListView1.Column[c].Caption:=Form_Peach.ListView1.Column[c].Caption+' >';
 sortstatusstring:=Form_Peach.ListView1.Column[c].Caption;
 if status0<>txt_list_browsing then
@@ -31564,9 +31487,9 @@ begin
 result:=0;
 if sizefreeint<=0 then exit;
 s:='';
-if sizefreeout>=0 then
+if sizefreeout>0 then //0 may be erroneously report in some case for poorly supported unit types
    if sizefreeint>sizefreeout then s:=txt_9_3_fsd+' ('+nicenumber(inttostr(sizefreeout),filesizebase)+')'+char($0D)+char($0A);
-if sizefreewrk>=0 then
+if sizefreewrk>0 then
    if sizefreeint>sizefreewrk then s:=txt_9_3_fsw+' ('+nicenumber(inttostr(sizefreewrk),filesizebase)+')'+char($0D)+char($0A);
 if s<>'' then
    if pMessageWarningYesNo(s+txt_9_3_continue)<>6 then result:=1; //do not continue
@@ -31647,6 +31570,11 @@ var
    i:integer;
    sout:ansistring;
 begin
+if s='' then
+   begin
+   result:='';
+   exit;
+   end;
 for i:=1 to Length(s) do sout:=sout+inttostr(ord(s[i]))+'_';
 result:=sout;
 end;
@@ -31655,6 +31583,11 @@ function strsafedec(s:ansistring):ansistring;
 var
    stch,stin,stout:ansistring;
 begin
+if s='' then
+   begin
+   result:='';
+   exit;
+   end;
 stin:=s;
 repeat
 stch:=copy(stin,1,pos('_',stin)-1);
@@ -31669,7 +31602,7 @@ procedure threadextract(vpath:ansistring);
 var
    fres,totrow,pend:integer;
    nfiles,ndirs,size:QWord;
-   cl,jobcode,outname,dragdest,relpath,prevout,fun1,fun_status1,lparam:ansistring;
+   cl,jobcode,outname,dragdest,relpath,prevout,fun1,fun_status1,lparam,stsize:ansistring;
    P:tprocessutf8;
    lpPoint:TPoint;
    haddress:THandle;
@@ -31776,8 +31709,10 @@ if fres=0 then
 
    if pipepw<>'' then lparam:=' -pdropp ' else lparam:=' -pdrop ';
 
+   try stsize:=inttostr(tsize); except stsize:='0'; end;
+
    P.CommandLine:=stringdelim(escapefilename(executable_path,desk_env)+'peazip'+EXEEXT)+
-                  lparam+fun+' '+inttostr(pforceconsole)+' '+inttostr(tsize)+' '+stringdelim(Form_peach.EditOpenIn.Text)+' '+cl;
+                  lparam+fun+' '+inttostr(pforceconsole)+' '+stsize+' '+stringdelim(Form_peach.EditOpenIn.Text)+' '+cl;
    if (dragtargetprotect=1) or (dragtargetprotect=3) then if haddress<>0 then EnableWindow(haddress,false);
    if (dragtargetprotect=2) or (dragtargetprotect=3) then if haddress<>0 then ShowWindow(haddress,6);
    P.Execute;
@@ -33032,7 +32967,6 @@ until length(s)=0;
 Form_peach.StringGridList.RowCount:=k+1;
 Form_peach.StringGridList.SortColRow(true,listsortcol);
 sort_az_stringgridlist_special(listsortcol);
-if az=false then sort_za_stringgridlist(listsortcol);
 if (lastobj='') or (lastobj=txt_mypc) then lastobj:='C:\'; //(will skip to first drive if specified drive is not found) possible customization: select by default system drive, or user selected drive, etc...
 set_lastobjpc;
 if sizetotal<>0 then i:=(sizefree*100) div sizetotal;
@@ -33236,7 +33170,6 @@ end;
 
 if Form_peach.StringGridList.RowCount>1 then Form_peach.StringGridList.SortColRow(true,listsortcol);
 sort_az_stringgridlist_special(listsortcol);
-if az=false then sort_za_stringgridlist(listsortcol);
 update_listview;
 generate_archive_breadcrumb;
 Form_Peach.ListView1.Cursor:=crDefault;
@@ -33561,7 +33494,6 @@ if Form_peach.StringGridList.RowCount=1 then Form_peach.StringGridList.RowCount:
 try
 Form_peach.StringGridList.SortColRow(true,listsortcol);
 sort_az_stringgridlist_special(listsortcol);
-if az=false then sort_za_stringgridlist(listsortcol);
 if Form_peach.StringGridList.RowCount>1 then
    begin
    Form_peach.StringGridList.Cells[16,1]:='1';
@@ -33677,7 +33609,6 @@ for i:=title_lines_ace to Form_peach.MemoList.Lines.Count-3 do
 try
 Form_peach.StringGridList.SortColRow(true,listsortcol);
 sort_az_stringgridlist_special(listsortcol);
-if az=false then sort_za_stringgridlist(listsortcol);
 if Form_peach.StringGridList.RowCount>1 then
    begin
    Form_peach.StringGridList.Cells[16,1]:='1';
@@ -33760,7 +33691,6 @@ if Form_peach.StringGridList.RowCount>1 then
    begin
    Form_peach.StringGridList.SortColRow(true,listsortcol);
    sort_az_stringgridlist_special(listsortcol);
-   if az=false then sort_za_stringgridlist(listsortcol);
    Form_peach.StringGridList.Cells[16,1]:='1';
    Form_peach.StringGridList.Row:=1;
    end;
@@ -33859,7 +33789,6 @@ if Form_peach.StringGridList.RowCount>1 then
    begin
    Form_peach.StringGridList.SortColRow(true,listsortcol);
    sort_az_stringgridlist_special(listsortcol);
-   if az=false then sort_za_stringgridlist(listsortcol);
    Form_peach.StringGridList.Cells[16,1]:='1';
    Form_peach.StringGridList.Row:=1;
    end;
@@ -34786,10 +34715,18 @@ if not(checkdirexists(s)) then
    s1:=s;
    setlength(s1,length(s1)-1);
    s1:=extractfilepath(s1);
-   if s1='\\' then listpc
-   else
+   if length(s1)=2 then
+      begin
       listingdir:=false;
+      listpc;
       exit;
+      end
+   else
+      begin
+      listingdir:=false;
+      listdir(s1,recmode,treemode);
+      exit;
+      end;
    end;
 currentcomp:='';
 statust:='';
@@ -34885,7 +34822,6 @@ if recmode=true then Form_peach.labelstatus.Caption:=status0+' '+status1+' ['+st
 if Form_peach.visible=true then Application.Processmessages;
 Form_peach.StringGridList.SortColRow(true,listsortcol);
 sort_az_stringgridlist_special(listsortcol);
-if az=false then sort_za_stringgridlist(listsortcol);
 set_lastobj;
 lastobj:=Form_peach.EditOpenIn.Text;
 if recmode=false then status0:=txt_list_browsing
@@ -35416,7 +35352,7 @@ FormPW.CheckBoxIntPw.Hint:=txt_8_0_forcetypinghelp;
 FormPW.CheckBoxShowPWField.Caption:=txt_showpw;
 FormPW.CheckBoxKeepPW.Caption:=txt_4_3_keeppw;
 FormPW.mpwman.Caption:=txt_4_3_pwman;
-FormPW.ButtonEditNamePw.Glyph:=Bnonthemed0;
+FormPW.ButtonEditNamePw.Glyph:=bmenu;
 FormPW.buttonpanel1.OKButton.Caption:=txt_2_7_ok;
 FormPW.buttonpanel1.CancelButton.Caption:=txt_2_7_cancel;
 if keeppw=1 then FormPW.CheckBoxKeepPW.State:=cbChecked else FormPW.CheckBoxKeepPW.State:=cbUnchecked;
@@ -35571,27 +35507,13 @@ unit_gwrap.pbackground:=txt_2_5_tray;
 unit_gwrap.pfromnativedrag:=false;
 unit_gwrap.Bp1:=TBitmap.Create;
 unit_gwrap.Bp1.Assign(Bp1);
-unit_gwrap.Bp2:=TBitmap.Create;
-unit_gwrap.Bp2.Assign(Bp2);
-unit_gwrap.Bp3:=TBitmap.Create;
-unit_gwrap.Bp3.Assign(Bp3);
-unit_gwrap.Bp4:=TBitmap.Create;
-unit_gwrap.Bp4.Assign(Bp4);
-unit_gwrap.Bp5:=TBitmap.Create;
-unit_gwrap.Bp5.Assign(Bp5);
-unit_gwrap.Bp6:=TBitmap.Create;
-unit_gwrap.Bp6.Assign(Bp6);
-unit_gwrap.Bp7:=TBitmap.Create;
-unit_gwrap.Bp7.Assign(Bp7);
-unit_gwrap.Bp8:=TBitmap.Create;
-unit_gwrap.Bp8.Assign(Bp8);
 unit_gwrap.Bsuccess:=TBitmap.Create;
 unit_gwrap.Bsuccess.Assign(Btestall);
 unit_gwrap.Binfo:=TBitmap.Create;
 unit_gwrap.Binfo.Assign(Binfo);
 unit_gwrap.Berror:=TBitmap.Create;
 unit_gwrap.Berror.Assign(Bstop);
-Form_gwrap.ButtonStop1.Glyph:=Bnonthemed0;
+Form_gwrap.ButtonStop1.Glyph:=Bmenu;
 Form_gwrap.MenuItem1.Bitmap:=Bclearlayout;
 Form_gwrap.MenuItem2.Bitmap:=Bdelete;
 Form_gwrap.MenuItem3.Bitmap:=Bwipe;
@@ -35619,6 +35541,7 @@ unit_gwrap.txt_7_8_dd:=txt_7_8_dd;
 unit_gwrap.txt_8_2_keep:=txt_8_2_keep;
 unit_gwrap.txt_delete:=txt_delete;
 unit_gwrap.txt_2_5_delete:=txt_2_5_delete;
+unit_gwrap.txt_10_4_moving:=txt_10_4_moving;
 {$IFDEF MSWINDOWS}Form_gwrap.MenuItem1.Visible:=true;{$ENDIF}
 {$IFDEF DARWIN}Form_gwrap.MenuItem1.Visible:=true;{$ENDIF}
 Form_gwrap.MenuItem1.Caption:=txt_4_7_recycle;
@@ -35706,7 +35629,7 @@ FormPM.ImageInfoPM1.Hint:=txt_4_3_pwmanhint;
 FormPM.pmexp.Caption:=txt_4_3_exppl;
 FormPM.pmexpenc.Caption:=txt_4_3_expple;
 FormPM.pmexpplain.Caption:=txt_4_3_expplp;
-FormPM.ctrlpm.Glyph:=Bnonthemed8;
+FormPM.ctrlpm.Glyph:=bsettings;
 loadpm;
 end;
 
@@ -38683,12 +38606,13 @@ if s1<>'' then if s1[length(s1)]=correctdelimiter(inparam) then setlength(s1,len
 if s1='' then s1:='noname';
 end;
 
-procedure set_output_folder(var out_param:ansistring; in_param:ansistring; real_extract:boolean; action:integer);
+procedure set_output_folder(var out_param:ansistring; in_param:ansistring; real_extract:boolean; action:integer; mode:ansistring);
 var
    s,s0,s1:ansistring;
    i:integer;
    out_created:boolean;
 begin
+if (mode='info') or (mode='list') or (mode='test') or (mode='delete') or (mode='preview') then exit;
 out_created:=false;
 origout:=out_param;
 if Form_peach.CheckBoxFolder.State=cbChecked then
@@ -38799,7 +38723,7 @@ else
    in_param:=stringdelim(escapefilename(Form_peach.EditOpenIn.Text,desk_env));
 //folder policy
 if mode<>'delete' then
-   if mode<>'draganddrop' then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupActionARC.ItemIndex);
+   if mode<>'draganddrop' then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupActionARC.ItemIndex,mode);
 if out_param<>'' then
    if out_param[length(out_param)]=directoryseparator then setlength(out_param,length(out_param)-1); //arc doesn't want directoryseparator as last character
 //overwrite policy
@@ -39338,7 +39262,7 @@ if Form_peach.labelstatus2.Caption= txt_2_7_ext then
 else
    in_param:=stringdelim(escapefilename(Form_peach.EditOpenIn.Text,desk_env));
 //folder policy
-set_output_folder(out_param,in_param,real_extract,0);
+set_output_folder(out_param,in_param,real_extract,0,'ext');
 if out_param<>'' then
    if out_param[length(out_param)]<>directoryseparator then out_param:=out_param+directoryseparator;
 outname:=out_param;
@@ -39521,16 +39445,16 @@ fexe:=fexe+1;
 result:=false; //only existing files raise errors
 hs:=getchash(fs);
 case hs of
- //pea 1.23
-'A40768AE1CF6078C6C3D3099D81FBDAD29C6FBF354441E7D2E774A8A34481EA1', //BSD x86_64 GTK2
-'5C24FD6D483050A1492AC2D29057F02940F3E1B0FF2015252F213C7D4BCB6157', //lin aarch64 GTK2
-'D7DC9640E9B9B12D253561B0B35374447D57D6FAD221024858835856AE8D109C', //lin x86_64 GTK2
-'9DCE5CEEDB31D5C89E8E0553E4DF4ABF776AF9C569862E40E6E41D91C0EF2510', //lin x86_64 GTK3
-'9B189733348B8A56273FF566028EBEE256A6A3ECE7128D972CCB59F8D5FCAA62', //lin x86_64 Qt6
-'8D5E3424D12E0BCAE2D388488E117F5A05D357729120082CD71C9DD2E5C39BAE', //macos aarch64
-'F667397A42628C9A2DA389E4299234E4B28AAB0BB2A09C9FF1B3010E5451DF84', //macos Intel x86_64
-'1474E1506DB26CB87B580247AC7182EC243A0634ECFB545B30A1774B1E0C812A', //win32
-'4F1FDF6F10D1973FE7768DFB076A141AE14996FB779CB911F1AB5C6CA7D1A216', //win64
+ //pea 1.24
+'99E71CDEE865D1CDDC72544F1040F3BF4820F90CE2161E171E0233C143935CDE', //BSD x86_64 GTK2
+'0BF8BC6750FF0577759A6B49990E8A38AE51249D947E14834A62CE9330DF12C4', //lin aarch64 GTK2
+'6E1136CBED7DA5354F79AD300D91794FB16D0D7061F3E772686C8DFB8D3E68AB', //lin x86_64 GTK2
+'8C5D2AAB427E5B70941CCA89BE6070CD26ABFA70F6F6591E12F0FDCAFAE44037', //lin x86_64 GTK3
+'389195BAEEBC690F9AB51B8F3C7F3E53E665390A17DDEC62A337A6682B57478C', //lin x86_64 Qt6
+'E607143FD0396D8D46DA02E65AFD2A935B8612B5A08C436F8370DCAE217F7533', //macos aarch64
+'0EB77A59F29B4328D6EE68D1BF96A7D4DAFBA8B46E20DC7CE85B80AE7E0AC25D', //macos Intel x86_64
+'802CC7062B87F998046C3F3B0624EC07E03D21AF30D9077E0CDF0AD3E9D1CCBE', //win32
+'84A6FFDB6162CAD5B42B6AB34FB8CB8685791C2E722A548AAE7B69787CF02A34', //win64
 {$IFDEF MSWINDOWS}
 '9361847CC76AC58B53D0321ABA4607E4D93F6D8C5E11B1FC054B7236C2C87BCA',//Configure PeaZip 10.3+ 32 and 64 bit
 '6D83EF85F51CDD3C5334EE67FF0C7C617C305C5F923932D47092BBF805A04850',//dragdropfilesdll.dll 32 bit
@@ -39556,7 +39480,7 @@ case hs of
 'E13A75A2936DB0E8BE3C5B72D19E0E9C6AB27BC37933490E2D847E189DBCA5EF',//unrar 5.21
 '24624A9D3786D7BA93575383EDF694505453AF59B39B0463260A75C6344D0AE7',//upx 3.95 64 bit
 '7A94B4F1D6323A758C7B0B6344036F166BFF0FD44F1C3C86F05B3688023496CB',//zpaq 7.15 64 bit
-'6B5C50DDE7062909B69B618FAE228C72090596DC254EFE498FB426F5F430A1F9',//zstd 1.5.6 64 bit
+'E86912B9DBCD3385D6E52F744A36DBDE5BD0A5E94851E39EB87023506FBA1521',//zstd 1.5.7 64 bit
 '6CC2C440FA15884D48173C8E818FBB8DE58119E0E6A4DF560191FE859AFA9CB1',//7z\7zS2.sfx
 '9630D933056A50D1B9160AB3F900A9562DE1F4AE5242E8C2FE01D408ED0E2654',//7z\7zS2con.sfx
 '1DD1615A327096181BDC5B2E3BE440DC67BD8D4536621150E26E823609832C92',//7z\7zSD.sfx
@@ -39581,7 +39505,7 @@ case hs of
 '54DDCCAE5A5E06FEC6177280C1E12CAEC61EF9B3A0C4338C6E8394234551C02B',//brotli 32 bit
 'D634CDE09D1AA1320A1D4C589D35D306F8350129FAF225B2BCA394128C2C4442',//upx 3.95 32 bit
 'A0F127A70943B0262060498C1723C795A8E2980F1ACF0C42EE8C1DAE72AE54B5',//zpaq 7.15 32 bit
-'E956C9EA78CFB8C3539F698A64F91968589DF8F1A9FE10538BA5EDA97279C89C',//zstd 1.5.6 32 bit
+'7C227B39E3E854955C9706F55DE838863D2B2BA92EB2CCC75925EE44078EA0B8',//zstd 1.5.7 32 bit
 '6BD459BD7917358B38A9645D66E05F01D07CCF076C3A9FEFD1B826DCB18DFD51',//7z\Codecs\brotli.dll 32 bit
 'A40AB5EF5C068A8A32B06363E420D112391D60329F6D3BE11F5EA75571FC3F57',//7z\Codecs\flzma2.dll 32 bit
 'EDDFDE646AC847C1944DFB359C9AEBBFE2645A6E22B7526A170F7AEE50187C1A',//7z\Codecs\lizard.dll 32 bit
@@ -39614,7 +39538,7 @@ case hs of
 '7206FA4EB8C0110EC845CE2BA6FB42FEA1BA755CC6E3FA0DD7620050D6F5A8DF',//paq8o (x86)
 'B97D182D9718FD7FD608FA2CE3375A15F479C73415B51999DCB5FEA72646F53C',//upx
 '66AFE02EBC1DB1774451904DE1A13BBB3D1C45039B84E803348B7A9FF2B3C704',//zpaq
-'49C27CD6947EA3257D4CBC728974DCE760F76FBE1FB8BD1898F2B94C1F01B31D',//zstd 1.5.6
+'82A75EA32C8B3B66083BB8C6CAED927656978C7B38E9420C13757C0BA56DFB8C',//zstd 1.5.7
 '1C4BAADFA986CF8186731C54E892F315C9D4582496C3A075324BA345619F4C36',//7z/codecs/Rar.so
 '8D0FC5658A81AA86188C9F8A94CA6ABBCDEDEE89D039274228E012BF1F3A9E41',//7z/7z.sfx
 'C29701887677ADC82AAF3F2C55432007B3228F5D05EC3B932E08BFC3ED1A7159',//7z/7z-con.sfx
@@ -39625,7 +39549,7 @@ case hs of
 //aarch64
 '2B8BD8073B0D4327D9F2B34A1BD8E2C044DF8BAAA4D5F072920EA309CCB5DFEE',//7z arrch64 24.09
 '32AA36A75D2151B6A6489E4ED735B5F133AA9DEE5D1F9332966627570D0C7A8E',//brotli aarch64
-'76636FB424483375703D77A0B7E8529EA37C9543BAC1CFAD9C841826D24E10C2'//zstd 1.5.6 aarch64
+'A7FA062F4AF7B56717758972D4CCE140EDA199CAC6A7A8A091D0FECD05950DA9'//zstd 1.5.7 aarch64
 {$ENDIF}
    : result:=true;
    end;
@@ -40218,9 +40142,9 @@ if Form_peach.labelstatus2.Caption= txt_2_7_ext then
 else
    in_param:=stringdelim(escapefilename(Form_peach.EditOpenIn.Text,desk_env));
 //folder policy
-if mode<>'draganddrop' then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction.ItemIndex)
+if mode<>'draganddrop' then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction.ItemIndex,mode)
 else
-   if nffromdrag=true then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction.ItemIndex);
+   if nffromdrag=true then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction.ItemIndex,mode);
 //overwrite policy
 case extopt7z of
    0: overwrite_policy:='-o-';//skip existing files
@@ -40480,12 +40404,12 @@ else //check path to avoid extraction in peazip's temporary path, switch out of 
 if out_param<>'' then
    if out_param[length(out_param)]<>directoryseparator then out_param:=out_param+directoryseparator;
 //folder policy
-if specialopen=false then
- if mode<>'delete' then
-  if mode<>'preview' then
-   if mode<>'draganddrop' then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction.ItemIndex)
+if (specialopen=false) and (mode<>'info') and (mode<>'list') and (mode<>'test') and (mode<>'delete') and (mode<>'preview') then
+   if mode<>'draganddrop' then
+      set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction.ItemIndex,mode)
    else
-      if nffromdrag=true then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction.ItemIndex);
+      if nffromdrag=true then
+         set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction.ItemIndex,mode);
 if (mode='ext') and (specialopen=true) then //specialopen switches to extract entire directory for some file types (exe, bat, html...)
    begin
    alt_tempstring:=Form_peach.StringGridList.Cells[12,Form_peach.StringGridList.Row];
@@ -41151,7 +41075,8 @@ if mode='preview' then
    filesetattr(ptmpdir, faHidden);
    end
 else //check path to avoid extraction in peazip's temporary path, switch out of first temporary level (by default archive's path)
-   if control_outpath(out_param)<>0 then exit;
+   if (mode<>'info') and (mode<>'list') and (mode<>'test') then
+      if control_outpath(out_param)<>0 then exit;
 
 if out_param<>'' then
    if out_param[length(out_param)]<>directoryseparator then out_param:=out_param+directoryseparator;
@@ -41161,7 +41086,7 @@ if Form_peach.labelstatus2.Caption= txt_2_7_ext then
 else
    in_param:=stringdelim(escapefilename(Form_peach.EditOpenIn.Text,desk_env));
 //folder policy
-set_output_folder(out_param,in_param,real_extract,0);
+set_output_folder(out_param,in_param,real_extract,0,mode);
 if out_param<>'' then
    if out_param[length(out_param)]<>directoryseparator then out_param:=out_param+directoryseparator;
 if Form_peach.labelstatus2.Caption= txt_2_7_ext then
@@ -41210,14 +41135,15 @@ if mode='preview' then
    filesetattr(ptmpdir, faHidden);
    end
 else //check path to avoid extraction in peazip's temporary path, switch out of first temporary level (by default archive's path)
-   if control_outpath(out_param)<>0 then exit;
+   if (mode<>'info') and (mode<>'list') and (mode<>'test') then
+      if control_outpath(out_param)<>0 then exit;
 //in_param
 if Form_peach.labelstatus2.Caption= txt_2_7_ext then
    in_param:=stringdelim(escapefilename(Form_peach.StringGrid2.Cells[8,Form_peach.StringGrid2.Row],desk_env))
 else
    in_param:=stringdelim(escapefilename(Form_peach.EditOpenIn.Text,desk_env));
 //folder policy
-set_output_folder(out_param,in_param,real_extract,0);
+set_output_folder(out_param,in_param,real_extract,0,mode);
 if out_param<>'' then
    if out_param[length(out_param)]=directoryseparator then out_param:=copy(out_param,1,length(out_param)-1);
 outname:=out_param; //PAQ will skip extraction over existing object
@@ -41376,7 +41302,8 @@ if mode='preview' then
    filesetattr(ptmpdir, faHidden);
    end
 else //check path to avoid extraction in peazip's temporary path, switch out of first temporary level (by default archive's path)
-   if control_outpath(out_param)<>0 then exit;
+   if (mode<>'info') and (mode<>'list') and (mode<>'test') then
+      if control_outpath(out_param)<>0 then exit;
 //in_param
 if Form_peach.labelstatus2.Caption= txt_2_7_ext then
    in_param:=stringdelim(escapefilename(Form_peach.StringGrid2.Cells[8,Form_peach.StringGrid2.Row],desk_env))
@@ -41389,7 +41316,7 @@ if zpaqabsolute=0 then //remove nesting
    else fstate:=false;
    Form_peach.CheckBoxFolder.State:=cbChecked;
    end;
-if mode<>'draganddrop' then set_output_folder(out_param,in_param,real_extract,0);
+if mode<>'draganddrop' then set_output_folder(out_param,in_param,real_extract,0,mode);
 if out_param<>'' then
    if out_param[length(out_param)]=directoryseparator then out_param:=copy(out_param,1,length(out_param)-1);
 if zpaqabsolute=0 then
@@ -41585,7 +41512,8 @@ if mode='preview' then
    filesetattr(ptmpdir, faHidden);
    end
 else //check path to avoid extraction in peazip's temporary path, switch out of first temporary level (by default archive's path)
-   if control_outpath(out_param)<>0 then exit;
+   if (mode<>'info') and (mode<>'list') and (mode<>'test') then
+      if control_outpath(out_param)<>0 then exit;
 
 if out_param<>'' then
    if out_param[length(out_param)] <> directoryseparator then out_param:=out_param+directoryseparator;
@@ -41595,7 +41523,7 @@ if Form_peach.labelstatus2.Caption= txt_2_7_ext then
 else
    in_param:=stringdelim(escapefilename(Form_peach.EditOpenIn.Text,desk_env));
 //folder policy
-set_output_folder(out_param,in_param,real_extract,0);
+set_output_folder(out_param,in_param,real_extract,0,mode);
 if out_param<>'' then
    if out_param[length(out_param)]<>directoryseparator then out_param:=out_param+directoryseparator;
 if Form_peach.labelstatus2.Caption= txt_2_7_ext then
@@ -41681,7 +41609,8 @@ if mode='preview' then
    filesetattr(ptmpdir, faHidden);
    end
 else //check path to avoid extraction in peazip's temporary path, switch out of first temporary level (by default archive's path)
-   if control_outpath(out_param)<>0 then exit;
+   if (mode<>'info') and (mode<>'list') and (mode<>'test') then
+      if control_outpath(out_param)<>0 then exit;
 
 if out_param<>'' then
    if out_param[length(out_param)] <> directoryseparator then out_param:=out_param+directoryseparator;
@@ -41691,7 +41620,7 @@ if Form_peach.labelstatus2.Caption= txt_2_7_ext then
 else
    in_param:=stringdelim(escapefilename(Form_peach.EditOpenIn.Text,desk_env));
 //folder policy
-set_output_folder(out_param,in_param,real_extract,0);
+set_output_folder(out_param,in_param,real_extract,0,mode);
 if out_param<>'' then
    if out_param[length(out_param)]<>directoryseparator then out_param:=out_param+directoryseparator;
 if Form_peach.labelstatus2.Caption= txt_2_7_ext then
@@ -41792,7 +41721,8 @@ if mode='preview' then
    filesetattr(ptmpdir, faHidden);
    end
 else //check path to avoid extraction in peazip's temporary path, switch out of first temporary level (by default archive's path)
-   if control_outpath(out_param)<>0 then exit;
+   if (mode<>'info') and (mode<>'list') and (mode<>'test') then
+      if control_outpath(out_param)<>0 then exit;
 
 if out_param<>'' then
    if out_param[length(out_param)] <> directoryseparator then out_param:=out_param+directoryseparator;
@@ -41803,7 +41733,7 @@ else
    s_in:=Form_peach.EditOpenIn.Text;
 in_param:=stringdelim(escapefilename(s_in,desk_env));
 //folder policy
-set_output_folder(out_param,in_param,real_extract,0);
+set_output_folder(out_param,in_param,real_extract,0,mode);
 if out_param<>'' then
    if out_param[length(out_param)]<>directoryseparator then out_param:=out_param+directoryseparator;
 if Form_peach.labelstatus2.Caption= txt_2_7_ext then
@@ -41867,7 +41797,7 @@ if Form_peach.labelstatus2.Caption= txt_2_7_ext then
 else
    in_param:=stringdelim(escapefilename(Form_peach.EditOpenIn.Text,desk_env));
 //folder policy
-if mode<>'draganddrop' then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction1.ItemIndex);
+if mode<>'draganddrop' then set_output_folder(out_param,in_param,real_extract,Form_peach.RadioGroupAction1.ItemIndex,mode);
 outname:=out_param;
 //archive function
 case mode of
@@ -43985,7 +43915,7 @@ begin
          pw:='-p'+pwtotest;
          jobcode:=formatdatetime('yyyymmdd_hh.nn.ss.ms',now)+fun;
          //folder policy
-         set_output_folder(out_param,in_param,true,0);
+         set_output_folder(out_param,in_param,true,0,'ext');
          if out_param<>'' then
             if out_param[length(out_param)]=directoryseparator then setlength(out_param,length(out_param)-1); //arc doesn't want directoryseparator as last character
          //overwrite policy
@@ -44013,7 +43943,7 @@ begin
             if out_param[length(out_param)]<>directoryseparator then out_param:=out_param+directoryseparator;
          infopt:=Form_peach.CheckBoxFolder.Checked;
          if optype='extract' then Form_peach.CheckBoxFolder.Checked:=true;
-         set_output_folder(out_param,in_param,true,0);
+         set_output_folder(out_param,in_param,true,0,'ext');
          Form_peach.CheckBoxFolder.Checked:=infopt;
          outname:=out_param;
          if out_param<>'' then
@@ -44099,7 +44029,7 @@ begin
             except
             end;
             //folder policy
-            set_output_folder(out_param,in_param,true,0);
+            set_output_folder(out_param,in_param,true,0,'ext');
             //overwrite policy
             case extopt7z of
             0: overwrite_policy:='-o-';//skip existing files
@@ -44144,7 +44074,7 @@ begin
                end;
             {$IFDEF MSWINDOWS}if snz7z=1 then desnz:='-snz' else {$ENDIF} desnz:='';
             //folder policy
-            set_output_folder(out_param,in_param,true,0);
+            set_output_folder(out_param,in_param,true,0,'ext');
             //overwrite policy
             case extopt7z of
             0: overwrite_policy:='-aos';//skip existing files
@@ -48497,7 +48427,13 @@ else
       Form_peach.visible:=False;
       ares:=archive_mainsequence(sel,aoutname,clres);
       if stayopen=true then Form_peach.visible:=True;
-      clearfile(outname);
+      if Form_peach.CheckBoxDeleteInput1.Checked=true then
+         if (setsequenceerror=true) or (unit_gwrap.perrors>0) then
+            pMessageErrorOk(inttostr(unit_gwrap.perrors)+' '+txt_6_5_seqerr+char($0D)+char($0A)+char($0D)+char($0A)+outname)
+         else
+            clearfile(outname)
+      else
+         clearfile(outname);
       using_tarbefore:=false;
       //pf:=Form_peach.cbType.ItemIndex;
       lastoutpath:=extractfilepath(Form_peach.Editname3.Text);
@@ -48524,7 +48460,7 @@ end_convert;
 
 application.ProcessMessages;
 
-if Form_peach.CheckBoxTarBefore.State=cbUnChecked then //deletion of original files, if scheduled, is performed in tarbefore procedure after TAR creation
+if Form_peach.CheckBoxTarBefore.State=cbUnChecked then //deletion of original files, if scheduled, is needed to be performed in tarbefore procedure after TAR creation
  if Form_peach.CheckBoxDeleteInput1.Checked=true then
    begin
    checklistarchive(nsel, strsel);
@@ -53009,10 +52945,13 @@ begin
    if c=3 then c:=14;
    if c=4 then c:=15;
    if c=17 then c:=12;
+
    if c=listsortcol then
-      if az=true then sort_za_stringgridlist(c)
-      else sort_az_stringgridlist(c)
-   else sort_az_stringgridlist(c);
+      if StringGridlist.SortOrder=soAscending then StringGridlist.SortOrder:=soDescending
+      else StringGridlist.SortOrder:=soAscending
+   else StringGridlist.SortOrder:=soAscending;
+   sort_az_stringgridlist(c);
+
    listsortcol:=c;
    update_listview;
    if fun='UN7Z' then generate_archive_breadcrumb;
@@ -54223,6 +54162,8 @@ var
    recinc,recincalso,recexc,useadv:boolean;
    i:integer;
 begin
+if settingadv=true then exit;
+settingadv:=true;
 if FormAdvf.CheckBoxAdvFilters.State=cbChecked then useadv:=true else useadv:=false;
 if FormAdvf.CheckBoxAdvRecurse.State=cbChecked then recinc:=true else recinc:=false;
 if FormAdvf.CheckBoxAdvRecurseAlso.State=cbChecked then recincalso:=true else recincalso:=false;
@@ -54271,10 +54212,12 @@ else
    end;
 Form_peach.cbadvf1.state:=FormAdvf.CheckBoxAdvFilters.State;
 Form_peach.cbadvf2.state:=FormAdvf.CheckBoxAdvFilters.State;
+settingadv:=false;
 end;
 
 procedure TForm_peach.cbadvf1Click(Sender: TObject);
 begin
+if settingadv=true then exit;
 try
 if Form_peach.cbadvf1.state=cbchecked then
    begin
@@ -54294,6 +54237,7 @@ end;
 
 procedure TForm_peach.cbadvf2Click(Sender: TObject);
 begin
+if settingadv=true then exit;
 try
 if Form_peach.cbadvf2.state=cbchecked then
    begin
@@ -54913,10 +54857,13 @@ begin
 {$IFDEF MSWINDOWS}if Form_peach.PanelOpen.visible=false{$ELSE}if Form_peach.PanelOpen.top<>0{$ENDIF} then exit;
 if refreshstatus<>0 then exit;
 listcol:=c;
+
 if c=listsortcol then
-   if az=true then sort_za_stringgridlist(c)
-   else sort_az_stringgridlist(c)
-else sort_az_stringgridlist(c);
+   if Form_peach.StringGridlist.SortOrder=soAscending then Form_peach.StringGridlist.SortOrder:=soDescending
+   else Form_peach.StringGridlist.SortOrder:=soAscending
+else Form_peach.StringGridlist.SortOrder:=soAscending;
+sort_az_stringgridlist(c);
+
 listsortcol:=c;
 update_listview;
 if fun='UN7Z' then generate_archive_breadcrumb;
@@ -58019,10 +57966,11 @@ procedure shownavbar;
 begin
 with Form_peach do
 begin
-if splitter2size<=ImagePassword.Width then splitter2size:=180;
+if navbarhidden=true then splitter2size:=180;
 splitter2.Left:=(splitter2size*qscale) div 100;
 splitter2.Width:=1;
 splitter2.enabled:=true;
+navbarhidden:=false;
 end;
 end;
 
@@ -58034,6 +57982,7 @@ splitter2size:=(Panelside.Width*100) div qscale;
 splitter2.Left:=(splitter2size*qscale) div 100;
 splitter2.Width:=0;
 splitter2.enabled:=true;
+navbarhidden:=true;
 end;
 end;
 
@@ -58071,7 +58020,7 @@ case i of
       psidebar:=1;
       Form_peach.msidebar.Checked:=true;
       Form_peach.mshowsidebar.Checked:=true;
-      Form_peach.Panelside.Width:=Form_peach.ImagePassword.Width;
+      Form_peach.Panelside.Width:=Form_peach.ImagePassword.Width+16;
       Form_peach.Panelside.visible:=true;
       hidenavbar;
       end;
@@ -61953,8 +61902,8 @@ begin
 case ComboBoxTheme.ItemIndex of
    0: begin
       try
-         s:=sharepath+'themes'+directoryseparator+'main-embedded'+directoryseparator+'theme.txt';
-         theme_name:='main-embedded';
+         s:=sharepath+'themes'+directoryseparator+DEFAULT_THEME+directoryseparator+'theme.txt';
+         theme_name:=DEFAULT_THEME;
          theme_path:=extractrelativepath(sharepath,s);
          load_theme;
          check_theme_failure;
@@ -62420,6 +62369,7 @@ max_cl:=32768;
 {$ELSE}
 max_cl:=131072;
 {$ENDIF} //customized later in configuration
+navbarhidden:=false;
 piperar:=false;
 intdd:=false;
 prefixd:='1';
@@ -62493,9 +62443,6 @@ subfun:='';
 listsortcol1:=9;
 listsortcol2:=9;
 listsortbook:=0;
-az1:=true;
-az2:=true;
-azbook:=true;
 setlength(clipcontent,0);
 setlength(clipcontent1,0);
 filecopying:=false;
@@ -63729,7 +63676,7 @@ if peaziptmpdir<>'' then
    if peaziptmpdir[length(peaziptmpdir)]<>DirectorySeparator then peaziptmpdir:=peaziptmpdir+DirectorySeparator;
 peaziptmpdirroot:=peaziptmpdir;
 peaziptmpdir:=peaziptmpdir+STR_PZWORKTMP+DirectorySeparator+STR_PEAZIPTMP+DirectorySeparator;
-if not(checkdirexists(peaziptmpdir)) then ForceDirectories(peaziptmpdir);
+//if not(checkdirexists(peaziptmpdir)) then ForceDirectories(peaziptmpdir); //define temp work dir before loading actual one from conf; getmulti in Win context menu entries uses this path (forces dirs so it does not need to be created before)
 peaziptmpdir_tmp:=peaziptmpdir;
 TShellTreeViewOpener(ShellTreeView1).OnDragOver := @DragOverHandler;
 {$IFNDEF MSWINDOWS}
@@ -64677,11 +64624,20 @@ begin
 {$IFNDEF MSWINDOWS}
 sleep(100); //avoid that the item under the cursor is, in some cases, automatically clicked as sson as the menu pops up
 {$ENDIF}
-ListView1.PopupMenu:=PopupOpen;
+case altmenu of
+   1: ListView1.PopupMenu:=pmnavbc;
+   2: ListView1.PopupMenu:=pmnavhistory;
+   3: ListView1.PopupMenu:=pmbreadcrumb;
+   else ListView1.PopupMenu:=PopupOpen;
+   end;
 {$IFDEF MSWINDOWS}
 if (ListView1.ViewStyle=vsReport) and (MousePos.y<25) then ListView1.PopupMenu:=PopupHeader;
 {$ELSE}
 if (ListView1.ViewStyle=vsReport) and (MousePos.y<3) then ListView1.PopupMenu:=PopupHeader;
+try
+   h.hide;
+except
+end;
 {$ENDIF}
 end;
 
@@ -66912,29 +66868,33 @@ end;
 
 procedure TForm_peach.MenuItemColBeosClick(Sender: TObject);
 begin
-color3:=ColorToString($00005060);
 color1:=ColorToString($0000C0FF);
+if evalcolor(clWindow)>128 then color3:=ColorToString($00005060)
+else color3:=ColorToString($0000C0FF);
 if openstarted=true then apply_theme;
 end;
 
 procedure TForm_peach.MenuItemColMintClick(Sender: TObject);
 begin
-color3:=ColorToString($00408068);
 color1:=ColorToString($0070B090);
+if evalcolor(clWindow)>128 then color3:=ColorToString($00408068)
+else color3:=ColorToString($0070B090);
 if openstarted=true then apply_theme;
 end;
 
 procedure TForm_peach.MenuItemColUbuntuClick(Sender: TObject);
 begin
-color3:=ColorToString($00551466);
 color1:=ColorToString($001444DD);
+if evalcolor(clWindow)>128 then color3:=ColorToString($00551466)
+else color3:=ColorToString($001444DD);
 if openstarted=true then apply_theme;
 end;
 
 procedure TForm_peach.MenuItemColWindowsClick(Sender: TObject);
 begin
-color3:=ColorToString(PTACOL);
 color1:=ColorToString(PAPPCOL);
+if evalcolor(clWindow)>128 then color3:=ColorToString(PTACOL)
+else color3:=ColorToString(PAPPCOL);
 if openstarted=true then apply_theme;
 end;
 
@@ -69143,7 +69103,7 @@ if (cbType.Text=STR_7Z) or (cbType.Text=STR_XZ) or (cbType.Text=STR_WIM) or (cbT
 mConsoleCreate.Clear;
 if CheckBoxTarBefore.State=cbChecked then
    begin
-   clprog:=clprog+cl+char($0D)+char($0A);
+   clprog:=clprog+char($0D)+char($0A)+cl+char($0D)+char($0A);
    if (scripttarpipe=1) and (fun='7Z') then
    else
       begin
@@ -70603,6 +70563,16 @@ showbar('none');
 setusebreadcrumb(2,1);
 end;
 
+procedure TForm_peach.pmspoldClick(Sender: TObject);
+begin
+showmenu:=false;
+settoolstyle(3);
+setnav(1);
+settpreset(1,0,true);
+showbar('statusbar');
+setusebreadcrumb(0,1);
+end;
+
 procedure TForm_peach.pmsppostmodernClick(Sender: TObject);
 begin
 showmenu:=false;
@@ -71264,42 +71234,12 @@ end;
 procedure sort_az_stringgrid1(c:integer);
 begin
 Form_peach.StringGrid1.SortColRow(true,c);
-az1:=true;
-Form_peach.StringGrid1.Repaint;
-end;
-
-procedure sort_za_stringgrid1;
-var
-   i,rc:integer;
-begin
-Form_peach.StringGridTmp.ColCount:=Form_peach.StringGrid1.ColCount;
-Form_peach.StringGridTmp.RowCount:=Form_peach.StringGrid1.RowCount;
-rc:=Form_peach.StringGrid1.Rowcount;
-for i:=1 to Form_peach.StringGrid1.Rowcount-1 do Form_peach.StringGridTmp.Rows[i]:=Form_peach.StringGrid1.Rows[rc-i];
-for i:=1 to Form_peach.StringGrid1.Rowcount-1 do Form_peach.StringGrid1.Rows[i]:=Form_peach.StringGridTmp.Rows[i];
-az1:=false;
-Form_peach.StringGridTmp.Clear;
 Form_peach.StringGrid1.Repaint;
 end;
 
 procedure sort_az_stringgrid2(c:integer);
 begin
 Form_peach.StringGrid2.SortColRow(true,c);
-az2:=true;
-Form_peach.StringGrid2.Repaint;
-end;
-
-procedure sort_za_stringgrid2;
-var
-   i,rc:integer;
-begin
-Form_peach.StringGridTmp.ColCount:=Form_peach.StringGrid2.ColCount;
-Form_peach.StringGridTmp.RowCount:=Form_peach.StringGrid2.RowCount;
-rc:=Form_peach.StringGrid2.Rowcount;
-for i:=1 to Form_peach.StringGrid2.Rowcount-1 do Form_peach.StringGridTmp.Rows[i]:=Form_peach.StringGrid2.Rows[rc-i];
-for i:=1 to Form_peach.StringGrid2.Rowcount-1 do Form_peach.StringGrid2.Rows[i]:=Form_peach.StringGridTmp.Rows[i];
-az2:=false;
-Form_peach.StringGridTmp.Clear;
 Form_peach.StringGrid2.Repaint;
 end;
 
@@ -71307,21 +71247,6 @@ procedure sort_az_stringgridbookmarks(c:integer);
 begin
 if c=7 then c:=10;
 Form_peach.StringGridBookmarks.SortColRow(true,c);
-azbook:=true;
-Form_peach.StringGridBookmarks.Repaint;
-end;
-
-procedure sort_za_stringgridbookmarks;
-var
-   i,rc:integer;
-begin
-Form_peach.StringGridTmp.ColCount:=Form_peach.StringGridBookmarks.ColCount;
-Form_peach.StringGridTmp.RowCount:=Form_peach.StringGridBookmarks.RowCount;
-rc:=Form_peach.StringGridBookmarks.Rowcount;
-for i:=1 to Form_peach.StringGridBookmarks.Rowcount-1 do Form_peach.StringGridTmp.Rows[i]:=Form_peach.StringGridBookmarks.Rows[rc-i];
-for i:=1 to Form_peach.StringGridBookmarks.Rowcount-1 do Form_peach.StringGridBookmarks.Rows[i]:=Form_peach.StringGridTmp.Rows[i];
-azbook:=false;
-Form_peach.StringGridTmp.Clear;
 Form_peach.StringGridBookmarks.Repaint;
 end;
 
@@ -71461,20 +71386,26 @@ begin
 {$IFDEF MSWINDOWS}if Form_peach.PanelArchiveMain.Visible=true{$ELSE}if Form_peach.PanelArchiveMain.top=0{$ENDIF} then
    begin
    Column:=11;
+
    if Column=listsortcol1 then
-      if az1=true then sort_za_stringgrid1
-      else sort_az_stringgrid1(Column)
-   else sort_az_stringgrid1(Column);
+      if Form_peach.StringGrid1.SortOrder=soAscending then Form_peach.StringGrid1.SortOrder:=soDescending
+      else Form_peach.StringGrid1.SortOrder:=soAscending
+   else Form_peach.StringGrid1.SortOrder:=soAscending;
+   sort_az_stringgrid1(Column);
+
    listsortcol1:=Column;
    Form_peach.StringGrid1.Repaint;
    end;
 {$IFDEF MSWINDOWS}if Form_peach.PanelExtract.Visible=true{$ELSE}if Form_peach.PanelExtract.top=0{$ENDIF} then
    begin
    Column:=11;
+
    if Column=listsortcol2 then
-      if az2=true then sort_za_stringgrid2
-      else sort_az_stringgrid2(Column)
-   else sort_az_stringgrid2(Column);
+      if Form_peach.StringGrid2.SortOrder=soAscending then Form_peach.StringGrid2.SortOrder:=soDescending
+      else Form_peach.StringGrid2.SortOrder:=soAscending
+   else Form_peach.StringGrid2.SortOrder:=soAscending;
+   sort_az_stringgrid2(Column);
+
    listsortcol2:=Column;
    Form_peach.StringGrid2.Repaint;
    end;
@@ -71482,10 +71413,7 @@ begin
    if Form_peach.ListView1.Visible=true then
       begin
       Column:=16;
-      if Column=listsortcol then
-         if az=true then sort_za_stringgridlist(Column)
-         else sort_az_stringgridlist(Column)
-      else sort_az_stringgridlist(Column);
+      sort_az_stringgridlist(Column);
       listsortcol:=16;
       update_listview;
       if fun='UN7Z' then generate_archive_breadcrumb;
@@ -74087,10 +74015,13 @@ Column:=Index;
    if Column=1 then Column:=9;
    if Column=3 then Column:=10;
    if Column=13 then Column:=8;
+
    if Column=listsortcol1 then
-      if az1=true then sort_za_stringgrid1
-      else sort_az_stringgrid1(Column)
-   else sort_az_stringgrid1(Column);
+      if StringGrid1.SortOrder=soAscending then StringGrid1.SortOrder:=soDescending
+      else StringGrid1.SortOrder:=soAscending
+   else StringGrid1.SortOrder:=soAscending;
+   sort_az_stringgrid1(Column);
+
    listsortcol1:=Column;
    Form_peach.StringGrid1.Repaint;
 end;
@@ -74282,10 +74213,13 @@ if (Column=0) then //force MenuItemRefresh of layout content (update number of f
 if Column=1 then Column:=9;
 if Column=3 then Column:=10;
 if Column=13 then Column:=8;
+
 if Column=listsortcol2 then
-   if az2=true then sort_za_stringgrid2
-   else sort_az_stringgrid2(Column)
-else sort_az_stringgrid2(Column);
+   if StringGrid2.SortOrder=soAscending then StringGrid2.SortOrder:=soDescending
+   else StringGrid2.SortOrder:=soAscending
+else StringGrid2.SortOrder:=soAscending;
+sort_az_stringgrid2(Column);
+
 listsortcol2:=Column;
 Form_peach.StringGrid2.Repaint;
 end;
@@ -74551,14 +74485,17 @@ Column:=Index;
 if Column=0 then exit;
 if Column>9 then exit;
 if iscolumn=false then exit;
-if Column=listsortbook then
-   if azbook=true then begin if pMessageInfoYesNo(txt_3_7_sort+' > '+Form_peach.StringGridBookmarks.Cells[Column,0])<>6 then exit; end
+{if Column=listsortbook then
+   if StringGridBookmarks.SortOrder=soAscending then begin if pMessageInfoYesNo(txt_3_7_sort+' > '+Form_peach.StringGridBookmarks.Cells[Column,0])<>6 then exit; end
    else begin if pMessageInfoYesNo(txt_3_7_sort+' < '+Form_peach.StringGridBookmarks.Cells[Column,0])<>6 then exit; end
-else begin if pMessageInfoYesNo(txt_3_7_sort+' < '+Form_peach.StringGridBookmarks.Cells[Column,0])<>6 then exit; end;
+else begin if pMessageInfoYesNo(txt_3_7_sort+' < '+Form_peach.StringGridBookmarks.Cells[Column,0])<>6 then exit; end;}
+
 if Column=listsortbook then
-   if azbook=true then sort_za_stringgridbookmarks
-   else sort_az_stringgridbookmarks(Column)
-else sort_az_stringgridbookmarks(Column);
+   if StringGridBookmarks.SortOrder=soAscending then StringGridBookmarks.SortOrder:=soDescending
+   else StringGridBookmarks.SortOrder:=soAscending
+else StringGridBookmarks.SortOrder:=soAscending;
+sort_az_stringgridbookmarks(Column);
+
 for i:=1 to StringGridBookmarks.RowCount-1 do
    begin
    StringGridBookmarks.Cells[11,i]:='0';
@@ -75381,6 +75318,12 @@ case button of
    mbExtra1: navgoback;
    mbExtra2: navgofwd;
    end;
+altmenu:=0;
+if Shift=[ssRight,ssCtrl] then altmenu:=1
+else
+   if Shift=[ssRight,ssShift] then altmenu:=2
+   else
+      if Shift=[ssRight,ssCtrl,ssShift] then altmenu:=3;
 if set_grid=false then exit;
 {$IFDEF MSWINDOWS}
 rightdropbutton:=false;
@@ -75507,6 +75450,19 @@ if nativedrag=1 then
 {$ENDIF}
 if openstarted=false then exit;
 if checkboxshowhints.Checked=false then exit;
+
+if ListView1.ViewStyle=vsReport then
+   if x>=col1size then
+      begin
+      shint:='';
+      prevshint:='';
+      try
+      h.hide;
+      except
+      end;
+      exit;
+      end;
+
 s:='';
 try
 if ListView1.GetItemAt(x,y)<>nil then i:=ListView1.GetItemAt(x,y).Index else
@@ -75518,15 +75474,15 @@ if i>-1 then
   begin
   if ListView1.Items[i].Caption<>'' then
      begin
+     s:=ListView1.Items[i].Caption;
+     if ListView1.Items[i].SubItems[0]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[1].Caption+' - '+ListView1.Items[i].SubItems[0];
      if ListView1.Items[i].SubItems[0]=txt_list_isfolder then
-        s:=ListView1.Items[i].Caption+char($0D)+char($0A)
-        +ListView1.Column[1].Caption+' - '+ListView1.Items[i].SubItems[0]+char($0D)+char($0A)
-        +ListView1.Column[4].Caption+' - '+ListView1.Items[i].SubItems[3]
+        begin
+        if ListView1.Items[i].SubItems[9]<>'' then s:=s+char($0D)+char($0A)+txt_content+' - '+ListView1.Items[i].SubItems[9];
+        end
      else
         begin
-        s:=ListView1.Items[i].Caption+char($0D)+char($0A)
-        +ListView1.Column[1].Caption+' - '+ListView1.Items[i].SubItems[0]+char($0D)+char($0A)
-        +ListView1.Column[2].Caption+' - '+ListView1.Items[i].SubItems[1];
+        if ListView1.Items[i].SubItems[1]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[2].Caption+' - '+ListView1.Items[i].SubItems[1];
         if ListView1.Items[i].SubItems[2]<>'' then
            case ListView1.Items[i].SubItems[2] of
            '.': s:=s+char($0D)+char($0A)+ListView1.Column[3].Caption+' - '+txt_6_2_container;
@@ -75534,9 +75490,17 @@ if i>-1 then
            else
               s:=s+char($0D)+char($0A)+ListView1.Column[3].Caption+' - '+ListView1.Items[i].SubItems[2];
            end;
-        if ListView1.Items[i].SubItems[8]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[10].Caption+' - '+ListView1.Items[i].SubItems[9];
-        if ListView1.Items[i].SubItems[3]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[4].Caption+' - '+ListView1.Items[i].SubItems[3];
+        if ListView1.Items[i].SubItems[9]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[10].Caption+' - '+ListView1.Items[i].SubItems[9];
         end;
+     if ListView1.Items[i].SubItems[6]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[7].Caption+' - '+ListView1.Items[i].SubItems[6];
+     if ListView1.Items[i].SubItems[8]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[9].Caption+' - '+ListView1.Items[i].SubItems[8];
+     if ListView1.Items[i].SubItems[3]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[4].Caption+' - '+ListView1.Items[i].SubItems[3];
+     if ListView1.Items[i].SubItems[4]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[5].Caption+' - '+ListView1.Items[i].SubItems[4];
+     if ListView1.Items[i].SubItems[5]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[6].Caption+' - '+ListView1.Items[i].SubItems[5];
+     if ListView1.Items[i].SubItems[7]<>'' then s:=s+char($0D)+char($0A)+ListView1.Column[8].Caption+' - '+ListView1.Items[i].SubItems[7];
+     if status0<>txt_list_browsing then
+        if ListView1.Items[i].SubItems[10]<>'' then
+           if extractfilepath(ListView1.Items[i].SubItems[10])<>'' then s:=s+char($0D)+char($0A)+txt_path+' - '+extractfilepath(ListView1.Items[i].SubItems[10]);
      end;
   end
 else
@@ -75560,7 +75524,7 @@ except
 end;
 p.x:=x;
 p.y:=y;
-p.x:=p.x+splitter2.left;
+p.x:=p.x+ListView1.left;//splitter2.left;
 p.y:=p.y+panelfilters.top+19;
 p:=clienttoscreen(p);
 r.Left := p.x; //or the absolute left position of the control

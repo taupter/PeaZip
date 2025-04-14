@@ -89,6 +89,8 @@ type
     procedure StringGridPMColRowMoved(Sender: TObject; IsColumn: Boolean;
       sIndex, tIndex: Integer);
     procedure StringGridPMDblClick(Sender: TObject);
+    procedure StringGridPMHeaderClick(Sender: TObject; IsColumn: Boolean;
+      Index: Integer);
     procedure StringGridPMKeyPress(Sender: TObject; var Key: char);
     procedure StringGridPMMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
@@ -104,7 +106,7 @@ procedure deselectlabels_pm;
 var
   FormPM: TFormPM;
   txt_edit,caption_build,delimiter,wincomspec,winver,validate_txt,local_desktop,confpath,color2:ansistring;
-  Column,Row,alttabstyle,highlighttabs:integer;
+  Column,Row,alttabstyle,highlighttabs,previndex:integer;
   desk_env:byte;
   pmfilet:text;
   txt_clear:AnsiString;
@@ -482,6 +484,21 @@ case StringGridPM.Col of
    1: editpw_pm;
    2: setdescription_pm;
    end;
+end;
+
+procedure TFormPM.StringGridPMHeaderClick(Sender: TObject; IsColumn: Boolean;
+  Index: Integer);
+var
+   i:integer;
+begin
+if IsColumn=false then exit;
+if Index=previndex then
+   if StringGridPM.SortOrder=soAscending then StringGridPM.SortOrder:=soDescending
+   else StringGridPM.SortOrder:=soAscending
+else StringGridPM.SortOrder:=soAscending;
+previndex:=Index;
+StringGridPM.SortColRow(true,Index);
+for i:=1 to (StringGridPM.RowCount-1) do StringGridPM.Cells[0,i]:=inttostr(i);
 end;
 
 procedure TFormPM.StringGridPMKeyPress(Sender: TObject; var Key: char);

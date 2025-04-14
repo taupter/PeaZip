@@ -375,6 +375,7 @@ object FormPM: TFormPM
         TitleStyle = tsNative
         OnColRowMoved = StringGridPMColRowMoved
         OnDblClick = StringGridPMDblClick
+        OnHeaderClick = StringGridPMHeaderClick
         OnKeyPress = StringGridPMKeyPress
         OnMouseDown = StringGridPMMouseDown
       end
