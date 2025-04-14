@@ -1,8 +1,8 @@
 ﻿[Setup]        
 AppId={{5A2BC38A-406C-4A5B-BF45-6991F9A05325}
 AppName=PeaZip
-AppVerName=PeaZip 10.1.0 (WIN64)
-AppVersion=10.1.0
+AppVerName=PeaZip 10.4.0 (WIN64)
+AppVersion=10.4.0
 AppPublisher=Giorgio Tani
 AppPublisherURL=https://peazip.github.io
 AppSupportURL=https://peazip.github.io
@@ -11,10 +11,10 @@ DefaultDirName={pf}\PeaZip
 DisableDirPage=no
 DefaultGroupName=PeaZip
 DisableProgramGroupPage=yes
-LicenseFile=C:\input\peazip-10.1.0.WIN64\res\share\copying\copying.txt
+LicenseFile=C:\input\peazip-10.4.0.WIN64\res\share\copying\copying.txt
 OutputDir=C:\output\
-OutputBaseFilename=peazip-10.1.0.WIN64
-SetupIconFile=C:\input\peazip-icon-green.ico
+OutputBaseFilename=peazip-10.4.0.WIN64
+SetupIconFile=peazip-icon-green.ico
 Compression=lzma2/max
 SolidCompression=yes
 ChangesAssociations=yes
@@ -29,10 +29,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\input\peazip-10.1.0.WIN64\peazip.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\input\peazip-10.1.0.WIN64\pea.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\input\peazip-10.1.0.WIN64\dragdropfilesdll.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\input\peazip-10.1.0.WIN64\res\*"; DestDir: "{app}\res"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\input\peazip-10.4.0.WIN64\peazip.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\input\peazip-10.4.0.WIN64\pea.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\input\peazip-10.4.0.WIN64\dragdropfilesdll.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\input\peazip-10.4.0.WIN64\res\*"; DestDir: "{app}\res"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [INI]
@@ -2316,7 +2316,7 @@ begin
         RegWriteStringValue(s3264, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\PeaZip.ext2a\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "-ext2multi" "%1"'));
         RegWriteStringValue(s3264, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\PeaZip.ext2test', '', 'Test archive(s)');
         RegWriteStringValue(s3264, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\PeaZip.ext2test', 'Icon', ExpandConstant('"{app}\res\share\icons\peazip_seven.icl",1'));
-        RegWriteStringValue(s3264, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\PeaZip.ext2test\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "-ext2test" "%1"'));
+        RegWriteStringValue(s3264, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\PeaZip.ext2test\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "-ext2multitest" "%1"'));
         RegWriteStringValue(s3264, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\PeaZip.analyze', '', 'CRC, hash and file tools');
         RegWriteStringValue(s3264, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\PeaZip.analyze', 'Icon', ExpandConstant('"{app}\res\share\icons\peazip_seven.icl",9'));
         RegWriteDWordValue(s3264, 'SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\PeaZip.analyze', 'CommandFlags', 32);
@@ -2480,7 +2480,7 @@ begin
        end;
     if cbcontexttest.state = cbChecked then
        begin     
-          RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\*\shell\Test archive(s)\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "-ext2test" "%1"'));
+          RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\*\shell\Test archive(s)\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "-ext2multitest" "%1"'));
           RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\*\shell\Test archive(s)', 'MultiSelectModel', 'player');
        end;
 end;
@@ -2773,7 +2773,7 @@ begin
 
   RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.pea', '', 'PeaZip.PEA');
   RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PEA', '', 'PEA archive');
-  RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PEA\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+  RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PEA\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
   RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PEA\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
 
   RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.001', '', 'PeaZip.001');
@@ -2795,7 +2795,7 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.7Z\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.xz', '', 'PeaZip.XZ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.XZ', '', 'XZ compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.XZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.XZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.XZ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //arc/wrc
@@ -2804,11 +2804,11 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip\ARC', '', 'Associated PeaZip with file type(s)');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.arc', '', 'PeaZip.ARC');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ARC', '', 'FreeARC archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ARC\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ARC\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ARC\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.wrc', '', 'PeaZip.WRC');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.WRC', '', 'FreeARC archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.WRC\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.WRC\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.WRC\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //Brotli
@@ -2817,7 +2817,7 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip\BR', '', 'Associated PeaZip with file type(s)');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.br', '', 'PeaZip.BR');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BR', '', 'Brotli compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BR\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BR\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BR\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //Zstandard
@@ -2827,12 +2827,12 @@ begin
       //ZST
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.zst', '', 'PeaZip.ZST');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ZST', '', 'Zstandard compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ZST\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ZST\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ZST\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"')); 
       //TZST
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.tzst', '', 'PeaZip.TZST');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TZST', '', 'Zstandard compressed TAR archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TZST\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TZST\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TZST\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //*PAQ group
@@ -2842,42 +2842,42 @@ begin
       //LPAQ1
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.lpaq1', '', 'PeaZip.LPAQ1');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ1', '', 'LPAQ1 compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ1\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ1\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ1\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //LPAQ5
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.lpaq5', '', 'PeaZip.LPAQ5');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ5', '', 'LPAQ5 compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ5\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ5\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ5\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //LPAQ8
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.lpaq8', '', 'PeaZip.LPAQ8');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ8', '', 'LPAQ8 compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ8\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ8\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LPAQ8\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //PAQ8F
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.paq8f', '', 'PeaZip.PAQ8F');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8F', '', 'PAQ8F archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8F\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8F\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8F\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //PAQ8JD
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.paq8jd', '', 'PeaZip.PAQ8JD');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8JD', '', 'PAQ8JD archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8JD\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8JD\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8JD\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //PAQ8L
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.paq8l', '', 'PeaZip.PAQ8L');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8L', '', 'PAQ8L archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8L\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8L\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8L\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //PAQ8O
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.paq8o', '', 'PeaZip.PAQ8O');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8O', '', 'PAQ8O archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8O\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8O\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.PAQ8O\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //ZPAQ
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.zpaq', '', 'PeaZip.ZPAQ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ZPAQ', '', 'ZPAQ archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ZPAQ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ZPAQ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ZPAQ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     if cbquad.state = cbChecked then
@@ -2886,17 +2886,17 @@ begin
       //QUAD
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.quad', '', 'PeaZip.QUAD');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.QUAD', '', 'QUAD compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.QUAD\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.QUAD\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.QUAD\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //BALZ
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.balz', '', 'PeaZip.BALZ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BALZ', '', 'BALZ compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BALZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BALZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BALZ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //BCM
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.bcm', '', 'PeaZip.BCM');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BCM', '', 'BCM compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BCM\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BCM\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BCM\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //Tar
@@ -2905,39 +2905,39 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip\TAR', '', 'Associated PeaZip with file type(s)');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.tar', '', 'PeaZip.TAR');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TAR', '', 'TAR archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TAR\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TAR\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TAR\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip\GZ', '', 'Associated PeaZip with file type(s)');
       //GZ
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.gz', '', 'PeaZip.GZ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.GZ', '', 'GZip compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.GZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.GZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.GZ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //TGZ
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.tgz', '', 'PeaZip.TGZ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TGZ', '', 'GZip compressed TAR archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TGZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TGZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TGZ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip\BZ2', '', 'Associated PeaZip with file type(s)');
       //BZ
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.bz', '', 'PeaZip.BZ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BZ', '', 'BZip2 compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BZ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //BZ2
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.bz2', '', 'PeaZip.BZ2');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BZ2', '', 'BZip2 compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BZ2\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BZ2\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.BZ2\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //TBZ
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.tbz', '', 'PeaZip.TBZ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TBZ', '', 'BZip2 compressed TAR archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TBZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TBZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TBZ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //TBZ2
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.tbz2', '', 'PeaZip.TBZ2');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TBZ2', '', 'BZip2 compressed TAR archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TBZ2\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TBZ2\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TBZ2\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //Zip
@@ -2965,7 +2965,7 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip_additional\ACE', '', 'Associated PeaZip with file type(s)');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.ACE', '', 'PeaZip.ACE');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ACE', '', 'ACE archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ACE\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ACE\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ACE\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //ARJ
@@ -2974,7 +2974,7 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip_additional\ARJ', '', 'Associated PeaZip with file type(s)');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.ARJ', '', 'PeaZip.ARJ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ARJ', '', 'ARJ archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ARJ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ARJ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.ARJ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //CAB
@@ -2983,7 +2983,7 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip_additional\CAB', '', 'Associated PeaZip with file type(s)');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.CAB', '', 'PeaZip.CAB');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.CAB', '', 'CAB archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.CAB\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.CAB\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.CAB\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //CPIO
@@ -2992,22 +2992,22 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip_additional\CPIO', '', 'Associated PeaZip with file type(s)');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.CPIO', '', 'PeaZip.CPIO');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.CPIO', '', 'CPIO archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.CPIO\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.CPIO\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.CPIO\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //Z
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.Z', '', 'PeaZip.Z');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.Z', '', 'Z compressed file');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.Z\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.Z\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.Z\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //TZ
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.tz', '', 'PeaZip.TZ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TZ', '', 'Z compressed TAR archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TZ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       //TZ
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.taz', '', 'PeaZip.TAZ');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TAZ', '', 'Z compressed TAR archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TAZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TAZ\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.TAZ\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //Disk images
@@ -3031,7 +3031,7 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip_additional\LHA', '', 'Associated PeaZip with file type(s)');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.LHA', '', 'PeaZip.LHA');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LHA', '', 'LHA archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LHA\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LHA\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LHA\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //Linux packages (DEB, RPM, PET/PUP)
@@ -3070,7 +3070,7 @@ begin
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\SOFTWARE\PeaZip_additional\LZH', '', 'Associated PeaZip with file type(s)');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\.LZH', '', 'PeaZip.LZH');
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LZH', '', 'LZH archive');
-      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LZH\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP.ICO,0'));
+      RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LZH\DefaultIcon', '', ExpandConstant('{app}\RES\SHARE\ICONS\PEAZIP_ARCHIVE.ICO,0'));
       RegWriteStringValue(sLMCU, 'SOFTWARE\Classes\PeaZip.LZH\shell\open\command', '', ExpandConstant('"{app}\PEAZIP.EXE" "%1"'));
       end;
     //Mac formats (DMG, HFS)
