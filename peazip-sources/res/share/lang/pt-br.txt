@@ -3,11 +3,11 @@ Portuguese (Brazil) - Português
 10.4
 Translated by: Havokdan
 Last rev. by: Giorgio Tani
-Last rev.: 20241209
+Last rev.: 20250327
 
 === PeaZip text group ===
 
-txt_10_4_moving: (Moving)
+txt_10_4_moving: (Movendo)
 txt_10_3_classic: Clássico
 txt_10_3_ascii: Recomenda-se usar apenas caracteres ASCII em senhas para o formato de arquivo atual (letras maiúsculas e minúsculas, números e caracteres especiais).
 txt_10_3_minimal: Mínimo
