@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Italian - Italiano
-10.3
+10.4
 Tradotto da: Giorgio Tani
 Ultima rev. di: Giorgio Tani
-Ultima rev.: 20241216
+Ultima rev.: 20250327
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Spostamento)
 txt_10_3_classic: Classico
 txt_10_3_ascii: Si consiglia di utilizzare solo caratteri ASCII nelle password per questo formato (minuscole, maiuscole, numeri e caratteri speciali).
 txt_10_3_minimal: Minimalista

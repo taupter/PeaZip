@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Français
-10.3
+10.4
 Translated by: Jean-Michel Coinus
 Last rev. by: Jean-Michel Coinus
 Last rev.: 20250222
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: Classique
 txt_10_3_ascii: Il est recommandé d'utiliser uniquement des caractères ASCII pour les mots de passe du format d'archive sélectionné (lettres, chiffres et caractères spéciaux).
 txt_10_3_minimal: Minimal

@@ -1,12 +1,13 @@
-=== PeaZip language file ===
+﻿=== PeaZip language file ===
 Български / Bulgarian
-10.3
+10.4
 Превод: Любомир Симеонов
 Корекция: Живко Жеков
 Последна корекция: 20250222
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: Classic
 txt_10_3_ascii: Препоръчва се използване само на ASCII символи в пароли за текущия формат на архива (смесени букви, цифри и специални знаци).
 txt_10_3_minimal: Minimal

@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Swedish - Svenska
-10.3
+10.4
 Översatt av: FX (old translation: Mikael Hiort af Ornäs 20140413)
 Senast rev. av: FX
 Senast rev.: 2023-12-29
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: Classic
 txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
 txt_10_3_minimal: Minimal

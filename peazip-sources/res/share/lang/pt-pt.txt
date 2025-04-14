@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Portuguese (Portugal) - Português
-10.3
+10.4
 Tradução: Hugo Carvalho, José Carlos, Sérgio Marques
 Revisão: Hugo Carvalho
 Revisto em: 20250304
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: Clássico
 txt_10_3_ascii: Para o tipo de arquivo selecionado, recomendamos a utilização exclusiva de caracteres ASCII para as palavas-passe (letras maiúsculas e minúsculas, números e caracteres especiais).
 txt_10_3_minimal: Minimal

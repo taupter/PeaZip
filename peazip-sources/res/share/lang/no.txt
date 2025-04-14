@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Norwegian - Norsk
-10.3
+10.4
 Oversatt av: Rune C. Akselsen, Arne Hanssen og Imre Kristoffer Eilertsen
 Sist rev. av: Arne Hanssen
 Sist revidert: 20250323
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: Klassisk
 txt_10_3_ascii: Det anbefales å kun bruke ASCII-tegn i passord til nåværende arkiv-format (store/små bokstaver, tall,  spesial-tegn).
 txt_10_3_minimal: Minimal

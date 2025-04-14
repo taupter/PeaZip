@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Korean - 한국어
-10.3
+10.4
 번역자: Sleepy, EhangB
 최근 교정: 20250227 by EhangB
 교정 일자: 20110531 by Sleep
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: 클래식
 txt_10_3_ascii: 현재 아카이브 형식에서는 비밀번호에 ASCII 문자만 사용하는 것이 권장됩니다 (대소문자 혼합, 숫자 및 특수 문자).
 txt_10_3_minimal: 미니멀

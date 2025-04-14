@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 German - Deutsch
-10.3
+10.4
 Translated by: Vacon
 Last rev. by: Andrain
 Last rev.: 20250224
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: Klassisch
 txt_10_3_ascii: Es wird empfohlen, in Passwörtern für das aktuelle Archivformat nur ASCII-Zeichen zu verwenden (Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen).
 txt_10_3_minimal: Minimalistisch

@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 English (United Kingdom)
-10.3
+10.4
 Translated by: Robert Readman
 Last rev. by: Chris Brooker
 Last rev.: 20241106
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: Classic
 txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
 txt_10_3_minimal: Minimal

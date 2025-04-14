@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Català
-10.3
+10.4
 Traduït per: Marc Roca Musach
 Última revisió per: Marc Roca Musach
 Última revisió el: 20230424
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: Classic
 txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
 txt_10_3_minimal: Minimal

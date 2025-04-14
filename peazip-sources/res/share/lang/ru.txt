@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Русский
-10.3
+10.4
 Перевод: Rytikov Slava, Dmitry Tsvetkov, xoxmodav, ViktorOn , Aleksandr (yupiter43@gmail.com)
 Посл. пров.: ViktorOn
 Посл. ред.: 25.02.2025
 
 === PeaZip text group ===
 
+txt_10_4_moving: (Moving)
 txt_10_3_classic: Классический
 txt_10_3_ascii: Рекомендуется использовать только ASCII-символы в паролях для текущего формата архива (буквы в верхнем и нижнем регистре, цифры и спецсимволы).
 txt_10_3_minimal: Минималистичный
