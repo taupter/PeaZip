@@ -3,11 +3,11 @@ Français
 10.4
 Traduit par: Drake4478
 Dernière version par: Drake4478
-Date du: 22.02.2025
+Date du: 14.04.2025
 
 === PeaZip text group ===
 
-txt_10_4_moving: (Moving)
+txt_10_4_moving: (Déplacer)
 txt_10_3_classic: Classic
 txt_10_3_ascii: Il est recommandé d’utiliser uniquement des caractères ASCII dans les mots de passe pour le format d’archive actuel (lettres majuscules, chiffres et caractères spéciaux).
 txt_10_3_minimal: Minimal
