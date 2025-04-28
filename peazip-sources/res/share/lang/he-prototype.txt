@@ -1,112 +1,112 @@
 ﻿=== PeaZip language file ===
 English
 10.4
-Translated by: user-contributed
+Translated by: Giorgio Tani
 Last rev. by: Giorgio Tani
-Last rev.: 20191107
+Last rev.: 20250853
 
 === PeaZip text group ===
 
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
-txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
-txt_9_3_continue: Continue anyway?
-txt_9_3_contrast: Contrast
-txt_9_3_fsd: Free space on destination may not be enough
-txt_9_3_fsw: Free space on temporary work path may not be enough
-txt_9_3_mrar: Manually set RAR binary
-txt_9_3_canedit: This archive type can be edited
-txt_9_3_canforce: This archive type can be edited (forced)
-txt_9_3_cannotedit: This archive type cannot be edited
-txt_9_2_7za: 7z / p7zip alias
-txt_9_2_changelog: Change log
-txt_9_2_tfaq: Check for Translations
-txt_9_2_compact: Compact
-txt_9_2_swt: Swap Tool / Address bar
-txt_9_2_tos: TOS, Privacy
-txt_9_2_doc: Verify documentation, Issue Tracker...
-txt_9_2_updates: Verify updates, binaries, Plugins...
-txt_9_1_7zs: 7z / p7zip syntax level
-txt_9_1_ac: Archive conversion scripts allow user's interaction
-txt_9_1_closeall: Close all
-txt_9_1_enlargeicons: Enlarge file browser icons
-txt_9_1_ef: Exclude empty folders from archiving and extraction operations (7z / p7zip)
-txt_9_1_nw: Open in a new window
-txt_9_1_qdup: Use quick deduplication routine
-txt_9_0_autoexttar: Auto extract TAR archive from compressed TAR.* files
-txt_9_0_accesstime: Do not change last access time
-txt_9_0_mem: Maximum memory usage
-txt_9_0_showmainmenu: Open Main menu
-txt_9_0_navmenu: Open Navigation menu
-txt_9_0_plugind: Open binaries and Plugin directory
-txt_9_0_df: Sort dirs before files
-txt_9_0_hl: Store hard links as links
-txt_9_0_sl: Store symbolic links as links
-txt_9_0_tnav: Toggle side bar, treeview, none
-txt_8_9_empty: Archive seems empty
-txt_8_9_disp: Displaying archive content
-txt_8_9_parsing: Parsing archive content
-txt_8_9_stoptest: Stop to inspect report for error, list, test, auto-test
-txt_8_9_ttb: Toggle tool bar
-txt_8_8_ca: Accent color
-txt_8_8_btn: Button
-txt_8_8_cb: Button color
-txt_8_8_centered: Centered buttons
-txt_8_8_light: Light
-txt_8_8_lnk: Link
-txt_8_8_intnote: Please note that "Interactive extraction" option (in Options > Settings > Archive manager) is ignored for composing the command line in Console tab.
-txt_8_8_snz: Propagate Zone.Identifier stream (Windows)
-txt_8_8_sm: Small icons size
-txt_8_8_solcol: Solid bar
-txt_8_8_snoi: Store owner/group ids (TAR, Linux)
-txt_8_8_snon: Store owner/group names (TAR, Linux)
-txt_8_8_tab: Tab
-txt_8_8_altt: Tabs style
-txt_8_8_autotest: Test archives after creation, if supported by the format
-txt_8_8_cw: Window color
+txt_10_4_moving: (העברה)
+txt_10_3_classic: קלאסי
+txt_10_3_ascii: מומלץ להשתמש רק בתווי ASCII בסיסמאות עבור פורמט הארכיון הנוכחי (אותיות רישיות, מספרים ותווים מיוחדים מעורבים).
+txt_10_3_minimal: מינימלי
+txt_10_3_m: מודרני
+txt_10_3_pm: פוסט מודרני
+txt_10_3_aw: פתרון עוקף: סמן "אלץ הקלדת סיסמה באופן אינטראקטיבי" בהנחיית הסיסמה, או הגדר מצב מסוף עבור קבצים בינאריים בקצה האחורי.
+txt_10_2_savecopy: שמור עותק
+txt_10_1_full: מלא
+txt_10_1_kdfw: עומס עבודה של KDF
+txt_10_1_under: עם קו תחתון
+txt_10_0_exptrash: חקור את האשפה
+txt_10_0_ptarzst: הדחיסה המהירה ביותר, TAR.ZST
+txt_10_0_ptarxz: דחיסה גבוהה, TAR.XZ
+txt_10_0_ptargz: דחיסה בינונית, TAR.GZ
+txt_10_0_comp: פורמטי דחיסה טהורים מקבלים רק קובץ בודד כקלט. המרת ארכיון לפורמטים אלה תיכשל אם המקור מכיל מספר קבצים או תיקיות, שלא ניתן לקבוע מראש.
+txt_10_0_save: להציל
+txt_10_0_tp: תצוגה מקדימה של טקסט
+txt_9_9_uac: המשתמש הנוכחי לא יכול לכתוב לנתיב הפלט הזה. האם אתה רוצה להפעיל את PeaZip עם גובה UAC?
+txt_9_9_kdf: סיבובי KDF
+txt_9_9_utc: הצג חותמות זמן בתור UTC
+txt_9_8_alwaysflat: פתח תמיד ארכיונים בתצוגה שטוחה
+txt_9_8_fnew: חלץ כאן (בתיקיה חדשה)
+txt_9_8_fsmart: חלץ כאן (תיקיה חדשה וחכמה)
+txt_9_7_tarpipe: 7z / p7zip השתמש בצינור
+txt_9_7_smartsorting: מיון שמות קבצים חכם
+txt_9_6_centered: מרוכז
+txt_9_6_cside: בר צד קומפקטי
+txt_9_6_loadpconfirm: האם אתה רוצה לטעון את הפרופיל הזה? כל הנתונים של הפרופיל הנוכחי יוחלפו, כולל סקריפטים שמורים ומנהל הסיסמאות.
+txt_9_6_loadp: טען פרופיל
+txt_9_6_saveppw: אופציונלי: להגן על פרופיל זה באמצעות סיסמה / קובץ מפתח?
+txt_9_6_savepoverwrite: להחליף פרופיל קיים? כל הנתונים של הפרופיל הקיים יוחלפו, כולל סקריפטים שמורים ומנהל הסיסמאות.
+txt_9_6_savep: שמור פרופיל
+txt_9_6_scside: הצג סרגל צד קומפקטי
+txt_9_5_all: כל
+txt_9_5_precond: ניתוח מראש אם זוהו שגיאות
+txt_9_5_largea: ניתוח מראש של ארכיונים גדולים
+txt_9_5_mediuma: ניתוח מראש של ארכיונים בינוניים
+txt_9_5_smalla: ניתוח מראש של ארכיונים קטנים
+txt_9_5_reopentab: פתח מחדש את הכרטיסייה האחרונה
+txt_9_5_savetabs: שמור כרטיסיות
+txt_9_5_sb: השתמש בבינאריים בנתיבי מערכת
+txt_9_4_r: לקרוא
+txt_9_4_rw: לקרוא/לכתוב
+txt_9_4_savecomment: שמור תגובה
+txt_9_4_hintcomment: הקלד או הדבק הערה, טען או גרור לכאן קובץ הערה.
+txt_9_3_continue: להמשיך בכל זאת?
+txt_9_3_contrast: להשוות
+txt_9_3_fsd: מקום פנוי ביעד אולי לא יספיק
+txt_9_3_fsw: מקום פנוי בנתיב עבודה זמני עשוי שלא להספיק
+txt_9_3_mrar: הגדר ידנית RAR בינארי
+txt_9_3_canedit: ניתן לערוך סוג ארכיון זה
+txt_9_3_canforce: ניתן לערוך את סוג הארכיון הזה (בכוח)
+txt_9_3_cannotedit: לא ניתן לערוך סוג ארכיון זה
+txt_9_2_7za: כינוי 7z / p7zip
+txt_9_2_changelog: יומן שינוי
+txt_9_2_tfaq: בדוק אם יש תרגומים
+txt_9_2_compact: קומפקטי
+txt_9_2_swt: סרגל הכרטיסיות / שורת הכתובת החלפה
+txt_9_2_tos: TOS, פרטיות
+txt_9_2_doc: אמת תיעוד, מעקב אחר בעיות...
+txt_9_2_updates: אמת עדכונים, קבצים בינאריים, תוספים...
+txt_9_1_7zs: רמת תחביר 7z / p7zip
+txt_9_1_ac: סקריפטים של המרות בארכיון מאפשרים אינטראקציה של המשתמש
+txt_9_1_closeall: סגור הכל
+txt_9_1_enlargeicons: הגדל את סמלי דפדפן הקבצים
+txt_9_1_ef: אל תכלול תיקיות ריקות מפעולות ארכיון וחילוץ (7z / p7zip)
+txt_9_1_nw: פתח בחלון חדש
+txt_9_1_qdup: השתמש בשגרת מניעת כפילות מהירה
+txt_9_0_autoexttar: חילוץ אוטומטי של ארכיון TAR מקבצי TAR.* דחוסים
+txt_9_0_accesstime: אל תשנה את זמן הגישה האחרון
+txt_9_0_mem: שימוש מקסימלי בזיכרון
+txt_9_0_showmainmenu: פתח את התפריט הראשי
+txt_9_0_navmenu: פתח את תפריט הניווט
+txt_9_0_plugind: פתח את הקבצים הבינאריים ואת ספריית הפלאגין
+txt_9_0_df: מיין dirs לפני קבצים
+txt_9_0_hl: אחסן קישורים קשיחים כקישורים
+txt_9_0_sl: אחסן קישורים סמליים כקישורים
+txt_9_0_tnav: החלף סרגל צד, תצוגת עץ, אין
+txt_8_9_empty: הארכיון נראה ריק
+txt_8_9_disp: הצגת תוכן ארכיון
+txt_8_9_parsing: ניתוח תוכן ארכיון
+txt_8_9_stoptest: עצור כדי לבדוק את הדוח עבור שגיאות, רשימה, בדיקה, בדיקה אוטומטית
+txt_8_9_ttb: החלף את סרגל הכלים
+txt_8_8_ca: צבע מבטא
+txt_8_8_btn: לחצן
+txt_8_8_cb: צבע כפתור
+txt_8_8_centered: כפתורים ממורכזים
+txt_8_8_light: אור
+txt_8_8_lnk: לקשר
+txt_8_8_intnote: שימו לב שמתעלמים מהאפשרות "חלץ ואז העבר" (באפשרויות > הגדרות > מנהל ארכיון) לצורך חיבור שורת הפקודה בלשונית מסוף.
+txt_8_8_snz: זרם הפצת Zone.Identifier (Windows)
+txt_8_8_sm: גודל סמלים קטנים
+txt_8_8_solcol: סרגל פירורי לחם
+txt_8_8_snoi: מזהי בעלים/קבוצה של חנות (TAR, Linux)
+txt_8_8_snon: שמות בעלי חנות/קבוצות (TAR, Linux)
+txt_8_8_tab: כרטיסייה
+txt_8_8_altt: סגנון כרטיסיות
+txt_8_8_autotest: בדוק ארכיונים לאחר היצירה, אם נתמך על ידי הפורמט
+txt_8_8_cw: צבע חלון
 txt_8_7_csvhelp: "," international standard, ";" common in Latin locales
 txt_8_7_after: After archiving / extraction
 txt_8_7_bintest: binaries tested.
@@ -723,7 +723,7 @@ txt_slowermem: (slower, more memory)
 txt_store: (store, fastest)
 txt_newfolder: (in new folder)
 txt_7z_exitcodeunknown: : Unknown error in task
-txt_list_isfolder:  [folder]
+txt_list_isfolder: [folder]
 txt_none: <none>
 txt_fd: 1.44 MB Floppy Disk
 txt_7z_exitcode1: 1: אזהרה: non fatal error(s); i.e. some files missing or locked
@@ -1420,18 +1420,18 @@ Options > Theme allows to change application’s icons and appearance
 Options > System integration starts a procedure to configure file associations, context menu and SendTo menu entries (on Windows)
 Organize menu contains entry to customize, enable or disable browser’s features, like toolbar, address bar, navigation bar, etc
 
-F1 	help
-F2 	rename file(s) / Ctrl+F2 copy selected to / Shift+F2 move selected to
-F3	search (recursivity option is remembered) / Ctrl+F3 start as non recursive (search here) / Shift+F3 recursive / Alt+F3 system search
-F4 	show navigation popup menu / Ctrl+Shift+F4 browse computer root / Ctrl+F4 browse desktop / Shift+F4 browse home
-F5 	refresh
-F6 	toggle browse/flat view
-F7 	add to bookmarks / Ctrl+F7 open in a new instance of PeaZip / Shift+F7 open command prompt in selected path / Alt+F7 explore selected path
-F8 	browse first item in bookmarks list (Ctrl, second, Shift, third)
-F9 	set password/keyfile / Shift+F9 password manager / Ctrl+F9 create keyfile or random password / Ctrl+Shift+F9 set advanced filters
-F10 	menu / Ctrl+F10 run as different user / Alt+F10 run as administrator (Windows Vista and newer systems)
-F11 	toggle full screen mode / Ctrl+F11 immersive
-F12 	extract all to...
+F1 help
+F2 rename file(s) / Ctrl+F2 copy selected to / Shift+F2 move selected to
+F3 search (recursivity option is remembered) / Ctrl+F3 start as non recursive (search here) / Shift+F3 recursive / Alt+F3 system search
+F4 show navigation popup menu / Ctrl+Shift+F4 browse computer root / Ctrl+F4 browse desktop / Shift+F4 browse home
+F5 refresh
+F6 toggle browse/flat view
+F7 add to bookmarks / Ctrl+F7 open in a new instance of PeaZip / Shift+F7 open command prompt in selected path / Alt+F7 explore selected path
+F8 browse first item in bookmarks list (Ctrl, second, Shift, third)
+F9 set password/keyfile / Shift+F9 password manager / Ctrl+F9 create keyfile or random password / Ctrl+Shift+F9 set advanced filters
+F10 menu / Ctrl+F10 run as different user / Alt+F10 run as administrator (Windows Vista and newer systems)
+F11 toggle full screen mode / Ctrl+F11 immersive
+F12 extract all to...
 
 ABOUT PEAZIP
 
