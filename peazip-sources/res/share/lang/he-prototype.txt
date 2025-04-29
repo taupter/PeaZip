@@ -108,1142 +108,1142 @@ txt_8_8_altt: סגנון כרטיסיות
 txt_8_8_autotest: בדוק ארכיונים לאחר היצירה, אם נתמך על ידי הפורמט
 txt_8_8_cw: צבע חלון
 txt_8_7_csvhelp: "," international standard, ";" common in Latin locales
-txt_8_7_after: After archiving / extraction
-txt_8_7_bintest: binaries tested.
-txt_8_7_csv: CSV separator
-txt_8_7_hok: Hash of binaries used by PeaZip match with expected values
-txt_8_7_mo: Set archive manager options
-txt_8_7_showhm: Show file browser Header menu
-txt_8_7_showsearchbar: Show search bar
-txt_8_7_showsm: Show Style menu
-txt_8_7_hnotok: Some hash of binaries used by PeaZip do not match with expected values:
-txt_8_7_verifybin: Verify hash of binaries
-txt_8_6_clear: "Clear" option removes temp edited files, otherwise available for further editing.
-txt_8_6_noclear: Discard all changes without updating the archive
-txt_8_6_nosimple: Do not update archive, keep temp edited files for further editing
-txt_8_6_immediate: Immediate execution
-txt_8_6_yessimple: Update archive, keep temp edited files for further editing
-txt_8_5_advbrowser: Apply filters to archive browser
-txt_8_5_detailslarge: Details, large
-txt_8_5_intext: Extract to temp work path then move to output (ask before overwriting)
-txt_8_5_listlarge: List, large
-txt_8_5_loadlayout: Load layout at startup
-txt_8_5_samplescripts: Sample scripts
-txt_8_4_keepopenerrorslist: Stop to inspect report for error, list
-txt_8_3_mbubin: Binary
-txt_8_3_cw: Change working directory? This will reset temporary work files and restart the application.
-txt_8_3_temperature: Color temperature
-txt_8_3_mbudec: Decimal
-txt_8_3_htab: Highlight tabs
-txt_8_3_maxarg: Maximum length of arguments
-txt_8_3_mbu: Multiple-byte unit
-txt_8_3_prefalgo: Preferred algorithms
-txt_8_3_skipdel: Skip deletion of locked temp files (use reset to delete on demand)
-txt_8_3_lw: Some files in working directory are locked and cannot be removed automatically
-txt_8_3_noupx: This binary cannot be compressed (may be already compressed)
-txt_8_2_slower: (slower)
-txt_8_2_df: 7z / p7zip display content of folders
-txt_8_2_vreport: 7z / p7zip non-verbose report
-txt_8_2_ta: Accessed
-txt_8_2_tc: Created
-txt_8_2_keep: Keep files
-txt_8_2_tm: Modified
-txt_8_2_skipet: Skip testing for encryption
-txt_8_2_alltimes: Store all timestamps
-txt_8_2_supportedby: Supported by
-txt_8_1_preparse: Always pre-parse archives
-txt_8_1_bo: Browser optimization
-txt_8_1_bop: Browser optimization options can be set from Options > Settings, General tab, in order to allow browser to display archives containing a very large number of items.
-txt_8_1_nopreparse: Do not pre-parse archives
-txt_8_1_ed: error(s) detected.
-txt_8_1_togglearc: Listing flat view of archive content may take long time, continue anyway?
-txt_8_1_preparsehint: Optimize performances limiting pre-parsing of large archives. Pre-parsing is meant to detect in advance possible issues in archive content.
-txt_8_1_slow: Slow
-txt_8_1_vslow: Very slow
-txt_8_1_volumes: volumes
-txt_8_0_altcol: Alternate grid color
-txt_8_0_forcebrowse: Browse non-canonical archive types (containers, disk images, installers,...)
-txt_8_0_commonalgo: Common algorithms
-txt_8_0_forceconvert: Convert non-canonical archive types
-txt_8_0_defaultactionhint: Default action double-clicking a file associated with PeaZip from the system
-txt_8_0_defaultaction: Default action on start-up
-txt_8_0_enableextand: Enable "Extract and open with" submenu
-txt_8_0_forcetyping: Force typing passwords interactively
-txt_8_0_setpwopt: Set password / keyfile options
-txt_8_0_forcetypinghelp: Will run backend binaries in console, cannot browse archives with encrypted filenames. Allows to create scripts that will not run unattended but rather ask user interactively for password.
-txt_7_9_spacing: Spacing
-txt_7_9_zooming: Zooming
-txt_7_8_changelocalization: Change PeaZip language
-txt_7_8_custext: Custom extension
-txt_7_8_destexistfile: Destination already contains processed files. Replace files with same name?
-txt_7_8_dd: Drag and Drop
-txt_7_8_priorityhigh: High
-txt_7_8_priorityidle: Idle
-txt_7_8_rel: Interactive extraction
-txt_7_8_prioritynormal: Normal
-txt_7_8_priorityrealtime: Real time
-txt_7_8_requirerestart: [requires restarting PeaZip]
-txt_7_8_tpriority: Tasks priority
-txt_7_8_update: Update
-txt_7_7_noneall: None (no preview, no Drag And Drop extraction)
-txt_7_7_nonetemp: None, User's temp if necessary
-txt_7_7_outtemp: Output, preview in User's temp
-txt_7_7_sys7zreq: Requires p7zip-full or equivalent to be installed
-txt_7_7_tw: Temporary work folder for archive creation, editing, preview and Drag And Drop extraction.
-txt_7_7_sys7z: Use system 7z in Linux
-txt_7_6_zipenc: 7z/p7zip ZIP filenames encoding
-txt_7_6_color: Color
-txt_7_6_custenc: Custom code page
-txt_7_6_dark: Dark
-txt_7_6_tno: Do not sync archive tree
-txt_7_6_forcelocalenc: Force local
-txt_7_6_forceutf8enc: Force UTF-8
-txt_7_6_cpnote: If the chosen custom code page is unsupported, tasks will always end in error (most likely memory allocation error). In case that happens, change code page or reset the application.
-txt_7_6_defaultenc: Local, UTF-8 for extra symbols
-txt_7_6_dim: Low light
-txt_7_6_setcurdef: Set current path as default output path
-txt_7_6_setdef: Set default output path
-txt_7_6_tadvanced: Sync archive tree, keep visited nodes
-txt_7_6_tsimple: Sync archive tree, simple
-txt_7_6_tacolor: Text accent
-txt_7_5_always: Always
-txt_7_5_ask: Ask
-txt_7_5_autoclosesingle: Auto close after extraction if no browsing actions took place
-txt_7_5_cutlen: Cut name at specified length
-txt_7_5_cutlenw: Cut name at specified length (4..255) naming conflicts can be fixed manually later
-txt_7_5_dragnone: Do not lock target
-txt_7_5_specialbrowse: Do you want to extract everything in order to provide the file with the extra data it may need?
-txt_7_5_ee: Extract everything for special file types
-txt_7_5_draghide: Hide drop target
-txt_7_5_draglh: Lock and hide target
-txt_7_5_draglock: Lock drop target
-txt_7_5_never: Never
-txt_7_5_repnascii: Replace/remove non-ASCII characters
-txt_7_4_comment: Comment
-txt_7_4_7zfbrotlicomp: Fastest compression, 7Z Brotli
-txt_7_4_7zfzstandardcomp: Fastest compression, 7Z Zstandard
-txt_7_4_presetrar: High compression, RAR
-txt_7_4_tkeep: Keep original archive timestamp
-txt_7_4_lock: Lock archive
-txt_7_4_locked: locked
-txt_7_4_lockconfirm: Locked archives cannot be further modified, proceed locking this archive?
-txt_7_4_recover: Repair archive
-txt_7_4_tcurr: Set archive timestamp from current system time
-txt_7_4_setarc: Set archiving options
-txt_7_4_setext: Set extraction options
-txt_7_4_swzipx: Switch to zipx extension for non-Deflate zip archives
-txt_7_3_archiveerrors: [archive may contain errors]
-txt_7_3_archiveerrorshint: Archive may not be valid (due missing, corrupted, or out of standard data), it is possible to run Test for detailed information. If archive's table of content is encrypted, password is needed before browsing it.
-txt_7_3_clickextall: Click "Extract all" to enable
-txt_7_3_noconfdel: Do not ask confirmation for delete after archiving / extraction
-txt_7_3_profile7zfastest: Fast compression, 7Z fastest
-txt_7_3_maxbr: Maximize Brotli compression using more memory (may be incompatible with some extractors)
-txt_7_3_maxzstd: Maximize Zstandard compression using more memory
-txt_7_3_profile7zfast: Medium compression, 7Z fast
-txt_7_3_stl: Set archive timestamp from most recent file
-txt_7_2_altcomp: Alternative compression, ARC
-txt_7_2_clearnoupdate: Clear edited files
-txt_7_2_autoclosepeazip: Close PeaZip when task completes
-txt_7_2_zpaqall: Extract all revisions
-txt_7_2_extcomp: Extreme compression, ZPAQ
-txt_7_2_extcompultra: Extreme compression, ZPAQ ultra
-txt_7_2_fbrotlicomp: Fastest compression, Brotli
-txt_7_2_fzstandardcomp: Fastest compression, Zstandard
-txt_7_2_loadcompsettings: Load compression settings
-txt_7_2_savecompsettings: Save compression settings
-txt_7_2_source: Source
-txt_7_2_updateclear: Update edited files in archive, and clear edited files
-txt_7_1_type_description_brotli: Brotli: fast compressor from Google, very fast decompression
-txt_7_1_new: Extract all here, in new folder
-txt_7_1_smart: Extract all here, smart
-txt_7_1_profileintermediate: Intermediate compression, ZIP/BZip2 fast
-txt_7_1_renfilesonly: Rename only files
-txt_7_1_typetosearch: Type to search in current path
-txt_7_1_type_description_zstd: Zstandard: fast compressor from Facebook, very fast decompression
-txt_7_0_af: Analyze content of folders
-txt_7_0_autoopentar: Auto open single tar archive inside tar.* files
-txt_7_0_exttmppath: Content will be extracted outside the temporary work path, in:
-txt_6_9_autou: Auto update modified files in archives
-txt_6_9_forceu: Force update modified files in archives
-txt_6_9_opuns: Operation not supported for current archive type
-txt_6_9_overarch: Overwrite file(s) with same name already existing inside the archive?
-txt_6_9_uconf: Previewed file has been modified. Update the current archive?
-txt_6_8_ndrop: Use native Drag And Drop on Windows
-txt_6_7_nop: (no preview)
-txt_6_6_pdupfound: possible duplicates found (quick approximate test)
-txt_6_6_rsh: Reset search history
-txt_6_6_pdupfind: Suggest possible duplicates
-txt_6_6_forcemodify: Try to edit non explicitly supported file types
-txt_6_5_mandatory: (mandatory)
-txt_6_5_abort: Abort
-txt_6_5_askp: Ask to set password at startup
-txt_6_5_chp: Change password
-txt_6_5_def: Definition
-txt_6_5_nop: Don't ask to set password at startup
+txt_8_7_after: לאחר ארכיון/חילוץ
+txt_8_7_bintest: בינאריים נבדקו.
+txt_8_7_csv: מפריד CSV
+txt_8_7_hok: Hash של קבצים בינאריים המשמשים את PeaZip תואמים לערכים הצפויים
+txt_8_7_mo: הגדר אפשרויות של מנהל ארכיון
+txt_8_7_showhm: פתח את תפריט כותרת הדפדפן
+txt_8_7_showsearchbar: הצג את שורת החיפוש
+txt_8_7_showsm: פתח את תפריט הסגנון
+txt_8_7_hnotok: חלק מה-hash של קבצים בינאריים המשמשים את PeaZip אינם תואמים לערכים הצפויים
+txt_8_7_verifybin: אמת hash של קבצים בינאריים
+txt_8_6_clear: אפשרות "נקה" מסירה קבצים ערוכים זמנית, אחרת זמינה לעריכה נוספת.
+txt_8_6_noclear: מחק את כל השינויים מבלי לעדכן את הארכיון
+txt_8_6_nosimple: אל תעדכן ארכיון, שמור קבצים ערוכים זמנית לעריכה נוספת
+txt_8_6_immediate: ביצוע מיידי
+txt_8_6_yessimple: עדכן ארכיון, שמור קבצים ערוכים זמנית לעריכה נוספת
+txt_8_5_advbrowser: החל מסננים על דפדפן ארכיון
+txt_8_5_detailslarge: פרטים, גדולים
+txt_8_5_intext: חלץ לספריית עבודה זמנית ואז עבר ליעד פלט, שאל באופן אינטראקטיבי לפני החלפה
+txt_8_5_listlarge: רשימה, גדולה
+txt_8_5_loadlayout: טען פריסה בעת ההפעלה
+txt_8_5_samplescripts: סקריפטים לדוגמא
+txt_8_4_keepopenerrorslist: עצור כדי לבדוק את הדוח לאיתור שגיאות, רשימה
+txt_8_3_mbubin: בינארי
+txt_8_3_cw: לשנות ספריית עבודה? פעולה זו תאפס קבצי עבודה זמניים ותפעיל מחדש את היישום.
+txt_8_3_temperature: טמפרטורת צבע
+txt_8_3_mbudec: עשרוני
+txt_8_3_htab: הדגש כרטיסיות
+txt_8_3_maxarg: אורך מקסימלי של ארגומנטים
+txt_8_3_mbu: יחידת בתים מרובים
+txt_8_3_prefalgo: אלגוריתמים מועדפים
+txt_8_3_skipdel: דלג על מחיקת קבצים זמניים נעולים (השתמש באיפוס כדי למחוק לפי דרישה)
+txt_8_3_lw: חלק מהקבצים בספריית העבודה נעולים ולא ניתן להסירם באופן אוטומטי
+txt_8_3_noupx: לא ניתן לדחוס את הבינארי הזה (ייתכן שכבר דחוס)
+txt_8_2_slower: (איטי יותר)
+txt_8_2_df: 7z / p7zip להציג תוכן של תיקיות
+txt_8_2_vreport: דוח 7z / p7zip ללא מילים
+txt_8_2_ta: ניגש
+txt_8_2_tc: נוצר
+txt_8_2_keep: שמור קבצים
+txt_8_2_tm: שונה
+txt_8_2_skipet: דלג על בדיקות להצפנה
+txt_8_2_alltimes: אחסן את כל חותמות הזמן
+txt_8_2_supportedby: נתמך על ידי
+txt_8_1_preparse: תמיד לנתח מראש ארכיונים
+txt_8_1_bo: אופטימיזציה לדפדפן
+txt_8_1_bop: ניתן להגדיר אפשרויות אופטימיזציה לדפדפן מתוך אפשרויות > הגדרות > כרטיסייה כללית, על מנת לאפשר לדפדפן להציג ארכיונים המכילים מספר גדול מאוד של פריטים.
+txt_8_1_nopreparse: אל תנתח מראש ארכיונים
+txt_8_1_ed: זוהו שגיאות.
+txt_8_1_togglearc: הצגת תצוגה שטוחה של תוכן ארכיון עשויה להימשך זמן רב, להמשיך בכל זאת?
+txt_8_1_preparsehint: בצע אופטימיזציה של ביצועים תוך הגבלת ניתוח מוקדם של ארכיונים גדולים. ניתוח מקדים נועד לזהות מראש בעיות אפשריות בתוכן הארכיון.
+txt_8_1_slow: להאט
+txt_8_1_vslow: מאוד איטי
+txt_8_1_volumes: כרכים
+txt_8_0_altcol: צבע רשת חלופי
+txt_8_0_forcebrowse: עיין בסוגי ארכיון לא קנוניים (מכולות, תמונות דיסק, מתקינים,...)
+txt_8_0_commonalgo: אלגוריתמים נפוצים
+txt_8_0_forceconvert: המר סוגי ארכיון לא קנוניים
+txt_8_0_defaultactionhint: פעולת ברירת מחדל לחיצה כפולה על קובץ המשויך ל-PeaZip מהמערכת
+txt_8_0_defaultaction: פעולת ברירת מחדל בקלט (פתיחה, חילוץ אוטומטי...)
+txt_8_0_enableextand: הפעל את תפריט המשנה "חלץ ופתח עם".
+txt_8_0_forcetyping: כפה הקלדת סיסמאות באופן אינטראקטיבי
+txt_8_0_setpwopt: הגדר אפשרויות סיסמה / קובץ מפתח
+txt_8_0_forcetypinghelp: אם נתמך על ידי הקצה העורפי, המשימה תבקש סיסמה באופן אינטראקטיבי. הגבלות: המשימה תפעל במסוף, לא תפעל ללא השגחה, ואינה יכולה לגלוש בארכיונים עם שמות קבצים מוצפנים.
+txt_7_9_spacing: מרווחים
+txt_7_9_zooming: זום
+txt_7_8_changelocalization: שנה את שפת PeaZip
+txt_7_8_custext: הרחבה מותאמת אישית
+txt_7_8_destexistfile: היעד כבר מכיל קבצים מעובדים. להחליף קבצים באותו שם?
+txt_7_8_dd: גרור ושחרר
+txt_7_8_priorityhigh: גבוה
+txt_7_8_priorityidle: להתבטל
+txt_7_8_rel: חלץ ואז עבר ליעד
+txt_7_8_prioritynormal: נורמלי
+txt_7_8_priorityrealtime: זמן אמת
+txt_7_8_requirerestart: [דורש הפעלה מחדש של PeaZip]
+txt_7_8_tpriority: עדיפות למשימות
+txt_7_8_update: לעדכן
+txt_7_7_noneall: ללא: השבת תצוגה מקדימה, עריכה, גרירה ושחרור וחילוץ אינטראקטיבי
+txt_7_7_nonetemp: אין, טמפ' המשתמש במידת הצורך
+txt_7_7_outtemp: פלט, תצוגה מקדימה בטמפ' של המשתמש
+txt_7_7_sys7zreq: דורש התקנה של 7z, 7-Zip או p7zip, או חבילה מקבילה
+txt_7_7_tw: תיקיית עבודה זמנית ליצירת ארכיון, עריכה, תצוגה מקדימה וחילוץ גרירה ושחרור
+txt_7_7_sys7z: השתמש במערכת 7z אם זמינה
+txt_7_6_zipenc: קידוד שמות קבצי ZIP
+txt_7_6_color: צבע
+txt_7_6_custenc: דף קוד מותאם אישית
+txt_7_6_dark: כהה יותר
+txt_7_6_tno: אל תסנכרן את עץ הארכיון
+txt_7_6_forcelocalenc: כפה מקומי
+txt_7_6_forceutf8enc: כוח UTF-8
+txt_7_6_cpnote: אם דף הקוד המותאם אישית שנבחר אינו נתמך, המשימות תמיד יסתיימו בטעות (סביר להניח שגיאת הקצאת זיכרון). במקרה שזה יקרה, שנה דף קוד או אפס את האפליקציה.
+txt_7_6_defaultenc: מקומי, UTF-8 לסמלים נוספים
+txt_7_6_dim: כהה
+txt_7_6_setcurdef: הגדר נתיב נוכחי כנתיב פלט ברירת מחדל
+txt_7_6_setdef: הגדר נתיב פלט ברירת מחדל
+txt_7_6_tadvanced: סנכרון עץ ארכיון, שמור על צמתים שביקרו בהם
+txt_7_6_tsimple: סנכרון עץ ארכיון, פשוט
+txt_7_6_tacolor: מבטא טקסט
+txt_7_5_always: תמיד
+txt_7_5_ask: לשאול
+txt_7_5_autoclosesingle: סגירה אוטומטית לאחר חילוץ אם לא התרחשו פעולות גלישה
+txt_7_5_cutlen: גזור שם באורך שצוין
+txt_7_5_cutlenw: גזור שם באורך שצוין (4..255) ניתן לתקן התנגשויות שמות באופן ידני מאוחר יותר
+txt_7_5_dragnone: אל תנעל מטרה
+txt_7_5_specialbrowse: האם אתה רוצה לחלץ הכל כדי לספק לקובץ את הנתונים הנוספים שהוא עשוי להזדקק לו?
+txt_7_5_ee: חלץ הכל עבור סוגי קבצים מיוחדים
+txt_7_5_draghide: הסתר ירידת יעד
+txt_7_5_draglh: נעל והסתיר מטרה
+txt_7_5_draglock: נעל יעד ירידה
+txt_7_5_never: לעולם לא
+txt_7_5_repnascii: החלף/הסר תווים שאינם ASCII
+txt_7_4_comment: הערה
+txt_7_4_7zfbrotlicomp: הדחיסה המהירה ביותר, 7Z Brotli
+txt_7_4_7zfzstandardcomp: הדחיסה המהירה ביותר, 7Z Zstandard
+txt_7_4_presetrar: דחיסה גבוהה, RAR
+txt_7_4_tkeep: שמור על חותמת זמן מקורית לארכיון
+txt_7_4_lock: נעל ארכיון
+txt_7_4_locked: נעול
+txt_7_4_lockconfirm: לא ניתן לשנות עוד יותר ארכיונים נעולים, להמשיך בנעילה של ארכיון זה?
+txt_7_4_recover: ארכיון תיקון
+txt_7_4_tcurr: הגדר חותמת זמן לארכיון מזמן המערכת הנוכחי
+txt_7_4_setarc: הגדר אפשרויות מתקדמות לארכיון
+txt_7_4_setext: הגדר אפשרויות חילוץ מתקדמות
+txt_7_4_swzipx: עבור אל סיומת zipx עבור ארכיוני zip ללא Deflate
+txt_7_3_archiveerrors: [הארכיון עשוי להכיל שגיאות]
+txt_7_3_archiveerrorshint: ייתכן שהארכיון אינו תקף (בשל נתונים חסרים, פגומים או מחוץ לנתונים סטנדרטיים), אפשר להפעיל את הבדיקה לקבלת מידע מפורט. אם טבלת התוכן של הארכיון מוצפנת, יש צורך בסיסמה לפני הגלישה בו.
+txt_7_3_clickextall: לחץ על "חלץ הכל" כדי להפעיל
+txt_7_3_noconfdel: אל תבקש אישור מחיקה לאחר ארכיון/חילוץ
+txt_7_3_profile7zfastest: דחיסה מהירה, 7Z המהירה ביותר
+txt_7_3_maxbr: הגדל את דחיסת Brotli תוך שימוש בזיכרון רב יותר (ייתכן שאינו תואם לחלק מהמחלצים)
+txt_7_3_maxzstd: ממקסם את הדחיסה של Zstandard באמצעות יותר זיכרון
+txt_7_3_profile7zfast: דחיסה בינונית, 7Z מהיר
+txt_7_3_stl: הגדר חותמת זמן לארכיון מהקובץ האחרון
+txt_7_2_altcomp: דחיסה גבוהה, ARC
+txt_7_2_clearnoupdate: נקה קבצים ערוכים
+txt_7_2_autoclosepeazip: סגור את PeaZip כאשר המשימה תושלם
+txt_7_2_zpaqall: חלץ את כל התיקונים
+txt_7_2_extcomp: דחיסה קיצונית, ZPAQ
+txt_7_2_extcompultra: דחיסה קיצונית, ZPAQ ultra
+txt_7_2_fbrotlicomp: הדחיסה המהירה ביותר, ברוטלי
+txt_7_2_fzstandardcomp: הדחיסה המהירה ביותר, Zstandard
+txt_7_2_loadcompsettings: טען הגדרות דחיסה
+txt_7_2_savecompsettings: שמור את הגדרות הדחיסה
+txt_7_2_source: מקור
+txt_7_2_updateclear: עדכן ארכיון, נקה קבצים ערוכים זמנית
+txt_7_1_type_description_brotli: ברוטלי: מדחס מהיר מבית גוגל, שחרור מהיר מאוד
+txt_7_1_new: חלץ הכל כאן (בתיקייה חדשה)
+txt_7_1_smart: חלץ הכל כאן (תיקיה חדשה וחכמה)
+txt_7_1_profileintermediate: דחיסה בינונית, ZIP/BZip2 מהיר
+txt_7_1_renfilesonly: שנה את שמות הקבצים בלבד
+txt_7_1_typetosearch: הקלד כדי לחפש בנתיב הנוכחי
+txt_7_1_type_description_zstd: Zstandard: מדחס מהיר מפייסבוק, דקומפרסיה מהירה מאוד
+txt_7_0_af: ניתוח תוכן של תיקיות
+txt_7_0_autoopentar: פתיחה אוטומטית של ארכיון TAR בתוך קבצי TAR.* דחוסים
+txt_7_0_exttmppath: תוכן יחולץ מחוץ למסלול העבודה הזמני, ב:
+txt_6_9_autou: עדכון אוטומטי של קבצים ששונו בארכיונים
+txt_6_9_forceu: עדכן קבצים ערוכים בארכיון
+txt_6_9_opuns: הפעולה לא נתמכת עבור סוג הארכיון הנוכחי
+txt_6_9_overarch: להחליף קבצים עם אותו שם שכבר קיימים בארכיון?
+txt_6_9_uconf: הקובץ שנצפה בתצוגה מקדימה השתנה. לעדכן את הארכיון הנוכחי?
+txt_6_8_ndrop: השתמש בגרירה ושחרור מקוריים ב-Windows
+txt_6_7_nop: (ללא תצוגה מקדימה)
+txt_6_6_pdupfound: נמצאו כפילויות אפשריות (בדיקה משוערת מהירה)
+txt_6_6_rsh: אפס את היסטוריית החיפושים
+txt_6_6_pdupfind: הצע כפילויות
+txt_6_6_forcemodify: ערוך סוגי ארכיון לא קנוניים כ
+txt_6_5_mandatory: (הכרחי)
+txt_6_5_abort: להפיל
+txt_6_5_askp: בקש להגדיר סיסמה בעת ההפעלה
+txt_6_5_chp: שנה סיסמה
+txt_6_5_def: הגדרה
+txt_6_5_nop: אל תבקש להגדיר סיסמה בעת ההפעלה
 txt_6_5_error: שגיאה
-txt_6_5_seqerr: Error(s) detected, original files will not be deleted
-txt_6_5_sni: Include NT security information
-txt_6_5_sns: Include NTFS Alternate Data Stream
-txt_6_5_privacy: פרטיות
-txt_6_5_showvolatile: Show which options are volatile / context depentent
-txt_6_5_force: Try to open archives containing errors
+txt_6_5_seqerr: זוהו שגיאות, קבצים מקוריים לא יימחקו
+txt_6_5_sni: כלול מידע אבטחה NT
+txt_6_5_sns: כלול זרם נתונים חלופי של NTFS
+txt_6_5_privacy: פרטיות ואבטחה
+txt_6_5_showvolatile: הראה אילו אפשרויות הן נדיפות / תלויות הקשר
+txt_6_5_force: נסה לפתוח ארכיונים המכילים שגיאות
 txt_6_5_warning: אזהרה
 txt_6_5_yes: כן
-txt_6_5_yesall: כן להכל
-txt_6_5_np: You can now change password of converted archive(s) to a new one, or blank the password to skip encryption
-txt_6_4_absolute: Absolute paths
-txt_6_4_appdirn: Append directory name
-txt_6_4_closeallother: Close all other tabs
-txt_6_4_closeright: Close tabs on the right
-txt_6_4_collapse: Collapse tabs
-txt_6_4_expand: Expand tabs
-txt_6_4_full: Full paths
+txt_6_5_yesall: כן לכולם
+txt_6_5_np: כעת אתה יכול לשנות את הסיסמה של ארכיונים שהומרו לחדש, או לרוקן את הסיסמה כדי לדלג על הצפנה
+txt_6_4_absolute: נתיבים מוחלטים
+txt_6_4_appdirn: הוסף את שם הספרייה
+txt_6_4_closeallother: סגור את כל שאר הכרטיסיות
+txt_6_4_closeright: סגור כרטיסיות בצד ימין
+txt_6_4_collapse: כווץ כרטיסיות
+txt_6_4_expand: הרחב את הכרטיסיות
+txt_6_4_full: שבילים מלאים
 txt_6_4_new: חדש
-txt_6_4_openintab: Open in a new tab
-txt_6_4_paths: Paths
-txt_6_4_prepdirn: Prepend directory name
-txt_6_4_relative: Relative paths
-txt_6_4_tabbar: Tab bar
-txt_6_3_autoadjust: Auto adjust columns
-txt_6_3_cinfo: Info and comments
-txt_6_3_syn: Synchronize archive with disk
-txt_6_3_uar: Update only files already in archive
-txt_6_2_encext: Add ".enc" suffix to encrypted archives
-txt_6_2_archive: Archive file type
-txt_6_2_container: Container file type
-txt_6_1_ec: Expand / collapse archive tree
-txt_6_0_msq: Sort by file type for solid compression
-txt_5_9_lff: Analyze files and folders
-txt_5_9_pff: Analyze, show files header/EOF
-txt_5_9_start: Start from
-txt_5_8_l0: Allow any supported component/format
-txt_5_8_l1: Allow only Free Software components
-txt_5_8_l2: Allow only open archive formats
-txt_5_8_ascii: ASCII safe, scripts are safe on legacy environments
-txt_5_8_cp: Code Page safe, scripts may trigger problems on legacy environments with different Code Pages
-txt_5_8_fs: Free Software compliance
-txt_5_8_utf: Scripts need full UTF-8 / Unicode environment
-txt_5_8_fsr: This format is not supported due Free Software compliance restrictions (Options > Advanced)
-txt_5_7_pinstalled: INSTALLED
-txt_5_7_pmissing: MISSING
-txt_5_7_plugin: Plugin missing, can be installed from Help > Check for plugin and addon
+txt_6_4_openintab: פתח בכרטיסייה חדשה
+txt_6_4_paths: שבילים
+txt_6_4_prepdirn: הוסף את שם הספרייה מראש
+txt_6_4_relative: שבילים יחסיים
+txt_6_4_tabbar: שורת כרטיסיות
+txt_6_3_autoadjust: התאמה אוטומטית של עמודות
+txt_6_3_cinfo: מידע והערות
+txt_6_3_syn: סנכרון ארכיון עם דיסק
+txt_6_3_uar: עדכן רק קבצים שכבר נמצאים בארכיון
+txt_6_2_encext: הוסף סיומת ".enc" לארכיונים מוצפנים
+txt_6_2_archive: סוג קובץ ארכיון
+txt_6_2_container: סוג קובץ מיכל
+txt_6_1_ec: הרחב/כווץ את עץ הארכיון
+txt_6_0_msq: מיין לפי סוג קובץ עבור דחיסה מוצקה
+txt_5_9_lff: ניתוח קבצים ותיקיות
+txt_5_9_pff: נתח, הצג את כותרת הקבצים/EOF
+txt_5_9_start: התחל מ
+txt_5_8_l0: אפשר כל רכיב/פורמט נתמך
+txt_5_8_l1: אפשר רק רכיבי תוכנה חופשית
+txt_5_8_l2: אפשר רק פורמטים פתוחים של ארכיון
+txt_5_8_ascii: בטוח ASCII, סקריפטים בטוחים בסביבות מדור קודם
+txt_5_8_cp: דף קוד בטוח, סקריפטים עשויים לעורר בעיות בסביבות מדור קודם עם דפי קוד שונים
+txt_5_8_fs: תאימות לתוכנה חופשית
+txt_5_8_utf: סקריפטים צריכים סביבת UTF-8 / Unicode מלאה
+txt_5_8_fsr: פורמט זה אינו נתמך עקב מגבלות תאימות של תוכנה חופשית (אפשרויות > הגדרות > מתקדם)
+txt_5_7_pinstalled: מותקן
+txt_5_7_pmissing: חסר
+txt_5_7_plugin: תוסף חסר, ניתן להתקין דרך עזרה > בדוק אם יש פלאגינים
 txt_5_6_basic: בסיסי
-txt_5_6_exarc: Extract archive
-txt_5_6_tab: פתח בלשונית חדשה
-txt_5_6_rc: Right click for options
-txt_5_6_layouts: Saved layouts
-txt_5_6_upexisting: Update existing archive
-txt_5_6_verbose: Verbose
-txt_5_5_case: (case sensitive)
-txt_5_5_add: Add string at specified position
-txt_5_5_addsel: Add to current selection
-txt_5_5_ext: Change files extension
-txt_5_5_plugin: Check for plugin and addon
+txt_5_6_exarc: חלץ ארכיון
+txt_5_6_tab: פתח בכרטיסייה חדשה
+txt_5_6_rc: לחץ לחיצה ימנית לאפשרויות
+txt_5_6_layouts: פריסות שמורות
+txt_5_6_upexisting: עדכן ארכיון קיים
+txt_5_6_verbose: מלולי
+txt_5_5_case: (רגיש לאותיות גדולות)
+txt_5_5_add: הוסף מחרוזת במיקום שצוין
+txt_5_5_addsel: הוסף לבחירה הנוכחית
+txt_5_5_ext: שנה סיומת קבצים
+txt_5_5_plugin: בדוק אם יש פלאגינים
 txt_5_5_copypath: העתק נתיב
-txt_5_5_delete: Delete characters at specified position
-txt_5_5_halt: Halt system when task completes
-txt_5_5_positionw: Hint: 1 add before first char, 2 second, etc... "z" for end of file name
-txt_5_5_positionwd: Hint: 1 delete from first char included, 2 second, ... "z" for end of file name
-txt_5_5_replaceneww: Hint: provide an empty new string to simply remove the old string
-txt_5_5_lower: Lowercase
-txt_5_5_replaceoldw: Modify all occurrences of this string or character in the file name
-txt_5_5_newext: New extension
-txt_5_5_new: New string
-txt_5_5_n: Number of characters to delete
-txt_5_5_old: Old string
-txt_5_5_position: Position (number or "z" for end)
-txt_5_5_intdir: Smart new folder
-txt_5_5_replacestr: Replace/remove string
-txt_5_5_datesameday: Same day of selected object
-txt_5_5_datesamehour: Same hour of selected object
-txt_5_5_datesamemonth: Same month of selected object
-txt_5_5_datesameweek: Same week of selected object
-txt_5_5_datesameyear: Same year of selected object
-txt_5_5_scan: סרוק
-txt_5_5_select: בחר
-txt_5_5_similar: Similar to selected object
-txt_5_5_starting: Starting with same character
-txt_5_5_string: String to add
-txt_5_5_subtractsel: Subtract from current selection
-txt_5_5_datehour: השעה
-txt_5_5_datemonth: החודש
+txt_5_5_delete: מחק תווים במיקום שצוין
+txt_5_5_halt: עצור את המערכת בסיום המשימה
+txt_5_5_positionw: רמז: הוסף אחד לפני התו הראשון, 2 שניות וכו'... "z" עבור סוף שם הקובץ
+txt_5_5_positionwd: רמז: מחיקה אחת מהתו הראשון כלולה, 2 שניות, ... "z" עבור סוף שם הקובץ
+txt_5_5_replaceneww: רמז: ספק מחרוזת חדשה ריקה כדי פשוט להסיר את המחרוזת הישנה
+txt_5_5_lower: אותיות קטנות
+txt_5_5_replaceoldw: שנה את כל המופעים של המחרוזת או התו הזה בשם הקובץ
+txt_5_5_newext: הרחבה חדשה
+txt_5_5_new: מחרוזת חדשה
+txt_5_5_n: מספר התווים למחיקה
+txt_5_5_old: מחרוזת ישנה
+txt_5_5_position: מיקום (מספר או "z" עבור סוף)
+txt_5_5_intdir: תיקייה חדשה וחכמה
+txt_5_5_replacestr: החלף/הסר מחרוזת
+txt_5_5_datesameday: אותו יום של האובייקט שנבחר
+txt_5_5_datesamehour: אותה שעה של האובייקט שנבחר
+txt_5_5_datesamemonth: אותו חודש של האובייקט שנבחר
+txt_5_5_datesameweek: אותו שבוע של האובייקט שנבחר
+txt_5_5_datesameyear: אותה שנה של האובייקט שנבחר
+txt_5_5_scan: לסרוק
+txt_5_5_select: לבחור
+txt_5_5_similar: דומה לאובייקט שנבחר
+txt_5_5_starting: מתחיל מאותו דמות
+txt_5_5_string: מחרוזת להוסיף
+txt_5_5_subtractsel: הפחת מהבחירה הנוכחית
+txt_5_5_datehour: השעה הזו
+txt_5_5_datemonth: החודש הזה
 txt_5_5_dateweek: השבוע
 txt_5_5_dateyear: השנה
 txt_5_5_dateday: היום
-txt_5_5_upper: Uppercase
-txt_5_5_extw: אזהרה: changing file extension the file may become unusable
+txt_5_5_upper: אותיות רישיות
+txt_5_5_extw: אזהרה: שינוי סיומת הקובץ הקובץ עלול להפוך לבלתי שמיש
 txt_5_4_da: תאריך נוסף
-txt_5_4_deletearchives: Delete archives after extraction
-txt_5_4_deletefiles: Delete files after archiving
-txt_5_4_deleteoriginal: Deletion procedure, as set in main screen, will be appended to the script.
-txt_5_4_lv: Last visited
-txt_5_4_deletearchivesconfirm: Confirm deletion of original archives?
-txt_5_4_deletefilesconfirm: Confirm deletion of original files?
-txt_5_4_used: Used
-txt_5_3_profilebest: Best compression, 7Z format Ultra level
-txt_5_3_profileadvanced: Advanced compression, 7Z format
-txt_5_3_profilenormal: Normal ZIP compression, compatible with most extractors
-txt_5_3_profileveryfast: Very fast ZIP compression, recommended for large multimedia files
-txt_5_3_profilepassword: Protect with password, 7Z format
-txt_5_3_profile10mb: Keep output under 25 MB, for mail attachment limitations
-txt_5_3_profilesfx: Auto extracting, recipient will not need an extraction software
-txt_5_3_cml: System context menu language
-txt_5_3_cmlmessage: Double click on desired context menu language and confirm registry merging. This setting needs to be re-applied when the application is installed/updated or after System integration wizard is used.
-txt_5_3_exc: Exclusion filters prevail on inclusion filters
-txt_5_3_ia: Include also
-txt_5_3_io: Include only
-txt_5_3_rec: Recurse subdirs
-txt_5_3_resetsi: Re-configure system integration (context menu, SendTo, file associations)?
-txt_5_2_oadd: Archive to original path
-txt_5_2_zerodelete: Do you want to delete and overwrite with all 0 selected file(s)? The operation can't be undone and files will be not recoverable
-txt_5_2_zfree: Do you want to overwrite with all 0 free space on this drive?
-txt_5_2_sdfree: Do you want to securely delete free space on this drive?
-txt_5_2_oext: Extract to original path
-txt_5_2_securedeletefree: Secure delete free space
-txt_5_2_free: This operation can take some minutes and, if performed often, it can quickly wear flash-based disks
-txt_5_2_zerofiles: Zero delete
-txt_5_2_zerofree: Zero delete free space
-txt_5_1_schedadd: Add schedule
-txt_5_1_schederr: Cannot create schedule
-txt_5_1_daily: Daily
+txt_5_4_deletearchives: מחק ארכיונים לאחר חילוץ
+txt_5_4_deletefiles: מחק קבצים לאחר ארכיון
+txt_5_4_deleteoriginal: הליך המחיקה, כפי שנקבע במסך הראשי, יצורף לסקריפט.
+txt_5_4_lv: ביקר לאחרונה
+txt_5_4_deletearchivesconfirm: לאשר את מחיקת הארכיונים המקוריים?
+txt_5_4_deletefilesconfirm: לאשר מחיקת קבצים מקוריים?
+txt_5_4_used: משומש
+txt_5_3_profilebest: דחיסה קיצונית, 7Z אולטרה
+txt_5_3_profileadvanced: דחיסה גבוהה, 7Z
+txt_5_3_profilenormal: דחיסה בינונית, ZIP (תואם לרוב המחלצים)
+txt_5_3_profileveryfast: דחיסה מהירה, מהירה ZIP (תואם לרוב המחלצים)
+txt_5_3_profilepassword: הגן באמצעות סיסמה, פורמט 7Z
+txt_5_3_profile10mb: שמור על פלט מתחת ל-25 מגה-בייט, עבור מגבלות של קובץ מצורף לדואר
+txt_5_3_profilesfx: חילוץ אוטומטי, הנמען לא יזדקק לתוכנת חילוץ
+txt_5_3_cml: שפת תפריט ההקשר של המערכת
+txt_5_3_cmlmessage: לחץ פעמיים על שפת תפריט ההקשר הרצויה ואשר את מיזוג הרישום. יש להחיל הגדרה זו מחדש כאשר היישום מותקן/מעודכן או לאחר שימוש באשף שילוב המערכת.
+txt_5_3_exc: מסנני אי הכללה רווחים על מסנני הכללה
+txt_5_3_ia: כלול גם
+txt_5_3_io: כלול בלבד
+txt_5_3_rec: תת-כתובות חוזרות
+txt_5_3_resetsi: להגדיר מחדש את שילוב המערכת (תפריט ההקשר, SendTo, שיוך קבצים)?
+txt_5_2_oadd: ארכיון לנתיב המקורי
+txt_5_2_zerodelete: האם ברצונך למחוק ולדרוס עם כל 0 הקבצים שנבחרו? לא ניתן לבטל את הפעולה ולא ניתן יהיה לשחזר את הקבצים
+txt_5_2_zfree: האם ברצונך להחליף עם כל 0 השטח הפנוי בכונן זה?
+txt_5_2_sdfree: האם ברצונך למחוק באופן מאובטח שטח פנוי בכונן זה?
+txt_5_2_oext: חלץ לנתיב המקורי
+txt_5_2_securedeletefree: מחיקה מאובטחת של שטח פנוי
+txt_5_2_free: פעולה זו עשויה להימשך מספר דקות, ואם היא מתבצעת לעתים קרובות, היא עלולה ללבוש במהירות דיסקים מבוססי פלאש
+txt_5_2_zerofiles: אפס מחיקה
+txt_5_2_zerofree: אפס מחיקת שטח פנוי
+txt_5_1_schedadd: הוסף לוח זמנים
+txt_5_1_schederr: לא ניתן ליצור לוח זמנים
+txt_5_1_daily: יומי
 txt_5_1_day: יום
 txt_5_1_days: ימים
 txt_5_1_enddate: תאריך סיום
-txt_5_1_every: Every
+txt_5_1_every: כל
 txt_5_1_w6: יום שישי
-txt_5_1_hourly: Hourly
+txt_5_1_hourly: מדי שעה
 txt_5_1_hours: שעות
-txt_5_1_last: Last
-txt_5_1_schedmanage: Task Scheduler, manage tasks saved in PeaZip branch
-txt_5_1_scriptmanage: Manage saved scheduled scripts
+txt_5_1_last: אחרון
+txt_5_1_schedmanage: מתזמן משימות, ניהול משימות שנשמרו בסניף PeaZip
+txt_5_1_scriptmanage: נהל סקריפטים מתוזמנים שנשמרו
 txt_5_1_w2: יום שני
-txt_5_1_monthly: Monthly
+txt_5_1_monthly: ירחון
 txt_5_1_months: חודשים
-txt_5_1_onlogin: On login
-txt_5_1_onstart: On start
-txt_5_1_once: Once
-txt_5_1_w7: Saturday
-txt_5_1_schedule: Schedule
-txt_5_1_schedexplain: Creates a plain text script from GUI task definition and schedule it. Scheduled tasks' scripts are saved in "Scheduled scripts" folder. To edit or delete scheduled tasks you can use system's Task Scheduler, all scheduled tasks created by PeaZip are collected in "PeaZip" branch of the tasks library.
-txt_5_1_schedok: Schedule created successfully
-txt_5_1_schedscripts: Saved scheduled scripts
+txt_5_1_onlogin: בכניסה
+txt_5_1_onstart: בהתחלה
+txt_5_1_once: פעם
+txt_5_1_w7: שבת
+txt_5_1_schedule: לוח זמנים
+txt_5_1_schedexplain: יוצר סקריפט טקסט רגיל מהגדרת משימות GUI ותזמן אותו. סקריפטים של משימות מתוזמנות נשמרות בתיקייה "סקריפטים מתוזמנים". כדי לערוך או למחוק משימות מתוזמנות אתה יכול להשתמש ב-Task Scheduler של המערכת, כל המשימות המתוזמנות שנוצרו על ידי PeaZip נאספות בסניף "PeaZip" של ספריית המשימות.
+txt_5_1_schedok: לוח הזמנים נוצר בהצלחה
+txt_5_1_schedscripts: סקריפטים מתוזמנים שמורים
 txt_5_1_startdate: תאריך התחלה
 txt_5_1_starttime: שעת התחלה
 txt_5_1_w1: יום ראשון
-txt_5_1_schedname: Task name, identify both the saved scheduled script and the system's scheduled task
-txt_5_1_ts: Task Scheduler
-txt_5_1_w5: Thursday
-txt_5_1_w3: Tuesday
-txt_5_1_w4: Wednesday
-txt_5_1_weekly: Weekly
-txt_5_1_weeks: Weeks
-txt_5_0_bc: Breadcrumb
-txt_5_0_resetpm: Do you confirm resetting Password Manager? All passwords stored in PeaZip's Password Manager will be lost if confirmed.
-txt_5_0_enum: Enumerate folder content
-txt_5_0_music: מוזיקה
-txt_5_0_ps: Open PowerShell here
-txt_5_0_perf: Performance
-txt_5_0_pictures: Pictures
-txt_5_0_removeall: Remove all
-txt_5_0_resetbookmarks: Reset Bookmarks to default? (Bookmarks can then be customized with Bookmarks > Organize)
-txt_5_0_sh: Session history
-txt_5_0_skip: Skip enumerating directories' content in layout
-txt_5_0_videos: Videos
-txt_4_9_frame: Frame
-txt_4_9_listth: List and thumbnails
-txt_4_9_shadow: Shadow
+txt_5_1_schedname: שם משימה, זהה הן את הסקריפט המתוזמן השמור והן את המשימה המתוזמנת של המערכת
+txt_5_1_ts: מתזמן משימות
+txt_5_1_w5: יום חמישי
+txt_5_1_w3: יום שלישי
+txt_5_1_w4: יום רביעי
+txt_5_1_weekly: שבועי
+txt_5_1_weeks: שבועות
+txt_5_0_bc: פירורי לחם
+txt_5_0_resetpm: האם אתה מאשר את איפוס מנהל הסיסמאות? כל הסיסמאות המאוחסנות במנהל הסיסמאות של PeaZip יאבדו אם יאושרו.
+txt_5_0_enum: מנה את תוכן התיקיה
+txt_5_0_music: מוסיקה
+txt_5_0_ps: פתח את PowerShell כאן
+txt_5_0_perf: ביצועים
+txt_5_0_pictures: תמונות
+txt_5_0_removeall: הסר הכל
+txt_5_0_resetbookmarks: לאפס את הסימניות לברירת המחדל? (לאחר מכן ניתן להתאים אישית את הסימניות באמצעות סימניות > ארגון)
+txt_5_0_sh: היסטוריית הפעלות
+txt_5_0_skip: דלג על ספירת התוכן של ספריות בפריסה
+txt_5_0_videos: סרטונים
+txt_4_9_frame: מסגרת
+txt_4_9_listth: רשימה ותמונות ממוזערות
+txt_4_9_shadow: צל
 txt_4_9_style: סגנון
-txt_4_8_attach25: 25 MB attachment
-txt_4_8_crop: חתוך
+txt_4_8_attach25: קובץ מצורף של 25 מגה
+txt_4_8_crop: יבול
 txt_4_8_detailsno: פרטים
-txt_4_8_details: Details and thumbnails
-txt_4_8_fit: Fit to
-txt_4_8_fitl: Fit to largest
-txt_4_8_flip: Flip
-txt_4_8_fullscreen: Full screen
-txt_4_8_fun: Functions
+txt_4_8_details: פרטים ותמונות ממוזערות
+txt_4_8_fit: מתאים ל
+txt_4_8_fitl: מתאים לגדולים ביותר
+txt_4_8_flip: להעיף
+txt_4_8_fullscreen: מסך מלא
+txt_4_8_fun: פונקציות
 txt_4_8_h: גובה
-txt_4_8_keeparchive: Keep archive
-txt_4_8_noresize: Keep original size
-txt_4_8_iconl: Large images
-txt_4_8_iconm: Icons and images
-txt_4_8_imagemanager: Image manager
-txt_4_8_immersive: Immersive
+txt_4_8_keeparchive: שמור בארכיון
+txt_4_8_noresize: שמור על הגודל המקורי
+txt_4_8_iconl: תמונות גדולות
+txt_4_8_iconm: אייקונים ותמונות
+txt_4_8_imagemanager: מנהל תמונות
+txt_4_8_immersive: סוחף
 txt_4_8_listno: רשימה
-txt_4_8_aspect: Maintain aspect ratio
-txt_4_8_mirror: Mirror
-txt_4_8_presets: Presets
-txt_4_8_replace: Replace original image(s)? "No" apply the transformation in new file(s).
+txt_4_8_aspect: שמור על יחס רוחב-גובה
+txt_4_8_mirror: מראה
+txt_4_8_presets: הגדרות קבועות מראש
+txt_4_8_replace: להחליף את התמונה המקורית? "לא" החל את השינוי בקבצים חדשים.
 txt_4_8_resize: שנה גודל
-txt_4_8_rl: Rotate left
-txt_4_8_rr: Rotate right
-txt_4_8_stop: עצור
-txt_4_8_t: Transform
+txt_4_8_rl: סובב שמאלה
+txt_4_8_rr: סובב ימינה
+txt_4_8_stop: להפסיק
+txt_4_8_t: לשנות
 txt_4_8_w: רוחב
-txt_4_7_pk: Create random password / keyfile
-txt_4_7_spchar: Limit characters to letters and numbers
-txt_4_7_recycleask: Move selected file(s) to Recycle Bin?
-txt_4_7_recycle: Move to Recycle Bin
-txt_4_7_pcomp: Potential compression
-txt_4_6_am: Archive manager
+txt_4_7_pk: צור סיסמה אקראית / קובץ מפתח
+txt_4_7_spchar: הגבל תווים לאותיות ומספרים
+txt_4_7_recycleask: להעביר את הקבצים שנבחרו לאשפה?
+txt_4_7_recycle: העבר לאשפה
+txt_4_7_pcomp: דחיסה פוטנציאלית
+txt_4_6_am: מנהל ארכיון
 txt_4_6_fm: מנהל קבצים
 txt_4_6_users: משתמשים
-txt_4_5_goupdate: A new version is available. Open PeaZip's official website to download the update?
-txt_4_5_b: למטה
-txt_4_5_koupdate: Cannot check for updates, no connection with update server
-txt_4_5_update: חפש עדכונים
-txt_4_5_dock: Dock
-txt_4_5_l: שמאלה
-txt_4_5_noupdate: PeaZip is up to date
-txt_4_5_properties: Properties
+txt_4_5_goupdate: גרסה חדשה זמינה. לפתוח את האתר הרשמי של PeaZip כדי להוריד את העדכון?
+txt_4_5_b: תחתית
+txt_4_5_koupdate: לא ניתן לחפש עדכונים, אין חיבור לשרת העדכונים
+txt_4_5_update: בדוק אם יש עדכונים
+txt_4_5_dock: לעגון
+txt_4_5_l: שמאל
+txt_4_5_noupdate: PeaZip מעודכן
+txt_4_5_properties: נכסים
 txt_4_5_r: ימינה
-txt_4_5_pj: Saved scripts
-txt_4_5_shaddress: הצג שורת מצב
-txt_4_5_shnav: Show navigation bar
-txt_4_5_shstatus: Show status bar
-txt_4_5_shtool: Show tool bar
-txt_4_5_upxpj: Sorry, cannot export task definition since this action or option requires performing multiple distinct commands
-txt_4_5_t: למעלה
-txt_4_4_confremoveall: Remove all PeaZip customization files (Applications, Bookmarks, Password Manager)?
-txt_4_4_confremove: Remove PeaZip configuration?
-txt_4_3_pwmanhint: Double click to edit items in password list, rightclick for options, Ctrl+C to copy passwords
-txt_4_3_exppl: Export password list
-txt_4_3_expple: Encrypted (backup Password Manager)
-txt_4_3_keeppw: Keep password/keyfile for current session
-txt_4_3_pwmanpwhint: Setting a password/keyfile (optional) to encrypt password list is recommended, in this way authentication will be required to access to the Password Manager. Password/keyfile can be changed at any time from this form.
-txt_4_3_pwmanmaster: Set/change master password
+txt_4_5_pj: סקריפטים שמורים
+txt_4_5_shaddress: הצג את שורת הכתובת
+txt_4_5_shnav: הצג סרגל צדדי
+txt_4_5_shstatus: הצג שורת מצב
+txt_4_5_shtool: הצג את סרגל הכלים
+txt_4_5_upxpj: מצטערים, לא ניתן לייצא את הגדרת המשימה מכיוון שפעולה או אפשרות זו דורשת ביצוע פקודות שונות
+txt_4_5_t: ראש
+txt_4_4_confremoveall: להסיר את כל קבצי ההתאמה האישית של PeaZip (יישומים, סימניות)?
+txt_4_4_confremove: להסיר את תצורת PeaZip?
+txt_4_3_pwmanhint: לחץ פעמיים כדי לערוך פריטים ברשימת הסיסמאות, לחץ לחיצה ימנית לאפשרויות, Ctrl+C כדי להעתיק סיסמאות
+txt_4_3_exppl: ייצוא רשימת סיסמאות
+txt_4_3_expple: מוצפן (מנהל סיסמאות גיבוי)
+txt_4_3_keeppw: שמור את הסיסמה/קובץ המפתח להפעלה הנוכחית
+txt_4_3_pwmanpwhint: מומלץ להגדיר סיסמה/קובץ מפתח (אופציונלי) להצפנת רשימת סיסמאות, בדרך זו יידרש אימות כדי לגשת למנהל הסיסמאות. ניתן לשנות סיסמה/קובץ מפתח בכל עת מהטופס הזה.
+txt_4_3_pwmanmaster: הגדר/שנה את סיסמת האב של PM
 txt_4_3_pwmanlist: רשימת סיסמאות
 txt_4_3_pwman: מנהל סיסמאות
-txt_4_3_pwmancorr: Password Manager seems tampered or corrupted. Keep Password Manager anyway and try to recover current password list, if you trust it? (No will reset Password Manager, recommended)
-txt_4_3_expplp: Plain text (all uses)
-txt_4_3_recsrc: Recursive search by default
-txt_4_3_resetpm: Reset Password Manager? All saved passwords will be deleted
-txt_4_3_breadcrumb: Show Address as breadcrumb
-txt_4_2_arcabspath: Use absolute paths
-txt_4_1_duplicateshint: "size"/"checksum" string is reported in CRC column for all duplicate candidates found in current directory or search filter
-txt_4_1_adminhint: (HINT: alternatively, you can request UAC elevation to work in protected paths, Alt+F10 or Options > Run as administrator)
-txt_4_1_selected: (selected)
-txt_4_1_duplicatesfound: duplicates found
-txt_4_1_duplicatesfind: Find duplicates
-txt_4_1_runasadmin: Run as administrator
-txt_4_1_simplesearch: Simple search
-txt_4_0_thim: Show picture thumbnails
-txt_3_8_type_description_wim: WIM: Microsoft's disk image format
-txt_3_8_type_description_xz: XZ: powerful file compression based on LZMA2
+txt_4_3_pwmancorr: נראה שמנהל הסיסמאות מופרע או פגום. שמור את מנהל הסיסמאות בכל מקרה ונסה לשחזר את רשימת הסיסמאות הנוכחית, אם אתה סומך עליה? (לא יאפס את מנהל הסיסמאות, מומלץ)
+txt_4_3_expplp: טקסט רגיל (כל השימושים)
+txt_4_3_recsrc: חיפוש רקורסיבי כברירת מחדל
+txt_4_3_resetpm: לאפס את מנהל הסיסמאות? כל הסיסמאות השמורות יימחקו
+txt_4_3_breadcrumb: הצג כתובת כפירורי לחם
+txt_4_2_arcabspath: השתמש בנתיבים מוחלטים
+txt_4_1_duplicateshint: מחרוזת "גודל"/"checksum" מדווחת בעמודה CRC עבור כל המועמדים הכפולים שנמצאו בספרייה הנוכחית או במסנן החיפוש
+txt_4_1_adminhint: (רמז: לחלופין, אתה יכול לבקש גובה UAC לעבוד בנתיבים מוגנים, Alt+F10 או Options > הפעל כמנהל)
+txt_4_1_selected: (נבחר)
+txt_4_1_duplicatesfound: נמצאו כפילויות
+txt_4_1_duplicatesfind: מצא כפילויות
+txt_4_1_runasadmin: הפעל כמנהל
+txt_4_1_simplesearch: חיפוש פשוט
+txt_4_0_thim: הצג תמונות ממוזערות של תמונות
+txt_3_8_type_description_wim: WIM: פורמט תמונת הדיסק של מיקרוסופט
+txt_3_8_type_description_xz: XZ: דחיסת קבצים חזקה המבוססת על LZMA2
 txt_3_7_donations: תרומות
-txt_3_7_nameasparent: Name archive as selected item's parent folder, if multiple items are added
-txt_3_7_tracker: Issue Tracker
+txt_3_7_nameasparent: תן שם לארכיון כתיקיית האב של הפריט שנבחר, אם נוספו מספר פריטים
+txt_3_7_tracker: נושא גשש
 txt_3_7_sort: מיין לפי
-txt_3_7_swapbars: Swap Tool bar / Address bar
-txt_3_7_themedbars: Themed bars
-txt_3_6_ignoredd: Always ignore paths for drag and drop extraction
-txt_3_6_close: סגור
-txt_3_6_resetapps: Do you want to reset Applications (customizable group of programs and scripts to open files with, overriding file associations)?
-txt_3_6_ethemes: Existing Themes
-txt_3_5_td: Download Themes
-txt_3_5_managecustomthemes: Manage Themes
-txt_3_4_nopaths: No paths
-txt_3_4_smallicons: Icons
-txt_3_3_skipunits: (Windows) Get volume information for network units, slower startup
-txt_3_3_stralt: Alternative command, when no parameter is passed
-txt_3_3_apps: Applications
-txt_3_3_multi: Multiple selection
-txt_3_3_runexp: Open a program, file, folder or website
-txt_3_3_apppath: PeaZip's folder
-txt_3_3_run: Run
-txt_3_2_7zutf8nonascii: 7z / p7zip -mcu use UTF8 for file names containing non-ASCII symbols inside .zip files
+txt_3_7_swapbars: סרגל הכלים / שורת הכתובת החלפה
+txt_3_7_themedbars: ברים עם נושא
+txt_3_6_ignoredd: התעלם תמיד מנתיבים לחילוץ גרור ושחרר
+txt_3_6_close: לסגור
+txt_3_6_resetapps: האם ברצונך לאפס יישומים (קבוצה הניתנת להתאמה אישית של תוכניות וסקריפטים לפתיחת קבצים איתם, ביטול שיוך קבצים)?
+txt_3_6_ethemes: ערכות נושא קיימות
+txt_3_5_td: בדוק אם יש ערכות נושא
+txt_3_5_managecustomthemes: נהל ערכות נושא
+txt_3_4_nopaths: אין שבילים
+txt_3_4_smallicons: אייקונים
+txt_3_3_skipunits: (Windows) קבל מידע על עוצמת הקול עבור יחידות רשת, הפעלה איטית יותר
+txt_3_3_stralt: פקודה חלופית, כאשר אין פרמטר מועבר
+txt_3_3_apps: יישומים
+txt_3_3_multi: בחירה מרובה
+txt_3_3_runexp: פתח תוכנית, קובץ, תיקיה או אתר אינטרנט
+txt_3_3_apppath: התיקייה של PeaZip
+txt_3_3_run: לרוץ
+txt_3_2_7zutf8nonascii: 7z / p7zip -mcu השתמש ב-UTF8 עבור שמות קבצים המכילים סמלים שאינם ASCII בתוך קבצי zip.
 txt_3_2_alltasks: כל המשימות
-txt_3_2_conf: Configuration
-txt_3_2_donations: Donate to charitable organizations
-txt_3_1_sccenc: 7z / p7zip -scc character encoding
+txt_3_2_conf: תצורה
+txt_3_2_donations: תרומה לארגוני צדקה
+txt_3_1_sccenc: קידוד תווים 7z / p7zip CONSOLE
 txt_3_1_downloads: הורדות
-txt_3_1_lib: Libraries
-txt_3_1_more: עוד
-txt_3_1_openasarchive: Open as archive
-txt_3_1_sendto: User’s SendTo menu folder
-txt_3_1_pathexc: Path exceeding maximum allowed size
+txt_3_1_lib: ספריות
+txt_3_1_more: יותר
+txt_3_1_openasarchive: פתח כארכיון
+txt_3_1_sendto: תיקיית התפריט SendTo של המשתמש
+txt_3_1_pathexc: נתיב חורג מהגודל המרבי המותר
 txt_3_1_recent: לאחרונה
-txt_3_1_plsmartmin: Run minimized, show/keep open only if needed
-txt_3_1_src: Searches
-txt_3_1_systmp: System temp
-txt_3_1_languagetools: תרגם
-txt_3_1_workingdir: Working directory
-txt_3_0_nonreadableorpw: Archive is not readable. Would you like to try a password?
-txt_3_0_readablepw: Archive seems password protected
-txt_3_0_configure: System integration and file associations
-txt_3_0_resettmp: Reset peazip-tmp
+txt_3_1_plsmartmin: הפעל ממוזער, הצג/שמור פתוח רק במידת הצורך
+txt_3_1_src: חיפושים
+txt_3_1_systmp: הטמפ' של המשתמש
+txt_3_1_languagetools: לתרגם
+txt_3_1_workingdir: ספריית עבודה
+txt_3_0_nonreadableorpw: הארכיון אינו קריא. ייתכן שהארכיון אינו חוקי, ייתכן שחסרים כרכים או טבלת התוכן שלו מוצפנת. האם תרצה לנסות סיסמה?
+txt_3_0_readablepw: הארכיון אינו קריא, עשוי להיות מוגן בסיסמה
+txt_3_0_configure: שיוך קבצים ושילוב תפריטי מערכת
+txt_3_0_resettmp: אפס קבצי עבודה זמניים
 txt_2_9_address: שורת הכתובת
-txt_2_9_adv: Advanced filters are applied when managing any file supported through 7z or FreeArc backends, see documentation, and overrides basic filters (that are used for search functions and are displayed in Bookmarks and History panels)
+txt_2_9_adv: מסננים מתקדמים מוחלים בעת ניהול כל קובץ הנתמך דרך 7z או FreeArc backends, עיין בתיעוד, ודובר מסננים בסיסיים (המשמשים לפונקציות חיפוש ומוצגים בחלוניות Bookmarks ו- History)
 txt_2_9_columns: עמודות
 txt_2_9_copyhere: העתק לכאן
-txt_2_9_noscan: Don't scan files being added to layout
-txt_2_9_extconsole: Extraction console is available only while browsing archives
-txt_2_9_thl: Highlight buttons
+txt_2_9_noscan: אל תסרוק קבצים שמתווספים לפריסה
+txt_2_9_extconsole: קונסולת החילוץ זמינה רק בזמן גלישה בארכיונים
+txt_2_9_thl: הדגש כפתורים
 txt_2_9_home: בית
 txt_2_9_lt: גדול
 txt_2_9_mt: בינוני
-txt_2_9_movehere: העבר לכאן
+txt_2_9_movehere: תעבור לכאן
 txt_2_9_nav: ניווט
-txt_2_9_navbar: סרגל הניווט
-txt_2_9_none: ללא
-txt_2_9_organize: ארגן
-txt_2_9_public: ציבורי
-txt_2_9_rec: Recursive: search in subdirectories, may take some time
-txt_2_9_selected: Selected
-txt_2_9_setapps: Organize Applications
-txt_2_9_showmenu: הצג סרגל תפריט
+txt_2_9_navbar: בר צדדי
+txt_2_9_none: אף לא אחד
+txt_2_9_organize: לארגן
+txt_2_9_public: פומבי
+txt_2_9_rec: רקורסיבי: חיפוש בספריות משנה, עשוי להימשך זמן מה
+txt_2_9_selected: נבחר
+txt_2_9_setapps: ארגן יישומים
+txt_2_9_showmenu: הצג את שורת התפריטים
 txt_2_9_st: קטן
-txt_2_9_test_pw2G: Test for encryption <2GB archives
+txt_2_9_test_pw2G: בדיקת הצפנה של ארכיונים <2GB
 txt_2_9_vst: טקסט בלבד
 txt_2_9_toolbar: סרגל כלים
-txt_2_9_tree: Tree
-txt_2_9_views: Views
-txt_2_8_experimental: (experimental)
-txt_2_8_zcopy: (Windows) Copy files in restartable mode, slower copy
-txt_2_8_addvol: Adding entire volume(s) to archive may take long time, continue anyway?
-txt_2_8_uniterror: Cannot access the unit
-txt_2_8_cannotconvert: Cannot convert selected archives
-txt_2_8_convertbegin: Continue with compression stage to finalize the conversion?
-txt_2_8_convert: המר
-txt_2_8_convertexisting: Convert existing archives
-txt_2_8_convertdelete: Delete files and folders created temporarily for conversion?
+txt_2_9_tree: עץ
+txt_2_9_views: צפיות
+txt_2_8_experimental: (נסיוני)
+txt_2_8_zcopy: (Windows) העתק קבצים במצב הפעלה מחדש, העתקה איטית יותר
+txt_2_8_addvol: הוספת כרכים שלמים לארכיון עשויה להימשך זמן רב, להמשיך בכל זאת?
+txt_2_8_uniterror: לא ניתן לגשת ליחידה
+txt_2_8_cannotconvert: לא ניתן להמיר את הארכיונים שנבחרו
+txt_2_8_convertbegin: להמשיך עם שלב הדחיסה כדי לסיים את ההמרה?
+txt_2_8_convert: להמיר
+txt_2_8_convertexisting: המרת ארכיונים קיימים
+txt_2_8_convertdelete: למחוק קבצים ותיקיות שנוצרו באופן זמני להמרה?
 txt_2_8_details: פרטים
-txt_2_8_parallel: Execute tasks in parallel when possible
-txt_2_8_convertnote: In any case original archives were not modified, to let the user in control about keeping or removing them
-txt_2_8_custom: is not directly supported by PeaZip, but in extraction stage you can set PeaZip to handle custom file types in "Advanced" tab. Proceed opening this file?
-txt_2_8_unitrecommend: It is recommended either to extract (rightclick > extract selected) or to open filesystems from computer's root (system tools > Open unit as archive)
-txt_2_8_viewasarchive: Open unit as archive
-txt_2_8_nounit: No unit selected
-txt_2_8_rowselect: Row select
-txt_2_8_statusbar: שורת מצב
-txt_2_8_typeunit: Type logical or physical unit name
-txt_2_8_usedefaultoutpath: Use default output path
-txt_2_7_experimental: (experimental, see documentation)
-txt_2_7_optional: (אופציונאלי)
-txt_2_7_list_tryflatorpw: , possible solutions: try flat view (F6), provide password (F9), get a fresh copy of the archive
-txt_2_7_separate: Add each object to a separate archive
-txt_2_7_pwsupported: archiving with password
-txt_2_7_cancel: בטל
-txt_2_7_encfn: Encrypt also file names (if supported by the format)
-txt_2_7_setpw: Enter password / keyfile
-txt_2_7_ext: Extracting:
-txt_2_7_extfrom: Extracting from archive:
-txt_2_7_es: Extract supported non-archive file types, i.e. executables, MS Office and OOo files
-txt_2_7_eu: Extract unsupported file types, specifying custom extraction utility
-txt_2_7_clipboard: Clipboard
-txt_2_7_goarclayout: Go to archiving layout
-txt_2_7_goextlayout: Go to extraction layout
-txt_2_7_ok: OK
-txt_2_7_drag_archive: open file as new archive? ("No" to add file to current archiving layout)
-txt_2_7_oop: Open output path when task completes
-txt_2_7_validatefn: Operation stopped, invalid file name detected:
-txt_2_7_validatecl: Operation stopped, potentially dangerous command detected (i.e. command concatenation not allowed within the program):
-txt_2_7_output: Output
-txt_2_7_pwnotset: Password is not set
-txt_2_7_pwarcset: Password is set
-txt_2_7_pwextset: Password is set, it is possible to extract/list/test encrypted archives
-txt_2_7_archivehint: Drag here files and folders to archive, or right-click for more options
-txt_2_7_exthint: Drag here archives to extract, or right-click for more options
-txt_2_7_setadvf: Set advanced filters
-txt_2_7_selpath: Selected item's path
-txt_2_7_separateerror: Sorry, cannot import task definition's command line while using "Add each object to a separate archive" switch, since the task is performed as multiple distinct commands
-txt_2_7_noinput: The layout is empty: please use Add file(s) or Load Layout to populate the list of archives to be extracted
-txt_2_7_dirsize: The size of the content of folders is not checked for calculating the total size
-txt_2_7_un7z_browse_flat: try flat view (F6)
-txt_2_7_updating: Updating existing archive
-txt_2_6_folders: (folders)
-txt_2_6_advanced: Advanced
-txt_2_6_plalways: Always keep open to inspect task's report
-txt_2_6_plsmart: Keep open only if needed (error, list or test reports)
-txt_2_5_sessionio: (this session)
-txt_2_5_advanced: Advanced edit: place spaces between parameter strings and filename if needed
-txt_2_5_basic: Basic edit: application and parameters before input name
-txt_2_5_cannotrun: Cannot run
-txt_2_5_custeditors: Custom editors, players, antivirus scanners etc... (override system's file associations)
-txt_2_5_delete: Delete
-txt_2_5_delete_fromarchive: Delete from archive
-txt_2_5_langflag: Display archived object's name as UTF-8 text; uncheck to replace extended characters with "?"
-txt_2_5_encpj: Encode task definition as UTF-8 text
-txt_2_5_execommand: Executable or command
+txt_2_8_parallel: בצע משימות במקביל במידת האפשר
+txt_2_8_convertnote: בכל מקרה לא שונו הארכיונים המקוריים, כדי לאפשר למשתמש לשלוט בשמירה או הסרה שלהם
+txt_2_8_custom: לא נתמך ישירות על ידי PeaZip, אבל בשלב החילוץ אתה יכול להגדיר את PeaZip לטפל בסוגי קבצים מותאמים אישית בכרטיסייה "מתקדם". להמשיך בפתיחת הקובץ הזה?
+txt_2_8_unitrecommend: מומלץ לחלץ (קליק ימני > חילוץ נבחר) או לפתוח מערכות קבצים משורש המחשב (כלי מערכת > פתח יחידה כארכיון)
+txt_2_8_viewasarchive: פתח יחידה כארכיון
+txt_2_8_nounit: לא נבחרה יחידה
+txt_2_8_rowselect: בחירת שורה
+txt_2_8_statusbar: שורת המצב
+txt_2_8_typeunit: הקלד שם יחידה לוגית או פיזית
+txt_2_8_usedefaultoutpath: השתמש תמיד בנתיב הפלט המוגדר כברירת מחדל
+txt_2_7_experimental: (ניסיוני, ראה תיעוד)
+txt_2_7_optional: (אופציונלי)
+txt_2_7_list_tryflatorpw: , פתרונות אפשריים: נסה תצוגה שטוחה (F6), ספק סיסמה (F9), קבל עותק טרי של הארכיון
+txt_2_7_separate: הוסף לארכיונים נפרדים
+txt_2_7_pwsupported: אחסון בארכיון עם סיסמה
+txt_2_7_cancel: לבטל
+txt_2_7_encfn: הצפין גם שמות קבצים (אם נתמך על ידי הפורמט)
+txt_2_7_setpw: הגדר סיסמה / קובץ מפתח
+txt_2_7_ext: חילוץ
+txt_2_7_extfrom: חילוץ מהארכיון
+txt_2_7_es: חלץ סוגי קבצים נתמכים שאינם בארכיון, כלומר קובצי הפעלה, קבצי MS Office ו-OOo
+txt_2_7_eu: חלץ סוגי קבצים שאינם נתמכים, ציון כלי חילוץ מותאם אישית
+txt_2_7_clipboard: לוח כתיבה
+txt_2_7_goarclayout: עבור לפריסת ארכיון
+txt_2_7_goextlayout: עבור לפריסת חילוץ
+txt_2_7_ok: בסדר
+txt_2_7_drag_archive: לפתוח קובץ כארכיון חדש? ("לא" כדי להוסיף קובץ לפריסת הארכיון הנוכחית)
+txt_2_7_oop: פתח את נתיב הפלט בסיום המשימה
+txt_2_7_validatefn: הפעולה הופסקה, זוהה שם קובץ לא חוקי
+txt_2_7_validatecl: הפעולה הופסקה, זוהתה פקודה שעלולה להיות מסוכנת (כלומר שרשרת פקודות אינה מותרת בתוך התוכנית)
+txt_2_7_output: תפוקה
+txt_2_7_pwnotset: הסיסמה לא מוגדרת
+txt_2_7_pwarcset: הסיסמה מוגדרת
+txt_2_7_pwextset: הסיסמה מוגדרת, אפשר לחלץ/רשום/לבדוק ארכיונים מוצפנים
+txt_2_7_archivehint: גרור לכאן קבצים ותיקיות לארכיון, או לחץ לחיצה ימנית לאפשרויות נוספות
+txt_2_7_exthint: גרור לכאן ארכיונים כדי לחלץ, או לחץ לחיצה ימנית לאפשרויות נוספות
+txt_2_7_setadvf: הגדר מסננים מתקדמים
+txt_2_7_selpath: הנתיב של הפריט שנבחר
+txt_2_7_separateerror: מצטערים, לא ניתן לייבא את שורת הפקודה של הגדרת המשימה תוך שימוש במתג "הוסף לארכיון נפרד", מכיוון שהמשימה מבוצעת כמספר פקודות נפרדות
+txt_2_7_noinput: הפריסה ריקה: אנא השתמש בהוספת קבצים או טען פריסה כדי לאכלס את רשימת הארכיונים לחילוץ
+txt_2_7_dirsize: גודל התוכן של תיקיות אינו מסומן לחישוב הגודל הכולל
+txt_2_7_un7z_browse_flat: נסה נוף שטוח (F6)
+txt_2_7_updating: [מעדכן ארכיון קיים]
+txt_2_6_folders: (תיקיות)
+txt_2_6_advanced: מתקדם
+txt_2_6_plalways: עצרו תמיד כדי לבדוק את דוח המשימות
+txt_2_6_plsmart: עצור כדי לבדוק את הדוח עבור שגיאות, רשימה, בדיקה
+txt_2_5_sessionio: (המפגש הזה)
+txt_2_5_advanced: עריכה מתקדמת: הצב רווחים בין מחרוזות פרמטר ושם קובץ במידת הצורך
+txt_2_5_basic: עריכה בסיסית: יישום ופרמטרים לפני שם הקלט
+txt_2_5_cannotrun: לא יכול לרוץ
+txt_2_5_custeditors: עורכים מותאמים אישית, נגנים, סורקי אנטי וירוס וכו'... (עקוף את שיוך הקבצים של המערכת)
+txt_2_5_delete: למחוק
+txt_2_5_delete_fromarchive: מחק מהארכיון
+txt_2_5_langflag: הצג את שם האובייקט בארכיון כטקסט UTF-8; בטל את הסימון כדי להחליף תווים מורחבים ב-"?"
+txt_2_5_encpj: מקודד את הגדרת המשימה כטקסט UTF-8
+txt_2_5_execommand: בר הפעלה או פקודה
 txt_2_5_help: עזרה
-txt_2_5_langhint: Hint: replacing extended characters with "?" jolly character can improve syntax if archive's character set cannot be successfully converted on the current machine
-txt_2_5_mini_help: Localized Tutorial
-txt_2_5_offline_help: PeaZip help
-txt_2_5_tray: Reduce to tray
-txt_2_5_remove: הסר
-txt_2_5_hintpaths: Rightclick to open system's and user's paths
-txt_2_5_selectapp: Select application
-txt_2_5_strafter: String after input name
-txt_2_5_strbefore: String before input name
-txt_2_5_encoding: Text encoding
-txt_2_5_nopw: this type of archives does not support encryption
-txt_2_4_draghint: [drag to Explorer with enabled Address bar]
-txt_2_4_tb: Adapt toolbar buttons (restarts PeaZip)
+txt_2_5_langhint: רמז: החלפת תווים מורחבים ב-"?" תו Jolly יכול לשפר את התחביר אם לא ניתן להמיר בהצלחה את ערכת התווים של הארכיון במחשב הנוכחי
+txt_2_5_mini_help: מדריך מקומי
+txt_2_5_offline_help: עזרה של PeaZip
+txt_2_5_tray: צמצמו למגש
+txt_2_5_remove: להסיר
+txt_2_5_hintpaths: לחץ לחיצה ימנית כדי לפתוח את הנתיבים של המערכת והמשתמש
+txt_2_5_selectapp: בחר יישום
+txt_2_5_strafter: מחרוזת אחרי שם קלט
+txt_2_5_strbefore: מחרוזת לפני שם הקלט
+txt_2_5_encoding: קידוד טקסט
+txt_2_5_nopw: סוג זה של ארכיונים אינו תומך בהצפנה
+txt_2_4_draghint: [גרור לסייר עם שורת הכתובת מופעלת]
+txt_2_4_tb: התאם לחצני סרגל הכלים (מפעיל מחדש את PeaZip)
 txt_2_4_adding: מוסיף
-txt_2_4_advclip: Clipboard keeps multiple selections
-txt_2_4_yanswers: Answers
-txt_2_4_itemsheight: Auto-size items height
-txt_2_4_clearclipboard: Clear clipboard (Esc)
+txt_2_4_advclip: הלוח שומר מספר בחירות
+txt_2_4_yanswers: תשובות
+txt_2_4_itemsheight: גודל פריטים בגובה אוטומטי
+txt_2_4_clearclipboard: נקה לוח (Esc)
 txt_2_4_wcommons: Commons
-txt_2_4_copyfrom: Copy from
-txt_2_4_deletebookmarks: Do you want to delete the list of bookmarked files and folders?
-txt_2_4_documents: Documents
-txt_2_4_wenc: Encyclopedia
-txt_2_4_extractfrom: Extract from
-txt_2_4_hexp: Hex preview
-txt_2_4_operation: Operation
-txt_2_4_path: path is not writeable (i.e. read-only). Do you want to select a writeable output path?
-txt_2_4_removefromclipboard: Remove from clipboard
-txt_2_4_stdclip: Standard: keep a single selection in clipboard, clear cut operations on paste
-txt_2_4_totalmem: total memory
+txt_2_4_copyfrom: העתק מ
+txt_2_4_deletebookmarks: האם ברצונך למחוק את רשימת הקבצים והתיקיות שסומנו בסימניות?
+txt_2_4_documents: מסמכים
+txt_2_4_wenc: אנציקלופדיה
+txt_2_4_extractfrom: חלץ מ
+txt_2_4_hexp: תצוגה מקדימה של hex
+txt_2_4_operation: מבצע
+txt_2_4_path: הנתיב אינו ניתן לכתיבה (כלומר מלא או לקריאה בלבד). האם ברצונך לבחור נתיב פלט הניתן לכתיבה?
+txt_2_4_removefromclipboard: הסר מהלוח
+txt_2_4_stdclip: סטנדרטי: שמור בחירה בודדת בלוח, פעולות חיתוך ברורות בהדבקה
+txt_2_4_totalmem: זיכרון כולל
 txt_2_4_gvideo: וידאו
-txt_2_4_wbook: Wikibook
-txt_2_4_wnews: Wikinews
-txt_2_4_wsrc: Wikisource
-txt_2_4_wdict: Wiktionary
-txt_2_3_pw_errorchar: quote character cannot be used by PeaZip GUI in passwords under current system, please change password or chose Console mode in Backend binaries user interface in Options > Settings
-txt_2_3_envstr: Display environment variables
-txt_2_3_never_pw: אל תבקש סיסמה
-txt_2_3_home: User's home
-txt_2_3_on_pw: On extract/list/test operations from system's menus:
-txt_2_3_test_pw100: Test for encryption <100MB archives
-txt_2_3_test_pw: Test for encryption (may be slow)
-txt_exclude_recourse: "exclude" recurse subdirs
-txt_action_extopen: "Extract and open with associated application" action
-txt_error_passwordnotmatch: "Password" and "Confirm" fileds doesn't match, please correct them
-txt_action_preview: "Preview with associated application" action
-txt_preview_hint: "Preview" action perform the same task as "Extract and open" but to a temporary path in output directory, automathically removed when the archive is closed.
-txt_better: (better)
-txt_default2: (default)
-txt_faster: (faster)
-txt_fastermem: (faster, less memory)
-txt_tempdir: (PeaZip's temporary work folder)
-txt_stream: (set by "Stream control")
-txt_slowermem: (slower, more memory)
-txt_store: (store, fastest)
-txt_newfolder: (in new folder)
-txt_7z_exitcodeunknown: : Unknown error in task
-txt_list_isfolder: [folder]
-txt_none: <none>
-txt_fd: 1.44 MB Floppy Disk
-txt_7z_exitcode1: 1: אזהרה: non fatal error(s); i.e. some files missing or locked
-txt_attach10: 10 MB attachment
-txt_7z_exitcode2: 2: Fatal error occurred
-txt_7z_exitcode255: 255: Task halted by the user
-txt_fat32: 4 GB FAT32 file
-txt_dvd: 4.7 GB DVD
-txt_attach5: 5 MB attachment
-txt_cd650: 650 MB CD
-txt_7z_exitcode7: 7: שגיאה: got incorrect command line
-txt_cd700: 700 MB CD
-txt_type_description_7z: 7Z: feature rich archive format with high compression ratio
+txt_2_4_wbook: ויקיבוק
+txt_2_4_wnews: ויקיפדיה
+txt_2_4_wsrc: ויקימקור
+txt_2_4_wdict: ויקימילון
+txt_2_3_pw_errorchar: לא מומלץ להשתמש בתו מרכאה בסיסמאות (עבור PeaZip וסקריפטים). אם אתה צריך ליצור או לחלץ ארכיון עם סיסמה זו אתה יכול לבטל את ההודעה ותתבקש להזין את הסיסמה באופן אינטראקטיבי במסוף.
+txt_2_3_envstr: הצגת משתני סביבה
+txt_2_3_never_pw: אל תבקש סיסמא
+txt_2_3_home: בית המשתמש
+txt_2_3_on_pw: על פעולות חילוץ/רשימה/בדיקה מתפריטי המערכת
+txt_2_3_test_pw100: בדיקת הצפנה של ארכיון <100MB
+txt_2_3_test_pw: בדיקת הצפנה (ייתכן שהיא איטית)
+txt_exclude_recourse: "אל תכלול" תת-ספריות משנה
+txt_action_extopen: פעולת "חלץ ופתח עם יישום משויך".
+txt_error_passwordnotmatch: השדות "סיסמה" ו"אשר" אינם תואמים, אנא תקן אותם
+txt_action_preview: הפעולה "תצוגה מקדימה עם יישום משויך".
+txt_preview_hint: פעולת "תצוגה מקדימה" בצע את אותה משימה כמו "חלץ ופתח" אך לנתיב זמני בספריית הפלט, הוסר אוטומטית כאשר הארכיון נסגר.
+txt_better: (לשפר)
+txt_default2: (ברירת מחדל)
+txt_faster: (מהיר יותר)
+txt_fastermem: (מהיר יותר, פחות זיכרון)
+txt_tempdir: (תיקיית העבודה הזמנית של PeaZip)
+txt_stream: (מוגדר על ידי "בקרת זרם")
+txt_slowermem: (איטי יותר, יותר זיכרון)
+txt_store: (חנות, הכי מהר)
+txt_newfolder: (בתיקייה חדשה)
+txt_7z_exitcodeunknown: : שגיאה לא ידועה במשימה
+txt_list_isfolder: [תיקייה]
+txt_none: <אין>
+txt_fd: 1.44 מגה תקליטון
+txt_7z_exitcode1: 1: אזהרה: שגיאות לא קטלניות; כלומר, חלק מהקבצים חסרים או נעולים
+txt_attach10: קובץ מצורף של 10 MB
+txt_7z_exitcode2: 2: אירעה שגיאה חמורה
+txt_7z_exitcode255: 255: המשימה הופסקה על ידי המשתמש
+txt_fat32: קובץ FAT32 בנפח 4 GB
+txt_dvd: DVD בנפח 4.7 גיגה-בייט
+txt_attach5: קובץ מצורף של 5 מגה
+txt_cd650: תקליטור בנפח 650 מגה
+txt_7z_exitcode7: 7: שגיאה: שורת פקודה לא נכונה
+txt_cd700: תקליטור בנפח 700 מגה
+txt_type_description_7z: 7Z: פורמט ארכיון עשיר עם יחס דחיסה גבוה
 txt_dvddl: 8.5 GB DVD DL
-txt_7z_exitcode8: 8: שגיאה: not enough memory for requested operation
-txt_abort: Abort scheduled file copy/move operations?
+txt_7z_exitcode8: 8: שגיאה: אין מספיק זיכרון לפעולה המבוקשת
+txt_abort: לבטל את פעולות העתקה/הזזה מתוזמנות של קבצים?
 txt_about: אודות
 txt_action: פעולה
-txt_action_hint: Action on open or preview with associated application
-txt_add: הוסף
-txt_add_existing_archive: Add (if archive exists)
+txt_action_hint: פעולה בפתיחה או בתצוגה מקדימה עם יישום משויך
+txt_add: להוסיף
+txt_add_existing_archive: הוסף (אם קיים ארכיון)
 txt_add_archive: הוסף ארכיון
-txt_add_files: הוסף קובץ(ים)
+txt_add_files: הוסף קבצים
 txt_add_folder: הוסף תיקיה
 txt_add_path: הוסף נתיב
-txt_add_tolayout: Add selected files and folders to archive's layout
+txt_add_tolayout: הוסף קבצים ותיקיות נבחרים לפריסה של הארכיון
 txt_add_toarchive: הוסף לארכיון
-txt_add_tobookmarks: הוסף למועדפים
-txt_address_hint: Filter: accepts * and ? wildcards
-txt_adv_filters: Advanced filters
-txt_algo: Algorithm
-txt_all: הכל
+txt_add_tobookmarks: הוסף לסימניות
+txt_address_hint: מסנן: מקבל * ו? תווים כלליים
+txt_adv_filters: מסננים מתקדמים
+txt_algo: אלגוריתם
+txt_all: כל
 txt_all_default: הכל (ברירת מחדל)
-txt_all_type: סוג זהה
+txt_all_type: אותו סוג
 txt_all_date: תאריך
-txt_all_psize: Packed file size
-txt_all_attributes: מאפיינים זהים
-txt_all_size: גודל קובץ
-txt_error_input_upx: allows a single executable file as input
-txt_always_pw: Always ask for password
-txt_ignore_ext: Always ignore paths for "Extract and..."
-txt_ignore_disp: Always ignore paths for "Extract displayed..."
-txt_ignore_sel: Always ignore paths for "Extract selected..."
-txt_key_hint: Append keyfile's hash to password; the archive can be decrypted by PeaZip and other applications following the same standard, or entering the hash as part of the password
-txt_timestamp: Append timestamp to name
-txt_appoptions: Application options
-txt_type_description_arc: ARC: experimental archiver, powerful, efficient and feature-rich
-txt_archive: Archive
-txt_un7z_browse_ok: archive browsed successfully
-txt_interface: Archive browser interface
-txt_archivecreation: Archive creation
-txt_tarbefore_hint: Archive data in TAR format before than in specified type.
-txt_archive_hint: Archive, compress, split and keep private files, folders and volumes
-txt_compressionratio_hint: Archive's compression ratio
-txt_archiving: Archiving:
-txt_cl_long: Arguments seem exceeding the maximum size that can be passed by PeaZip frontend, please select less input files (i.e. select dirs instead of single files)
-txt_overwrite_askbefore: Ask before overwriting (in console)
-txt_associated: Associated application
-txt_attributes: מאפיינים
-txt_author: יוצר
-txt_ren_existing: Auto rename existing files
-txt_ren_extracted: Auto rename extracted files
-txt_autofolder: Automatically create new folder to extract the archive in?
-txt_back: חזרה
-txt_backend: Backend binaries user interface
-txt_backupexe: Backup executable (recommended)
-txt_bettercompression: better compression
+txt_all_psize: גודל קובץ ארוז
+txt_all_attributes: אותן תכונות
+txt_all_size: גודל הקובץ
+txt_error_input_upx: מאפשר קובץ הפעלה יחיד כקלט
+txt_always_pw: בקש תמיד סיסמא
+txt_ignore_ext: התעלם תמיד מנתיבים עבור "חלץ ו..."
+txt_ignore_disp: התעלם תמיד מנתיבים עבור "חילוץ מוצג..."
+txt_ignore_sel: התעלם תמיד מנתיבים עבור "חלץ נבחר..."
+txt_key_hint: הוסף את ה-hash של keyfile לסיסמה; ניתן לפענח את הארכיון על ידי PeaZip ויישומים אחרים לפי אותו תקן, או להזין את ה-hash כחלק מהסיסמה
+txt_timestamp: הוסף חותמת זמן לשם
+txt_appoptions: אפשרויות יישום
+txt_type_description_arc: ARC: ארכיון ניסיוני, חזק, יעיל ועשיר בתכונות
+txt_archive: ארכיון
+txt_un7z_browse_ok: דפדפו בהצלחה בארכיון
+txt_interface: ממשק דפדפן ארכיון
+txt_archivecreation: יצירת ארכיון
+txt_tarbefore_hint: ארכיון נתונים בפורמט TAR לפני הסוג שצוין.
+txt_archive_hint: ארכיון, דחיסה, פיצול ושמור קבצים, תיקיות ואמצעי אחסון פרטיים
+txt_compressionratio_hint: יחס הדחיסה של הארכיון
+txt_archiving: אחסון בארכיון
+txt_cl_long: נראה שהטיעונים חורגים מהגודל המקסימלי שניתן להעביר על ידי חזית ה-PeaZip, אנא בחר פחות קבצי קלט (כלומר בחר ב-dirs במקום קבצים בודדים)
+txt_overwrite_askbefore: שאל לפני ההחלפה (בקונסולה)
+txt_associated: יישום משויך
+txt_attributes: תכונות
+txt_author: מחבר
+txt_ren_existing: שנה אוטומטית שם של קבצים קיימים
+txt_ren_extracted: שנה אוטומטית את השם של קבצים שחולצו
+txt_autofolder: ליצור אוטומטית תיקיה חדשה לחלץ את הארכיון בה?
+txt_back: בחזרה
+txt_backend: קבצים בינאריים עורפיים
+txt_backupexe: קובץ הפעלה לגיבוי (מומלץ)
+txt_bettercompression: דחיסה טובה יותר
 txt_blogs: בלוגים
-txt_blowfish: Blowfish448 (64 bit blocks)
-txt_bookmarks: מועדפים
-txt_browse: סייר
-txt_browser: סייר
-txt_aborted_error: Browsing archive stopped, it would take too much time. You can narrow the selection using search (F3) or exiting Flat view mode (F6); extract/list/test operations are not affected by this issue.
-txt_list_browsing: מסייר
-txt_archive_root: Browsing: archive's root
-txt_type_description_bzip2: BZip2: quite powerful compression, average speed
-txt_pw_empty: Please provide a password (or a keyfile)
-txt_add_error: Cannot add/update or delete object(s); probably the archive type has browse/extract only support, or cannot support that particular operation (i.e. it's multi-volume or solid), or PeaZip cannot fully handle the archive name
-txt_un7z_browse_failure: cannot browse archive
-txt_list_error: Cannot list archive's content, please check if the archive is password protected or corrupted.
-txt_conf_cannotsave: Cannot save configuration file, check if the path is writeable and with some free space
-txt_check_hint: Check for casual data corruption; hash algorithms are suitable to detect even malicious data tampering (see the documentation)
-txt_check: Checksum/hash file(s)
+txt_blowfish: Blowfish448 (בלוקים של 64 סיביות)
+txt_bookmarks: סימניות
+txt_browse: לדפדף
+txt_browser: דפדפן
+txt_aborted_error: הגלישה בארכיון הופסקה, זה ייקח יותר מדי זמן. ניתן לצמצם את הבחירה באמצעות חיפוש (F3) או הימנעות ממצב תצוגה שטוחה (F6). אתה יכול ישירות לחלץ, לרשום או לבדוק את הארכיון.
+txt_list_browsing: דפדוף
+txt_archive_root: גלישה: שורש הארכיון
+txt_type_description_bzip2: BZip2: דחיסה חזקה למדי, מהירות ממוצעת
+txt_pw_empty: אנא ספק סיסמה (או קובץ מפתח)
+txt_add_error: לא ניתן להוסיף/לעדכן או למחוק אובייקט(ים). הארכיון אינו ניתן לכתיבה, או אינו יכול לתמוך בפעולה זו. ניתן להפעיל עריכת סוגי ארכיון לא קנוניים באפשרויות מנהל הארכיון.
+txt_un7z_browse_failure: לא יכול לדפדף בארכיון
+txt_list_error: לא ניתן לרשום את תוכן הארכיון, אנא בדוק אם הארכיון מוגן בסיסמה או פגום.
+txt_conf_cannotsave: לא ניתן לשמור קובץ תצורה, בדוק אם הנתיב ניתן לכתיבה ועם קצת מקום פנוי
+txt_check_hint: בדוק אם יש שחיתות מזדמנת בנתונים; אלגוריתמי hash מתאימים לזהות אפילו שיבוש נתונים זדוני (ראה תיעוד)
+txt_check: Checksum/קבצי Hash
 txt_check_select: Checksum/hash
-txt_clear: מחק
-txt_clearlayout: Clear layout
-txt_pj_hint: Click to import task, reset changes and load up to date task definition from GUI
-txt_autoclose: Close PeaLauncher when task completes
-txt_cl: שורת הפקודה:
-txt_compare: Compare files
-txt_compress: Compress
-txt_compress_executable: Compress executable
-txt_compress_openforwriting: Compress files open for writing
-txt_compression: Compression
-txt_compmanagement: Computer management
-txt_pw_confirm: Confirm
-txt_console: Console
-txt_console_interface: Console: native interface
-txt_content: Content
-txt_controlpanel: Control panel
-txt_convert: Convert disk to NTFS
-txt_copy: העתק
+txt_clear: ברור
+txt_clearlayout: פריסה ברורה
+txt_pj_hint: לחץ כדי לייבא משימה, לאפס שינויים ולטעון הגדרת משימה מעודכנת מ-GUI
+txt_autoclose: לעולם אל תעצור כדי לבדוק את דוח המשימות
+txt_cl: שורת הפקודה
+txt_compare: השווה קבצים
+txt_compress: לדחוס
+txt_compress_executable: דחוס קובץ הפעלה
+txt_compress_openforwriting: דחוס קבצים פתוחים לכתיבה
+txt_compression: דחיסה
+txt_compmanagement: ניהול מחשב
+txt_pw_confirm: לאשר
+txt_console: לנחם
+txt_console_interface: לנחם
+txt_content: תוכן
+txt_controlpanel: לוח בקרה
+txt_convert: המרת דיסק ל-NTFS
+txt_copy: להעתיק
 txt_copyto: העתק אל...
-txt_create: יצירה
-txt_create_archive: יצירת ארכיון חדש
-txt_title_create: Create archive, compress, encrypt, split...
-txt_create_keyfile: Create keyfile
-txt_create_folder: יצירת תיקיה חדשה
-txt_create_theme: Create Theme from current settings
-txt_rr: Create recovery records
-txt_create_sfx: Create self-extracting archive
-txt_cr_current: Current path or filter compression ratio
-txt_custom: Custom
-txt_type_description_custom: Custom (advanced users): enter executable name and parameters
-txt_customapp: Custom application
-txt_custom_parameters: Custom parameters
-txt_customsize: Custom size
-txt_cut: חתוך
+txt_create: ליצור
+txt_create_archive: צור ארכיון חדש
+txt_title_create: צור ארכיון, דחיסה, הצפנה, פיצול...
+txt_create_keyfile: צור קובץ מפתח
+txt_create_folder: צור תיקייה חדשה
+txt_create_theme: צור ערכת נושא מההגדרות הנוכחיות
+txt_rr: צור רשומות שחזור
+txt_create_sfx: צור ארכיון לחילוץ עצמי
+txt_cr_current: נתיב נוכחי או יחס דחיסה של מסנן
+txt_custom: מנהג
+txt_type_description_custom: מותאם אישית (משתמשים מתקדמים): הזן שם הפעלה ופרמטרים
+txt_customapp: יישום מותאם אישית
+txt_custom_parameters: פרמטרים מותאמים אישית
+txt_customsize: גודל מותאם אישית
+txt_cut: גזירה
 txt_datetime: תאריך/שעה
 txt_default: ברירת מחדל
-txt_default_compression: default compression
-txt_default_format: Default format
-txt_theme_default: Default theme
-txt_hard_reset_hint: Delete bookmarks file
-txt_desktop: שולחן העבודה
+txt_default_compression: דחיסה כברירת מחדל
+txt_default_format: פורמט ברירת מחדל
+txt_theme_default: ערכת נושא המוגדרת כברירת מחדל
+txt_hard_reset_hint: מחק את קובץ הסימניות
+txt_desktop: שולחן עבודה
 txt_dictionary: מילון
-txt_dirs: dir(s),
-txt_dis: Disambiguation:
-txt_disk_cleanup: Disk cleanup
-txt_disk_defrag: Disk defrag
-txt_disk_management: Disk management
-txt_dispaly: Display results as
-txt_displayedmnu_obj: displayed
-txt_displayedobjects: Displayed objects
-txt_nocompress: do not compress
-txt_delete: Do you want to delete selected file(s)? The operation can't be undone and files will be not recoverable from recycle bin
-txt_wipe: Do you want to securely delete selected file(s)? The operation can't be undone and files will be not recoverable
-txt_done: בוצע
-txt_edit: עריכה
-txt_elapsed: elapsed:
-txt_error_emptycl: Empty command line!
-txt_encrypt: Encrypt
-txt_encrypted: encrypted
-txt_encryption: Encryption
-txt_note: Enter note / description
-txt_random_keys: Enter random keys
-txt_random_keys_hint: Enter random keys (you not have to remember)
-txt_ent: Entropy evaluation
-txt_ent_tools: Move the mouse or use additional entropy sampling tools
-txt_eqorlarger: Same or larger than selected object
-txt_eqorrecent: Same or more recent than selected object
-txt_eqorolder: Same or older than selected object
-txt_eqorsmaller: Same or smaller than selected object
-txt_equal: Same of selected object
-txt_erase_hint: Secure delete: overwrite with random data, mask size, rename, finally delete
-txt_extraction_error: Error extracting the selected object. If the archive is password protected please provide it
-txt_exclude_hint: Exclude file(s), one per line; use * and ? wildcards; " and ' delimiters are not needed
-txt_exclusion_recourse: Exclusion filters recurse subdirs
-txt_exclusion: Exclude
-txt_exe: Executable
-txt_overwrite_qry: exists in destination path; overwrite with file(s) with same name from source path? (Cancel: skip copying this objecy)
-txt_confirm_overwrite: exists; overwrite it? (no to skip)
-txt_explore_outpath: Explore output path
-txt_explore_path: Explore path
-txt_ext: Ext:
-txt_caption_extract: Extract
-txt_ext_nopath: Extract (without path)
-txt_ext_all: Extract all
-txt_ext_allhere: Extract all here
-txt_ext_allto: Extract all to
-txt_extopen_custom: Extract and open with custom application
-txt_extopen_with: Extract and open with...
-txt_ext_disp_here: Extract displayed here
-txt_ext_disp: Extract displayed object(s)
-txt_ext_disp_to: Extract displayed object(s) to...
-txt_ext_here: Extract here
-txt_ext_sel_here: Extract selected here
-txt_ext_sel: Extract selected object(s)
-txt_ext_sel_to: Extract selected object(s) to...
-txt_extobj: Extract the object
-txt_newfoldermenu: Extract in new folder
-txt_extto: Extract to...
-txt_level_fast: Fast
-txt_fastcompr: fast compression
-txt_fastopen: Fast open routine, stop browsing extremely large archives, use filters instead
-txt_level_fastest: Fastest
-txt_favformats: Favorite formats shortcuts
+txt_dirs: דירקטורים,
+txt_dis: ביעור
+txt_disk_cleanup: ניקוי דיסק
+txt_disk_defrag: פירוק דיסק
+txt_disk_management: ניהול דיסקים
+txt_dispaly: הצג תוצאות כ
+txt_displayedmnu_obj: מוצג
+txt_displayedobjects: פריטים המוצגים
+txt_nocompress: לא לדחוס
+txt_delete: האם ברצונך למחוק את הקבצים שנבחרו? לא ניתן לבטל את הפעולה ולא ניתן יהיה לשחזר קבצים מהאשפה
+txt_wipe: האם ברצונך למחוק בצורה מאובטחת את הקבצים שנבחרו? לא ניתן לבטל את הפעולה ולא ניתן יהיה לשחזר את הקבצים
+txt_done: נעשה
+txt_edit: לערוך
+txt_elapsed: חלף
+txt_error_emptycl: שורת פקודה ריקה!
+txt_encrypt: הצפין
+txt_encrypted: מוצפן
+txt_encryption: הצפנה
+txt_note: הזן הערה/תיאור
+txt_random_keys: הזן מפתחות אקראיים
+txt_random_keys_hint: הזן מפתחות אקראיים (אינך חייב לזכור)
+txt_ent: הערכת אנטרופיה
+txt_ent_tools: הזז את העכבר או השתמש בכלי דגימת אנטרופיה נוספים
+txt_eqorlarger: זהה או גדול מהאובייקט שנבחר
+txt_eqorrecent: זהה או עדכני יותר מהאובייקט שנבחר
+txt_eqorolder: זהה או ישן יותר מהאובייקט שנבחר
+txt_eqorsmaller: זהה או קטן מהאובייקט שנבחר
+txt_equal: זהה לאובייקט שנבחר
+txt_erase_hint: מחיקה מאובטחת: החלף עם נתונים אקראיים, גודל מסכה, שנה שם, סוף סוף מחק
+txt_extraction_error: שגיאה בחילוץ האובייקט שנבחר. אם הארכיון מוגן בסיסמה אנא ספק אותו
+txt_exclude_hint: אל תכלול קבצים, אחד בכל שורה; השתמש ב-* ו? תווים כלליים; " ו' תוחמים לא נחוצים
+txt_exclusion_recourse: מסנני אי הכללה חוזרים על תת-ספריות
+txt_exclusion: אל תכלול
+txt_exe: בר הפעלה
+txt_overwrite_qry: קיים בנתיב היעד; להחליף עם קבצים עם אותו שם מנתיב המקור? (בטל: דלג על העתקת אובייקט זה)
+txt_confirm_overwrite: קיים; לדרוס את זה? (לא לדלג)
+txt_explore_outpath: חקור נתיב פלט
+txt_explore_path: חקור נתיב
+txt_ext: שלוחה
+txt_caption_extract: להוציא
+txt_ext_nopath: חלץ (ללא נתיב)
+txt_ext_all: חלץ הכל
+txt_ext_allhere: חלץ הכל כאן
+txt_ext_allto: חלץ הכל ל
+txt_extopen_custom: חלץ ופתח עם יישום מותאם אישית
+txt_extopen_with: חלץ ופתח עם...
+txt_ext_disp_here: תמצית מוצגת כאן
+txt_ext_disp: חלץ אובייקטים המוצגים
+txt_ext_disp_to: חלץ אובייקטים המוצגים ל...
+txt_ext_here: חלץ כאן
+txt_ext_sel_here: תמצית נבחרה כאן
+txt_ext_sel: חלץ אובייקטים שנבחרו
+txt_ext_sel_to: חלץ אובייקטים נבחרים ל...
+txt_extobj: חלץ את האובייקט
+txt_newfoldermenu: חלץ בתיקייה חדשה
+txt_extto: חלץ ל...
+txt_level_fast: מהיר
+txt_fastcompr: דחיסה מהירה
+txt_fastopen: שגרת פתיחה מהירה, הפסק לגלוש בארכיונים גדולים במיוחד, השתמש במסננים במקום זאת
+txt_level_fastest: הכי מהיר
+txt_favformats: קיצורי דרך בפורמטים המועדפים
 txt_file: קובץ
-txt_filebrowser: File browser / archive browser
-txt_filetools: File tools
-txt_files: קובץ(ים),
+txt_filebrowser: דפדפן קבצים
+txt_filetools: כלי קבצים
+txt_files: קבצים,
 txt_nfiles: קבצים
-txt_fs: Filesystem
-txt_filters_recourse: filter(s) recurse subdirs
-txt_filters: Filters
-txt_flat: Flat (show all)
-txt_list_flat: Flat view
-txt_unit_floppy: Floppy disk
-txt_foldername: שם תיקיה
+txt_fs: מערכת קבצים
+txt_filters_recourse: מסנן(ים) תת-ספריות חוזרות
+txt_filters: מסננים
+txt_flat: שטוח (הצג הכל)
+txt_list_flat: נוף שטוח
+txt_unit_floppy: תקליטון
+txt_foldername: שם התיקיה
 txt_nfolders: תיקיות
-txt_error_input_multi: format allows a single file as input; you can use "TAR before" switch to save input in a .TAR archive before, otherwise you can chose another format. HINT: chose archive format after had selected input data: "TAR before" switch will be automatically set
-txt_fwd: Forward
+txt_error_input_multi: פורמט מאפשר קובץ בודד כקלט; אתה יכול להשתמש במתג "TAR לפני" כדי לשמור קלט בארכיון .TAR לפני, אחרת אתה יכול לבחור פורמט אחר. רמז: בחר פורמט ארכיון לאחר שבחרת נתוני קלט: מתג "TAR before" יוגדר אוטומטית
+txt_fwd: קדימה
 txt_list_found: נמצא
-txt_free: Free
-txt_free2: free
+txt_free: לשחרר
+txt_free2: לשחרר
 txt_name_full: שם מלא
-txt_function: Function
+txt_function: פונקציה
 txt_general: כללי
-txt_multithreading: Generic multithreading
-txt_go_browser: Go to file browser
-txt_go_path: Explore path (PeaZip)
-txt_guicl: Graphic + console
-txt_guipealauncher: Graphic: wrapped by PeaLauncher
-txt_graphic: Graphic's folder
-txt_gridaltcolor: Grids alternate color
-txt_gridrowheight: Grids row height
-txt_gui: GUI
-txt_type_description_gzip: GZip: fast compression
+txt_multithreading: ריבוי השחלות גנרי
+txt_go_browser: עבור לדפדפן הקבצים
+txt_go_path: חקירת נתיב (PeaZip)
+txt_guicl: GUI + קונסולה
+txt_guipealauncher: ממשק משתמש
+txt_graphic: תיקיה של גרפיקה
+txt_gridaltcolor: רשתות מחליפות צבע
+txt_gridrowheight: גובה שורות רשתות
+txt_gui: ממשק משתמש
+txt_type_description_gzip: GZip: דחיסה מהירה
 txt_here: כאן
 txt_list_history: היסטוריה
-txt_homeroot: Computer/archive's root level
-txt_quickbrowse_hint: If browsing is stopped the user can narrow the selection using search or filter functions; extract/list/test functions are not affected in any way.
-txt_backupexe_hint: If something goes wrong and lead to a non functional result, you may recover the original executable from the authomatic backup copy
-txt_attach: If the mail client supports that command, the archive will be attached to a new mail
+txt_homeroot: רמת השורש של המחשב/ארכיון
+txt_quickbrowse_hint: אם הגלישה מופסקת, המשתמש יכול לצמצם את הבחירה באמצעות פונקציות חיפוש או סינון; פונקציות חילוץ/רשימה/בדיקה אינן מושפעות בשום צורה.
+txt_backupexe_hint: אם משהו משתבש ומוביל לתוצאה לא פונקציונלית, תוכל לשחזר את קובץ ההפעלה המקורי מעותק הגיבוי האוטומטי
+txt_attach: אם לקוח הדואר תומך בפקודה זו, הארכיון יצורף לדואר חדש
 txt_images: תמונות
-txt_include_hint: Include file(s), one per line; use * and ? wildcards; " and ' delimiters are not needed
-txt_filters_hint: Inclusion and exclusion filters for 7z binary, please carefully read 7-Zip documentation to understand how those filters works
-txt_inclusion_recourse: Inclusion filters recurse subdirs
-txt_inclusion: Include
-txt_error_function: Incorrect function requested
+txt_include_hint: כלול קבצים, אחד בכל שורה; השתמש ב-* ו? תווים כלליים; " ו' תוחמים לא נחוצים
+txt_filters_hint: מסנני הכללה ואי הכללה עבור 7z בינארי, אנא קרא בעיון את תיעוד 7-Zip כדי להבין כיצד מסננים אלה פועלים
+txt_inclusion_recourse: מסנני הכללה חוזרים על תת-ספריות
+txt_inclusion: לכלול
+txt_error_function: התבקשה פונקציה שגויה
 txt_info: מידע
-txt_infoall: Info on all
-txt_infodisp: Info on displayed object(s)
-txt_infosel: Info on selected object(s)
-txt_inputinfo: Input information
-txt_input_list: Input list:
-txt_iop: input, output, parameters
-txt_ipo: input, parameters, output
-txt_input: input:
-txt_integrity: Integrity check
-txt_chunk_size: Invalid custom size, please correct it in a numerical value
-txt_invertsel: Invert selection
-txt_type_exe: is a Windows executable, do you want to run it? ("No" to try open it as archive) HINT: some executables may not properly run unless the whole archive is extracted before
-txt_return_to_archive: is currently open; do you want to browse it?
-txt_not_accessible: is no longer accessible
-txt_type_unsupported: is not a supported archive type
-txt_checkname_failed: is not a valid name.
-txt_not_accessible_list: is not accessible, please check if the file list provided is correct and up to date
-txt_theme_create_error: It was not possible to create the theme, try to use a name valid for a folder as theme name and to chose a writeable path
-txt_theme_exists: yet exists, please provide a different path
-txt_job_code: task code:
-txt_job_definition_saved: Task definition successfully saved in
-txt_job_success: Task successfully completed!
-txt_join: Join
-txt_joinfiles: Join files
-txt_keyfile: Keyfile
-txt_keyfile_not_found: Keyfile cannot be found or read. Please chose a different Keyfile.
-txt_keyfile_notcreated: KeyFile not created
-txt_larger: Larger than selected object
-txt_lastused: Last used
-txt_launch: Launch task
-txt_layout: Layout
-txt_filelist_savedas: Layout saved as
-txt_level: שלב
-txt_license: רישיון
-txt_caption_list: List
-txt_list_details: List (with details)
-txt_list_all: List all
-txt_list_disp: List displayed object(s)
-txt_list_sel: List selected object(s)
-txt_toggle_warning: Listing flat view of path's content may take long time, continue anyway?
+txt_infoall: מידע על כולם
+txt_infodisp: מידע על אובייקט(ים) המוצגים
+txt_infosel: מידע על אובייקטים נבחרים
+txt_inputinfo: קלט מידע
+txt_input_list: רשימת קלט
+txt_iop: קלט, פלט, פרמטרים
+txt_ipo: קלט, פרמטרים, פלט
+txt_input: קלט
+txt_integrity: בדיקת תקינות
+txt_chunk_size: גודל מותאם אישית לא חוקי, אנא תקן אותו בערך מספרי
+txt_invertsel: הפוך בחירה
+txt_type_exe: הוא קובץ הפעלה של Windows, האם אתה רוצה להפעיל אותו? ("לא" כדי לנסות לפתוח אותו כארכיון) רמז: ייתכן שחלק מקובצי ההפעלה לא יפעלו כראוי אלא אם כל הארכיון חולץ לפני
+txt_return_to_archive: כרגע פתוח; אתה רוצה לעיין בו?
+txt_not_accessible: אינו נגיש יותר
+txt_type_unsupported: אינו סוג ארכיון נתמך
+txt_checkname_failed: אינו שם חוקי.
+txt_not_accessible_list: אינו נגיש, אנא בדוק אם רשימת הקבצים שסופקה נכונה ומעודכנת
+txt_theme_create_error: לא ניתן היה ליצור את ערכת הנושא, נסה להשתמש בשם חוקי לתיקיה כשם ערכת הנושא ולבחור נתיב בר כתיבה
+txt_theme_exists: עדיין קיים, אנא ספק נתיב אחר
+txt_job_code: קוד משימה
+txt_job_definition_saved: הגדרת המשימה נשמרה בהצלחה
+txt_job_success: המשימה הושלמה בהצלחה!
+txt_join: להצטרף
+txt_joinfiles: הצטרף לקבצים
+txt_keyfile: קובץ מפתח
+txt_keyfile_not_found: לא ניתן למצוא או לקרוא קובץ מפתח. אנא בחר קובץ מפתח אחר.
+txt_keyfile_notcreated: KeyFile לא נוצר
+txt_larger: גדול מהאובייקט שנבחר
+txt_lastused: בשימוש אחרון
+txt_launch: משימת השקה
+txt_layout: מערך
+txt_filelist_savedas: הפריסה נשמרה בשם
+txt_level: רמה
+txt_license: רשיון
+txt_caption_list: רשימה
+txt_list_details: רשימה (עם פרטים)
+txt_list_all: רשום הכל
+txt_list_disp: רשימת אובייקטים המוצגים
+txt_list_sel: רשימת האובייקטים שנבחרו
+txt_toggle_warning: הצגת תצוגה שטוחה של תוכן הנתיב עשויה להימשך זמן רב, להמשיך בכל זאת?
 txt_loadfile: טען קובץ
-txt_loadlayout: Load layout
+txt_loadlayout: טען פריסה
 txt_unit_hd: דיסק מקומי
-txt_localization: תרגומים
-txt_lpaqver: LPAQ version
-txt_type_description_lpaq: LPAQ: faster version of PAQ, very good compression
-txt_maininterface: Main interface
-txt_maxcomp: Max compression mode
-txt_level_maximum: Maximum
-txt_restartrequired: May require restarting the application to be applied
-txt_required_memory: MB of memory required
-txt_method: Method
-txt_misc: Misc
-txt_modify: Modify
-txt_morecontrols: More controls (history, bookmarks, ...)
-txt_morerecent: More recent than selected object
-txt_ent_hint: Move the mouse, enter keys in the edit field, load files to collect entropy from the system...
-txt_moveto: העבר אל...
-txt_mypc: Computer's root
-txt_list_na: n/a
+txt_localization: לוקליזציה
+txt_lpaqver: גרסת LPAQ
+txt_type_description_lpaq: LPAQ: גרסה מהירה יותר של PAQ, דחיסה טובה מאוד
+txt_maininterface: ממשק ראשי
+txt_maxcomp: מצב דחיסה מקסימלית
+txt_level_maximum: מקסימום
+txt_restartrequired: עשוי לדרוש הפעלה מחדש של היישום כדי להחיל
+txt_required_memory: נדרש MB של זיכרון
+txt_method: שיטה
+txt_misc: שונות
+txt_modify: לשנות
+txt_morecontrols: פקדים נוספים (היסטוריה, סימניות, ...)
+txt_morerecent: עדכני יותר מהאובייקט שנבחר
+txt_ent_hint: הזז את העכבר, הזן מפתחות בשדה העריכה, טען קבצים כדי לאסוף אנטרופיה מהמערכת...
+txt_moveto: העבר ל...
+txt_mypc: שורש המחשב
+txt_list_na: לא
 txt_name: שם
-txt_naming: Naming policy
-txt_unit_remote: Network drive
-txt_newarchive: New archive
-txt_cnewfolder: תיקיה חדשה
+txt_naming: שיום
+txt_unit_remote: כונן רשת
+txt_newarchive: ארכיון חדש
+txt_cnewfolder: תיקייה חדשה
 txt_news: חדשות
 txt_no: לא
-txt_noinput: No accessible input received
-txt_nocompress_hint: no compression (faster)
-txt_split_noinput: No input selected; please select a file to split
-txt_open_noinput: No input selected; please select an archive (first archive's volume for multi-volume archives)
-txt_list_nomatch: no match
-txt_singlethread: No multithreading
-txt_none2: none
-txt_nonsolid: Non-solid
-txt_level_normal: רגיל
-txt_copy_error: not successfully copied or moved, error code:
+txt_noinput: לא התקבל קלט נגיש
+txt_nocompress_hint: ללא דחיסה (מהיר יותר)
+txt_split_noinput: לא נבחר קלט; אנא בחר קובץ לפצל
+txt_open_noinput: לא נבחר קלט; אנא בחר ארכיון (הכרך של הארכיון הראשון עבור ארכיונים מרובי כרכים)
+txt_list_nomatch: אין התאמה
+txt_singlethread: אין ריבוי שרשורים
+txt_none2: אף לא אחד
+txt_nonsolid: לא מוצק
+txt_level_normal: נורמלי
+txt_copy_error: לא הועתק או הועבר בהצלחה, קוד שגיאה
 txt_description: הערות
-txt_compare_second: Now select file to be compared with
-txt_peaobj: Object control
-txt_displayed_obj: object(s)
-txt_olderthan: Older than selected object
-txt_on: on
-txt_ondblclick: On doubleclick do:
-txt_opacity: שקיפות
-txt_open: פתח
-txt_openarchive: Open archive
-txt_title_open: Open archive, decrypt, join...
-txt_open_bookmark: Open bookmark
-txt_cphere: Open command prompt here
-txt_open_file: פתח קובץ
-txt_open_files: Open file(s)
-txt_open_path: פתח נתיב
-txt_opensource: Open source portable archiver
-txt_openwith: פתח באמצעות...
-txt_aborted: Operation aborted
-txt_unit_cd: Optical drive
+txt_compare_second: כעת בחר את הקובץ שיש להשוות איתו
+txt_peaobj: שליטה באובייקט
+txt_displayed_obj: חפצים
+txt_olderthan: ישן יותר מהאובייקט שנבחר
+txt_on: על
+txt_ondblclick: בלחיצה כפולה
+txt_opacity: אטימות
+txt_open: לפתוח
+txt_openarchive: פתח ארכיון
+txt_title_open: פתח ארכיון, פענוח, הצטרף...
+txt_open_bookmark: פתח את הסימניה
+txt_cphere: פתח את שורת הפקודה כאן
+txt_open_file: פתח את הקובץ
+txt_open_files: פתח קבצים
+txt_open_path: נתיב פתוח
+txt_opensource: ארכיון נייד בקוד פתוח
+txt_openwith: פתח עם...
+txt_aborted: המבצע הופסק
+txt_unit_cd: כונן אופטי
 txt_options: אפשרויות
 txt_other: אחר
-txt_otherparams: Other parameters (free editing)
-txt_oip: output, input, parameters
-txt_opi: output, parameters, input
-txt_output: output:
-txt_overwrite: Overwrite existing files
-txt_compressed_size: Packed
-txt_paqver: PAQ version
-txt_type_description_paq: PAQ: slow but extremely powerful compressor
-txt_pio: parameters, input, output
-txt_poi: parameters, output, input
-txt_parameters: Parameters:
-txt_error_partial: Partial extraction not implemented for current archive type
-txt_passes: Passes
+txt_otherparams: פרמטרים אחרים (עריכה חינם)
+txt_oip: פלט, קלט, פרמטרים
+txt_opi: פלט, פרמטרים, קלט
+txt_output: תפוקה
+txt_overwrite: החלף קבצים קיימים
+txt_compressed_size: ארוז
+txt_paqver: גרסת PAQ
+txt_type_description_paq: PAQ: מדחס איטי אך חזק במיוחד
+txt_pio: פרמטרים, קלט, פלט
+txt_poi: פרמטרים, פלט, קלט
+txt_parameters: פרמטרים
+txt_error_partial: חילוץ חלקי לא יושם עבור סוג הארכיון הנוכחי
+txt_passes: עובר
 txt_pw: סיסמה
-txt_pwlength: Password length in characters (4..64)
-txt_un7z_browse_pw: password may be required
-txt_un7z_browse_pw_other: password may be wrong
-txt_paste: הדבק
+txt_pwlength: אורך סיסמה בתווים (4..64)
+txt_un7z_browse_pw: ייתכן שתידרש סיסמה
+txt_un7z_browse_pw_other: ייתכן שהסיסמה שגויה
+txt_paste: להדביק
 txt_path: נתיב
-txt_pea_appcolor: Application color
-txt_pea_textcolor: Pea text color
-txt_type_description_pea: PEA: security oriented archive format with fast compression
-txt_peazip_new: PeaZip (new instance)
+txt_pea_appcolor: מבטא יישום
+txt_pea_textcolor: צבע טקסט אפונה
+txt_type_description_pea: PEA: פורמט ארכיון מכוון אבטחה עם דחיסה מהירה
+txt_peazip_new: PeaZip (מופע חדש)
 txt_peazip_help: תמיכה מקוונת
-txt_peazip_web: PeaZip Website
-txt_performall: Perform all supported algorithms
-txt_name_provide: \ / : * ? ' " < > | characters are not allowed in file names
-txt_upxorstrip: Please chose Strip and/or UPX on the binary
-txt_not_removable_file: Please close file in use, in order to allow PeaZip to remove it:
-txt_not_removable: Please close files in use, in order to allow PeaZip to remove the folder:
-txt_custom_executable_missing: Please provide the custom executable's name
-txt_type_unsupported_select: Please select a supported archive type:
-txt_no_theme_name: Please specify a theme name
-txt_please_wait: Please wait
-txt_copy_wait: Please wait currently scheduled file copy/move operations to complete before scheduling other operations of the same type
-txt_previewwith: Preview with...
-txt_projectadmin: Project administrator:
-txt_type_description_quad: BALZ/QUAD: high-performance ROLZ-based file compressors
-txt_quickdelete: Quick delete
-txt_quit: יציאה
-txt_unit_ram: RAM disk
-txt_read: Read:
-txt_recentarchives: Recent archives
-txt_rr_hint: Recovery records allows to try to correct archives in case of data corruption
-txt_search_refine: Refine search filter, accepts ? and * wildcards
-txt_fefreshf5: Refresh (F5)
-txt_release: release:
-txt_unit_removable: Removable unit
-txt_remove_bookmark: Remove bookmark
-txt_remove_external_unit: Remove external device(s)
-txt_removeselected: Remove selected object(s)
-txt_rename: Rename
-txt_caption_repair: Repair
-txt_restartrequired2: requires restarting the application to apply
-txt_reset: Reset
-txt_reset_archivename: Reset archive name
-txt_hardreset: Reset bookmarks
-txt_reset_theme: Reset to embedded theme
-txt_restore_att: restore original attributes
-txt_run_as: Run as (cannot switch to users with blank password)
-txt_run_as2: Run as different user
-txt_sample: Sample:
-txt_saveas: שמור כ
-txt_savehistory: Save history data
-txt_save_infolder: Save in folder (auto)
-txt_savejob: Save task definition
-txt_savejobdefinition: Save task definition
-txt_savejobdefinition_hint: Save task definition as plain text; you can use it from your scripts
-txt_savelayout: Save layout
-txt_save_winstate: Save main window state
-txt_search: Search (recursive, may take some time)
-txt_searchanddrag: Search and drag here
-txt_searchfor: חפש
-txt_nrsearch: Search here (non recursive)
-txt_search_hint: Search in archive's subdirectories for matches with filter(s)
-txt_search_web: Web search
-txt_list_searching: Searching...
-txt_securedelete: Secure delete
-txt_default_description: Select a function or drag files here
-txt_selectall: בחר בכל
-txt_selectdir: בחר תיקיה
+txt_peazip_web: אתר PeaZip
+txt_performall: כל האלגוריתמים
+txt_name_provide: \ / : * ? ' " < > | תווים אינם מותרים בשמות קבצים
+txt_upxorstrip: אנא בחר ב-Strip ו/או UPX בקובץ הבינארי
+txt_not_removable_file: אנא סגור את הקובץ שנמצא בשימוש, כדי לאפשר ל-PeaZip להסיר אותו
+txt_not_removable: אנא סגור קבצים הנמצאים בשימוש, כדי לאפשר ל-PeaZip להסיר את התיקיה
+txt_custom_executable_missing: אנא ספק את שם קובץ ההפעלה המותאם אישית
+txt_type_unsupported_select: אנא בחר סוג ארכיון נתמך
+txt_no_theme_name: נא לציין שם ערכת נושא
+txt_please_wait: אנא המתן
+txt_copy_wait: אנא המתן לביצוע פעולות העתקה/הזזה של הקבצים המתוזמנים כעת לפני שתזמון פעולות אחרות מאותו סוג
+txt_previewwith: תצוגה מקדימה עם...
+txt_projectadmin: מנהל פרויקט
+txt_type_description_quad: BALZ/QUAD: מדחסי קבצים מבוססי ROLZ בעלי ביצועים גבוהים
+txt_quickdelete: מחיקה מהירה
+txt_quit: להפסיק
+txt_unit_ram: דיסק RAM
+txt_read: לקרוא
+txt_recentarchives: ארכיונים אחרונים
+txt_rr_hint: רשומות שחזור מאפשרות לנסות לתקן ארכיונים במקרה של השחתת נתונים
+txt_search_refine: צמצם את מסנן החיפוש, מקבל ? ו* תווים כלליים
+txt_fefreshf5: לרענן
+txt_release: לשחרר
+txt_unit_removable: יחידה נשלפת
+txt_remove_bookmark: הסר את הסימניה
+txt_remove_external_unit: הסר מכשירים חיצוניים
+txt_removeselected: הסר אובייקטים שנבחרו
+txt_rename: שנה שם
+txt_caption_repair: לתקן
+txt_restartrequired2: דורש הפעלה מחדש של היישום כדי להגיש בקשה
+txt_reset: אתחול
+txt_reset_archivename: אפס את שם הארכיון
+txt_hardreset: אפס סימניות
+txt_reset_theme: אפס לנושא מוטבע
+txt_restore_att: לשחזר תכונות מקוריות
+txt_run_as: הפעל בשם (לא ניתן לעבור למשתמשים עם סיסמה ריקה)
+txt_run_as2: הפעל כמשתמש אחר
+txt_sample: לטעום:
+txt_saveas: שמור בשם
+txt_savehistory: שמור נתוני היסטוריה
+txt_save_infolder: שמור בתיקייה (אוטומטי)
+txt_savejob: שמור את הגדרת המשימה כסקריפט
+txt_savejobdefinition: שמור את הגדרת המשימה כסקריפט
+txt_savejobdefinition_hint: שמור את הגדרת המשימה כטקסט רגיל; אתה יכול להשתמש בו מהסקריפטים שלך
+txt_savelayout: שמור פריסה
+txt_save_winstate: שמור את מצב החלון הראשי
+txt_search: חיפוש (רקורסיבי, עשוי להימשך זמן מה)
+txt_searchanddrag: חפש וגרור לכאן
+txt_searchfor: לחפש
+txt_nrsearch: חפש כאן (לא רקורסיבי)
+txt_search_hint: חפש בספריות המשנה של הארכיון התאמות עם מסננים
+txt_search_web: חיפוש באינטרנט
+txt_list_searching: מחפש...
+txt_securedelete: מחיקה מאובטחת
+txt_default_description: בחר פונקציה או גרור לכאן קבצים
+txt_selectall: בחר הכל
+txt_selectdir: בחר ספרייה
 txt_selected_obj: נבחר
-txt_selected_objects: Selected objects
-txt_sfx: Self-extracting
-txt_sendbymail: שלח בדוא"ל
-txt_set_defaults: Set application's default parameters
+txt_selected_objects: פריטים נבחרים
+txt_sfx: חילוץ עצמי
+txt_sendbymail: שלח בדואר
+txt_set_defaults: הגדר את פרמטרי ברירת המחדל של היישום
 txt_settings: הגדרות
-txt_sfx_interface: sfx interface
-txt_showhints: Show hints
-txt_show_messages: Show information messages
-txt_showpw: Show password field content
-txt_singlevol: Single volume, do not split
+txt_sfx_interface: ממשק sfx
+txt_showhints: הצג רמזים ועצות כלים
+txt_show_messages: הצג הודעות מידע
+txt_showpw: הצג את תוכן שדה הסיסמה
+txt_singlevol: נפח בודד, לא לפצל
 txt_size: גודל
-txt_sizeb: גודל (B)
-txt_skip_existing: Skip existing files
-txt_slowercomp: slower compression but equally fast decompression
-txt_smaller: Smaller than selected object
-txt_solid: Solid
-txt_solid_block: Block size
-txt_solid_auto: Solid, auto-adjust
-txt_solid_extension: Solid, group by extension
-txt_listtest: sorry, list/test operation is not yet implemented for this format
-txt_sortbysel: מיין לפי המצב שנבחר
-txt_list_sorting: ממיין...
+txt_sizeb: מידה (B)
+txt_skip_existing: דלג על קבצים קיימים
+txt_slowercomp: דחיסה איטית יותר אך דחיסה מהירה באותה מידה
+txt_smaller: קטן מהאובייקט שנבחר
+txt_solid: מוצק
+txt_solid_block: גודל בלוק
+txt_solid_auto: מוצק, התאמה אוטומטית
+txt_solid_extension: מוצק, מקבץ בהרחבה
+txt_listtest: מצטערים, פעולת רשימה/בדיקה עדיין לא מיושמת עבור פורמט זה
+txt_sortbysel: מיין לפי סטטוס בחירה
+txt_list_sorting: מיון...
 txt_speed: מהירות
-txt_split: פצל
-txt_type_description_split: Split a file with optional integrity check
-txt_split_file: פצל קובץ
-txt_list_nostats: stats not available
-txt_status: מצב
-txt_level_store: Store
-txt_stream_control: Stream control
-txt_strip: Strip before UPX (recommended)
-txt_keyfile_created: Successfully created KeyFile as:
-txt_suggestpw: Create random password
-txt_noupx: Symbols stripped, UPX compression omitted
-txt_syntax: Syntax:
-txt_sysbenchmark: System benchmark
-txt_benchmark: System benchmark will take some minutes and will use all available CPU and memory resource. The system may not respond during the benchmark; run it anyway?
+txt_split: לפצל
+txt_type_description_split: פיצול קובץ עם בדיקת תקינות אופציונלית
+txt_split_file: פיצול קובץ
+txt_list_nostats: סטטיסטיקה לא זמינה
+txt_status: סטטוס
+txt_level_store: חנות
+txt_stream_control: בקרת זרם
+txt_strip: פשט לפני UPX (מומלץ)
+txt_keyfile_created: KeyFile נוצר בהצלחה בשם
+txt_suggestpw: צור סיסמה אקראית
+txt_noupx: סמלים הוסרו, דחיסת UPX הושמטה
+txt_syntax: תחביר
+txt_sysbenchmark: רף מערכת
+txt_benchmark: אמת מידה של המערכת ייקח כמה דקות וישתמש בכל משאבי המעבד והזיכרון הזמינים. ייתכן שהמערכת לא תגיב במהלך המדד; להפעיל את זה בכל זאת?
 txt_systools: כלי מערכת
-txt_tarbefore: TAR before
-txt_type_description_tar: TAR: archiving format mainstream on UNIX systems
+txt_tarbefore: TAR לפני
+txt_type_description_tar: TAR: מיינסטרים בפורמט ארכיון במערכות UNIX
 txt_taskman: מנהל משימות
-txt_caption_test: Test
-txt_testall: Test all
-txt_testdisp: Test displayed object(s)
-txt_testpw: Test password / keyfile
-txt_testsel: Test selected object(s)
-txt_col_hint: The color should be chosen in order to integrate well with icon colors and to other GUI's elements
-txt_bookmarks_hint: The complete and editable list of bookmarks is available in the file browser interface, clicking on the "More controls" icon and on "Toggle history/bookmarks"
-txt_archive_noinput_tolist: The layout is empty: please use Add file(s), Add folder(s) or Load Layout to populate the archive's layout
-txt_theme: Theme
-txt_icons_found: Theme loaded successfully.
-txt_themename: Theme name
-txt_icons_not_found: Theme not loaded correctly. Try to switch to the default theme, or to a known working one.
-txt_theme_create_success: theme successfully created in
-txt_theming: Theming
-txt_extand_error: This function can be performed on a single object at time
-txt_threads: Threads
-txt_titlescolor: Titles color
+txt_caption_test: מבחן
+txt_testall: בדוק הכל
+txt_testdisp: בדוק את האובייקטים המוצגים
+txt_testpw: בדוק סיסמה / קובץ מפתח
+txt_testsel: בדוק את האובייקטים שנבחרו
+txt_col_hint: יש לבחור את הצבע על מנת להשתלב היטב עם צבעי אייקונים ועם אלמנטים אחרים של GUI
+txt_bookmarks_hint: הרשימה המלאה והניתנת לעריכה של הסימניות זמינה בממשק דפדפן הקבצים, לחיצה על סמל "פקדים נוספים" ועל "החלפת היסטוריה/סימניות"
+txt_archive_noinput_tolist: הפריסה ריקה: אנא השתמש בהוספת קבצים, הוסף תיקיות או טען פריסה כדי לאכלס את פריסת הארכיון
+txt_theme: נושא
+txt_icons_found: הנושא נטען בהצלחה.
+txt_themename: שם נושא
+txt_icons_not_found: העיצוב לא נטען כהלכה. נסה לעבור לערכת הנושא המוגדרת כברירת מחדל, או לערכת נושא שעובדת ידועה.
+txt_theme_create_success: הנושא נוצר בהצלחה ב
+txt_theming: נושאים
+txt_extand_error: פונקציה זו יכולה להתבצע על אובייקט בודד בכל פעם
+txt_threads: חוטים
+txt_titlescolor: צבע כותרות
 txt_to: אל
-txt_toggle_browseflat: Toggle browse / flat view (show all)
-txt_toggle_historybookmarks: Toggle history/bookmarks
-txt_toolbarscolor: Bars color
-txt_tools: כלים
-txt_best: try best settings (slow)
+txt_toggle_browseflat: החלף בין עיון / תצוגה שטוחה (הצג הכל)
+txt_toggle_historybookmarks: החלף את שורת המצב, הסימניות, ההיסטוריה, הלוח
+txt_toolbarscolor: צבע סורגים
+txt_tools: כלי עבודה
+txt_best: נסה את ההגדרות הטובות ביותר (איטיות)
 txt_type: סוג
-txt_level_ultra: Ultra
-txt_error_openfile: Unable to open the specified file
-txt_cl_hint: UNACE and UPX always run using console mode; list, test and benchmark tasks always run using GUI mode
-txt_ace_missing: UNACE plugin is missing; for handling ACE archives you can download the plugin form PeaZip's website (being UNACE closed source, the plugin is not featured in base package)
+txt_level_ultra: אולטרה
+txt_error_openfile: לא ניתן לפתוח את הקובץ שצוין
+txt_cl_hint: UNACE ו-UPX פועלות תמיד באמצעות מצב מסוף; משימות רשימה, בדיקה וביצוע ביצועים פועלות תמיד באמצעות מצב GUI
+txt_ace_missing: תוסף UNACE חסר; לטיפול בארכיוני ACE ניתן להוריד את התוסף מאתר האינטרנט של PeaZip (בהיותו UNACE מקור סגור, התוסף אינו מופיע בחבילת הבסיס)
 txt_units: יחידות
-txt_unit_unknown: Unknown drive type
-txt_un7z_pw_untested: Untested
+txt_unit_unknown: סוג כונן לא ידוע
+txt_un7z_pw_untested: לא נבדק
 txt_up: למעלה
-txt_update: Update (if archive exists)
-txt_type_description_upx: UPX: compress executable files only
-txt_advfilters: Use advanced filters
-txt_openfiles_hint: Use this option to include in the archive files open for writing by other applications (useful in backup tasks)
+txt_update: עדכון (אם קיים ארכיון)
+txt_type_description_upx: UPX: דחוס קבצי הפעלה בלבד
+txt_advfilters: השתמש במסננים מתקדמים
+txt_openfiles_hint: השתמש באפשרות זו כדי לכלול בארכיון קבצים הפתוחים לכתיבה על ידי יישומים אחרים (שימושי במשימות גיבוי)
 txt_usenet: Usenet
-txt_user_name: User name; use user@DOMAIN or DOMAIN\user form if needed.
-txt_using: Using:
-txt_volumepea: Volume control
-txt_volume_size: Volume size
-txt_type_ext_uns: was successfully extracted
-txt_websearch: Web search
-txt_websites: אתרים
-txt_word: Word
-txt_write: Write:
-txt_ramdompw_hint: You can copy the random generated password from here
-txt_exe_hint: You can freely enter executable name and parameters for custom compression, and chose syntax's contruction. Please note that you can also manually change command's syntax in "Console" tab.
-txt_pj_hint2: You can import the task's definition from the GUI frontend in the memo field below. Then, you can edit, launch or save it without changing or losing the task defined for the GUI frontend.
-txt_type_description_zip: ZIP: fast archiving/compression format, mainstream on Windows systems
-txt_zipcrypto_hint: ZipCrypto (legacy)
+txt_user_name: שם משתמש; השתמש ב-user@DOMAIN או בטופס DOMAIN\user במידת הצורך.
+txt_using: באמצעות
+txt_volumepea: בקרת עוצמת הקול
+txt_volume_size: גודל נפח
+txt_type_ext_uns: חולץ בהצלחה
+txt_websearch: חיפוש באינטרנט
+txt_websites: אתרי אינטרנט
+txt_word: מלה
+txt_write: לכתוב
+txt_ramdompw_hint: אתה יכול להעתיק את הסיסמה האקראית שנוצרה מכאן
+txt_exe_hint: אתה יכול להזין באופן חופשי שם הפעלה ופרמטרים עבור דחיסה מותאמת אישית, ולבחור את המבנה של התחביר. שים לב שאתה יכול גם לשנות באופן ידני את תחביר הפקודה בכרטיסייה "קונסול".
+txt_pj_hint2: אתה יכול לייבא את הגדרת המשימה מחזית ה-GUI בשדה התזכיר למעלה. לאחר מכן, תוכל לערוך, להפעיל או לשמור אותו מבלי לשנות או לאבד את המשימה שהוגדרה עבור ממשק ה-GUI.
+txt_type_description_zip: ZIP: פורמט ארכיון/דחיסה מהיר, מיינסטרים במערכות Windows
+txt_zipcrypto_hint: ZipCrypto (מורשת)
 
 === end PeaZip text group ===
 
 === PeaLauncher text group ===
 
-txt_6_9_remaining: remaining
-txt_6_5_abort: Abort
+txt_6_9_remaining: נותר
+txt_6_5_abort: להפיל
 txt_6_5_error: שגיאה
 txt_6_5_no: לא
 txt_6_5_warning: אזהרה
 txt_6_5_yes: כן
-txt_6_5_yesall: כן להכל
-txt_5_6_update: Check for updates
-txt_5_6_cml: System context menu language
-txt_5_6_donations: Donations
-txt_5_6_localization: תרגומים
+txt_6_5_yesall: כן לכולם
+txt_5_6_update: בדוק אם יש עדכונים
+txt_5_6_cml: שפת תפריט ההקשר של המערכת
+txt_5_6_donations: תרומות
+txt_5_6_localization: לוקליזציה
 txt_5_6_runasadmin: הפעל כמנהל
 txt_5_6_help: תמיכה מקוונת
 txt_5_5_cancelall: בטל הכל
@@ -1253,101 +1253,101 @@ txt_5_3_folders: תיקיות
 txt_5_3_info: מידע
 txt_5_3_list: רשימה
 txt_5_3_os: גודל מקורי
-txt_5_3_ps: Packed size
-txt_5_3_test: ניסיון
-txt_5_0_extract: Extract
-txt_5_0_from: from
-txt_5_0_in: in
+txt_5_3_ps: גודל ארוז
+txt_5_3_test: מבחן
+txt_5_0_extract: להוציא
+txt_5_0_from: מן
+txt_5_0_in: ב
 txt_5_0_to: אל
-txt_4_5_search: חפש
-txt_4_0_drag: Drag here the archive to extract, or
-txt_4_0_dragorselect: Drag here or select file
+txt_4_5_search: לחפש
+txt_4_0_drag: גרור לכאן את הארכיון כדי לחלץ, או
+txt_4_0_dragorselect: גרור לכאן או בחר קובץ
 txt_4_0_select: בחר קובץ
-txt_3_6_selectdir: בחר תיקיה
-txt_3_5_close: סגור
-txt_3_0_details: For more details please see "Report" tab for the full task's log, and "Console" tab for task definition as command line.
-txt_3_0_hints: Hints about the error
-txt_3_0_arc: Possible causes of the error may be non readable input files (locked, not accessible, corrupted, missing volumes in multipart archive...), or full or not accessible output path.
-txt_3_0_ext: The archive may require a different password for the current operation.
-txt_2_8_oop: Open output path when task completes
-txt_2_7_validatefn: Operation stopped, invalid file name detected:
-txt_2_7_validatecl: Operation stopped, potentially dangerous command detected (i.e. command concatenation not allowed within the program):
-txt_2_6_open: Open archive
-txt_2_5_ace_missing: UNACE plugin is missing; for handling ACE archives you can download the plugin form PeaZip's website (being UNACE closed source, the plugin is not featured in base package)
-txt_2_3_pw_errorchar_gwrap: quote character cannot be used by PeaLauncher in passwords under current system, please change password or chose Console mode in Backend binaries user interface in Options > Settings
-txt_2_3_renameexisting: Auto rename existing files
-txt_2_3_renameextracted: Auto rename extracted files
-txt_2_3_cancel: בטל
-txt_2_3_encryption: Encryption
-txt_2_3_extinnew: Extract in new folder
-txt_2_3_keyfile: Keyfile
-txt_2_3_kf_not_found_gwrap: Keyfile cannot be found or read. Please chose a different Keyfile.
+txt_3_6_selectdir: בחר ספרייה
+txt_3_5_close: לסגור
+txt_3_0_details: לפרטים נוספים, ראה את הכרטיסייה "דיווח" עבור יומן המשימה המלא, ואת הכרטיסייה "קונסול" להגדרת המשימה כשורה פקודה.
+txt_3_0_hints: רמזים לגבי השגיאה
+txt_3_0_arc: גורמים אפשריים לשגיאה עשויים להיות קבצי קלט בלתי קריאים (נעולים, לא נגישים, פגומים, אמצעי אחסון חסרים בארכיון מרובה חלקים...), או נתיב פלט מלא או לא נגיש.
+txt_3_0_ext: ייתכן שהארכיון ידרוש סיסמה אחרת עבור הפעולה הנוכחית.
+txt_2_8_oop: פתח את נתיב הפלט בסיום המשימה
+txt_2_7_validatefn: הפעולה הופסקה, זוהה שם קובץ לא חוקי
+txt_2_7_validatecl: הפעולה הופסקה, זוהתה פקודה שעלולה להיות מסוכנת (כלומר שרשרת פקודות אינה מותרת בתוך התוכנית)
+txt_2_6_open: פתח ארכיון
+txt_2_5_ace_missing: תוסף UNACE חסר; לטיפול בארכיוני ACE ניתן להוריד את התוסף מאתר האינטרנט של PeaZip (בהיותו UNACE מקור סגור, התוסף אינו מופיע בחבילת הבסיס)
+txt_2_3_pw_errorchar_gwrap: לא ניתן להשתמש בתו מרכאה על ידי PeaLauncher בסיסמאות תחת המערכת הנוכחית, אנא שנה סיסמה או בחר במצב מסוף בממשק המשתמש הבינאריים Backend באפשרויות > הגדרות
+txt_2_3_renameexisting: שנה אוטומטית שם של קבצים קיימים
+txt_2_3_renameextracted: שנה אוטומטית את השם של קבצים שחולצו
+txt_2_3_cancel: לבטל
+txt_2_3_encryption: הצפנה
+txt_2_3_extinnew: חלץ בתיקייה חדשה
+txt_2_3_keyfile: קובץ מפתח
+txt_2_3_kf_not_found_gwrap: לא ניתן למצוא או לקרוא קובץ מפתח. אנא בחר קובץ מפתח אחר.
 txt_2_3_moreoptions: אפשרויות נוספות...
-txt_2_3_nopaths: No paths
-txt_2_3_options: Options
-txt_2_3_overexisting: Overwrite existing files
+txt_2_3_nopaths: אין שבילים
+txt_2_3_options: אפשרויות
+txt_2_3_overexisting: החלף קבצים קיימים
 txt_2_3_pw: סיסמה
-txt_2_3_skipexisting: Skip existing files
-txt_job_unknown: : Unknown error encountered
-txt_stdjob: [animation will stop at task's completion]
-txt_benchmarkjob: [system will respond slowly while running the benchmark (some minutes)]
-txt_defragjob: [will not respond while defragmenting, you can let it run in background]
-txt_consolejob: [task's feedback and detailed progress available in console window]
-txt_job1: 1: אזהרה: non fatal error(s); i.e. some files missing or locked
-txt_job127: 127: Cannot execute requested operation
-txt_job2: 2: Fatal error occurred
-txt_job255: 255: Task halted by the user
-txt_job7: 7: שגיאה: got incorrect command line
-txt_job8: 8: שגיאה: not enough memory for requested operation
-txt_autoclose: Close this window when task completes
-txt_crscale: Compression ratio (lower, better):
-txt_console: Console
-txt_benchscale: Core 2 Duo 6600 rating, equivalent MHz speed.
-txt_create: יצירה
-txt_done: בוצע:
-txt_nocl: Empty command line
-txt_error: שגיאה:
-txt_explore: סייר
-txt_extto: Extract to
-txt_halt: Halt system when task completes
-txt_halted: Halted:
-txt_hardware: hardware
-txt_high: high priority
-txt_idle: idle priority
-txt_input: Input:
-txt_jpaused: Task paused
-txt_jresumed: Task resumed
-txt_job_started: Task started
-txt_jobstatus: Task status:
-txt_jstopped: Task halted by the user
-txt_jobstopped: Task halted by the user; you can inspect the partial outcome clicking output path link.
-txt_job_success: Task successfully completed
-txt_lt: List/test
+txt_2_3_skipexisting: דלג על קבצים קיימים
+txt_job_unknown: : אירעה שגיאה לא ידועה
+txt_stdjob: [אנימציה תפסיק עם השלמת המשימה]
+txt_benchmarkjob: [המערכת תגיב לאט בזמן הפעלת ה-benchmark (כמה דקות)]
+txt_defragjob: [לא יגיב בזמן איחוי, אתה יכול לתת לו לפעול ברקע]
+txt_consolejob: [משוב על המשימה והתקדמות מפורטת זמינים בחלון המסוף]
+txt_job1: 1: אזהרה: שגיאות לא קטלניות; כלומר, חלק מהקבצים חסרים או נעולים
+txt_job127: 127: לא ניתן לבצע את הפעולה המבוקשת
+txt_job2: 2: אירעה שגיאה חמורה
+txt_job255: 255: המשימה הופסקה על ידי המשתמש
+txt_job7: 7: שגיאה: שורת פקודה לא נכונה
+txt_job8: 8: שגיאה: אין מספיק זיכרון לפעולה המבוקשת
+txt_autoclose: סגור חלון זה כאשר המשימה תושלם
+txt_crscale: יחס דחיסה (נמוך יותר, טוב יותר)
+txt_console: לנחם
+txt_benchscale: דירוג Core 2 Duo 6600, מהירות מגה-הרץ שווה ערך.
+txt_create: ליצור
+txt_done: נעשה
+txt_nocl: שורת פקודה ריקה
+txt_error: שגיאה
+txt_explore: לחקור
+txt_extto: חלץ ל
+txt_halt: עצור את המערכת בסיום המשימה
+txt_halted: נעצר
+txt_hardware: חומרה
+txt_high: בעדיפות גבוהה
+txt_idle: עדיפות סרק
+txt_input: קלט
+txt_jpaused: המשימה הושהתה
+txt_jresumed: המשימה חודשה
+txt_job_started: המשימה התחילה
+txt_jobstatus: מצב משימה
+txt_jstopped: המשימה הופסקה על ידי המשתמש
+txt_jobstopped: משימה שהופסקה על ידי המשתמש; אתה יכול לבדוק את התוצאה החלקית לחיצה על קישור נתיב הפלט.
+txt_job_success: המשימה הושלמה בהצלחה
+txt_lt: רשימה/מבחן
 txt_normal: עדיפות רגילה
-txt_ok: OK
-txt_output: Output:
-txt_pause: השהה
+txt_ok: בסדר
+txt_output: תפוקה
+txt_pause: הפסקה
 txt_paused: מושהה,
-txt_p_high: Priority set to high
-txt_p_idle: Priority set to idle
-txt_p_normal: Priority set to normal
-txt_p_realtime: Priority set to real time
-txt_rating: דירוג:
-txt_rt: עדיפות זמן אמת
+txt_p_high: סדר עדיפות גבוה
+txt_p_idle: העדיפות הוגדרה למצב סרק
+txt_p_normal: עדיפות מוגדרת כרגיל
+txt_p_realtime: עדיפות מוגדרת לזמן אמת
+txt_rating: דרוג
+txt_rt: עדיפות בזמן אמת
 txt_report: דווח
-txt_resume: המשך
-txt_priority: Click to set task's priority
-txt_running: Running,
-txt_isrunning: Running...
-txt_saveas: שמור כ
-txt_savejob: Save task definition
-txt_savelog: Save task's log
-txt_software: software
-txt_speedscale: Speed, logarithmic scale (higher, better):
+txt_resume: קורות חיים
+txt_priority: לחץ כדי להגדיר את העדיפות של המשימה
+txt_running: ריצה,
+txt_isrunning: ריצה...
+txt_saveas: שמור בשם
+txt_savejob: שמור את הגדרת המשימה כסקריפט
+txt_savelog: שמור את יומן המשימה
+txt_software: תוכנה
+txt_speedscale: מהירות, סולם לוגריתמי (גבוה יותר, טוב יותר)
 txt_status: מצב
 txt_stop: עצור
-txt_bench: System benchmark
-txt_threads: Threads:
+txt_bench: רף מערכת
+txt_threads: חוטים
 txt_time: שעה:
 
 === end PeaLauncher text group ===
