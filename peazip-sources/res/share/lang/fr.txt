@@ -3,18 +3,18 @@ Français
 10.5
 Traduit par: Drake4478
 Dernière version par: Drake4478
-Date du: 14.04.2025
+Date du: 15.06.2025
 
 === PeaZip text group ===
 
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
+txt_10_5_fr: (rapport complet)
+txt_10_5_sectype: Demander confirmation pour exécuter les types de fichiers suivants
+txt_10_5_checkmotw: Vérifier Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Voulez-vous exécuter ce fichier ?
+txt_10_5_pathlock: Les éléments dans ce chemin de l'archive ne peuvent pas être modifiés.
+txt_10_5_type_description_rar: RAR: format d'archive propriétaire, taux de compression élevé, pris en charge par un compresseur externe
+txt_10_5_sh: Afficher les fichiers et dossiers cachés dans le système de fichiers
+txt_10_5_ntfsalt: Ce format est capable de stocker des flux de données alternatifs NTFS, y compris le Marque du Web
 txt_10_4_moving: (Déplacer)
 txt_10_3_classic: Classic
 txt_10_3_ascii: Il est recommandé d’utiliser uniquement des caractères ASCII dans les mots de passe pour le format d’archive actuel (lettres majuscules, chiffres et caractères spéciaux).
