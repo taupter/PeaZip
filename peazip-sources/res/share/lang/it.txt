@@ -1,12 +1,20 @@
 ﻿=== PeaZip language file ===
 Italian - Italiano
-10.4
+10.5
 Tradotto da: Giorgio Tani
 Ultima rev. di: Giorgio Tani
 Ultima rev.: 20250327
 
 === PeaZip text group ===
 
+txt_10_5_fr: (report completo)
+txt_10_5_sectype: Chiedi conferma prima di eseguire questi tipi di file
+txt_10_5_checkmotw: Verifica Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Eseguire questo file?
+txt_10_5_pathlock: Non è possibile editare gli oggetti in questo percorso dell'archivio
+txt_10_5_type_description_rar: RAR: formato proprietario, alta compressione, supportato attraverso strumenti di terze parti
+txt_10_5_sh: Mostra file a cartelle nascosti nel filesystem
+txt_10_5_ntfsalt: Questo formato supporta l'archiviazione degli NTFS Alternate Data Stream, compreso Mark of The Web
 txt_10_4_moving: (Spostamento)
 txt_10_3_classic: Classico
 txt_10_3_ascii: Si consiglia di utilizzare solo caratteri ASCII nelle password per questo formato (minuscole, maiuscole, numeri e caratteri speciali).
@@ -85,7 +93,7 @@ txt_9_0_plugind: Apri la directory di eseguibili e Plugin
 txt_9_0_df: Mostra le directory prima dei file
 txt_9_0_hl: Archiviare gli hard links come collegamenti
 txt_9_0_sl: Archiviare i symbolic links come collegamenti
-txt_9_0_tnav: Mostra barra laterale, treeview, nascondi
+txt_9_0_tnav: Modifica barra di navigazione
 txt_8_9_empty: L'archivio sembra essere vuoto
 txt_8_9_disp: Mostra contenuto dell'archivio
 txt_8_9_parsing: Lettura del contenuto dell'archivio
@@ -98,7 +106,7 @@ txt_8_8_centered: Pulsanti allineati al centro
 txt_8_8_light: Chiaro
 txt_8_8_lnk: Link
 txt_8_8_intnote: L'opzione "Estrai poi sposta" (in Opzioni > Impostazioni > Archive manager) è ignorata per la composizione del comando nel tab Console.
-txt_8_8_snz: Applica Zone.Identifier stream (Windows)
+txt_8_8_snz: Applica Zone.Identifier (MoTW) (Windows, NTFS)
 txt_8_8_sm: Dimensione icone piccole
 txt_8_8_solcol: Barra indirizzo
 txt_8_8_snoi: Archivia ids owner/group (TAR, Linux)
@@ -1196,7 +1204,7 @@ txt_threads: Thread
 txt_titlescolor: Colore dei titoli
 txt_to: in
 txt_toggle_browseflat: Mostra come browser / flat (mostra tutto)
-txt_toggle_historybookmarks: Mostra barra preferiti, cronologia, clipboard
+txt_toggle_historybookmarks: Modifica barra di stato
 txt_toolbarscolor: Colore delle barre
 txt_tools: Strumenti
 txt_best: prova impostazioni migliori (lento)

@@ -1,12 +1,20 @@
 ﻿=== PeaZip language file ===
 Korean - 한국어
-10.4
+10.5
 번역자: Sleepy, EhangB
 최근 교정: 20250227 by EhangB
 교정 일자: 20110531 by Sleep
 
 === PeaZip text group ===
 
+txt_10_5_fr: (full report)
+txt_10_5_sectype: Ask confirmation for running following file types
+txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Do you want to run this file?
+txt_10_5_pathlock: Items in this path of the archive cannot be edited
+txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
+txt_10_5_sh: Show hidden files and folders in the filesystem
+txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
 txt_10_4_moving: (Moving)
 txt_10_3_classic: 클래식
 txt_10_3_ascii: 현재 아카이브 형식에서는 비밀번호에 ASCII 문자만 사용하는 것이 권장됩니다 (대소문자 혼합, 숫자 및 특수 문자).

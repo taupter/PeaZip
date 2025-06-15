@@ -1,12 +1,20 @@
 ﻿=== PeaZip language file ===
 Portuguese (Portugal) - Português
-10.4
+10.5
 Tradução: Hugo Carvalho, José Carlos, Sérgio Marques
 Revisão: Hugo Carvalho
 Revisto em: 20250304
 
 === PeaZip text group ===
 
+txt_10_5_fr: (full report)
+txt_10_5_sectype: Ask confirmation for running following file types
+txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Do you want to run this file?
+txt_10_5_pathlock: Items in this path of the archive cannot be edited
+txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
+txt_10_5_sh: Show hidden files and folders in the filesystem
+txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
 txt_10_4_moving: (Moving)
 txt_10_3_classic: Clássico
 txt_10_3_ascii: Para o tipo de arquivo selecionado, recomendamos a utilização exclusiva de caracteres ASCII para as palavas-passe (letras maiúsculas e minúsculas, números e caracteres especiais).
