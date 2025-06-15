@@ -7,14 +7,14 @@ Last rev.: 20250327
 
 === PeaZip text group ===
 
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
+txt_10_5_fr: (Relatório completo)
+txt_10_5_sectype: Pedir confirmação para a execução dos seguintes tipos de arquivo
+txt_10_5_checkmotw: Verificar Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Você quer executar este arquivo?
+txt_10_5_pathlock: Os itens neste caminho do arquivo não podem ser editados
+txt_10_5_type_description_rar: RAR: formato de arquivo proprietário, alta taxa de compressão, suportado por compressor externo
+txt_10_5_sh: Mostrar arquivos e pastas ocultos no sistema de arquivos
+txt_10_5_ntfsalt: Este formato é capaz de armazenar NTFS Alternate Data Stream, incluindo Mark of The Web
 txt_10_4_moving: (Movendo)
 txt_10_3_classic: Clássico
 txt_10_3_ascii: Recomenda-se usar apenas caracteres ASCII em senhas para o formato de arquivo atual (letras maiúsculas e minúsculas, números e caracteres especiais).
@@ -93,7 +93,7 @@ txt_9_0_plugind: Binários abertos e diretório de plugins
 txt_9_0_df: Ordenar diretórios antes dos arquivos
 txt_9_0_hl: Armazenar links rígidos como links
 txt_9_0_sl: Armazenar links simbólicos como links
-txt_9_0_tnav: Alternar barra lateral, visualização em árvore, nenhum
+txt_9_0_tnav: Alternar barra de navegação
 txt_8_9_empty: Arquivo parece vazio
 txt_8_9_disp: Mostrando conteúdo do arquivo
 txt_8_9_parsing: Analisando conteúdo do arquivo
@@ -106,7 +106,7 @@ txt_8_8_centered: Botões centralizados
 txt_8_8_light: Claro
 txt_8_8_lnk: Link
 txt_8_8_intnote: Observe que a opção "Extração interativa" (em Opções > Configurações > Gerenciador de arquivos) é ignorada para compor a linha de comando na aba Console.
-txt_8_8_snz: Propagar fluxo Zone.Identifier (Windows)
+txt_8_8_snz: Propagar de Zone.Identifier (MoTW) (Windows, NTFS)
 txt_8_8_sm: Tamanho de ícones pequenos
 txt_8_8_solcol: Barra de navegação estrutural
 txt_8_8_snoi: IDs do proprietário/grupo de ids (TAR, Linux)
@@ -1204,7 +1204,7 @@ txt_threads: Processadores
 txt_titlescolor: Cores do títulos
 txt_to: para
 txt_toggle_browseflat: Alternar navegador/visão plana
-txt_toggle_historybookmarks: Alternar histórico/favoritos
+txt_toggle_historybookmarks: Alternar a barra de status
 txt_toolbarscolor: Cor da barra de ferramentas
 txt_tools: Ferramentas
 txt_best: tenta melhores configurações (lento)
