@@ -70,7 +70,7 @@ Computer's root
 [ignore archived path structure when performing extraction of selected objects]
 0
 
-[archive browser speed optimization: 0 no optimization 1..3 slower to faster optimization (3 default) 4 pre-parse if errors are detected 5 do not pre-parse archives: 4,5 may non correctly list some out of standard archives]
+[archive browser speed optimization: 0 no optimization 1 unused, 2,3 slow and medium optimization (3 default) 4 fast, pre-parse (with medium optimization) only if errors are detected 5 do not pre-parse archives: 4,5 may non correctly list some out of standard archives]
 3
 
 [(obsolete) don't pre-parse archives over this in-memory size]
@@ -237,12 +237,12 @@ PeaZip
 13
 1
 240
-80
-80
-80
-160
-60
-100
+72
+72
+72
+144
+48
+72
 0
 
 [extract to new folder]
@@ -554,7 +554,7 @@ Computer's root
 0
 0
 
-[Custom other parameters for 7z / p7zip and Arc]
+[custom other parameters for 7z / p7zip and Arc]
 
 
 
@@ -604,7 +604,7 @@ Computer's root
 0
 
 [RAR save NTFS alternate streams]
-0
+1
 
 [RAR set archive time from most recent file time]
 0
@@ -675,7 +675,7 @@ Computer's root
 0
 0
 1
-160
+144
 
 [preferred checksum and hash algorithms]
 CRC32 CRC64 MD5 RIPEMD160 SHA1 BLAKE2S SHA256 SHA3_256
@@ -779,22 +779,22 @@ CRC32 CRC64 MD5 RIPEMD160 SHA1 BLAKE2S SHA256 SHA3_256
 
 [extended columns, comments]
 0
-100
+72
 
-[Manually set RAR binary]
+[manually set RAR binary]
 0
 
-[Save open tabs on exit]
+[save open tabs on exit]
 0
 
-[Side bar]
+[side bar]
 0
 
 [7z / p7zip use stdin / stdout pipe for tar and untar on compressed TAR archives: 0 no (default) 1 yes]
 0
 0
 
-[Smart sile name sorting]
+[smart file name sorting]
 1
 
 [7z / p7zip display timestamps as UTC]
@@ -806,5 +806,12 @@ CRC32 CRC64 MD5 RIPEMD160 SHA1 BLAKE2S SHA256 SHA3_256
 [KDF type for PEA cascaded encryption]
 0
 
-[Max size of TAR file to be automatically opened for browsing in compressed TAR archives]
+[max size of TAR file to be automatically opened for browsing in compressed TAR archives]
+1
+
+[do not run following file types without confirmation 1 from archives 2 from filesystem 3 both 3 do not check]
+0
+exe cmd msi bat ps1 vbs reg
+
+[show hidden files and folders in the filesystem]
 1
