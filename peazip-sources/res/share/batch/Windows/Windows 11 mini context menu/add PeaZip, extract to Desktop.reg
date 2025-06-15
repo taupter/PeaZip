@@ -13,11 +13,14 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\SetDesktopWallpaper]
 "MUIVerb"="PeaZip, extract to Desktop"
+"MultiSelectModel"="Player"
 "Icon"="C:\\Program Files\\PeaZip\\res\\share\\icons\\peazip_seven.icl,8"
 [HKEY_CURRENT_USER\SOFTWARE\Classes\*\shell\SetDesktopWallpaper\command]
 @="\"C:\\Program Files\\PeaZip\\PEAZIP.EXE\" \"-ext2multidesktop\" \"%1\""
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\SetDesktopWallpaper]
 "MUIVerb"="PeaZip, extract to Desktop"
+"MultiSelectModel"="Player"
+"Icon"="C:\\Program Files\\PeaZip\\res\\share\\icons\\peazip_seven.icl,8"
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\SetDesktopWallpaper\command]
 @="\"C:\\Program Files\\PeaZip\\PEAZIP.EXE\" \"-ext2multidesktop\" \"%1\""
