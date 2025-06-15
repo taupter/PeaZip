@@ -1,31 +1,32 @@
 object Form_pea: TForm_pea
   Left = 30
-  Height = 270
+  Height = 338
   Top = 50
-  Width = 560
+  Width = 700
   ActiveControl = EditPW1
   AllowDropFiles = True
   Caption = 'PEA'
-  ClientHeight = 270
-  ClientWidth = 560
+  ClientHeight = 338
+  ClientWidth = 700
   Color = clForm
   DefaultMonitor = dmPrimary
+  DesignTimePPI = 120
   Menu = MainMenu1
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '4.0.0.4'
   OnClose = FormClose
   OnCreate = FormCreate
   OnDropFiles = FormDropFiles
   OnShow = FormShow
-  Position = poScreenCenter
-  ShowHint = True
-  LCLVersion = '3.4.0.0'
   object ButtonRefSize: TButton
     AnchorSideTop.Control = Owner
     AnchorSideTop.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 181
-    Height = 25
-    Top = 270
-    Width = 62
+    Left = 226
+    Height = 30
+    Top = 338
+    Width = 72
     AutoSize = True
     Caption = 'PeaZip'
     ParentFont = False
@@ -33,24 +34,24 @@ object Form_pea: TForm_pea
   end
   object ProgressBar1: TProgressBar
     AnchorSideBottom.Control = Bevel9
-    Left = 8
-    Height = 10
-    Top = 211
-    Width = 544
+    Left = 10
+    Height = 12
+    Top = 265
+    Width = 680
     Anchors = [akLeft, akRight, akBottom]
-    BorderSpacing.Bottom = 3
+    BorderSpacing.Bottom = 4
     ParentFont = False
     Step = 1
     TabOrder = 8
   end
   object LabelTime1: TLabel
     AnchorSideBottom.Control = ProgressBar1
-    Left = 8
-    Height = 15
-    Top = 193
-    Width = 280
+    Left = 10
+    Height = 20
+    Top = 241
+    Width = 350
     Anchors = [akLeft, akRight, akBottom]
-    BorderSpacing.Bottom = 3
+    BorderSpacing.Bottom = 4
     Caption = ' '
     ParentFont = False
   end
@@ -60,15 +61,15 @@ object Form_pea: TForm_pea
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = ButtonDone1
-    Left = 12
+    Left = 15
     Height = 2
-    Top = 224
-    Width = 536
+    Top = 281
+    Width = 670
     Anchors = [akLeft, akRight, akBottom]
-    BorderSpacing.Left = 12
+    BorderSpacing.Left = 15
     BorderSpacing.Top = 2
-    BorderSpacing.Right = 12
-    BorderSpacing.Bottom = 12
+    BorderSpacing.Right = 15
+    BorderSpacing.Bottom = 15
     Shape = bsBottomLine
   end
   object ButtonDone1: TBitBtn
@@ -76,68 +77,68 @@ object Form_pea: TForm_pea
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
-    Left = 438
-    Height = 26
-    Top = 238
-    Width = 110
+    Left = 547
+    Height = 32
+    Top = 298
+    Width = 138
     Anchors = [akRight, akBottom]
-    BorderSpacing.Right = 12
-    BorderSpacing.Bottom = 6
+    BorderSpacing.Right = 15
+    BorderSpacing.Bottom = 8
     Caption = 'Close'
-    OnClick = ButtonDone1Click
     ParentFont = False
     TabOrder = 3
     Visible = False
+    OnClick = ButtonDone1Click
   end
   object LabelOpen: TBitBtn
     AnchorSideRight.Control = ButtonDone1
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
     Cursor = crHandPoint
-    Left = 322
-    Height = 26
+    Left = 401
+    Height = 32
     Hint = 'Open output path or file'
-    Top = 238
-    Width = 110
+    Top = 298
+    Width = 138
     Anchors = [akRight, akBottom]
-    BorderSpacing.Right = 6
-    BorderSpacing.Bottom = 6
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 8
     Caption = 'Explore'
-    OnClick = LabelOpenClick
     ParentFont = False
     TabOrder = 4
     Visible = False
+    OnClick = LabelOpenClick
   end
   object LabelLog1: TBitBtn
     AnchorSideRight.Control = LabelOpen
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
-    Left = 206
-    Height = 26
+    Left = 255
+    Height = 32
     Hint = 'Display job log'
-    Top = 238
-    Width = 110
+    Top = 298
+    Width = 138
     Anchors = [akRight, akBottom]
-    BorderSpacing.Right = 6
-    BorderSpacing.Bottom = 6
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 8
     Caption = 'Log'
-    OnClick = LabelLog1Click
     ParentFont = False
     TabOrder = 5
     Visible = False
+    OnClick = LabelLog1Click
   end
   object PanelTools: TPanel
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = LabelTime1
     Left = 0
-    Height = 193
+    Height = 241
     Top = 0
-    Width = 560
+    Width = 700
     Anchors = [akTop, akLeft, akRight, akBottom]
     BevelOuter = bvNone
-    ClientHeight = 193
-    ClientWidth = 560
+    ClientHeight = 241
+    ClientWidth = 700
     ParentBackground = False
     ParentFont = False
     TabOrder = 7
@@ -147,26 +148,26 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = Image7
       AnchorSideRight.Control = PanelTools
       AnchorSideRight.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 24
-      Width = 496
+      Left = 61
+      Height = 20
+      Top = 30
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 12
-      BorderSpacing.Right = 12
+      BorderSpacing.Left = 15
+      BorderSpacing.Right = 15
       Caption = 'Input:'
       ParentFont = False
     end
     object Image7: TImage
       AnchorSideLeft.Control = PanelTools
       AnchorSideTop.Control = PanelTools
-      Left = 24
+      Left = 30
       Height = 16
-      Top = 24
+      Top = 30
       Width = 16
       AutoSize = True
-      BorderSpacing.Left = 24
-      BorderSpacing.Top = 24
+      BorderSpacing.Left = 30
+      BorderSpacing.Top = 30
       Transparent = True
     end
     object LabelTools3: TLabel
@@ -175,13 +176,13 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelTools
       AnchorSideRight.Side = asrBottom
-      Left = 52
+      Left = 61
       Height = 1
-      Top = 42
-      Width = 496
+      Top = 54
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 3
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 15
       ParentFont = False
     end
     object LabelTools4: TLabel
@@ -190,13 +191,13 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelTools
       AnchorSideRight.Side = asrBottom
-      Left = 52
+      Left = 61
       Height = 1
-      Top = 46
-      Width = 496
+      Top = 59
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 3
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 15
       ParentFont = False
     end
     object ButtonToolsCancel: TBitBtn
@@ -204,19 +205,19 @@ object Form_pea: TForm_pea
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = PanelTools
       AnchorSideBottom.Side = asrBottom
-      Left = 468
-      Height = 25
-      Top = 162
-      Width = 80
+      Left = 594
+      Height = 30
+      Top = 203
+      Width = 94
       Anchors = [akRight, akBottom]
       AutoSize = True
-      BorderSpacing.Right = 12
-      BorderSpacing.Bottom = 6
+      BorderSpacing.Right = 15
+      BorderSpacing.Bottom = 8
       Caption = '   Cancel   '
-      OnClick = ButtonToolsCancelClick
       ParentFont = False
       TabOrder = 0
       Visible = False
+      OnClick = ButtonToolsCancelClick
     end
     object LabelTools5: TLabel
       AnchorSideLeft.Control = LabelTools2
@@ -224,14 +225,33 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelTools
       AnchorSideRight.Side = asrBottom
-      Left = 52
+      Left = 61
       Height = 1
-      Top = 50
-      Width = 496
+      Top = 64
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 3
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 15
       ParentFont = False
+    end
+    object ButtonToolsCancel1: TBitBtn
+      AnchorSideRight.Control = PanelUtils
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = PanelTools
+      AnchorSideBottom.Side = asrBottom
+      Left = 618
+      Height = 30
+      Top = 203
+      Width = 70
+      Anchors = [akRight, akBottom]
+      AutoSize = True
+      BorderSpacing.Right = 15
+      BorderSpacing.Bottom = 8
+      Caption = '   OK   '
+      ParentFont = False
+      TabOrder = 1
+      Visible = False
+      OnClick = ButtonToolsCancel1Click
     end
   end
   object PanelRFSinteractive: TPanel
@@ -240,13 +260,13 @@ object Form_pea: TForm_pea
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
     Left = 0
-    Height = 270
+    Height = 338
     Top = 0
-    Width = 560
+    Width = 700
     Anchors = [akTop, akLeft, akRight, akBottom]
     BevelOuter = bvNone
-    ClientHeight = 270
-    ClientWidth = 560
+    ClientHeight = 338
+    ClientWidth = 700
     ParentBackground = False
     ParentFont = False
     TabOrder = 6
@@ -255,12 +275,12 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = ComboBox1
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = ComboBox1
-      Left = 51
-      Height = 15
-      Top = 28
-      Width = 65
+      Left = 63
+      Height = 20
+      Top = 34
+      Width = 82
       Anchors = [akTop, akRight]
-      BorderSpacing.Right = 12
+      BorderSpacing.Right = 15
       Caption = 'Volume size:'
       ParentFont = False
     end
@@ -268,12 +288,12 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = ComboBox3
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = ComboBox1
-      Left = 35
-      Height = 15
-      Top = 57
-      Width = 81
+      Left = 46
+      Height = 20
+      Top = 70
+      Width = 99
       Anchors = [akTop, akRight]
-      BorderSpacing.Right = 12
+      BorderSpacing.Right = 15
       Caption = 'Integrity check:'
       ParentFont = False
     end
@@ -282,12 +302,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = ComboBox1
       AnchorSideTop.Side = asrCenter
-      Left = 362
+      Left = 453
       Height = 16
-      Top = 27
+      Top = 36
       Width = 16
       AutoSize = True
-      BorderSpacing.Left = 12
+      BorderSpacing.Left = 15
       BorderSpacing.Top = 1
       Transparent = True
     end
@@ -297,25 +317,25 @@ object Form_pea: TForm_pea
       AnchorSideRight.Control = PanelRFSinteractive
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = Panelsp2
-      Left = 12
+      Left = 15
       Height = 2
-      Top = 220
-      Width = 536
+      Top = 276
+      Width = 670
       Anchors = [akLeft, akRight, akBottom]
-      BorderSpacing.Left = 12
+      BorderSpacing.Left = 15
       BorderSpacing.Top = 2
-      BorderSpacing.Right = 12
+      BorderSpacing.Right = 15
       Shape = bsBottomLine
     end
     object ComboBox1: TComboBox
       AnchorSideTop.Control = PanelRFSinteractive
-      Left = 128
-      Height = 23
-      Top = 24
-      Width = 222
-      BorderSpacing.Top = 24
+      Left = 160
+      Height = 28
+      Top = 30
+      Width = 278
+      BorderSpacing.Top = 30
       DropDownCount = 15
-      ItemHeight = 15
+      ItemHeight = 20
       ItemIndex = 0
       Items.Strings = (
         'Custom size'
@@ -342,12 +362,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = SpinEdit1
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = ComboBox1
-      Left = 462
-      Height = 23
-      Top = 24
-      Width = 72
-      BorderSpacing.Left = 12
-      ItemHeight = 15
+      Left = 578
+      Height = 28
+      Top = 30
+      Width = 90
+      BorderSpacing.Left = 15
+      ItemHeight = 20
       ItemIndex = 2
       Items.Strings = (
         'B'
@@ -364,13 +384,13 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = ComboBox1
       AnchorSideTop.Control = ComboBox1
       AnchorSideTop.Side = asrBottom
-      Left = 128
-      Height = 23
-      Top = 53
-      Width = 222
-      BorderSpacing.Top = 6
+      Left = 160
+      Height = 28
+      Top = 66
+      Width = 278
+      BorderSpacing.Top = 8
       DropDownCount = 14
-      ItemHeight = 15
+      ItemHeight = 20
       ItemIndex = 13
       Items.Strings = (
         'WHIRLPOOL'
@@ -397,11 +417,11 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = ComboBox1
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = ComboBox1
-      Left = 362
-      Height = 23
-      Top = 24
-      Width = 88
-      BorderSpacing.Left = 12
+      Left = 453
+      Height = 28
+      Top = 30
+      Width = 110
+      BorderSpacing.Left = 15
       MaxValue = 1000000000
       MinValue = 1
       ParentFont = False
@@ -412,44 +432,44 @@ object Form_pea: TForm_pea
       AnchorSideRight.Control = ButtonRFSinteractive1
       AnchorSideBottom.Control = Panelsp2
       AnchorSideBottom.Side = asrCenter
-      Left = 402
-      Height = 25
-      Top = 233
-      Width = 60
+      Left = 513
+      Height = 30
+      Top = 293
+      Width = 70
       Anchors = [akRight, akBottom]
       AutoSize = True
-      BorderSpacing.Right = 6
-      BorderSpacing.Bottom = 12
+      BorderSpacing.Right = 8
+      BorderSpacing.Bottom = 15
       Caption = '   OK   '
-      OnClick = ButtonRFSinteractiveClick
       ParentFont = False
       TabOrder = 4
+      OnClick = ButtonRFSinteractiveClick
     end
     object ButtonRFSinteractive1: TBitBtn
       AnchorSideRight.Control = PanelRFSinteractive
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = Panelsp2
       AnchorSideBottom.Side = asrCenter
-      Left = 468
-      Height = 25
-      Top = 233
-      Width = 80
+      Left = 591
+      Height = 30
+      Top = 293
+      Width = 94
       Anchors = [akRight, akBottom]
       AutoSize = True
-      BorderSpacing.Right = 12
-      BorderSpacing.Bottom = 12
+      BorderSpacing.Right = 15
+      BorderSpacing.Bottom = 15
       Caption = '   Cancel   '
-      OnClick = ButtonRFSinteractive1Click
       ParentFont = False
       TabOrder = 5
+      OnClick = ButtonRFSinteractive1Click
     end
     object Panelsp2: TPanel
       AnchorSideLeft.Control = PanelRFSinteractive
       AnchorSideBottom.Control = PanelRFSinteractive
       AnchorSideBottom.Side = asrBottom
       Left = 0
-      Height = 48
-      Top = 222
+      Height = 60
+      Top = 278
       Width = 2
       Anchors = [akLeft, akBottom]
       BevelOuter = bvNone
@@ -463,13 +483,13 @@ object Form_pea: TForm_pea
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = LabelTime1
     Left = 0
-    Height = 193
+    Height = 241
     Top = 0
-    Width = 560
+    Width = 700
     Anchors = [akTop, akLeft, akRight, akBottom]
     BevelOuter = bvNone
-    ClientHeight = 193
-    ClientWidth = 560
+    ClientHeight = 241
+    ClientWidth = 700
     ParentBackground = False
     ParentFont = False
     TabOrder = 2
@@ -479,14 +499,14 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = PanelEncrypt1
       AnchorSideRight.Control = PanelEncrypt1
       AnchorSideRight.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 24
-      Width = 496
+      Left = 61
+      Height = 20
+      Top = 30
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 12
-      BorderSpacing.Top = 24
-      BorderSpacing.Right = 12
+      BorderSpacing.Left = 15
+      BorderSpacing.Top = 30
+      BorderSpacing.Right = 15
       Caption = 'Input:'
       ParentFont = False
     end
@@ -494,12 +514,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = LabelEncrypt2
       AnchorSideTop.Control = LabelEncrypt2
       AnchorSideTop.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 45
-      Width = 500
+      Left = 61
+      Height = 20
+      Top = 58
+      Width = 629
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 6
+      BorderSpacing.Top = 8
       Caption = 'Output:'
       ParentFont = False
     end
@@ -507,12 +527,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = LabelEncrypt2
       AnchorSideTop.Control = LabelEncrypt3
       AnchorSideTop.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 72
-      Width = 500
+      Left = 61
+      Height = 20
+      Top = 93
+      Width = 629
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 12
+      BorderSpacing.Top = 15
       Caption = 'Using:'
       ParentFont = False
     end
@@ -520,12 +540,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = LabelEncrypt2
       AnchorSideTop.Control = LabelEncrypt4
       AnchorSideTop.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 93
-      Width = 500
+      Left = 61
+      Height = 20
+      Top = 121
+      Width = 629
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 6
+      BorderSpacing.Top = 8
       Caption = 'Input details:'
       ParentFont = False
     end
@@ -533,12 +553,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = LabelEncrypt2
       AnchorSideTop.Control = LabelEncrypt5
       AnchorSideTop.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 114
-      Width = 500
+      Left = 61
+      Height = 20
+      Top = 149
+      Width = 629
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 6
+      BorderSpacing.Top = 8
       Caption = 'Output details:'
       ParentFont = False
     end
@@ -548,16 +568,16 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = Panel1
       Cursor = crHandPoint
-      Left = 26
-      Height = 28
-      Top = 72
-      Width = 14
+      Left = 28
+      Height = 35
+      Top = 93
+      Width = 18
       Anchors = [akTop, akRight]
-      BorderSpacing.Top = 12
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 15
+      BorderSpacing.Right = 15
       Caption = '+'
       Font.Color = clGrayText
-      Font.Height = -20
+      Font.Height = -25
       Font.Style = [fsBold]
       ParentFont = False
       OnClick = LabelE1Click
@@ -566,12 +586,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = PanelEncrypt1
       AnchorSideTop.Control = LabelEncrypt2
       AnchorSideTop.Side = asrCenter
-      Left = 24
+      Left = 30
       Height = 16
-      Top = 23
+      Top = 32
       Width = 16
       AutoSize = True
-      BorderSpacing.Left = 24
+      BorderSpacing.Left = 30
       Transparent = True
     end
     object Panel1: TPanel
@@ -579,39 +599,39 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = LabelEncrypt3
       AnchorSideTop.Side = asrBottom
       AnchorSideBottom.Control = ButtonPeaExit
-      Left = 52
-      Height = 96
-      Top = 72
-      Width = 500
+      Left = 61
+      Height = 118
+      Top = 93
+      Width = 629
       Anchors = [akTop, akLeft, akRight, akBottom]
-      BorderSpacing.Top = 12
+      BorderSpacing.Top = 15
       BevelOuter = bvNone
-      ClientHeight = 96
-      ClientWidth = 500
+      ClientHeight = 118
+      ClientWidth = 629
       ParentBackground = False
       ParentFont = False
       TabOrder = 0
       object ShapeE1: TShape
         Left = 0
-        Height = 5
-        Top = 10
-        Width = 200
+        Height = 6
+        Top = 12
+        Width = 250
       end
       object ShapeE2: TShape
         Left = 0
-        Height = 5
-        Top = 10
-        Width = 200
+        Height = 6
+        Top = 12
+        Width = 250
         Brush.Color = clHighlight
       end
       object LabelOut1: TLabel
         AnchorSideTop.Control = ShapeE1
         AnchorSideTop.Side = asrBottom
         Left = 0
-        Height = 15
-        Top = 21
-        Width = 170
-        BorderSpacing.Top = 6
+        Height = 20
+        Top = 26
+        Width = 209
+        BorderSpacing.Top = 8
         Caption = 'Compression ratio: calculating...'
         ParentFont = False
       end
@@ -622,17 +642,17 @@ object Form_pea: TForm_pea
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = PanelEncrypt1
       AnchorSideBottom.Side = asrBottom
-      Left = 468
-      Height = 25
-      Top = 168
-      Width = 80
+      Left = 591
+      Height = 30
+      Top = 211
+      Width = 94
       Anchors = [akRight, akBottom]
       AutoSize = True
-      BorderSpacing.Right = 12
+      BorderSpacing.Right = 15
       Caption = '   Cancel   '
-      OnClick = ButtonPeaExitClick
       ParentFont = False
       TabOrder = 1
+      OnClick = ButtonPeaExitClick
     end
   end
   object PanelDecrypt1: TPanel
@@ -640,13 +660,13 @@ object Form_pea: TForm_pea
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = LabelTime1
     Left = 0
-    Height = 193
+    Height = 241
     Top = 0
-    Width = 560
+    Width = 700
     Anchors = [akTop, akLeft, akRight, akBottom]
     BevelOuter = bvNone
-    ClientHeight = 193
-    ClientWidth = 560
+    ClientHeight = 241
+    ClientWidth = 700
     ParentBackground = False
     ParentFont = False
     TabOrder = 1
@@ -656,14 +676,14 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = PanelDecrypt1
       AnchorSideRight.Control = PanelDecrypt1
       AnchorSideRight.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 24
-      Width = 496
+      Left = 61
+      Height = 20
+      Top = 30
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 12
-      BorderSpacing.Top = 24
-      BorderSpacing.Right = 12
+      BorderSpacing.Left = 15
+      BorderSpacing.Top = 30
+      BorderSpacing.Right = 15
       Caption = 'Input:'
       ParentFont = False
     end
@@ -673,13 +693,13 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelDecrypt1
       AnchorSideRight.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 45
-      Width = 496
+      Left = 61
+      Height = 20
+      Top = 58
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 6
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 15
       Caption = 'Output:'
       ParentFont = False
     end
@@ -689,13 +709,13 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelDecrypt1
       AnchorSideRight.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 84
-      Width = 496
+      Left = 61
+      Height = 20
+      Top = 108
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 24
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 30
+      BorderSpacing.Right = 15
       Caption = 'Using:'
       ParentFont = False
     end
@@ -705,13 +725,13 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelDecrypt1
       AnchorSideRight.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 105
-      Width = 496
+      Left = 61
+      Height = 20
+      Top = 136
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 6
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 15
       Caption = ' '
       ParentFont = False
     end
@@ -721,13 +741,13 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelDecrypt1
       AnchorSideRight.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 126
-      Width = 496
+      Left = 61
+      Height = 20
+      Top = 164
+      Width = 624
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 6
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 15
       Caption = ' '
       ParentFont = False
     end
@@ -735,12 +755,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = PanelDecrypt1
       AnchorSideTop.Control = LabelDecrypt2
       AnchorSideTop.Side = asrCenter
-      Left = 24
+      Left = 30
       Height = 16
-      Top = 23
+      Top = 32
       Width = 16
       AutoSize = True
-      BorderSpacing.Left = 24
+      BorderSpacing.Left = 30
       Transparent = True
     end
     object ButtonPeaExit1: TBitBtn
@@ -749,17 +769,17 @@ object Form_pea: TForm_pea
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = PanelDecrypt1
       AnchorSideBottom.Side = asrBottom
-      Left = 468
-      Height = 25
-      Top = 168
-      Width = 80
+      Left = 591
+      Height = 30
+      Top = 211
+      Width = 94
       Anchors = [akRight, akBottom]
       AutoSize = True
-      BorderSpacing.Right = 12
+      BorderSpacing.Right = 15
       Caption = '   Cancel   '
-      OnClick = ButtonPeaExitClick
       ParentFont = False
       TabOrder = 0
+      OnClick = ButtonPeaExitClick
     end
   end
   object PanelUtils: TPanel
@@ -768,25 +788,25 @@ object Form_pea: TForm_pea
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
     Left = 0
-    Height = 270
+    Height = 338
     Top = 0
-    Width = 560
+    Width = 700
     Anchors = [akTop, akLeft, akRight, akBottom]
     BevelOuter = bvNone
-    ClientHeight = 270
-    ClientWidth = 560
+    ClientHeight = 338
+    ClientWidth = 700
     ParentBackground = False
     ParentFont = False
     TabOrder = 9
     object LabelUtilsFun: TLabel
       AnchorSideLeft.Control = PanelUtils
       AnchorSideTop.Side = asrCenter
-      Left = 12
-      Height = 15
+      Left = 15
+      Height = 20
       Hint = 'Type a memorizable passphrase, avoiding words either too common or too easy to guess.'#13#10'You should use mixed upcase and lowcase letters, numbers and special characters.'
-      Top = 11
-      Width = 47
-      BorderSpacing.Left = 12
+      Top = 14
+      Width = 56
+      BorderSpacing.Left = 15
       Caption = 'Function'
       ParentFont = False
       Visible = False
@@ -796,31 +816,31 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = ButtonUtilsCancel
       AnchorSideBottom.Side = asrBottom
-      Left = 402
-      Height = 25
-      Top = 234
-      Width = 60
+      Left = 513
+      Height = 30
+      Top = 293
+      Width = 70
       Anchors = [akTop, akRight]
       AutoSize = True
-      BorderSpacing.Right = 6
+      BorderSpacing.Right = 8
       Caption = '   OK   '
-      OnClick = ButtonUtilsOKClick
       ParentFont = False
       TabOrder = 0
+      OnClick = ButtonUtilsOKClick
     end
     object ImageUtils: TImage
       AnchorSideLeft.Control = PanelUtils
       AnchorSideTop.Control = ButtonUtilsOK
       AnchorSideTop.Side = asrCenter
       Cursor = crHandPoint
-      Left = 12
+      Left = 15
       Height = 16
-      Top = 238
+      Top = 300
       Width = 16
       AutoSize = True
-      BorderSpacing.Left = 12
-      OnClick = ImageUtilsClick
+      BorderSpacing.Left = 15
       Transparent = True
+      OnClick = ImageUtilsClick
     end
     object LabelUtilsInput: TLabel
       AnchorSideLeft.Control = ImageUtils
@@ -830,12 +850,12 @@ object Form_pea: TForm_pea
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = ButtonUtilsOK
       AnchorSideBottom.Side = asrCenter
-      Left = 34
-      Height = 15
-      Top = 238
-      Width = 126
+      Left = 39
+      Height = 20
+      Top = 298
+      Width = 160
       Anchors = [akLeft, akBottom]
-      BorderSpacing.Left = 6
+      BorderSpacing.Left = 8
       Caption = 'Drag here input files, or '
       ParentFont = False
     end
@@ -847,9 +867,9 @@ object Form_pea: TForm_pea
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = Panelsp0
       Left = 0
-      Height = 186
-      Top = 36
-      Width = 560
+      Height = 233
+      Top = 45
+      Width = 700
       Anchors = [akTop, akLeft, akRight, akBottom]
       ParentColor = True
       ParentFont = False
@@ -860,13 +880,13 @@ object Form_pea: TForm_pea
     object ComboBoxUnits: TComboBox
       AnchorSideTop.Control = PanelUtilsTitle
       AnchorSideTop.Side = asrBottom
-      Left = 12
-      Height = 23
-      Top = 48
-      Width = 100
-      BorderSpacing.Top = 12
+      Left = 15
+      Height = 28
+      Top = 60
+      Width = 125
+      BorderSpacing.Top = 15
       DropDownCount = 26
-      ItemHeight = 15
+      ItemHeight = 20
       ItemIndex = 0
       Items.Strings = (
         'Units'
@@ -882,17 +902,17 @@ object Form_pea: TForm_pea
       AnchorSideRight.Control = PanelUtils
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Side = asrBottom
-      Left = 468
-      Height = 25
-      Top = 234
-      Width = 80
+      Left = 591
+      Height = 30
+      Top = 293
+      Width = 94
       Anchors = [akTop, akRight]
       AutoSize = True
-      BorderSpacing.Right = 12
+      BorderSpacing.Right = 15
       Caption = '   Cancel   '
-      OnClick = ButtonUtilsCancelClick
       ParentFont = False
       TabOrder = 1
+      OnClick = ButtonUtilsCancelClick
     end
     object labelopenfile2: TLabel
       AnchorSideLeft.Control = LabelUtilsInput
@@ -900,10 +920,10 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = LabelUtilsInput
       AnchorSideTop.Side = asrCenter
       Cursor = crHandPoint
-      Left = 160
-      Height = 15
-      Top = 238
-      Width = 54
+      Left = 199
+      Height = 20
+      Top = 298
+      Width = 69
       Caption = 'select files'
       Font.Color = 13391121
       ParentFont = False
@@ -914,10 +934,10 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = LabelUtilsInput
       AnchorSideTop.Side = asrCenter
-      Left = 214
-      Height = 15
-      Top = 238
-      Width = 9
+      Left = 268
+      Height = 20
+      Top = 298
+      Width = 12
       Caption = ' | '
       ParentFont = False
     end
@@ -929,11 +949,11 @@ object Form_pea: TForm_pea
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Side = asrBottom
       Cursor = crHandPoint
-      Left = 223
-      Height = 15
-      Top = 238
-      Width = 35
-      BorderSpacing.Bottom = 6
+      Left = 280
+      Height = 20
+      Top = 298
+      Width = 44
+      BorderSpacing.Bottom = 8
       Caption = 'Search'
       Font.Color = 13391121
       ParentFont = False
@@ -944,8 +964,8 @@ object Form_pea: TForm_pea
       AnchorSideBottom.Control = PanelUtils
       AnchorSideBottom.Side = asrBottom
       Left = 0
-      Height = 48
-      Top = 222
+      Height = 60
+      Top = 278
       Width = 1
       Anchors = [akLeft, akBottom]
       BevelOuter = bvNone
@@ -959,27 +979,27 @@ object Form_pea: TForm_pea
       AnchorSideRight.Control = PanelUtils
       AnchorSideRight.Side = asrBottom
       Left = 0
-      Height = 36
+      Height = 45
       Top = 0
-      Width = 560
+      Width = 700
       Anchors = [akTop, akLeft, akRight]
       BevelOuter = bvNone
-      ClientHeight = 36
-      ClientWidth = 560
+      ClientHeight = 45
+      ClientWidth = 700
       ParentBackground = False
       TabOrder = 5
       object ComboBoxUtils: TComboBox
         AnchorSideLeft.Control = PanelUtilsTitle
         AnchorSideTop.Control = PanelUtilsTitle
         AnchorSideTop.Side = asrCenter
-        Left = 12
-        Height = 23
-        Top = 7
-        Width = 400
-        BorderSpacing.Left = 12
-        BorderSpacing.Right = 6
+        Left = 15
+        Height = 28
+        Top = 8
+        Width = 500
+        BorderSpacing.Left = 15
+        BorderSpacing.Right = 8
         DropDownCount = 23
-        ItemHeight = 15
+        ItemHeight = 20
         ItemIndex = 12
         Items.Strings = (
           'CRC32 checksum'
@@ -1018,17 +1038,17 @@ object Form_pea: TForm_pea
         AnchorSideTop.Side = asrCenter
         AnchorSideRight.Control = peautilsbtn
         AnchorSideBottom.Side = asrBottom
-        Left = 438
-        Height = 19
-        Top = 9
-        Width = 50
+        Left = 541
+        Height = 30
+        Top = 7
+        Width = 69
         Anchors = [akTop, akRight]
         AutoSize = True
-        BorderSpacing.Right = 24
+        BorderSpacing.Right = 30
         Caption = 'Reset list'
         Flat = True
-        OnClick = ButtonUtilsResetClick
         ParentFont = False
+        OnClick = ButtonUtilsResetClick
       end
       object peautilsbtn: TSpeedButton
         AnchorSideTop.Control = PanelUtilsTitle
@@ -1036,14 +1056,14 @@ object Form_pea: TForm_pea
         AnchorSideRight.Side = asrBottom
         AnchorSideBottom.Control = PanelUtilsTitle
         AnchorSideBottom.Side = asrBottom
-        Left = 512
-        Height = 36
+        Left = 640
+        Height = 45
         Top = 0
-        Width = 48
+        Width = 60
         Anchors = [akTop, akRight, akBottom]
         Flat = True
-        OnClick = peautilsbtnClick
         ParentFont = False
+        OnClick = peautilsbtnClick
       end
     end
   end
@@ -1053,13 +1073,13 @@ object Form_pea: TForm_pea
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
     Left = 0
-    Height = 270
+    Height = 338
     Top = 0
-    Width = 560
+    Width = 700
     Anchors = [akTop, akLeft, akRight, akBottom]
     BevelOuter = bvNone
-    ClientHeight = 270
-    ClientWidth = 560
+    ClientHeight = 338
+    ClientWidth = 700
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
@@ -1070,12 +1090,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = LabelPS1
       AnchorSideTop.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 144
-      Width = 249
-      BorderSpacing.Left = 12
-      BorderSpacing.Top = 12
+      Left = 61
+      Height = 20
+      Top = 182
+      Width = 312
+      BorderSpacing.Left = 15
+      BorderSpacing.Top = 15
       Caption = 'Move the mouse to improve entropy of the salt'
       ParentFont = False
       Visible = False
@@ -1084,13 +1104,13 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = EditPW1
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = EditPW1
-      Left = 58
-      Height = 15
+      Left = 74
+      Height = 20
       Hint = 'Type a memorizable passphrase, avoiding words either too common or too easy to guess.'#13#10'You should use mixed upcase and lowcase letters, numbers and special characters.'
-      Top = 55
-      Width = 58
+      Top = 69
+      Width = 71
       Anchors = [akTop, akRight]
-      BorderSpacing.Right = 12
+      BorderSpacing.Right = 15
       Caption = 'Passphrase'
       ParentFont = False
     end
@@ -1098,12 +1118,12 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = EditConfirm1
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = EditConfirm1
-      Left = 72
-      Height = 15
-      Top = 84
-      Width = 44
+      Left = 92
+      Height = 20
+      Top = 105
+      Width = 53
       Anchors = [akTop, akRight]
-      BorderSpacing.Right = 12
+      BorderSpacing.Right = 15
       Caption = 'Confirm'
       ParentFont = False
       Visible = False
@@ -1113,13 +1133,13 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = LabelHint1
       AnchorSideTop.Side = asrBottom
-      Left = 100
-      Height = 15
-      Top = 165
-      Width = 46
+      Left = 122
+      Height = 20
+      Top = 210
+      Width = 58
       Alignment = taRightJustify
-      BorderSpacing.Left = 6
-      BorderSpacing.Top = 6
+      BorderSpacing.Left = 8
+      BorderSpacing.Top = 8
       Caption = '[sample]'
       ParentFont = False
       Visible = False
@@ -1127,24 +1147,24 @@ object Form_pea: TForm_pea
     object Shape2: TShape
       AnchorSideTop.Control = EditConfirm1
       AnchorSideTop.Side = asrBottom
-      Left = 128
-      Height = 5
-      Top = 109
-      Width = 5
-      BorderSpacing.Top = 6
+      Left = 160
+      Height = 6
+      Top = 137
+      Width = 6
+      BorderSpacing.Top = 8
       Brush.Color = clRed
     end
     object LabelPS1: TLabel
       AnchorSideLeft.Control = Shape2
       AnchorSideTop.Control = Shape2
       AnchorSideTop.Side = asrBottom
-      Left = 128
-      Height = 15
+      Left = 160
+      Height = 20
       Hint = 'Esteem of entropy contained in the typed'#13#10'passphrase, has only an informative value'
-      Top = 117
-      Width = 3
+      Top = 147
+      Width = 4
       Alignment = taRightJustify
-      BorderSpacing.Top = 3
+      BorderSpacing.Top = 4
       Caption = ' '
       ParentFont = False
     end
@@ -1152,14 +1172,14 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = PanelPW1
       AnchorSideRight.Control = LabelKeyFileName1
       Cursor = crHandPoint
-      Left = 78
-      Height = 15
+      Left = 96
+      Height = 20
       Hint = 'You can use a file as key, a randomly generated keyfile is highly recommended'
-      Top = 24
-      Width = 38
+      Top = 30
+      Width = 49
       Anchors = [akTop, akRight]
-      BorderSpacing.Top = 24
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 30
+      BorderSpacing.Right = 15
       Caption = 'Key file'
       Font.Color = clNavy
       Font.Style = [fsUnderline]
@@ -1168,10 +1188,10 @@ object Form_pea: TForm_pea
     end
     object LabelKeyFileName1: TLabel
       AnchorSideTop.Control = LabelKeyFile1
-      Left = 128
-      Height = 15
-      Top = 24
-      Width = 43
+      Left = 160
+      Height = 20
+      Top = 30
+      Width = 53
       Caption = '<none>'
       ParentFont = False
     end
@@ -1180,12 +1200,12 @@ object Form_pea: TForm_pea
       AnchorSideTop.Control = LabelHint1
       AnchorSideTop.Side = asrCenter
       Cursor = crHandPoint
-      Left = 24
+      Left = 30
       Height = 16
-      Top = 143
+      Top = 184
       Width = 16
       AutoSize = True
-      BorderSpacing.Left = 24
+      BorderSpacing.Left = 30
       Transparent = True
       Visible = False
     end
@@ -1193,12 +1213,12 @@ object Form_pea: TForm_pea
       AnchorSideLeft.Control = LabelHint1
       AnchorSideTop.Control = LabelHint1
       AnchorSideTop.Side = asrBottom
-      Left = 52
-      Height = 15
-      Top = 165
-      Width = 42
+      Left = 61
+      Height = 20
+      Top = 210
+      Width = 53
       Alignment = taRightJustify
-      BorderSpacing.Top = 6
+      BorderSpacing.Top = 8
       Caption = 'Sample:'
       ParentFont = False
       Visible = False
@@ -1209,13 +1229,13 @@ object Form_pea: TForm_pea
       AnchorSideRight.Control = PanelPW1
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = Panelsp1
-      Left = 12
-      Height = 8
-      Top = 214
-      Width = 536
+      Left = 15
+      Height = 10
+      Top = 268
+      Width = 670
       Anchors = [akLeft, akRight, akBottom]
-      BorderSpacing.Left = 12
-      BorderSpacing.Right = 12
+      BorderSpacing.Left = 15
+      BorderSpacing.Right = 15
       Shape = bsBottomLine
     end
     object EditPW1: TEdit
@@ -1224,13 +1244,13 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelPW1
       AnchorSideRight.Side = asrBottom
-      Left = 128
-      Height = 23
-      Top = 51
-      Width = 420
+      Left = 160
+      Height = 28
+      Top = 65
+      Width = 525
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 12
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 15
+      BorderSpacing.Right = 15
       EchoMode = emPassword
       ParentFont = False
       PasswordChar = '*'
@@ -1243,13 +1263,13 @@ object Form_pea: TForm_pea
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelPW1
       AnchorSideRight.Side = asrBottom
-      Left = 128
-      Height = 23
-      Top = 80
-      Width = 420
+      Left = 160
+      Height = 28
+      Top = 101
+      Width = 525
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 6
-      BorderSpacing.Right = 12
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 15
       EchoMode = emPassword
       ParentFont = False
       PasswordChar = '*'
@@ -1261,17 +1281,17 @@ object Form_pea: TForm_pea
       AnchorSideRight.Control = ButtonPW2
       AnchorSideBottom.Control = Panelsp1
       AnchorSideBottom.Side = asrCenter
-      Left = 402
-      Height = 25
-      Top = 233
-      Width = 60
+      Left = 513
+      Height = 30
+      Top = 293
+      Width = 70
       Anchors = [akRight, akBottom]
       AutoSize = True
-      BorderSpacing.Right = 6
+      BorderSpacing.Right = 8
       Caption = '   OK   '
-      OnClick = ButtonPW1Click
       ParentFont = False
       TabOrder = 2
+      OnClick = ButtonPW1Click
     end
     object ButtonPW2: TBitBtn
       AnchorSideTop.Side = asrBottom
@@ -1279,25 +1299,25 @@ object Form_pea: TForm_pea
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = Panelsp1
       AnchorSideBottom.Side = asrCenter
-      Left = 468
-      Height = 25
-      Top = 233
-      Width = 80
+      Left = 591
+      Height = 30
+      Top = 293
+      Width = 94
       Anchors = [akRight, akBottom]
       AutoSize = True
-      BorderSpacing.Right = 12
+      BorderSpacing.Right = 15
       Caption = '   Cancel   '
-      OnClick = ButtonPW2Click
       ParentFont = False
       TabOrder = 3
+      OnClick = ButtonPW2Click
     end
     object Panelsp1: TPanel
       AnchorSideLeft.Control = PanelPW1
       AnchorSideBottom.Control = PanelPW1
       AnchorSideBottom.Side = asrBottom
       Left = 0
-      Height = 48
-      Top = 222
+      Height = 60
+      Top = 278
       Width = 2
       Anchors = [akLeft, akBottom]
       BevelOuter = bvNone
@@ -1309,19 +1329,19 @@ object Form_pea: TForm_pea
   object Timer1: TTimer
     Interval = 100
     OnTimer = Timer1Timer
-    Left = 192
-    Top = 192
+    Left = 240
+    Top = 240
   end
   object OpenDialog1: TOpenDialog
     FilterIndex = 0
-    Left = 282
-    Top = 154
+    Left = 353
+    Top = 193
   end
   object ImageList1: TImageList
     Height = 48
     Width = 48
-    Left = 346
-    Top = 154
+    Left = 433
+    Top = 193
     Bitmap = {
       4C7A0A00000030000000300000006B0600000000000078DAED9DBB6E5D451440
       F9077E819A5F20353F105A900B4B4028298092829A822226F841615B26763041
@@ -1380,12 +1400,12 @@ object Form_pea: TForm_pea
   end
   object OpenDialog2: TOpenDialog
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
-    Left = 230
-    Top = 154
+    Left = 288
+    Top = 193
   end
   object peautilsmenu: TPopupMenu
-    Left = 496
-    Top = 17
+    Left = 620
+    Top = 21
     object pmhelp: TMenuItem
       Caption = 'Online support (F1)'
       OnClick = pmhelpClick
@@ -1407,8 +1427,8 @@ object Form_pea: TForm_pea
     end
   end
   object MainMenu1: TMainMenu
-    Left = 432
-    Top = 16
+    Left = 540
+    Top = 20
     object mainmenuhelp: TMenuItem
       Caption = 'Help (F1)'
       ShortCut = 112
@@ -1419,8 +1439,8 @@ object Form_pea: TForm_pea
   object ImageList1_dark: TImageList
     Height = 48
     Width = 48
-    Left = 416
-    Top = 154
+    Left = 520
+    Top = 193
     Bitmap = {
       4C7A0A0000003000000030000000680600000000000078DAED9D3B6F1D451480
       F90FFC056AFE02A9F903A1851608650AA0A4A0A6A088097E50D896891D4C906D

@@ -8,12 +8,12 @@ object Form_report: TForm_report
   ClientWidth = 1000
   Color = clWindow
   DesignTimePPI = 120
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '4.0.0.4'
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
-  Position = poScreenCenter
-  ShowHint = True
-  LCLVersion = '3.4.0.0'
   object Label4: TLabel
     AnchorSideLeft.Control = Label3
     AnchorSideTop.Control = Label3
@@ -81,8 +81,8 @@ object Form_report: TForm_report
     AutoSize = True
     BorderSpacing.Right = 15
     Caption = '   Close   '
-    OnClick = Button2Click
     TabOrder = 0
+    OnClick = Button2Click
   end
   object Notebook1: TPageControl
     AnchorSideLeft.Control = Owner
@@ -449,6 +449,10 @@ object Form_report: TForm_report
     object MenuItem5: TMenuItem
       Caption = 'Search hash on Google'
       OnClick = MenuItem5Click
+    end
+    object MenuItem6: TMenuItem
+      Caption = 'Search hash on Jotti VirusScan'
+      OnClick = MenuItem6Click
     end
     object MenuItem4: TMenuItem
       Caption = 'Search hash on VirusTotal'

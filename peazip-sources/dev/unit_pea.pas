@@ -225,6 +225,10 @@ unit Unit_pea;
                                 Can now save reports to CSV selecting , and ; separator on the fly, regardless the configuration
  1.24     20250404  G.Tani      Updated for v6 themes
                                 Fixes, legacy code cleanup
+ 1.25     20250526  G.Tani      (Windows) function to check if Zone.Identifier (Mark of The Web) is found in a list of files / folders (folders' content is recursively expanded) MOTW stops at first match MOTWFULL scans all files and displays results in a report table
+                                Recompiled for Lazarus 4.x, compatibility kept down to Lazarus 2.x
+                                Improved visually reporting errors/success with icons when applicable
+                                Added option to search SHA256 hash value on Jotti VirusScan (SHA256J)
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 
@@ -282,6 +286,7 @@ type
     ButtonPW2: TBitBtn;
     ButtonPeaExit: TBitBtn;
     ButtonRefSize: TButton;
+    ButtonToolsCancel1: TBitBtn;
     ButtonUtilsCancel: TBitBtn;
     ButtonToolsCancel: TBitBtn;
     ButtonUtilsOK: TBitBtn;
@@ -372,6 +377,7 @@ type
     procedure ButtonPW2Click(Sender: TObject);
     procedure ButtonRFSinteractive1Click(Sender: TObject);
     procedure ButtonRFSinteractiveClick(Sender: TObject);
+    procedure ButtonToolsCancel1Click(Sender: TObject);
     procedure ButtonToolsCancelClick(Sender: TObject);
     procedure ButtonUtilsCancelClick(Sender: TObject);
     procedure ButtonUtilsResetClick(Sender: TObject);
@@ -408,7 +414,7 @@ type
   Type fileofbyte = file of byte;
 
 const
-  P_RELEASE          = '1.24'; //declares release version for the whole build
+  P_RELEASE          = '1.25'; //declares release version for the whole build
   //PEAUTILS_RELEASE   = '1.3'; //declares for reference last peautils release
   PEA_FILEFORMAT_VER = 1;
   PEA_FILEFORMAT_REV = 6; //version and revision declared to be implemented must match with the ones in pea_utils, otherwise a warning will be raised (form caption)
@@ -1674,6 +1680,7 @@ procedure first_gui_output;
 var i,k:integer;
 begin
 Form_pea.ProgressBar1.Position:=0;
+Form_pea.Image3.Picture.Bitmap:=Binfo;
 Form_pea.LabelEncrypt2.Caption:='Input: ';
 if length(in_param)>4 then k:=4 else k:=length(in_param);
 for i:=0 to k-1 do Form_pea.LabelEncrypt2.Caption:=Form_pea.LabelEncrypt2.Caption+in_param[i]+', ';
@@ -1792,6 +1799,7 @@ Form_report.StringGrid2.AutosizeColumns;
 Form_report.Label1.Caption:=Form_pea.LabelEncrypt4.Caption;
 //input
 Form_report.Label2.Caption:='Archived '+inttostr(obj_ok)+' objects ('+inttostr(n_dirs)+' dirs, '+inttostr(obj_ok-n_dirs)+' files) of '+inttostr(n_input_files)+' ('+inttostr(n_input_files-obj_ok)+' not found); input '+inttostr(in_size)+' B';
+if n_input_files-obj_ok=0 then Form_pea.Image3.Picture.Bitmap:=Bok;
 //output
 Form_report.Label3.Caption:=Form_pea.LabelEncrypt6.Caption;
 //output name
@@ -3194,6 +3202,7 @@ stream_error:=false;
 obj_error:=false;
 volume_error:=false;
 Form_pea.ProgressBar1.Position:=0;
+Form_pea.Image4.Picture.Bitmap:=Binfo;
 Form_pea.LabelDecrypt2.Caption:='Input: '+in_qualified_name;
 Form_pea.LabelDecrypt3.Caption:='Output: '+out_param;
 Form_pea.LabelTime1.Caption:='Opening archive...';
@@ -3925,11 +3934,18 @@ Application.ProcessMessages;
 if (upcase(pw_param)='INTERACTIVE_REPORT') or (upcase(pw_param)='BATCH_REPORT') or (upcase(pw_param)='HIDDEN_REPORT') then save_report('Auto log UnPEA','txt','',upcase(pw_param),out_path);
 if report_errors =0 then
    begin
+   Form_pea.Image4.Picture.Bitmap:=Bok;
+   Application.ProcessMessages;
    exitcode:=0;
    sleep(500);
    if closepolicy>0 then Form_pea.Close;
    end
-else exitcode:=-2;
+else
+   begin
+   Form_pea.Image4.Picture.Bitmap:=Bcancel;
+   Application.ProcessMessages;
+   exitcode:=-2;
+   end;
 end;
 
 {
@@ -4947,6 +4963,7 @@ begin
 exitcode:=-1;
 tsin:=datetimetotimestamp(now);
 Form_pea.PanelPW1.height:=2;
+Form_pea.Image7.Picture.Bitmap:=Binfo;
 Form_pea.ButtonToolsCancel.visible:=true;
 Form_pea.ButtonToolsCancel.hint:='Cancel will stop deletion but will not recover already deleted elements';
 Form_report.Notebook1.PageIndex:=0;
@@ -5225,11 +5242,18 @@ Form_pea.LabelLog1.Visible:=true;
 Application.ProcessMessages;
 if errors=0 then
    begin
+   if level<>'RECYCLE' then Form_pea.Image7.Picture.Bitmap:=Bok;
+   Application.ProcessMessages;
    exitcode:=0;
    Sleep(1500);
    if closepolicy>0 then Form_pea.Close;
    end
-else exitcode:=-2;
+else
+   begin
+   Form_pea.Image7.Picture.Bitmap:=Bcancel;
+   Application.ProcessMessages;
+   exitcode:=-2;
+   end;
 end;
 
 //procedure to wipe/sanitize free space: write files smaller than 2GB then delete
@@ -5860,6 +5884,14 @@ halt;
 {$ENDIF}
 end;
 
+procedure cancelcheck;
+begin
+Form_pea.LabelTools4.Caption:='Operation cancelled by user, terminating...';
+Application.ProcessMessages;
+sleep(1500);
+halt(-4);
+end;
+
 //procedure to checksum/hash files
 procedure check; //ALL: all algorithms, otherwise specify the algorithm to use followed by "on" which marks the input parameters
 var
@@ -5915,14 +5947,6 @@ var
    SHA1_on,SHA224_on,SHA256_on,SHA384_on,SHA512_on,WHIRLPOOL_on,SHA3_256_on,SHA3_512_on,
    Blake2s_on,Blake2b_on:boolean;
    f:file of byte;
-
-procedure cancelcheck;
-begin
-Form_pea.LabelTools4.Caption:='Operation cancelled by user, terminating...';
-Application.ProcessMessages;
-sleep(1500);
-halt(-4);
-end;
 
 begin
 exitcode:=-1;
@@ -6016,7 +6040,7 @@ repeat
    'RIPEMD160': RIPEMD160_on:=true;
    'SHA1','SHA1SAVE': begin SHA1_on:=true; specop:=upcase(paramstr(j)); end;
    'BLAKE2S': Blake2s_on:=true;
-   'SHA256','SHA256SAVE','SHA256G','SHA256V': begin SHA256_on:=true; specop:=upcase(paramstr(j)); end;
+   'SHA256','SHA256SAVE','SHA256G','SHA256J','SHA256V': begin SHA256_on:=true; specop:=upcase(paramstr(j)); end;
    'SHA3_256': SHA3_256_on:=true;
    'BLAKE2B','BLAKE2BSAVE': begin Blake2b_on:=true; specop:=upcase(paramstr(j)); end;
    'SHA512': SHA512_on:=true;
@@ -6861,6 +6885,7 @@ case specop of
    'SHA256SAVE': begin Form_report.StringGrid1.Col:=19; save_hashfn; halt; end;
    'BLAKE2BSAVE': begin Form_report.StringGrid1.Col:=21; save_hashfn; halt; end;
    'SHA256G': begin Form_report.StringGrid1.Col:=19; Form_report.MenuItem5Click(nil); halt; end;
+   'SHA256J': begin Form_report.StringGrid1.Col:=19; Form_report.MenuItem6Click(nil); halt; end;
    'SHA256V': begin Form_report.StringGrid1.Col:=19; Form_report.MenuItem4Click(nil); halt; end;
 end;
 end;
@@ -6902,6 +6927,276 @@ Form_pea.LabelLog1.Visible:=true;
 Form_report.Visible:=true;
 Form_pea.Visible:=false;
 exitcode:=0;
+end;
+
+function checkmotwf(s:ansistring):boolean; //true if motw is found, single file at time, need expanded input to recursively test dirs, input file name is checked before
+var
+   cl:ansistring;
+   P:tprocessutf8;
+begin
+result:=false;
+{$IFDEF MSWINDOWS}
+if s='' then exit;
+cl:='powershell.exe Get-Content '''+s+'*'' -Stream Zone.Identifier';
+P:=tprocessutf8.Create(nil);
+P.CommandLine:=cl;
+p.Options:=[poWaitOnExit,poNoConsole];
+P.Execute;
+if P.ExitCode=0 then result:=true; //motw found, else error is raised and result is <>0
+P.Free;
+{$ENDIF}
+end;
+
+function checkmotwd(s:ansistring):boolean;
+var
+  cl,stri:ansistring;
+  P: tprocessutf8;
+  i,BytesRead,j,BytesRead2:integer;
+  M,M2:TmemoryStream;
+begin
+result:=false;
+{$IFDEF MSWINDOWS}
+if s='' then exit;
+cl:='powershell.exe Get-Content '''+s+'*'' -Stream Zone.Identifier';
+
+i:=0;
+j:=0;
+P:=tprocessutf8.Create(nil);
+P.CommandLine:=cl;
+M := TMemoryStream.Create;
+BytesRead := 0;
+M2 := TMemoryStream.Create;
+BytesRead2 := 0;
+P.Options := [poUsePipes, poNoConsole];
+
+M.SetSize(32*1024);
+M2.SetSize(32*1024);
+P.Execute;
+
+while P.Running do
+   begin
+   i:=0;
+   if P.output.NumBytesAvailable>0 then
+   begin
+   if BytesRead+16*1024>=M.Size then M.SetSize(BytesRead + 8*1024*1024);
+   i := P.Output.Read((M.Memory + BytesRead)^, 16*1024);
+   end
+   else i:=0;
+
+   if P.Stderr.NumBytesAvailable>0 then
+   begin
+   if BytesRead2+4*1024>=M2.Size then M2.SetSize(BytesRead2 + 8*1024*1024);
+   j := P.Stderr.Read((M2.Memory + BytesRead2)^, 4*1024);
+   end
+   else j:=0;
+
+   if i > 0 then Inc(BytesRead, i);
+   if j > 0 then Inc(BytesRead2, j);
+   //if (i=0) and (j=0) then sleep(100); //deactivated as slower
+   end;
+
+M.SetSize(BytesRead);
+SetString(stri, M.Memory, M.Size);
+
+if pos('[ZoneTransfer]',stri)<>0 then result:=true //motw found
+else result:=false; //string not found, plus stdout should be empty, all in stderr in this case
+
+P.Free;
+M.Free;
+M2.Free;
+{$ENDIF}
+end;
+
+procedure motw; //detect Mark of The Web in a list of input files, expand dirs recursively, stop at first match
+var
+   s:ansistring;
+   i,j:integer;
+   exp_files:TFoundList;
+   exp_fsizes:TFoundListSizes;
+   exp_ftimes:TFoundListAges;
+   exp_fattr:TFoundListAttrib;
+   exp_fattr_dec:TFoundList;
+   nfound:qword;
+begin
+exitcode:=-1;
+{$IFDEF MSWINDOWS}
+s:=(paramstr(3));
+Form_pea.Caption:='MoTW';
+Form_pea.Image7.Picture.Bitmap:=Binfo;
+Form_pea.LabelTools2.Caption:='Checking MoTW. May take some time, please wait...';
+Form_pea.ProgressBar1.Position:=1;
+Form_pea.ButtonToolsCancel.visible:=true;
+Application.ProcessMessages;
+for i:=2 to paramcount do
+   begin
+   Form_pea.ProgressBar1.Position:=((i-1)*100) div paramcount;
+   expand(paramstr(i),exp_files,exp_fsizes,exp_ftimes,exp_fattr,exp_fattr_dec,nfound);
+   if (nfound=0) and (pos('D',exp_fattr_dec[0])=0) then //file
+      begin
+      if toolactioncancelled=true then
+         begin
+         Form_pea.LabelTools2.Caption:='Zone.Identifier (Mark of The Web) test cancelled';
+         Form_pea.ProgressBar1.Position:=100;
+         Form_pea.ButtonToolsCancel.visible:=false;
+         cancelcheck;
+         exit;
+         end;
+      Form_pea.LabelTools3.Caption:=inttostr(i-1)+'/'+inttostr(paramcount-1)+' '+exp_files[0];
+      Application.ProcessMessages;
+      if checkmotwf(exp_files[0])=true then
+         begin
+         Form_pea.Image7.Picture.Bitmap:=Bok;
+         Form_pea.LabelTools2.Caption:='Zone.Identifier (Mark of The Web) found in input file(s)';
+         Form_pea.ProgressBar1.Position:=100;
+         Form_pea.ButtonToolsCancel.visible:=false;
+         Form_pea.ButtonToolsCancel1.visible:=true;
+         Application.ProcessMessages;
+         exitcode:=1;
+         exit;
+         end;
+      end
+   else //directory
+      for j:=0 to nfound-1 do
+         if pos('D',exp_fattr_dec[j])<>0 then
+            begin
+            if toolactioncancelled=true then
+               begin
+               Form_pea.LabelTools2.Caption:='Zone.Identifier (Mark of The Web) test cancelled';
+               Form_pea.ProgressBar1.Position:=100;
+               Form_pea.ButtonToolsCancel.visible:=false;
+               cancelcheck;
+               exit;
+               end;
+            Form_pea.LabelTools3.Caption:=inttostr(i-1)+'/'+inttostr(paramcount-1)+' '+exp_files[j];
+            Application.ProcessMessages;
+            if checkmotwd(exp_files[j])=true then
+               begin
+               Form_pea.Image7.Picture.Bitmap:=Bok;
+               Form_pea.LabelTools2.Caption:='Zone.Identifier (Mark of The Web) found in input file(s)';
+               Form_pea.ProgressBar1.Position:=100;
+               Form_pea.ButtonToolsCancel.visible:=false;
+               Form_pea.ButtonToolsCancel1.visible:=true;
+               Application.ProcessMessages;
+               exitcode:=1;
+               exit;
+               end;
+            end;
+   end;
+Form_pea.LabelTools3.Caption:=inttostr(i-1)+'/'+inttostr(paramcount-1)+' Done';
+Form_pea.LabelTools2.Caption:='Zone.Identifier (Mark of The Web) NOT found in input file(s)';
+Form_pea.ProgressBar1.Position:=100;
+Form_pea.ButtonToolsCancel.visible:=false;
+Form_pea.ButtonToolsCancel1.visible:=true;
+Application.ProcessMessages;
+exitcode:=0;
+{$ENDIF}
+end;
+
+procedure motwfull; //detect Mark of The Web in a list of input files, expand dirs recursively, show full report for each file
+var
+   s:ansistring;
+   i,j:integer;
+   exp_files:TFoundList;
+   exp_fsizes:TFoundListSizes;
+   exp_ftimes:TFoundListAges;
+   exp_fattr:TFoundListAttrib;
+   exp_fattr_dec:TFoundList;
+   ntotal,nfound,nmotw:qword;
+begin
+exitcode:=-1;
+{$IFDEF MSWINDOWS}
+s:=(paramstr(3));
+Form_pea.Caption:='MoTW (full report)';
+Form_pea.Image7.Picture.Bitmap:=Binfo;
+Form_pea.LabelTools2.Caption:='Checking MoTW (full report). May take some time, please wait...';
+Form_pea.ProgressBar1.Position:=1;
+Form_pea.ButtonToolsCancel.visible:=true;
+Application.ProcessMessages;
+Form_report.InputT.Caption:='Input';
+Form_report.Caption:='MoTW';
+Form_report.StringGrid1.ColCount:=2;
+Form_report.StringGrid1.Cells[0,0]:='Name';
+Form_report.StringGrid1.Cells[1,0]:='MoTW';
+Form_report.Notebook1.PageIndex:=0;
+{$IFDEF MSWINDOWS}Form_report.OutputT.TabVisible:=false;{$ENDIF}Form_report.Notebook1.ShowTabs:=false;
+Form_report.StringGrid1.RowCount:=1;
+ntotal:=0;
+nmotw:=0;
+for i:=2 to paramcount do
+   begin
+   Form_pea.ProgressBar1.Position:=((i-1)*100) div paramcount;
+   expand(paramstr(i),exp_files,exp_fsizes,exp_ftimes,exp_fattr,exp_fattr_dec,nfound);
+   if (nfound=0) and (pos('D',exp_fattr_dec[0])=0) then //file
+      begin
+      if toolactioncancelled=true then
+         begin
+         Form_pea.LabelTools2.Caption:='Zone.Identifier (Mark of The Web) test cancelled';
+         Form_pea.ProgressBar1.Position:=100;
+         Form_pea.ButtonToolsCancel.visible:=false;
+         cancelcheck;
+         exit;
+         end;
+      Form_pea.LabelTools3.Caption:=inttostr(i-1)+'/'+inttostr(paramcount-1)+' '+exp_files[0];
+      Application.ProcessMessages;
+      ntotal:=ntotal+1;
+      Form_report.StringGrid1.RowCount:=ntotal+1;
+      Form_report.StringGrid1.Cells[0,ntotal]:=exp_files[0];
+      if checkmotwf(exp_files[0])=true then
+         begin
+         Form_pea.Image7.Picture.Bitmap:=Bok;
+         Form_pea.LabelTools2.Caption:='Zone.Identifier (Mark of The Web) found in input file(s)';
+         Form_report.StringGrid1.Cells[1,ntotal]:='Yes';
+         nmotw:=nmotw+1;
+         end
+      else
+         begin
+         Form_report.StringGrid1.Cells[1,ntotal]:='No';
+         end;
+      end
+   else //directory, expand files
+      for j:=0 to nfound-1 do
+         if pos('D',exp_fattr_dec[j])=0 then //file
+            begin
+            if toolactioncancelled=true then
+               begin
+               Form_pea.LabelTools2.Caption:='Zone.Identifier (Mark of The Web) test cancelled';
+               Form_pea.ProgressBar1.Position:=100;
+               Form_pea.ButtonToolsCancel.visible:=false;
+               cancelcheck;
+               exit;
+               end;
+            Form_pea.LabelTools3.Caption:=inttostr(i-1)+'/'+inttostr(paramcount-1)+' '+exp_files[j];
+            Application.ProcessMessages;
+            ntotal:=ntotal+1;
+            Form_report.StringGrid1.RowCount:=ntotal+1;
+            Form_report.StringGrid1.Cells[0,ntotal]:=exp_files[j];
+            if checkmotwd(exp_files[j])=true then
+               begin
+               Form_pea.Image7.Picture.Bitmap:=Bok;
+               Form_pea.LabelTools2.Caption:='Zone.Identifier (Mark of The Web) found in input file(s)';
+               Form_report.StringGrid1.Cells[1,ntotal]:='Yes';
+               nmotw:=nmotw+1;
+               end
+            else
+               begin
+               Form_report.StringGrid1.Cells[1,ntotal]:='No';
+               end;
+            end;
+   end;
+Form_pea.ProgressBar1.Position:=100;
+Form_pea.ButtonToolsCancel.visible:=false;
+Form_pea.ButtonToolsCancel1.visible:=true;
+Application.ProcessMessages;
+Form_report.Visible:=true;
+Form_pea.Visible:=false;
+Form_report.StringGrid1.AutosizeColumns;
+Form_report.Label1.Caption:='';
+Form_report.Label2.Caption:='';
+Form_report.Label3.Caption:='';
+Form_report.Label4.Caption:='';
+try Form_report.Label2.Caption:='Zone.Identifier (Mark of The Web) found in '+inttostr(nmotw)+' of '+inttostr(ntotal)+' files'; except end;
+exitcode:=nmotw;
+{$ENDIF}
 end;
 
 procedure listfiles; //list files: mode INFO gives detailed information, LIST plain list
@@ -7221,6 +7516,8 @@ case upcase(paramstr(1))of
 'BENCH' : bench;
 'BENCHINT' : benchar;
 'CHECK' : check;
+'MOTW' : motw;
+'MOTWFULL' : motwfull;
 'ENVSTR' : envstr;
 'LIST' : listfiles;
 'HEXPREVIEW' : hexpreview;
@@ -7396,6 +7693,14 @@ Form_pea.PanelTools.visible:=true;
 interacting:=false;
 end;
 
+procedure call_motw;
+begin
+Form_pea.Visible:=true;
+Form_pea.PanelRFSinteractive.visible:=false;
+Form_pea.PanelTools.visible:=true;
+interacting:=false;
+end;
+
 procedure call_envstr;
 begin
 Form_pea.Visible:=true;
@@ -7513,6 +7818,11 @@ begin
       end;
    interacting:=false;
    PanelRFSinteractive.visible:=false;
+end;
+
+procedure TForm_pea.ButtonToolsCancel1Click(Sender: TObject);
+begin
+Form_pea.Close;
 end;
 
 procedure TForm_pea.ButtonToolsCancelClick(Sender: TObject);
@@ -8304,6 +8614,8 @@ if paramcount>0 then
          'BENCH' : call_bench;
          'BENCHINT' : call_benchint;
          'CHECK' : call_check;
+         'MOTW' : call_motw;
+         'MOTWFULL' : call_motw;
          'ENVSTR' : call_envstr;
          'LIST' : call_list;
          'HEXPREVIEW' : call_hexpreview;

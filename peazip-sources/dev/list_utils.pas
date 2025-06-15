@@ -124,6 +124,7 @@ unit list_utils;
  0.62     20220125  G.Tani      Added support for .vhdx format: 226 extensions supported
  0.63     20221209  G.Tani      Added support for .pmdx, .pmvx, .tmdx, .prdx SoftMaker Office files, 230 extensions supported
  0.64     20240228  G.Tani      Added function to check if a directory exists, checking both address with and without ending separator character
+ 0.65     20250430  G.Tani      Can now toggle show hidden files on/off setting the variable showhidden (fahidden on Windows, .file on non-Windows systems)
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
@@ -171,6 +172,9 @@ const
   DWORD_DECODE_TO_ATTRIBUTES_ERROR = 5;
   STRING_DECODE_TO_ATTRIBUTES_ERROR = 6;
   OBJECT_NOT_ACCESSIBLE = 7;
+
+var
+  showhidden:boolean;
 
 //represent a time string with suffixes
 function nicetime(s: ansistring): ansistring;
@@ -584,6 +588,7 @@ begin
     try
       if upcase(mode) = 'DETAILS' then
         repeat
+          if ((showhidden=true) or {$IFDEF MSWINDOWS}((r.Attr and faHidden)=0){$ELSE}(r.Name[1] <> '.'){$ENDIF}) then
           if ((r.Name <> '.') and (r.Name <> '..')) then
           begin
             SetLength(flist, nfiles + 1);
@@ -856,6 +861,7 @@ begin
   begin
     try
       repeat
+        if ((showhidden=true) or {$IFDEF MSWINDOWS}((r.Attr and faHidden)=0){$ELSE}(r.Name[1] <> '.'){$ENDIF}) then
         if ((r.Name <> '.') and (r.Name <> '..')) then
         begin
           Inc(nfiles, 1);
@@ -907,6 +913,7 @@ begin
   begin
     try
       repeat
+        if ((showhidden=true) or {$IFDEF MSWINDOWS}((r.Attr and faHidden)=0){$ELSE}(r.Name[1] <> '.'){$ENDIF}) then
         if ((r.Name <> '.') and (r.Name <> '..')) then
         begin
           Inc(nfiles, 1);

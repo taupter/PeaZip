@@ -1,6 +1,8 @@
-﻿Notes to 10.4 release
+﻿Notes to 10.5 release
 
-No existing text was modified.
+txt_9_0_tnav: Toggle navigation bar
+txt_8_8_snz: Propagate Zone.Identifier (MoTW) (Windows, NTFS)
+txt_toggle_historybookmarks: Toggle status bar
 
 = GENERAL NOTES =
 

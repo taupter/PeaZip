@@ -154,6 +154,7 @@ unit Unit_gwrap;
  1.11     20241006  G.Tani      10.x GUI update
  1.12     20241216  G.Tani      It is now possible to delete input files from Options tab after execution of task, i.e. to delete faulty archive failing test
  1.13     20250331  G.Tani      Optimized performances and efficiency reducing CPU usage for the GUI task wrapper
+ 1.14     20250423  G.Tani      Text auto optimize layout when updated, more granular GUI efficiency optimizations
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 
@@ -201,6 +202,7 @@ type
     Button1: TBitBtn;
     ButtonStop: TBitBtn;
     ButtonPause: TBitBtn;
+    Label4: TLabel;
     ldeleteinput: TLabel;
     l1: TLabel;
     l2: TLabel;
@@ -1007,6 +1009,7 @@ if Form_gwrap.SaveDialog1.Execute then
       writeln(t,'');
       writeln(t,Form_gwrap.Label2.Caption);
       writeln(t,Form_gwrap.Label3.Caption);
+      writeln(t,Form_gwrap.Label4.Caption);
       writeln(t,Form_gwrap.Label8.Caption);
       end;
    closefile(t);
@@ -1052,6 +1055,29 @@ case i of
    else s:=inttostr(i)+txt_job_unknown;
    end;
 if stopped=true then s:=txt_jstopped;
+end;
+
+procedure setwrap;
+var lsz:integer;
+begin
+lsz:=0;
+if Form_gwrap.l2.visible=true then lsz:=lsz+Form_gwrap.l2.Width;
+if Form_gwrap.l3.visible=true then lsz:=lsz+Form_gwrap.l3.Width;
+if Form_gwrap.l4.visible=true then lsz:=lsz+Form_gwrap.l4.Width;
+if Form_gwrap.LabelInfo3.visible=true then lsz:=lsz+Form_gwrap.LabelInfo3.Width;
+if Form_gwrap.Label1.visible=true then lsz:=lsz+Form_gwrap.Label1.Width;
+if Form_gwrap.l1.Width>Form_gwrap.Panel2.Width-(lsz) then
+   begin
+   Form_gwrap.l2.AnchorSide[akTop].Side:=asrBottom;
+   Form_gwrap.l2.AnchorSide[akLeft].Control:=Form_gwrap.Panel2;
+   Form_gwrap.l2.AnchorSide[akLeft].Side:=asrLeft;
+   end
+else
+   begin
+   Form_gwrap.l2.AnchorSide[akTop].Side := asrCenter;
+   Form_gwrap.l2.AnchorSide[akLeft].Control:=Form_gwrap.l1;
+   Form_gwrap.l2.AnchorSide[akLeft].Side:=asrRight;
+   end;
 end;
 
 procedure progress10; //progress counter
@@ -1204,6 +1230,7 @@ if okseven=true then
    except
    end;
 {$ENDIF}
+if Form_gwrap.Visible=true then setwrap;
 end;
 end;
 
@@ -1221,29 +1248,6 @@ Form_gwrap.pmeo.caption:=txt_explore+' '+Form_gwrap.l4.caption;
 Form_gwrap.pm2ei.caption:=Form_gwrap.pmei.caption;
 Form_gwrap.pm2et.caption:=Form_gwrap.pmet.caption;
 Form_gwrap.pm2eo.caption:=Form_gwrap.pmeo.caption;
-end;
-
-procedure setwrap;
-var lsz:integer;
-begin
-lsz:=0;
-if Form_gwrap.l2.visible=true then lsz:=lsz+Form_gwrap.l2.Width;
-if Form_gwrap.l3.visible=true then lsz:=lsz+Form_gwrap.l3.Width;
-if Form_gwrap.l4.visible=true then lsz:=lsz+Form_gwrap.l4.Width;
-if Form_gwrap.LabelInfo3.visible=true then lsz:=lsz+Form_gwrap.LabelInfo3.Width;
-if Form_gwrap.Label1.visible=true then lsz:=lsz+Form_gwrap.Label1.Width;
-if Form_gwrap.l1.Width>Form_gwrap.Panel2.Width-(lsz) then
-   begin
-   Form_gwrap.l2.AnchorSide[akTop].Side:=asrBottom;
-   Form_gwrap.l2.AnchorSide[akLeft].Control:=Form_gwrap.Panel2;
-   Form_gwrap.l2.AnchorSide[akLeft].Side:=asrLeft;
-   end
-else
-   begin
-   Form_gwrap.l2.AnchorSide[akTop].Side := asrCenter;
-   Form_gwrap.l2.AnchorSide[akLeft].Control:=Form_gwrap.l1;
-   Form_gwrap.l2.AnchorSide[akLeft].Side:=asrRight;
-   end;
 end;
 
 procedure set_form_title;
@@ -1278,6 +1282,9 @@ case modeofuse of
    2 :
    begin
    pcapt:=txt_bench;
+   Form_gwrap.l3.Caption:=txt_bench;
+   Form_gwrap.l3.Visible:=true;
+   Form_gwrap.l7.Visible:=false;
    exit;
    end;
    1,4,5 :
@@ -1943,7 +1950,14 @@ Form_gwrap.StringGrid1.Rowcount:=1;
          end
       else j:=0;
       if j > 0 then Inc(BytesRead2, j);
-      if (modeofuse=0) and (i=0) and (j=0) then sleep(100); //sleep only in archive/extraction mode
+
+      if (i=0) and (j=0) then
+         case modeofuse of
+         0,2,20: sleep(100); //long sleep for slow operations: 0/20 archive extract 2 benchmark
+         1: sleep(1); //brief sleep for fast operations: 1 test
+         //do not sleep for very fast operations 4 info 5 list/verbose list
+         end;
+
       end;
    end;
    M2.Free;
@@ -1980,8 +1994,8 @@ Application.ProcessMessages;
                      updatereport(M,stri);
                      end;
                   end;}
-               if i > 0 then Inc(BytesRead, i)
-               else Sleep(100);
+               if i > 0 then Inc(BytesRead, i);
+               //else Sleep(100);
             until i <= 0;
             M.SetSize(BytesRead);
             exit_code:=P.ExitStatus;
@@ -2146,7 +2160,8 @@ case modeofuse of
       Form_gwrap.PanelBench.Visible:=true;
       try
       Form_gwrap.Label2.Caption:=Form_gwrap.Stringgrid1.Cells[0,6];
-      Form_gwrap.Label3.Caption:=copy(Form_gwrap.Stringgrid1.Cells[0,9],26,26);
+      Form_gwrap.Label3.Caption:=Form_gwrap.Stringgrid1.Cells[0,7];
+      Form_gwrap.Label4.Caption:=Form_gwrap.Stringgrid1.Cells[0,5];
       Form_gwrap.Label8.Caption:='Rating: '+copy(Form_gwrap.Stringgrid1.Cells[0,Form_gwrap.Stringgrid1.RowCount-2],28,7);
       except
       end;

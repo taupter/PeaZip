@@ -102,6 +102,7 @@ type
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
+    MenuItem6: TMenuItem;
     Separator1: TMenuItem;
     Notebook1: TPageControl;
     InputT: TTabSheet;
@@ -137,6 +138,7 @@ type
     procedure MenuItem3Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
+    procedure MenuItem6Click(Sender: TObject);
     procedure StringGrid1HeaderClick(Sender: TObject; IsColumn: Boolean;
       Index: Integer);
     procedure StringGrid1MouseDown(Sender: TObject; Button: TMouseButton;
@@ -421,6 +423,7 @@ if Form_report.Caption='Analyze' then Application.Terminate;
 if Form_report.Caption='Environment variables' then Application.Terminate;
 if Form_report.Caption='Hex preview' then Application.Terminate;
 if Form_report.Caption='Text preview' then Application.Terminate;
+if Form_report.Caption='MoTW' then Application.Terminate;
 if needclose=true then Application.Terminate;
 end;
 
@@ -657,6 +660,19 @@ if StringGrid1.Row>0 then
       end;
 end;
 
+procedure TForm_report.MenuItem6Click(Sender: TObject);
+var
+  s:ansistring;
+begin
+if StringGrid1.Row>0 then
+   if (StringGrid1.Col>7) and (StringGrid1.Col<25) then
+      begin
+      s:=StringGrid1.Cells[StringGrid1.Col,StringGrid1.Row];
+      if StringGrid1.Cells[0,StringGrid1.Row]='* Digest *' then exit;
+      webopen('https://virusscan.jotti.org/en-EN/search/hash/'+s);
+      end;
+end;
+
 procedure TForm_report.StringGrid1HeaderClick(Sender: TObject;
   IsColumn: Boolean; Index: Integer);
 var i:integer;
@@ -673,6 +689,7 @@ end;
 procedure crcmenuenable(en:boolean);
 begin
 Form_report.MenuItem4.Enabled:=en;
+Form_report.MenuItem6.Enabled:=en;
 Form_report.MenuItem5.Enabled:=en;
 Form_report.MenuItem3.Enabled:=en;
 Form_report.MenuItem1.Enabled:=en;
@@ -691,6 +708,7 @@ if (StringGrid1.Col>7) and (StringGrid1.Col<25) then
    MenuItem1.Caption:='Save '+StringGrid1.Cells[StringGrid1.Col,0]+' value of this file';
    MenuItem3.Caption:='Save '+StringGrid1.Cells[StringGrid1.Col,0]+' values and file names';
    MenuItem4.Caption:='Search '+StringGrid1.Cells[StringGrid1.Col,0]+' value on VirusTotal';
+   MenuItem6.Caption:='Search '+StringGrid1.Cells[StringGrid1.Col,0]+' value on Jotti VirusScan';
    MenuItem5.Caption:='Search '+StringGrid1.Cells[StringGrid1.Col,0]+' value on Google';
    end
 else
@@ -699,10 +717,12 @@ else
    MenuItem1.Caption:='Save selected CRC or hash value of this file';
    MenuItem3.Caption:='Save selected CRC or hash values and file names';
    MenuItem4.Caption:='Search selected CRC or hash value on VirusTotal';
+   MenuItem4.Caption:='Search selected CRC or hash value on Jotti VirusScan';
    MenuItem5.Caption:='Search selected CRC or hash value value on Google';
    MenuItem1.Enabled:=false;
    MenuItem3.Enabled:=false;
    MenuItem4.Enabled:=false;
+   MenuItem6.Enabled:=false;
    MenuItem5.Enabled:=false;
    end;
 if StringGrid1.Cells[0,StringGrid1.Row]='* Digest *' then crcmenuenable(false);
