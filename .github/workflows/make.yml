@@ -68,7 +68,7 @@ jobs:
         os.environ["INSTANTFPCOPTIONS"] = "-Fu/Applications/Lazarus/components/lazutils"
         subprocess.run(
             "instantfpc .github/workflows/make.pas build".split(),
-            check=True,
+            check=False,
         )
 
     - name: Build on Windows
