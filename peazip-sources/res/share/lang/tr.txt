@@ -1,27 +1,27 @@
 ﻿=== PeaZip language file ===
 Turkish (Türkçe)
 10.5
-Çeviren: Osman Öz, Cihan Alkan, Muhammed Emin Subaşı
-Son güncelleyen: Muhammed Emin Subaşı
-Son güncelleme: 19 Şubat 2025
+Çeviren: Osman Öz, Cihan Alkan, Muhammed Emin Subaşı, Onur Gevinoğlu
+Son güncelleyen: Onur Gevinoğlu
+Son güncelleme: 16 Haziran 2025
 
 === PeaZip text group ===
 
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
+txt_10_5_fr: (tam rapor)
+txt_10_5_sectype: Aşağıdaki dosya türlerini çalıştırmak için onay isteyin
+txt_10_5_checkmotw: Zone.Identifier (MoTW) kontrolü
+txt_10_5_sectypewarning: Bu dosyayı çalıştırmak istiyor musunuz?
+txt_10_5_pathlock: Bu yoldaki arşiv öğeleri düzenlenemez
+txt_10_5_type_description_rar: RAR: özel arşiv formatı, yüksek sıkıştırma oranı, harici sıkıştırıcılar aracılığıyla desteklenir
+txt_10_5_sh: Dosya sistemindeki gizli dosya ve klasörleri göster
+txt_10_5_ntfsalt: Bu format, Mark of The Web dahil olmak üzere NTFS Alternatif Veri Akışını depolayabilir.
+txt_10_4_moving: (Taşıma)
+txt_10_3_classic: Klasik
+txt_10_3_ascii: Şu anki arşiv formatı için yalnızca ASCII karakterlerinin (büyük-küçük harf, rakamlar ve özel karakterler) kullanılması önerilir.
 txt_10_3_minimal: Minimal
 txt_10_3_m: Modern
 txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
+txt_10_3_aw: Çözüm: Şifre isteminde “Şifreyi etkileşimli olarak girmeyi zorla” seçeneğini işaretleyin veya arka uç ikili dosyaları için Konsol modunu ayarlayın.
 txt_10_2_savecopy: Kopyasını kaydet
 txt_10_1_full: Tam
 txt_10_1_kdfw: KDF iş yükü
