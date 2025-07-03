@@ -372,10 +372,10 @@ function escapefilename(s: ansistring; desk_env: byte): ansistring;
 //escape file names and apply correct quotes
 function escapefilenamedelim(s: ansistring; desk_env: byte): ansistring;
 
-//apply correct quotes (on *x like swap ' and " quotes if needed)
+//apply correct quotes
 function stringdelim(s:ansistring): ansistring;
 
-//remove correct quotes (on *x like swap ' and " quotes if needed)
+//remove correct quotes
 function stringundelim(s:ansistring): ansistring;
 
 //open Windows File Explorer selecting specified file
@@ -1572,6 +1572,7 @@ begin
   checkfiledirname := -1;
   if s = '' then
     exit;
+{$IFDEF MSWINDOWS}
   //illegal characters, full name
   for i := 0 to 31 do
     if pos(char(i), s) <> 0 then
@@ -1581,26 +1582,28 @@ begin
     exit;
   if pos('?', s) <> 0 then
     exit;
-{$IFDEF MSWINDOWS}
   if pos('"', s) <> 0 then
     exit;
-{$ENDIF}
   if pos('<', s) <> 0 then
     exit;
   if pos('>', s) <> 0 then
     exit;
   if pos('|', s) <> 0 then
     exit;
+{$ENDIF}
+  //more than 6 consecutive spaces may be intentional attempt to hamper readability (as in 7-Zip)
   if pos('       ', s) <> 0 then
     exit;
   sf := extractfilename(s);
   //reserved characters, filename only (others are checked for the full name)
-  if pos('\', sf) <> 0 then
-    exit;
   if pos('/', sf) <> 0 then
+    exit;
+{$IFDEF MSWINDOWS}
+  if pos('\', sf) <> 0 then
     exit;
   if pos(':', sf) <> 0 then
     exit;
+{$ENDIF}
   //reserved filenames (Windows)
 {$IFDEF MSWINDOWS}
   cutextension(sf);
@@ -1629,54 +1632,62 @@ var
    varstr: ansistring;
    i: integer;
 begin
-varstr := s;
-{$IFNDEF MSWINDOWS}
-repeat
-   i := pos('?', varstr);
-   if i > 0 then
-      varstr[pos('?', varstr)] := '_';
-until i = 0;
-{$ENDIF}
-result:=varstr;
+result:=s;
 end;
 
 function escapefilenamelinuxlike(s: ansistring; desk_env: byte): ansistring;
 var
-  varstr,dstr: ansistring;
+  varstr,hex: ansistring;
   i: integer;
 begin
   varstr := s;
-  dstr:=correctdelimiter(s);
-  // replace quote characters if found in string;
-  //correctdelimiter swaps ' and " quotes, but that cannot guarantee against both characters being used in the same string - the remaining character is replaced by a jolly
-  i := 1;
-  if dstr='''' then
-     repeat
-     i := pos('''', varstr);
-     if i > 0 then
-        varstr[pos('''', varstr)] := '?';
-     until i = 0;
-  if dstr='"' then
-     repeat
-     i := pos('"', varstr);
-     if i > 0 then
-        varstr[pos('"', varstr)] := '?';
-     until i = 0;
   // find and delete 'file://' (and any part before) if it is passed as part of filename (it happens sometimes in Gnome, i.e. using "open with" context menu entry)
   i := pos('file://', varstr);
   if i > 0 then
     varstr := copy(varstr, i + 7, length(varstr) - i - 6);
-  //replace %20 with space (if inverse replacement was done by desktop environment, happens in Gnome passing input from desktop environment rather than from application's dialogs)
-  if desk_env = 1 then //apply it strictly only on Gnome
-    if filegetattr(s) <= 0 then
-      repeat
-        i := pos('%20', varstr);
-        if i > 0 then
-        begin
-          Delete(varstr, i, 3);
-          insert(' ', varstr, i);
-        end;
-      until i = 0;
+    i := 1;
+    repeat
+      i := pos('%', varstr, i);
+      if i > 0 then
+      begin
+        // decode %xx
+        hex := copy(varstr, i + 1, 2);
+        Delete(varstr, i + 1, 2);
+        if (length(hex) = 2) and (hex[1] in ['0'..'9', 'A'..'F', 'a'..'f']) and
+          (hex[2] in ['0'..'9', 'A'..'F', 'a'..'f']) then
+          insert(chr(Hex2Dec(hex)), varstr, i)
+        else
+          // if not a valid hex, replace with a nul character (will become unquoted jolly wildcard later)
+          insert(#0, varstr, i)
+        i := i + 1; // skip the inserted character
+      end;
+    until i = 0;
+  
+  // There is one true way of escaping filenames in Linux-like systems. In Python it's written as:
+  // varstr = "'" + varstr.replace("'", "'\\''") + "'"
+  // This means that we need to escape single quotes by replacing them with '\'' and then wrap the whole string in single quotes.
+  i := 1;
+  repeat
+    i := pos('''', varstr, i);
+    if i > 0 then
+    begin
+      varstr[pos('''', varstr)] := '''';
+      insert('\''''', varstr, i);
+      i := i + 3; // skip the inserted \''
+    end;
+  until i = 0;
+  // Turn our own NUL character into a jolly wildcard
+  i := 1;
+  repeat
+    i := pos(#0, varstr, i);
+    if i > 0 then
+    begin
+      varstr[pos('"', varstr)] := '''';
+      insert('?''', varstr, i);
+      i := i + 2; // skip the inserted ?'
+    end;
+  until i = 0;
+
   escapefilenamelinuxlike := varstr;
 end;
 
@@ -1707,10 +1718,14 @@ var
    cdelim,estr:utf8string;
 begin
 estr:=escapefilename(s, desk_env);
+{$IFDEF MSWINDOWS}
 if pos(' ',estr)<>0 then
    cdelim:=correctdelimiter(s)
 else
    cdelim:='';
+{$ELSE}
+cdelim:=correctdelimiter(s);
+{$ENDIF}
 result:=cdelim+estr+cdelim;
 end;
 
@@ -1815,11 +1830,10 @@ end;
 
 function correctdelimiter(s:AnsiString): AnsiString;
 begin
-result := '''';
 {$IFDEF MSWINDOWS}
 result := '"';
 {$ELSE}
-if pos('''',s)<>0 then result := '"';
+result := '''';
 {$ENDIF}
 end;
 
@@ -2011,6 +2025,8 @@ var
 begin
   checkfilename := -1;
   if (s = '') or (s='.') or (s='..') then exit;
+  if pos('/', s) <> 0 then exit;
+{$IFDEF MSWINDOWS}
   //illegal characters (no problem for additional UTF8 bytes since have MSB set to 1 to avoid conflict with those control characters)
   for i := 0 to 31 do
   begin
@@ -2018,16 +2034,15 @@ begin
   end;
   //reserved characters
   if pos('\', s) <> 0 then exit;
-  if pos('/', s) <> 0 then exit;
   if pos(':', s) <> 0 then exit;
   if pos('*', s) <> 0 then exit;
   if pos('?', s) <> 0 then exit;
-{$IFDEF MSWINDOWS}
   if pos('"', s) <> 0 then exit;
-{$ENDIF}
   if pos('<', s) <> 0 then exit;
   if pos('>', s) <> 0 then exit;
   if pos('|', s) <> 0 then exit;
+{$ENDIF}
+  //more than 6 consecutive spaces may be intentional attempt to hamper readability (as in 7-Zip)
   if pos('       ', s) <> 0 then exit;
   //reserved filenames (Windows)
 {$IFDEF MSWINDOWS}
@@ -2060,7 +2075,9 @@ var
 begin
 validatecl := -1;
 if s = '' then   exit;
+{$IFDEF MSWINDOWS}
 for i := 0 to 31 do if pos(char(i), s) <> 0 then exit; //illegal characters
+{$ENDIF}
 
 delimch := correctdelimiter(s);
 
@@ -2108,7 +2125,9 @@ if (pos(directoryseparator+'pea',s)<>0) and
 
 {if pos('<',s1)<>0 then exit;
 if pos('>',s1)<>0 then exit;}
+{$IFDEF MSWINDOWS}  // we are confident that our linux quoting rules will contain it
 if pos('|', s1) <> 0 then exit;
+{$ENDIF}
 if pos('       ', s1) <> 0 then exit; //more than 6 consecutive spaces may be intentional attempt to hamper readability (as in 7-Zip)
 validatecl := 0;
 end;
