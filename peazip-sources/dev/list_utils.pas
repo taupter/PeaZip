@@ -125,6 +125,7 @@ unit list_utils;
  0.63     20221209  G.Tani      Added support for .pmdx, .pmvx, .tmdx, .prdx SoftMaker Office files, 230 extensions supported
  0.64     20240228  G.Tani      Added function to check if a directory exists, checking both address with and without ending separator character
  0.65     20250430  G.Tani      Can now toggle show hidden files on/off setting the variable showhidden (fahidden on Windows, .file on non-Windows systems)
+ 0.66     20250704  G.Tani      Improved multi-voulme detection, provided more comments, context, and possible improvement path for characters escaping procedures
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
@@ -1587,55 +1588,44 @@ begin
 end;
 
 function checkfiledirname(s: ansistring): integer;
+//function errs on safe side to prevent cross platform interoperability issues
 var
-  sf: ansistring;
-  i: integer;
+   sf: ansistring;
+   i: integer;
 begin
-  checkfiledirname := -1;
-  if s = '' then
-    exit;
-  //illegal characters, full name
-  for i := 0 to 31 do
-    if pos(char(i), s) <> 0 then
-      exit;
-  //reserved characters, full name
-  if pos('*', s) <> 0 then
-    exit;
-  if pos('?', s) <> 0 then
-    exit;
+checkfiledirname := -1;
+if s = '' then exit;
+//illegal characters, full name
+for i := 0 to 31 do
+   if pos(char(i), s) <> 0 then exit;
+//reserved characters, full name
+if pos('*', s) <> 0 then exit;
+if pos('?', s) <> 0 then exit;
+if pos('<', s) <> 0 then exit;
+if pos('>', s) <> 0 then exit;
+if pos('|', s) <> 0 then exit;
+if pos('       ', s) <> 0 then exit;
 {$IFDEF MSWINDOWS}
-  if pos('"', s) <> 0 then
-    exit;
+if pos('"', s) <> 0 then exit;
 {$ENDIF}
-  if pos('<', s) <> 0 then
-    exit;
-  if pos('>', s) <> 0 then
-    exit;
-  if pos('|', s) <> 0 then
-    exit;
-  if pos('       ', s) <> 0 then
-    exit;
-  sf := extractfilename(s);
-  //reserved characters, filename only (others are checked for the full name)
-  if pos('\', sf) <> 0 then
-    exit;
-  if pos('/', sf) <> 0 then
-    exit;
-  if pos(':', sf) <> 0 then
-    exit;
-  //reserved filenames (Windows)
+sf := extractfilename(s);
+//reserved characters, filename only (others are checked for the full name)
+if pos('\', sf) <> 0 then exit;
+if pos('/', sf) <> 0 then exit;
+if pos(':', sf) <> 0 then exit;
+//reserved filenames (Windows)
 {$IFDEF MSWINDOWS}
-  cutextension(sf);
-  sf := upcase(sf);
-  if (sf = 'CON') or (sf = 'PRN') or (sf = 'AUX') or (sf = 'NUL') or
-    (sf = 'COM1') or (sf = 'COM2') or (sf = 'COM3') or (sf = 'COM4') or
-    (sf = 'COM5') or (sf = 'COM6') or (sf = 'COM7') or (sf = 'COM8') or
-    (sf = 'COM9') or (sf = 'LPT1') or (sf = 'LPT2') or (sf = 'LPT3') or
-    (sf = 'LPT4') or (sf = 'LPT5') or (sf = 'LPT6') or (sf = 'LPT7') or
-    (sf = 'LPT8') or (sf = 'LPT9') then
-    exit;
+cutextension(sf);
+sf := upcase(sf);
+if (sf = 'CON') or (sf = 'PRN') or (sf = 'AUX') or (sf = 'NUL') or
+   (sf = 'COM1') or (sf = 'COM2') or (sf = 'COM3') or (sf = 'COM4') or
+   (sf = 'COM5') or (sf = 'COM6') or (sf = 'COM7') or (sf = 'COM8') or
+   (sf = 'COM9') or (sf = 'LPT1') or (sf = 'LPT2') or (sf = 'LPT3') or
+   (sf = 'LPT4') or (sf = 'LPT5') or (sf = 'LPT6') or (sf = 'LPT7') or
+   (sf = 'LPT8') or (sf = 'LPT9') then
+   exit;
 {$ENDIF}
-  checkfiledirname := 0;
+checkfiledirname := 0;
 end;
 
 //wrapper for filename/dir check, accepts empty or valid name as valid input for special purposes i.e. replace string in file name with a valid string or nothing (it is needed a separate final check for the file name to not be empty)
@@ -1663,14 +1653,16 @@ result:=varstr;
 end;
 
 function escapefilenamelinuxlike(s: ansistring; desk_env: byte): ansistring;
+//a more robust escaping procedure should be based on the POSIX compliant method of replacing ' with '\''
+//however TProcess.CommandLine does not support this method of escaping, so the command line would work if pasted in shells but not from within the app
+//the solution is replacing TProcess.CommandLine with TProcess.Executable and a list of TProcess.Parameters rewriting the sections composing the command lines, this method will also supersede most of the checks peformed in custom escaping functions
 var
   varstr,dstr: ansistring;
   i: integer;
 begin
   varstr := s;
   dstr:=correctdelimiter(s);
-  // replace quote characters if found in string;
-  //correctdelimiter swaps ' and " quotes, but that cannot guarantee against both characters being used in the same string - the remaining character is replaced by a jolly
+  //replace quote characters if found in string; correctdelimiter swaps ' and " quotes, but that cannot guarantee against both characters being used in the same string - the remaining character is replaced by a jolly
   i := 1;
   if dstr='''' then
      repeat
@@ -2027,44 +2019,41 @@ begin
 end;
 
 function checkfilename(s: ansistring): integer;
+//function errs on safe side to prevent cross platform interoperability issues
 var
   s1: ansistring;
   i: integer;
 begin
-  checkfilename := -1;
-  if (s = '') or (s='.') or (s='..') then exit;
-  //illegal characters (no problem for additional UTF8 bytes since have MSB set to 1 to avoid conflict with those control characters)
-  for i := 0 to 31 do
-  begin
-    if pos(char(i), s) <> 0 then exit;
-  end;
-  //reserved characters
-  if pos('\', s) <> 0 then exit;
-  if pos('/', s) <> 0 then exit;
-  if pos(':', s) <> 0 then exit;
-  if pos('*', s) <> 0 then exit;
-  if pos('?', s) <> 0 then exit;
+checkfilename := -1;
+if (s = '') or (s='.') or (s='..') then exit;
+//illegal characters (no problem for additional UTF8 bytes since have MSB set to 1 to avoid conflict with those control characters)
+for i := 0 to 31 do
+   if pos(char(i), s) <> 0 then exit;
+//reserved characters
+if pos('\', s) <> 0 then exit;
+if pos('/', s) <> 0 then exit;
+if pos(':', s) <> 0 then exit;
+if pos('*', s) <> 0 then exit;
+if pos('?', s) <> 0 then exit;
+if pos('<', s) <> 0 then exit;
+if pos('>', s) <> 0 then exit;
+if pos('|', s) <> 0 then exit;
+if pos('       ', s) <> 0 then exit;
 {$IFDEF MSWINDOWS}
-  if pos('"', s) <> 0 then exit;
+if pos('"', s) <> 0 then exit;
+//reserved filenames (Windows)
+s1 := extractfilename(s);
+cutextension(s1);
+s1 := upcase(s1);
+if (s1 = 'CON') or (s1 = 'PRN') or (s1 = 'AUX') or (s1 = 'NUL') or
+   (s1 = 'COM1') or (s1 = 'COM2') or (s1 = 'COM3') or (s1 = 'COM4') or
+   (s1 = 'COM5') or (s1 = 'COM6') or (s1 = 'COM7') or (s1 = 'COM8') or
+   (s1 = 'COM9') or (s1 = 'LPT1') or (s1 = 'LPT2') or (s1 = 'LPT3') or
+   (s1 = 'LPT4') or (s1 = 'LPT5') or (s1 = 'LPT6') or (s1 = 'LPT7') or
+   (s1 = 'LPT8') or (s1 = 'LPT9') then
+   exit;
 {$ENDIF}
-  if pos('<', s) <> 0 then exit;
-  if pos('>', s) <> 0 then exit;
-  if pos('|', s) <> 0 then exit;
-  if pos('       ', s) <> 0 then exit;
-  //reserved filenames (Windows)
-{$IFDEF MSWINDOWS}
-  s1 := extractfilename(s);
-  cutextension(s1);
-  s1 := upcase(s1);
-  if (s1 = 'CON') or (s1 = 'PRN') or (s1 = 'AUX') or (s1 = 'NUL') or
-    (s1 = 'COM1') or (s1 = 'COM2') or (s1 = 'COM3') or (s1 = 'COM4') or
-    (s1 = 'COM5') or (s1 = 'COM6') or (s1 = 'COM7') or (s1 = 'COM8') or
-    (s1 = 'COM9') or (s1 = 'LPT1') or (s1 = 'LPT2') or (s1 = 'LPT3') or
-    (s1 = 'LPT4') or (s1 = 'LPT5') or (s1 = 'LPT6') or (s1 = 'LPT7') or
-    (s1 = 'LPT8') or (s1 = 'LPT9') then
-    exit;
-{$ENDIF}
-  checkfilename := 0;
+checkfilename := 0;
 end;
 
 //wrapper for filename check, accepts empty or valid file name as valid input for special purposes i.e. replace string in file name with a valid string or nothing (it is needed a separate final check for the file name to not be empty)
