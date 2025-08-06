@@ -31,19 +31,27 @@ Please note those locations may be different in some distributions and desktop e
 
 Notes for specific Desktop Environments:
 
-2a) Gnome, Mate, Cinnamon, Budgie
+2a) Gnome, Mate, Cinnamon (old), Budgie
 
 Some versions may have been configured to use */pixmaps instad of */icons path.
 
 Gnome-derived DE generally allows to customise CONTEXT MENU, use the scripts in 'Nautilus-scripts' directory.
 Copy 'PeaZip' folder (or individual scripts you prefer) from the 'Nautilus-scripts' directory to:
-Gnome 2 .gnome2/nautilus-scripts 
+Gnome 2 ~/.gnome2/nautilus-scripts 
 Gnome 3 and 4 ~/.local/share/nautilus/scripts
 Make sure "Allow executing file as program" or "Is executable" permission is set for the Nautilus scripts.
 
 A sh script is available in 'Nautilus-scripts' directory to help installation of PeaZip context menu entries for the current user.
 
-2b) KDE
+2b) Cinnamon (new)
+
+To customise the CONTEXT MENU, copy desired Nemo-actions in
+~/.local/share/nemo/actions
+"Allow executing file as program" or "Is executable" permission may be needed to enable the entries.
+
+A sh script is available in 'Nemo-actions' directory to help installation of PeaZip context menu entries for the current user.
+
+2c) KDE
 
 Some versions of KDE may have been configured to use (kde directory)/share/applications/kde instead of standard paths.
 The (kde directory) is specified in $KDEDIR in environment variable and can be overridden by $KDEDIRS.
