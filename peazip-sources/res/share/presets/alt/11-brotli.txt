@@ -1,14 +1,14 @@
 PEAZIP CUSTOM COMPRESSION SETTINGS
 To replace an existing preset with a custom compression settings file, copy the desired custom compression settings file in PeaZip\res\share\presets folder, in place of one of the existing preset files (named 1..15).
 Displayed name, below, can be edited and will be shown in presets menu in place of the name of the replaced preset (displayed names in embedded presets are 1..15, and are translated to language-dependant strings).
-4
+11
 
 GENERAL OPTIONS
 Type
-Custom/RAR
-4
+7Z
+0
 Compression level
-3
+1
 Action
 0
 Spanning
@@ -45,15 +45,15 @@ Add timestamp to archive name
 
 BACKEND OPTIONS: 7z / p7zip
 Method
-0
-Dictionary
-0
-Word
 4
+Dictionary
+-1
+Word
+-1
 Passes
-0
+-1
 Solid block size
-8
+4
 Sort by name for solid compression
 1
 Compress files open for writing
@@ -181,7 +181,7 @@ Custom archive extension
 
 8.2.0 EXTENSION
 Store Created and Last access timestamps in archive types supporting it
-1
+0
 
 8.8.0 EXTENSION
 TAR standard

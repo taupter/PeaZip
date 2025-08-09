@@ -168,7 +168,7 @@ RAR save files open for writing
 RAR save NT security info
 0
 RAR save NTFS streams
-0
+1
 RAR set archive time from: system time, original archive time, most recent file time
 0
 RAR lock archive
@@ -201,7 +201,7 @@ Test archives after creation
 Store hard links as links (WIM, TAR)
 0
 Store symbolic links as links (WIM, TAR)
-0
+1
 7z / p7zip max memory usage
 0
 
@@ -211,4 +211,8 @@ KDF work load for PEA cascaded encryption
 
 10.1.0 EXTENSION
 KDF type for PEA cascaded encryption
+0
+
+10.6.0 EXTENSION
+Zpaq threads
 0

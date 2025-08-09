@@ -1,7 +1,7 @@
 PEAZIP CUSTOM COMPRESSION SETTINGS
-To replace an existing preset with a custom compression settings file, copy the desired custom compression settings file in PeaZip\res\share\presets folder, in place of one of the existing preset files (named 1..15).
+To replace an existing preset with a custom compression settings file, copy the desired custom compression settings file in PeaZip\res\presets folder, in place of one of the existing preset files (named 1..15).
 Displayed name, below, can be edited and will be shown in presets menu in place of the name of the replaced preset (displayed names in embedded presets are 1..15, and are translated to language-dependant strings).
-4
+CBR
 
 GENERAL OPTIONS
 Type
@@ -43,7 +43,7 @@ Add timestamp to archive name
 0
 0
 
-BACKEND OPTIONS: 7z / p7zip
+BACKEND OPTIONS: 7z/p7zip
 Method
 0
 Dictionary
@@ -53,7 +53,7 @@ Word
 Passes
 0
 Solid block size
-8
+0
 Sort by name for solid compression
 1
 Compress files open for writing
@@ -90,7 +90,7 @@ Encryption algorithm (if password and/or keyfile is provided)
 
 BACKEND OPTIONS: Custom
 Executable
-C:\Program Files\WinRAR\Rar.exe
+
 Extension
 rar
 Other options
@@ -108,11 +108,11 @@ BACKEND OPTIONS: PEA
 Compression
 1
 Object control algorithm
-11
+9
 Volume control algorithm
-4
-Stream control algorithm
 3
+Stream control algorithm
+0
 
 BACKEND OPTIONS: QUAD/BALZ/BCM
 Executable
@@ -124,7 +124,7 @@ Solid block size
 
 BACKEND OPTIONS: Split
 Integrity check
-13
+11
 
 BACKEND OPTIONS: UPX
 Compression
@@ -139,7 +139,7 @@ Interactively ask for password
 0
 
 7.3.0 EXTENSION
-Set 7z / p7zip archive time from most recent file time
+Set 7z/p7zip archive time from most recent file time
 0
 Maximize Brotli compression using larger window size (may be incompatible with some Brotli extractors)
 0
@@ -168,7 +168,7 @@ RAR save files open for writing
 RAR save NT security info
 0
 RAR save NTFS streams
-1
+0
 RAR set archive time from: system time, original archive time, most recent file time
 0
 RAR lock archive
@@ -176,12 +176,12 @@ RAR lock archive
 
 7.8.0 EXTENSION
 Custom archive extension
-0
-
+1
+cbr
 
 8.2.0 EXTENSION
 Store Created and Last access timestamps in archive types supporting it
-1
+0
 
 8.8.0 EXTENSION
 TAR standard
@@ -196,13 +196,13 @@ Test archives after creation
 0
 
 9.0.0 EXTENSION
-7z / p7zip do not change last access time
+7z/p7zip do not change last access time
 0
 Store hard links as links (WIM, TAR)
 0
 Store symbolic links as links (WIM, TAR)
-1
-7z / p7zip max memory usage
+0
+7z/p7zip max memory usage
 0
 
 9.9.0 EXTENSION
