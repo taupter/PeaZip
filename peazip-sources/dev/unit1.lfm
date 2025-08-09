@@ -12,10 +12,10 @@ object FormAdvf: TFormAdvf
   Constraints.MinHeight = 375
   Constraints.MinWidth = 750
   DesignTimePPI = 120
-  OnDropFiles = FormDropFiles
   Position = poScreenCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
+  OnDropFiles = FormDropFiles
   object PanelAdvf: TPanel
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner
@@ -212,8 +212,8 @@ object FormAdvf: TFormAdvf
       Height = 20
       Top = 5
       Width = 20
-      OnClick = ImageInfoArchive4Click
       Transparent = True
+      OnClick = ImageInfoArchive4Click
     end
   end
   object ButtonClearFilters: TButton

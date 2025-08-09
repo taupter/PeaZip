@@ -14,7 +14,7 @@ object FormDlg: TFormDlg
   DesignTimePPI = 120
   Position = poScreenCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
   object ldlg: TLabel
     AnchorSideLeft.Control = ImageDlg
     AnchorSideLeft.Side = asrBottom

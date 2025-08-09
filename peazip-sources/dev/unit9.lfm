@@ -11,10 +11,10 @@ object FormImgRes: TFormImgRes
   Constraints.MinHeight = 375
   Constraints.MinWidth = 600
   DesignTimePPI = 120
-  OnCreate = FormCreate
   Position = poScreenCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
   object ButtonPanel1: TButtonPanel
     Left = 15
     Height = 30
@@ -47,8 +47,8 @@ object FormImgRes: TFormImgRes
       Height = 20
       Top = 5
       Width = 20
-      OnClick = ImageInfoArchive4Click
       Transparent = True
+      OnClick = ImageInfoArchive4Click
     end
   end
   object PanelImgRes: TPanel
@@ -82,9 +82,9 @@ object FormImgRes: TFormImgRes
       BorderSpacing.Top = 30
       MaxValue = 64000
       MinValue = 1
-      OnChange = SpinEditWChange
       TabOrder = 1
       Value = 1024
+      OnChange = SpinEditWChange
     end
     object SpinEditH: TSpinEdit
       AnchorSideLeft.Control = LabelH
@@ -97,9 +97,9 @@ object FormImgRes: TFormImgRes
       BorderSpacing.Left = 8
       MaxValue = 64000
       MinValue = 1
-      OnChange = SpinEditHChange
       TabOrder = 2
       Value = 768
+      OnChange = SpinEditHChange
     end
     object CheckBoxPercent: TCheckBox
       AnchorSideLeft.Control = SpinEditH

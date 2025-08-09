@@ -9,10 +9,10 @@ object FormComment: TFormComment
   ClientWidth = 602
   Color = clWindow
   DesignTimePPI = 120
-  OnDropFiles = FormDropFiles
   Position = poScreenCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
+  OnDropFiles = FormDropFiles
   object MemoComment: TMemo
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner

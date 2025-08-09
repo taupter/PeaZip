@@ -12,7 +12,7 @@ object FormSelect: TFormSelect
   Constraints.MinWidth = 600
   DesignTimePPI = 120
   Position = poScreenCenter
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
   object ButtonPanel1: TButtonPanel
     AnchorSideLeft.Control = Owner
     AnchorSideRight.Control = Owner

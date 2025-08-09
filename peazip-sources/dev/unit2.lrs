@@ -5,7 +5,7 @@ LazarusResources.Add('TFormWeb','FORMDATA',[
   +#5'Width'#3#238#2#7'Caption'#6#7'FormWeb'#12'ClientHeight'#3#145#1#11'Client'
   +'Width'#3#238#2#5'Color'#7#8'clWindow'#21'Constraints.MinHeight'#3#144#1#20
   +'Constraints.MinWidth'#3#238#2#13'DesignTimePPI'#2'x'#8'Position'#7#14'poScr'
-  +'eenCenter'#10'LCLVersion'#6#7'3.4.0.0'#0#12'TButtonPanel'#12'ButtonPanel1'
+  +'eenCenter'#10'LCLVersion'#6#7'4.0.0.4'#0#12'TButtonPanel'#12'ButtonPanel1'
   +#22'AnchorSideLeft.Control'#7#5'Owner'#23'AnchorSideRight.Control'#7#5'Owner'
   +#24'AnchorSideBottom.Control'#7#5'Owner'#4'Left'#2#15#6'Height'#2#30#3'Top'#3
   +'d'#1#5'Width'#3#208#2#18'BorderSpacing.Left'#2#15#17'BorderSpacing.Top'#2#15
@@ -42,7 +42,7 @@ LazarusResources.Add('TFormWeb','FORMDATA',[
   +'Bing'#6#10'Britannica'#6#10'DuckDuckGo'#6#6'GitHub'#6#6'Google'#6#16'Google'
   +' Translate'#6#4'IMDB'#6#8'LinkedIn'#6#6'Reddit'#6#8'Repology'#6#11'SourceFo'
   +'rge'#6#13'Stackoverflow'#6#9'Wikibooks'#6#9'Wikipedia'#6#10'Wiktionary'#6#7
-  +'YouTube'#0#11'OnItemClick'#7#20'CheckGroup1ItemClick'#16'ParentBackground'#8
-  +#8'TabOrder'#2#1#4'Data'#10#22#0#0#0#18#0#0#0#2#2#2#2#2#2#2#2#2#2#2#2#2#2#2#2
-  +#2#2#0#0#0
+  +'YouTube'#0#16'ParentBackground'#8#8'TabOrder'#2#1#11'OnItemClick'#7#20'Chec'
+  +'kGroup1ItemClick'#4'Data'#10#22#0#0#0#18#0#0#0#2#2#2#2#2#2#2#2#2#2#2#2#2#2#2
+  +#2#2#2#0#0#0
 ]);

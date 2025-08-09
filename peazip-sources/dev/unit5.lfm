@@ -10,10 +10,10 @@ object FormKF: TFormKF
   Constraints.MinHeight = 500
   Constraints.MinWidth = 750
   DesignTimePPI = 120
-  OnClose = FormClose
   Position = poScreenCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
+  OnClose = FormClose
   object PanelKeyfile: TPanel
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner
@@ -207,8 +207,8 @@ object FormKF: TFormKF
         Height = 20
         Top = 5
         Width = 20
-        OnClick = ImageInfoArchive1Click
         Transparent = True
+        OnClick = ImageInfoArchive1Click
       end
     end
     object CheckBoxSuggestPW: TCheckBox

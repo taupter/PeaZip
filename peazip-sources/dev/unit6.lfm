@@ -13,7 +13,7 @@ object FormInput: TFormInput
   DesignTimePPI = 120
   Position = poScreenCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
   object PanelInput: TPanel
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner
@@ -188,7 +188,7 @@ object FormInput: TFormInput
       Width = 670
       Anchors = [akTop, akLeft, akRight]
       AutoComplete = True
-      AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchCaseSensitive, cbactSearchAscending]
+      AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
       BorderSpacing.Left = 15
       BorderSpacing.Top = 30
       BorderSpacing.Right = 15
@@ -302,8 +302,8 @@ object FormInput: TFormInput
     BorderSpacing.Left = 15
     Caption = 'Browse'
     Constraints.MinWidth = 120
-    OnClick = BitBtn2Click
     TabOrder = 2
+    OnClick = BitBtn2Click
   end
   object OpenDialog3: TOpenDialog
     Title = 'Open file'

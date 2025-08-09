@@ -229,6 +229,7 @@ unit Unit_pea;
                                 Recompiled for Lazarus 4.x, compatibility kept down to Lazarus 2.x
                                 Improved visually reporting errors/success with icons when applicable
                                 Added option to search SHA256 hash value on Jotti VirusScan (SHA256J)
+ 1.26     20250727  G.Tani      Minor fixes, recompiled with Lazarus 4.2
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 
@@ -414,7 +415,7 @@ type
   Type fileofbyte = file of byte;
 
 const
-  P_RELEASE          = '1.25'; //declares release version for the whole build
+  P_RELEASE          = '1.26'; //declares release version for the whole build
   //PEAUTILS_RELEASE   = '1.3'; //declares for reference last peautils release
   PEA_FILEFORMAT_VER = 1;
   PEA_FILEFORMAT_REV = 6; //version and revision declared to be implemented must match with the ones in pea_utils, otherwise a warning will be raised (form caption)
@@ -7283,7 +7284,7 @@ Form_pea.Visible:=false;
 exitcode:=0;
 end;
 
-//text preview: limited to 1 GB
+//text preview: limited to 256 MB
 procedure textpreview;
 var
    sl:TStringList;
@@ -7323,9 +7324,9 @@ if sizea=0 then
    internal_error('The file is empty, cannot be previewed');
    exit;
    end;
-if sizea>1024*1024*1024 then
+if sizea>256*1024*1024 then
   begin
-  MessageDlg('Text preview is currently limited to files up to 1 GB', mtWarning, [mbOK], 0);
+  MessageDlg('Text preview is currently limited to files up to 256 MB', mtWarning, [mbOK], 0);
   exit;
   end;
 setcurrentdir(extractfilepath((paramstr(2))));
@@ -7342,9 +7343,12 @@ Form_pea.ProgressBar1.Position:=5;
 application.ProcessMessages;
 for prows:=1 to sl.Count do
    begin
-      if prows>=Form_report.StringGrid1.RowCount then
+   if prows>=Form_report.StringGrid1.RowCount then
       begin
       Form_report.StringGrid1.RowCount:=prows+16*1024;
+      if prows>(sl.Count div 4) then Form_pea.ProgressBar1.Position:=25;
+      if prows>(sl.Count div 2) then Form_pea.ProgressBar1.Position:=50;
+      if prows>((sl.Count*3) div 4) then Form_pea.ProgressBar1.Position:=75;
       application.ProcessMessages;
       end;
    Form_report.StringGrid1.Cells[0,prows]:=addchar('0',inttostr(prows),9);
@@ -7372,6 +7376,7 @@ Form_pea.LabelLog1.Visible:=true;
 exitcode:=0;
 end;
 
+//text preview: limited to 64 MB
 procedure hexpreview;
 var
    hexs,hexs1,astr,offs,s:ansistring;
@@ -7421,9 +7426,9 @@ MessageDlg((paramstr(2))+' is not accessible (or not a file)', mtError, [mbOK], 
 halt(-3);
 exit;
 end;
-if sizea>256*1024*1024 then
+if sizea>64*1024*1024 then
   begin
-  MessageDlg('Hex preview is currently limited to files up to 256 MB', mtWarning, [mbOK], 0);
+  MessageDlg('Hex preview is currently limited to files up to 64 MB', mtWarning, [mbOK], 0);
   exit;
   end;
 Form_pea.LabelTools3.Caption:='Size '+nicenumber(inttostr(sizea),0)+' ('+inttostr(sizea)+' B)';

@@ -2608,7 +2608,7 @@ pinsize:=0;
 in_name:=pinputfile;
 if in_name='na' then in_name:=''; //for extraction only, for archiving it is only passed poutname for single or multiple output
 try
-insize:=strtoqword(ptsize); //size does not take in account multipart archives (needs to be improved for extractionb tasks)
+insize:=strtoqword(ptsize); //receives size taking in account multipart archives, when applicable
 if pprogn='' then
    pinsize:=insize
 else

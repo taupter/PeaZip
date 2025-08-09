@@ -12,10 +12,10 @@ object FormPW: TFormPW
   Constraints.MinHeight = 275
   Constraints.MinWidth = 700
   DesignTimePPI = 120
-  OnCreate = FormCreate
   Position = poScreenCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
   object PanelPWOpen: TPanel
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner

@@ -13,7 +13,7 @@ object FormCrop: TFormCrop
   DesignTimePPI = 120
   Position = poScreenCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
   object ButtonPanel1: TButtonPanel
     Left = 15
     Height = 30
@@ -46,8 +46,8 @@ object FormCrop: TFormCrop
       Height = 20
       Top = 5
       Width = 20
-      OnClick = ImageInfoArchive4Click
       Transparent = True
+      OnClick = ImageInfoArchive4Click
     end
   end
   object PanelCrop: TPanel
@@ -92,9 +92,9 @@ object FormCrop: TFormCrop
       BorderSpacing.Top = 30
       BorderSpacing.Bottom = 30
       MaxValue = 64000
-      OnChange = SpinEditLChange
       TabOrder = 1
       Value = 10
+      OnChange = SpinEditLChange
     end
     object SpinEditR: TSpinEdit
       AnchorSideLeft.Side = asrBottom

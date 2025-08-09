@@ -357,6 +357,10 @@ function ShellTreeViewSetTextPath(ashelltreeview: TShellTreeView;
 //set parent paths as entries in a combobox
 procedure ComboBoxSetPaths(acombobox: TComboBox; apath:ansistring);
 
+//write ansistrings to array of ansistring and read them as executable + list of parameters for TProcess
+function writecla(s:ansistring; var cla:TFoundList):integer;
+function readcla(cla:array of ansistring; var P:tprocessutf8):integer;
+
 //check full name against reserved and illegal characters, and reserved filenames
 function checkfiledirname(s: ansistring): integer;
 function checkfiledirname_acceptblank(s: ansistring): integer;
@@ -1587,6 +1591,27 @@ begin
   str.Free;
 end;
 
+function writecla(s:ansistring; var cla:TFoundList):integer;
+begin
+//issues: 1 some parameters are currently passed at once in single variable 2 advanced filters are strings built from arrays of multiple filepathnames
+result:=-1;
+if s='' then exit;
+SetLength(cla,length(cla)+1);
+cla[length(cla)-1]:=s;
+result:=0;
+end;
+
+function readcla(cla:array of ansistring; var P:tprocessutf8):integer;
+var
+   i:integer;
+begin
+result:=-1;
+if Length(cla)<=0 then exit;
+P.Executable:=cla[0];
+for i:=1 to Length(cla)-1 do P.Parameters.Add(cla[i]);
+result:=0;
+end;
+
 function checkfiledirname(s: ansistring): integer;
 //function errs on safe side to prevent cross platform interoperability issues
 var
@@ -1986,7 +2011,7 @@ end;
 procedure get_usrtmp_path(var s: ansistring);
 //works fine in Windows even if username contains extended characters
 begin
-s:=GetTempDir;
+s:=GetTempDir(false);
 if s = '' then get_desktop_path(s);
 setendingdirseparator(s);
 end;

@@ -1,8 +1,10 @@
-﻿Notes to 10.5 release
+﻿Notes to 10.6 release
 
-txt_9_0_tnav: Toggle navigation bar
-txt_8_8_snz: Propagate Zone.Identifier (MoTW) (Windows, NTFS)
-txt_toggle_historybookmarks: Toggle status bar
+Modified existing text
+txt_5_0_perf: Performances
+txt_10_5_sh: Show hidden files (in the filesystem)
+txt_default: Default
+txt_add_tobookmarks: Add to Bookmarks
 
 = GENERAL NOTES =
 

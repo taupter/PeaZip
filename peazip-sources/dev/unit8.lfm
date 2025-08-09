@@ -10,10 +10,10 @@ object FormPM: TFormPM
   Constraints.MinHeight = 500
   Constraints.MinWidth = 750
   DesignTimePPI = 120
-  OnCreate = FormCreate
   Position = poScreenCenter
   ShowHint = True
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
   object ButtonPanel1: TButtonPanel
     AnchorSideLeft.Control = Owner
     AnchorSideLeft.Side = asrBottom
@@ -51,8 +51,8 @@ object FormPM: TFormPM
       Height = 20
       Top = 5
       Width = 20
-      OnClick = ImageInfoPM1Click
       Transparent = True
+      OnClick = ImageInfoPM1Click
     end
     object Button1: TLabel
       AnchorSideLeft.Control = ImageInfoPM1
@@ -492,8 +492,8 @@ object FormPM: TFormPM
       Width = 60
       Anchors = [akTop, akRight, akBottom]
       Flat = True
-      OnClick = ctrlpmClick
       ParentFont = False
+      OnClick = ctrlpmClick
     end
     object PanelTitlePMTabAlign: TPanel
       AnchorSideLeft.Control = PanelTitlePM

@@ -5,7 +5,7 @@ LazarusResources.Add('TFormCrop','FORMDATA',[
   +'Width'#3'X'#2#8'AutoSize'#9#7'Caption'#6#4'Crop'#12'ClientHeight'#3#20#1#11
   +'ClientWidth'#3'X'#2#5'Color'#7#8'clWindow'#21'Constraints.MinHeight'#3#19#1
   +#20'Constraints.MinWidth'#3'X'#2#13'DesignTimePPI'#2'x'#8'Position'#7#14'poS'
-  +'creenCenter'#8'ShowHint'#9#10'LCLVersion'#6#7'3.4.0.0'#0#12'TButtonPanel'#12
+  +'creenCenter'#8'ShowHint'#9#10'LCLVersion'#6#7'4.0.0.4'#0#12'TButtonPanel'#12
   +'ButtonPanel1'#4'Left'#2#15#6'Height'#2#30#3'Top'#3#231#0#5'Width'#3':'#2#18
   +'BorderSpacing.Left'#2#15#19'BorderSpacing.Right'#2#15#20'BorderSpacing.Bott'
   +'om'#2#15#20'BorderSpacing.Around'#2#0#13'OKButton.Name'#6#8'OKButton'#23'OK'
@@ -17,8 +17,8 @@ LazarusResources.Add('TFormCrop','FORMDATA',[
   +'Bevel'#8#0#6'TImage'#17'ImageInfoArchive4'#22'AnchorSideLeft.Control'#7#12
   +'ButtonPanel1'#21'AnchorSideTop.Control'#7#12'ButtonPanel1'#18'AnchorSideTop'
   +'.Side'#7#9'asrCenter'#6'Cursor'#7#11'crHandPoint'#4'Left'#2#0#6'Height'#2#20
-  +#3'Top'#2#5#5'Width'#2#20#7'OnClick'#7#22'ImageInfoArchive4Click'#11'Transpa'
-  +'rent'#9#0#0#0#6'TPanel'#9'PanelCrop'#22'AnchorSideLeft.Control'#7#5'Owner'
+  +#3'Top'#2#5#5'Width'#2#20#11'Transparent'#9#7'OnClick'#7#22'ImageInfoArchive'
+  +'4Click'#0#0#0#6'TPanel'#9'PanelCrop'#22'AnchorSideLeft.Control'#7#5'Owner'
   +#21'AnchorSideTop.Control'#7#5'Owner'#23'AnchorSideRight.Control'#7#5'Owner'
   +#20'AnchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#12'B'
   +'uttonPanel1'#4'Left'#2#0#6'Height'#3#201#0#3'Top'#2#0#5'Width'#3'X'#2#7'Anc'
@@ -32,9 +32,9 @@ LazarusResources.Add('TFormCrop','FORMDATA',[
   +'AnchorSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#9'SpinEditT'
   +#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2'0'#6'Height'#2#28#3'Top'#2
   +'X'#5'Width'#2's'#18'BorderSpacing.Left'#2#8#17'BorderSpacing.Top'#2#30#20'B'
-  +'orderSpacing.Bottom'#2#30#8'MaxValue'#4#0#250#0#0#8'OnChange'#7#15'SpinEdit'
-  +'LChange'#8'TabOrder'#2#1#5'Value'#2#10#0#0#9'TSpinEdit'#9'SpinEditR'#19'Anc'
-  +'horSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#9'SpinEditT'#18
+  +'orderSpacing.Bottom'#2#30#8'MaxValue'#4#0#250#0#0#8'TabOrder'#2#1#5'Value'#2
+  +#10#8'OnChange'#7#15'SpinEditLChange'#0#0#9'TSpinEdit'#9'SpinEditR'#19'Ancho'
+  +'rSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#9'SpinEditT'#18
   +'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#9'PanelCro'
   +'p'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Left'#3#214#1#6'Height'#2#28#3
   +'Top'#2'X'#5'Width'#2's'#7'Anchors'#11#5'akTop'#7'akRight'#0#17'BorderSpacin'
