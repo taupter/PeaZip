@@ -242,7 +242,7 @@ PeaZip
 72
 144
 48
-72
+100
 0
 
 [extract to new folder]
@@ -365,7 +365,7 @@ PeaZip
 1
 
 [keep password for current session]
-1
+0
 
 [show address field as breadcrumb]
 1
@@ -779,7 +779,7 @@ CRC32 CRC64 MD5 RIPEMD160 SHA1 BLAKE2S SHA256 SHA3_256
 
 [extended columns, comments]
 0
-72
+100
 
 [manually set RAR binary]
 0
@@ -815,3 +815,9 @@ exe cmd msi bat ps1 vbs reg
 
 [show hidden files and folders in the filesystem]
 1
+
+[dynamically set file browser in virtual mode over 0 4K items, 1 8K items, 2 16Kitems, 3 never]
+0
+
+[default zpaq threads, 0 = auto, generic multithreading]
+0
