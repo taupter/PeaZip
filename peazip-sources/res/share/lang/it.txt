@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Italian - Italiano
-10.5
+10.6
 Tradotto da: Giorgio Tani
 Ultima rev. di: Giorgio Tani
 Ultima rev.: 20250327
 
 === PeaZip text group ===
 
+txt_10_6_virtual: Modalità virtuale dinamica
 txt_10_5_fr: (report completo)
 txt_10_5_sectype: Chiedi conferma prima di eseguire questi tipi di file
 txt_10_5_checkmotw: Verifica Zone.Identifier (MoTW)
@@ -759,7 +760,7 @@ txt_add_folder: Aggiungi cartella
 txt_add_path: Aggiungi percorso
 txt_add_tolayout: Aggiungi file e cartelle selezionate al layout dell'archivio
 txt_add_toarchive: Aggiungi all'archivio
-txt_add_tobookmarks: Aggiungi ai preferiti
+txt_add_tobookmarks: Aggiungi ai Preferiti
 txt_address_hint: Filtro: accetta caratteri jolly * e ?
 txt_adv_filters: Filtri avanzati
 txt_algo: Algoritmo
@@ -851,7 +852,7 @@ txt_custom_parameters: Parametri personalizzati
 txt_customsize: Specifica le dimensioni
 txt_cut: Taglia
 txt_datetime: Data/ora
-txt_default: predefinito
+txt_default: Predefinito
 txt_default_compression: compressione predefinita
 txt_default_format: Formato predefinito
 txt_theme_default: Tema predefinito

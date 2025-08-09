@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Galician - Galego
-10.5
+10.6
 Traducido por:Antón Méixome, Manuel Cameselle,Nosi_982
 Last rev. by: Nosi_982
 Last rev.: 20120923
 
 === PeaZip text group ===
 
+txt_10_6_virtual: Dynamic virtual mode
 txt_10_5_fr: (full report)
 txt_10_5_sectype: Ask confirmation for running following file types
 txt_10_5_checkmotw: Check Zone.Identifier (MoTW)

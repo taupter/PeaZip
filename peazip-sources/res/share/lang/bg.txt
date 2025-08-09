@@ -1,12 +1,13 @@
-=== PeaZip language file ===
+﻿=== PeaZip language file ===
 Български / Bulgarian
-10.5
+10.6
 Превод: Любомир Симеонов
 Корекция: Живко Жеков
 Последна корекция: 20250620
 
 === PeaZip text group ===
 
+txt_10_6_virtual: Dynamic virtual mode
 txt_10_5_fr: (Пълен отчет)
 txt_10_5_sectype: Искай потвърждение за изпълнение на следните типове файлове
 txt_10_5_checkmotw: Проверъчна зона.Идентификатор (MoTW)

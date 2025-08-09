@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Portuguese (Brazil) - Português
-10.5
+10.6
 Translated by: Havokdan
 Last rev. by: Giorgio Tani
 Last rev.: 20250327
 
 === PeaZip text group ===
 
+txt_10_6_virtual: Dynamic virtual mode
 txt_10_5_fr: (Relatório completo)
 txt_10_5_sectype: Pedir confirmação para a execução dos seguintes tipos de arquivo
 txt_10_5_checkmotw: Verificar Zone.Identifier (MoTW)

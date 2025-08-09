@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Persian
-10.5
+10.6
 Translated by: Alireza Rashidi
 Last rev. by: Alireza Rashidi
 Last rev.: 20250722
 
 === PeaZip text group ===
 
+txt_10_6_virtual: Dynamic virtual mode
 txt_10_5_fr: (گزارش کامل)
 txt_10_5_sectype: درخواست پذیرش برای اجرای انواع پرونده‌های زیر
 txt_10_5_checkmotw: بررسی Zone.Identifier (MoTW)

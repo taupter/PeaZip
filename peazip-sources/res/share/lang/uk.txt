@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Ukrainian - Українська
-10.5
+10.6
 Переклад: Василь Мельник(VMenik, GIT = VMelnikV), Решетнюк В.В.(IxI_JOKER_IxI), Міщенко О.С., sasha[at]mishchenko.tk, Пилипчук О.П., pilipchukap[at]rambler[dot]ru, ViktorOn , Oleksandr (yupiter43@gmail.com)
 Останній раз ред.: Oleksandr (yupiter43@gmail.com)
 Останнє ред.: 19.10.2024
 
 === PeaZip text group ===
 
+txt_10_6_virtual: Dynamic virtual mode
 txt_10_5_fr: (full report)
 txt_10_5_sectype: Ask confirmation for running following file types
 txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
