@@ -5,5 +5,5 @@ If you don't need to handle Rar format you can simply remove it.
 
 Reference: http://www.7-zip.org/
 http://sourceforge.net/projects/p7zip/
-https://github.com/szcnick/p7zip
+https://github.com/cielavenir/p7zip
 https://github.com/mcmilk/7-Zip-zstd
