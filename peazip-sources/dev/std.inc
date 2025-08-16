@@ -512,6 +512,10 @@
   {$endif}
   {$ifdef CPUARM}
     {$define EXT64}       {No extended for ARM}
+  {$endif}
+
+  {Do not use asm implementations on non-x86 platforms}
+  {$if not(defined(CPU86) or defined(CPU87) or defined(CPU386) or defined(CPUI386) or defined(CPUX86_64) or defined(CPUAMD64) or defined(CPUX64))}
     {$define PurePascal}
   {$endif}
 {$endif}
