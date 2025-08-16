@@ -115,7 +115,7 @@ implementation
 
 
 {$ifdef FPC}
-  {$if defined(CPUARM) or defined(CPUAARCH64)}
+  {$ifndef PurePascal}
     {$asmmode intel}
   {$endif}
 {$endif}

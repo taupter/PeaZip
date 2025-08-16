@@ -96,7 +96,7 @@ function  _CheckRDTSC: boolean;
 
 implementation
 
-{$if defined(CPUARM) or defined(CPUAARCH64)}
+{$ifdef PurePascal}
 
 {$ifdef WINCE}
 
