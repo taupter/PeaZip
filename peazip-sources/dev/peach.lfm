@@ -48,9 +48,9 @@ object Form_peach: TForm_peach
     AnchorSideRight.Control = Options
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = GroupBoxCreateOut
-    Left = 2598
+    Left = 2650
     Height = 256
-    Top = 729
+    Top = 741
     Width = 1024
     Anchors = []
     BorderSpacing.Bottom = 18
@@ -124,9 +124,9 @@ object Form_peach: TForm_peach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 795
+    Left = 831
     Height = 80
-    Top = 160
+    Top = 164
     Width = 699
     Anchors = []
     BorderStyle = bsNone
@@ -148,9 +148,9 @@ object Form_peach: TForm_peach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 823
+    Left = 857
     Height = 80
-    Top = 161
+    Top = 165
     Width = 693
     Anchors = []
     BorderStyle = bsNone
@@ -221,9 +221,9 @@ object Form_peach: TForm_peach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 825
+    Left = 859
     Height = 80
-    Top = 161
+    Top = 165
     Width = 690
     Anchors = []
     BorderStyle = bsNone
@@ -246,9 +246,9 @@ object Form_peach: TForm_peach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 825
+    Left = 859
     Height = 80
-    Top = 133
+    Top = 137
     Width = 690
     Anchors = []
     BorderStyle = bsNone
@@ -270,9 +270,9 @@ object Form_peach: TForm_peach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 828
+    Left = 860
     Height = 80
-    Top = 77
+    Top = 81
     Width = 652
     Anchors = []
     AutoEdit = False
@@ -294,9 +294,9 @@ object Form_peach: TForm_peach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 828
+    Left = 860
     Height = 80
-    Top = 105
+    Top = 109
     Width = 652
     Anchors = []
     BorderStyle = bsNone
@@ -319,9 +319,9 @@ object Form_peach: TForm_peach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = Splitter1
-    Left = 865
+    Left = 895
     Height = 451
-    Top = 301
+    Top = 325
     Width = 590
     Anchors = []
     AutoSort = False
@@ -393,9 +393,9 @@ object Form_peach: TForm_peach
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = Panelnav
     AnchorSideBottom.Side = asrBottom
-    Left = 940
+    Left = 950
     Height = 329
-    Top = 1657
+    Top = 1673
     Width = 200
     Anchors = []
     BorderStyle = bsNone
@@ -4054,13 +4054,13 @@ object Form_peach: TForm_peach
             AnchorSideBottom.Control = OptionsAdv
             AnchorSideBottom.Side = asrBottom
             Left = 103
-            Height = 453
+            Height = 451
             Top = 268
             Width = 800
             Anchors = [akTop, akLeft, akBottom]
             BorderSpacing.Top = 48
             BevelOuter = bvNone
-            ClientHeight = 453
+            ClientHeight = 451
             ClientWidth = 800
             FullRepaint = False
             ParentBackground = False
@@ -4074,12 +4074,12 @@ object Form_peach: TForm_peach
               AnchorSideBottom.Control = PanelArchive2
               AnchorSideBottom.Side = asrBottom
               Left = 0
-              Height = 453
+              Height = 451
               Top = 0
               Width = 800
               Anchors = [akTop, akLeft, akRight, akBottom]
               BevelOuter = bvNone
-              ClientHeight = 453
+              ClientHeight = 451
               ClientWidth = 800
               ParentBackground = False
               ParentFont = False
@@ -4171,12 +4171,12 @@ object Form_peach: TForm_peach
               AnchorSideBottom.Control = PanelArchive2
               AnchorSideBottom.Side = asrBottom
               Left = 0
-              Height = 453
+              Height = 451
               Top = 0
               Width = 800
               Anchors = [akTop, akLeft, akRight, akBottom]
               BevelOuter = bvNone
-              ClientHeight = 453
+              ClientHeight = 451
               ClientWidth = 800
               ParentBackground = False
               ParentFont = False
@@ -4203,12 +4203,12 @@ object Form_peach: TForm_peach
               AnchorSideBottom.Control = PanelArchive2
               AnchorSideBottom.Side = asrBottom
               Left = 0
-              Height = 453
+              Height = 451
               Top = 0
               Width = 800
               Anchors = [akTop, akLeft, akRight, akBottom]
               BevelOuter = bvNone
-              ClientHeight = 453
+              ClientHeight = 451
               ClientWidth = 800
               ParentBackground = False
               ParentFont = False
@@ -4219,12 +4219,12 @@ object Form_peach: TForm_peach
                 AnchorSideBottom.Control = PanelARC
                 AnchorSideBottom.Side = asrBottom
                 Left = 400
-                Height = 453
+                Height = 451
                 Top = 0
                 Width = 400
                 Anchors = [akTop, akLeft, akBottom]
                 BevelOuter = bvNone
-                ClientHeight = 453
+                ClientHeight = 451
                 ClientWidth = 400
                 ParentBackground = False
                 ParentFont = False
@@ -4496,9 +4496,10 @@ object Form_peach: TForm_peach
                   BorderSpacing.Top = 12
                   DropDownCount = 18
                   ItemHeight = 15
-                  ItemIndex = 1
+                  ItemIndex = 2
                   Items.Strings = (
                     'arc-tiny.linux.sfx'
+                    'arc-tiny.sfx'
                     'freearc.sfx'
                     'freearc-installer.sfx'
                     'freearc-tiny.sfx'
@@ -4532,12 +4533,12 @@ object Form_peach: TForm_peach
               AnchorSideBottom.Control = PanelArchive2
               AnchorSideBottom.Side = asrBottom
               Left = 0
-              Height = 453
+              Height = 451
               Top = 0
               Width = 800
               Anchors = [akTop, akLeft, akRight, akBottom]
               BevelOuter = bvNone
-              ClientHeight = 453
+              ClientHeight = 451
               ClientWidth = 800
               ParentBackground = False
               ParentFont = False
@@ -4620,12 +4621,12 @@ object Form_peach: TForm_peach
               AnchorSideBottom.Control = PanelArchive2
               AnchorSideBottom.Side = asrBottom
               Left = 0
-              Height = 453
+              Height = 451
               Top = 0
               Width = 800
               Anchors = [akTop, akLeft, akRight, akBottom]
               BevelOuter = bvNone
-              ClientHeight = 453
+              ClientHeight = 451
               ClientWidth = 800
               ParentBackground = False
               ParentFont = False
@@ -4639,13 +4640,13 @@ object Form_peach: TForm_peach
                 AnchorSideBottom.Control = PanelCustom
                 AnchorSideBottom.Side = asrBottom
                 Left = 0
-                Height = 410
+                Height = 408
                 Top = 43
                 Width = 800
                 Anchors = [akTop, akLeft, akRight, akBottom]
                 BorderSpacing.Top = 12
                 BevelOuter = bvNone
-                ClientHeight = 410
+                ClientHeight = 408
                 ClientWidth = 800
                 ParentBackground = False
                 ParentFont = False
@@ -4817,13 +4818,13 @@ object Form_peach: TForm_peach
                 AnchorSideBottom.Control = PanelCustom
                 AnchorSideBottom.Side = asrBottom
                 Left = 0
-                Height = 410
+                Height = 408
                 Top = 43
                 Width = 800
                 Anchors = [akTop, akLeft, akRight, akBottom]
                 BorderSpacing.Top = 12
                 BevelOuter = bvNone
-                ClientHeight = 410
+                ClientHeight = 408
                 ClientWidth = 800
                 ParentBackground = False
                 ParentFont = False
@@ -5095,12 +5096,12 @@ object Form_peach: TForm_peach
               AnchorSideBottom.Control = PanelArchive2
               AnchorSideBottom.Side = asrBottom
               Left = 0
-              Height = 453
+              Height = 451
               Top = 0
               Width = 800
               Anchors = [akTop, akLeft, akRight, akBottom]
               BevelOuter = bvNone
-              ClientHeight = 453
+              ClientHeight = 451
               ClientWidth = 800
               ParentBackground = False
               ParentFont = False
@@ -5127,12 +5128,12 @@ object Form_peach: TForm_peach
               AnchorSideBottom.Control = PanelArchive2
               AnchorSideBottom.Side = asrBottom
               Left = 0
-              Height = 453
+              Height = 451
               Top = 0
               Width = 800
               Anchors = [akTop, akLeft, akRight, akBottom]
               BevelOuter = bvNone
-              ClientHeight = 453
+              ClientHeight = 451
               ClientWidth = 800
               ParentBackground = False
               ParentFont = False
@@ -5465,12 +5466,12 @@ object Form_peach: TForm_peach
               AnchorSideBottom.Control = PanelArchive2
               AnchorSideBottom.Side = asrBottom
               Left = 0
-              Height = 453
+              Height = 451
               Top = 0
               Width = 800
               Anchors = [akTop, akLeft, akRight, akBottom]
               BevelOuter = bvNone
-              ClientHeight = 453
+              ClientHeight = 451
               ClientWidth = 800
               ParentBackground = False
               ParentFont = False
@@ -5594,12 +5595,12 @@ object Form_peach: TForm_peach
               AnchorSideBottom.Control = PanelArchive2
               AnchorSideBottom.Side = asrBottom
               Left = 0
-              Height = 453
+              Height = 451
               Top = 0
               Width = 800
               Anchors = [akTop, akLeft, akRight, akBottom]
               BevelOuter = bvNone
-              ClientHeight = 453
+              ClientHeight = 451
               ClientWidth = 800
               ParentBackground = False
               ParentFont = False
@@ -5608,12 +5609,12 @@ object Form_peach: TForm_peach
                 AnchorSideBottom.Control = Panel7za
                 AnchorSideBottom.Side = asrBottom
                 Left = 0
-                Height = 453
+                Height = 451
                 Top = 0
                 Width = 400
                 Anchors = [akTop, akLeft, akBottom]
                 BevelOuter = bvNone
-                ClientHeight = 453
+                ClientHeight = 451
                 ClientWidth = 400
                 ParentBackground = False
                 ParentFont = False
@@ -5832,9 +5833,9 @@ object Form_peach: TForm_peach
                   AnchorSideTop.Side = asrBottom
                   AnchorSideRight.Side = asrBottom
                   Left = 0
-                  Height = 70
+                  Height = 51
                   Top = 383
-                  Width = 337
+                  Width = 215
                   AutoFill = True
                   AutoSize = True
                   BorderSpacing.Top = 6
@@ -5847,16 +5848,14 @@ object Form_peach: TForm_peach
                   ChildSizing.ShrinkVertical = crsScaleChilds
                   ChildSizing.Layout = cclLeftToRightThenTopToBottom
                   ChildSizing.ControlsPerLine = 3
-                  ClientHeight = 50
-                  ClientWidth = 333
+                  ClientHeight = 31
+                  ClientWidth = 211
                   Columns = 3
-                  ItemIndex = 1
+                  ItemIndex = 2
                   Items.Strings = (
                     'Console'
+                    'Console (Linux)'
                     'GUI'
-                    '7zS2 (Installer)'
-                    '7zS2con (Installer)'
-                    '7zSD (MSVCRT.dll)'
                   )
                   ParentBackground = False
                   ParentFont = False
@@ -5995,12 +5994,12 @@ object Form_peach: TForm_peach
                 AnchorSideBottom.Control = Panel7za
                 AnchorSideBottom.Side = asrBottom
                 Left = 400
-                Height = 453
+                Height = 451
                 Top = 0
                 Width = 400
                 Anchors = [akTop, akLeft, akBottom]
                 BevelOuter = bvNone
-                ClientHeight = 453
+                ClientHeight = 451
                 ClientWidth = 400
                 ParentBackground = False
                 ParentFont = False
@@ -9768,7 +9767,7 @@ object Form_peach: TForm_peach
             AnchorSideBottom.Side = asrCenter
             Left = 776
             Height = 15
-            Top = 1952613382
+            Top = 1954434773
             Width = 3
             Anchors = []
             BorderSpacing.Left = 8

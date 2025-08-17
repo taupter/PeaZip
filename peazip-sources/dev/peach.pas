@@ -196,50 +196,25 @@ unit peach;
  1.79     20250405  G.Tani     10.4.0
  1.80     20250609  G.Tani     10.5.0
  1.81     20250806  G.Tani     10.6.0
+ 1.82     20250814  G.Tani     10.6.1
 
 BACKEND
-Updated 7z 25.01
-Updated Pea 1.26
-(Windows) Updated McMilk codecs to 24.09-v1.5.7-R1
-(Linux, macOS) Added T. Yamada cielavenir/p7zip 24.09.1 fork to support Brotli, Lizard, LZ4, LZ5, Zstd additional codecs for 7z
- From Options > Settings, Advanced tab set "7z / p7zip alias" to "7zalt" to use this alternative implementation and support extra codecs for 7z
-Updated Zpaq interface to support Zpaqfranz as default binary, keeping compatibility with Zpaq 7.x
+7z / p7zip vanilla sxf modules replaced by modules from Tino Reichardt fork
+(Windows) PAQ8O and Strip/UPX moved to Additional Formats Plugin package v.7
+(Windows) Zpaq support updated to Zpaqfranz 62.5 on Win64, freezed on Zpaq 7.15 for Win32
+(Windows) removed whenever possible, or replaced if possible, the binaries and sfx modules producing false positive detections
 
 CODE
-Built with Lazarus 4.2, compatible with Lazarus 3.x and 2.x
-Added Nemo actions for context menu integration in Cinnamon based Desktop Environments, in (peazip)res/share/batch/freedesktop_integration
+Fixed 7z alias always applied for list tasks
+Fixed moving files inside encrypted archives
 
 FILE MANAGER
-Added Documents directory to default Bookmarks
-Added Search function to Options > Settings screen, to quickly find option groups and most used settings
-File browser was updated introducing dynamic virtual mode for the ListView component, boosting performances when browsing directories and archives containing a very large number of items (or using flat view on a very large number of items)
- performances gains depend on the widgetset: opening a zip archive containing 25K items in the root directory is now over x6 faster on Windows, over x30 faster on macOS, near to x2 faster on Qt6 (which is the fastest widgetset in non-virtual mode), negligible / variable impact on GTK2 and GTK3
- virtual mode is dynamically enabled and disabled over a threshold number of items displayed at once
-  this value and can be set (or virtual mode can be deactivated) from Options > Settings, Performances group
-  the default value depends on the widgetset: 8K for Windows, Always for macOS (which has biggest performances gain), 16K for Qt6 (most efficient in classic mode), disabled for other widgetsets
-  (macOS) due to current limitation of the implementation on the Cocoa widgetset, the virtual mode should either be always on (Always, default) or off (No)
- virtual mode currently introduces some limitations in the archive browser, mainly:
-  disable showing exe icons and images thubnails (Windows, browsing the filesystem)
-  disable dynamic content filter typing in the address bar
-  disable item rename with mouse click, rename is only reached from F2 or from menu
- various other minor performances improvements
-Fixes
- Sizes of multipart archives are now reported correctly in the progress screen
-Improved archive pre-parsing
- if the archive content exceeds the limitations of the current browser optimization level, it is applied an alternative quick pre-parsing procedure which can reconcile most of the common issues which can be found in archive's table of content
-Option "Keep password/keyfile for current session" is now unchecked by default, in this way password/keyfile is automatically re-set each time a new archive in accessed, as in most other archive managers
-Toggle "Show hidden files (in the filesystem)" moved from settings to main menu, Organize for ease of use
- keyboard shortcut Ctrl+. or Command+. on macOS
-(BSD, Linux) Added alternative icons (48px and svg) for system integration in (peazip)res/share/batch/freedesktop_integration/alternative-icons
-(BSD, Linux, macOS) PeaZip now automatically check if rar binary is available in the system, to auto enable creation of RAR files
-(BSD, Linux, macOS) Status bar hint box in file browser and archiving/extraction screens now reports free disk space, and % on total disk space
+Updated translations
 
 EXTRACTION and ARCHIVING
-Added option to limit the number of threads for Zpaq, in Advanced tab of archive creation screen
-Updated compression pre-sets (reached from dropdown menu on the right of Add button)
 
 INSTALLERS
-
+All packages now contains sfx modules to create self-extracting archives to be used on Windows and Linux systems
 
 242 file extensions supported
 
@@ -257,9 +232,9 @@ of tprocess works without requiring workarounds used in 5.8/5.9 releases.
 --------------------------------------------------------------------------------
 Zpaq support limitations
 
-1 - Browsing of .zpaq archives is currently possible only in f6flat mode due to
-PeaZip browser frontent limitations
-2 - Partial extraction is not implemented in PeaZip extraction frontent as it is
+1 - Browsing of .zpaq archives is currently possible only in flat mode (f6) due
+to PeaZip browser frontend implementation
+2 - Partial extraction is not implemented in PeaZip extraction frontend as it is
 supported only for absolute paths by design of the format/backend
 
 --------------------------------------------------------------------------------
@@ -4255,7 +4230,6 @@ type
       procedure ImageAddress7MouseEnter(Sender: TObject);
       procedure ImageAddress7MouseLeave(Sender: TObject);
       procedure ImageAddressClick(Sender: TObject);
-      procedure ImageFlatClick(Sender: TObject);
       procedure ImageInfoArchive3Click(Sender: TObject);
       procedure ImageInfoArchive4Click(Sender: TObject);
       procedure ImageInfoArchive5Click(Sender: TObject);
@@ -5573,8 +5547,6 @@ type
       procedure tbtemperatureChange(Sender: TObject);
       procedure TrayIcon1Click(Sender: TObject);
       procedure TrayIcon1DblClick(Sender: TObject);
-      procedure TreeView1ContextPopup(Sender: TObject; MousePos: TPoint;
-        var Handled: Boolean);
       procedure TreeView1MouseDown(Sender: TObject; Button: TMouseButton;
         Shift: TShiftState; X, Y: Integer);
       procedure TreeView1MouseEnter(Sender: TObject);
@@ -5794,7 +5766,7 @@ const
   WS_EX_LAYERED = $80000;
   LWA_ALPHA     = $2;
   PEAZIPVERSION = '10.6';
-  PEAZIPREVISION= '.0';
+  PEAZIPREVISION= '.1';
   SPECEXTCONST  = '001 bat exe htm html msi r01 z01';
   {$IFDEF MSWINDOWS}
   SECEXTCONST   = 'exe cmd msi bat ps1 vbs reg';
@@ -5868,7 +5840,11 @@ const
   EXEEXT        = '.exe';
   UNRARNAME     = 'unrar';
   APPLICATION2  = '7z 25.01 (LGPL, Igor Pavlov), and Tino Reichardt sfx modules and codecs 24.09-v1.5.7-R1 (LGPL)';
-  APPLICATION3  = 'PAQ8F/JD/L/O, LPAQ1/5/8, Zpaqfranz 61.6 [Matt Mahoney et al. (GPL), Franco Corbelli (Mit)]';
+  {$IFDEF WIN64}
+  APPLICATION3  = 'PAQ8F/JD/L/O, LPAQ1/5/8, Zpaqfranz 62.5 [Matt Mahoney et al. (GPL), Franco Corbelli (Mit)]';
+  {$ELSE}
+  APPLICATION3  = 'PAQ8F/JD/L/O, LPAQ1/5/8, Zpaq 7.15 [Matt Mahoney et al. (GPL)]';
+  {$ENDIF}
   APPLICATION4  = 'Strip (GPL, GNU binutils), UPX 3.95 (GPL, Markus F.X.J. Oberhumer, Laszlo Molnar and John F. Reiser)';
   APPLICATION5  = 'QUAD 1.12 (LGPL) / BALZ 1.15 (Public Domain), BCM 1.0 (Public Domain) (Ilia Muraviev)';
   APPLICATION6  = 'UNACEV2.DLL 2.6.0.0 (royalty-free UNACEV2.DLL license, ACE Compression Software)';
@@ -11442,7 +11418,8 @@ ComboBoxArchiveSolid.Items.Strings[0]:=txt_nonsolid;
 ComboBoxArchiveSolid.Items.Strings[18]:=txt_solid;
 ComboBoxArchiveSolid.Items.Strings[19]:=txt_solid_extension;
 RadioGroupArchive.Items.Strings[0]:=txt_console;
-RadioGroupArchive.Items.Strings[1]:=txt_gui;
+RadioGroupArchive.Items.Strings[1]:=txt_console+' (Linux)';
+RadioGroupArchive.Items.Strings[2]:=txt_gui;
 ComboBoxArchiveCustom.Items.Strings[0]:=txt_pio;
 ComboBoxArchiveCustom.Items.Strings[1]:=txt_poi;
 ComboBoxArchiveCustom.Items.Strings[2]:=txt_ipo;
@@ -28512,7 +28489,7 @@ var
 begin
 result:=-1;
 in_param:=stringdelim(escapefilename((Form_peach.EditOpenIn.Text),desk_env));
-if fun='UN7Z' then exe_name:='7z';
+if fun='UN7Z' then exe_name:=alias7z;
 bin_name:=stringdelim(escapefilename(binpath,desk_env)+exe_name+DirectorySeparator+exe_name+EXEEXT);
 if sys7zlin>0 then bin_name:=exe_name+EXEEXT;
 pw:=FormPW.EditUn7zaPW.Text;
@@ -40105,103 +40082,87 @@ case hs of
 'EA347EE06B5148CCD97451E21FCACB8D9603F395ABAE411915D24D23E0B803C3', //macos Intel x86_64
 'BF8C97ADF1F169D06B80F44BAE94B0BFA080166BF95FC722EBEDD0FD8D2C5FA0', //win32
 '1419D5630187B1F56B36A1985613009F726B21E91B7F2D9D5A8DD4028C8AE1C3', //win64
+'353A3F6D7CBD06C6F25589DF00B40F363E9F597C4EDC4AD782F6D6B21F297F09', //7z\7z.sfx
+'5F5A7F958C8A9CDBF43A8135670A8E389050B5AEB0C0325300F6C08E640AA24B', //7z\7zCon.sfx
+'C29701887677ADC82AAF3F2C55432007B3228F5D05EC3B932E08BFC3ED1A7159', //7z\7zCon.linux.sfx
+'4F00384CFC55BBE91C3E2EA9A2A94F63DE5CCBB8360141DF0E4C4AEF30FBD383', //arc\arc-tiny.linux.sfx freeze
+'1229A21E326612DE63CB6F7B5B871DA2913B9C3E52475763AF5FEE7AC785022A', //arc\arc-tiny.sfx freeze
+'DF9EF81163FF5C9390F2680AFF22148E623AF6AC8713612625ED3D2168D2F56B', //arc\freearc.sfx freeze
+'2143076C94FC6838E2C705E4AC8CFA7F1B9E8B30C247A3AB44707744D2E3209B', //arc\freearc-installer.sfx freeze
+'38B6FB72A5BC35B62D89CA835D0A9A719734FBD9F79683C8773156A4A43FE34B', //arc\freearc-tiny.sfx freeze
 {$IFDEF MSWINDOWS}
-'9361847CC76AC58B53D0321ABA4607E4D93F6D8C5E11B1FC054B7236C2C87BCA',//Configure PeaZip 32 and 64 bit 10.3+
-'29CABD1CD01C09A29C48FA45F347F7673D27DDC61741279669CAB5BC56038B12',//dragdropfilesdll.dll 32 bit 10.6+
-'E4ACD142D36A3A16532C85C9A7CCD50F9ABC25721FA35706B16F6CEEC565B44C',//dragdropfilesdll.dll 64 bit 10.6+
-'4CD7D776C686427226A151789D2D61F0B2ED2C392148CC4E69C0238362FAFECF',//7z 25.01 64 bit
-'5BD20FB38499D95C39594F41D4781B6181B3304B7F1F4D06B0182F514E7EAA74',//7z\7z.dll
-'D04963D89A04646EE23635AC0277FA772DDF4C825B4C8E188A1A3275ECBFC77E',//7z\7z.sfx
-'CE6CD663D523BA0ACFE4EA6384982A4B0E5C7C36E4E9031059AE656BF5D59FEC',//7z\7zCon.sfx
-'B36B1BE0A3C329675AF4EECE3193F08CF343EDE57A6933033BF6004A50AB2A65',//arc 0.67
-'F31FCF56B866DAA87B746DB5352AA6A557CBB60C590A27676AF66256BCC2E2EA',//balz 1.15
-'586CAD02BDEC4E7278A8C797FEC0A6275499086497CA12461DC85CAAF83BD15A',//bcm 1.0 64 bit
-'B7A78E7B814B08CE0E3B6FF6ECEEAC13E6F02E0EFC5994E53AD000D9B99A3DCE',//brotli 64 bit
-'FE32FC0FCE51ED295A367B8829B7B29F0E755F52C1C5AD23681A97A673CCBDD7',//lpaq1
-'6374D2FA4AB190A39AA6459B54BC6C4FCB0381E5822628988C17B28C8BE7554D',//lpaq5
-'52674DE2E06ECC07AE9C4101DE73203BB04A916B42EF2A4B71F403294441B227',//lpaq8
-'14500A21A2AF760A648D100D93A109E28D82713851149490D9D32CB45005C112',//paq8f
-'254C4714B672C51F0FDC2121AC17DAAA13A4A57DD680BB3126492A3CE96BF9BE',//paq8jd
-'9A1C9C11FE5EE5DA84671E1A3E798293A44A817F25DFB907A8F78CC7FF227EB1',//paq8l
-'C6CBCF5CF508FF8010313A1A251350E31A6BFADF217F0420D1CC32A394844B32',//paq8o
-'087401A585B096411272CCBEC9CEE1C40FCD22A7D16A8832023700D288BE0D24',//quad 1.12
-'B4EBE301E77A5B6A40E71776B921EFDB639BDC9011D2EF5A137DE9FA6F57E51E',//strip
-'8ABB49B815A2F57E22F21967B9059DD3D4A22D75C8460AE893FF7FC5D30CFEC5',//unace
-'E13A75A2936DB0E8BE3C5B72D19E0E9C6AB27BC37933490E2D847E189DBCA5EF',//unrar 5.21
-'24624A9D3786D7BA93575383EDF694505453AF59B39B0463260A75C6344D0AE7',//upx 3.95 64 bit
-'E32DBE6519F9AB2CF2647C2CDAC01FD0E9D8432B3E3B5DB41B49A284A62C8CAA',//zpaqfranz 61.6 64 bit
-'E86912B9DBCD3385D6E52F744A36DBDE5BD0A5E94851E39EB87023506FBA1521',//zstd 1.5.7 64 bit
-'6CC2C440FA15884D48173C8E818FBB8DE58119E0E6A4DF560191FE859AFA9CB1',//7z\7zS2.sfx
-'9630D933056A50D1B9160AB3F900A9562DE1F4AE5242E8C2FE01D408ED0E2654',//7z\7zS2con.sfx
-'1DD1615A327096181BDC5B2E3BE440DC67BD8D4536621150E26E823609832C92',//7z\7zSD.sfx
-'4F00384CFC55BBE91C3E2EA9A2A94F63DE5CCBB8360141DF0E4C4AEF30FBD383',//arc\arc-tiny.linux.sfx
-'1229A21E326612DE63CB6F7B5B871DA2913B9C3E52475763AF5FEE7AC785022A',//arc\arc-tiny.sfx
-'17A9FFDF381F7A9F6CDFC85B157FC6CF80CD4B45ED8AD43EDAC73008923501A0',//arc\facompress.dll
-'7EEB2C50920E30544E2F180B0C39488501372A8F8BD8393BCB095353E9114CDE',//arc\facompress_mt.dll
-'2143076C94FC6838E2C705E4AC8CFA7F1B9E8B30C247A3AB44707744D2E3209B',//arc\freearc-installer.sfx
-'2845A5E7050C4D73BFFCF8EAFEB14F618E3A588DED011A6E525EF690F6844D5C',//arc\freearc-tiny.sfx
-'63DAF510E6E2053FB1DA7AB7BD9BB22F8C3A04A058B9510CAE29D76F74F8CA1A',//arc\freearc.sfx
-'C9D28800E740A1569AEC8FE27DF10EF186D883F94CEC15A5C228826B45A24F9D',//unace\UNACEV2.DLL
-'EFF4866A407D876F722068B2BBF77DFA271AD828B090BC7EC735237AB6BB33F4',//7z\Codecs\brotli.dll
-'41B3042C2AD45A6645E34B1EA587E024A0B8721980676EC5FB7CB4763E25004D',//7z\Codecs\flzma2.dll
-'22365EB170AF99EE72881D099EFF996F2DFAAA5FA6642AEA58C5094CC7CD8E97',//7z\Codecs\lizard.dll
-'F23791027EAAB2B6DAAAB1F4A3F31E8A5AFD2340FAC0311D1517699BE1EAC1B2',//7z\Codecs\lz4.dll
-'3CD81FFE67E4C61FFD7861166841A35FBF8481415319F439E8B2EB09E1339144',//7z\Codecs\lz5.dll
-'818E8EA81319B719DAA09E373132EEF287B7C8730500C07FCA9D1D3C9E92F9ED'//7z\Codecs\zstd.dll
+'9361847CC76AC58B53D0321ABA4607E4D93F6D8C5E11B1FC054B7236C2C87BCA', //Configure PeaZip 32 and 64 bit 10.3+
+'29CABD1CD01C09A29C48FA45F347F7673D27DDC61741279669CAB5BC56038B12', //dragdropfilesdll.dll 32 bit 10.6+
+'E4ACD142D36A3A16532C85C9A7CCD50F9ABC25721FA35706B16F6CEEC565B44C', //dragdropfilesdll.dll 64 bit 10.6+
+'4CD7D776C686427226A151789D2D61F0B2ED2C392148CC4E69C0238362FAFECF', //7z 25.01 64 bit
+'5BD20FB38499D95C39594F41D4781B6181B3304B7F1F4D06B0182F514E7EAA74', //7z\7z.dll
+'EFF4866A407D876F722068B2BBF77DFA271AD828B090BC7EC735237AB6BB33F4', //7z\Codecs\brotli.dll
+'41B3042C2AD45A6645E34B1EA587E024A0B8721980676EC5FB7CB4763E25004D', //7z\Codecs\flzma2.dll
+'22365EB170AF99EE72881D099EFF996F2DFAAA5FA6642AEA58C5094CC7CD8E97', //7z\Codecs\lizard.dll
+'F23791027EAAB2B6DAAAB1F4A3F31E8A5AFD2340FAC0311D1517699BE1EAC1B2', //7z\Codecs\lz4.dll
+'3CD81FFE67E4C61FFD7861166841A35FBF8481415319F439E8B2EB09E1339144', //7z\Codecs\lz5.dll
+'818E8EA81319B719DAA09E373132EEF287B7C8730500C07FCA9D1D3C9E92F9ED', //7z\Codecs\zstd.dll
+'B7A78E7B814B08CE0E3B6FF6ECEEAC13E6F02E0EFC5994E53AD000D9B99A3DCE', //brotli 64 bit
+'17DBEAA8C773B672DBCC60332CBED5A98E94B8156026B2001B108AFFFE30D602', //zpaqfranz 62.5 64 bit
+'E86912B9DBCD3385D6E52F744A36DBDE5BD0A5E94851E39EB87023506FBA1521', //zstd 1.5.7 64 bit
+'B36B1BE0A3C329675AF4EECE3193F08CF343EDE57A6933033BF6004A50AB2A65', //arc 0.67 freeze
+'17A9FFDF381F7A9F6CDFC85B157FC6CF80CD4B45ED8AD43EDAC73008923501A0', //arc\facompress.dll freeze
+'7EEB2C50920E30544E2F180B0C39488501372A8F8BD8393BCB095353E9114CDE', //arc\facompress_mt.dll freeze
+'586CAD02BDEC4E7278A8C797FEC0A6275499086497CA12461DC85CAAF83BD15A', //bcm 1.0 64 bit freeze
+//additional
+'F31FCF56B866DAA87B746DB5352AA6A557CBB60C590A27676AF66256BCC2E2EA', //balz 1.15 freeze
+'FE32FC0FCE51ED295A367B8829B7B29F0E755F52C1C5AD23681A97A673CCBDD7', //lpaq1 freeze
+'6374D2FA4AB190A39AA6459B54BC6C4FCB0381E5822628988C17B28C8BE7554D', //lpaq5 freeze
+'52674DE2E06ECC07AE9C4101DE73203BB04A916B42EF2A4B71F403294441B227', //lpaq8 freeze
+'14500A21A2AF760A648D100D93A109E28D82713851149490D9D32CB45005C112', //paq8f freeze
+'254C4714B672C51F0FDC2121AC17DAAA13A4A57DD680BB3126492A3CE96BF9BE', //paq8jd freeze
+'9A1C9C11FE5EE5DA84671E1A3E798293A44A817F25DFB907A8F78CC7FF227EB1', //paq8l freeze
+'C6CBCF5CF508FF8010313A1A251350E31A6BFADF217F0420D1CC32A394844B32', //paq8o freeze
+'087401A585B096411272CCBEC9CEE1C40FCD22A7D16A8832023700D288BE0D24', //quad 1.12 freeze
+'B4EBE301E77A5B6A40E71776B921EFDB639BDC9011D2EF5A137DE9FA6F57E51E', //strip freeze
+'24624A9D3786D7BA93575383EDF694505453AF59B39B0463260A75C6344D0AE7', //upx 3.95 64 bit freeze
+'8ABB49B815A2F57E22F21967B9059DD3D4A22D75C8460AE893FF7FC5D30CFEC5', //unace freeze
+'C9D28800E740A1569AEC8FE27DF10EF186D883F94CEC15A5C228826B45A24F9D', //unace\UNACEV2.DLL freeze
+'E13A75A2936DB0E8BE3C5B72D19E0E9C6AB27BC37933490E2D847E189DBCA5EF'  //unrar 5.21 freeze
 {$IFDEF WIN32}
 ,'B1E06A424F2E7E3B9A5BF676665BD14BC39785FBC48CFDCC54AB63C574DE0B01',//7z 25.01 32 bit
-'51075AF59F6696D5DC5446BA39FABFD0022628CDCFA41C80E7CB66E3BF4EE55D',//7z\7z.dll 32 bit
-'C71B1970011AECF34946094100060324D336D18DB4289737E213A4BA9E4CE06D',//bcm 1.0 32 bit
-'54DDCCAE5A5E06FEC6177280C1E12CAEC61EF9B3A0C4338C6E8394234551C02B',//brotli 32 bit
-'D634CDE09D1AA1320A1D4C589D35D306F8350129FAF225B2BCA394128C2C4442',//upx 3.95 32 bit
-'B88CBAD599C2C8BECDD563500D8CB440B3241502653F0956C5DEF736AFFC240D',//zpaqfranz 61.6 32 bit
-'7C227B39E3E854955C9706F55DE838863D2B2BA92EB2CCC75925EE44078EA0B8',//zstd 1.5.7 32 bit
-'DE7C092D25743CC718EEABAB79229A367454C11F61D0E4E67267BAFF9C146D59',//7z\Codecs\brotli.dll 32 bit
-'9FE64E857F6C13E1692BA8451153BCBF78E5435AD19225B18247B0290C52224F',//7z\Codecs\flzma2.dll 32 bit
-'D4A3DC9FA557650989955965DD6AD33183B13853CECE14429CE327D11335130A',//7z\Codecs\lizard.dll 32 bit
-'8BA3FE859A582A4A751FD8A393CCAC52EC0D0113CFEDCC689A229292DA13015E',//7z\Codecs\lz4.dll 32 bit
-'021F7E910BCD1C3BE33ACE1B879BF8CFB67A3E8E1FF6062D2AB41DF0BD1D03A9',//7z\Codecs\lz5.dll 32 bit
-'BCD7DE6A169298F84D0BAFCEB8203ABD01B73277F83B48BA4AC7E13797AF12AC'//7z\Codecs\zstd.dll 32 bit
+'51075AF59F6696D5DC5446BA39FABFD0022628CDCFA41C80E7CB66E3BF4EE55D', //7z\7z.dll
+'A0F127A70943B0262060498C1723C795A8E2980F1ACF0C42EE8C1DAE72AE54B5', //zpaq 7.15 freeze
+'D634CDE09D1AA1320A1D4C589D35D306F8350129FAF225B2BCA394128C2C4442'  //upx 3.95 32 bit freeze
 {$ENDIF}
 {$ELSE}
 {$IFDEF DARWIN}
-'5C2FD36F00A66F7787DCF1BADD977D44A02B50063FE5678E1F19FF64797432ED',//7z 25.01
-'632E0E22ECA9DF186EA3C8F101CB49E09B09920707ED181507B0D83D38888C65',//cielavenir/p7zip 24.09.1
-'32C38FD7A0D6B1294781705942F6A7839111FE352E2BF4EBF1A25934ABDF0B7D',//brotli aarch64
-'AE4389AC290F38B42CB02D744924DECC6215F6B546B8B257FFA2920C3ABA0C3F',//zpaqfranz 61.2 aarch64
-'3796CE883E03B33B00F54F229992A768E302B9C7B231B230EAC2A6F70B99EE03',//zstd aarch64
-'9A4524554B9A966EAA5A13B7127B02A635C94CDEB101F30A1BA54BC99C977B28',//brotli x86_64
-'9171E728276D517CF22F687092F4201A4437A917C0CBFFA9078E3F26A029B007',//zpaqfranz 61.2 x86_64
-'44B6A7E6988D5AB1F3829428FA8D5A61E54FAC46D86D6DAAFA84058449498321',//zstd x86_64
-'40B68816D275792058BDC1CD42D794690E51F8047405CE8B17746EAC4CC61E1A',//lib/libzstd.1.dylib
+'5C2FD36F00A66F7787DCF1BADD977D44A02B50063FE5678E1F19FF64797432ED', //7z 25.01
+'632E0E22ECA9DF186EA3C8F101CB49E09B09920707ED181507B0D83D38888C65', //cielavenir/p7zip 24.09.1
+'32C38FD7A0D6B1294781705942F6A7839111FE352E2BF4EBF1A25934ABDF0B7D', //brotli aarch64
+'AE4389AC290F38B42CB02D744924DECC6215F6B546B8B257FFA2920C3ABA0C3F', //zpaqfranz 61.2 aarch64
+'3796CE883E03B33B00F54F229992A768E302B9C7B231B230EAC2A6F70B99EE03', //zstd aarch64
+'9A4524554B9A966EAA5A13B7127B02A635C94CDEB101F30A1BA54BC99C977B28', //brotli x86_64
+'9171E728276D517CF22F687092F4201A4437A917C0CBFFA9078E3F26A029B007', //zpaqfranz 61.2 x86_64
+'44B6A7E6988D5AB1F3829428FA8D5A61E54FAC46D86D6DAAFA84058449498321', //zstd x86_64
+'40B68816D275792058BDC1CD42D794690E51F8047405CE8B17746EAC4CC61E1A', //lib/libzstd.1.dylib
 {$ENDIF}
 {$IFDEF FREEBSD}
-'C1108D01249D960BE54AC517AD2267D2D8C8662ABC6101A48C75AEC4FCE1174B',//7z 21.07
-'90A625C12427C4C2F27AB05A353978B24FF943CA0DC247CD5A2F8038260E29FB',//brotli x86_64
-'989DFF2DC096C4D5A88B6850120038FFE095D18CFF3206D15F82FD63FE8D1B8C',//zstd x86_64
+'C1108D01249D960BE54AC517AD2267D2D8C8662ABC6101A48C75AEC4FCE1174B', //7z 21.07
+'90A625C12427C4C2F27AB05A353978B24FF943CA0DC247CD5A2F8038260E29FB', //brotli x86_64
+'989DFF2DC096C4D5A88B6850120038FFE095D18CFF3206D15F82FD63FE8D1B8C', //zstd x86_64
 {$ENDIF}
 //x86_64
-'5EF56FBEF44A9B618036A90039D4A709A18E0950D7939112114F5C43674C5422',//7z 25.01
-'E132237815C07A2D006DCC60FF57EE65528EBB696C3C06C866991D6BF3AF31AF',//cielavenir/p7zip 24.09.1
-'2BA0605AD4569BAA83F050ADED9C9EE52F02D9A0BDDAC37B1AEADFFD4D960F76',//arc (x86)
-'4B69F1EAA187CA2A9733CEF266FE84052EA9DB2DCBC177A2D442466D9AD28CC2',//bcm
-'4DE1C1A73B5467D2AAC4950BA4EF33C07C3DB46460F25BE2C4302EEB2CC3C21D',//brotli
-'3FC1609793097868951CF1FD3179826301F7C7CE0204BD82159E0892B4786765',//lpaq8 (x86)
-'7206FA4EB8C0110EC845CE2BA6FB42FEA1BA755CC6E3FA0DD7620050D6F5A8DF',//paq8o (x86)
-'B97D182D9718FD7FD608FA2CE3375A15F479C73415B51999DCB5FEA72646F53C',//upx
-'1D53F25BFA66AC6333661C6772D9EB9F0FB582D4267001539810876C5A203550',//zpaqfranz 59.8
-'82A75EA32C8B3B66083BB8C6CAED927656978C7B38E9420C13757C0BA56DFB8C',//zstd 1.5.7
-'1C4BAADFA986CF8186731C54E892F315C9D4582496C3A075324BA345619F4C36',//7z/codecs/Rar.so
-'8D0FC5658A81AA86188C9F8A94CA6ABBCDEDEE89D039274228E012BF1F3A9E41',//7z/7z.sfx
-'C29701887677ADC82AAF3F2C55432007B3228F5D05EC3B932E08BFC3ED1A7159',//7z/7zCon.sfx
-'4F00384CFC55BBE91C3E2EA9A2A94F63DE5CCBB8360141DF0E4C4AEF30FBD383',//arc/arc-tiny.linux.sfx
-'DF9EF81163FF5C9390F2680AFF22148E623AF6AC8713612625ED3D2168D2F56B',//arc/freearc.sfx
-'84BCB49365242AE00C2F2AE5EE1F30D87FD356212DD8E9A78451EEEC61DEE256',//arc/freearc-installer.sfx
-'38B6FB72A5BC35B62D89CA835D0A9A719734FBD9F79683C8773156A4A43FE34B',//arc/freearc-tiny.sfx
+'5EF56FBEF44A9B618036A90039D4A709A18E0950D7939112114F5C43674C5422', //7z 25.01
+'E132237815C07A2D006DCC60FF57EE65528EBB696C3C06C866991D6BF3AF31AF', //cielavenir/p7zip 24.09.1
+'2BA0605AD4569BAA83F050ADED9C9EE52F02D9A0BDDAC37B1AEADFFD4D960F76', //arc (x86)
+'4B69F1EAA187CA2A9733CEF266FE84052EA9DB2DCBC177A2D442466D9AD28CC2', //bcm
+'4DE1C1A73B5467D2AAC4950BA4EF33C07C3DB46460F25BE2C4302EEB2CC3C21D', //brotli
+'3FC1609793097868951CF1FD3179826301F7C7CE0204BD82159E0892B4786765', //lpaq8 (x86)
+'7206FA4EB8C0110EC845CE2BA6FB42FEA1BA755CC6E3FA0DD7620050D6F5A8DF', //paq8o (x86)
+'B97D182D9718FD7FD608FA2CE3375A15F479C73415B51999DCB5FEA72646F53C', //upx
+'1D53F25BFA66AC6333661C6772D9EB9F0FB582D4267001539810876C5A203550', //zpaqfranz 59.8
+'82A75EA32C8B3B66083BB8C6CAED927656978C7B38E9420C13757C0BA56DFB8C', //zstd 1.5.7
+'1C4BAADFA986CF8186731C54E892F315C9D4582496C3A075324BA345619F4C36', //7z/codecs/Rar.so
 //aarch64
-'17595CA8613132898C870558C018C4AB4B89F1BDA5E23D227EE7925062D5728E',//7z aarch64 25.01
-'32AA36A75D2151B6A6489E4ED735B5F133AA9DEE5D1F9332966627570D0C7A8E',//brotli aarch64
-'A7FA062F4AF7B56717758972D4CCE140EDA199CAC6A7A8A091D0FECD05950DA9'//zstd 1.5.7 aarch64
+'17595CA8613132898C870558C018C4AB4B89F1BDA5E23D227EE7925062D5728E', //7z aarch64 25.01
+'32AA36A75D2151B6A6489E4ED735B5F133AA9DEE5D1F9332966627570D0C7A8E', //brotli aarch64
+'A7FA062F4AF7B56717758972D4CCE140EDA199CAC6A7A8A091D0FECD05950DA9'  //zstd 1.5.7 aarch64
 {$ENDIF}
    : result:=true;
    end;
@@ -40239,20 +40200,18 @@ checkchash((escapefilename(binpath,desk_env)+'paq'+DirectorySeparator+'paq8jd'+E
 checkchash((escapefilename(binpath,desk_env)+'paq'+DirectorySeparator+'paq8l'+EXEEXT),s,fexe);
 {$ENDIF}
 //libraries
-{$IFDEF MSWINDOWS}
-checkchash((escapefilename(executable_path,desk_env)+'dragdropfilesdll.dll'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'7z.sfx'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'7zCon.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'7zS2.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'7zS2con.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'7zSD.sfx'),s,fexe);
+checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'7zCon.linux.sfx'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'arc-tiny.linux.sfx'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'arc-tiny.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'facompress.dll'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'facompress_mt.dll'),s,fexe);
+checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'freearc.sfx'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'freearc-installer.sfx'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'freearc-tiny.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'freearc.sfx'),s,fexe);
+{$IFDEF MSWINDOWS}
+checkchash((escapefilename(executable_path,desk_env)+'dragdropfilesdll.dll'),s,fexe);
+checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'facompress.dll'),s,fexe);
+checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'facompress_mt.dll'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'unace'+DirectorySeparator+'UNACEV2.DLL'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'7z.dll'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'Codecs'+DirectorySeparator+'brotli.dll'),s,fexe);
@@ -40265,12 +40224,6 @@ checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'Codecs'+Di
 {$IFDEF DARWIN}
 checkchash((escapefilename(binpath,desk_env)+'lib'+DirectorySeparator+'libzstd.1.dylib'),s,fexe);
 {$ENDIF}
-checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'7z.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'7zCon.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'arc-tiny.linux.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'freearc-installer.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'freearc-tiny.sfx'),s,fexe);
-checkchash((escapefilename(binpath,desk_env)+'arc'+DirectorySeparator+'freearc.sfx'),s,fexe);
 checkchash((escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+'codecs'+DirectorySeparator+'Rar.so'),s,fexe);
 {$ENDIF}
 //results
@@ -40511,10 +40464,11 @@ case Form_peach.ComboBoxArchive1.ItemIndex of
 if (Form_peach.CheckBoxArchive6.State=cbChecked) then
    begin
    sfx_option:='-sfx';
-   if Form_peach.RadioGroupArchive.ItemIndex=1 then sfx_option:=sfx_option+'7z.sfx';
-   if Form_peach.RadioGroupArchive.ItemIndex=2 then sfx_option:=sfx_option+'7zS2.sfx';
-   if Form_peach.RadioGroupArchive.ItemIndex=3 then sfx_option:=sfx_option+'7zS2con.sfx';
-   if Form_peach.RadioGroupArchive.ItemIndex=4 then sfx_option:=sfx_option+'7zSD.sfx';
+   case Form_peach.RadioGroupArchive.ItemIndex of
+      0: sfx_option:=sfx_option+'7zCon.sfx';
+      1: sfx_option:=sfx_option+'7zCon.linux.sfx';
+      2: sfx_option:=sfx_option+'7z.sfx';
+   end;
    end
 else sfx_option:='';
 //archive type
@@ -42078,6 +42032,13 @@ if Form_peach.ComboBoxUPX.ItemIndex=10 then compression_level:='--best'
 else compression_level:='-'+inttostr((Form_peach.ComboBoxUPX.ItemIndex));
 get_in_param(in_param,sel);
 outname:=escapefilename(Form_peach.StringGrid1.Cells[8,1],desk_env);
+{$IFDEF MSWINDOWS}
+if not(FileExists(binpath+'upx'+DirectorySeparator+'upx.exe')) then
+   begin
+   cl:='';
+   exit;
+   end;
+{$ENDIF}
 bin_name:=stringdelim(escapefilename(binpath,desk_env)+'upx'+DirectorySeparator+'upx'+EXEEXT);
 if sys7zlin>1 then bin_name:='upx'+EXEEXT;
 cl:=bin_name+' '+compression_level;
@@ -42111,6 +42072,9 @@ if Form_peach.CheckBoxUPX1.State=cbChecked then
    P.Options := [poWaitOnExit{$IFDEF MSWINDOWS}, poNoConsole{$ENDIF}];
    s:=P.Commandline;
    if validatecl(s)<>0 then begin pMessageWarningOK(txt_2_7_validatecl+' '+s); exit; end;
+   {$IFDEF MSWINDOWS}
+   if FileExists(binpath+'upx'+DirectorySeparator+'strip.exe') then
+   {$ENDIF}
    P.Execute;
    P.Free;
    end;
@@ -63392,11 +63356,7 @@ pmjd24.Visible:=false;
 pmjd25.Visible:=false;
 pmjd26.Visible:=false;
 pea.Visible:=false;
-{$IFDEF LINUX}
-Comboboxarcsfx.Itemindex:=0;
-{$ELSE}
-Comboboxarcsfx.Itemindex:=1;
-{$ENDIF}
+Comboboxarcsfx.Itemindex:=2;
 setsearchbar(showsearchbar);
 end;
 end;
@@ -69921,11 +69881,6 @@ begin
 jumpto('root');
 end;
 
-procedure TForm_peach.ImageFlatClick(Sender: TObject);
-begin
-
-end;
-
 procedure drag_addtolayout(FileNames:array of string);
 var
    i: integer;
@@ -74082,7 +74037,7 @@ end;
 
 procedure clickmoveto;
 var
-   s:ansistring;
+   s,s1:ansistring;
    rc,i,j:integer;
    namecollisionfound:boolean;
 begin
@@ -74122,11 +74077,15 @@ namecollisionfound:=false;
 for i:=1 to Form_peach.StringGridArchive.Rowcount-1 do
    for j:=1 to rc-1 do
       if Form_peach.StringGridList.Cells[16,j]='1' then
-         if Form_peach.StringGridArchive.Cells[12,i]=s+Form_peach.StringGridList.Cells[1,j] then
+         begin
+         s1:=Form_peach.StringGridList.Cells[1,j];
+         if s1[Length(s1)]='*' then SetLength(s1,length(s1)-2);
+         if Form_peach.StringGridArchive.Cells[12,i]=s+s1 then
             begin
             namecollisionfound:=true;
             break;
             end;
+         end;
 if namecollisionfound=true then
    if pMessageInfoYesNo(txt_6_9_overarch)=7 then exit;
 
@@ -74134,7 +74093,9 @@ for i:=1 to rc-1 do
    begin
    if Form_peach.StringGridList.Cells[16,i]='1' then
       begin
-      renamefileinarchive(Form_peach.StringGridList.Cells[12,i],s+Form_peach.StringGridList.Cells[1,i],true);
+      s1:=Form_peach.StringGridList.Cells[1,i];
+      if s1[Length(s1)]='*' then SetLength(s1,length(s1)-2);
+      renamefileinarchive(Form_peach.StringGridList.Cells[12,i],s+s1,true);
       Application.ProcessMessages;
       end;
    end;
@@ -77636,12 +77597,6 @@ procedure TForm_peach.TrayIcon1DblClick(Sender: TObject);
 begin
 TrayIcon1.visible:=false;
 Form_peach.visible:=true;
-end;
-
-procedure TForm_peach.TreeView1ContextPopup(Sender: TObject; MousePos: TPoint;
-  var Handled: Boolean);
-begin
-
 end;
 
 procedure dotreeviewaction(TargetNode : TTreeNode);
