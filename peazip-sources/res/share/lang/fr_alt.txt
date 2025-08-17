@@ -3,11 +3,11 @@ Français
 10.6
 Translated by: Jean-Michel Coinus
 Last rev. by: Jean-Michel Coinus
-Last rev.: 20250615
+Last rev.: 20250809
 
 === PeaZip text group ===
 
-txt_10_6_virtual: Dynamic virtual mode
+txt_10_6_virtual: Mode dynamique virtuel
 txt_10_5_fr: (rapport complet)
 txt_10_5_sectype: Confirmer l'exécution de ces types de fichier
 txt_10_5_checkmotw: Vérifier le fichier Zone.Identifier (marqueur MoTW)
@@ -121,7 +121,7 @@ txt_8_7_after: Après archivage/extraction
 txt_8_7_bintest: éléments testés.
 txt_8_7_csv: Séparateur CSV
 txt_8_7_hok: L'empreinte utilisée par PeaZip est conforme
-txt_8_7_mo: Définir les options du gestionnaire d'archives
+txt_8_7_mo: Options du gestionnaire d'archives
 txt_8_7_showhm: Ouvrir le menu contextuel des en-têtes de colonnes
 txt_8_7_showsearchbar: Afficher la barre de recherche
 txt_8_7_showsm: Ouvrir le style de menu
@@ -178,7 +178,7 @@ txt_8_0_defaultactionhint: Action par défaut du double-clic sur fichier dans Pe
 txt_8_0_defaultaction: Action par défaut (ouvrir, extraire automatiquement…)
 txt_8_0_enableextand: Activer le sous-menu "Extraire et ouvrir avec"
 txt_8_0_forcetyping: Requérir la saisie d'un mot de passe
-txt_8_0_setpwopt: Définir les options de mot de passe/fichier clé
+txt_8_0_setpwopt: Options de mot de passe/fichier clé
 txt_8_0_forcetypinghelp: Empêche de parcourir les archives cryptées lorsqu'elles sont chargées en arrière-plan dans la console. Ceci permet de créer des scripts qui ne pourront s'exécuter tant que le mot de passe n'a pas été saisi.
 txt_7_9_spacing: Espacement
 txt_7_9_zooming: Zoom
@@ -238,8 +238,8 @@ txt_7_4_locked: verrouillée
 txt_7_4_lockconfirm: Les archives verrouillées ne sont plus modifiables, la verrouiller ?
 txt_7_4_recover: Réparer l'archive
 txt_7_4_tcurr: Définir l'horodatage selon l'heure système actuelle
-txt_7_4_setarc: Définir les options d'archivage avancées
-txt_7_4_setext: Définir les options d'extraction avancées
+txt_7_4_setarc: Options d'archivage avancées
+txt_7_4_setext: Options d'extraction avancées
 txt_7_4_swzipx: Passer en extension zipx pour les archives ZIP Deflate
 txt_7_3_archiveerrors: [l'archive peut contenir des erreurs]
 txt_7_3_archiveerrorshint: L'archive est peut être invalide (données manquantes, corrompues ou non-standard). Il est possible de la tester aux fins d'informations détaillées. Si la table du contenu est cryptée, le mot de passe sera requis.

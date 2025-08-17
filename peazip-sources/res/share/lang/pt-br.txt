@@ -7,14 +7,14 @@ Last rev.: 20250327
 
 === PeaZip text group ===
 
-txt_10_6_virtual: Dynamic virtual mode
+txt_10_6_virtual: Modo virtual dinâmico
 txt_10_5_fr: (Relatório completo)
 txt_10_5_sectype: Pedir confirmação para a execução dos seguintes tipos de arquivo
 txt_10_5_checkmotw: Verificar Zone.Identifier (MoTW)
 txt_10_5_sectypewarning: Você quer executar este arquivo?
 txt_10_5_pathlock: Os itens neste caminho do arquivo não podem ser editados
 txt_10_5_type_description_rar: RAR: formato de arquivo proprietário, alta taxa de compressão, suportado por compressor externo
-txt_10_5_sh: Mostrar arquivos e pastas ocultos no sistema de arquivos
+txt_10_5_sh: Mostrar arquivos ocultos (no sistema de arquivos)
 txt_10_5_ntfsalt: Este formato é capaz de armazenar NTFS Alternate Data Stream, incluindo Mark of The Web
 txt_10_4_moving: (Movendo)
 txt_10_3_classic: Clássico
@@ -451,7 +451,7 @@ txt_5_0_resetpm: Você confirmar que quer restaurar Gerenciador de Senhas? Todas
 txt_5_0_enum: Enumerar conteúdos dos diretórios
 txt_5_0_music: Música
 txt_5_0_ps: Abrir PowerShell aqui
-txt_5_0_perf: Desempenho
+txt_5_0_perf: Desempenhos
 txt_5_0_pictures: Imagens
 txt_5_0_removeall: Remover Tudo
 txt_5_0_resetbookmarks: Restaurar Marcadores para o padrão? (Marcadores podem ser personalizados em Marcadores>Organizar)
@@ -760,7 +760,7 @@ txt_add_folder: Adicionar pasta
 txt_add_path: Adicionar diretório
 txt_add_tolayout: Adicionar arquivos e pastas selecionadas para um novo layout de arquivo
 txt_add_toarchive: Adicionar para o arquivo
-txt_add_tobookmarks: Adicionar para os favoritos
+txt_add_tobookmarks: Adicionar aos Marcadores
 txt_address_hint: Endereço: aceitar coringas ? para caractere e * para linhas, não precisa de delimitadores   " ou '
 txt_adv_filters: Filtros avançados
 txt_algo: Algoritmo
@@ -852,7 +852,7 @@ txt_custom_parameters: Parâmetros Personalizado
 txt_customsize: Tamanho personalizado
 txt_cut: Cortar
 txt_datetime: Data/hora
-txt_default: padrão
+txt_default: Padrão
 txt_default_compression: compressão padrão
 txt_default_format: Formato padrão
 txt_theme_default: Tema padrão
