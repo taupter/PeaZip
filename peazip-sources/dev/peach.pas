@@ -6610,19 +6610,19 @@ Form_peach.Labelabout1.caption:=APPMAIN+' '+txt_release+' '+PEAZIPVERSION+PEAZIP
         +langstrhint+char($0d)+char($0a)
         +char($0d)+char($0a)
         +txt_using+char($0d)+char($0a)
-        +APPLICATION1+char($0d)+char($0a)
-        +APPLICATION2+char($0d)+char($0a)
-        +APPLICATION3+char($0d)+char($0a)
-        +APPLICATION4+char($0d)+char($0a)
-        +APPLICATION5+char($0d)+char($0a)
-        +APPLICATION7+char($0d)+char($0a)
-        +APPLICATION9+char($0d)+char($0a)
-        +APPLICATION10+char($0d)+char($0a)
+        +APPLICATION_PEA+char($0d)+char($0a)
+        +APPLICATION_7Z+char($0d)+char($0a)
+        +APPLICATION_ZPAQ+char($0d)+char($0a)
+        +APPLICATION_STRIP+char($0d)+char($0a)
+        +APPLICATION_QUAD+char($0d)+char($0a)
+        +APPLICATION_FREEARC+char($0d)+char($0a)
+        +APPLICATION_BROTLI+char($0d)+char($0a)
+        +APPLICATION_ZSTD+char($0d)+char($0a)
         +char($0d)+char($0a)
         +'Plugin:'+char($0d)+char($0a)
         +'PeaZip Additional Formats Plugin (LGPLv3) - '+addformatspluginstatus+char($0d)+char($0a)
-        +APPLICATION6+' - '+unacepluginstatus+char($0d)+char($0a)
-        +APPLICATION8+' - '+unrar5pluginstatus+char($0d)+char($0a);
+        +APPLICATION_UNACE+' - '+unacepluginstatus+char($0d)+char($0a)
+        +APPLICATION_UNRAR+' - '+unrar5pluginstatus+char($0d)+char($0a);
 end;
 
 procedure setlabelpanel_options(var a: Tlabel);
