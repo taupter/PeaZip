@@ -1,4 +1,4 @@
-=== PeaZip language file ===
+﻿=== PeaZip language file ===
 German - Deutsch
 10.6
 Translated by: Vacon
