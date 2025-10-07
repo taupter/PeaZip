@@ -1,0 +1,3 @@
+[submodule "use/metadarkstyle"]
+	path = use/metadarkstyle
+	url = git@github.com:zamtmn/metadarkstyle.git
