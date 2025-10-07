@@ -194,7 +194,7 @@ uses
       List := FindAllFiles(GetCurrentDir, '*.lpi');
       List.Sort;
       for Result in List do
-        if not Result.Contains(DirectorySeparator + 'use' + DirectorySeparator) then
+        if not Result.Contains(DirectorySeparator + 'use' + DirectorySeparator) and not ContainsStr(Each, 'project_demo_lib') {$IFDEF UNIX}and not ContainsStr(Each, 'dragdropfilesdll'){$ENDIF} then
           BuildProject(Result);
     finally
       List.Free;
