@@ -3,22 +3,22 @@ Français
 10.7
 Traduit par: Drake4478
 Dernière version par: Drake4478
-Date du: 9.08.2025
+Date du: 18.10.2025
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
+txt_10_7_errload: Impossible d'afficher l'image
+txt_10_7_errfile: Fichier non trouvé
+txt_10_7_first: Premier
+txt_10_7_fit: Ajuster à l'écran
+txt_10_7_fith: Adapter à la hauteur de l'écran
+txt_10_7_fitw: Adapter à la largeur de l'écran
+txt_10_7_keep: Conserver les fichiers de sortie si l'extraction se termine par une erreur ou est annulée
+txt_10_7_next: Suivant
+txt_10_7_prev: Précédent
+txt_10_7_pwh: Mot de passe à partir du hachage
+txt_10_7_images: Afficher les images
+txt_10_7_thumbnails: Afficher les vignettes
 txt_10_6_virtual: Mode virtuel dynamique
 txt_10_5_fr: (rapport complet)
 txt_10_5_sectype: Demander confirmation pour exécuter les types de fichiers suivants
@@ -27,7 +27,7 @@ txt_10_5_sectypewarning: Voulez-vous exécuter ce fichier ?
 txt_10_5_pathlock: Les éléments dans ce chemin de l'archive ne peuvent pas être modifiés.
 txt_10_5_type_description_rar: RAR: format d'archive propriétaire, taux de compression élevé, pris en charge par un compresseur externe
 txt_10_5_sh: Afficher les fichiers et dossiers cachés dans le système de fichiers
-txt_10_5_ntfsalt: Ce format est capable de stocker des flux de données alternatifs NTFS, y compris le Marque du Web
+txt_10_5_ntfsalt: Ce format est capable de stocker des flux de données alternatifs NTFS, y compris le marque du Web
 txt_10_4_moving: (Déplacer)
 txt_10_3_classic: Classic
 txt_10_3_ascii: Il est recommandé d’utiliser uniquement des caractères ASCII dans les mots de passe pour le format d’archive actuel (lettres majuscules, chiffres et caractères spéciaux).
