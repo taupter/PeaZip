@@ -1,28 +1,28 @@
-﻿=== PeaZip language file ===
+=== PeaZip language file ===
 Български / Bulgarian
 10.7
 Превод: Любомир Симеонов
 Корекция: Живко Жеков
-Последна корекция: 20250620
+Последна корекция: 20251018
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
+txt_10_7_errload: Не може да покаже изображението
+txt_10_7_errfile: Файлът не е намерен
+txt_10_7_first: Първо
+txt_10_7_fit: Побиране в екрана
+txt_10_7_fith: Побиране по височина на екрана
+txt_10_7_fitw: Побиране по ширина на екрана
+txt_10_7_keep: Запази изходните файлове, ако извличането завърши с грешка или бъде отменено
+txt_10_7_next: Следващ
+txt_10_7_prev: Предишен
+txt_10_7_pwh: Парола от хеш
+txt_10_7_images: Преглед на изображения
+txt_10_7_thumbnails: Преглед на миниатюри
+txt_10_6_virtual: Динамичен виртуален режим
 txt_10_5_fr: (Пълен отчет)
 txt_10_5_sectype: Искай потвърждение за изпълнение на следните типове файлове
-txt_10_5_checkmotw: Проверъчна зона.Идентификатор (MoTW)
+txt_10_5_checkmotw: Проверочна зона.Идентификатор (MoTW)
 txt_10_5_sectypewarning: Ще стартирате ли този файл?
 txt_10_5_pathlock: Елементите в този път на архива не могат да бъдат редактирани
 txt_10_5_type_description_rar: RAR: Патентован архивен формат, високо съотношение на компресия, поддържан чрез външен компресор
@@ -886,7 +886,7 @@ txt_done: Готово
 txt_edit: Редактиране
 txt_elapsed: изминали:
 txt_error_emptycl: Празен команден ред!
-txt_encrypt: Шифриране
+txt_encrypt: Шифрирай
 txt_encrypted: шифрирано
 txt_encryption: Шифриране
 txt_note: Описание
