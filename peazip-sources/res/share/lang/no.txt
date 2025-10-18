@@ -3,22 +3,22 @@ Norwegian - Norsk
 10.7
 Oversatt av: Rune C. Akselsen, Arne Hanssen og Imre K. Eilertsen
 Sist rev. av: Arne Hanssen
-Sist revidert: 20250902
+Sist revidert: 20251018
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
+txt_10_7_errload: Kan ikke vise bilde
+txt_10_7_errfile: Fil ikke funnet
+txt_10_7_first: Først
+txt_10_7_fit: Tilpass skjerm
+txt_10_7_fith: Tilpass skjerm høyde
+txt_10_7_fitw: Tilpass skjerm bredde
+txt_10_7_keep: Behold utpakkede filer hvis utpakking ender med feil eller blir avbrudt
+txt_10_7_next: Neste
+txt_10_7_prev: Forrige
+txt_10_7_pwh: Passord fra hash
+txt_10_7_images: Vis bilder
+txt_10_7_thumbnails: Vis thumbnails
 txt_10_6_virtual: Dynamisk virtuell modus
 txt_10_5_fr: (full rapport)
 txt_10_5_sectype: Be om bekreftelse for å kjøre følgende filtyper
