@@ -1,12 +1,24 @@
 ﻿=== PeaZip language file ===
 Korean - 한국어
-10.6
+10.7
 번역자: Sleepy, EhangB
 최근 교정: 20250812 by EhangB
 교정 일자: 20110531 by Sleep
 
 === PeaZip text group ===
 
+txt_10_7_errload: Cannot display image
+txt_10_7_errfile: File not found
+txt_10_7_first: First
+txt_10_7_fit: Fit to screen
+txt_10_7_fith: Fit to screen height
+txt_10_7_fitw: Fit to screen width
+txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
+txt_10_7_next: Next
+txt_10_7_prev: Previous
+txt_10_7_pwh: Password from hash
+txt_10_7_images: View images
+txt_10_7_thumbnails: View thumbnails
 txt_10_6_virtual: 동적 가상 모드
 txt_10_5_fr: (전체 보고서)
 txt_10_5_sectype: 다음 파일 형식 실행 확인 요청

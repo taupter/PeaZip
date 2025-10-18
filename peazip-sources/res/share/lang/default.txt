@@ -1,12 +1,24 @@
 ﻿=== PeaZip language file ===
 English
-10.6
+10.7
 Translated by: Giorgio Tani
 Last rev. by: Giorgio Tani
 Last rev.: 20250327
 
 === PeaZip text group ===
 
+txt_10_7_errload: Cannot display image
+txt_10_7_errfile: File not found
+txt_10_7_first: First
+txt_10_7_fit: Fit to screen
+txt_10_7_fith: Fit to screen height
+txt_10_7_fitw: Fit to screen width
+txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
+txt_10_7_next: Next
+txt_10_7_prev: Previous
+txt_10_7_pwh: Password from hash
+txt_10_7_images: View images
+txt_10_7_thumbnails: View thumbnails
 txt_10_6_virtual: Dynamic virtual mode
 txt_10_5_fr: (full report)
 txt_10_5_sectype: Ask confirmation for running following file types
@@ -1283,7 +1295,7 @@ txt_2_7_validatefn: Operation stopped, invalid file name detected:
 txt_2_7_validatecl: Operation stopped, potentially dangerous command detected (i.e. command concatenation not allowed within the program):
 txt_2_6_open: Open archive
 txt_2_5_ace_missing: UNACE plugin is missing; for handling ACE archives you can download the plugin form PeaZip's website (being UNACE closed source, the plugin is not featured in base package)
-txt_2_3_pw_errorchar_gwrap: quote character cannot be used by PeaLauncher in passwords under current system, please change password or chose Console mode in Backend binaries user interface in Options > Settings
+txt_2_3_pw_errorchar_gwrap: quote character cannot be used in passwords under current system, please change password or chose Console mode in Backend binaries user interface in Options > Settings
 txt_2_3_renameexisting: Auto rename existing files
 txt_2_3_renameextracted: Auto rename extracted files
 txt_2_3_cancel: Cancel
