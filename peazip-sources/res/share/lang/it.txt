@@ -1,12 +1,24 @@
 ﻿=== PeaZip language file ===
 Italian - Italiano
-10.6
+10.7
 Tradotto da: Giorgio Tani
 Ultima rev. di: Giorgio Tani
 Ultima rev.: 20250327
 
 === PeaZip text group ===
 
+txt_10_7_errload: Impossibile visualizzare l'immagine
+txt_10_7_errfile: File non trovato
+txt_10_7_first: Primo
+txt_10_7_fit: Adatta allo schermo
+txt_10_7_fith: Adatta alla altezza dello schermo
+txt_10_7_fitw: Adatta alla larghezza dello schermo
+txt_10_7_keep: Mantieni file se l'estrazione va in errore o viene cancellata
+txt_10_7_next: Successivo
+txt_10_7_prev: Precedente
+txt_10_7_pwh: Password da hash
+txt_10_7_images: Visualizza immagini
+txt_10_7_thumbnails: Visualizza anteprime immagini
 txt_10_6_virtual: Modalità virtuale dinamica
 txt_10_5_fr: (report completo)
 txt_10_5_sectype: Chiedi conferma prima di eseguire questi tipi di file
@@ -155,7 +167,7 @@ txt_8_2_df: 7z / p7zip mostra il contenuto delle cartelle
 txt_8_2_vreport: 7z / p7zip report sintetico
 txt_8_2_ta: Accesso
 txt_8_2_tc: Creazione
-txt_8_2_keep: Mantieni i file
+txt_8_2_keep: Mantieni file
 txt_8_2_tm: Modifica
 txt_8_2_skipet: Non testare cifratura
 txt_8_2_alltimes: Salva tutte le date
@@ -1283,7 +1295,7 @@ txt_2_7_validatefn: Operazione interrotta, nome file non valido:
 txt_2_7_validatecl: Operazione interrotta, comando potenzialmente pericoloso (es. concatenazione di comandi, non permessa all'interno del programma):
 txt_2_6_open: Apri archivio
 txt_2_5_ace_missing: Il plugin UNACE è mancante; per gestire archivi ACE è possibile scaricare gratuitamente il plugin dal sito di PeaZip (essendo UNACE closed source, il plugin non è inserito nella distribuzione di base)
-txt_2_3_pw_errorchar_gwrap: PeaLauncher non può usare questo carattere apice come parte di una password nel sistema operativo utilizzato; scegliere una password diversa o utilizzare il modo Console in Interfaccia degli eseguibili backend in Opzioni > Impostazioni
+txt_2_3_pw_errorchar_gwrap: Impossibile usare questo carattere apice come parte di una password nel sistema operativo corrente; scegliere una password diversa o utilizzare il modo Console in Interfaccia degli eseguibili backend in Opzioni > Impostazioni
 txt_2_3_renameexisting: Rinomina file esistenti
 txt_2_3_renameextracted: Rinomina file estratti
 txt_2_3_cancel: Annulla

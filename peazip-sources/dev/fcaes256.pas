@@ -1,8 +1,5 @@
 unit fcaes256;
-
-
-(*************************************************************************
-
+{
  DESCRIPTION     :  File crypt/authenticate unit using AES256
 
  REQUIREMENTS    :  TP5-7, D1-D7/D9-D10, FPC, VP
@@ -32,7 +29,7 @@ unit fcaes256;
  0.15     15.07.08  we          Unit KDF/pbkdf2
  0.16     22.11.08  we          TFCA256_string replaced by Str255 from BTypes
  0.17     31.08.20  G.Tani      FCA_EAX256_initP for slower pbkdf2 key schedule with more iterations (algorithm and number of iterations different from other *P functions), and off-line password tag verification
-**************************************************************************)
+}
 
 (*-------------------------------------------------------------------------
  (C) Copyright 2003-2008 Wolfgang Ehrhardt, Giorgio Tani

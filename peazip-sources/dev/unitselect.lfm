@@ -1,0 +1,154 @@
+object FormSelect: TFormSelect
+  Left = 820
+  Height = 276
+  Top = 640
+  Width = 600
+  AutoSize = True
+  Caption = 'Select'
+  ClientHeight = 276
+  ClientWidth = 600
+  Color = clWindow
+  Constraints.MinHeight = 275
+  Constraints.MinWidth = 600
+  DesignTimePPI = 120
+  Position = poScreenCenter
+  LCLVersion = '4.2.0.0'
+  object ButtonPanelSelect: TButtonPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    Left = 15
+    Height = 30
+    Top = 231
+    Width = 570
+    BorderSpacing.Left = 15
+    BorderSpacing.Right = 15
+    BorderSpacing.Bottom = 15
+    BorderSpacing.Around = 0
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    HelpButton.Enabled = False
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CloseButton.Enabled = False
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 0
+    ShowButtons = [pbOK, pbCancel]
+    ShowGlyphs = []
+    ShowBevel = False
+  end
+  object PanelSelect: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = ButtonPanelSelect
+    Left = 0
+    Height = 201
+    Top = 0
+    Width = 600
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 30
+    BevelOuter = bvNone
+    ClientHeight = 201
+    ClientWidth = 600
+    ParentBackground = False
+    TabOrder = 1
+    object ComboBoxSelect1: TComboBox
+      AnchorSideLeft.Control = ComboBoxSelect2
+      AnchorSideTop.Control = ComboBoxSelect2
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = ComboBoxSelect2
+      AnchorSideRight.Side = asrBottom
+      Left = 15
+      Height = 28
+      Top = 73
+      Width = 570
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 15
+      DropDownCount = 24
+      ItemHeight = 20
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object ComboBoxSelect2: TComboBox
+      AnchorSideLeft.Control = PanelSelect
+      AnchorSideTop.Control = PanelSelect
+      AnchorSideRight.Control = PanelSelect
+      AnchorSideRight.Side = asrBottom
+      Left = 15
+      Height = 28
+      Top = 30
+      Width = 570
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 15
+      BorderSpacing.Top = 30
+      BorderSpacing.Right = 15
+      ItemHeight = 20
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object LabelSelectAll: TLabel
+      AnchorSideLeft.Control = ComboBoxSelect2
+      AnchorSideTop.Control = ComboBoxSelect1
+      AnchorSideTop.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 15
+      Height = 20
+      Top = 131
+      Width = 60
+      BorderSpacing.Top = 30
+      Caption = 'Select all'
+      Font.Color = 13391121
+      ParentFont = False
+      OnClick = LabelSelectAllClick
+    end
+    object LabelSelectInvert: TLabel
+      AnchorSideLeft.Control = LabelSelectSpacer
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelSelectAll
+      AnchorSideTop.Side = asrCenter
+      Cursor = crHandPoint
+      Left = 111
+      Height = 20
+      Top = 131
+      Width = 100
+      BorderSpacing.Left = 15
+      Caption = 'Invert selection'
+      Font.Color = 13391121
+      ParentFont = False
+      OnClick = LabelSelectInvertClick
+    end
+    object LabelSelectSpacer: TLabel
+      AnchorSideLeft.Control = LabelSelectAll
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelSelectAll
+      AnchorSideTop.Side = asrCenter
+      Left = 90
+      Height = 20
+      Top = 131
+      Width = 6
+      BorderSpacing.Left = 15
+      Caption = '/'
+      ParentFont = False
+    end
+    object LabelSelectSort: TLabel
+      AnchorSideLeft.Control = LabelSelectAll
+      AnchorSideTop.Control = LabelSelectAll
+      AnchorSideTop.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 15
+      Height = 20
+      Top = 166
+      Width = 110
+      BorderSpacing.Top = 15
+      Caption = 'Sort by selection'
+      Font.Color = 13391121
+      ParentFont = False
+      OnClick = LabelSelectSortClick
+    end
+  end
+end

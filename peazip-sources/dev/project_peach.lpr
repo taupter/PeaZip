@@ -9,8 +9,9 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms
   { add your units here },
-  peach, Unit3, Unit5, Unit6, Unit2, Unit1, Unit8, Unit9, Unit10,
-  Unit11, Unit12, Unit13, Unit7, Unit_gwrap, Unit14
+  peach, UnitPW, UnitKF, UnitInput, UnitWeb, UnitAdvf, UnitPM, UnitImgRes,
+  UnitImgCrop, UnitDrop, UnitPaths, UnitSelect, UnitDlg, UnitGwrap, UnitComment,
+  UnitImgViewer
   {$IFDEF MSWINDOWS}//W10+ dark mode
   ,SysUtils,fileutil,umetadarkstyle,udarkstyleparams,udarkstyleschemes
   {$ENDIF};
@@ -23,7 +24,7 @@ uses
 {$R *.res}
 
 begin
-  Application.Scaled:=True;
+Application.Scaled:=True;
 {$IFDEF MSWINDOWS}//W10+ dark mode, can be manually forced to light or dark mode (not integrated with themes due to technical limitations)
 if fileexists(Programdirectory+'light') then
    begin
@@ -42,9 +43,9 @@ else
       umetadarkstyle.ApplyMetaDarkStyle(DefaultDark);
       end;
 {$ENDIF}
-  Application.Title:='PeaZip';
+Application.Title:='PeaZip';
 Application.Initialize;
-Application.CreateForm(TForm_peach, Form_peach);
+Application.CreateForm(TFormPeach, FormPeach);
 {$IFDEF MSWINDOWS}
 Application.MainFormOnTaskBar:=true;
 {$ENDIF}
@@ -56,12 +57,13 @@ Application.CreateForm(TFormKF, FormKF);
 Application.CreateForm(TFormAdvf, FormAdvf);
 Application.CreateForm(TFormWeb, FormWeb);
 Application.CreateForm(TFormImgRes, FormImgRes);
-Application.CreateForm(TFormCrop, FormCrop);
+Application.CreateForm(TFormImgCrop, FormImgCrop);
 Application.CreateForm(TFormPaths, FormPaths);
 Application.CreateForm(TFormSelect, FormSelect);
 Application.CreateForm(TFormDlg, FormDlg);
-Application.CreateForm(TForm_gwrap, Form_gwrap);
+Application.CreateForm(TFormGwrap, FormGwrap);
 Application.CreateForm(TFormComment, FormComment);
+Application.CreateForm(TFormImgViewer, FormImgViewer);
 Application.Run;
 end.
 

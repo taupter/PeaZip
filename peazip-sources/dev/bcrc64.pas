@@ -41,6 +41,7 @@ interface
  3.09     28.03.17  we          No '$asmmode intel' for CPUARM
  3.10     29.11.17  we          bCRC64File - fname: string
  3.11     17.01.21  gt          CPUAARCH64 disable Intel ASM
+ 3.12     18.08.25  gt          PurePascal is applied to all non x86-type CPU, disables Intel ASM
 
 **************************************************************************)
 
@@ -115,7 +116,7 @@ implementation
 
 
 {$ifdef FPC}
-  {$if defined(CPUARM) or defined(CPUAARCH64)}
+  {$ifndef PurePascal}
     {$asmmode intel}
   {$endif}
 {$endif}

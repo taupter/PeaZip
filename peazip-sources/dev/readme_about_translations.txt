@@ -1,10 +1,11 @@
-﻿Notes to 10.6 release
+Notes to 10.7 release
 
 Modified existing text
-txt_5_0_perf: Performances
 txt_10_5_sh: Show hidden files (in the filesystem)
+txt_5_0_perf: Performances
 txt_default: Default
 txt_add_tobookmarks: Add to Bookmarks
+txt_2_3_pw_errorchar_gwrap: quote character cannot be used in passwords under current system, please change password or chose Console mode in Backend binaries user interface in Options > Settings
 
 = GENERAL NOTES =
 

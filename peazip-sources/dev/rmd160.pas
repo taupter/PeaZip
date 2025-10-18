@@ -47,6 +47,7 @@ interface
  0.29     15.05.17  we          adjust OID to new MaxOIDLen
  0.30     29.11.17  we          RMD160File - fname: string
  0.31     17.01.21  gt          CPUAARCH64 disable Intel ASM
+ 0.32     18.08.25  gt          PurePascal is applied to all non x86-type CPU, disables Intel ASM
 
 **************************************************************************)
 
@@ -126,7 +127,7 @@ implementation
 
 
 {$ifdef FPC}
-  {$if not(defined(CPUARM)) and not(defined(CPUAARCH64))}
+  {$ifndef PurePascal}
     {$asmmode intel}
   {$endif}
 {$endif}

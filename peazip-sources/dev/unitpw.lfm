@@ -1,0 +1,349 @@
+object FormPW: TFormPW
+  Left = 220
+  Height = 351
+  Top = 358
+  Width = 700
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  Caption = 'FormPW'
+  ClientHeight = 351
+  ClientWidth = 700
+  Color = clWindow
+  Constraints.MinHeight = 275
+  Constraints.MinWidth = 700
+  DesignTimePPI = 120
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '4.2.0.0'
+  OnCreate = FormCreate
+  object PanelPWOpen: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = ButtonPanelPW
+    Left = 0
+    Height = 291
+    Top = 0
+    Width = 700
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 15
+    BevelOuter = bvNone
+    ClientHeight = 291
+    ClientWidth = 700
+    ParentBackground = False
+    TabOrder = 0
+    object LabelPWpass: TLabel
+      AnchorSideTop.Control = EditPWpass
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = ButtonEditNamePw
+      Left = 114
+      Height = 20
+      Top = 34
+      Width = 64
+      Anchors = [akTop, akRight]
+      BorderSpacing.Right = 15
+      Caption = 'Password:'
+    end
+    object LabelPWkeyfile: TLabel
+      AnchorSideTop.Control = EditPWkeyfile
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = LabelPWconfirm
+      AnchorSideRight.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 130
+      Height = 20
+      Top = 106
+      Width = 48
+      Anchors = [akTop, akRight]
+      Caption = 'Keyfile:'
+      Font.Color = 13391121
+      ParentFont = False
+      OnClick = LabelPWkeyfileClick
+    end
+    object LabelPWconfirm: TLabel
+      AnchorSideLeft.Control = LabelPWkeyfile
+      AnchorSideTop.Control = EditPWconfirm
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = LabelPWpass
+      AnchorSideRight.Side = asrBottom
+      Left = 122
+      Height = 20
+      Top = 70
+      Width = 56
+      Anchors = [akTop, akRight]
+      Caption = 'Confirm:'
+    end
+    object EditPWpass: TEdit
+      AnchorSideTop.Control = PanelPWOpen
+      AnchorSideRight.Control = PanelPWOpen
+      AnchorSideRight.Side = asrBottom
+      Left = 225
+      Height = 28
+      Top = 30
+      Width = 460
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 30
+      BorderSpacing.Right = 15
+      EchoMode = emPassword
+      PasswordChar = '*'
+      TabOrder = 0
+      OnChange = EditPWpassChange
+      OnKeyPress = EditPWpassKeyPress
+    end
+    object EditPWkeyfile: TEdit
+      AnchorSideLeft.Control = EditPWpass
+      AnchorSideTop.Control = EditPWconfirm
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = ButtonPWkeyfile
+      Left = 225
+      Height = 28
+      Top = 102
+      Width = 428
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 8
+      BorderSpacing.Bottom = 8
+      TabOrder = 4
+    end
+    object ButtonPWkeyfile: TButton
+      AnchorSideTop.Control = EditPWkeyfile
+      AnchorSideRight.Control = EditPWpass
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = EditPWkeyfile
+      AnchorSideBottom.Side = asrBottom
+      Left = 653
+      Height = 28
+      Top = 102
+      Width = 32
+      Anchors = [akTop, akRight, akBottom]
+      BorderSpacing.InnerBorder = 5
+      Caption = '...'
+      PopupMenu = PopupMenupw
+      TabOrder = 3
+      OnClick = ButtonPWkeyfileClick
+    end
+    object EditPWconfirm: TEdit
+      AnchorSideLeft.Control = EditPWpass
+      AnchorSideTop.Control = EditPWpass
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = EditPWpass
+      AnchorSideRight.Side = asrBottom
+      Left = 225
+      Height = 28
+      Top = 66
+      Width = 460
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 8
+      EchoMode = emPassword
+      PasswordChar = '*'
+      TabOrder = 1
+      OnKeyPress = EditPWpassKeyPress
+    end
+    object ButtonEditNamePw: TSpeedButton
+      AnchorSideTop.Control = EditPWpass
+      AnchorSideRight.Control = EditPWkeyfile
+      AnchorSideBottom.Control = EditPWpass
+      AnchorSideBottom.Side = asrBottom
+      Left = 193
+      Height = 28
+      Top = 30
+      Width = 32
+      Anchors = [akTop, akRight, akBottom]
+      BorderSpacing.InnerBorder = 5
+      Flat = True
+      OnClick = ButtonEditNamePwClick
+    end
+    object PanelPWOpen1: TPanel
+      AnchorSideLeft.Control = PanelPWOpen
+      AnchorSideTop.Control = ButtonPWkeyfile
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelPWOpen
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = PanelPWOpen
+      AnchorSideBottom.Side = asrBottom
+      Left = 30
+      Height = 131
+      Top = 160
+      Width = 670
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      AutoSize = True
+      BorderSpacing.Left = 30
+      BorderSpacing.Top = 30
+      BevelOuter = bvNone
+      ClientHeight = 131
+      ClientWidth = 670
+      ParentBackground = False
+      TabOrder = 5
+      object CheckBoxShowPWField: TCheckBox
+        AnchorSideLeft.Control = CheckBoxEncFn
+        AnchorSideTop.Control = CheckBoxKeepPW
+        AnchorSideTop.Side = asrBottom
+        Left = 0
+        Height = 24
+        Top = 84
+        Width = 124
+        BorderSpacing.Top = 4
+        Caption = 'Show password'
+        TabOrder = 3
+        OnClick = CheckBoxShowPWFieldClick
+      end
+      object CheckBoxEncFn: TCheckBox
+        AnchorSideLeft.Control = PanelPWOpen1
+        AnchorSideTop.Control = PanelPWOpen1
+        Left = 0
+        Height = 24
+        Top = 0
+        Width = 327
+        Caption = 'Encrypt filenames (if supported by the format)'
+        TabOrder = 0
+      end
+      object CheckBoxKeepPW: TCheckBox
+        AnchorSideLeft.Control = CheckBoxEncFn
+        AnchorSideTop.Control = CheckBoxIntPw
+        AnchorSideTop.Side = asrBottom
+        Left = 0
+        Height = 24
+        Top = 56
+        Width = 271
+        BorderSpacing.Top = 4
+        Caption = 'Keep password for the current session'
+        TabOrder = 2
+      end
+      object CheckBoxIntPw: TCheckBox
+        AnchorSideLeft.Control = PanelPWOpen1
+        AnchorSideTop.Control = CheckBoxEncFn
+        AnchorSideTop.Side = asrBottom
+        Left = 0
+        Height = 24
+        Top = 28
+        Width = 254
+        BorderSpacing.Top = 4
+        Caption = 'Force typing password interactively'
+        TabOrder = 1
+        OnClick = CheckBoxIntPwClick
+      end
+    end
+    object PanelKF: TPanel
+      AnchorSideLeft.Control = EditPWkeyfile
+      AnchorSideTop.Control = EditPWkeyfile
+      AnchorSideRight.Control = ButtonPWkeyfile
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = EditPWkeyfile
+      AnchorSideBottom.Side = asrBottom
+      Left = 225
+      Height = 28
+      Top = 102
+      Width = 460
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BevelOuter = bvNone
+      ParentBackground = False
+      TabOrder = 2
+    end
+  end
+  object ButtonPanelPW: TButtonPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 15
+    Height = 30
+    Top = 306
+    Width = 670
+    BorderSpacing.Left = 15
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 15
+    BorderSpacing.Bottom = 15
+    BorderSpacing.Around = 0
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    HelpButton.Enabled = False
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CloseButton.Enabled = False
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 1
+    ShowButtons = [pbOK, pbCancel]
+    ShowGlyphs = []
+    ShowBevel = False
+  end
+  object ShapePW: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 1
+    Top = 350
+    Width = 700
+    Anchors = [akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ParentBackground = False
+    TabOrder = 2
+  end
+  object PopupMenupw: TPopupMenu
+    Left = 550
+    Top = 110
+    object mpwreset: TMenuItem
+      Caption = 'Reset keyfile'
+      OnClick = mpwresetClick
+    end
+    object mpwexplore: TMenuItem
+      Caption = 'Explore path'
+      OnClick = mpwexploreClick
+    end
+  end
+  object OpenDialogKF: TOpenDialog
+    Title = 'Open file'
+    FilterIndex = 0
+    Left = 460
+    Top = 80
+  end
+  object PopupMenupwman: TPopupMenu
+    Left = 130
+    Top = 20
+    object mpwmreset: TMenuItem
+      Caption = 'Reset'
+      OnClick = mpwmresetClick
+    end
+    object mpwspacer1: TMenuItem
+      Caption = '-'
+    end
+    object mpwman1: TMenuItem
+      OnClick = mpwman1Click
+    end
+    object mpwman2: TMenuItem
+      OnClick = mpwman2Click
+    end
+    object mpwman3: TMenuItem
+      OnClick = mpwman3Click
+    end
+    object mpwman4: TMenuItem
+      OnClick = mpwman4Click
+    end
+    object mpwman5: TMenuItem
+      OnClick = mpwman5Click
+    end
+    object mpwman6: TMenuItem
+      OnClick = mpwman6Click
+    end
+    object mpwman7: TMenuItem
+      OnClick = mpwman7Click
+    end
+    object mpwman8: TMenuItem
+      OnClick = mpwman8Click
+    end
+    object mpwspacer2: TMenuItem
+      Caption = '-'
+    end
+    object mpwman: TMenuItem
+      Caption = 'Password manager'
+      OnClick = mpwmanClick
+    end
+  end
+end

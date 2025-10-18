@@ -1,0 +1,140 @@
+object FormComment: TFormComment
+  Left = 5
+  Height = 378
+  Top = 292
+  Width = 602
+  AllowDropFiles = True
+  Caption = 'Comment'
+  ClientHeight = 378
+  ClientWidth = 602
+  Color = clWindow
+  DesignTimePPI = 120
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '4.2.0.0'
+  OnDropFiles = FormDropFiles
+  object MemoComment: TMemo
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = ButtonSaveComment
+    Left = 15
+    Height = 303
+    Top = 15
+    Width = 572
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 15
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 15
+    BorderSpacing.Bottom = 15
+    BorderStyle = bsNone
+    Color = clWindow
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object ButtonSaveComment: TButton
+    AnchorSideRight.Control = MemoComment
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 463
+    Height = 30
+    Top = 333
+    Width = 124
+    Anchors = [akRight, akBottom]
+    AutoSize = True
+    BorderSpacing.Bottom = 15
+    Caption = 'Save comment'
+    TabOrder = 1
+    OnClick = ButtonSaveCommentClick
+  end
+  object LabelResetComment: TLabel
+    AnchorSideLeft.Control = MemoComment
+    AnchorSideTop.Control = ButtonSaveComment
+    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Side = asrCenter
+    Cursor = crHandPoint
+    Left = 15
+    Height = 20
+    Top = 338
+    Width = 36
+    Caption = 'Reset'
+    Font.Color = 13391121
+    ParentFont = False
+    OnClick = LabelResetCommentClick
+  end
+  object LabelLoadfromfile: TLabel
+    AnchorSideLeft.Control = LabelCommentSpacer1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = ButtonSaveComment
+    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Side = asrCenter
+    Cursor = crHandPoint
+    Left = 85
+    Height = 20
+    Top = 338
+    Width = 94
+    BorderSpacing.Left = 15
+    Caption = 'Load from file'
+    Font.Color = 13391121
+    ParentFont = False
+    OnClick = LabelLoadfromfileClick
+  end
+  object LabelCommentSpacer1: TLabel
+    AnchorSideLeft.Control = LabelResetComment
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = ButtonSaveComment
+    AnchorSideTop.Side = asrCenter
+    Left = 66
+    Height = 20
+    Top = 338
+    Width = 4
+    BorderSpacing.Left = 15
+    Caption = '|'
+    ParentFont = False
+  end
+  object LabelCommentSpacer2: TLabel
+    AnchorSideLeft.Control = LabelLoadfromfile
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = ButtonSaveComment
+    AnchorSideTop.Side = asrCenter
+    Left = 194
+    Height = 20
+    Top = 338
+    Width = 4
+    BorderSpacing.Left = 15
+    Caption = '|'
+    ParentFont = False
+  end
+  object LabelSavetofile: TLabel
+    AnchorSideLeft.Control = LabelCommentSpacer2
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = ButtonSaveComment
+    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Side = asrCenter
+    Cursor = crHandPoint
+    Left = 213
+    Height = 20
+    Top = 338
+    Width = 49
+    BorderSpacing.Left = 15
+    Caption = 'Save as'
+    Font.Color = 13391121
+    ParentFont = False
+    OnClick = LabelSavetofileClick
+  end
+  object OpenDialogFC: TOpenDialog
+    Title = 'Open file'
+    Left = 112
+    Top = 280
+  end
+  object SaveDialogFC: TSaveDialog
+    Title = 'Save Comment'
+    DefaultExt = '.txt'
+    FilterIndex = 0
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    Left = 224
+    Top = 280
+  end
+end

@@ -1,0 +1,125 @@
+object FormWeb: TFormWeb
+  Left = 133
+  Height = 401
+  Top = 490
+  Width = 750
+  Caption = 'FormWeb'
+  ClientHeight = 401
+  ClientWidth = 750
+  Color = clWindow
+  Constraints.MinHeight = 400
+  Constraints.MinWidth = 750
+  DesignTimePPI = 120
+  Position = poScreenCenter
+  LCLVersion = '4.2.0.0'
+  object ButtonPanelWeb: TButtonPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideBottom.Control = Owner
+    Left = 15
+    Height = 30
+    Top = 356
+    Width = 720
+    BorderSpacing.Left = 15
+    BorderSpacing.Top = 15
+    BorderSpacing.Right = 15
+    BorderSpacing.Bottom = 15
+    BorderSpacing.Around = 0
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    HelpButton.Enabled = False
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CloseButton.Enabled = False
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    TabOrder = 2
+    ShowButtons = [pbOK, pbCancel]
+    ShowGlyphs = []
+    ShowBevel = False
+    object CheckBoxMultiWeb: TCheckBox
+      AnchorSideLeft.Control = ButtonPanelWeb
+      AnchorSideTop.Control = ButtonPanelWeb
+      AnchorSideTop.Side = asrCenter
+      Left = 0
+      Height = 24
+      Top = 3
+      Width = 139
+      Caption = 'Multiple selection'
+      TabOrder = 4
+      OnClick = CheckBoxMultiWebClick
+    end
+  end
+  object EditInputQueryWeb: TEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 15
+    Height = 28
+    Top = 30
+    Width = 720
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 15
+    BorderSpacing.Top = 30
+    BorderSpacing.Right = 15
+    TabOrder = 0
+  end
+  object CheckGroupWeb: TCheckGroup
+    AnchorSideLeft.Control = EditInputQueryWeb
+    AnchorSideTop.Control = EditInputQueryWeb
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = EditInputQueryWeb
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = ButtonPanelWeb
+    Left = 15
+    Height = 275
+    Top = 66
+    Width = 720
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    AutoFill = True
+    AutoSize = True
+    BorderSpacing.Top = 8
+    Caption = 'CheckGroupWeb'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclTopToBottomThenLeftToRight
+    ChildSizing.ControlsPerLine = 6
+    ClientHeight = 250
+    ClientWidth = 716
+    ColumnLayout = clVerticalThenHorizontal
+    Columns = 3
+    Items.Strings = (
+      'Amazon'
+      'Apple'
+      'Bing'
+      'Britannica'
+      'DuckDuckGo'
+      'GitHub'
+      'Google'
+      'Google Translate'
+      'IMDB'
+      'LinkedIn'
+      'Reddit'
+      'Repology'
+      'SourceForge'
+      'Stackoverflow'
+      'Wikibooks'
+      'Wikipedia'
+      'Wiktionary'
+      'YouTube'
+    )
+    ParentBackground = False
+    TabOrder = 1
+    OnItemClick = CheckGroupWebItemClick
+    Data = {
+      12000000020202020202020202020202020202020202
+    }
+  end
+end

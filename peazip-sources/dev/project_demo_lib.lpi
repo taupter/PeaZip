@@ -9,97 +9,27 @@
         <CompatibilityMode Value="True"/>
       </Flags>
       <Title Value="demo_lib"/>
+      <Scaled Value="True"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
     </General>
-    <BuildModes Count="3" Active="Debug">
+    <BuildModes Count="1">
       <Item1 Name="default" Default="True"/>
-      <Item2 Name="Debug">
-        <CompilerOptions>
-          <Version Value="11"/>
-          <PathDelim Value="\"/>
-          <Target>
-            <Filename Value="demo_lib"/>
-          </Target>
-          <SearchPaths>
-            <SrcPath Value="$(LazarusDir)\lcl;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)"/>
-          </SearchPaths>
-          <Parsing>
-            <SyntaxOptions>
-              <IncludeAssertionCode Value="True"/>
-              <UseAnsiStrings Value="False"/>
-            </SyntaxOptions>
-          </Parsing>
-          <CodeGeneration>
-            <Checks>
-              <IOChecks Value="True"/>
-              <RangeChecks Value="True"/>
-              <OverflowChecks Value="True"/>
-              <StackChecks Value="True"/>
-            </Checks>
-            <VerifyObjMethodCallValidity Value="True"/>
-          </CodeGeneration>
-          <Linking>
-            <Debugging>
-              <DebugInfoType Value="dsDwarf3"/>
-              <UseHeaptrc Value="True"/>
-              <TrashVariables Value="True"/>
-              <UseExternalDbgSyms Value="True"/>
-            </Debugging>
-            <Options>
-              <Win32>
-                <GraphicApplication Value="True"/>
-              </Win32>
-            </Options>
-          </Linking>
-        </CompilerOptions>
-      </Item2>
-      <Item3 Name="Release">
-        <CompilerOptions>
-          <Version Value="11"/>
-          <PathDelim Value="\"/>
-          <Target>
-            <Filename Value="demo_lib"/>
-          </Target>
-          <SearchPaths>
-            <SrcPath Value="$(LazarusDir)\lcl;$(LazarusDir)\lcl\interfaces\$(LCLWidgetType)"/>
-          </SearchPaths>
-          <Parsing>
-            <SyntaxOptions>
-              <UseAnsiStrings Value="False"/>
-            </SyntaxOptions>
-          </Parsing>
-          <CodeGeneration>
-            <SmartLinkUnit Value="True"/>
-            <Optimizations>
-              <OptimizationLevel Value="3"/>
-            </Optimizations>
-          </CodeGeneration>
-          <Linking>
-            <Debugging>
-              <GenerateDebugInfo Value="False"/>
-              <RunWithoutDebug Value="True"/>
-            </Debugging>
-            <LinkSmart Value="True"/>
-            <Options>
-              <Win32>
-                <GraphicApplication Value="True"/>
-              </Win32>
-            </Options>
-          </Linking>
-        </CompilerOptions>
-      </Item3>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
     </PublishOptions>
     <RunParams>
       <local>
-        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
       <FormatVersion Value="2"/>
       <Modes Count="1">
         <Mode0 Name="default">
           <local>
-            <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+            <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
           </local>
         </Mode0>
       </Modes>
@@ -114,7 +44,7 @@
         <Filename Value="project_demo_lib.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="3"/>
-        <CursorPos X="27" Y="11"/>
+        <CursorPos X="8" Y="10"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -127,8 +57,7 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit_demo_lib"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="8"/>
-        <CursorPos X="103" Y="22"/>
+        <CursorPos X="24" Y="9"/>
         <UsageCount Value="33"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -140,10 +69,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Unit_pea"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <UsageCount Value="31"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="list_utils.pas"/>
@@ -160,7 +87,7 @@
         <UsageCount Value="31"/>
       </Unit4>
       <Unit5>
-        <Filename Value="..\..\..\..\..\lazarus\lcl\forms.pp"/>
+        <Filename Value="C:\lazarus\lcl\forms.pp"/>
         <UnitName Value="Forms"/>
         <TopLine Value="769"/>
         <CursorPos X="19" Y="449"/>
@@ -174,7 +101,40 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit6>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="8" HistoryIndex="7">
+      <Position1>
+        <Filename Value="unit_demo_lib.pas"/>
+        <Caret Line="23" Column="73"/>
+      </Position1>
+      <Position2>
+        <Filename Value="unit_demo_lib.pas"/>
+        <Caret Line="57" Column="8" TopLine="47"/>
+      </Position2>
+      <Position3>
+        <Filename Value="unit_demo_lib.pas"/>
+        <Caret Line="53" Column="81" TopLine="47"/>
+      </Position3>
+      <Position4>
+        <Filename Value="project_demo_lib.lpr"/>
+        <Caret Line="12" Column="18"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unit_demo_lib.pas"/>
+        <Caret Line="53" Column="81" TopLine="47"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unit_demo_lib.pas"/>
+        <Caret Line="96" Column="5" TopLine="70"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unit_demo_lib.pas"/>
+        <Caret Line="95" Column="5" TopLine="69"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unit_demo_lib.pas"/>
+        <Caret Line="94" Column="5" TopLine="68"/>
+      </Position8>
+    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
@@ -191,6 +151,10 @@
       </SyntaxOptions>
     </Parsing>
     <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <RunWithoutDebug Value="True"/>
+      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>

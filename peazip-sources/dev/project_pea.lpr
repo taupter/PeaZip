@@ -9,7 +9,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms
   { add your units here }, 
-  Unit_pea, pea_utils, list_utils, Unit_report
+  pea, pea_utils, list_utils, UnitReport
   {$IFDEF MSWINDOWS}
   ,SysUtils,fileutil,umetadarkstyle,udarkstyleparams,udarkstyleschemes
   {$ENDIF};
@@ -43,8 +43,8 @@ begin
   {$ENDIF}
   Application.Title:='Pea';
   Application.Initialize;
-  Application.CreateForm(TForm_pea, Form_pea);
-  Application.CreateForm(TForm_report, Form_report);
+  Application.CreateForm(TFormPea, FormPea);
+  Application.CreateForm(TFormReport, FormReport);
   Application.Run;
 end.
 

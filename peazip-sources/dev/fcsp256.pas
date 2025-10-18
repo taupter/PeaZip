@@ -1,8 +1,5 @@
 unit fcsp256;
-
-
-(*************************************************************************
-
+{
  DESCRIPTION     :  File crypt/authenticate unit using Serpent 256
 
  REQUIREMENTS    :  TP5-7, D1-D7/D9-D10, FPC, VP
@@ -21,7 +18,7 @@ unit fcsp256;
  -------  --------  -------     ------------------------------------------
  0.10     10.03.16  G.Tani      Based on W.Ehrhardt fcaes256 0.16 modified to use Serpent 256
  0.11     31.08.20  G.Tani      FCS_EAX256_initP for slower pbkdf2 key schedule with more iterations (algorithm and number of iterations different from other *P functions), and off-line password tag verification
-**************************************************************************)
+}
 
 (*-------------------------------------------------------------------------
  (C) Copyright 2003-2008 Wolfgang Ehrhardt, Giorgio Tani

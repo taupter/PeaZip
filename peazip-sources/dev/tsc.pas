@@ -47,6 +47,7 @@ interface
  0.43     30.03.17  we          FPC/CPUARM uses fpgettimeofday
  0.44     11.11.17  we          Use time for FPC/WINCE
  0.45     17.01.21  gt          CPUAARCH64 disable Intel ASM
+ 0.46     18.08.25  gt          PurePascal is applied to all non x86-type CPU, disables Intel ASM
 **************************************************************************)
 
 
@@ -96,7 +97,7 @@ function  _CheckRDTSC: boolean;
 
 implementation
 
-{$if defined(CPUARM) or defined(CPUAARCH64)}
+{$ifdef PurePascal}
 
 {$ifdef WINCE}
 

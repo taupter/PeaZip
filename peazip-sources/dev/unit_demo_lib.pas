@@ -1,8 +1,8 @@
-unit Unit_demo_lib;
+unit Unit_demo_lib; //demo app using pea unit as library
 {
- DESCRIPTION     :  Demo application using PEA, UnPEA and Raw File Split/Join
-                    calling *_lib_procedure procedures with hardcoded parameters,
-                    showing different operation modes
+ DESCRIPTION     :  Demo application using pea unit as library, invoking
+                    *_lib_procedure routines to showcase different operations
+                    (with hardcoded parameters as example)
 
  REQUIREMENTS    :  FPC, Lazarus
 
@@ -20,6 +20,7 @@ unit Unit_demo_lib;
  -------  --------  -------     ------------------------------------------
  0.10     20060822  G.Tani      Initial version
  0.11     20080704  G.Tani      Removed dependency for WinXP package, recompiled with utf8 enabled IDE
+ 0.12     20250904  G.Tani      Updated after refactoring of the sources
 
 (C) Copyright 2006 Giorgio Tani giorgiotani@interfree.it
 official pea-peach site http://sourceforge.net/projects/pea-peach/
@@ -46,21 +47,18 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, Buttons,
-  unit_pea, list_utils;
+  StdCtrls, pea, list_utils;
 
 type
 
   { TForm_demo_lib }
 
   TForm_demo_lib = class(TForm)
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
-    Button4: TButton;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
+    ButtonDemoPea: TButton;
+    ButtonDemoUnPea: TButton;
+    procedure ButtonDemoPeaClick(Sender: TObject);
+    procedure ButtonDemoUnPeaClick(Sender: TObject);
+
   private
     { private declarations }
   public
@@ -74,7 +72,7 @@ implementation
 
 { TForm_demo_lib }
 
-procedure TForm_demo_lib.Button1Click(Sender: TObject); //archive sourcecode .pas files
+procedure TForm_demo_lib.ButtonDemoPeaClick(Sender: TObject); //archive sourcecode .pas files
 var flist:TFoundList;
 begin
 SetLength(flist,8);
@@ -84,24 +82,14 @@ flist[2]:='peach.pas';
 flist[3]:='rfs_utils.pas';
 flist[4]:='unit1.pas'; //does not exist, used to demonstrate skipping feature
 flist[5]:='unit_demo_lib.pas';
-flist[6]:='unit_pea.pas';
-flist[7]:='unit_report.pas';
+flist[6]:='pea.pas';
+flist[7]:='unitreport.pas';
 pea_lib_procedure('units',25000,'PCOMPRESS2','WHIRLPOOL','SHA256','EAX','this is the passphrase','NOKEYFILE',flist,'BATCH');
 end;
 
-procedure TForm_demo_lib.Button2Click(Sender: TObject); //restore sourcecode .pas files in units folder
+procedure TForm_demo_lib.ButtonDemoUnPeaClick(Sender: TObject); //restore sourcecode .pas files in units folder
 begin
 unpea_lib_procedure('units.000001.pea','AUTONAME','RESETDATE','SETATTR','EXTRACT2DIR','this is the passphrase','NOKEYFILE','HIDDEN_REPORT');
-end;
-
-procedure TForm_demo_lib.Button3Click(Sender: TObject); //split present unit in 1000 byte chunks
-begin
-rfs_lib_procedure ( 'test',1000,'SHA512','unit_demo_lib.pas','HIDDEN_REPORT');
-end;
-
-procedure TForm_demo_lib.Button4Click(Sender: TObject); //join chunks of present unit in a new, autonamed, file
-begin
-rfj_lib_procedure ( 'test.001','AUTONAME','BATCH_REPORT');
 end;
 
 initialization
