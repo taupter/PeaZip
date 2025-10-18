@@ -1,286 +1,274 @@
-﻿=== PeaZip language file ===
+=== PeaZip language file ===
 Bahasa Indonesia
-10.7
-Diterjemahkan oleh: Muhammad Mauli Mubassari
-Terakhir direvisi oleh: Muhammad Mauli Mubassari
-Terakhir direvisi: 16 Januari 2020
+10.6
+Diterjemahkan oleh: Muhammad Mauli Mubassari, Lieba Natur Brilian
+Terakhir direvisi oleh: Lieba Natur Brilian
+Terakhir direvisi: 18/10/2025
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
+txt_10_6_virtual: Mode virtual dinamis
+txt_10_5_fr: (laporan lanjut)
+txt_10_5_sectype: Tanyakan konfirmasi untuk menjalankan tipe file berikut
+txt_10_5_checkmotw: Periksa Zona Identifikasi (MoTW)
+txt_10_5_sectypewarning: Kamu ingin menjalankan file ini?
+txt_10_5_pathlock: Item di path arsip ini tidak bisa di ubah
 txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
+txt_10_5_sh: Tampilkn file yang tersembunyi dan folder di filesystem
+txt_10_5_ntfsalt: Format ini dapat menyimpan Data Stream Alternatif NTFS, termasuk Markah Web
+txt_10_4_moving: (Memindahkan)
+txt_10_3_classic: Klasik
+txt_10_3_ascii: Direkomendasikan untuk menggunakan karakter ASCII saja di kata sandi untuk format arsip saat ini (dengan campuran kata, angka, dan karakter spesial).
 txt_10_3_minimal: Minimal
 txt_10_3_m: Modern
 txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
+txt_10_3_aw: Solusi sementara: centang opsi “Paksa pengetikan kata sandi secara interaktif” pada prompt kata sandi, atau atur mode konsol untuk file biner backend.
+txt_10_2_savecopy:  Simpan salinan
+txt_10_1_full: Penuh
+txt_10_1_kdfw: Beban kerja KDF
+txt_10_1_under: Digarisbawahi
+txt_10_0_exptrash: Jelajahi Sampah
+txt_10_0_ptarzst: Kompresi cepat, TAR.ZST
+txt_10_0_ptarxz: Kompresi tinggi, TAR.XZ
+txt_10_0_ptargz: Kompresi medium, TAR.GZ
+txt_10_0_comp: Format kompresi murni hanya menerima satu file sebagai input. Konversi arsip ke format-format tersebut akan gagal jika sumbernya mengandung beberapa file atau folder, yang tidak dapat ditentukan sebelumnya.
+txt_10_0_save: Simpan
+txt_10_0_tp: Pratinjau teks
+txt_9_9_uac: Pengguna saat ini tidak dapat membaca path untuk keluaran ini. Kamu ingin menjalankan PeaZip dengan UAC elevation?
 TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
-txt_9_3_continue: Continue anyway?
-txt_9_3_contrast: Contrast
-txt_9_3_fsd: Free space on destination may not be enough
-txt_9_3_fsw: Free space on temporary work path may not be enough
-txt_9_3_mrar: Manually set RAR binary
-txt_9_3_canedit: This archive type can be edited
-txt_9_3_canforce: This archive type can be edited (forced)
-txt_9_3_cannotedit: This archive type cannot be edited
+txt_9_9_utc: Tampilkan penanda waktu sebagai UTC
+txt_9_8_alwaysflat: Selalu buka arsip di tampilan flat
+txt_9_8_fnew: Ekstrak disini (di folder baru)
+txt_9_8_fsmart: Ekstrak disini (folder baru pintar)
+txt_9_7_tarpipe: 7z / p7zip gunakan pipe
+txt_9_7_smartsorting: Pengurutan nama file pintar
+txt_9_6_centered: Menengah
+txt_9_6_cside: Bilah samping kompak
+txt_9_6_loadpconfirm: Apakah kamu ingin memuat profil ini? Semua data untuk profil ini akan ditimpa, termasuk script yang tersimpan dan Pengelola Kata Sandi.
+txt_9_6_loadp: Muat profil
+txt_9_6_saveppw: OPSIONAL: amankan profil ini dengan kata sandi / keyfile?
+txt_9_6_savepoverwrite: Timpa profil yang sudah ada? Semua data profil akan ditimpa, termasuk script yang tersimpan dan Pengelola Kata Sandi.
+txt_9_6_savep: Simpan profil
+txt_9_6_scside: Tampilkan bilah samping kompak
+txt_9_5_all: Semua
+txt_9_5_precond: Pra-parse jika kesalahan terdeteksi
+txt_9_5_largea: Pra-parse arsip besar
+txt_9_5_mediuma: Pra-parse arsip sedang
+txt_9_5_smalla: Pra-parse arsip kecil
+txt_9_5_reopentab: Buka lagi tab terakhir
+txt_9_5_savetabs: Simpan tab
+txt_9_5_sb: Gunakan biner di path sistem
+txt_9_4_r: baca
+txt_9_4_rw: baca/tulis
+txt_9_4_savecomment: Simpan komentar
+txt_9_4_hintcomment: Ketik atau tempel komentar, muat atau tarik file komen kesini.
+txt_9_3_continue: Lanjutkan saja?
+txt_9_3_contrast: Kontras
+txt_9_3_fsd: Ruang kosong pada tujuan tidak cukup
+txt_9_3_fsw: Ruang kosong di jalur kerja sementara mungkin tidak cukup
+txt_9_3_mrar: Atur RAR biner secara manual
+txt_9_3_canedit: Tipe arsip ini bisa disunting
+txt_9_3_canforce: Tipe arsip ini bisa disunting (paksa)
+txt_9_3_cannotedit: Tipe arsip ini tidak dapat disunting
 txt_9_2_7za: 7z / p7zip alias
-txt_9_2_changelog: Change log
-txt_9_2_tfaq: Check for Translations
-txt_9_2_compact: Compact
-txt_9_2_swt: Swap Tool / Address bar
-txt_9_2_tos: TOS, Privacy
-txt_9_2_doc: Verify documentation, Issue Tracker...
-txt_9_2_updates: Verify updates, binaries, Plugins...
-txt_9_1_7zs: 7z / p7zip syntax level
-txt_9_1_ac: Archive conversion scripts allow user's interaction
-txt_9_1_closeall: Close all
-txt_9_1_enlargeicons: Enlarge file browser icons
-txt_9_1_ef: Exclude empty folders from archiving and extraction operations (7z / p7zip)
-txt_9_1_nw: Open in a new window
-txt_9_1_qdup: Use quick deduplication routine
-txt_9_0_autoexttar: Auto extract TAR archive from compressed TAR.* files
-txt_9_0_accesstime: Do not change last access time
-txt_9_0_mem: Maximum memory usage
-txt_9_0_showmainmenu: Open Main menu
-txt_9_0_navmenu: Open Navigation menu
-txt_9_0_plugind: Open binaries and Plugin directory
-txt_9_0_df: Sort dirs before files
-txt_9_0_hl: Store hard links as links
-txt_9_0_sl: Store symbolic links as links
-txt_9_0_tnav: Toggle side bar, treeview, none
-txt_8_9_empty: Archive seems empty
-txt_8_9_disp: Displaying archive content
-txt_8_9_parsing: Parsing archive content
-txt_8_9_stoptest: Stop to inspect report for error, list, test, auto-test
-txt_8_9_ttb: Toggle tool bar
-txt_8_8_ca: Accent color
-txt_8_8_btn: Button
-txt_8_8_cb: Button color
-txt_8_8_centered: Centered buttons
-txt_8_8_light: Light
-txt_8_8_lnk: Link
-txt_8_8_intnote: Please note that "Interactive extraction" option (in Options > Settings > Archive manager) is ignored for composing the command line in Console tab.
-txt_8_8_snz: Propagate Zone.Identifier stream (Windows)
-txt_8_8_sm: Small icons size
-txt_8_8_solcol: Solid bar
-txt_8_8_snoi: Store owner/group ids (TAR, Linux)
-txt_8_8_snon: Store owner/group names (TAR, Linux)
+txt_9_2_changelog: Log perubahan
+txt_9_2_tfaq: Periksa untuk Translasi
+txt_9_2_compact: Kompak
+txt_9_2_swt: Tukar Alat / Bilah alamat
+txt_9_2_tos: TOS, Privasi
+txt_9_2_doc: Verifikasi dokumen, Pelacak Issue...
+txt_9_2_updates: Verifikasi pembaruan, biner, Plugin...
+txt_9_1_7zs: Level syntax 7z / p7zip
+txt_9_1_ac: Izinkan interaksi pengguna untuk script konversi arsip
+txt_9_1_closeall: Tutup semua
+txt_9_1_enlargeicons: Perbesar ikon penjelajah file
+txt_9_1_ef: Kecualikan folder kosong dari tindakan pengarsipan pengekstrakan (7z / p7zip)
+txt_9_1_nw: Buka di jendela baru
+txt_9_1_qdup: Gunakan rutinitas deduplikasi cepat
+txt_9_0_autoexttar: Otomatis ekstrak arsip TAR dari file terkompresi TAR.*
+txt_9_0_accesstime: Jangan ubah waktu akses terakhir
+txt_9_0_mem: Penggunaan memori maksimal
+txt_9_0_showmainmenu: Buka Menu utama
+txt_9_0_navmenu: Buka Menu navigasi
+txt_9_0_plugind: Buka biner dan Direktori plugin
+txt_9_0_df: Urutkan direktori sebelum file
+txt_9_0_hl: Simpan tautan keras sebagai tautan
+txt_9_0_sl: Simpan tautan simbol sebagai tautan
+txt_9_0_tnav: Tombol bilah samping, treeview, tidak ada
+txt_8_9_empty: Arsip kosong
+txt_8_9_disp: Menampilkan isi arsip
+txt_8_9_parsing: Bongkar isi arsip
+txt_8_9_stoptest: Hentikan untuk pemeriksaan laporan kesalahan, daftar, uji coba, dan uji coba otomatis.
+txt_8_9_ttb: Tombol bilah alat
+txt_8_8_ca: Warna aksen
+txt_8_8_btn: Tombol
+txt_8_8_cb: Tombol warna
+txt_8_8_centered: Tombol ketengah
+txt_8_8_light: Terang
+txt_8_8_lnk: Tautan
+txt_8_8_intnote: Perlu dicatat opsi "Ekstrak interaktif" (di Opsi > Pengaturan > Pengelola arsip) diabaikan untuk komposing baris perintah di tab Konsol.
+txt_8_8_snz: Zona Propagasi.Identifier stream (Windows)
+txt_8_8_sm: Ukuran ikon kecil
+txt_8_8_solcol: Bilah solid
+txt_8_8_snoi: Simpan pemilik/grup ids (TAR, Linux)
+txt_8_8_snon: Simpan nama pemilik/grup (TAR, Linux)
 txt_8_8_tab: Tab
-txt_8_8_altt: Tabs style
-txt_8_8_autotest: Test archives after creation, if supported by the format
-txt_8_8_cw: Window color
-txt_8_7_csvhelp: "," international standard, ";" common in Latin locales
-txt_8_7_after: After archiving / extraction
-txt_8_7_bintest: binaries tested.
-txt_8_7_csv: CSV separator
+txt_8_8_altt: Style Tab
+txt_8_8_autotest: Uji arsip setelah dibuat. Jika mendukung oleh format ini
+txt_8_8_cw: Warna jendela
+txt_8_7_csvhelp: "," standar internasional, ";" umumnya untuk pelokalan Latin
+txt_8_7_after: Setelah pengekstrakan / pengarsipan
+txt_8_7_bintest: biner sudah diuji.
+txt_8_7_csv: Pemisah CSV
 txt_8_7_hok: Hash of binaries used by PeaZip match with expected values
-txt_8_7_mo: Set archive manager options
-txt_8_7_showhm: Show file browser Header menu
-txt_8_7_showsearchbar: Show search bar
-txt_8_7_showsm: Show Style menu
-txt_8_7_hnotok: Some hash of binaries used by PeaZip do not match with expected values:
-txt_8_7_verifybin: Verify hash of binaries
-txt_8_6_clear: "Clear" option removes temp edited files, otherwise available for further editing.
-txt_8_6_noclear: Discard all changes without updating the archive
-txt_8_6_nosimple: Do not update archive, keep temp edited files for further editing
+txt_8_7_mo: Atur opsi pengelola arsip
+txt_8_7_showhm: Tampilkan Header menu penjelajah file
+txt_8_7_showsearchbar: Tampilkan bilah pencarian
+txt_8_7_showsm: Tampilkan menu Style
+txt_8_7_hnotok: Beberapa biner hash yang digunakan oleh PeaZip tidak sesuai dengan value yang diharapkan:
+txt_8_7_verifybin: tampilkan hash biner
+txt_8_6_clear: Opsi “Hapus” menghapus file sementara yang telah diedit, sedangkan file tersebut tetap tersedia untuk diedit lebih lanjut.
+txt_8_6_noclear: Batalkan semua perubahan tanpa memperbarui arsip
+txt_8_6_nosimple: Jangan perbarui arsip, simpan file yang telah diedit untuk pengeditan lebih lanjut.
 txt_8_6_immediate: Immediate execution
-txt_8_6_yessimple: Update archive, keep temp edited files for further editing
-txt_8_5_advbrowser: Apply filters to archive browser
-txt_8_5_detailslarge: Details, large
-txt_8_5_intext: Extract to temp work path then move to output (ask before overwriting)
-txt_8_5_listlarge: List, large
-txt_8_5_loadlayout: Load layout at startup
-txt_8_5_samplescripts: Sample scripts
-txt_8_4_keepopenerrorslist: Stop to inspect report for error, list
+txt_8_6_yessimple: Perbarui arsip, simpan file yang telah diedit untuk pengeditan lebih lanjut.
+txt_8_5_advbrowser: Terapkan filter ke perambah arsip
+txt_8_5_detailslarge: Detail, besar
+txt_8_5_intext: Ekstrak ke jalur kerja sementara, lalu pindahkan ke output (tanyakan sebelum menimpa)
+txt_8_5_listlarge: Daftar, besar
+txt_8_5_loadlayout: Muat tata letak saat memulai
+txt_8_5_samplescripts: Contoh script
+txt_8_4_keepopenerrorslist: Hentikan untuk pemeriksaan kesalahan, daftar
 txt_8_3_mbubin: Binary
-txt_8_3_cw: Change working directory? This will reset temporary work files and restart the application.
-txt_8_3_temperature: Color temperature
-txt_8_3_mbudec: Decimal
-txt_8_3_htab: Highlight tabs
-txt_8_3_maxarg: Maximum length of arguments
+txt_8_3_cw: Ubah direktori kerja? Ini akan mengembalikan file pekerjaan sementara dan memulai ulang aplikasi.
+txt_8_3_temperature: Warna temperatur
+txt_8_3_mbudec: Desimal
+txt_8_3_htab: Tab sorotan
+txt_8_3_maxarg: Argumen maksimal panjang
 txt_8_3_mbu: Multiple-byte unit
 txt_8_3_prefalgo: Preferred algorithms
-txt_8_3_skipdel: Skip deletion of locked temp files (use reset to delete on demand)
-txt_8_3_lw: Some files in working directory are locked and cannot be removed automatically
-txt_8_3_noupx: This binary cannot be compressed (may be already compressed)
-txt_8_2_slower: (slower)
-txt_8_2_df: 7z / p7zip display content of folders
-txt_8_2_vreport: 7z / p7zip non-verbose report
-txt_8_2_ta: Accessed
-txt_8_2_tc: Created
-txt_8_2_keep: Keep files
-txt_8_2_tm: Modified
-txt_8_2_skipet: Skip testing for encryption
-txt_8_2_alltimes: Store all timestamps
-txt_8_2_supportedby: Supported by
-txt_8_1_preparse: Always pre-parse archives
-txt_8_1_bo: Browser optimization
-txt_8_1_bop: Browser optimization options can be set from Options > Settings, General tab, in order to allow browser to display archives containing a very large number of items.
-txt_8_1_nopreparse: Do not pre-parse archives
-txt_8_1_ed: error(s) detected.
-txt_8_1_togglearc: Listing flat view of archive content may take long time, continue anyway?
-txt_8_1_preparsehint: Optimize performances limiting pre-parsing of large archives. Pre-parsing is meant to detect in advance possible issues in archive content.
-txt_8_1_slow: Slow
-txt_8_1_vslow: Very slow
-txt_8_1_volumes: volumes
-txt_8_0_altcol: Alternate grid color
-txt_8_0_forcebrowse: Browse non-canonical archive types (containers, disk images, installers,...)
-txt_8_0_commonalgo: Common algorithms
-txt_8_0_forceconvert: Convert non-canonical archive types
+txt_8_3_skipdel: Lewati penghapusan file sementara yang terkunci (gunakan reset untuk menghapus permintaan)
+txt_8_3_lw: Beberapa file di direktori pekerjaan akan dikunci dan tidak bisa dihapus secara otomatis
+txt_8_3_noupx: Biner ini tidak bisa dikompres (mungkin sudah terkompres)
+txt_8_2_slower: (lambat)
+txt_8_2_df: Tampilkan konten folder 7z / p7zip
+txt_8_2_vreport: Laporkan non-verbose 7z / p7zip
+txt_8_2_ta: Diakses
+txt_8_2_tc: Dibuat
+txt_8_2_keep: Amankan file
+txt_8_2_tm: Diubah
+txt_8_2_skipet: Lewati pengujian untuk enkripsi
+txt_8_2_alltimes: Simpan semua timestamp
+txt_8_2_supportedby: Didukung oleh
+txt_8_1_preparse: Selalu pra-parse arsip
+txt_8_1_bo: Optimalisasi peramban
+txt_8_1_bop: Opsi pengoptimalan peramban bisa diatur di Opsi > Pengaturan, tab Umum, untuk memungkinkan browser menampilkan arsip yang berisi jumlah item yang sangat besar.
+txt_8_1_nopreparse: Jangan pre-parse arsip
+txt_8_1_ed: kesalahan terdeteksi.
+txt_8_1_togglearc: Menampilkan daftar isi arsip dalam tampilan datar mungkin memakan waktu lama, apakah tetap melanjutkan?
+txt_8_1_preparsehint: Optimalkan batasan performa pre-parsing untuk arsip besar. Pre-parsing is meant to detect in advance possible issues in archive content.
+txt_8_1_slow: Lambat
+txt_8_1_vslow: Sangat lambat
+txt_8_1_volumes: volume
+txt_8_0_altcol: Alternatif warna ubin
+txt_8_0_forcebrowse: Telusuri tipe arsip non-kanonikal (kontainer, disk image, penginstalan,..)
+txt_8_0_commonalgo: Algoritma umum
+txt_8_0_forceconvert: Konvert tipe arsip non-kanonikal
 txt_8_0_defaultactionhint: Default action double-clicking a file associated with PeaZip from the system
-txt_8_0_defaultaction: Default action on start-up
-txt_8_0_enableextand: Enable "Extract and open with" submenu
-txt_8_0_forcetyping: Force typing passwords interactively
-txt_8_0_setpwopt: Set password / keyfile options
-txt_8_0_forcetypinghelp: Will run backend binaries in console, cannot browse archives with encrypted filenames. Allows to create scripts that will not run unattended but rather ask user interactively for password.
-txt_7_9_spacing: Spacing
+txt_8_0_defaultaction: Tindakan default saat memulai
+txt_8_0_enableextand: Aktifkan submenu "Ekstrak dan buka dengan"
+txt_8_0_forcetyping: Paksa mengetik kata sandi interaktif
+txt_8_0_setpwopt: Atur kata sandi / opsi keyfile
+txt_8_0_forcetypinghelp: Akan menjalankan file biner backend di konsol, tidak dapat menjelajahi arsip dengan nama file terenkripsi. Memungkinkan untuk membuat skrip yang tidak akan dijalankan secara otomatis, melainkan meminta pengguna secara interaktif untuk memasukkan kata sandi.
+txt_7_9_spacing: Pemisah
 txt_7_9_zooming: Zooming
-txt_7_8_changelocalization: Change PeaZip language
-txt_7_8_custext: Custom extension
-txt_7_8_destexistfile: Destination already contains processed files. Replace files with same name?
-txt_7_8_dd: Drag and Drop
-txt_7_8_priorityhigh: High
-txt_7_8_priorityidle: Idle
-txt_7_8_rel: Interactive extraction
+txt_7_8_changelocalization: Ganti bahasa PeaZip
+txt_7_8_custext: Ekstensi kustom
+txt_7_8_destexistfile: Destinasi sudah berisi file yang telah diproses. Apakah ingin mengganti file dengan nama yang sama?
+txt_7_8_dd: Tarik dan Lepaskan
+txt_7_8_priorityhigh: Tinggi
+txt_7_8_priorityidle: Tidak aktif
+txt_7_8_rel: Ekstrak interaktif
 txt_7_8_prioritynormal: Normal
 txt_7_8_priorityrealtime: Real time
-txt_7_8_requirerestart: [requires restarting PeaZip]
-txt_7_8_tpriority: Tasks priority
-txt_7_8_update: Update
-txt_7_7_noneall: None (no preview, no Drag And Drop extraction)
-txt_7_7_nonetemp: None, User's temp if necessary
-txt_7_7_outtemp: Output, preview in User's temp
-txt_7_7_sys7zreq: Requires p7zip-full or equivalent to be installed
-txt_7_7_tw: Temporary work folder for archive creation, editing, preview and Drag And Drop extraction.
-txt_7_7_sys7z: Use system 7z in Linux
-txt_7_6_zipenc: 7z/p7zip ZIP filenames encoding
-txt_7_6_color: Color
-txt_7_6_custenc: Custom code page
-txt_7_6_dark: Dark
-txt_7_6_tno: Do not sync archive tree
-txt_7_6_forcelocalenc: Force local
-txt_7_6_forceutf8enc: Force UTF-8
-txt_7_6_cpnote: If the chosen custom code page is unsupported, tasks will always end in error (most likely memory allocation error). In case that happens, change code page or reset the application.
-txt_7_6_defaultenc: Local, UTF-8 for extra symbols
+txt_7_8_requirerestart: [Harus memulai ulang PeaZip]
+txt_7_8_tpriority: Tugas yang diprioritaskan
+txt_7_8_update: Perbarui
+txt_7_7_noneall: Tidak ada (tidak ada pratinjau, tidak ada ekstraksi Tarik Dan Lepaskan)
+txt_7_7_nonetemp: Tidak ada, pengguna sementara jika diperlukan
+txt_7_7_outtemp: Output, pratinjau di folder sementara pengguna
+txt_7_7_sys7zreq: Membutuhkan p7zip-full atau yang setara dengan yang diinstal
+txt_7_7_tw: Folder kerja sementara untuk pembuatan arsip, pengeditan, pratinjau, dan ekstrak dengan seret dan lepas.
+txt_7_7_sys7z: Gunakan 7z sistem di Linux
+txt_7_6_zipenc: Pengkodean nama file ZIP 7z/p7zip
+txt_7_6_color: Warna
+txt_7_6_custenc: Halaman kode kustom
+txt_7_6_dark: Gelap
+txt_7_6_tno: Jangan sinkronkan bagan arsip
+txt_7_6_forcelocalenc: Paksa lokal
+txt_7_6_forceutf8enc: Paksa UTF-8
+txt_7_6_cpnote: Jika halaman kustom kode yang dipilih tidak didukung, tugas akan selalu berhenti di kesalahan (seperti kesalahan alokasi memori). Di kasus kedepannya, ganti halaman kode atau atur ulang aplikasi.
+txt_7_6_defaultenc: Lokal, UTF-8 untuk simbol ekstra
 txt_7_6_dim: Low light
-txt_7_6_setcurdef: Set current path as default output path
-txt_7_6_setdef: Set default output path
-txt_7_6_tadvanced: Sync archive tree, keep visited nodes
-txt_7_6_tsimple: Sync archive tree, simple
-txt_7_6_tacolor: Text accent
-txt_7_5_always: Always
-txt_7_5_ask: Ask
-txt_7_5_autoclosesingle: Auto close after extraction if no browsing actions took place
-txt_7_5_cutlen: Cut name at specified length
-txt_7_5_cutlenw: Cut name at specified length (4..255) naming conflicts can be fixed manually later
-txt_7_5_dragnone: Do not lock target
-txt_7_5_specialbrowse: Do you want to extract everything in order to provide the file with the extra data it may need?
-txt_7_5_ee: Extract everything for special file types
-txt_7_5_draghide: Hide drop target
-txt_7_5_draglh: Lock and hide target
+txt_7_6_setcurdef: Atur path saat ini sebagai output path default
+txt_7_6_setdef: Atur lokasi output default
+txt_7_6_tadvanced: Sinkronkan bagan arsip, simpan node yang telah dikunjungi
+txt_7_6_tsimple: Sinkronkan bagan arsip, gampang
+txt_7_6_tacolor: Aksen teks
+txt_7_5_always: Selalu
+txt_7_5_ask: Tanya
+txt_7_5_autoclosesingle: Otomatis menutup setelah pengekstrakan jika tidak ada tindakan penelusuran yang dilakukan
+txt_7_5_cutlen: Potong nama pada panjang yang ditentukan
+txt_7_5_cutlenw: Potong nama pada panjang yang ditentukan (4..255) Konflik penamaan dapat diperbaiki secara manual nanti
+txt_7_5_dragnone: Jangan kunci target
+txt_7_5_specialbrowse: Apakah Anda ingin mengekstrak semua data agar file tersebut dapat dilengkapi dengan data tambahan yang mungkin dibutuhkannya?
+txt_7_5_ee: Ekstrak apapun dari tipe file spesial
+txt_7_5_draghide: Sembunyikan target drop
+txt_7_5_draglh: Kunci dan sembunyikan target
 txt_7_5_draglock: Lock drop target
-txt_7_5_never: Never
-txt_7_5_repnascii: Replace/remove non-ASCII characters
-txt_7_4_comment: Comment
-txt_7_4_7zfbrotlicomp: Fastest compression, 7Z Brotli
-txt_7_4_7zfzstandardcomp: Fastest compression, 7Z Zstandard
-txt_7_4_presetrar: High compression, RAR
+txt_7_5_never: Jangan pernah
+txt_7_5_repnascii: Timpa/hapus karakter non-ASCII
+txt_7_4_comment: Komentar
+txt_7_4_7zfbrotlicomp: Kompresi tercepat, 7Z Brotli
+txt_7_4_7zfzstandardcomp: Kompresi tercepat, 7Z Zstandard
+txt_7_4_presetrar: Kompresi tinggi, RAR
 txt_7_4_tkeep: Keep original archive timestamp
-txt_7_4_lock: Lock archive
-txt_7_4_locked: locked
-txt_7_4_lockconfirm: Locked archives cannot be further modified, proceed locking this archive?
-txt_7_4_recover: Repair archive
-txt_7_4_tcurr: Set archive timestamp from current system time
-txt_7_4_setarc: Set archiving options
-txt_7_4_setext: Set extraction options
-txt_7_4_swzipx: Switch to zipx extension for non-Deflate zip archives
-txt_7_3_archiveerrors: [archive may contain errors]
-txt_7_3_archiveerrorshint: Archive may not be valid (due missing, corrupted, or out of standard data), it is possible to run Test for detailed information. If archive's table of content is encrypted, password is needed before browsing it.
-txt_7_3_clickextall: Click "Extract all" to enable
-txt_7_3_noconfdel: Do not ask confirmation for delete after archiving / extraction
-txt_7_3_profile7zfastest: Fast compression, 7Z fastest
-txt_7_3_maxbr: Maximize Brotli compression using more memory (may be incompatible with some extractors)
-txt_7_3_maxzstd: Maximize Zstandard compression using more memory
-txt_7_3_profile7zfast: Medium compression, 7Z fast
-txt_7_3_stl: Set archive timestamp from most recent file
-txt_7_2_altcomp: Alternative compression, ARC
-txt_7_2_clearnoupdate: Clear edited files
-txt_7_2_autoclosepeazip: Close PeaZip when task completes
-txt_7_2_zpaqall: Extract all revisions
-txt_7_2_extcomp: Extreme compression, ZPAQ
-txt_7_2_extcompultra: Extreme compression, ZPAQ ultra
-txt_7_2_fbrotlicomp: Fastest compression, Brotli
-txt_7_2_fzstandardcomp: Fastest compression, Zstandard
-txt_7_2_loadcompsettings: Load compression settings
-txt_7_2_savecompsettings: Save compression settings
-txt_7_2_source: Source
-txt_7_2_updateclear: Update edited files in archive, and clear edited files
-txt_7_1_type_description_brotli: Brotli: fast compressor from Google, very fast decompression
-txt_7_1_new: Extract all here, in new folder
-txt_7_1_smart: Extract all here, smart
-txt_7_1_profileintermediate: Intermediate compression, ZIP/BZip2 fast
-txt_7_1_renfilesonly: Rename only files
-txt_7_1_typetosearch: Type to search in current path
-txt_7_1_type_description_zstd: Zstandard: fast compressor from Facebook, very fast decompression
+txt_7_4_lock: Kunci arsip
+txt_7_4_locked: terkunci
+txt_7_4_lockconfirm: Arsip terkunci tidak dapat diubah, lanjutkan untuk mengunci arsip ini?
+txt_7_4_recover: Perbaiki arsip
+txt_7_4_tcurr: Atur penanda waktu arsip dari waktu sistem saat ini
+txt_7_4_setarc: Opsi pengaturan pengarsipan
+txt_7_4_setext: Opsi pengaturan pengekstrakan
+txt_7_4_swzipx: Beralih ke ekstensi zipx untuk arsip zip non-Deflate
+txt_7_3_archiveerrors: [arsip mungkin berisi kesalahan]
+txt_7_3_archiveerrorshint: Arsip mungkin tidak valid (karena data yang hilang, rusak, atau tidak sesuai standar), Anda dapat menjalankan Tes untuk informasi detail. Jika daftar isi arsip dienkripsi, kata sandi diperlukan sebelum membukanya.
+txt_7_3_clickextall: Klik "Ekstrak semua" untuk mengaktifkan
+txt_7_3_noconfdel: Jangan tanya konfirmasi untuk penghapusan setelah mengarsip / mengekstrak
+txt_7_3_profile7zfastest: Kompresi cepat, 7Z lebih cepat
+txt_7_3_maxbr: Maksimalkan kompresi Brotli dengan menggunakan lebih banyak memori (mungkin tidak kompatibel dengan beberapa ekstraktor)
+txt_7_3_maxzstd: Maksimalkan kompresi Zstandard menggunakan lebih banyak memori
+txt_7_3_profile7zfast: Kompresi medium, 7Z cepat
+txt_7_3_stl: Atur arsip penanda waktu dari file baru-baru ini
+txt_7_2_altcomp: Kompresi alternatif, ARC
+txt_7_2_clearnoupdate: Hapus file yang sudah diedit
+txt_7_2_autoclosepeazip: Tutup PeaZip ketika tugas selesai
+txt_7_2_zpaqall: Ekstrak semua revisi
+txt_7_2_extcomp: Kompresi Extreme, ZPAQ
+txt_7_2_extcompultra: Kompresi extreme, ZPAQ ultra
+txt_7_2_fbrotlicomp: Kompresi cepat, Brotli
+txt_7_2_fzstandardcomp: Kompresi cepat, Zstandard
+txt_7_2_loadcompsettings: Muat pengaturan kompresi
+txt_7_2_savecompsettings: Simpan pengaturan kompresi
+txt_7_2_source: Sumber
+txt_7_2_updateclear: Perbarui file yang disunting di arsip, dan hapus file yang sudah disunting
+txt_7_1_type_description_brotli: Brotli: kompresor cepat dari Google, dekompresi sangat cepat
+txt_7_1_new: Ekstrak semua disini, di folder baru
+txt_7_1_smart: Ekstrak semua disini, pintar
+txt_7_1_profileintermediate: Kompresi menengah, ZIP/BZip2 cepat
+txt_7_1_renfilesonly: Namai ulang hanya file
+txt_7_1_typetosearch: Ketik untuk mencari di path saat ini
+txt_7_1_type_description_zstd: Zstandard: kompresor cepat dari Facebook, dekompresi super cepat
 txt_7_0_af: Analisa konten folder
 txt_7_0_autoopentar: Buka otomatis arsip tar tunggal di dalam file tar.*
 txt_7_0_exttmppath: Konten akan diekstrak di luar alur kerja sementara, di:
@@ -359,7 +347,7 @@ txt_5_5_case: (hal-hal yang sensitif)
 txt_5_5_add: Tambahkan string pada posisi tertentu
 txt_5_5_addsel: Tambah ke posisi saat ini
 txt_5_5_ext: Ubah ekstensi file
-txt_5_5_plugin: Periksa plugin dan addon
+txt_5_5_plugin: Periksa plugin dan pengaya
 txt_5_5_copypath: Salin alur
 txt_5_5_delete: Hapus karakter pada posisi tertentu
 txt_5_5_halt: Hentikan sistem saat pekerjaan selesai
@@ -593,7 +581,7 @@ txt_3_0_nonreadableorpw: Arsip tidak dapat dibaca. Apaka kamu mau mencoba kata s
 txt_3_0_readablepw: Arsip tampaknya terlindungi kata sandi
 txt_3_0_configure: Integrasi sistem dan Asosiasi file
 txt_3_0_resettmp: Atur ulang peazip-tmp
-txt_2_9_address: Bar alamat
+txt_2_9_address: Bilah alamat
 txt_2_9_adv: Filter lanjutan telah diterapkan saat mengelola file yang mendukung seperti 7z atau FreeArc backends, lihat dokumentasi, dan timpa filter asal (itu digunakan untuk fungsi pencarian dan ditampilkan pada panel Penanda dan Riwayat)
 txt_2_9_columns: Kolom
 txt_2_9_copyhere: Salin di sini
@@ -722,7 +710,7 @@ txt_2_4_wbook: Wikibook
 txt_2_4_wnews: Wikinews
 txt_2_4_wsrc: Wikisource
 txt_2_4_wdict: Wiktionary
-txt_2_3_pw_errorchar: karakter petik tidak dapat digunakan oleh PeaZip GUI pada kata sandi di bawah sistem terbaru, harap ubah kata sandi atau pilih mode Konsol di binari Backend tampilan pengguna di Opsi > Pengaturan
+txt_2_3_pw_errorchar: karakter petik tidak dapat digunakan oleh PeaZip GUI pada kata sandi di bawah sistem terbaru, harap ubah kata sandi atau pilih mode Konsol di biner Backend tampilan pengguna di Opsi > Pengaturan
 txt_2_3_envstr: Tampilkan variabel environment
 txt_2_3_never_pw: jangan tanyakan kata sandi
 txt_2_3_home: Beranda pengguna
@@ -809,7 +797,7 @@ txt_ren_existing: Ganti nama otomatis file yang tersedia
 txt_ren_extracted: Ganti nama otomatis file terekstrak
 txt_autofolder: Buat folder baru otomatis untuk mengekstrak arsip ke dalamnya?
 txt_back: Kembali
-txt_backend: Binari backend antarmuka pengguna
+txt_backend: Biner backend antarmuka pengguna
 txt_backupexe: Cadangkan tereksekusi (direkomendasikan)
 txt_bettercompression: kompresi lebih baik
 txt_blogs: Blog
@@ -971,7 +959,7 @@ txt_backupexe_hint: Jika terjadi suatu kesalahan dan menghadirkan hasil yang tid
 txt_attach: Jika klien email mendukung perintah tersebut, arsip akan dilampirkan ke pesan baru
 txt_images: Gambar
 txt_include_hint: Termasuk file, satu per baris; gunakan wildcard * dan ?; pembatasan " dan ' tidak dibutuhkan
-txt_filters_hint: Masukkan dan kecualikan filter untuk binari 7z, harap baca dokumentasi 7-Zip dengan hati-hati untuk memahami bagaimana filter tersebut bekerja
+txt_filters_hint: Masukkan dan kecualikan filter untuk biner 7z, harap baca dokumentasi 7-Zip dengan hati-hati untuk memahami bagaimana filter tersebut bekerja
 txt_inclusion_recourse: Masukkan filter sub-direktori berulang
 txt_inclusion: Termasuk
 txt_error_function: Fungsi yang diminta tidak tepat
@@ -1102,7 +1090,7 @@ txt_peazip_help: Bantuan online
 txt_peazip_web: Situs PeaZip
 txt_performall: Kerjakan semua algoritma yang didukung
 txt_name_provide: Karakter \ / : * ? ' " < > | tidak diizinkan pada nama file
-txt_upxorstrip: Harap pilih Strip dan/atau UPX pada binari
+txt_upxorstrip: Harap pilih Strip dan/atau UPX pada biner
 txt_not_removable_file: Harap tutup file yang terbuka, untuk mengizinkan PeaZip untuk menghapusnya:
 txt_not_removable: Harap tutup file yang terbuka, untuk mengizinkan PeaZip untuk menghapus foldernya:
 txt_custom_executable_missing: Harap sediakan nama tereksekusi kustom
@@ -1295,7 +1283,7 @@ txt_2_7_validatefn: Operasi dihentikan, nama tidak sah terdeteksi:
 txt_2_7_validatecl: Operasi dihentikan, perintah yang berpotensi membahayakan terdeteksi (mis. perintah penggabungan tidak diizinkan di dalam program):
 txt_2_6_open: Buka arsip
 txt_2_5_ace_missing: Plugin UNACE hilang; untuk menangani arsip ACE kamu dapat mengunduhnya melalui laman PeaZip (karena UNACE merupakan sumber tertutup, plugin tidak disediakan di paket utama)
-txt_2_3_pw_errorchar_gwrap: karakter petik tidak dapat digunakan oleh PeaZip GUI pada kata sandi di bawah sistem terbaru, harap ubah kata sandi atau pilih mode Konsol di binari Backend tampilan pengguna di Opsi > Pengaturan
+txt_2_3_pw_errorchar_gwrap: karakter petik tidak dapat digunakan oleh PeaZip GUI pada kata sandi di bawah sistem terbaru, harap ubah kata sandi atau pilih mode Konsol di biner Backend tampilan pengguna di Opsi > Pengaturan
 txt_2_3_renameexisting: Ganti nama otomatis file yang tersedia
 txt_2_3_renameextracted: Ganti nama otomatis file terekstrak
 txt_2_3_cancel: Batal
