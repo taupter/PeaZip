@@ -25,7 +25,7 @@ unit pea_utils;
                                 generate_keyfile (preloading it in the key array).
  0.12     20060926  G.Tani      added notes about compatibility for external functions
                                 called;
- 0.13     20060523  G.Tani      P_RELEASE moved to unit_pea; in pea_utils remains
+ 0.13     20060523  G.Tani      P_RELEASE moved to unit pea; in pea_utils remains
                                 _VER and _REV constants to declare PEA format support level
  0.14     20071130  G.Tani      Some cleanup
                                 removed unit oldlinux (obsolete)
@@ -68,6 +68,7 @@ unit pea_utils;
                                 Improved password strength test
  0.42     20201206  G.Tani      Updated theming
  0.43     20230427  G.Tani      Updated theming, added contrast level
+ 0.44     20250825  G.Tani      Moved here helper functions from peach unit
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
@@ -95,7 +96,7 @@ interface
 uses
 {$IFDEF MSWINDOWS}Windows,{$ENDIF}
 SysUtils,
-list_utils,ansiutf8_utils,
+list_utils,
 hash, sha1, sha256, sha512, whirl512, aes_ctr, AES_Type, TF_Base, tf_ctr,
 aes_eax, tf_eax, sp_eax,
 fcrypta, fcryptt, fcrypts,
@@ -108,7 +109,7 @@ type
 
 const
 PEA_FILEFORMAT_VER = 1;
-PEA_FILEFORMAT_REV = 6; //version and revision declared to be implemented must match with the ones in unit_pea, otherwise a warning will be raised (unit_pea)
+PEA_FILEFORMAT_REV = 6; //version and revision declared to be implemented must match with the ones in unit pea, otherwise a warning will be raised (unit_pea)
 SUCCESS = 0;
 INCOMPLETE_FUNCTION = 1;
 NOT_PEA_HEADER = 2;
@@ -131,6 +132,8 @@ PLGREEN       = $0040d080;
 PGREEN        = $0000c060;
 PAPPCOL       = $00ff9933;
 PTACOL        = $00CC5511;
+FIRSTDOM      = 'https://peazip.github.io/';
+SECONDDOM     = 'https://peazip.sourceforge.io/';
 
 var
 plblue,pblue,pvlblue,pvmlblue,pvvvmlblue,pvvvvlblue,pvvvlblue,pvvmlblue,pvvlblue,pgray,psilver,ptextaccent,pltextaccent:tcolor;
@@ -475,6 +478,16 @@ procedure evaluate_password ( pw: ansistring;                                   
 
 //function to prepend keyfile to password string (used for non-pea encryption)
 function prepend_keyfile(var pw:ansistring; keyfilename:ansistring):integer;
+
+procedure checkdom(var dom,s:ansistring);
+
+function IsWindows64: boolean;
+
+procedure do_fixpipechar(var s:AnsiString);//hint text is cut when pipe char is encountered in Lazarus 2.2.0
+
+{$IFDEF MSWINDOWS}
+function tbh: integer;
+{$ENDIF}
 
 implementation
 
@@ -2365,6 +2378,83 @@ close(f);
 SHA256Final(SHA256Context,SHA256Digest);
 pw:=base64str(@SHA256Digest,sizeof(SHA256Digest))+pw;
 prepend_keyfile:=0;
+end;
+
+procedure checkdom(var dom,s:ansistring);
+{$IFDEF MSWINDOWS}var http1: variant;{$ENDIF}
+begin
+dom:=FIRSTDOM;
+s:='';
+{
+{$IFDEF MSWINDOWS}
+try
+http1:=createoleobject('WinHttp.WinHttpRequest.5.1');
+http1.open('GET', FIRSTDOM+'autoupdate.txt', false);
+http1.send;
+s:=http1.responsetext;
+if length(s)<>5 then
+begin
+dom:=SECONDDOM;
+http1:=createoleobject('WinHttp.WinHttpRequest.5.1');
+http1.open('GET', SECONDDOM+'autoupdate.txt', false);
+http1.send;
+s:=http1.responsetext;
+end;
+except
+end;
+{$ENDIF}
+}
+end;
+
+function IsWindows64: boolean;
+{$IFDEF WIN32}
+type
+  TIsWow64Process = function(Handle: Windows.THandle; var Res: Windows.BOOL): Windows.BOOL; stdcall;
+var
+  IsWow64Result: Windows.BOOL;
+  IsWow64Process: TIsWow64Process;
+begin
+IsWow64Process := TIsWow64Process(Windows.GetProcAddress(Windows.GetModuleHandle('kernel32'), 'IsWow64Process'));
+if Assigned(IsWow64Process) then
+   begin
+   if not IsWow64Process(Windows.GetCurrentProcess, IsWow64Result) then
+   raise SysUtils.Exception.Create('IsWindows64: bad process handle');
+   Result := IsWow64Result;
+   end
+else
+   Result := False;
+{$ELSE} //win64
+begin
+Result := True;
+{$ENDIF}
+end;
+
+{$IFDEF MSWINDOWS}
+function tbh: integer;
+var
+  hTB: HWND;
+  TBRect: TRect;
+begin
+hTB:= FindWindow('Shell_TrayWnd', '');
+if hTB = 0 then
+   Result := 0
+else
+   begin
+   GetWindowRect(hTB, TBRect);
+   Result := TBRect.Bottom - TBRect.Top;
+   end;
+end;
+{$ENDIF}
+
+procedure do_fixpipechar(var s:AnsiString);//GUI hint text is cut when pipe char is encountered in Lazarus 2.2.0
+var
+   i:integer;
+begin
+repeat
+   i := pos('|', s);
+   if i > 0 then
+      s[pos('|', s)] := '/';
+until i = 0;
 end;
 
 end.

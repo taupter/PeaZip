@@ -1,7 +1,8 @@
 unit externalprograms;
 
 {
- DESCRIPTION     :  Unit defining external binaries used in PeaZip project
+ DESCRIPTION     :  Unit defining external binaries used in PeaZip project and
+                    collecting calls to external routines
 
  REQUIREMENTS    :  FPC
 
@@ -19,6 +20,7 @@ unit externalprograms;
  -------  --------  -------     ------------------------------------------
  0.10     20250819  Suve        Initial version on GitHub
  0.11     20250820  G.Tani      Expanded with hash checking values
+ 0.12     20251015  G.Tani      Expanded moving here some of the calls to external routines
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
@@ -43,8 +45,15 @@ The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
 
 interface
 
+uses
+Classes, SysUtils,
+{$IFDEF MSWINDOWS}
+Windows, activex, ShlObj, ComObj, shellapi, windirs,
+{$ENDIF}
+list_utils;
+
 const
-  APPLICATION_PEA = 'Pea 1.26 (LGPLv3, Giorgio Tani)';
+  APPLICATION_PEA = 'Pea 1.27 (LGPLv3, Giorgio Tani)';
 
   {$IFDEF MSWINDOWS}
   EXEEXT        = '.exe';
@@ -146,16 +155,16 @@ const
 
   // Known hash values
 
-  //Pea 1.26
-  HPEA_BSD_X_GTK2     = '2DD88409BB7709051860A322C2E8D9940024524B603E53FDCD8FF6109BF97EC2'; //BSD x86_64 GTK2
-  HPEA_LIN_A_GTK2     = 'BE9BFFEC57927AD5155319DBAE3FEEB574EF7EE5E4F5BCA1B669DE4B74557543'; //lin aarch64 GTK2
-  HPEA_LIN_X_GTK2     = '12C56D9E8E2B0F50F70DD5A79F1E1C1582B67D21995CE9C2C17C8A2A35D6FB59'; //lin x86_64 GTK2
-  HPEA_LIN_X_GTK3     = '8ED10D0B551DAAAF49CFFD7246D0BAD04652AAE858EF33FAEBEC79595742E47B'; //lin x86_64 GTK3
-  HPEA_LIN_X_QT6      = 'B6225FC7ACF370A40A4A726090E3BC18365E1AED90299C6BF25C0843B1BEBF01'; //lin x86_64 Qt6
-  HPEA_MACOS_A        = '81251FB080037A2B4051A49832661307D78B2991A32FDB53432547BE8125D942'; //macos aarch64
-  HPEA_MACOS_X        = 'EA347EE06B5148CCD97451E21FCACB8D9603F395ABAE411915D24D23E0B803C3'; //macos Intel x86_64
-  HPEA_WIN32_X        = 'BF8C97ADF1F169D06B80F44BAE94B0BFA080166BF95FC722EBEDD0FD8D2C5FA0'; //win32
-  HPEA_WIN64_X        = '1419D5630187B1F56B36A1985613009F726B21E91B7F2D9D5A8DD4028C8AE1C3'; //win64
+  //Pea 1.27
+  HPEA_BSD_X_GTK2     = '08A04EEF35A5F438AD62B9E4C4705E37E0E2FDAAF71A69DCD60C2D0F7E0AAAAF'; //BSD x86_64 GTK2
+  HPEA_LIN_A_GTK2     = '95500D1754C14AC324D1CBCCCE8CB88C73363C4ADF3127E8FAC6E495DF9998DC'; //lin aarch64 GTK2
+  HPEA_LIN_X_GTK2     = 'DE92A6D9A7E040D97FA4DFCA876D4CE4BA5BFA0FB2C4D2EBD26DE5ED024D2BC8'; //lin x86_64 GTK2
+  HPEA_LIN_X_GTK3     = '105494EF4563AD66FEDD0CE71CABF44403BB9701127B15DA220BA56899FAB92F'; //lin x86_64 GTK3
+  HPEA_LIN_X_QT6      = '1EBACA0A5D02FF6CFD790C632CFCC649454BC791819D46F1F88EFFB764DF8A83'; //lin x86_64 Qt6
+  HPEA_MACOS_A        = '530B528B1D370F0653A06AB9B6CBCAE0FD54C2B6B764E9E6435A909ADA81687F'; //macos aarch64
+  HPEA_MACOS_X        = '3C65EE1021929E2C2C3E626A312EDAF681012C1C2FBED336257F6F7EE794BDA7'; //macos Intel x86_64
+  HPEA_WIN32_X        = '4C0EC55F80376F310F86E3F98EBD93E1030BAFF785AC9B330221813C95FEB119'; //win32
+  HPEA_WIN64_X        = 'FC1C53367BF962EF819F467D54B939E515055B2EA84A3A253FE9D6D16D11BD42'; //win64
 
   //7z sfx (Tino Reichardt's modules)
   H7ZSFX1             = '353A3F6D7CBD06C6F25589DF00B40F363E9F597C4EDC4AD782F6D6B21F297F09'; //7z\7z.sfx
@@ -248,6 +257,164 @@ const
   HBROTLI_LIN_A       = '32AA36A75D2151B6A6489E4ED735B5F133AA9DEE5D1F9332966627570D0C7A8E'; //brotli aarch64
   HZSTD_LIN_A         = 'A7FA062F4AF7B56717758972D4CCE140EDA199CAC6A7A8A091D0FECD05950DA9'; //zstd 1.5.7 aarch64
 
+{$IFDEF MSWINDOWS}
+type //used for file properties
+   TSHMultiFileProperties = function(pDataObj: IDataObject; Flag: DWORD): HRESULT;
+   stdcall;
+{$ENDIF}
+
+{$IFDEF MSWINDOWS}
+var
+  //used for file properties
+  hUser32prop: HMODULE;
+  SHMultiFileProperties: TSHMultiFileProperties;
+{$ENDIF}
+
+{$IFDEF MSWINDOWS}
+//get file properties
+procedure ShowFileProperties(Files: TStrings; aWnd: HWND);
+//wrappers for ShFileOperationW
+function fileop_fromnamelist(fnames: array of ansistring; fto:ansistring; fileopfun:integer; fileopflags:integer):integer;
+function fileop_fromnamelist_single(fname, fto:ansistring; fileopfun:integer; fileopflags:integer):integer;
+{$ENDIF}
+
 implementation
+
+{$IFDEF MSWINDOWS}
+function callSHMultiFileProperties(pDataObj: IDataObject; Flag: DWORD): HRESULT;
+begin
+      try
+         hUser32prop := GetModuleHandle(PChar('shell32.dll'));
+         if hUser32prop <> 0 then
+            begin
+            pointer(SHMultiFileProperties) := GetProcAddress(hUser32prop, 'SHMultiFileProperties');
+            if @SHMultiFileProperties <> nil then
+               SHMultiFileProperties(pDataObj,Flag);
+            end;
+      except
+      end;
+end;
+
+function GetFileListDataObject(Files: TStrings): IDataObject;
+type
+   PArrayOfPItemIDList = ^TArrayOfPItemIDList;
+   TArrayOfPItemIDList = array[0..0] of PItemIDList;
+var
+   Malloc: IMalloc;
+   Root: IShellFolder;
+   p: PArrayOfPItemIDList;
+   chEaten, dwAttributes: ULONG;
+   i, FileCount: Integer;
+begin
+   Result := nil;
+   FileCount := Files.Count;
+   if FileCount = 0 then Exit;
+
+   OleCheck(SHGetMalloc(Malloc));
+   OleCheck(SHGetDesktopFolder(Root));
+   p := AllocMem(SizeOf(PItemIDList) * FileCount);
+   try
+     for i := 0 to FileCount - 1 do
+       try
+         //if not (checkdirexists(Files[i]) or FileExists(Files[i])) then Continue;
+         OleCheck(Root.ParseDisplayName(GetActiveWindow,
+           nil,
+           PWideChar(WideString(Files[i])),
+           chEaten,
+           p^[i],
+           dwAttributes));
+       except
+       end;
+     OleCheck(Root.GetUIObjectOf(GetActiveWindow,
+       FileCount,
+       p^[0],
+       IDataObject,
+       nil,
+       Pointer(Result)));
+   finally
+     for i := 0 to FileCount - 1 do
+     begin
+       if p^[i] <> nil then Malloc.Free(p^[i]);
+     end;
+     FreeMem(p);
+   end;
+end;
+
+procedure ShowFileProperties(Files: TStrings; aWnd: HWND);
+type
+   PArrayOfPItemIDList = ^TArrayOfPItemIDList;
+   TArrayOfPItemIDList = array[0..0] of PItemIDList;
+var
+   Data: IDataObject;
+begin
+   if Files.Count = 0 then Exit;
+   Data := GetFileListDataObject(Files);
+   callSHMultiFileProperties(Data, 0);
+end;
+
+function fileop_fromnamelist(fnames: array of ansistring; fto:ansistring; fileopfun:integer; fileopflags:integer):integer;
+var
+   FStruct: TSHFILEOPSTRUCTW;
+   tmpfnames: widestring;
+   tmpfto: widestring;
+   i:integer;
+begin
+if fto<>'' then
+   if not(checkdirexists(fto)) then ForceDirectories(fto);
+//file already checked when the function is called
+tmpfnames:='';
+for i:=0 to (length(fnames)-1) do tmpfnames:=tmpfnames+WideString(expandfilename(fnames[i]))+#0;
+if fto<>'' then tmpfto:=WideString(expandfilename(fto));
+FStruct.wnd:=0;
+case fileopfun of
+   0: FStruct.wFunc:=FO_DELETE;
+   1: FStruct.wFunc:=FO_MOVE;
+   2: FStruct.wFunc:=FO_COPY;
+   end;
+FStruct.pFrom:=PWChar((tmpfnames)+#0);
+if fto<>'' then FStruct.pTo:=PWChar((tmpfto)+#0#0)
+else FStruct.pTo:=nil;
+case fileopflags of
+   0: FStruct.fFlags:= FOF_ALLOWUNDO;
+   1: FStruct.fFlags:= FOF_ALLOWUNDO or FOF_RENAMEONCOLLISION;
+   2: FStruct.fFlags:= FOF_ALLOWUNDO or FOF_NOCONFIRMATION;
+   3: FStruct.fFlags:= FOF_NOCONFIRMATION;
+   end;
+FStruct.fAnyOperationsAborted := false;
+FStruct.hNameMappings := nil;
+Result:=ShFileOperationW(@FStruct);
+end;
+
+function fileop_fromnamelist_single(fname, fto:ansistring; fileopfun:integer; fileopflags:integer):integer;
+var
+   FStruct: TSHFILEOPSTRUCTW;
+   tmpfname: widestring;
+   tmpfto: widestring;
+   i:integer;
+begin
+//file already checked when the function is called
+tmpfname:='';
+tmpfname:=WideString(expandfilename(fname))+#0;
+if fto<>'' then tmpfto:=WideString(expandfilename(fto));
+FStruct.wnd:=0;
+case fileopfun of
+   0: FStruct.wFunc:=FO_DELETE;
+   1: FStruct.wFunc:=FO_MOVE;
+   2: FStruct.wFunc:=FO_COPY;
+   end;
+FStruct.pFrom:=PWChar((tmpfname)+#0);
+if fto<>'' then FStruct.pTo:=PWChar((tmpfto)+#0#0)
+else FStruct.pTo:=nil;
+case fileopflags of
+   0: FStruct.fFlags:= FOF_ALLOWUNDO;
+   1: FStruct.fFlags:= FOF_ALLOWUNDO or FOF_RENAMEONCOLLISION;
+   2: FStruct.fFlags:= FOF_ALLOWUNDO or FOF_NOCONFIRMATION;
+   3: FStruct.fFlags:= FOF_NOCONFIRMATION;
+   end;
+FStruct.fAnyOperationsAborted := false;
+FStruct.hNameMappings := nil;
+Result:=ShFileOperationW(@FStruct);
+end;
+{$ENDIF}
 
 end.

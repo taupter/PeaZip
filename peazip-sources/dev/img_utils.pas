@@ -65,6 +65,7 @@ type
    TFoundListArray64 = array of array [0..63] of byte;
    TFileOfByte = File of Byte;
 
+function supportedimgtype(s:ansistring):boolean;
 procedure setsize_bitmap(var abitmap:tbitmap; isize, deco:integer);
 procedure loadlargeicon(srcbitmap:TBitmap; var destbitmap:Tbitmap; destsize:integer);
 function load_bitmap(var abitmap:Tbitmap; s:ansistring; isize, deco:integer; var imginfo:ansistring):integer;
@@ -96,6 +97,34 @@ var
 relwindowcolor: TColor;
 
 implementation
+
+function supportedimgtype(s:ansistring):boolean;
+var
+  sl:ansistring;
+begin
+sl:=lowercase(s);
+case sl of
+   '.bmp',
+   //'.xbm', //not supported 1.0.8
+   '.xpm',
+   '.pbm',
+   '.pgm',
+   '.ppm',
+   //'.tga', //not supported 1.0.8
+   '.ico',
+   //'.icl', //not supported 1.0.8
+   '.cur',
+   //'.ani', //not supported 1.0.8
+   '.icns',
+   '.jpg', '.jpe', '.jpeg', '.jif', '.jfif', '.jfi',
+   //'.jp2', '.j2k', '.jpx', //jpeg2000 not supported 1.0.8
+   //'.webp', //not supported 1.0.8
+   '.gif',
+   '.png',
+   '.tif','.tiff': supportedimgtype:=true
+   else supportedimgtype:=false;
+end;
+end;
 
 procedure autoscale_image(aform:Tform; var aimage:Timage; var ascale,iscale:double);
 var
@@ -226,6 +255,7 @@ case aimage.Picture.Bitmap.PixelFormat of
     pf24bit: imginfo:=imginfo+'24';
     pf32bit: imginfo:=imginfo+'32';
     pfCustom: imginfo:=imginfo+'Custom';
+    else imginfo:=imginfo+'Unknown';
 end;
 end;
 
@@ -246,7 +276,7 @@ Try
 aimage:=TImage.Create(nil);
 aimage.Parent:=nil;
 aimage.Picture.LoadFromFile(s);
-getimageinfo(aimage, imginfo);
+getimageinfo(aimage, imginfo); //possible update, add info from getmagicbytes in list_utils
 abitmap.assign(aimage.Picture.Bitmap);
 setsize_bitmap(abitmap, isize, deco);
 aimage.free;

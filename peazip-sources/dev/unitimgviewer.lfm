@@ -1,0 +1,309 @@
+object FormImgViewer: TFormImgViewer
+  Left = 20
+  Height = 240
+  Top = 80
+  Width = 320
+  ClientHeight = 240
+  ClientWidth = 320
+  Constraints.MinHeight = 240
+  Constraints.MinWidth = 320
+  DesignTimePPI = 120
+  PopupMenu = PopupViewer
+  LCLVersion = '4.2.0.0'
+  OnClick = FormClick
+  OnCreate = FormCreate
+  OnDblClick = FormDblClick
+  OnMouseMove = FormMouseMove
+  object ImageViewer: TImage
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideTop.Control = Owner
+    AnchorSideTop.Side = asrCenter
+    Left = 100
+    Height = 120
+    Top = 60
+    Width = 120
+    PopupMenu = PopupViewer
+    OnClick = ImageViewerClick
+    OnDblClick = ImageViewerDblClick
+    OnMouseMove = ImageViewerMouseMove
+  end
+  object StringGridImgViewer: TStringGrid
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 112
+    Height = 44
+    Top = 184
+    Width = 200
+    Anchors = []
+    AutoEdit = False
+    BorderStyle = bsNone
+    ColCount = 19
+    DefaultColWidth = 25
+    DefaultRowHeight = 22
+    FixedCols = 0
+    Flat = True
+    GridLineWidth = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goRangeSelect, goRowSelect, goSmoothScroll]
+    ParentFont = False
+    TabOrder = 0
+    Visible = False
+  end
+  object ActionListImageViewer: TActionList
+    Left = 273
+    Top = 8
+    object OpenNextarrow: TAction
+      Caption = 'OpenNextarrow'
+      ShortCut = 39
+      OnExecute = OpenNextarrowExecute
+    end
+    object OpenPrevarrow: TAction
+      Caption = 'OpenPrevarrow'
+      ShortCut = 37
+      OnExecute = OpenPrevarrowExecute
+    end
+    object EnterImmersive: TAction
+      Caption = 'EnterImmersive'
+      ShortCut = 13
+      OnExecute = EnterImmersiveExecute
+    end
+    object ExitImmersive: TAction
+      Caption = 'ExitImmersive'
+      ShortCut = 27
+      OnExecute = ExitImmersiveExecute
+    end
+    object ZoomInplus: TAction
+      Caption = 'ZoomInplus'
+      ShortCut = 187
+      OnExecute = ZoomInplusExecute
+    end
+    object ZoomInplusn: TAction
+      Caption = 'ZoomInplusn'
+      ShortCut = 107
+      OnExecute = ZoomInplusnExecute
+    end
+    object ZoomOutplus: TAction
+      Caption = 'ZoomOutplus'
+      ShortCut = 189
+      OnExecute = ZoomOutplusExecute
+    end
+    object ZoomOutplusn: TAction
+      Caption = 'ZoomOutplusn'
+      ShortCut = 109
+      OnExecute = ZoomOutplusnExecute
+    end
+    object ZoomFitn: TAction
+      Caption = 'ZoomFitn'
+      ShortCut = 96
+      OnExecute = ZoomFitnExecute
+    end
+    object Zoom100n: TAction
+      Caption = 'Zoom100n'
+      ShortCut = 97
+      OnExecute = Zoom100nExecute
+    end
+    object Zoom200n: TAction
+      Caption = 'Zoom200n'
+      ShortCut = 98
+      OnExecute = Zoom200nExecute
+    end
+    object Zoom300n: TAction
+      Caption = 'Zoom300n'
+      ShortCut = 99
+      OnExecute = Zoom300nExecute
+    end
+    object Zoom400n: TAction
+      Caption = 'Zoom400n'
+      ShortCut = 100
+      OnExecute = Zoom400nExecute
+    end
+    object Zoom500n: TAction
+      Caption = 'Zoom500n'
+      ShortCut = 101
+      OnExecute = Zoom500nExecute
+    end
+    object Zoom50n: TAction
+      Caption = 'Zoom50n'
+      ShortCut = 16482
+      OnExecute = Zoom50nExecute
+    end
+    object Zoom33n: TAction
+      Caption = 'Zoom33n'
+      ShortCut = 16483
+      OnExecute = Zoom33nExecute
+    end
+    object Zoom25n: TAction
+      Caption = 'Zoom25n'
+      ShortCut = 16484
+      OnExecute = Zoom25nExecute
+    end
+    object Zoom20n: TAction
+      Caption = 'Zoom20n'
+      ShortCut = 16485
+      OnExecute = Zoom20nExecute
+    end
+    object renamevieweritem: TAction
+      Caption = 'Rename'
+      ShortCut = 16466
+      OnExecute = renamevieweritemExecute
+    end
+  end
+  object PopupViewer: TPopupMenu
+    Left = 41
+    Top = 40
+    object mfwd: TMenuItem
+      Caption = 'Next ->'
+      ShortCut = 32
+      OnClick = mfwdClick
+    end
+    object mback: TMenuItem
+      Caption = 'Previous <-'
+      ShortCut = 8
+      OnClick = mbackClick
+    end
+    object mfirst: TMenuItem
+      Caption = 'First'
+      ShortCut = 36
+      OnClick = mfirstClick
+    end
+    object mlast: TMenuItem
+      Caption = 'Last'
+      ShortCut = 35
+      OnClick = mlastClick
+    end
+    object Separator2: TMenuItem
+      Caption = '-'
+    end
+    object mzoom: TMenuItem
+      Caption = 'Zoom'
+      object mzoomfit: TMenuItem
+        Caption = 'Fit to screen'
+        ShortCut = 48
+        OnClick = mzoomfitClick
+      end
+      object mzoomfitw: TMenuItem
+        Caption = 'Fit to screen width'
+        ShortCut = 16432
+        OnClick = mzoomfitwClick
+      end
+      object mzoomfith: TMenuItem
+        Caption = 'Fit to screen height'
+        ShortCut = 8240
+        OnClick = mzoomfithClick
+      end
+      object Separator4: TMenuItem
+        Caption = '-'
+      end
+      object mzoom20: TMenuItem
+        Caption = '20%'
+        ShortCut = 16437
+        OnClick = mzoom20Click
+      end
+      object mzoom25: TMenuItem
+        Caption = '25%'
+        ShortCut = 16436
+        OnClick = mzoom25Click
+      end
+      object mzoom33: TMenuItem
+        Caption = '33%'
+        ShortCut = 16435
+        OnClick = mzoom33Click
+      end
+      object mzoom50: TMenuItem
+        Caption = '50%'
+        ShortCut = 16434
+        OnClick = mzoom50Click
+      end
+      object mzoom100: TMenuItem
+        Caption = '100%'
+        ShortCut = 49
+        OnClick = mzoom100Click
+      end
+      object mzoom200: TMenuItem
+        Caption = '200%'
+        ShortCut = 50
+        OnClick = mzoom200Click
+      end
+      object mzoom300: TMenuItem
+        Caption = '300%'
+        ShortCut = 51
+        OnClick = mzoom300Click
+      end
+      object mzoom400: TMenuItem
+        Caption = '400%'
+        ShortCut = 52
+        OnClick = mzoom400Click
+      end
+      object mzoom500: TMenuItem
+        Caption = '500%'
+        ShortCut = 53
+        OnClick = mzoom500Click
+      end
+    end
+    object mzoomin: TMenuItem
+      Caption = 'Zoom in +'
+      ShortCut = 38
+      OnClick = mzoominClick
+    end
+    object mzoomout: TMenuItem
+      Caption = 'Zoom out -'
+      ShortCut = 40
+      OnClick = mzoomoutClick
+    end
+    object Separator1: TMenuItem
+      Caption = '-'
+    end
+    object mdelete: TMenuItem
+      Caption = 'Delete'
+      object mtrash: TMenuItem
+        Caption = 'mtrash'
+        ShortCut = 46
+        OnClick = mtrashClick
+      end
+      object mquickdelete: TMenuItem
+        Caption = 'mquickdelete'
+        ShortCut = 8238
+        OnClick = mquickdeleteClick
+      end
+      object mzerodelete: TMenuItem
+        Caption = 'mzerodelete'
+        ShortCut = 32814
+        OnClick = mzerodeleteClick
+      end
+      object msecuredelete: TMenuItem
+        Caption = 'msecuredelete'
+        ShortCut = 16430
+        OnClick = msecuredeleteClick
+      end
+    end
+    object mrename: TMenuItem
+      Caption = 'mrename'
+      ShortCut = 113
+      OnClick = mrenameClick
+    end
+    object mrefresh: TMenuItem
+      Caption = 'Refresh'
+      ShortCut = 116
+      OnClick = mrefreshClick
+    end
+    object mupdate: TMenuItem
+      Caption = 'Update'
+      ShortCut = 8308
+      OnClick = mupdateClick
+    end
+    object Separator3: TMenuItem
+      Caption = '-'
+    end
+    object mexplorepath: TMenuItem
+      Caption = 'Explore path'
+      ShortCut = 32886
+      OnClick = mexplorepathClick
+    end
+    object mproperties: TMenuItem
+      Caption = 'Properties'
+      ShortCut = 49270
+      Visible = False
+      OnClick = mpropertiesClick
+    end
+  end
+end

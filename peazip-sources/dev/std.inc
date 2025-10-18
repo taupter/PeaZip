@@ -81,6 +81,7 @@
  1.73     24.10.18  we          Symbol D15Plus (for FormatSettings.DecimalSeparator)
  1.74     22.11.18  we          Basic support for D26 (VER330) 'Rio'
  1.75     23.11.18  we          Define DELPHI ifdef CONDITIONALEXPRESSIONS
+ 1.76     18.08.25  gt          PurePascal is applied to all non x86-type CPU to disable Intel ASM
 **************************************************************************)
 
 

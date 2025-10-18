@@ -126,6 +126,9 @@ unit list_utils;
  0.64     20240228  G.Tani      Added function to check if a directory exists, checking both address with and without ending separator character
  0.65     20250430  G.Tani      Can now toggle show hidden files on/off setting the variable showhidden (fahidden on Windows, .file on non-Windows systems)
  0.66     20250704  G.Tani      Improved multi-voulme detection, provided more comments, context, and possible improvement path for characters escaping procedures
+ 0.67     20251010  G.Tani      Moved here various filename handling functions from peach unit
+                                Moved here ansiutf8_utils functions as the unit was suppressed
+                                New functions to read file header's magic bytes, and to split strings
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
@@ -287,14 +290,6 @@ function extractdirname(inpath: ansistring;
   //name of the dir
   ): integer;
 
-function ansiextractdirname(inpath: ansistring;
-  //input path
-  var dirpath: ansistring;
-  //path were the directory is in
-  var dirname: ansistring
-  //name of the dir
-  ): integer;
-
 {
 expand an object, given it's name, to a list of objects (TFoundList).
 If the object is a file, its name is returned as sole element of the list;
@@ -356,10 +351,6 @@ function ShellTreeViewSetTextPath(ashelltreeview: TShellTreeView;
 
 //set parent paths as entries in a combobox
 procedure ComboBoxSetPaths(acombobox: TComboBox; apath:ansistring);
-
-//write ansistrings to array of ansistring and read them as executable + list of parameters for TProcess
-function writecla(s:ansistring; var cla:TFoundList):integer;
-function readcla(cla:array of ansistring; var P:tprocessutf8):integer;
 
 //check full name against reserved and illegal characters, and reserved filenames
 function checkfiledirname(s: ansistring): integer;
@@ -476,6 +467,58 @@ function rLast(dir, mask: ansistring; //last modified time
 function checkdirexists(s:ansistring):boolean;
 
 function checkfiledirexists(s:ansistring):boolean;
+
+function dirExtractFileName(const FileName: ansistring): ansistring;
+
+function dirExtractFilePath(const FileName: ansistring): ansistring;
+
+function isawebservice(s:ansistring):boolean;
+
+function check7zvolume(s:ansistring):boolean;
+
+function checkUNCpath(s:ansistring):boolean;
+
+function checklinapp(s:utf8string):boolean;
+
+function checkmacapp(s:utf8string):boolean;
+
+function checkmacappbin(s:utf8string):boolean;
+
+function smartsortstring(s:ansistring):ansistring;
+
+function GetUNCName(const uLocalPath: ansistring): ansistring;
+
+function strisascii(s: ansistring):boolean;
+
+function strsafeenc(s:ansistring):ansistring;
+
+function strsafedec(s:ansistring):ansistring;
+
+procedure cutendspaces(var s1:ansistring); //if archive name ends with spaces (allowed, since they are before the extension) cut them to get a valid folder name (can't end with spaces)
+
+procedure cutenddot(var s1:ansistring); //if archive name ends with dot cut it to get a valid folder name (can't end with dot)
+
+procedure cutendforbid(var s1:ansistring); //if archive name ends with non allowed characters cut them to get a valid folder name
+
+procedure cutenddelim(var s1:ansistring; inparam:ansistring); //if archive name ends with dot cut it to get a valid folder name (can't end with dot)
+
+function unpadaddress(s:ansistring):ansistring;
+
+procedure write_header(var tf:text); //write UTF-8 with BOM text file header
+function read_header(var tf:text):boolean; //read UTF-8 with BOM text file header
+function udeletefile(s:ansistring):boolean; //on Windows changes file attributes to allow file to be deleted
+function upredeletefile(s:ansistring):boolean; //on Windows changes file attributes to allow file to be deleted separately
+
+//read magic bytes to gather information about the file type (image formats)
+function getmagicbytes_img(s:ansistring):ansistring;
+//read magic bytes to gather information about the file type (archive formats)
+function getmagicbytes_arc(s:ansistring):ansistring;
+
+//split a string in words separated by space: ignore empty strings, ignore quotes
+function peasplitstring(s:AnsiString; var sfin:TStringList):integer;
+
+//split a string in words separated by space: ignore empty strings, use custom quote character
+function peasplitstring_custquote(s:AnsiString; qchar:Char; var sfin:TStringList):integer;
 
 implementation
 
@@ -1292,42 +1335,6 @@ begin
   extractdirname := SUCCESS;
 end;
 
-function ansiextractdirname(inpath: ansistring;
-  //input path
-  var dirpath: ansistring;
-  //path were the directory is in
-  var dirname: ansistring
-  //name of the dir
-  ): integer;
-var
-  s: ansistring;
-  i, j: integer;
-  dirarr: array of ansistring;
-begin
-  ansiextractdirname := INCOMPLETE_FUNCTION;
-  s := extractfilepath(inpath);
-  i := 0;
-  while length(s) > 0 do
-  begin
-    setlength(dirarr, i + 1);
-    dirarr[i] := copy2symbdel(s, directoryseparator);
-    if length(s) > 0 then
-      if s[1] = directoryseparator then
-        s := copy(s, 2, length(s) - 1);
-    Inc(i, 1);
-  end;
-  dirname := dirarr[i - 1];
-  dirpath := '';
-  for j := 0 to i - 2 do
-    dirpath := dirpath + dirarr[j] + directoryseparator;
-  if dirpath = '' then
-  begin
-    dirpath := dirname;
-    dirname := '';
-  end;
-  ansiextractdirname := SUCCESS;
-end;
-
 function expand(s: ansistring;
   //input object
   var exp_files: TFoundList;
@@ -1591,9 +1598,12 @@ begin
   str.Free;
 end;
 
+{
+possible implementation converting process command line to array of parameters and vice-versa
+issues: some parameters are currently passed at once in single variable, advanced filters are strings built from arrays of multiple filepathnames
+
 function writecla(s:ansistring; var cla:TFoundList):integer;
 begin
-//issues: 1 some parameters are currently passed at once in single variable 2 advanced filters are strings built from arrays of multiple filepathnames
 result:=-1;
 if s='' then exit;
 SetLength(cla,length(cla)+1);
@@ -1610,7 +1620,7 @@ if Length(cla)<=0 then exit;
 P.Executable:=cla[0];
 for i:=1 to Length(cla)-1 do P.Parameters.Add(cla[i]);
 result:=0;
-end;
+end;}
 
 function checkfiledirname(s: ansistring): integer;
 //function errs on safe side to prevent cross platform interoperability issues
@@ -2559,6 +2569,427 @@ begin
 result:=true;
 if not(fileexists(s)) then
    if not(checkdirexists(s)) then result:=false;
+end;
+
+function dirExtractFileName(const FileName: ansistring): ansistring;
+var
+  i : longint;
+  EndSep : Set of Char;
+begin
+  I := Length(FileName);
+  EndSep:=AllowDirectorySeparators;
+  while (I > 0) and not CharInSet(FileName[I],EndSep) do
+    Dec(I);
+  Result := Copy(FileName, I + 1, MaxInt);
+end;
+
+function dirExtractFilePath(const FileName: ansistring): ansistring;
+var
+  i : longint;
+  EndSep : Set of Char;
+begin
+  i := Length(FileName);
+  EndSep:=AllowDirectorySeparators;
+  while (i > 0) and not CharInSet(FileName[i],EndSep) do
+    Dec(i);
+  If I>0 then
+    Result := Copy(FileName, 1, i)
+  else
+    Result:='';
+end;
+
+function isawebservice(s:ansistring):boolean;
+begin
+if (pos('http://',s)=1) or (pos('https://',s)=1) or (pos('www.',s)=1) then
+   result:=true
+else
+   result:=false;
+end;
+
+function check7zvolume(s:ansistring):boolean;
+begin
+check7zvolume:=false;
+if length(s)>=4 then
+   if copy(s,1,4)='\\.\' then check7zvolume:=true;
+end;
+
+function checkUNCpath(s:ansistring):boolean;
+begin
+checkUNCpath:=false;
+if length(s)>=2 then
+   if copy(s,1,2)=DirectorySeparator+DirectorySeparator then checkUNCpath:=true;
+end;
+
+function checklinapp(s:utf8string):boolean;
+begin
+result:=false;
+if (fileexists('/bin/'+s)) or
+   (fileexists('/usr/bin/'+s)) then result:=true;
+end;
+
+function checkmacapp(s:utf8string):boolean;
+begin
+result:=false;
+if (checkdirexists('/Applications/'+s)) or
+   (checkdirexists('/System/Applications/'+s)) then result:=true;
+end;
+
+function checkmacappbin(s:utf8string):boolean;
+begin
+result:=false;
+if (checkdirexists('/usr/local/'+s)) then result:=true;
+end;
+
+function smartsortstring(s:ansistring):ansistring;
+var
+   i,firstpos,nnumb:Integer;
+   firstnumber:boolean;
+   snumb,fnumb:string;
+begin
+firstnumber:=false;
+firstpos:=0;
+nnumb:=0;
+snumb:='';
+fnumb:='';
+for i:=1 to length(s) do
+   begin
+   if s[i] in ['0'..'9'] then
+      if firstnumber=false then
+         begin
+         firstnumber:=true;
+         firstpos:=i;
+         if s[i]<>'0' then
+            begin
+            nnumb:=1;
+            snumb:='9';
+            fnumb:=s[i];
+            end;
+         end
+      else
+         begin
+         if s[i]<>'0' then nnumb:=1;
+         if nnumb=1 then
+            begin
+            snumb:=snumb+'9';
+            fnumb:=fnumb+s[i];
+            end;
+         end
+   else
+      if firstnumber=false then
+         begin
+         end
+      else
+         begin
+         //fnumb:=fnumb+' ';
+         break;
+         end;
+   end;
+if firstnumber=true then
+   result:=copy(s,1,firstpos-1)+snumb+' '+fnumb+copy(s,firstpos,length(s)+1-firstpos)
+else
+   result:=s;
+end;
+
+function GetUNCName(const uLocalPath: ansistring): ansistring;
+var
+  BufferSize: DWord;
+  LocalPath: widestring;
+  s:ansistring;
+  wb: array of wchar;
+  ws:widestring;
+  DummyBuffer: wchar;
+  Error: DWord;
+  i:integer;
+begin
+{$IFDEF MSWINDOWS}
+Result:='';
+localpath:=utf8decode(ulocalpath);
+if (upcase(LocalPath)='A:\') or (upcase(LocalPath)='B:\') or (upcase(LocalPath)='C:\') then exit;
+BufferSize := 2;
+WNetGetUniversalNameW(PWChar(LocalPath), UNIVERSAL_NAME_INFO_LEVEL, @DummyBuffer, BufferSize);
+setlength(wb,buffersize);
+try
+   Error := WNetGetUniversalNameW(PWChar(LocalPath), UNIVERSAL_NAME_INFO_LEVEL, @wb[0], BufferSize);
+   if Error <> NO_ERROR then
+      begin
+      Result:='';
+      end;
+   s:='';
+   if buffersize>0 then
+      for i:=0 to buffersize-1 do
+         begin
+         if i>1 then
+            if ord(wb[i])<>0 then begin ws:=wb[i]; s:=s+AnsiString(ws); end;
+         end;
+   Result:=s;
+finally
+end;
+{$ENDIF}
+end;
+
+function strisascii(s: ansistring):boolean;
+var
+   i:integer;
+begin
+for i:=1 to Length(s) do
+   if s[i]>#127 then
+      begin
+      result:=false;
+      exit;
+      end;
+result:=true;
+end;
+
+function strsafeenc(s:ansistring):ansistring;
+var
+   i:integer;
+   sout:ansistring;
+begin
+if s='' then
+   begin
+   result:='';
+   exit;
+   end;
+for i:=1 to Length(s) do sout:=sout+inttostr(ord(s[i]))+'_';
+result:=sout;
+end;
+
+function strsafedec(s:ansistring):ansistring;
+var
+   stch,stin,stout:ansistring;
+begin
+if s='' then
+   begin
+   result:='';
+   exit;
+   end;
+stin:=s;
+repeat
+stch:=copy(stin,1,pos('_',stin)-1);
+stout:=stout+char(strtoint(stch));
+stin:=copy(stin,pos('_',stin)+1,length(stin)-pos(' ',stin)-1);
+until (stin='');
+result:=stout;
+end;
+
+procedure cutendspaces(var s1:ansistring); //if archive name ends with spaces (allowed, since they are before the extension) cut them to get a valid folder name (can't end with spaces)
+var endwithspace:boolean;
+begin
+endwithspace:=true;
+repeat
+if s1<>'' then
+   if s1[length(s1)]=' ' then setlength(s1,length(s1)-1)
+   else endwithspace:=false;
+until endwithspace=false;
+if s1='' then s1:='noname';
+end;
+
+procedure cutenddot(var s1:ansistring); //if archive name ends with dot cut it to get a valid folder name (can't end with dot)
+begin
+if s1<>'' then if s1[length(s1)]='.' then s1[length(s1)]:='_';
+if s1='' then s1:='noname';
+end;
+
+procedure cutendforbid(var s1:ansistring); //if archive name ends with non allowed characters cut them to get a valid folder name
+var
+  endwithchar:boolean;
+begin
+endwithchar:=true;
+repeat
+{$IFDEF MSWINDOWS}
+if s1<>'' then
+   if s1[length(s1)]='"' then setlength(s1,length(s1)-1)
+{$ELSE}
+if s1<>'' then
+   if s1[length(s1)]='''' then setlength(s1,length(s1)-1)
+{$ENDIF}
+else endwithchar:=false;
+until endwithchar=false;
+if s1='' then s1:='noname';
+end;
+
+procedure cutenddelim(var s1:ansistring; inparam:ansistring); //if archive name ends with dot cut it to get a valid folder name (can't end with dot)
+begin
+if s1<>'' then if s1[length(s1)]=correctdelimiter(inparam) then setlength(s1,length(s1)-1);
+if s1='' then s1:='noname';
+end;
+
+function unpadaddress(s:ansistring):ansistring;
+begin
+result:=copy(s,2,length(s)-2);
+end;
+
+procedure write_header(var tf:text);
+begin
+write(tf,char($ef));
+write(tf,char($bb));
+write(tf,char($bf));
+end;
+
+function read_header(var tf:text):boolean;
+var
+   c:char;
+begin
+read_header:=false;
+read(tf,c);
+if c<>char($ef) then exit;
+read(tf,c);
+if c<>char($bb) then exit;
+read(tf,c);
+if c<>char($bf) then exit;
+read_header:=true;
+end;
+
+function upredeletefile(s:ansistring):boolean;
+var attr:integer;
+begin
+{$IFDEF MSWINDOWS}
+try
+attr:=filegetattr(s);
+attr:=attr and (not faReadOnly);
+attr:=attr and (not faHidden);
+attr:=attr and (not faSysFile);
+filesetattr(s,attr);
+result:=true;
+except
+result:=false;
+end;
+{$ENDIF}
+end;
+
+function udeletefile(s:ansistring):boolean;
+var attr:integer;
+begin
+{$IFDEF MSWINDOWS}
+try
+attr:=filegetattr(s);
+attr:=attr and (not faReadOnly);
+attr:=attr and (not faHidden);
+attr:=attr and (not faSysFile);
+filesetattr(s,attr);
+except end;
+{$ENDIF}
+udeletefile:=DeleteFile(s);
+end;
+
+//read magic bytes to gather information about the file type (image formats)
+function getmagicbytes_img(s:ansistring):ansistring;
+var
+  f:file of Byte;
+  sbuf:array[0..7] of byte;
+  n:integer;
+  fext:AnsiString;
+begin
+result:='';
+fext:='';
+try
+fext:=ExtractFileExt(s);
+result:=fext;
+assignfile(f,s);
+filemode:=0;
+reset(f);
+blockread(f,sbuf,8,n);
+close(f);
+if n<8 then exit;
+if (sbuf[0]=66) and (sbuf[1]=77) then begin result:=fext+'/BMP'; exit; end;
+if (sbuf[0]=71) and (sbuf[1]=73) and (sbuf[2]=70) and (sbuf[3]=56) then begin result:=fext+'/GIF'; exit; end;
+if (sbuf[0]=105) and (sbuf[1]=99) and (sbuf[2]=110) and (sbuf[3]=115) then begin result:=fext+'/ICNS'; exit; end;
+if (sbuf[0]=0) and (sbuf[1]=0) and (sbuf[2]=1) and (sbuf[3]=0) then begin result:=fext+'/ICO'; exit; end;
+if (sbuf[0]=255) and (sbuf[1]=216) and (sbuf[2]=255) then begin result:=fext+'/JPG'; exit; end;
+if (sbuf[0]=80) and (sbuf[1]=50) and (sbuf[2]=10) then begin result:=fext+'/PGM-ASCII'; exit; end;
+if (sbuf[0]=80) and (sbuf[1]=53) and (sbuf[2]=10) then begin result:=fext+'/PGM_BINARY'; exit; end;
+if (sbuf[0]=137) and (sbuf[1]=80) and (sbuf[2]=78) and (sbuf[3]=71) then begin result:=fext+'/PNG'; exit; end;
+if (sbuf[0]=80) and (sbuf[1]=51) and (sbuf[2]=10) then begin result:=fext+'/PPM-ASCII'; exit; end;
+if (sbuf[0]=80) and (sbuf[1]=54) and (sbuf[2]=10) then begin result:=fext+'/PPM_BINARY'; exit; end;
+if (sbuf[0]=77) and (sbuf[1]=77) then begin result:=fext+'/TIFF-BE'; exit; end;
+if (sbuf[0]=73) and (sbuf[1]=73) then begin result:=fext+'/TIFF-LE'; exit; end;
+if (sbuf[0]=47) and (sbuf[1]=42) and (sbuf[2]=32) and (sbuf[3]=88) and (sbuf[4]=80) and (sbuf[5]=77) then begin result:=fext+'/XPM'; exit; end;
+except
+end;
+end;
+
+//read magic bytes to gather information about the file type (archive formats)
+function getmagicbytes_arc(s:ansistring):ansistring;
+var
+  f:file of Byte;
+  sbuf:array[0..7] of byte;
+  n:integer;
+  fext:AnsiString;
+begin
+result:='';
+fext:='';
+try
+fext:=ExtractFileExt(s);
+result:=fext;
+assignfile(f,s);
+filemode:=0;
+reset(f);
+blockread(f,sbuf,8,n);
+close(f);
+if n<8 then exit;
+if (sbuf[0]=55) and (sbuf[1]=122) and (sbuf[2]=188) and (sbuf[3]=175) and (sbuf[4]=39) and (sbuf[5]=28) then begin result:=fext+'/7Z'; exit; end;
+if (sbuf[0]=42) and (sbuf[1]=42) and (sbuf[2]=65) and (sbuf[3]=67) and (sbuf[4]=69) and (sbuf[5]=42) and (sbuf[6]=42) then begin result:=fext+'/ACE'; exit; end;
+if (sbuf[0]=65) and (sbuf[1]=114) and (sbuf[2]=67) then begin result:=fext+'/FREEARC'; exit; end;
+if (sbuf[0]=66) and (sbuf[1]=67) and (sbuf[2]=77) then begin result:=fext+'/BCM'; exit; end;
+if (sbuf[0]=225) and (sbuf[1]=80) and (sbuf[2]=220) then begin result:=fext+'/BR'; exit; end;
+if (sbuf[0]=66) and (sbuf[1]=90) and (sbuf[2]=104) then begin result:=fext+'/BZIP2'; exit; end;
+if (sbuf[0]=77) and (sbuf[1]=83) and (sbuf[2]=67) and (sbuf[3]=70) then begin result:=fext+'/CAB'; exit; end;
+if (sbuf[0]=48) and (sbuf[1]=55) and (sbuf[2]=48) and (sbuf[3]=55) and (sbuf[4]=48) then begin result:=fext+'/CPIO'; exit; end;
+if (sbuf[0]=31) and (sbuf[1]=139) then begin result:=fext+'/GZIP'; exit; end;
+if (sbuf[0]=45) and (sbuf[1]=108) and (sbuf[2]=104) then begin result:=fext+'/LZH'; exit; end;
+if (sbuf[0]=234) and (sbuf[1]=01) then begin result:=fext+'/PEA'; exit; end;
+if (sbuf[0]=82) and (sbuf[1]=97) and (sbuf[2]=114) and (sbuf[3]=33) and (sbuf[4]=26) and (sbuf[5]=7) and (sbuf[6]=0) then begin result:=fext+'/RAR<4'; exit; end;
+if (sbuf[0]=82) and (sbuf[1]=97) and (sbuf[2]=114) and (sbuf[3]=33) and (sbuf[4]=26) and (sbuf[5]=7) and (sbuf[6]=1) then begin result:=fext+'/RAR5'; exit; end;
+if (sbuf[0]=117) and (sbuf[1]=115) and (sbuf[2]=116) and (sbuf[3]=97) and (sbuf[4]=114) then begin result:=fext+'/TAR'; exit; end;
+if (sbuf[0]=77) and (sbuf[1]=83) and (sbuf[2]=87) and (sbuf[3]=73) and (sbuf[4]=77) then begin result:=fext+'/WIM'; exit; end;
+if (sbuf[0]=120) and (sbuf[1]=97) and (sbuf[2]=114) and (sbuf[3]=73) and (sbuf[4]=33) then begin result:=fext+'/XAR'; exit; end;
+if (sbuf[0]=253) and (sbuf[1]=55) and (sbuf[2]=122) and (sbuf[3]=88) and (sbuf[4]=90) and (sbuf[5]=0) and (sbuf[6]=28) then begin result:=fext+'/XZ'; exit; end;
+if ((sbuf[0]=31) and (sbuf[1]=157))
+or ((sbuf[0]=31) and (sbuf[1]=160)) then begin result:=fext+'/Z'; exit; end;
+if (sbuf[0]=80) and (sbuf[1]=75) then begin result:=fext+'/ZIP'; exit; end;
+if (sbuf[0]=40) and (sbuf[1]=181) and (sbuf[2]=47) and (sbuf[3]=253) then begin result:=fext+'/ZST'; exit; end;
+except
+end;
+end;
+
+//split a string in words separated by space: ignore empty strings, ignore quotes
+function peasplitstring(s:AnsiString; var sfin:TStringList):integer;
+var
+   sarr:TStringList;
+   i:integer;
+begin
+result:=-1;
+if s='' then exit;
+sarr:=TStringList.Create;
+sarr.Delimiter:=' ';
+sarr.QuoteChar:=#0;//count words in quoted sections
+sarr.StrictDelimiter:=False;//do not count line ending
+sarr.DelimitedText:=s;
+for i:=0 to sarr.Count-1 do
+   begin
+   if sarr[i]<>'' then sfin.Add(sarr[i]);//remove empty strings (multiple separators)
+   end;
+result:=sfin.Count;
+end;
+
+//split a string in words separated by space: ignore empty strings, use custom quote character
+function peasplitstring_custquote(s:AnsiString; qchar:Char; var sfin:TStringList):integer;
+var
+   sarr:TStringList;
+   i:integer;
+begin
+result:=-1;
+if s='' then exit;
+sarr:=TStringList.Create;
+sarr.Delimiter:=' ';
+sarr.QuoteChar:=qchar;//do not count words in sections quoted with the custom character
+sarr.StrictDelimiter:=False;//do not count line ending
+sarr.DelimitedText:=s;
+for i:=0 to sarr.Count-1 do
+   begin
+   if sarr[i]<>'' then sfin.Add(sarr[i]);//remove empty strings (multiple separators)
+   end;
+result:=sfin.Count;
 end;
 
 end.
