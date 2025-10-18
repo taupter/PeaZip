@@ -7,18 +7,18 @@ Last rev.: 20250327
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
+txt_10_7_errload: Não foi possível exibir a imagem
+txt_10_7_errfile: Arquivo não encontrado
+txt_10_7_first: Primeiro
+txt_10_7_fit: Ajustar à tela
+txt_10_7_fith: Ajustar à altura da tela
+txt_10_7_fitw: Ajustar à largura da tela
+txt_10_7_keep: Manter os arquivos de saída se a extração terminar com erro ou for cancelada
+txt_10_7_next: Seguinte
+txt_10_7_prev: Anterior
+txt_10_7_pwh: Senha do hash
+txt_10_7_images: Exibir imagens
+txt_10_7_thumbnails: Exibir miniaturas
 txt_10_6_virtual: Modo virtual dinâmico
 txt_10_5_fr: (Relatório completo)
 txt_10_5_sectype: Pedir confirmação para a execução dos seguintes tipos de arquivo
@@ -1295,7 +1295,7 @@ txt_2_7_validatefn: Operação Interrompida, nome de arquivo inválido detectado
 txt_2_7_validatecl: Operação Interrompida, comando potencialmente perigoso detectado (i.e. concatenação de comando não é permitido no programa):
 txt_2_6_open: Abrir arquivo
 txt_2_5_ace_missing: Plugin UNACE não foi encontrado; para abrir arquivos ACE você pode fazer download do plugin no site do Peazip(ACE é um formato fechado, não é permitido ele vir junto com o software)
-txt_2_3_pw_errorchar_gwrap: : este caractere não pode ser utilizado como senha pelo PeaZip GUI no sistema atual, por favor mude a senha ou escolha o modo terminal (Ferramentas > Configurações)
+txt_2_3_pw_errorchar_gwrap: O caractere de aspas não pode ser usado em senhas no sistema atual, altere a senha ou escolha o modo Console na interface de usuário dos binários de backend em Opções > Configurações
 txt_2_3_renameexisting: Auto-renomeie arquivos existentes
 txt_2_3_renameextracted: Auto-renomeie arquivos extraídos
 txt_2_3_cancel: Cancelar

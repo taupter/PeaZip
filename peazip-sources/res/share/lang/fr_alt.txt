@@ -3,22 +3,22 @@ Français
 10.7
 Translated by: Jean-Michel Coinus
 Last rev. by: Jean-Michel Coinus
-Last rev.: 20250809
+Last rev.: 20251018
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
+txt_10_7_errload: Impossible d'afficher l'image
+txt_10_7_errfile: Ficher introuvable
+txt_10_7_first: Première
+txt_10_7_fit: Adapter à l'écran
+txt_10_7_fith: Adapter en hauteur à l'écran
+txt_10_7_fitw: Adapter à l'écran en largeur
+txt_10_7_keep: Conserver les fichiers de sortie en cas d'erreur ou d'abandon
+txt_10_7_next: Suivante
+txt_10_7_prev: Précédente
+txt_10_7_pwh: Mot de passe à partir de l'empreinte
+txt_10_7_images: Afficher les images
+txt_10_7_thumbnails: Afficher les vignettes
 txt_10_6_virtual: Mode dynamique virtuel
 txt_10_5_fr: (rapport complet)
 txt_10_5_sectype: Confirmer l'exécution de ces types de fichier
@@ -434,7 +434,7 @@ txt_5_1_every: Tou·te·s les
 txt_5_1_w6: Vendredi
 txt_5_1_hourly: Horaire
 txt_5_1_hours: Heures
-txt_5_1_last: Dernier
+txt_5_1_last: Dernière
 txt_5_1_schedmanage: Gérer les planifications de PeaZip dans le gestionnaire de tâches système
 txt_5_1_scriptmanage: Gérer les scripts planifiés existants
 txt_5_1_w2: Lundi
@@ -548,7 +548,7 @@ txt_4_1_duplicatesfound: présence de doublons
 txt_4_1_duplicatesfind: Rechercher les doublons
 txt_4_1_runasadmin: Exécuter en tant qu'administrateur
 txt_4_1_simplesearch: Recherche simple
-txt_4_0_thim: Afficher les vignettes d'images
+txt_4_0_thim: Afficher les icônes des images
 txt_3_8_type_description_wim: WIM: Format d'image disque Microsoft
 txt_3_8_type_description_xz: XZ: Compression très efficace basée sur LZMA2
 txt_3_7_donations: Dons
