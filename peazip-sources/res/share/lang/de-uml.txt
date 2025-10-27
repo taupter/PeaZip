@@ -1,24 +1,24 @@
-﻿=== PeaZip language file ===
+=== PeaZip language file ===
 German - Deutsch
 10.7
 Translated by: Vacon
 Last rev. by: Andrain
-Last rev.: 20250827
+Last rev.: 20251027
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
+txt_10_7_errload: Bild kann nicht angezeigt werden
+txt_10_7_errfile: Datei nicht gefunden
+txt_10_7_first: Erste
+txt_10_7_fit: An Bildschirm anpassen
+txt_10_7_fith: An Bildschirmhöhe anpassen
+txt_10_7_fitw: An Bildschirmbreite anpassen
+txt_10_7_keep: Ausgabedateien behalten, falls das Entpacken mit einem Fehler endet oder abgebrochen wird.
+txt_10_7_next: Nächste
+txt_10_7_prev: Vorherige
+txt_10_7_pwh: Passwort aus Hash
+txt_10_7_images: Bilder anzeigen
+txt_10_7_thumbnails: Miniaturansichten anzeigen
 txt_10_6_virtual: Dynamischer virtueller Modus
 txt_10_5_fr: (vollständiger Bericht)
 txt_10_5_sectype: Bei folgenden Dateitypen zum Ausführen um Bestätigung fragen
