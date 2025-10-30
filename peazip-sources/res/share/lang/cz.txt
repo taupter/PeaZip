@@ -3,351 +3,351 @@
 10.7
 Translated by: José Sabata
 Last rev. by: José Sabata
-Last rev.: 20150505
+Last rev.: 20251030
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
-txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
-txt_9_3_continue: Continue anyway?
-txt_9_3_contrast: Contrast
-txt_9_3_fsd: Free space on destination may not be enough
-txt_9_3_fsw: Free space on temporary work path may not be enough
-txt_9_3_mrar: Manually set RAR binary
-txt_9_3_canedit: This archive type can be edited
-txt_9_3_canforce: This archive type can be edited (forced)
-txt_9_3_cannotedit: This archive type cannot be edited
+txt_10_7_errload: Nelze zobrazit obrázek
+txt_10_7_errfile: Soubor nebyl nalezen
+txt_10_7_first: První
+txt_10_7_fit: Přizpůsobit obrazovce
+txt_10_7_fith: Přizpůsobit výšce obrazovky
+txt_10_7_fitw: Přizpůsobit šířce obrazovky
+txt_10_7_keep: Ponechat výstupní soubory, pokud je rozbalování ukončeno chybou nebo zrušeno
+txt_10_7_next: Další
+txt_10_7_prev: Předchozí
+txt_10_7_pwh: Heslo z hashe
+txt_10_7_images: Zobrazit obrázky
+txt_10_7_thumbnails: Zobrazit miniatury
+txt_10_6_virtual: Dynamický virtuální režim
+txt_10_5_fr: (úplný přehled)
+txt_10_5_sectype: Vyžadovat potvrzení před spuštěním následujících typů souborů
+txt_10_5_checkmotw: Zkontrolovat Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Chcete tento soubor spustit?
+txt_10_5_pathlock: Položky v této cestě archivu nelze upravovat
+txt_10_5_type_description_rar: RAR – proprietární formát archivu, vysoký kompresní poměr, podporován externím kompresorem
+txt_10_5_sh: Zobrazit skryté soubory a složky v souborovém systému
+txt_10_5_ntfsalt: Tento formát dokáže ukládat alternativní datové proudy NTFS, včetně Mark of The Web
+txt_10_4_moving: (Přesouvání)
+txt_10_3_classic: Klasický
+txt_10_3_ascii: Doporučuje se používat v heslech pro aktuální formát archivu pouze znaky ASCII (malá/velká písmena, čísla a speciální znaky).
+txt_10_3_minimal: Minimalistický
+txt_10_3_m: Moderní
+txt_10_3_pm: Postmoderní
+txt_10_3_aw: Řešení: zaškrtněte „Vynutit zadání hesla interaktivně“ v dialogu s heslem nebo nastavte konzolový režim pro binární součásti backendu.
+txt_10_2_savecopy: Uložit kopii
+txt_10_1_full: Úplný
+txt_10_1_kdfw: KDF pracovní zátěž
+txt_10_1_under: Podtržené
+txt_10_0_exptrash: Procházet Koš
+txt_10_0_ptarzst: Nejrychlejší komprese, TAR.ZST
+txt_10_0_ptarxz: Vysoká komprese, TAR.XZ
+txt_10_0_ptargz: Střední komprese, TAR.GZ
+txt_10_0_comp: Čisté kompresní formáty přijímají pouze jeden vstupní soubor. Převod archivu na tyto formáty selže, pokud zdroj obsahuje více souborů nebo složek, což nelze předem zjistit.
+txt_10_0_save: Uložit
+txt_10_0_tp: Náhled textu
+txt_9_9_uac: Aktuální uživatel nemůže zapisovat do této výstupní cesty. Chcete spustit PeaZip s povýšenými oprávněními (UAC)?
+TXT_9_9_kdf: KDF kola
+txt_9_9_utc: Zobrazit časová razítka jako UTC
+txt_9_8_alwaysflat: Vždy otevírat archivy v plochém zobrazení
+txt_9_8_fnew: Rozbalit zde (v nové složce)
+txt_9_8_fsmart: Rozbalit zde (chytrá nová složka)
+txt_9_7_tarpipe: 7z / p7zip používá rouru
+txt_9_7_smartsorting: Chytré řazení názvů souborů
+txt_9_6_centered: Zarovnané na střed
+txt_9_6_cside: Kompaktní postranní panel
+txt_9_6_loadpconfirm: Chcete načíst tento profil? Všechna data aktuálního profilu budou přepsána, včetně uložených skriptů a Správce hesel.
+txt_9_6_loadp: Načíst profil
+txt_9_6_saveppw: VOLITELNÉ: chránit tento profil heslem / klíčovým souborem?
+txt_9_6_savepoverwrite: Přepsat existující profil? Všechna data stávajícího profilu budou přepsána, včetně uložených skriptů a Správce hesel.
+txt_9_6_savep: Uložit profil
+txt_9_6_scside: Zobrazit kompaktní postranní panel
+txt_9_5_all: Vše
+txt_9_5_precond: Předzpracovat, pokud jsou zjištěny chyby
+txt_9_5_largea: Předzpracovat velké archivy
+txt_9_5_mediuma: Předzpracovat střední archivy
+txt_9_5_smalla: Předzpracovat malé archivy
+txt_9_5_reopentab: Znovu otevřít poslední kartu
+txt_9_5_savetabs: Uložit karty
+txt_9_5_sb: Použít binární soubory v systémových cestách
+txt_9_4_r: čtení
+txt_9_4_rw: čtení/zápis
+txt_9_4_savecomment: Uložit komentář
+txt_9_4_hintcomment: Napište nebo vložte komentář, případně sem přetáhněte soubor s komentářem.
+txt_9_3_continue: Pokračovat i přesto?
+txt_9_3_contrast: Kontrast
+txt_9_3_fsd: Volné místo v cíli nemusí být dostatečné
+txt_9_3_fsw: Volné místo v dočasné pracovní cestě nemusí být dostatečné
+txt_9_3_mrar: Ručně nastavit binární soubor RAR
+txt_9_3_canedit: Tento typ archivu lze upravovat
+txt_9_3_canforce: Tento typ archivu lze upravovat (vynuceně)
+txt_9_3_cannotedit: Tento typ archivu nelze upravovat
 txt_9_2_7za: 7z / p7zip alias
-txt_9_2_changelog: Change log
-txt_9_2_tfaq: Check for Translations
-txt_9_2_compact: Compact
-txt_9_2_swt: Swap Tool / Address bar
-txt_9_2_tos: TOS, Privacy
-txt_9_2_doc: Verify documentation, Issue Tracker...
-txt_9_2_updates: Verify updates, binaries, Plugins...
-txt_9_1_7zs: 7z / p7zip syntax level
-txt_9_1_ac: Archive conversion scripts allow user's interaction
-txt_9_1_closeall: Close all
-txt_9_1_enlargeicons: Enlarge file browser icons
-txt_9_1_ef: Exclude empty folders from archiving and extraction operations (7z / p7zip)
-txt_9_1_nw: Open in a new window
-txt_9_1_qdup: Use quick deduplication routine
-txt_9_0_autoexttar: Auto extract TAR archive from compressed TAR.* files
-txt_9_0_accesstime: Do not change last access time
-txt_9_0_mem: Maximum memory usage
-txt_9_0_showmainmenu: Open Main menu
-txt_9_0_navmenu: Open Navigation menu
-txt_9_0_plugind: Open binaries and Plugin directory
-txt_9_0_df: Sort dirs before files
-txt_9_0_hl: Store hard links as links
-txt_9_0_sl: Store symbolic links as links
-txt_9_0_tnav: Toggle side bar, treeview, none
-txt_8_9_empty: Archive seems empty
-txt_8_9_disp: Displaying archive content
-txt_8_9_parsing: Parsing archive content
-txt_8_9_stoptest: Stop to inspect report for error, list, test, auto-test
-txt_8_9_ttb: Toggle tool bar
-txt_8_8_ca: Accent color
-txt_8_8_btn: Button
-txt_8_8_cb: Button color
-txt_8_8_centered: Centered buttons
-txt_8_8_light: Light
-txt_8_8_lnk: Link
-txt_8_8_intnote: Please note that "Interactive extraction" option (in Options > Settings > Archive manager) is ignored for composing the command line in Console tab.
-txt_8_8_snz: Propagate Zone.Identifier stream (Windows)
-txt_8_8_sm: Small icons size
-txt_8_8_solcol: Solid bar
-txt_8_8_snoi: Store owner/group ids (TAR, Linux)
-txt_8_8_snon: Store owner/group names (TAR, Linux)
-txt_8_8_tab: Tab
-txt_8_8_altt: Tabs style
-txt_8_8_autotest: Test archives after creation, if supported by the format
-txt_8_8_cw: Window color
-txt_8_7_csvhelp: "," international standard, ";" common in Latin locales
-txt_8_7_after: After archiving / extraction
-txt_8_7_bintest: binaries tested.
-txt_8_7_csv: CSV separator
-txt_8_7_hok: Hash of binaries used by PeaZip match with expected values
-txt_8_7_mo: Set archive manager options
-txt_8_7_showhm: Show file browser Header menu
-txt_8_7_showsearchbar: Show search bar
-txt_8_7_showsm: Show Style menu
-txt_8_7_hnotok: Some hash of binaries used by PeaZip do not match with expected values:
-txt_8_7_verifybin: Verify hash of binaries
-txt_8_6_clear: "Clear" option removes temp edited files, otherwise available for further editing.
-txt_8_6_noclear: Discard all changes without updating the archive
-txt_8_6_nosimple: Do not update archive, keep temp edited files for further editing
-txt_8_6_immediate: Immediate execution
-txt_8_6_yessimple: Update archive, keep temp edited files for further editing
-txt_8_5_advbrowser: Apply filters to archive browser
-txt_8_5_detailslarge: Details, large
-txt_8_5_intext: Extract to temp work path then move to output (ask before overwriting)
-txt_8_5_listlarge: List, large
-txt_8_5_loadlayout: Load layout at startup
-txt_8_5_samplescripts: Sample scripts
-txt_8_4_keepopenerrorslist: Stop to inspect report for error, list
-txt_8_3_mbubin: Binary
-txt_8_3_cw: Change working directory? This will reset temporary work files and restart the application.
-txt_8_3_temperature: Color temperature
-txt_8_3_mbudec: Decimal
-txt_8_3_htab: Highlight tabs
-txt_8_3_maxarg: Maximum length of arguments
-txt_8_3_mbu: Multiple-byte unit
-txt_8_3_prefalgo: Preferred algorithms
-txt_8_3_skipdel: Skip deletion of locked temp files (use reset to delete on demand)
-txt_8_3_lw: Some files in working directory are locked and cannot be removed automatically
-txt_8_3_noupx: This binary cannot be compressed (may be already compressed)
-txt_8_2_slower: (slower)
-txt_8_2_df: 7z / p7zip display content of folders
-txt_8_2_vreport: 7z / p7zip non-verbose report
-txt_8_2_ta: Accessed
-txt_8_2_tc: Created
-txt_8_2_keep: Keep files
-txt_8_2_tm: Modified
-txt_8_2_skipet: Skip testing for encryption
-txt_8_2_alltimes: Store all timestamps
-txt_8_2_supportedby: Supported by
-txt_8_1_preparse: Always pre-parse archives
-txt_8_1_bo: Browser optimization
-txt_8_1_bop: Browser optimization options can be set from Options > Settings, General tab, in order to allow browser to display archives containing a very large number of items.
-txt_8_1_nopreparse: Do not pre-parse archives
-txt_8_1_ed: error(s) detected.
-txt_8_1_togglearc: Listing flat view of archive content may take long time, continue anyway?
-txt_8_1_preparsehint: Optimize performances limiting pre-parsing of large archives. Pre-parsing is meant to detect in advance possible issues in archive content.
-txt_8_1_slow: Slow
-txt_8_1_vslow: Very slow
-txt_8_1_volumes: volumes
-txt_8_0_altcol: Alternate grid color
-txt_8_0_forcebrowse: Browse non-canonical archive types (containers, disk images, installers,...)
-txt_8_0_commonalgo: Common algorithms
-txt_8_0_forceconvert: Convert non-canonical archive types
-txt_8_0_defaultactionhint: Default action double-clicking a file associated with PeaZip from the system
-txt_8_0_defaultaction: Default action on start-up
-txt_8_0_enableextand: Enable "Extract and open with" submenu
-txt_8_0_forcetyping: Force typing passwords interactively
-txt_8_0_setpwopt: Set password / keyfile options
-txt_8_0_forcetypinghelp: Will run backend binaries in console, cannot browse archives with encrypted filenames. Allows to create scripts that will not run unattended but rather ask user interactively for password.
-txt_7_9_spacing: Spacing
-txt_7_9_zooming: Zooming
-txt_7_8_changelocalization: Change PeaZip language
-txt_7_8_custext: Custom extension
-txt_7_8_destexistfile: Destination already contains processed files. Replace files with same name?
-txt_7_8_dd: Drag and Drop
-txt_7_8_priorityhigh: High
-txt_7_8_priorityidle: Idle
-txt_7_8_rel: Interactive extraction
-txt_7_8_prioritynormal: Normal
-txt_7_8_priorityrealtime: Real time
-txt_7_8_requirerestart: [requires restarting PeaZip]
-txt_7_8_tpriority: Tasks priority
-txt_7_8_update: Update
-txt_7_7_noneall: None (no preview, no Drag And Drop extraction)
-txt_7_7_nonetemp: None, User's temp if necessary
-txt_7_7_outtemp: Output, preview in User's temp
-txt_7_7_sys7zreq: Requires p7zip-full or equivalent to be installed
-txt_7_7_tw: Temporary work folder for archive creation, editing, preview and Drag And Drop extraction.
-txt_7_7_sys7z: Use system 7z in Linux
-txt_7_6_zipenc: 7z/p7zip ZIP filenames encoding
-txt_7_6_color: Color
-txt_7_6_custenc: Custom code page
-txt_7_6_dark: Dark
-txt_7_6_tno: Do not sync archive tree
-txt_7_6_forcelocalenc: Force local
-txt_7_6_forceutf8enc: Force UTF-8
-txt_7_6_cpnote: If the chosen custom code page is unsupported, tasks will always end in error (most likely memory allocation error). In case that happens, change code page or reset the application.
-txt_7_6_defaultenc: Local, UTF-8 for extra symbols
-txt_7_6_dim: Low light
-txt_7_6_setcurdef: Set current path as default output path
-txt_7_6_setdef: Set default output path
-txt_7_6_tadvanced: Sync archive tree, keep visited nodes
-txt_7_6_tsimple: Sync archive tree, simple
-txt_7_6_tacolor: Text accent
-txt_7_5_always: Always
-txt_7_5_ask: Ask
-txt_7_5_autoclosesingle: Auto close after extraction if no browsing actions took place
-txt_7_5_cutlen: Cut name at specified length
-txt_7_5_cutlenw: Cut name at specified length (4..255) naming conflicts can be fixed manually later
-txt_7_5_dragnone: Do not lock target
-txt_7_5_specialbrowse: Do you want to extract everything in order to provide the file with the extra data it may need?
-txt_7_5_ee: Extract everything for special file types
-txt_7_5_draghide: Hide drop target
-txt_7_5_draglh: Lock and hide target
-txt_7_5_draglock: Lock drop target
-txt_7_5_never: Never
-txt_7_5_repnascii: Replace/remove non-ASCII characters
-txt_7_4_comment: Comment
-txt_7_4_7zfbrotlicomp: Fastest compression, 7Z Brotli
-txt_7_4_7zfzstandardcomp: Fastest compression, 7Z Zstandard
-txt_7_4_presetrar: High compression, RAR
-txt_7_4_tkeep: Keep original archive timestamp
-txt_7_4_lock: Lock archive
-txt_7_4_locked: locked
-txt_7_4_lockconfirm: Locked archives cannot be further modified, proceed locking this archive?
-txt_7_4_recover: Repair archive
-txt_7_4_tcurr: Set archive timestamp from current system time
-txt_7_4_setarc: Set archiving options
-txt_7_4_setext: Set extraction options
-txt_7_4_swzipx: Switch to zipx extension for non-Deflate zip archives
-txt_7_3_archiveerrors: [archive may contain errors]
-txt_7_3_archiveerrorshint: Archive may not be valid (due missing, corrupted, or out of standard data), it is possible to run Test for detailed information. If archive's table of content is encrypted, password is needed before browsing it.
-txt_7_3_clickextall: Click "Extract all" to enable
-txt_7_3_noconfdel: Do not ask confirmation for delete after archiving / extraction
-txt_7_3_profile7zfastest: Fast compression, 7Z fastest
-txt_7_3_maxbr: Maximize Brotli compression using more memory (may be incompatible with some extractors)
-txt_7_3_maxzstd: Maximize Zstandard compression using more memory
-txt_7_3_profile7zfast: Medium compression, 7Z fast
-txt_7_3_stl: Set archive timestamp from most recent file
-txt_7_2_altcomp: Alternative compression, ARC
-txt_7_2_clearnoupdate: Clear edited files
-txt_7_2_autoclosepeazip: Close PeaZip when task completes
-txt_7_2_zpaqall: Extract all revisions
-txt_7_2_extcomp: Extreme compression, ZPAQ
-txt_7_2_extcompultra: Extreme compression, ZPAQ ultra
-txt_7_2_fbrotlicomp: Fastest compression, Brotli
-txt_7_2_fzstandardcomp: Fastest compression, Zstandard
-txt_7_2_loadcompsettings: Load compression settings
-txt_7_2_savecompsettings: Save compression settings
-txt_7_2_source: Source
-txt_7_2_updateclear: Update edited files in archive, and clear edited files
-txt_7_1_type_description_brotli: Brotli: fast compressor from Google, very fast decompression
-txt_7_1_new: Extract all here, in new folder
-txt_7_1_smart: Extract all here, smart
-txt_7_1_profileintermediate: Intermediate compression, ZIP/BZip2 fast
-txt_7_1_renfilesonly: Rename only files
-txt_7_1_typetosearch: Type to search in current path
-txt_7_1_type_description_zstd: Zstandard: fast compressor from Facebook, very fast decompression
-txt_7_0_af: Analyze content of folders
-txt_7_0_autoopentar: Auto open single tar archive inside tar.* files
-txt_7_0_exttmppath: Content will be extracted outside the temporary work path, in: 
-txt_6_9_autou: Auto update modified files in archives
-txt_6_9_forceu: Force update modified files in archives
-txt_6_9_opuns: Operation not supported for current archive type
-txt_6_9_overarch: Overwrite file(s) with same name already existing inside the archive?
-txt_6_9_uconf: Previewed file has been modified. Update the current archive?
-txt_6_8_ndrop: Use native Drag And Drop on Windows
-txt_6_7_nop: (no preview)
-txt_6_6_pdupfound: possible duplicates found (quick approximate test)
-txt_6_6_rsh: Reset search history
-txt_6_6_pdupfind: Suggest possible duplicates
-txt_6_6_forcemodify: Try to edit non explicitly supported file types
-txt_6_5_mandatory: (mandatory)
-txt_6_5_abort: Abort
-txt_6_5_askp: Ask to set password at startup
-txt_6_5_chp: Change password
-txt_6_5_def: Definition
-txt_6_5_nop: Don't ask to set password at startup
-txt_6_5_error: Error
-txt_6_5_seqerr: Error(s) detected, original files will not be deleted
-txt_6_5_sni: Include NT security information
-txt_6_5_sns: Include NTFS Alternate Data Stream
-txt_6_5_privacy: Privacy
-txt_6_5_showvolatile: Show which options are volatile / context depentent
-txt_6_5_force: Try to open archives containing errors
-txt_6_5_warning: Warning
-txt_6_5_yes: Yes
-txt_6_5_yesall: Yes to all
-txt_6_5_np: You can now change password of converted archive(s) to a new one, or blank the password to skip encryption
-txt_6_4_absolute: Absolute paths
-txt_6_4_appdirn: Append directory name
-txt_6_4_closeallother: Close all other tabs
-txt_6_4_closeright: Close tabs on the right
-txt_6_4_collapse: Collapse tabs
-txt_6_4_expand: Expand tabs
-txt_6_4_full: Full paths
-txt_6_4_new: New
-txt_6_4_openintab: Open in a new tab
-txt_6_4_paths: Paths
-txt_6_4_prepdirn: Prepend directory name
-txt_6_4_relative: Relative paths
-txt_6_4_tabbar: Tab bar
-txt_6_3_autoadjust: Auto adjust columns
-txt_6_3_cinfo: Info and comments
-txt_6_3_syn: Synchronize archive with disk
-txt_6_3_uar: Update only files already in archive
-txt_6_2_encext: Add ".enc" suffix to encrypted archives
-txt_6_2_archive: Archive file type
-txt_6_2_container: Container file type
-txt_6_1_ec: Expand / collapse archive tree
-txt_6_0_msq: Sort by file type for solid compression
-txt_5_9_lff: Analyze files and folders
-txt_5_9_pff: Analyze, show files header/EOF
-txt_5_9_start: Start from
-txt_5_8_l0: Allow any supported component/format
-txt_5_8_l1: Allow only Free Software components
-txt_5_8_l2: Allow only open archive formats
-txt_5_8_ascii: ASCII safe, scripts are safe on legacy environments
-txt_5_8_cp: Code Page safe, scripts may trigger problems on legacy environments with different Code Pages
-txt_5_8_fs: Free Software compliance
-txt_5_8_utf: Scripts need full UTF-8 / Unicode environment
-txt_5_8_fsr: This format is not suported due Free Software compliance restrictions (Options > Advanced)
-txt_5_7_pinstalled: INSTALLED
-txt_5_7_pmissing: MISSING
-txt_5_7_plugin: Plugin missing, can be installed from Help > Check for pulgin and addon
+txt_9_2_changelog: Seznam změn
+txt_9_2_tfaq: Zkontrolovat překlady
+txt_9_2_compact: Kompaktní
+txt_9_2_swt: Přepnout nástroj / Adresní řádek
+txt_9_2_tos: Podmínky používání, Ochrana soukromí
+txt_9_2_doc: Ověřit dokumentaci, Sledování chyb...
+txt_9_2_updates: Ověřit aktualizace, binární soubory, pluginy...
+txt_9_1_7zs: Úroveň syntaxe 7z / p7zip
+txt_9_1_ac: Skripty pro převod archivů umožňují interakci uživatele
+txt_9_1_closeall: Zavřít vše
+txt_9_1_enlargeicons: Zvětšit ikony prohlížeče souborů
+txt_9_1_ef: Vyloučit prázdné složky z operací archivace a extrakce (7z / p7zip)
+txt_9_1_nw: Otevřít v novém okně
+txt_9_1_qdup: Použít rychlou deduplikační rutinu
+txt_9_0_autoexttar: Automaticky rozbalit archiv TAR z komprimovaných souborů TAR.*
+txt_9_0_accesstime: Neměnit čas posledního přístupu
+txt_9_0_mem: Maximální využití paměti
+txt_9_0_showmainmenu: Otevřít hlavní nabídku
+txt_9_0_navmenu: Otevřít navigační nabídku
+txt_9_0_plugind: Otevřít adresář s binárními soubory a pluginy
+txt_9_0_df: Třídit složky před soubory
+txt_9_0_hl: Uložit pevné odkazy jako odkazy
+txt_9_0_sl: Uložit symbolické odkazy jako odkazy
+txt_9_0_tnav: Přepnout postranní panel, strom, žádný
+txt_8_9_empty: Archiv se zdá být prázdný
+txt_8_9_disp: Zobrazuje se obsah archivu
+txt_8_9_parsing: Analýza obsahu archivu
+txt_8_9_stoptest: Zastavit pro kontrolu hlášení chyb, seznamu, testu, automatického testu
+txt_8_9_ttb: Přepnout nástrojovou lištu
+txt_8_8_ca: Barva zvýraznění
+txt_8_8_btn: Tlačítko
+txt_8_8_cb: Barva tlačítka
+txt_8_8_centered: Zarovnat tlačítka na střed
+txt_8_8_light: Světlý
+txt_8_8_lnk: Odkaz
+txt_8_8_intnote: Upozornění: volba „Interaktivní extrakce“ (v Možnosti > Nastavení > Správce archivů) se ignoruje při vytváření příkazového řádku na kartě Konzole.
+txt_8_8_snz: Přenést proud Zone.Identifier (Windows)
+txt_8_8_sm: Malé ikony
+txt_8_8_solcol: Plná lišta
+txt_8_8_snoi: Uložit ID vlastníka/skupiny (TAR, Linux)
+txt_8_8_snon: Uložit názvy vlastníka/skupiny (TAR, Linux)
+txt_8_8_tab: Karta
+txt_8_8_altt: Styl karet
+txt_8_8_autotest: Otestovat archivy po vytvoření, pokud to formát podporuje
+txt_8_8_cw: Barva okna
+txt_8_7_csvhelp: „,“ mezinárodní standard, „;“ běžné v latinských lokalitách
+txt_8_7_after: Po archivaci / extrakci
+txt_8_7_bintest: binární soubory otestovány.
+txt_8_7_csv: Oddělovač CSV
+txt_8_7_hok: Hash binárních souborů používaných PeaZipem odpovídá očekávaným hodnotám
+txt_8_7_mo: Nastavit možnosti správce archivů
+txt_8_7_showhm: Zobrazit nabídku záhlaví prohlížeče souborů
+txt_8_7_showsearchbar: Zobrazit vyhledávací lištu
+txt_8_7_showsm: Zobrazit nabídku stylů
+txt_8_7_hnotok: Některé hash binárních souborů používaných PeaZipem neodpovídají očekávaným hodnotám:
+txt_8_7_verifybin: Ověřit hash binárních souborů
+txt_8_6_clear: Možnost „Vymazat“ odstraní dočasně upravené soubory, jinak zůstanou dostupné pro další úpravy.
+txt_8_6_noclear: Zrušit všechny změny bez aktualizace archivu
+txt_8_6_nosimple: Neaktualizovat archiv, ponechat dočasně upravené soubory pro další úpravy
+txt_8_6_immediate: Okamžité provedení
+txt_8_6_yessimple: Aktualizovat archiv, ponechat dočasně upravené soubory pro další úpravy
+txt_8_5_advbrowser: Použít filtry na prohlížeč archivů
+txt_8_5_detailslarge: Podrobnosti, velké
+txt_8_5_intext: Extrahovat do dočasné pracovní cesty a poté přesunout na výstup (ptát se před přepsáním)
+txt_8_5_listlarge: Seznam, velký
+txt_8_5_loadlayout: Načíst rozložení při spuštění
+txt_8_5_samplescripts: Ukázkové skripty
+txt_8_4_keepopenerrorslist: Zastavit pro kontrolu hlášení chyb, seznamu
+txt_8_3_mbubin: Binární
+txt_8_3_cw: Změnit pracovní adresář? Tím se resetují dočasné pracovní soubory a aplikace se restartuje.
+txt_8_3_temperature: Teplota barev
+txt_8_3_mbudec: Desetinné
+txt_8_3_htab: Zvýraznit karty
+txt_8_3_maxarg: Maximální délka argumentů
+txt_8_3_mbu: Vícebytová jednotka
+txt_8_3_prefalgo: Preferované algoritmy
+txt_8_3_skipdel: Přeskočit mazání uzamčených dočasných souborů (použít reset pro mazání na vyžádání)
+txt_8_3_lw: Některé soubory v pracovním adresáři jsou uzamčeny a nelze je automaticky odstranit
+txt_8_3_noupx: Tento binární soubor nelze komprimovat (může být již komprimován)
+txt_8_2_slower: (pomalejší)
+txt_8_2_df: 7z / p7zip zobrazit obsah složek
+txt_8_2_vreport: 7z / p7zip stručný výstup
+txt_8_2_ta: Přistoupeno
+txt_8_2_tc: Vytvořeno
+txt_8_2_keep: Ponechat soubory
+txt_8_2_tm: Změněno
+txt_8_2_skipet: Přeskočit testování šifrování
+txt_8_2_alltimes: Uložit všechny časové údaje
+txt_8_2_supportedby: Podporováno
+txt_8_1_preparse: Vždy předzpracovat archivy
+txt_8_1_bo: Optimalizace prohlížeče
+txt_8_1_bop: Možnosti optimalizace prohlížeče lze nastavit v Možnosti > Nastavení, karta Obecné, aby bylo možné zobrazovat archivy s velmi velkým počtem položek.
+txt_8_1_nopreparse: Nepředzpracovávat archivy
+txt_8_1_ed: zjištěna chyba(y).
+txt_8_1_togglearc: Zobrazení plochého seznamu obsahu archivu může trvat dlouho, pokračovat i tak?
+txt_8_1_preparsehint: Optimalizujte výkon omezením předzpracování velkých archivů. Předzpracování slouží k předběžnému zjištění možných problémů v obsahu archivu.
+txt_8_1_slow: Pomalý
+txt_8_1_vslow: Velmi pomalý
+txt_8_1_volumes: svazky
+txt_8_0_altcol: Alternativní barva mřížky
+txt_8_0_forcebrowse: Procházet nekanonické typy archivů (kontejnery, obrazy disků, instalátory,…)
+txt_8_0_commonalgo: Běžné algoritmy
+txt_8_0_forceconvert: Převádět nekanonické typy archivů
+txt_8_0_defaultactionhint: Výchozí akce při dvojkliku na soubor přidružený k PeaZipu v systému
+txt_8_0_defaultaction: Výchozí akce při spuštění
+txt_8_0_enableextand: Povolit podnabídku „Rozbalit a otevřít pomocí“
+txt_8_0_forcetyping: Vynutit ruční zadání hesla
+txt_8_0_setpwopt: Nastavit možnosti hesla / klíčového souboru
+txt_8_0_forcetypinghelp: Spustí backend binární soubory v konzoli, nelze procházet archivy se šifrovanými názvy. Umožňuje vytvářet skripty, které nelze spustit bez zásahu uživatele, ale vyžadují interaktivní zadání hesla.
+txt_7_9_spacing: Rozestupy
+txt_7_9_zooming: Přiblížení
+txt_7_8_changelocalization: Změnit jazyk PeaZipu
+txt_7_8_custext: Vlastní přípona
+txt_7_8_destexistfile: Cíl již obsahuje zpracované soubory. Nahradit soubory se stejným názvem?
+txt_7_8_dd: Přetáhnout a pustit
+txt_7_8_priorityhigh: Vysoká
+txt_7_8_priorityidle: Nečinná
+txt_7_8_rel: Interaktivní extrakce
+txt_7_8_prioritynormal: Normální
+txt_7_8_priorityrealtime: Reálný čas
+txt_7_8_requirerestart: [vyžaduje restart PeaZipu]
+txt_7_8_tpriority: Priorita úloh
+txt_7_8_update: Aktualizovat
+txt_7_7_noneall: Žádné (bez náhledu, bez přetahování)
+txt_7_7_nonetemp: Žádné, uživatelské dočasné pokud je potřeba
+txt_7_7_outtemp: Výstup, náhled v uživatelském dočasném adresáři
+txt_7_7_sys7zreq: Vyžaduje nainstalovaný p7zip-full nebo ekvivalent
+txt_7_7_tw: Dočasná pracovní složka pro tvorbu, úpravy, náhled a extrakci přetažením
+txt_7_7_sys7z: Použít systémový 7z v Linuxu
+txt_7_6_zipenc: 7z/p7zip kódování názvů souborů v ZIP
+txt_7_6_color: Barva
+txt_7_6_custenc: Vlastní kódová stránka
+txt_7_6_dark: Tmavý
+txt_7_6_tno: Nesynchronizovat strom archivu
+txt_7_6_forcelocalenc: Vynutit místní
+txt_7_6_forceutf8enc: Vynutit UTF-8
+txt_7_6_cpnote: Pokud zvolená vlastní znaková sada není podporována, úlohy vždy skončí chybou (pravděpodobně chyba při alokaci paměti). Pokud k tomu dojde, změňte znakovou sadu nebo obnovte aplikaci.
+txt_7_6_defaultenc: Místní, UTF-8 pro speciální znaky
+txt_7_6_dim: Nízké osvětlení
+txt_7_6_setcurdef: Nastavit aktuální cestu jako výchozí výstupní cestu
+txt_7_6_setdef: Nastavit výchozí výstupní cestu
+txt_7_6_tadvanced: Synchronizovat strom archivu, ponechat navštívené uzly
+txt_7_6_tsimple: Synchronizovat strom archivu, jednoduché
+txt_7_6_tacolor: Barva textového akcentu
+txt_7_5_always: Vždy
+txt_7_5_ask: Zeptat se
+txt_7_5_autoclosesingle: Automaticky zavřít po extrakci, pokud nebyly provedeny žádné akce procházení
+txt_7_5_cutlen: Zkrátit název na zadanou délku
+txt_7_5_cutlenw: Zkrátit název na zadanou délku (4..255); konflikty názvů lze později ručně opravit
+txt_7_5_dragnone: Nezamykat cíl
+txt_7_5_specialbrowse: Chcete rozbalit vše, abyste poskytli souboru dodatečná potřebná data?
+txt_7_5_ee: Rozbalit vše pro speciální typy souborů
+txt_7_5_draghide: Skrýt cíl přetažení
+txt_7_5_draglh: Uzamknout a skrýt cíl
+txt_7_5_draglock: Uzamknout cíl přetažení
+txt_7_5_never: Nikdy
+txt_7_5_repnascii: Nahradit/odstranit ne-ASCII znaky
+txt_7_4_comment: Komentář
+txt_7_4_7zfbrotlicomp: Nejrychlejší komprese, 7Z Brotli
+txt_7_4_7zfzstandardcomp: Nejrychlejší komprese, 7Z Zstandard
+txt_7_4_presetrar: Vysoká komprese, RAR
+txt_7_4_tkeep: Zachovat původní časové razítko archivu
+txt_7_4_lock: Uzamknout archiv
+txt_7_4_locked: uzamčeno
+txt_7_4_lockconfirm: Uzamčené archivy nelze dále upravovat, pokračovat v uzamčení tohoto archivu?
+txt_7_4_recover: Opravit archiv
+txt_7_4_tcurr: Nastavit časové razítko archivu podle aktuálního systémového času
+txt_7_4_setarc: Nastavit možnosti archivace
+txt_7_4_setext: Nastavit možnosti extrakce
+txt_7_4_swzipx: Přepnout na příponu zipx pro ne-Deflate zip archivy
+txt_7_3_archiveerrors: [archiv může obsahovat chyby]
+txt_7_3_archiveerrorshint: Archiv nemusí být platný (kvůli chybějícím, poškozeným nebo nestandardním datům); lze spustit test pro podrobné informace. Pokud je tabulka obsahu archivu šifrována, je před prohlížením nutné zadat heslo.
+txt_7_3_clickextall: Kliknutím na „Rozbalit vše“ aktivujete
+txt_7_3_noconfdel: Nepožadovat potvrzení pro smazání po archivaci / extrakci
+txt_7_3_profile7zfastest: Rychlá komprese, 7Z nejrychlejší
+txt_7_3_maxbr: Maximalizovat Brotli kompresi s větší pamětí (může být nekompatibilní s některými extraktory)
+txt_7_3_maxzstd: Maximalizovat Zstandard kompresi s větší pamětí
+txt_7_3_profile7zfast: Střední komprese, 7Z rychlá
+txt_7_3_stl: Nastavit časové razítko archivu podle nejnovějšího souboru
+txt_7_2_altcomp: Alternativní komprese, ARC
+txt_7_2_clearnoupdate: Vymazat upravené soubory
+txt_7_2_autoclosepeazip: Zavřít PeaZip po dokončení úlohy
+txt_7_2_zpaqall: Rozbalit všechny revize
+txt_7_2_extcomp: Extrémní komprese, ZPAQ
+txt_7_2_extcompultra: Extrémní komprese, ZPAQ ultra
+txt_7_2_fbrotlicomp: Nejrychlejší komprese, Brotli
+txt_7_2_fzstandardcomp: Nejrychlejší komprese, Zstandard
+txt_7_2_loadcompsettings: Načíst nastavení komprese
+txt_7_2_savecompsettings: Uložit nastavení komprese
+txt_7_2_source: Zdroj
+txt_7_2_updateclear: Aktualizovat upravené soubory v archivu a vymazat upravené soubory
+txt_7_1_type_description_brotli: Brotli: rychlý kompresor od Google, velmi rychlá dekomprese
+txt_7_1_new: Rozbalit vše zde, do nové složky
+txt_7_1_smart: Rozbalit vše zde, inteligentně
+txt_7_1_profileintermediate: Střední komprese, ZIP/BZip2 rychlý
+txt_7_1_renfilesonly: Přejmenovat pouze soubory
+txt_7_1_typetosearch: Pište pro hledání v aktuální cestě
+txt_7_1_type_description_zstd: Zstandard: rychlý kompresor od Facebooku, velmi rychlá dekomprese
+txt_7_0_af: Analyzovat obsah složek
+txt_7_0_autoopentar: Automaticky otevřít jediný tar archiv uvnitř tar.* souborů
+txt_7_0_exttmppath: Obsah bude extrahován mimo dočasnou pracovní cestu, do:
+txt_6_9_autou: Automaticky aktualizovat upravené soubory v archivech
+txt_6_9_forceu: Vynutit aktualizaci upravených souborů v archivech
+txt_6_9_opuns: Operace není podporována pro aktuální typ archivu
+txt_6_9_overarch: Přepsat soubor(y) se stejným názvem, které již v archivu existují?
+txt_6_9_uconf: Náhledový soubor byl upraven. Aktualizovat aktuální archiv?
+txt_6_8_ndrop: Použít nativní Drag & Drop ve Windows
+txt_6_7_nop: (žádný náhled)
+txt_6_6_pdupfound: nalezeny možné duplikáty (rychlý přibližný test)
+txt_6_6_rsh: Obnovit historii hledání
+txt_6_6_pdupfind: Navrhnout možné duplikáty
+txt_6_6_forcemodify: Pokusit se upravit výslovně nepodporované typy souborů
+txt_6_5_mandatory: (povinné)
+txt_6_5_abort: Přerušit
+txt_6_5_askp: Zeptat se na nastavení hesla při spuštění
+txt_6_5_chp: Změnit heslo
+txt_6_5_def: Definice
+txt_6_5_nop: Neptat se na nastavení hesla při spuštění
+txt_6_5_error: Chyba
+txt_6_5_seqerr: Zjištěna chyba(y), původní soubory nebudou smazány
+txt_6_5_sni: Zahrnout NT bezpečnostní informace
+txt_6_5_sns: Zahrnout NTFS alternativní datové proudy
+txt_6_5_privacy: Soukromí
+txt_6_5_showvolatile: Zobrazit, které volby jsou nestálé / závislé na kontextu
+txt_6_5_force: Pokusit se otevřít archivy obsahující chyby
+txt_6_5_warning: Varování
+txt_6_5_yes: Ano
+txt_6_5_yesall: Ano pro vše
+txt_6_5_np: Nyní můžete změnit heslo převedených archivů na nové, nebo ponechat prázdné heslo pro vynechání šifrování
+txt_6_4_absolute: Absolutní cesty
+txt_6_4_appdirn: Připojit název složky
+txt_6_4_closeallother: Zavřít všechny ostatní karty
+txt_6_4_closeright: Zavřít karty vpravo
+txt_6_4_collapse: Sbalit karty
+txt_6_4_expand: Rozbalit karty
+txt_6_4_full: Úplné cesty
+txt_6_4_new: Nový
+txt_6_4_openintab: Otevřít v nové kartě
+txt_6_4_paths: Cesty
+txt_6_4_prepdirn: Přidat název složky předem
+txt_6_4_relative: Relativní cesty
+txt_6_4_tabbar: Panel karet
+txt_6_3_autoadjust: Automaticky upravit sloupce
+txt_6_3_cinfo: Informace a komentáře
+txt_6_3_syn: Synchronizovat archiv s diskem
+txt_6_3_uar: Aktualizovat pouze soubory, které jsou již v archivu
+txt_6_2_encext: Přidat příponu ".enc" k šifrovaným archivům
+txt_6_2_archive: Typ souboru archivu
+txt_6_2_container: Typ souboru kontejneru
+txt_6_1_ec: Rozbalit / sbalit strom archivu
+txt_6_0_msq: Řadit podle typu souboru pro solidní kompresi
+txt_5_9_lff: Analyzovat soubory a složky
+txt_5_9_pff: Analyzovat, zobrazit hlavičky/EOF souborů
+txt_5_9_start: Začít od
+txt_5_8_l0: Povolit jakoukoli podporovanou komponentu/formát
+txt_5_8_l1: Povolit pouze komponenty Svobodného softwaru
+txt_5_8_l2: Povolit pouze otevřené formáty archivů
+txt_5_8_ascii: Bezpečné pro ASCII, skripty jsou bezpečné ve starších prostředích
+txt_5_8_cp: Bezpečné pro kódování znaků, skripty mohou způsobit problémy ve starších prostředích s různými kódovými stránkami
+txt_5_8_fs: Shoda se zásadami Svobodného softwaru
+txt_5_8_utf: Skripty vyžadují plné prostředí UTF-8 / Unicode
+txt_5_8_fsr: Tento formát není podporován kvůli omezením shody Svobodného softwaru (Možnosti > Pokročilé)
+txt_5_7_pinstalled: NAINSTALOVÁNO
+txt_5_7_pmissing: CHYBÍ
+txt_5_7_plugin: Plugin chybí, lze nainstalovat z Nápověda > Zkontrolovat pluginy a doplňky
 txt_5_6_basic: Základní
 txt_5_6_exarc: Rozbalit archiv
 txt_5_6_tab: Otevřít v nové záložce
