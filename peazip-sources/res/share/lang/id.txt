@@ -7,25 +7,25 @@ Terakhir direvisi: 18/10/2025
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
+txt_10_7_errload: Tidak dapat menampilkan gambar
+txt_10_7_errfile: Berkas tidak ditemukan
+txt_10_7_first: Pertama
+txt_10_7_fit: Sesuaikan ke layar
+txt_10_7_fith: Sesuaikan tinggi layar
+txt_10_7_fitw: Sesuaikan lebar layar
+txt_10_7_keep: Pertahankan file keluaran jika ekstraksi berakhir dengan kesalahan atau dibatalkan
+txt_10_7_next: Berikutnya
+txt_10_7_prev: Sebelumnya
+txt_10_7_pwh: Kata sandi dari hash
+txt_10_7_images: Lihat gambar
+txt_10_7_thumbnails: Lihat thumbnail
 txt_10_6_virtual: Mode virtual dinamis
 txt_10_5_fr: (laporan lanjut)
 txt_10_5_sectype: Tanyakan konfirmasi untuk menjalankan tipe file berikut
 txt_10_5_checkmotw: Periksa Zona Identifikasi (MoTW)
 txt_10_5_sectypewarning: Kamu ingin menjalankan file ini?
 txt_10_5_pathlock: Item di path arsip ini tidak bisa di ubah
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
+txt_10_5_type_description_rar: RAR: format arsip proprietari, rasio kompresi tinggi, didukung melalui kompresor eksternal
 txt_10_5_sh: Tampilkn file yang tersembunyi dan folder di filesystem
 txt_10_5_ntfsalt: Format ini dapat menyimpan Data Stream Alternatif NTFS, termasuk Markah Web
 txt_10_4_moving: (Memindahkan)
@@ -47,7 +47,7 @@ txt_10_0_comp: Format kompresi murni hanya menerima satu file sebagai input. Kon
 txt_10_0_save: Simpan
 txt_10_0_tp: Pratinjau teks
 txt_9_9_uac: Pengguna saat ini tidak dapat membaca path untuk keluaran ini. Kamu ingin menjalankan PeaZip dengan UAC elevation?
-TXT_9_9_kdf: KDF rounds
+TXT_9_9_kdf: Putaran KDF
 txt_9_9_utc: Tampilkan penanda waktu sebagai UTC
 txt_9_8_alwaysflat: Selalu buka arsip di tampilan flat
 txt_9_8_fnew: Ekstrak disini (di folder baru)
@@ -132,17 +132,17 @@ txt_8_7_csvhelp: "," standar internasional, ";" umumnya untuk pelokalan Latin
 txt_8_7_after: Setelah pengekstrakan / pengarsipan
 txt_8_7_bintest: biner sudah diuji.
 txt_8_7_csv: Pemisah CSV
-txt_8_7_hok: Hash of binaries used by PeaZip match with expected values
+txt_8_7_hok: Hash biner yang digunakan PeaZip cocok dengan nilai yang diharapkan
 txt_8_7_mo: Atur opsi pengelola arsip
 txt_8_7_showhm: Tampilkan Header menu penjelajah file
 txt_8_7_showsearchbar: Tampilkan bilah pencarian
 txt_8_7_showsm: Tampilkan menu Style
-txt_8_7_hnotok: Beberapa biner hash yang digunakan oleh PeaZip tidak sesuai dengan value yang diharapkan:
+txt_8_7_hnotok: Sebagian hash biner yang digunakan PeaZip tidak cocok dengan nilai yang diharapkan:
 txt_8_7_verifybin: tampilkan hash biner
 txt_8_6_clear: Opsi “Hapus” menghapus file sementara yang telah diedit, sedangkan file tersebut tetap tersedia untuk diedit lebih lanjut.
 txt_8_6_noclear: Batalkan semua perubahan tanpa memperbarui arsip
 txt_8_6_nosimple: Jangan perbarui arsip, simpan file yang telah diedit untuk pengeditan lebih lanjut.
-txt_8_6_immediate: Immediate execution
+txt_8_6_immediate: Eksekusi segera
 txt_8_6_yessimple: Perbarui arsip, simpan file yang telah diedit untuk pengeditan lebih lanjut.
 txt_8_5_advbrowser: Terapkan filter ke perambah arsip
 txt_8_5_detailslarge: Detail, besar
@@ -151,14 +151,14 @@ txt_8_5_listlarge: Daftar, besar
 txt_8_5_loadlayout: Muat tata letak saat memulai
 txt_8_5_samplescripts: Contoh script
 txt_8_4_keepopenerrorslist: Hentikan untuk pemeriksaan kesalahan, daftar
-txt_8_3_mbubin: Binary
+txt_8_3_mbubin: Biner
 txt_8_3_cw: Ubah direktori kerja? Ini akan mengembalikan file pekerjaan sementara dan memulai ulang aplikasi.
 txt_8_3_temperature: Warna temperatur
 txt_8_3_mbudec: Desimal
 txt_8_3_htab: Tab sorotan
 txt_8_3_maxarg: Argumen maksimal panjang
-txt_8_3_mbu: Multiple-byte unit
-txt_8_3_prefalgo: Preferred algorithms
+txt_8_3_mbu: Satuan multi-byte
+txt_8_3_prefalgo: Algoritma yang disukai
 txt_8_3_skipdel: Lewati penghapusan file sementara yang terkunci (gunakan reset untuk menghapus permintaan)
 txt_8_3_lw: Beberapa file di direktori pekerjaan akan dikunci dan tidak bisa dihapus secara otomatis
 txt_8_3_noupx: Biner ini tidak bisa dikompres (mungkin sudah terkompres)
@@ -178,7 +178,7 @@ txt_8_1_bop: Opsi pengoptimalan peramban bisa diatur di Opsi > Pengaturan, tab U
 txt_8_1_nopreparse: Jangan pre-parse arsip
 txt_8_1_ed: kesalahan terdeteksi.
 txt_8_1_togglearc: Menampilkan daftar isi arsip dalam tampilan datar mungkin memakan waktu lama, apakah tetap melanjutkan?
-txt_8_1_preparsehint: Optimalkan batasan performa pre-parsing untuk arsip besar. Pre-parsing is meant to detect in advance possible issues in archive content.
+txt_8_1_preparsehint: Optimalkan kinerja dengan membatasi pra-parsing untuk arsip besar. Pra-parsing dimaksudkan untuk mendeteksi lebih awal kemungkinan masalah pada isi arsip.
 txt_8_1_slow: Lambat
 txt_8_1_vslow: Sangat lambat
 txt_8_1_volumes: volume
@@ -186,7 +186,7 @@ txt_8_0_altcol: Alternatif warna ubin
 txt_8_0_forcebrowse: Telusuri tipe arsip non-kanonikal (kontainer, disk image, penginstalan,..)
 txt_8_0_commonalgo: Algoritma umum
 txt_8_0_forceconvert: Konvert tipe arsip non-kanonikal
-txt_8_0_defaultactionhint: Default action double-clicking a file associated with PeaZip from the system
+txt_8_0_defaultactionhint: Tindakan bawaan saat klik ganda file yang diasosiasikan dengan PeaZip dari sistem
 txt_8_0_defaultaction: Tindakan default saat memulai
 txt_8_0_enableextand: Aktifkan submenu "Ekstrak dan buka dengan"
 txt_8_0_forcetyping: Paksa mengetik kata sandi interaktif
@@ -244,7 +244,7 @@ txt_7_4_comment: Komentar
 txt_7_4_7zfbrotlicomp: Kompresi tercepat, 7Z Brotli
 txt_7_4_7zfzstandardcomp: Kompresi tercepat, 7Z Zstandard
 txt_7_4_presetrar: Kompresi tinggi, RAR
-txt_7_4_tkeep: Keep original archive timestamp
+txt_7_4_tkeep: Pertahankan cap waktu arsip asli
 txt_7_4_lock: Kunci arsip
 txt_7_4_locked: terkunci
 txt_7_4_lockconfirm: Arsip terkunci tidak dapat diubah, lanjutkan untuk mengunci arsip ini?
