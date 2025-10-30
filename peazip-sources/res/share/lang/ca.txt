@@ -7,81 +7,81 @@ Traduït per: Marc Roca Musach
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
+txt_10_7_errload: No es pot mostrar la imatge
+txt_10_7_errfile: Fitxer no trobat
+txt_10_7_first: Primer
+txt_10_7_fit: Ajusta a la pantalla
+txt_10_7_fith: Ajusta a l’alçada de la pantalla
+txt_10_7_fitw: Ajusta a l’amplada de la pantalla
+txt_10_7_keep: Conserva els fitxers de sortida si l’extracció acaba amb error o es cancel·la
+txt_10_7_next: Següent
+txt_10_7_prev: Anterior
+txt_10_7_pwh: Contrasenya des de hash
+txt_10_7_images: Visualitza imatges
+txt_10_7_thumbnails: Mostra miniatures
+txt_10_6_virtual: Mode virtual dinàmic
+txt_10_5_fr: (informe complet)
+txt_10_5_sectype: Demana confirmació per executar els tipus de fitxer següents
+txt_10_5_checkmotw: Comprova Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Vols executar aquest fitxer?
+txt_10_5_pathlock: Els elements d’aquest camí de l’arxiu no es poden editar
+txt_10_5_type_description_rar: RAR: format d’arxiu propietari, alt nivell de compressió, compatible mitjançant compressor extern
+txt_10_5_sh: Mostra fitxers i carpetes ocults al sistema de fitxers
+txt_10_5_ntfsalt: Aquest format pot emmagatzemar NTFS Alternate Data Stream, incloent-hi Mark of The Web
+txt_10_4_moving: (Movent)
+txt_10_3_classic: Clàssic
+txt_10_3_ascii: Es recomana utilitzar només caràcters ASCII a les contrasenyes per al format d’arxiu actual (majúscules, minúscules, números i caràcters especials).
+txt_10_3_minimal: Minimalista
 txt_10_3_m: Modern
 txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
-txt_9_3_continue: Continue anyway?
+txt_10_3_aw: Solució alternativa: marca "Força l’escriptura interactiva de la contrasenya" al quadre de diàleg o estableix el mode Consola per als binaris del backend.
+txt_10_2_savecopy: Desa una còpia
+txt_10_1_full: Complet
+txt_10_1_kdfw: Càrrega de treball KDF
+txt_10_1_under: Subratllat
+txt_10_0_exptrash: Explora la paperera
+txt_10_0_ptarzst: Compressió més ràpida, TAR.ZST
+txt_10_0_ptarxz: Alta compressió, TAR.XZ
+txt_10_0_ptargz: Compressió mitjana, TAR.GZ
+txt_10_0_comp: Els formats de compressió pura només accepten un únic fitxer com a entrada. La conversió d’arxius cap a aquests formats fallarà si la font conté múltiples fitxers o carpetes, cosa que no es pot determinar per avançat.
+txt_10_0_save: Desa
+txt_10_0_tp: Vista prèvia de text
+txt_9_9_uac: L’usuari actual no pot escriure en aquest camí de sortida. Vols executar PeaZip amb elevació UAC?
+TXT_9_9_kdf: Rondes KDF
+txt_9_9_utc: Mostra marques de temps com a UTC
+txt_9_8_alwaysflat: Obre sempre els arxius en vista plana
+txt_9_8_fnew: Extreu aquí (en una carpeta nova)
+txt_9_8_fsmart: Extreu aquí (carpeta nova intel·ligent)
+txt_9_7_tarpipe: 7z / p7zip utilitza canalització
+txt_9_7_smartsorting: Ordenació intel·ligent de noms de fitxers
+txt_9_6_centered: Centrat
+txt_9_6_cside: Barra lateral compacta
+txt_9_6_loadpconfirm: Vols carregar aquest perfil? Es sobreescriuran totes les dades del perfil actual, inclosos els scripts desats i el gestor de contrasenyes.
+txt_9_6_loadp: Carrega perfil
+txt_9_6_saveppw: OPCIONAL: protegir aquest perfil amb contrasenya / fitxer clau?
+txt_9_6_savepoverwrite: Sobreescriure el perfil existent? Totes les dades del perfil existent es sobreescriuran, inclosos els scripts desats i el gestor de contrasenyes.
+txt_9_6_savep: Desa perfil
+txt_9_6_scside: Mostra barra lateral compacta
+txt_9_5_all: Tot
+txt_9_5_precond: Preanalitza si es detecten errors
+txt_9_5_largea: Preanalitza arxius grans
+txt_9_5_mediuma: Preanalitza arxius mitjans
+txt_9_5_smalla: Preanalitza arxius petits
+txt_9_5_reopentab: Reobre l’última pestanya
+txt_9_5_savetabs: Desa pestanyes
+txt_9_5_sb: Utilitza binaris en els camins del sistema
+txt_9_4_r: lectura
+txt_9_4_rw: lectura/escriptura
+txt_9_4_savecomment: Desa comentari
+txt_9_4_hintcomment: Escriu o enganxa un comentari, o arrossega aquí un fitxer de comentari.
+txt_9_3_continue: Continuar igualment?
 txt_9_3_contrast: Contrast
-txt_9_3_fsd: Free space on destination may not be enough
-txt_9_3_fsw: Free space on temporary work path may not be enough
-txt_9_3_mrar: Manually set RAR binary
-txt_9_3_canedit: This archive type can be edited
-txt_9_3_canforce: This archive type can be edited (forced)
-txt_9_3_cannotedit: This archive type cannot be edited
+txt_9_3_fsd: L’espai lliure a la destinació pot no ser suficient
+txt_9_3_fsw: L’espai lliure al camí de treball temporal pot no ser suficient
+txt_9_3_mrar: Estableix manualment el binari RAR
+txt_9_3_canedit: Aquest tipus d’arxiu es pot editar
+txt_9_3_canforce: Aquest tipus d’arxiu es pot editar (forçat)
+txt_9_3_cannotedit: Aquest tipus d’arxiu no es pot editar
 txt_9_2_7za: Àlies 7z / p7zip
 txt_9_2_changelog: Registre de canvis
 txt_9_2_tfaq: Comprova si hi ha traduccions noves
@@ -1397,49 +1397,52 @@ INTRODUCCIÓ D’UNA CONTRASENYA PER NAVEGAR O EXTREURE UN ARXIU
 Feu clic a la icona del cadenat per introduir una contrasenya o, opcionalment, un fitxer de xifratge.
 La icona es mostra tant a la barra d’estat del navegador de fitxers del PeaZip com a la interfície d’extracció d’arxius. Quan s’hagi especificat una contrasenya, la icona canviarà de color.
 
-CREATE ARCHIVE
-From the system
-- rightclick on objects to be archived and click on "Add to archive" in context menu or SendTo menu. It will open the archive creation confirmation dialog, more options are available in “Advanced” tab; click OK to create the archive.
-- alternatively, drag files/folders to PeaZip’s window or shortcut; the same archive creation interface will be shown.
+CREAR UN ARXIU
+Des del sistema
+- Fes clic amb el botó dret sobre els objectes que vols arxivar i selecciona "Afegeix a l’arxiu" al menú contextual o al menú SendTo. Això obrirà el diàleg de confirmació de creació de l’arxiu; hi ha més opcions disponibles a la pestanya “Avançat”. Fes clic a D’acord per crear l’arxiu.
+- Alternativament, arrossega fitxers o carpetes a la finestra o a la drecera de PeaZip; es mostrarà la mateixa interfície de creació d’arxius.
 
-From PeaZip 
-- select objects to be archived and click on "Add" button; the same archive creation interface will be shown.
+Des de PeaZip 
+- Selecciona els objectes que vols arxivar i fes clic al botó “Afegeix”; es mostrarà la mateixa interfície de creació d’arxius.
 
-ADD FILES/FOLDERS TO UPDATE EXISTING ARCHIVE
-Open an archive in PeaZip (i.e. with doubleclick, or drag an archive on PeaZip’s window or icon), then drag files and folders to be added in the archive (or click on "Add" button and use application's context menu to add objects to the archive).
-It will open the archive creation confirmation dialog, click OK to update the existing archive.
+AFEGIR FITXERS/CARPETES A UN ARXIU EXISTENT
+Obre un arxiu amb PeaZip (per exemple, fent doble clic, o arrossegant-lo a la finestra o icona de PeaZip), després arrossega-hi els fitxers i carpetes que vols afegir (o fes clic a “Afegeix” i utilitza el menú contextual de l’aplicació per afegir objectes a l’arxiu).
+S’obrirà el diàleg de confirmació de creació de l’arxiu; fes clic a D’acord per actualitzar l’arxiu existent.
 
-CREATE ARCHIVE SPLIT IN SMALLER FILES
-While creating an archive as explained in previous points, click on “Single volume” dropdown menu to select a size for output files (volumes) the archive will be split in.
-Most common types of archives supports this option.
+CREAR UN ARXIU DIVIDIT EN FITXERS MÉS PETITS
+Quan creïs un arxiu segons s’ha explicat anteriorment, fes clic al menú desplegable “Volum únic” per seleccionar la mida dels fitxers de sortida (volums) en què es dividirà l’arxiu.
+Els tipus d’arxiu més comuns admeten aquesta opció.
 
-CREATE ENCRYPTED ARCHIVE
-Click on the padlock icon to enter a password and optionally a keyfile; the icon is featured both in PeaZip’s file browser’s status bar and in archive creation interface.
-To hide names of files and directories contained in the archive check “Encrypt also filenames”, please note that it will be applied only if the archive will be created in a format supporting this function, like 7Z and ARC.
-Note that in archive creation interface, alongside the padlock icon, there is a warning to visually inform if encryption is set and if the current archive format supports encryption.
+CREAR UN ARXIU ENCRIPTAT
+Fes clic a la icona del cadenat per introduir una contrasenya i, opcionalment, un fitxer clau.
+Aquesta icona es troba tant a la barra d’estat del navegador de fitxers de PeaZip com a la interfície de creació d’arxius.
+Per ocultar els noms dels fitxers i carpetes continguts a l’arxiu, marca “Encripta també els noms de fitxer”; tingues en compte que aquesta opció només s’aplica si el format de l’arxiu admet aquesta funció, com 7Z i ARC.
+A la interfície de creació d’arxius, al costat de la icona del cadenat, hi ha un avís visual que indica si l’encriptació està activada i si el format actual la suporta.
 
-CREATE SEPARATE ARCHIVES
-Add objects to be archived (with PeaZip’s "Add" button, or from system’s context menu or SendTo menu) and before confirming with "Ok" check "Add each object to a separate archive" option.
+CREAR ARXIUS SEPARATS
+Afegeix els objectes que vols arxivar (amb el botó “Afegeix” de PeaZip o des del menú contextual del sistema o el menú SendTo) i, abans de confirmar amb “D’acord”, marca l’opció “Afegeix cada objecte a un arxiu separat”.
 
-CONVERT ARCHIVES
-From PeaZip select archives to be converted and click on "Convert" on toolbar or context menu, non-archive files and folders can be added as well, the difference being in archives being extracted before compression stage.
-Using the “Convert existing archives” switch in conjunction with “Add each object to a separate archive" (default) it performs a mass conversion of listed archives, without that switch archive conversion is meant to consolidate input data in a single archive, improving compression efficiency because it allows recompression of the original data from its uncompressed form.
+CONVERTIR ARXIUS
+Des de PeaZip, selecciona els arxius que vols convertir i fes clic a “Converteix” a la barra d’eines o al menú contextual.
+També es poden afegir fitxers i carpetes que no siguin arxius; la diferència és que els arxius es descomprimeixen abans de la fase de compressió.
+Si utilitzes el commutador “Converteix arxius existents” juntament amb “Afegeix cada objecte a un arxiu separat” (opció predeterminada), s’executarà una conversió massiva dels arxius llistats.
+Sense aquest commutador, la conversió consolidarà les dades d’entrada en un únic arxiu, millorant l’eficiència de compressió, ja que permet recomprimir les dades originals sense comprimir.
 
-DIRECTLY CREATE ARCHIVES IN A SPECIFIED FORMAT AND WITH A CHOSEN COMPRESSION LEVEL
-Using “System integration” procedure in Options menu it is possible to enable context menu entries to directly add selected files/folders to a ZIP, 7Z or self extracting archive.
-For Zip and 7Z formats it is also possible to enable context menu entries to compress to fastest, normal or ultra level, bypassing the default compression level for the selected format.
+CREAR DIRECTAMENT ARXIUS EN UN FORMAT ESPECÍFIC I AMB UN NIVELL DE COMPRESSIÓ SELECCIONAT
+Mitjançant el procediment “Integració amb el sistema” al menú Opcions, es poden habilitar entrades al menú contextual per afegir directament els fitxers o carpetes seleccionats a un arxiu ZIP, 7Z o autoextraïble.
+Per als formats ZIP i 7Z, també és possible habilitar entrades al menú contextual per comprimir amb nivell més ràpid, normal o ultra, evitant així el nivell de compressió per defecte del format seleccionat.
 
-PASSWORD MANAGER
-Password manager is accessible from main menu, Tools > Password manager or from Password form, from drop down menu on the left of Password field.
-Saved passwords can be selected from the dropdown menu on the left of password filed in Password form, or can be copied from password manager to be used in any other application.
-If no master password is set for the password manager, the password list is accessible without prompting for authentication, otherwise passwords will not be displayed until the user correctly authenticates.
+GESTOR DE CONTRASENYES
+El gestor de contrasenyes és accessible des del menú principal: Eines > Gestor de contrasenyes, o des del formulari de contrasenya, al menú desplegable a l’esquerra del camp de contrasenya.
+Les contrasenyes desades es poden seleccionar des d’aquest menú desplegable o copiar directament del gestor per utilitzar-les en altres aplicacions.
+Si no s’ha establert cap contrasenya mestra per al gestor, la llista de contrasenyes és accessible sense autenticació; en cas contrari, les contrasenyes no es mostraran fins que l’usuari s’autentiqui correctament.
 
-CONFIGURE THE APPLICATION
-Options > Localization (and in Options > Settings, first tab) allows to set application’s language.
-Options > Settings allows to edit applications’ settings
-Options > Theme allows to change application’s icons and appearance
-Options > System integration starts a wizard to configure file associations, context menu and SendTo menu entries (on Windows)
-Organize menu contains entry to customize, enable or disable browser’s features, like toolbar, address bar, navigation bar, etc
+CONFIGURAR L’APLICACIÓ
+Opcions > Localització (i també a Opcions > Configuració, primera pestanya) permet establir l’idioma de l’aplicació.
+Opcions > Configuració permet editar els paràmetres de l’aplicació.
+Opcions > Tema permet canviar les icones i l’aparença de l’aplicació.
+Opcions > Integració amb el sistema inicia un assistent per configurar associacions de fitxers, menús contextuals i entrades SendTo (a Windows).
+El menú Organitza conté opcions per personalitzar, habilitar o deshabilitar funcions del navegador, com la barra d’eines, la barra d’adreces, la barra de navegació, etc.
 
 F1 	ajuda
 F2 	reanomena fitxers / Ctrl+F2 copia els fitxers seleccionats a... / Shift+F2 mou els fitxers seleccionats a...
@@ -1456,15 +1459,14 @@ F12 	extreu-ho tot a...
 
 ABOUT PEAZIP
 
-PeaZip is an open source file and archive manager: cross platform, available as portable and installable software for 32 and 64 bit Windows (9x, 2k, XP, Vista) and Linux (PeaZip is a desktop neutral application).
+PeaZip és un gestor de fitxers i arxius de codi obert: multiplataforma, disponible tant en versió portàtil com instal·lable per a sistemes Windows de 32 i 64 bits (9x, 2k, XP, Vista) i Linux (PeaZip és una aplicació neutra d’escriptori).
 
-PeaZip allows to apply powerful multiple search filters to archive's content; create and extract multiple archives at once; create self-extracting archives; export task definition as command line; save archiving and extraction layouts; bookmark archives and folders; scan and open with custom applications compressed and uncompressed files etc...
+PeaZip permet aplicar potents filtres de cerca múltiples al contingut dels arxius; crear i extreure diversos arxius alhora; crear arxius autoextraïbles; exportar la definició de tasques com a línia d’ordres; desar dissenys d’arxivament i extracció; afegir a favorits arxius i carpetes; escanejar i obrir fitxers comprimids o no amb aplicacions personalitzades, etc.
 
-Other features: strong encryption, robust file copy, split/join files (file span), secure data deletion, compare, checksum and hash files, system benchmark, generate random passwords and keyfiles.
-
+Altres funcions: xifratge fort, còpia de fitxers robusta, divisió/unió de fitxers (fragmentació), eliminació segura de dades, comparació, suma de verificació i hash de fitxers, proves de rendiment del sistema, generació de contrasenyes i fitxers clau aleatoris.
 Downloads: https://peazip.github.io
 Learn more: https://peazip.github.io/peazip-free-archiver.html
 Support: https://peazip.github.io/peazip-help.html
 FAQ: https://peazip.github.io/peazip-help-faq.html
 
-Many thanks to all people contributing to PeaZip project's growth developing Open Source software components used in this application (see website for complete list), and to all users contributing with feedback, experience and advices.
+Moltes gràcies a totes les persones que contribueixen al creixement del projecte PeaZip, desenvolupant components de programari de codi obert utilitzats en aquesta aplicació (vegeu el lloc web per a la llista completa), i a tots els usuaris que hi col·laboren aportant comentaris, experiència i consells.
