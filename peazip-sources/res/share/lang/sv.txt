@@ -3,51 +3,51 @@ Swedish - Svenska
 10.7
 Översatt av: FX (old translation: Mikael Hiort af Ornäs 20140413)
 Senast rev. av: Sprinto (hanseriksson980@gmail.com)
-Senast rev.: 2025-06-09
+Senast rev.: 2025-10-30
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
+txt_10_7_errload: Kan inte visa bilden
+txt_10_7_errfile: Filen hittades inte
+txt_10_7_first: Första
+txt_10_7_fit: Anpassa till skärmen
+txt_10_7_fith: Anpassa till skärmens höjd
+txt_10_7_fitw: Anpassa till skärmens bredd
+txt_10_7_keep: Behåll utdatafiler om uppackningen slutar med fel eller avbryts
+txt_10_7_next: Nästa
+txt_10_7_prev: Föregående
+txt_10_7_pwh: Lösenord från hash
+txt_10_7_images: Visa bilder
+txt_10_7_thumbnails: Visa miniatyrer
+txt_10_6_virtual: Dynamiskt virtuellt läge
+txt_10_5_fr: (fullständig rapport)
+txt_10_5_sectype: Begär bekräftelse för att köra följande filtyper
+txt_10_5_checkmotw: Kontrollera Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Vill du köra den här filen?
+txt_10_5_pathlock: Objekt på den här sökvägen i arkivet kan inte redigeras
+txt_10_5_type_description_rar: RAR: proprietärt arkivformat med hög komprimeringsgrad, stöds via extern kompressor
+txt_10_5_sh: Visa dolda filer och mappar i filsystemet
+txt_10_5_ntfsalt: Det här formatet kan lagra NTFS Alternate Data Stream, inklusive Mark of The Web
 txt_10_4_moving: (Flyttande)
 txt_10_3_classic: Klassisk
-txt_10_3_ascii: Det är rekommenderat att bara använda ASCII tecken i lösenord för det aktuella arkivformatet (VERSALER/gemener, siffror, och specialtecken).
+txt_10_3_ascii: Det rekommenderas att endast använda ASCII‑tecken i lösenord för det aktuella arkivformatet (versaler/gemener, siffror och specialtecken).
 txt_10_3_minimal: Minimal
 txt_10_3_m: Modern
 txt_10_3_pm: Postmodern
-txt_10_3_aw: Arbetsomväg: markera "Forcera skriv in lösenord interaktivt" i lösenordsprompten, eller ange Konsolmod för bakgrundsprogram.
+txt_10_3_aw: Lösning: markera "Tvinga att skriva lösenord interaktivt" i lösenordsrutan eller välj Konsolläge för bakgrundsbinarier.
 txt_10_2_savecopy: Spara en kopia
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF arbetsbörda
+txt_10_1_full: Fullständig
+txt_10_1_kdfw: KDF‑arbetsbörda
 txt_10_1_under: Understruken
-txt_10_0_exptrash: Undersök Skräp
-txt_10_0_ptarzst: Snabbaste kompressionen, TAR.ZST
-txt_10_0_ptarxz: Hög kompression, TAR.XZ
-txt_10_0_ptargz: Medium kompression, TAR.GZ
-txt_10_0_comp: Rena kompressionsformat accepterar bara en enda fil som inmatning. Arkivkonvertering till dessa format misslyckas om källan innehåller flera filer eller kataloger, som inte kan bestämmas i förväg.
+txt_10_0_exptrash: Utforska Papperskorgen
+txt_10_0_ptarzst: Snabbaste komprimeringen, TAR.ZST
+txt_10_0_ptarxz: Hög komprimering, TAR.XZ
+txt_10_0_ptargz: Medel komprimering, TAR.GZ
+txt_10_0_comp: Rena komprimeringsformat accepterar endast en enda fil som indata. Konvertering misslyckas om källan innehåller flera filer eller mappar, vilket inte kan avgöras i förväg.
 txt_10_0_save: Spara
-txt_10_0_tp: Textförhandsvisning
-txt_9_9_uac: Aktuell användare kan inte skriva till denna utmatningssökväg. Vill du starta PeaZip med UAC-aktivering?
-TXT_9_9_kdf: KDF rundor
+txt_10_0_tp: Förhandsvisa text
+txt_9_9_uac: Aktuell användare kan inte skriva till denna utdataväg. Vill du starta PeaZip med UAC‑höjning?
+TXT_9_9_kdf: KDF‑rundor
 txt_9_9_utc: Visa tidsstämplar som UTC
 txt_9_8_alwaysflat: Öppna alltid arkiv i platt vy
 txt_9_8_fnew: Packa upp här (i ny katalog)
