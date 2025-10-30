@@ -3,77 +3,77 @@ Latviski
 10.7
 Translated by: Viesturs Eihentals
 Last rev. by: Viesturs Eihentals
-Last rev.: 20200505
+Last rev.: 20251030
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
+txt_10_7_errload: Nevar attēlot attēlu
+txt_10_7_errfile: Fails nav atrasts
+txt_10_7_first: Pirmais
+txt_10_7_fit: Pielāgot ekrānam
+txt_10_7_fith: Pielāgot ekrāna augstumam
+txt_10_7_fitw: Pielāgot ekrāna platumam
+txt_10_7_keep: Paturēt izvades failus, ja atspiešana beidzas ar kļūdu vai tiek atcelta
+txt_10_7_next: Nākamais
+txt_10_7_prev: Iepriekšējais
+txt_10_7_pwh: Parole no jaucējvērtības
+txt_10_7_images: Skatīt attēlus
+txt_10_7_thumbnails: Skatīt sīktēlus
+txt_10_6_virtual: Dinamisks virtuālais režīms
+txt_10_5_fr: (pilns pārskats)
+txt_10_5_sectype: Jautāt apstiprinājumu šādu failu tipu palaišanai
+txt_10_5_checkmotw: Pārbaudīt Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Vai vēlaties palaist šo failu?
+txt_10_5_pathlock: Šajā arhīva ceļā esošos vienumus nevar rediģēt
+txt_10_5_type_description_rar: RAR: īpašniekprogrammas arhīva formāts, augsta saspiešanas pakāpe, atbalsts caur ārēju kompresoru
+txt_10_5_sh: Rādīt slēptos failus un mapes failu sistēmā
+txt_10_5_ntfsalt: Šis formāts spēj glabāt NTFS alternatīvās datu plūsmas, ieskaitot Mark of The Web
+txt_10_4_moving: (Pārvietošana)
+txt_10_3_classic: Klasisks
+txt_10_3_ascii: Ieteicams izmantot tikai ASCII rakstzīmes parolēs šim arhīva formātam (lielo/mazo burtu kombinācija, cipari un speciālās zīmes).
+txt_10_3_minimal: Minimāls
 txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
+txt_10_3_pm: Postmoderns
+txt_10_3_aw: Risinājums: atzīmējiet "Piespiest paroli ievadīt interaktīvi" paroles uzvednē vai iestatiet Konsoles režīmu fonā strādājošajiem binārajiem.
+txt_10_2_savecopy: Saglabāt kopiju
+txt_10_1_full: Pilns
+txt_10_1_kdfw: KDF noslodze
+txt_10_1_under: Pasvītrots
+txt_10_0_exptrash: Atvērt Atkritni
+txt_10_0_ptarzst: Ātrākā saspiešana, TAR.ZST
+txt_10_0_ptarxz: Augsta saspiešana, TAR.XZ
+txt_10_0_ptargz: Vidēja saspiešana, TAR.GZ
+txt_10_0_comp: Tīrās saspiešanas formāti pieņem tikai vienu failu kā ievadi. Arhīvu pārveide uz šiem formātiem neizdosies, ja avotā ir vairāki faili vai mapes, ko nevar noteikt iepriekš.
+txt_10_0_save: Saglabāt
+txt_10_0_tp: Teksta priekšskatījums
+txt_9_9_uac: Pašreizējais lietotājs nevar rakstīt šajā izvades ceļā. Vai vēlaties palaist PeaZip ar UAC paaugstinātām tiesībām?
+TXT_9_9_kdf: KDF cikli
+txt_9_9_utc: Rādīt laikspiedolus kā UTC
+txt_9_8_alwaysflat: Vienmēr atvērt arhīvus līdzenā skatā
+txt_9_8_fnew: Atspiest šeit (jaunā mapē)
+txt_9_8_fsmart: Atspiest šeit (gudrā jaunā mapē)
+txt_9_7_tarpipe: 7z / p7zip izmantot cauruļvadu
+txt_9_7_smartsorting: Viedā failu nosaukumu kārtošana
+txt_9_6_centered: Centrēts
+txt_9_6_cside: Kompakta sānu josla
+txt_9_6_loadpconfirm: Vai vēlaties ielādēt šo profilu? Visi pašreizējā profila dati tiks pārrakstīti, tostarp saglabātie skripti un Paroļu pārvaldnieks.
+txt_9_6_loadp: Ielādēt profilu
+txt_9_6_saveppw: NEOBLIGĀTI: aizsargāt šo profilu ar paroli / atslēgas failu?
+txt_9_6_savepoverwrite: Pārrakstīt esošo profilu? Visi esošā profila dati tiks pārrakstīti, tostarp saglabātie skripti un Paroļu pārvaldnieks.
+txt_9_6_savep: Saglabāt profilu
+txt_9_6_scside: Rādīt kompakto sānu joslu
+txt_9_5_all: Visi
+txt_9_5_precond: Priekšapstrādāt, ja konstatētas kļūdas
+txt_9_5_largea: Priekšapstrādāt lielus arhīvus
+txt_9_5_mediuma: Priekšapstrādāt vidējus arhīvus
+txt_9_5_smalla: Priekšapstrādāt mazus arhīvus
+txt_9_5_reopentab: Atkārtoti atvērt pēdējo cilni
+txt_9_5_savetabs: Saglabāt cilnes
+txt_9_5_sb: Lietot bināros failus sistēmas ceļos
+txt_9_4_r: lasīt
+txt_9_4_rw: lasīt/rakstīt
+txt_9_4_savecomment: Saglabāt komentāru
+txt_9_4_hintcomment: Ierakstiet vai ielīmējiet komentāru, ielādējiet vai velciet šurp komentāra failu.
 txt_9_3_continue: Continue anyway?
 txt_9_3_contrast: Contrast
 txt_9_3_fsd: Free space on destination may not be enough
