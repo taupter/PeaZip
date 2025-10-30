@@ -3,77 +3,77 @@ Dutch - Nederlands
 10.7
 Translated by: Koos van Riemsdijk - Stephan Paternotte
 Last rev. by: Stephan Paternotte
-Last rev.: 20160620
+Last rev.: 20251030
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
+txt_10_7_errload: Kan afbeelding niet weergeven
+txt_10_7_errfile: Bestand niet gevonden
+txt_10_7_first: Eerste
+txt_10_7_fit: Passend maken op scherm
+txt_10_7_fith: Passend maken op schermhoogte
+txt_10_7_fitw: Passend maken op schermbreedte
+txt_10_7_keep: Uitvoerbestanden behouden als uitpakken met fout eindigt of wordt geannuleerd
+txt_10_7_next: Volgende
+txt_10_7_prev: Vorige
+txt_10_7_pwh: Wachtwoord uit hash
+txt_10_7_images: Afbeeldingen bekijken
+txt_10_7_thumbnails: Miniaturen bekijken
+txt_10_6_virtual: Dynamische virtuele modus
+txt_10_5_fr: (volledig rapport)
+txt_10_5_sectype: Bevestiging vragen voor het uitvoeren van de volgende bestandstypen
+txt_10_5_checkmotw: Zone.Identifier (MoTW) controleren
+txt_10_5_sectypewarning: Wilt u dit bestand uitvoeren?
+txt_10_5_pathlock: Items in dit pad van het archief kunnen niet worden bewerkt
+txt_10_5_type_description_rar: RAR: propriëtair archiefformaat, hoge compressieverhouding, ondersteund via externe compressor
+txt_10_5_sh: Verborgen bestanden en mappen weergeven in het bestandssysteem
+txt_10_5_ntfsalt: Dit formaat kan NTFS Alternate Data Stream opslaan, inclusief Mark of The Web
+txt_10_4_moving: (Bezig met verplaatsen)
+txt_10_3_classic: Klassiek
+txt_10_3_ascii: Het is aanbevolen alleen ASCII-tekens te gebruiken in wachtwoorden voor het huidige archiefformaat (letters met hoofd/kleine letters, cijfers en speciale tekens).
+txt_10_3_minimal: Minimaal
 txt_10_3_m: Modern
 txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
+txt_10_3_aw: Workaround: vink "Wachtwoord interactief invoeren forceren" aan in de wachtwoordprompt, of stel Console-modus in voor backend-binaries.
+txt_10_2_savecopy: Een kopie opslaan
+txt_10_1_full: Volledig
+txt_10_1_kdfw: KDF-werklast
+txt_10_1_under: Onderstreept
+txt_10_0_exptrash: Prullenbak verkennen
+txt_10_0_ptarzst: Snelste compressie, TAR.ZST
+txt_10_0_ptarxz: Hoge compressie, TAR.XZ
+txt_10_0_ptargz: Gemiddelde compressie, TAR.GZ
+txt_10_0_comp: Pure compressieformaten accepteren slechts één bestand als invoer. Conversie naar deze formaten mislukt als de bron meerdere bestanden of mappen bevat, wat niet vooraf kan worden vastgesteld.
+txt_10_0_save: Opslaan
+txt_10_0_tp: Tekstvoorbeeld
+txt_9_9_uac: Huidige gebruiker kan niet naar dit uitvoerpad schrijven. PeaZip uitvoeren met UAC-verhoging?
+TXT_9_9_kdf: KDF-rondes
+txt_9_9_utc: Tijdstempels als UTC weergeven
+txt_9_8_alwaysflat: Archieven altijd in platte weergave openen
+txt_9_8_fnew: Hier uitpakken (in nieuwe map)
+txt_9_8_fsmart: Hier uitpakken (slimme nieuwe map)
+txt_9_7_tarpipe: 7z / p7zip pijp gebruiken
+txt_9_7_smartsorting: Slim sorteren op bestandsnaam
+txt_9_6_centered: Gecentreerd
+txt_9_6_cside: Compacte zijbalk
+txt_9_6_loadpconfirm: Wilt u dit profiel laden? Alle gegevens van het huidige profiel worden overschreven, inclusief opgeslagen scripts en Wachtwoord-Manager.
+txt_9_6_loadp: Profiel laden
+txt_9_6_saveppw: OPTIONEEL: dit profiel beveiligen met wachtwoord / sleutelbestand?
+txt_9_6_savepoverwrite: Bestaand profiel overschrijven? Alle gegevens van het bestaande profiel worden overschreven, inclusief opgeslagen scripts en Wachtwoord-Manager.
+txt_9_6_savep: Profiel opslaan
+txt_9_6_scside: Compacte zijbalk weergeven
+txt_9_5_all: Alles
+txt_9_5_precond: Vooraf parseren als fouten worden gedetecteerd
+txt_9_5_largea: Grote archieven vooraf parseren
+txt_9_5_mediuma: Middelgrote archieven vooraf parseren
+txt_9_5_smalla: Kleine archieven vooraf parseren
+txt_9_5_reopentab: Laatste tab opnieuw openen
+txt_9_5_savetabs: Tabs opslaan
+txt_9_5_sb: Binaries in systeempaden gebruiken
+txt_9_4_r: lezen
+txt_9_4_rw: lezen/schrijven
+txt_9_4_savecomment: Opmerking opslaan
+txt_9_4_hintcomment: Typ of plak een opmerking, laad of sleep hier een opmerkingenbestand.
 txt_9_3_continue: Continue anyway?
 txt_9_3_contrast: Contrast
 txt_9_3_fsd: Free space on destination may not be enough
