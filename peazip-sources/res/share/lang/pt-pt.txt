@@ -3,35 +3,35 @@ Portuguese (Portugal) - Português
 10.7
 Tradução: Hugo Carvalho, José Carlos, Sérgio Marques
 Revisão: Hugo Carvalho
-Revisto em: 20250304
+Revisto em: 20251030
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
+txt_10_7_errload: Não é possível apresentar a imagem
+txt_10_7_errfile: Ficheiro não encontrado
+txt_10_7_first: Primeiro
+txt_10_7_fit: Ajustar ao ecrã
+txt_10_7_fith: Ajustar à altura do ecrã
+txt_10_7_fitw: Ajustar à largura do ecrã
+txt_10_7_keep: Manter os ficheiros de saída se a extração terminar com erro ou for cancelada
+txt_10_7_next: Seguinte
+txt_10_7_prev: Anterior
+txt_10_7_pwh: Palavra-passe a partir do 'hash'
+txt_10_7_images: Ver imagens
+txt_10_7_thumbnails: Ver miniaturas
+txt_10_6_virtual: Modo virtual dinâmico
+txt_10_5_fr: (relatório completo)
+txt_10_5_sectype: Pedir confirmação para executar os seguintes tipos de ficheiro
+txt_10_5_checkmotw: Verificar Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Pretende executar este ficheiro?
+txt_10_5_pathlock: Não é possível editar os itens neste caminho do arquivo
+txt_10_5_type_description_rar: RAR: formato de arquivo proprietário, rácio de compressão elevado, suportado através de compressor externo
+txt_10_5_sh: Mostrar ficheiros e pastas ocultos no sistema de ficheiros
+txt_10_5_ntfsalt: Este formato pode guardar fluxos de dados alternativos NTFS, incluindo Mark of The Web
+txt_10_4_moving: (A mover)
 txt_10_3_classic: Clássico
 txt_10_3_ascii: Para o tipo de arquivo selecionado, recomendamos a utilização exclusiva de caracteres ASCII para as palavas-passe (letras maiúsculas e minúsculas, números e caracteres especiais).
-txt_10_3_minimal: Minimal
+txt_10_3_minimal: Minimalista
 txt_10_3_m: Moderno
 txt_10_3_pm: Pós-moderno
 txt_10_3_aw: Solução: assinale "Impor introdução interativa de palavras-passe" na solicitação de palavra-passe ou defina o modo Consola para binários de infraestrutura.
