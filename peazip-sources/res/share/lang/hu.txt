@@ -3,77 +3,77 @@ Hungarian - Magyar
 10.7
 Fordító: Zityi's Translator Team
 Last rev. by: Giorgio Tani
-Last rev.: 20230612
+Last rev.: 20251030
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
+txt_10_7_errload: A kép nem jeleníthető meg
+txt_10_7_errfile: A fájl nem található
+txt_10_7_first: Első
+txt_10_7_fit: Illesztés a képernyőhöz
+txt_10_7_fith: Illesztés a képernyő magasságához
+txt_10_7_fitw: Illesztés a képernyő szélességéhez
+txt_10_7_keep: Kimeneti fájlok megtartása, ha a kicsomagolás hiba miatt leáll vagy megszakad
+txt_10_7_next: Következő
+txt_10_7_prev: Előző
+txt_10_7_pwh: Jelszó a hash-ből
+txt_10_7_images: Képek megtekintése
+txt_10_7_thumbnails: Bélyegképek megtekintése
+txt_10_6_virtual: Dinamikus virtuális mód
+txt_10_5_fr: (teljes jelentés)
+txt_10_5_sectype: Megerősítés kérése a következő fájltípusok futtatásához
+txt_10_5_checkmotw: Zone.Identifier (MoTW) ellenőrzése
+txt_10_5_sectypewarning: Szeretné futtatni ezt a fájlt?
+txt_10_5_pathlock: Az archívum ezen útvonalán lévő elemek nem szerkeszthetők
+txt_10_5_type_description_rar: RAR: saját fejlesztésű archív formátum, magas tömörítési arány, külső tömörítővel támogatott
+txt_10_5_sh: Rejtett fájlok és mappák megjelenítése a fájlrendszerben
+txt_10_5_ntfsalt: Ez a formátum képes NTFS Alternate Data Stream tárolására, beleértve a Mark of The Web adatokat is
+txt_10_4_moving: (Mozgatás)
+txt_10_3_classic: Klasszikus
+txt_10_3_ascii: Ajánlott csak ASCII karaktereket használni a jelszavakban az aktuális archívum formátumhoz (kis- és nagybetűk, számok és speciális karakterek).
+txt_10_3_minimal: Minimális
 txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
+txt_10_3_pm: Posztmodern
+txt_10_3_aw: Megoldás: jelölje be a „Jelszó interaktív beírásának kényszerítése” opciót a jelszókérésnél, vagy állítsa be a Konzol módot a háttér-fájlokhoz.
+txt_10_2_savecopy: Másolat mentése
+txt_10_1_full: Teljes
+txt_10_1_kdfw: KDF terhelés
+txt_10_1_under: Aláhúzott
+txt_10_0_exptrash: Kuka megnyitása
+txt_10_0_ptarzst: Leggyorsabb tömörítés, TAR.ZST
+txt_10_0_ptarxz: Magas tömörítés, TAR.XZ
+txt_10_0_ptargz: Közepes tömörítés, TAR.GZ
+txt_10_0_comp: A tiszta tömörítési formátumok csak egyetlen fájlt fogadnak bemenetként. Az ilyen formátumokra való átalakítás sikertelen lesz, ha a forrás több fájlt vagy mappát tartalmaz, amit előre nem lehet megállapítani.
+txt_10_0_save: Mentés
+txt_10_0_tp: Szöveg előnézete
+txt_9_9_uac: Az aktuális felhasználó nem tud írni erre a kimeneti útvonalra. Szeretné a PeaZipet rendszergazdai jogosultsággal futtatni?
+TXT_9_9_kdf: KDF körök
+txt_9_9_utc: Időbélyegek megjelenítése UTC formátumban
+txt_9_8_alwaysflat: Archívumok mindig síknezetben történő megnyitása
+txt_9_8_fnew: Kicsomagolás ide (új mappába)
+txt_9_8_fsmart: Kicsomagolás ide (intelligens új mappába)
+txt_9_7_tarpipe: 7z / p7zip csővezeték használata
+txt_9_7_smartsorting: Intelligens fájlnév-rendezés
+txt_9_6_centered: Középre igazított
+txt_9_6_cside: Kompakt oldalsáv
+txt_9_6_loadpconfirm: Betölti ezt a profilt? Az aktuális profil minden adata felülíródik, beleértve a mentett szkripteket és a jelszókezelőt.
+txt_9_6_loadp: Profil betöltése
+txt_9_6_saveppw: Opcionális: profil védelme jelszóval / kulcsfájllal?
+txt_9_6_savepoverwrite: Felülírja a meglévő profilt? Az összes adat felülíródik, beleértve a mentett szkripteket és a jelszókezelőt.
+txt_9_6_savep: Profil mentése
+txt_9_6_scside: Kompakt oldalsáv megjelenítése
+txt_9_5_all: Összes
+txt_9_5_precond: Előfeldolgozás, ha hibák észlelhetők
+txt_9_5_largea: Nagy archívumok előfeldolgozása
+txt_9_5_mediuma: Közepes archívumok előfeldolgozása
+txt_9_5_smalla: Kis archívumok előfeldolgozása
+txt_9_5_reopentab: Utolsó fül újranyitása
+txt_9_5_savetabs: Fülek mentése
+txt_9_5_sb: Rendszerútvonalakon lévő bináris fájlok használata
+txt_9_4_r: olvasás
+txt_9_4_rw: olvasás/írás
+txt_9_4_savecomment: Megjegyzés mentése
+txt_9_4_hintcomment: Írjon vagy illesszen be megjegyzést, töltsön be vagy húzzon ide megjegyzésfájlt.
 txt_9_3_continue: Mindenképp folytatja?
 txt_9_3_contrast: Kontraszt
 txt_9_3_fsd: Előfordulhat, hogy a célmappában nincs elegendő szabad hely
@@ -118,10 +118,10 @@ txt_8_8_cb: Gomb színe
 txt_8_8_centered: Középre helyezett gombok
 txt_8_8_light: Világos
 txt_8_8_lnk: Hivatkozás
-txt_8_8_intnote: Felhívjuk figyelmét, hogy a "Kibontás, majd áthelyezés" opció (Opciók > Beállítások > Archívumkezelő menüpont) figyelmen kívül lesz hagyva a parancssor összeállításánál a Konzol lapon.
+txt_8_8_intnote: Felhívjuk figyelmét, hogy az „Interaktív kibontás” opció (Opciók > Beállítások > Archívumkezelő) figyelmen kívül marad a parancssor összeállításakor a Konzol lapon.
 txt_8_8_snz: Zónaazonosító adatfolyam származtatása (Windows)
 txt_8_8_sm: Kis ikonok mérete
-txt_8_8_solcol: Címsor
+txt_8_8_solcol: Folytonos sáv
 txt_8_8_snoi: Tártulajdonos/csoportazonosítók (TAR, Linux)
 txt_8_8_snon: Tártulajdonos/csoportnevek (TAR, Linux)
 txt_8_8_tab: Lap
@@ -180,14 +180,14 @@ txt_8_1_ed: hiba észlelve.
 txt_8_1_togglearc: Az archív tartalmak egyszintű listázása hosszú időt vehet igénybe, folytatja mindenképp?
 txt_8_1_preparsehint: Optimalizálja a teljesítményt, korlátozva a nagyméretű archívumok előzetes elemzését. Az előzetes elemzés célja, hogy előre felismerje az archívum tartalmának lehetséges problémáit.
 txt_8_1_slow: Lassú
-txt_8_1_vslow: Nagyon gyors
-txt_8_1_volumes: kötet
+txt_8_1_vslow: Nagyon lassú
+txt_8_1_volumes: kötetek
 txt_8_0_altcol: Alternatív rácsszín
 txt_8_0_forcebrowse: Böngészés a nem kifejezetten támogatott archívumtípusok között (tárolók, lemezképek, telepítők,...)
 txt_8_0_commonalgo: Közös algoritmusok
 txt_8_0_forceconvert: A nem kifejezetten támogatott archívumtípusok konvertálása
 txt_8_0_defaultactionhint: Alapértelmezett művelet a PeaZip-hez társított fájlra való dupla kattintáskor a rendszerből
-txt_8_0_defaultaction: Alapértelmezett művelet a bevitelnél
+txt_8_0_defaultaction: Alapértelmezett művelet indításkor
 txt_8_0_enableextand: A "Kibontás és megnyitás a következővel" almenü engedélyezése
 txt_8_0_forcetyping: Jelszavak interaktív beírásának kényszerítése
 txt_8_0_setpwopt: Jelszó / kulcsfájl opciók beállítása
