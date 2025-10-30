@@ -7,53 +7,53 @@ Last rev.: 20240126
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
-txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
+txt_10_7_errload: 無法顯示圖像
+txt_10_7_errfile: 找不到檔案
+txt_10_7_first: 第一個
+txt_10_7_fit: 適合螢幕
+txt_10_7_fith: 適合螢幕高度
+txt_10_7_fitw: 適合螢幕寬度
+txt_10_7_keep: 若解壓過程中出錯或被取消，保留輸出檔案
+txt_10_7_next: 下一個
+txt_10_7_prev: 上一個
+txt_10_7_pwh: 從雜湊取得密碼
+txt_10_7_images: 檢視圖像
+txt_10_7_thumbnails: 檢視縮圖
+txt_10_6_virtual: 動態虛擬模式
+txt_10_5_fr: （完整報告）
+txt_10_5_sectype: 執行以下檔案類型前請確認
+txt_10_5_checkmotw: 檢查 Zone.Identifier（MoTW）
+txt_10_5_sectypewarning: 是否要執行此檔案？
+txt_10_5_pathlock: 此壓縮檔路徑中的項目無法編輯
+txt_10_5_type_description_rar: RAR：專有壓縮格式，高壓縮率，透過外部壓縮器支援
+txt_10_5_sh: 顯示檔案系統中的隱藏檔案與資料夾
+txt_10_5_ntfsalt: 此格式可儲存 NTFS 替代資料流，包括「網頁標記（Mark of The Web）」
+txt_10_4_moving: （移動中）
+txt_10_3_classic: 經典
+txt_10_3_ascii: 建議在當前壓縮格式的密碼中僅使用 ASCII 字元（大小寫字母、數字與特殊符號）。
+txt_10_3_minimal: 簡約
+txt_10_3_m: 現代
+txt_10_3_pm: 後現代
+txt_10_3_aw: 解決方案：在密碼提示中勾選「強制以互動方式輸入密碼」，或將後端二進位設定為主控台模式。
+txt_10_2_savecopy: 儲存副本
+txt_10_1_full: 完整
+txt_10_1_kdfw: KDF 工作負載
+txt_10_1_under: 加底線
+txt_10_0_exptrash: 瀏覽回收筒
+txt_10_0_ptarzst: 最快壓縮，TAR.ZST
+txt_10_0_ptarxz: 高壓縮率，TAR.XZ
+txt_10_0_ptargz: 中等壓縮率，TAR.GZ
+txt_10_0_comp: 純壓縮格式僅接受單一檔案作為輸入。若來源包含多個檔案或資料夾（無法事先判斷），轉換為此類格式將會失敗。
+txt_10_0_save: 儲存
+txt_10_0_tp: 文字預覽
+txt_9_9_uac: 目前使用者無法寫入此輸出路徑。是否要以提升權限（UAC）執行 PeaZip？
+TXT_9_9_kdf: KDF 回合數
+txt_9_9_utc: 以 UTC 顯示時間戳記
+txt_9_8_alwaysflat: 總是以平面檢視開啟壓縮檔
+txt_9_8_fnew: 解壓至此（新資料夾）
+txt_9_8_fsmart: 解壓至此（智慧新資料夾）
+txt_9_7_tarpipe: 7z / p7zip 使用管道
+txt_9_7_smartsorting: 智慧檔名排序
 txt_9_6_centered: 居中
 txt_9_6_cside: 緊湊型側邊欄
 txt_9_6_loadpconfirm: 您想載入此設定檔嗎？ 目前設定檔的所有資料都將被覆寫，包括已儲存的腳本和密碼管理器。
