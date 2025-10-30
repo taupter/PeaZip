@@ -7,211 +7,211 @@ Last rev.: 20201229
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
-txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
-txt_9_3_continue: Continue anyway?
-txt_9_3_contrast: Contrast
-txt_9_3_fsd: Free space on destination may not be enough
-txt_9_3_fsw: Free space on temporary work path may not be enough
-txt_9_3_mrar: Manually set RAR binary
-txt_9_3_canedit: This archive type can be edited
-txt_9_3_canforce: This archive type can be edited (forced)
-txt_9_3_cannotedit: This archive type cannot be edited
-txt_9_2_7za: 7z / p7zip alias
-txt_9_2_changelog: Change log
-txt_9_2_tfaq: Check for Translations
-txt_9_2_compact: Compact
-txt_9_2_swt: Swap Tool / Address bar
-txt_9_2_tos: TOS, Privacy
-txt_9_2_doc: Verify documentation, Issue Tracker...
-txt_9_2_updates: Verify updates, binaries, Plugins...
-txt_9_1_7zs: 7z / p7zip syntax level
-txt_9_1_ac: Archive conversion scripts allow user's interaction
-txt_9_1_closeall: Close all
-txt_9_1_enlargeicons: Enlarge file browser icons
-txt_9_1_ef: Exclude empty folders from archiving and extraction operations (7z / p7zip)
-txt_9_1_nw: Open in a new window
-txt_9_1_qdup: Use quick deduplication routine
-txt_9_0_autoexttar: Auto extract TAR archive from compressed TAR.* files
-txt_9_0_accesstime: Do not change last access time
-txt_9_0_mem: Maximum memory usage
-txt_9_0_showmainmenu: Open Main menu
-txt_9_0_navmenu: Open Navigation menu
-txt_9_0_plugind: Open binaries and Plugin directory
-txt_9_0_df: Sort dirs before files
-txt_9_0_hl: Store hard links as links
-txt_9_0_sl: Store symbolic links as links
-txt_9_0_tnav: Toggle side bar, treeview, none
-txt_8_9_empty: Archive seems empty
-txt_8_9_disp: Displaying archive content
-txt_8_9_parsing: Parsing archive content
-txt_8_9_stoptest: Stop to inspect report for error, list, test, auto-test
-txt_8_9_ttb: Toggle tool bar
-txt_8_8_ca: Accent color
-txt_8_8_btn: Button
-txt_8_8_cb: Button color
-txt_8_8_centered: Centered buttons
-txt_8_8_light: Light
-txt_8_8_lnk: Link
-txt_8_8_intnote: Please note that "Interactive extraction" option (in Options > Settings > Archive manager) is ignored for composing the command line in Console tab.
-txt_8_8_snz: Propagate Zone.Identifier stream (Windows)
-txt_8_8_sm: Small icons size
-txt_8_8_solcol: Solid bar
-txt_8_8_snoi: Store owner/group ids (TAR, Linux)
-txt_8_8_snon: Store owner/group names (TAR, Linux)
-txt_8_8_tab: Tab
-txt_8_8_altt: Tabs style
-txt_8_8_autotest: Test archives after creation, if supported by the format
-txt_8_8_cw: Window color
-txt_8_7_csvhelp: "," international standard, ";" common in Latin locales
-txt_8_7_after: After archiving / extraction
-txt_8_7_bintest: binaries tested.
-txt_8_7_csv: CSV separator
-txt_8_7_hok: Hash of binaries used by PeaZip match with expected values
-txt_8_7_mo: Set archive manager options
-txt_8_7_showhm: Show file browser Header menu
-txt_8_7_showsearchbar: Show search bar
-txt_8_7_showsm: Show Style menu
-txt_8_7_hnotok: Some hash of binaries used by PeaZip do not match with expected values:
-txt_8_7_verifybin: Verify hash of binaries
-txt_8_6_clear: "Clear" option removes temp edited files, otherwise available for further editing.
-txt_8_6_noclear: Discard all changes without updating the archive
-txt_8_6_nosimple: Do not update archive, keep temp edited files for further editing
-txt_8_6_immediate: Immediate execution
-txt_8_6_yessimple: Update archive, keep temp edited files for further editing
-txt_8_5_advbrowser: Apply filters to archive browser
-txt_8_5_detailslarge: Details, large
-txt_8_5_intext: Extract to temp work path then move to output (ask before overwriting)
-txt_8_5_listlarge: List, large
-txt_8_5_loadlayout: Load layout at startup
-txt_8_5_samplescripts: Sample scripts
-txt_8_4_keepopenerrorslist: Stop to inspect report for error, list
-txt_8_3_mbubin: Binary
-txt_8_3_cw: Change working directory? This will reset temporary work files and restart the application.
-txt_8_3_temperature: Color temperature
-txt_8_3_mbudec: Decimal
-txt_8_3_htab: Highlight tabs
-txt_8_3_maxarg: Maximum length of arguments
-txt_8_3_mbu: Multiple-byte unit
-txt_8_3_prefalgo: Preferred algorithms
-txt_8_3_skipdel: Skip deletion of locked temp files (use reset to delete on demand)
-txt_8_3_lw: Some files in working directory are locked and cannot be removed automatically
-txt_8_3_noupx: This binary cannot be compressed (may be already compressed)
-txt_8_2_slower: (slower)
-txt_8_2_df: 7z / p7zip display content of folders
-txt_8_2_vreport: 7z / p7zip non-verbose report
-txt_8_2_ta: Accessed
-txt_8_2_tc: Created
-txt_8_2_keep: Keep files
-txt_8_2_tm: Modified
-txt_8_2_skipet: Skip testing for encryption
-txt_8_2_alltimes: Store all timestamps
-txt_8_2_supportedby: Supported by
-txt_8_1_preparse: Always pre-parse archives
-txt_8_1_bo: Browser optimization
-txt_8_1_bop: Browser optimization options can be set from Options > Settings, General tab, in order to allow browser to display archives containing a very large number of items.
-txt_8_1_nopreparse: Do not pre-parse archives
-txt_8_1_ed: error(s) detected.
-txt_8_1_togglearc: Listing flat view of archive content may take long time, continue anyway?
-txt_8_1_preparsehint: Optimize performances limiting pre-parsing of large archives. Pre-parsing is meant to detect in advance possible issues in archive content.
-txt_8_1_slow: Slow
-txt_8_1_vslow: Very slow
-txt_8_1_volumes: volumes
-txt_8_0_altcol: Alternate grid color
-txt_8_0_forcebrowse: Browse non-canonical archive types (containers, disk images, installers,...)
-txt_8_0_commonalgo: Common algorithms
-txt_8_0_forceconvert: Convert non-canonical archive types
-txt_8_0_defaultactionhint: Default action double-clicking a file associated with PeaZip from the system
-txt_8_0_defaultaction: Default action on start-up
-txt_8_0_enableextand: Enable "Extract and open with" submenu
-txt_8_0_forcetyping: Force typing passwords interactively
-txt_8_0_setpwopt: Set password / keyfile options
-txt_8_0_forcetypinghelp: Will run backend binaries in console, cannot browse archives with encrypted filenames. Allows to create scripts that will not run unattended but rather ask user interactively for password.
-txt_7_9_spacing: Spacing
-txt_7_9_zooming: Zooming
-txt_7_8_changelocalization: Change PeaZip language
-txt_7_8_custext: Custom extension
-txt_7_8_destexistfile: Destination already contains processed files. Replace files with same name?
-txt_7_8_dd: Drag and Drop
-txt_7_8_priorityhigh: High
-txt_7_8_priorityidle: Idle
-txt_7_8_rel: Interactive extraction
-txt_7_8_prioritynormal: Normal
-txt_7_8_priorityrealtime: Real time
-txt_7_8_requirerestart: [requires restarting PeaZip]
-txt_7_8_tpriority: Tasks priority
-txt_7_8_update: Update
-txt_7_7_noneall: None (no preview, no Drag And Drop extraction)
-txt_7_7_nonetemp: None, User's temp if necessary
-txt_7_7_outtemp: Output, preview in User's temp
-txt_7_7_sys7zreq: Requires p7zip-full or equivalent to be installed
-txt_7_7_tw: Temporary work folder for archive creation, editing, preview and Drag And Drop extraction.
-txt_7_7_sys7z: Use system 7z in Linux
+txt_10_7_errload: Δεν είναι δυνατή η εμφάνιση της εικόνας
+txt_10_7_errfile: Το αρχείο δεν βρέθηκε
+txt_10_7_first: Πρώτο
+txt_10_7_fit: Προσαρμογή στην οθόνη
+txt_10_7_fith: Προσαρμογή στο ύψος της οθόνης
+txt_10_7_fitw: Προσαρμογή στο πλάτος της οθόνης
+txt_10_7_keep: Διατήρηση των αρχείων εξόδου αν η αποσυμπίεση διακοπεί ή αποτύχει
+txt_10_7_next: Επόμενο
+txt_10_7_prev: Προηγούμενο
+txt_10_7_pwh: Κωδικός από κατακερματισμό (hash)
+txt_10_7_images: Προβολή εικόνων
+txt_10_7_thumbnails: Προβολή μικρογραφιών
+txt_10_6_virtual: Δυναμική εικονική λειτουργία
+txt_10_5_fr: (πλήρης αναφορά)
+txt_10_5_sectype: Ζήτα επιβεβαίωση πριν εκτελεστούν οι ακόλουθοι τύποι αρχείων
+txt_10_5_checkmotw: Έλεγχος Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Θέλεις να εκτελέσεις αυτό το αρχείο;
+txt_10_5_pathlock: Τα στοιχεία σε αυτή τη διαδρομή του αρχείου δεν μπορούν να τροποποιηθούν
+txt_10_5_type_description_rar: RAR: Ιδιόκτητη μορφή αρχείου, υψηλός λόγος συμπίεσης, υποστηρίζεται μέσω εξωτερικού συμπιεστή
+txt_10_5_sh: Εμφάνιση κρυφών αρχείων και φακέλων στο σύστημα αρχείων
+txt_10_5_ntfsalt: Αυτή η μορφή μπορεί να αποθηκεύσει NTFS Alternate Data Streams, συμπεριλαμβανομένου του Mark of The Web
+txt_10_4_moving: (Μετακίνηση)
+txt_10_3_classic: Κλασικό
+txt_10_3_ascii: Συνιστάται η χρήση μόνο χαρακτήρων ASCII στους κωδικούς για τη συγκεκριμένη μορφή αρχείου (πεζά/κεφαλαία, αριθμοί και ειδικοί χαρακτήρες).
+txt_10_3_minimal: Ελάχιστο
+txt_10_3_m: Σύγχρονο
+txt_10_3_pm: Μεταμοντέρνο
+txt_10_3_aw: Παράκαμψη: Ενεργοποίησε «Επιβολή πληκτρολόγησης κωδικού αλληλεπιδραστικά» στο παράθυρο κωδικού ή όρισε λειτουργία κονσόλας για τα εκτελέσιμα.
+txt_10_2_savecopy: Αποθήκευση αντιγράφου
+txt_10_1_full: Πλήρες
+txt_10_1_kdfw: Φόρτος εργασίας KDF
+txt_10_1_under: Υπογραμμισμένο
+txt_10_0_exptrash: Εξερεύνηση Κάδου Ανακύκλωσης
+txt_10_0_ptarzst: Ταχύτερη συμπίεση, TAR.ZST
+txt_10_0_ptarxz: Υψηλή συμπίεση, TAR.XZ
+txt_10_0_ptargz: Μέτρια συμπίεση, TAR.GZ
+txt_10_0_comp: Οι μορφές καθαρής συμπίεσης δέχονται μόνο ένα αρχείο ως είσοδο. Η μετατροπή σε αυτές θα αποτύχει αν η πηγή περιέχει πολλαπλά αρχεία ή φακέλους, κάτι που δεν μπορεί να προσδιοριστεί εκ των προτέρων.
+txt_10_0_save: Αποθήκευση
+txt_10_0_tp: Προεπισκόπηση κειμένου
+txt_9_9_uac: Ο τρέχων χρήστης δεν έχει δικαιώματα εγγραφής στη διαδρομή εξόδου. Θέλεις να εκτελέσεις το PeaZip με δικαιώματα διαχειριστή (UAC);
+TXT_9_9_kdf: Γύροι KDF
+txt_9_9_utc: Εμφάνιση χρονικών σημείων ως UTC
+txt_9_8_alwaysflat: Άνοιγμα αρχείων πάντα σε επίπεδη προβολή
+txt_9_8_fnew: Εξαγωγή εδώ (σε νέο φάκελο)
+txt_9_8_fsmart: Εξαγωγή εδώ (έξυπνος νέος φάκελος)
+txt_9_7_tarpipe: Το 7z / p7zip χρησιμοποιεί αγωγό (pipe)
+txt_9_7_smartsorting: Έξυπνη ταξινόμηση ονομάτων αρχείων
+txt_9_6_centered: Κεντραρισμένο
+txt_9_6_cside: Συμπαγής πλευρική μπάρα
+txt_9_6_loadpconfirm: Θέλεις να φορτώσεις αυτό το προφίλ; Όλα τα δεδομένα του τρέχοντος προφίλ θα αντικατασταθούν, συμπεριλαμβανομένων των αποθηκευμένων σεναρίων και του Διαχειριστή Κωδικών.
+txt_9_6_loadp: Φόρτωση προφίλ
+txt_9_6_saveppw: ΠΡΟΑΙΡΕΤΙΚΟ: προστασία αυτού του προφίλ με κωδικό / αρχείο κλειδιού;
+txt_9_6_savepoverwrite: Αντικατάσταση υπάρχοντος προφίλ; Όλα τα δεδομένα του θα χαθούν, συμπεριλαμβανομένων των αποθηκευμένων σεναρίων και του Διαχειριστή Κωδικών.
+txt_9_6_savep: Αποθήκευση προφίλ
+txt_9_6_scside: Εμφάνιση συμπαγούς πλευρικής μπάρας
+txt_9_5_all: Όλα
+txt_9_5_precond: Προανάλυση αν εντοπιστούν σφάλματα
+txt_9_5_largea: Προανάλυση μεγάλων αρχείων
+txt_9_5_mediuma: Προανάλυση μεσαίων αρχείων
+txt_9_5_smalla: Προανάλυση μικρών αρχείων
+txt_9_5_reopentab: Ξανα άνοιγμα τελευταίας καρτέλας
+txt_9_5_savetabs: Αποθήκευση καρτελών
+txt_9_5_sb: Χρήση εκτελέσιμων από τις διαδρομές του συστήματος
+txt_9_4_r: ανάγνωση
+txt_9_4_rw: ανάγνωση/εγγραφή
+txt_9_4_savecomment: Αποθήκευση σχολίου
+txt_9_4_hintcomment: Πληκτρολόγησε ή επικόλλησε σχόλιο, ή σύρε εδώ το αρχείο σχολίου.
+txt_9_3_continue: Συνέχεια παρ’ όλα αυτά;
+txt_9_3_contrast: Αντίθεση
+txt_9_3_fsd: Ο διαθέσιμος χώρος προορισμού μπορεί να μην επαρκεί
+txt_9_3_fsw: Ο διαθέσιμος χώρος στο προσωρινό μονοπάτι μπορεί να μην επαρκεί
+txt_9_3_mrar: Χειροκίνητος ορισμός εκτελέσιμου RAR
+txt_9_3_canedit: Αυτός ο τύπος αρχείου μπορεί να επεξεργαστεί
+txt_9_3_canforce: Αυτός ο τύπος αρχείου μπορεί να επεξεργαστεί (εξαναγκασμένα)
+txt_9_3_cannotedit: Αυτός ο τύπος αρχείου δεν μπορεί να επεξεργαστεί
+txt_9_2_7za: Ψευδώνυμο 7z / p7zip
+txt_9_2_changelog: Αρχείο αλλαγών
+txt_9_2_tfaq: Έλεγχος μεταφράσεων
+txt_9_2_compact: Συμπαγές
+txt_9_2_swt: Εναλλαγή εργαλείου / γραμμής διεύθυνσης
+txt_9_2_tos: Όροι Χρήσης, Απόρρητο
+txt_9_2_doc: Έλεγχος τεκμηρίωσης, παρακολούθηση ζητημάτων...
+txt_9_2_updates: Έλεγχος ενημερώσεων, εκτελέσιμων, προσθέτων...
+txt_9_1_7zs: Επίπεδο σύνταξης 7z / p7zip
+txt_9_1_ac: Τα σενάρια μετατροπής αρχείων επιτρέπουν αλληλεπίδραση χρήστη
+txt_9_1_closeall: Κλείσιμο όλων
+txt_9_1_enlargeicons: Μεγέθυνση εικονιδίων του εξερευνητή αρχείων
+txt_9_1_ef: Εξαίρεση κενών φακέλων από λειτουργίες αρχειοθέτησης και εξαγωγής (7z / p7zip)
+txt_9_1_nw: Άνοιγμα σε νέο παράθυρο
+txt_9_1_qdup: Χρήση ταχείας ρουτίνας αποφυγής διπλότυπων
+txt_9_0_autoexttar: Αυτόματη εξαγωγή αρχείων TAR από συμπιεσμένα TAR.*
+txt_9_0_accesstime: Να μην αλλάξει η τελευταία ώρα πρόσβασης
+txt_9_0_mem: Μέγιστη χρήση μνήμης
+txt_9_0_showmainmenu: Άνοιγμα κυρίως μενού
+txt_9_0_navmenu: Άνοιγμα μενού πλοήγησης
+txt_9_0_plugind: Άνοιγμα φακέλου εκτελέσιμων και προσθέτων
+txt_9_0_df: Ταξινόμηση φακέλων πριν από τα αρχεία
+txt_9_0_hl: Αποθήκευση hard links ως συνδέσμων
+txt_9_0_sl: Αποθήκευση συμβολικών συνδέσμων ως συνδέσμων
+txt_9_0_tnav: Εναλλαγή πλευρικής μπάρας, δέντρου, καμίας
+txt_8_9_empty: Το αρχείο φαίνεται κενό
+txt_8_9_disp: Εμφάνιση περιεχομένου αρχείου
+txt_8_9_parsing: Ανάλυση περιεχομένου αρχείου
+txt_8_9_stoptest: Διακοπή για έλεγχο αναφοράς σφάλματος, λίστας ή τεστ
+txt_8_9_ttb: Εναλλαγή γραμμής εργαλείων
+txt_8_8_ca: Χρώμα τονισμού
+txt_8_8_btn: Κουμπί
+txt_8_8_cb: Χρώμα κουμπιού
+txt_8_8_centered: Κεντραρισμένα κουμπιά
+txt_8_8_light: Ανοιχτό
+txt_8_8_lnk: Σύνδεσμος
+txt_8_8_intnote: Σημείωση: η επιλογή «Διαδραστική εξαγωγή» (Ρυθμίσεις > Διαχείριση αρχείων) αγνοείται κατά τη δημιουργία της γραμμής εντολών στην καρτέλα Κονσόλα.
+txt_8_8_snz: Διάδοση ροής Zone.Identifier (Windows)
+txt_8_8_sm: Μικρά εικονίδια
+txt_8_8_solcol: Συμπαγής γραμμή
+txt_8_8_snoi: Αποθήκευση ιδιοκτήτη/ομάδας ως IDs (TAR, Linux)
+txt_8_8_snon: Αποθήκευση ιδιοκτήτη/ομάδας ως ονόματα (TAR, Linux)
+txt_8_8_tab: Καρτέλα
+txt_8_8_altt: Στυλ καρτελών
+txt_8_8_autotest: Έλεγχος αρχείων μετά τη δημιουργία (αν υποστηρίζεται)
+txt_8_8_cw: Χρώμα παραθύρου
+txt_8_7_csvhelp: "," διεθνές πρότυπο, ";" σύνηθες σε λατινικές τοπικές ρυθμίσεις
+txt_8_7_after: Μετά την αρχειοθέτηση / εξαγωγή
+txt_8_7_bintest: εκτελέσιμα ελέγχθηκαν.
+txt_8_7_csv: Διαχωριστικό CSV
+txt_8_7_hok: Οι κατακερματισμοί των εκτελέσιμων του PeaZip ταιριάζουν με τις αναμενόμενες τιμές
+txt_8_7_mo: Ρύθμιση επιλογών διαχειριστή αρχείων
+txt_8_7_showhm: Εμφάνιση μενού κεφαλίδας του εξερευνητή αρχείων
+txt_8_7_showsearchbar: Εμφάνιση γραμμής αναζήτησης
+txt_8_7_showsm: Εμφάνιση μενού στυλ
+txt_8_7_hnotok: Ορισμένοι κατακερματισμοί εκτελέσιμων του PeaZip δεν ταιριάζουν με τις αναμενόμενες τιμές:
+txt_8_7_verifybin: Επαλήθευση κατακερματισμών εκτελέσιμων
+txt_8_6_clear: Η επιλογή "Εκκαθάριση" διαγράφει τα προσωρινά επεξεργασμένα αρχεία, αλλιώς παραμένουν διαθέσιμα για περαιτέρω επεξεργασία.
+txt_8_6_noclear: Απόρριψη όλων των αλλαγών χωρίς ενημέρωση του αρχείου
+txt_8_6_nosimple: Να μη γίνει ενημέρωση του αρχείου, διατήρηση προσωρινών αρχείων για περαιτέρω επεξεργασία
+txt_8_6_immediate: Άμεση εκτέλεση
+txt_8_6_yessimple: Ενημέρωση αρχείου, διατήρηση προσωρινών επεξεργασμένων αρχείων για περαιτέρω εργασία
+txt_8_5_advbrowser: Εφαρμογή φίλτρων στον εξερευνητή αρχείων
+txt_8_5_detailslarge: Λεπτομέρειες, μεγάλα
+txt_8_5_intext: Εξαγωγή σε προσωρινό φάκελο και μετακίνηση στην έξοδο (ερώτηση πριν αντικατάσταση)
+txt_8_5_listlarge: Λίστα, μεγάλα
+txt_8_5_loadlayout: Φόρτωση διάταξης κατά την εκκίνηση
+txt_8_5_samplescripts: Παραδείγματα σεναρίων
+txt_8_4_keepopenerrorslist: Διακοπή για έλεγχο αναφοράς σφάλματος ή λίστας
+txt_8_3_mbubin: Δυαδικό
+txt_8_3_cw: Αλλαγή καταλόγου εργασίας; Αυτό θα μηδενίσει τα προσωρινά αρχεία και θα επανεκκινήσει την εφαρμογή.
+txt_8_3_temperature: Θερμοκρασία χρώματος
+txt_8_3_mbudec: Δεκαδικό
+txt_8_3_htab: Επισήμανση καρτελών
+txt_8_3_maxarg: Μέγιστο μήκος ορισμάτων
+txt_8_3_mbu: Μονάδα πολλαπλών bytes
+txt_8_3_prefalgo: Προτιμώμενοι αλγόριθμοι
+txt_8_3_skipdel: Παράκαμψη διαγραφής κλειδωμένων προσωρινών αρχείων (χρησιμοποίησε επαναφορά για διαγραφή κατά απαίτηση)
+txt_8_3_lw: Ορισμένα αρχεία στον κατάλογο εργασίας είναι κλειδωμένα και δεν μπορούν να αφαιρεθούν αυτόματα
+txt_8_3_noupx: Αυτό το εκτελέσιμο δεν μπορεί να συμπιεστεί (ίσως είναι ήδη συμπιεσμένο)
+txt_8_2_slower: (πιο αργό)
+txt_8_2_df: Το 7z / p7zip εμφανίζει περιεχόμενο φακέλων
+txt_8_2_vreport: Μη εκτενής αναφορά 7z / p7zip
+txt_8_2_ta: Προσπελάστηκε
+txt_8_2_tc: Δημιουργήθηκε
+txt_8_2_keep: Διατήρηση αρχείων
+txt_8_2_tm: Τροποποιήθηκε
+txt_8_2_skipet: Παράκαμψη ελέγχου κρυπτογράφησης
+txt_8_2_alltimes: Αποθήκευση όλων των χρονικών σημείων
+txt_8_2_supportedby: Υποστηρίζεται από
+txt_8_1_preparse: Πάντα προανάλυση αρχείων
+txt_8_1_bo: Βελτιστοποίηση εξερευνητή
+txt_8_1_bop: Οι επιλογές βελτιστοποίησης μπορούν να οριστούν από Ρυθμίσεις > Γενικά για καλύτερη εμφάνιση πολύ μεγάλων αρχείων.
+txt_8_1_nopreparse: Χωρίς προανάλυση αρχείων
+txt_8_1_ed: εντοπίστηκαν σφάλματα.
+txt_8_1_togglearc: Η εμφάνιση του περιεχομένου του αρχείου σε επίπεδη προβολή μπορεί να διαρκέσει πολύ. Θέλετε να συνεχίσετε;
+txt_8_1_preparsehint: Βελτιστοποιήστε τις επιδόσεις περιορίζοντας την προκαταρκτική ανάλυση μεγάλων αρχείων. Η προκαταρκτική ανάλυση χρησιμοποιείται για τον εντοπισμό πιθανών προβλημάτων στο περιεχόμενο του αρχείου εκ των προτέρων.
+txt_8_1_slow: Αργό
+txt_8_1_vslow: Πολύ αργό
+txt_8_1_volumes: τόμοι
+txt_8_0_altcol: Εναλλακτικό χρώμα πλέγματος
+txt_8_0_forcebrowse: Περιήγηση σε μη κανονικούς τύπους αρχείων (κοντέινερ, εικόνες δίσκων, εγκαταστάτες,...)
+txt_8_0_commonalgo: Κοινοί αλγόριθμοι
+txt_8_0_forceconvert: Μετατροπή μη κανονικών τύπων αρχείων
+txt_8_0_defaultactionhint: Προεπιλεγμένη ενέργεια κατά το διπλό κλικ σε αρχείο που σχετίζεται με το PeaZip από το σύστημα
+txt_8_0_defaultaction: Προεπιλεγμένη ενέργεια κατά την εκκίνηση
+txt_8_0_enableextand: Ενεργοποίηση του υπομενού «Εξαγωγή και άνοιγμα με»
+txt_8_0_forcetyping: Εξαναγκασμός διαδραστικής πληκτρολόγησης κωδικών πρόσβασης
+txt_8_0_setpwopt: Ορισμός επιλογών κωδικού πρόσβασης / αρχείου-κλειδιού
+txt_8_0_forcetypinghelp: Θα εκτελέσει τα εκτελέσιμα του συστήματος στο τερματικό, δεν μπορεί να περιηγηθεί σε αρχεία με κρυπτογραφημένα ονόματα. Επιτρέπει τη δημιουργία σεναρίων που δεν εκτελούνται αυτόματα, αλλά ζητούν από τον χρήστη να εισαγάγει τον κωδικό πρόσβασης.
+txt_7_9_spacing: Απόσταση
+txt_7_9_zooming: Μεγέθυνση
+txt_7_8_changelocalization: Αλλαγή γλώσσας του PeaZip
+txt_7_8_custext: Προσαρμοσμένη επέκταση
+txt_7_8_destexistfile: Ο προορισμός περιέχει ήδη επεξεργασμένα αρχεία. Αντικατάσταση αρχείων με το ίδιο όνομα;
+txt_7_8_dd: Σύρσιμο και απόθεση
+txt_7_8_priorityhigh: Υψηλή
+txt_7_8_priorityidle: Ανενεργή
+txt_7_8_rel: Διαδραστική εξαγωγή
+txt_7_8_prioritynormal: Κανονική
+txt_7_8_priorityrealtime: Πραγματικού χρόνου
+txt_7_8_requirerestart: [απαιτεί επανεκκίνηση του PeaZip]
+txt_7_8_tpriority: Προτεραιότητα εργασιών
+txt_7_8_update: Ενημέρωση
+txt_7_7_noneall: Καμία (χωρίς προεπισκόπηση, χωρίς εξαγωγή με Σύρσιμο και Απόθεση)
+txt_7_7_nonetemp: Καμία, προσωρινό χρήστη αν χρειάζεται
+txt_7_7_outtemp: Έξοδος, προεπισκόπηση στον προσωρινό φάκελο του χρήστη
+txt_7_7_sys7zreq: Απαιτείται εγκατάσταση του p7zip-full ή ισοδύναμου
+txt_7_7_tw: Προσωρινός φάκελος εργασίας για δημιουργία, επεξεργασία, προεπισκόπηση και εξαγωγή μέσω Σύρσιμο και Απόθεση.
+txt_7_7_sys7z: Χρήση του συστήματος 7z στο Linux
 txt_7_6_zipenc: Κωδικοποίηση ονομάτων αρχείων 7z/p7zip ZIP 
 txt_7_6_color: Χρώμα
 txt_7_6_custenc: Σελίδα προσαρμοσμένου κώδικα
