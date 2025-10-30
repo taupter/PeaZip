@@ -7,73 +7,73 @@ Last rev.: 2022-04-15
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
+txt_10_7_errload: 画像を表示できません
+txt_10_7_errfile: ファイルが見つかりません
+txt_10_7_first: 最初
+txt_10_7_fit: 画面に合わせる
+txt_10_7_fith: 画面の高さに合わせる
+txt_10_7_fitw: 画面の幅に合わせる
+txt_10_7_keep: エラーで終了またはキャンセルされた場合、出力ファイルを保持する
+txt_10_7_next: 次へ
+txt_10_7_prev: 前へ
+txt_10_7_pwh: ハッシュからパスワード
+txt_10_7_images: 画像を表示
+txt_10_7_thumbnails: サムネイルを表示
+txt_10_6_virtual: 動的仮想モード
+txt_10_5_fr: (詳細レポート)
+txt_10_5_sectype: 次のファイルタイプの実行を確認する
+txt_10_5_checkmotw: Zone.Identifier（MoTW）を確認
+txt_10_5_sectypewarning: このファイルを実行しますか？
+txt_10_5_pathlock: アーカイブ内のこのパスの項目は編集できません
+txt_10_5_type_description_rar: RAR: プロプライエタリなアーカイブ形式。高圧縮率。外部コンプレッサ経由でサポート。
+txt_10_5_sh: ファイルシステムで隠しファイルとフォルダを表示
+txt_10_5_ntfsalt: この形式は NTFS 代替データストリーム（Mark of The Web を含む）を保存できます
+txt_10_4_moving: (移動中)
+txt_10_3_classic: クラシック
+txt_10_3_ascii: 現在のアーカイブ形式ではパスワードに ASCII 文字のみの使用を推奨（大小の英字・数字・記号）。
+txt_10_3_minimal: ミニマル
 txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
+txt_10_3_pm: ポストモダン
+txt_10_3_aw: 回避策: パスワードプロンプトで「パスワードをインタラクティブに入力を強制」を有効にするか、バックエンドバイナリをコンソールモードに設定してください。
+txt_10_2_savecopy: コピーを保存
+txt_10_1_full: フル
+txt_10_1_kdfw: KDF 作業負荷
+txt_10_1_under: 下線付き
+txt_10_0_exptrash: ごみ箱を開く
+txt_10_0_ptarzst: 最速圧縮、TAR.ZST
+txt_10_0_ptarxz: 高圧縮、TAR.XZ
+txt_10_0_ptargz: 中圧縮、TAR.GZ
+txt_10_0_comp: 純粋な圧縮形式は入力として単一ファイルのみ受け付けます。ソースに複数のファイルやフォルダが含まれる場合、それらの形式への変換は失敗します（事前に判別できません）。
+txt_10_0_save: 保存
+txt_10_0_tp: テキストプレビュー
+txt_9_9_uac: 現在のユーザーはこの出力パスに書き込めません。UAC の昇格で PeaZip を実行しますか？
+TXT_9_9_kdf: KDF ラウンド
+txt_9_9_utc: タイムスタンプを UTC で表示
+txt_9_8_alwaysflat: 常にフラットビューでアーカイブを開く
+txt_9_8_fnew: ここに展開（新しいフォルダ）
+txt_9_8_fsmart: ここに展開（スマート新規フォルダ）
+txt_9_7_tarpipe: 7z / p7zip でパイプを使用
+txt_9_7_smartsorting: ファイル名のスマートソート
+txt_9_6_centered: 中央寄せ
+txt_9_6_cside: コンパクトサイドバー
+txt_9_6_loadpconfirm: このプロファイルを読み込みますか？保存済みスクリプトやパスワードマネージャーを含む現在のプロファイルのデータはすべて上書きされます。
+txt_9_6_loadp: プロファイルを読み込む
+txt_9_6_saveppw: 任意: このプロファイルをパスワード／キーファイルで保護しますか？
+txt_9_6_savepoverwrite: 既存のプロファイルを上書きしますか？保存済みスクリプトやパスワードマネージャーを含む既存プロファイルのデータはすべて上書きされます。
+txt_9_6_savep: プロファイルを保存
+txt_9_6_scside: コンパクトサイドバーを表示
+txt_9_5_all: すべて
+txt_9_5_precond: エラーが検出された場合は事前解析
+txt_9_5_largea: 大きなアーカイブを事前解析
+txt_9_5_mediuma: 中規模アーカイブを事前解析
+txt_9_5_smalla: 小さなアーカイブを事前解析
+txt_9_5_reopentab: 最後のタブを再オープン
+txt_9_5_savetabs: タブを保存
+txt_9_5_sb: システムパス上のバイナリを使用
+txt_9_4_r: 読み取り
+txt_9_4_rw: 読み取り/書き込み
+txt_9_4_savecomment: コメントを保存
+txt_9_4_hintcomment: コメントを入力または貼り付け、コメントファイルを読み込むかここにドラッグします。
 txt_9_3_continue: Continue anyway?
 txt_9_3_contrast: Contrast
 txt_9_3_fsd: Free space on destination may not be enough
