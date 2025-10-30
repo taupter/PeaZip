@@ -3,7 +3,7 @@ Galician - Galego
 10.7
 Traducido por:Antón Méixome, Manuel Cameselle,Nosi_982
 Last rev. by: Nosi_982
-Last rev.: 20120923
+Last rev.: 20251030
 
 === PeaZip text group ===
 
@@ -327,180 +327,80 @@ txt_6_4_relative: Relative paths
 txt_6_4_tabbar: Tab bar
 txt_6_3_autoadjust: Auto adjust columns
 txt_6_3_cinfo: Info and comments
-txt_6_3_syn: Synchronize archive with disk
-txt_6_3_uar: Update only files already in archive
-txt_6_2_encext: Add ".enc" suffix to encrypted archives
-txt_6_2_archive: Archive file type
-txt_6_2_container: Container file type
-txt_6_1_ec: Expand / collapse archive tree
-txt_6_0_msq: Sort by file type for solid compression
-txt_5_9_lff: Analyze files and folders
-txt_5_9_pff: Analyze, show files header/EOF
-txt_5_9_start: Start from
-txt_5_8_l0: Allow any supported component/format
-txt_5_8_l1: Allow only Free Software components
-txt_5_8_l2: Allow only open archive formats
-txt_5_8_ascii: ASCII safe, scripts are safe on legacy environments
-txt_5_8_cp: Code Page safe, scripts may trigger problems on legacy environments with different Code Pages
-txt_5_8_fs: Free Software compliance
-txt_5_8_utf: Scripts need full UTF-8 / Unicode environment
-txt_5_8_fsr: This format is not suported due Free Software compliance restrictions (Options > Advanced)
-txt_5_7_pinstalled: INSTALLED
-txt_5_7_pmissing: MISSING
-txt_5_7_plugin: Plugin missing, can be installed from Help > Check for pulgin and addon
-txt_5_6_basic: Basic
-txt_5_6_exarc: Extract archive
-txt_5_6_tab: Open in new tab
-txt_5_6_rc: Right click for options
-txt_5_6_layouts: Saved layouts
-txt_5_6_upexisting: Update existing archive
-txt_5_6_verbose: Verbose
-txt_5_5_case: (case sensitive)
-txt_5_5_add: Add string at specified position
-txt_5_5_addsel: Add to current selection
-txt_5_5_ext: Change files extension
-txt_5_5_plugin: Check for plugin and addon
-txt_5_5_copypath: Copy path
-txt_5_5_delete: Delete characters at specified position
-txt_5_5_halt: Halt system when task completes
-txt_5_5_positionw: Hint: 1 add before first char, 2 second, etc... "z" for end of file name
-txt_5_5_positionwd: Hint: 1 delete from first char included, 2 second, ... "z" for end of file name
-txt_5_5_replaceneww: Hint: provide an empty new string to simply remove the old string
-txt_5_5_lower: Lowercase
-txt_5_5_replaceoldw: Modify all occurrences of this string or character in the file name
-txt_5_5_newext: New extension
-txt_5_5_new: New string
-txt_5_5_n: Number of characters to delete
-txt_5_5_old: Old string
-txt_5_5_position: Position (number or "z" for end)
-txt_5_5_intdir: Smart new folder
-txt_5_5_replacestr: Replace/remove string
-txt_5_5_datesameday: Same day of selected object
-txt_5_5_datesamehour: Same hour of selected object
-txt_5_5_datesamemonth: Same month of selected object
-txt_5_5_datesameweek: Same week of selected object
-txt_5_5_datesameyear: Same year of selected object
-txt_5_5_scan: Scan
-txt_5_5_select: Select
-txt_5_5_similar: Similar to selected object
-txt_5_5_starting: Starting with same character
-txt_5_5_string: String to add
-txt_5_5_subtractsel: Subtract from current selection
-txt_5_5_datehour: This hour
-txt_5_5_datemonth: This month
-txt_5_5_dateweek: This week
-txt_5_5_dateyear: This year
-txt_5_5_dateday: Today
-txt_5_5_upper: Uppercase
-txt_5_5_extw: Warning: changing file extension the file may become unusable
-txt_5_4_da: Date added
-txt_5_4_deletearchives: Delete archives after extraction
-txt_5_4_deletefiles: Delete files after archiving
-txt_5_4_deleteoriginal: Deletion procedure, as set in main screen, will be appended to the script.
-txt_5_4_lv: Last visited
-txt_5_4_deletearchivesconfirm: Confirm deletion of original archives?
-txt_5_4_deletefilesconfirm: Confirm deletion of original files?
-txt_5_4_used: Used
-txt_5_3_profilebest: Best compression, 7Z format Ultra level
-txt_5_3_profileadvanced: Advanced compression, 7Z format
-txt_5_3_profilenormal: Normal ZIP compression, compatible with most extractors
-txt_5_3_profileveryfast: Very fast ZIP compression, recommended for large multimedia files
-txt_5_3_profilepassword: Protect with password, 7Z format
-txt_5_3_profile10mb: Keep output under 25 MB, for mail attachment limitations
-txt_5_3_profilesfx: Auto extracting, recipient will not need an extraction software
-txt_5_3_cml: System context menu language
-txt_5_3_cmlmessage: Double click on desired context menu language and confirm registry merging. This setting needs to be re-applied when the application is installed/updated or after System integration wizard is used.
-txt_5_3_exc: Exclusion filters prevail on inclusion filters
-txt_5_3_ia: Include also
-txt_5_3_io: Include only
-txt_5_3_rec: Recurse subdirs
-txt_5_3_resetsi: Re-configure system integration (context menu, SendTo, file associations)?
-txt_5_2_oadd: Archive to original path
-txt_5_2_zerodelete: Do you want to delete and overwrite with all 0 selected file(s)? The operation can't be undone and files will be not recoverable
-txt_5_2_zfree: Do you want to overwrite with all 0 free space on this drive?
-txt_5_2_sdfree: Do you want to securely delete free space on this drive?
-txt_5_2_oext: Extract to original path
-txt_5_2_securedeletefree: Secure delete free space
-txt_5_2_free: This operation can take some minutes and, if performed often, it can quickly wear flash-based disks
-txt_5_2_zerofiles: Zero delete
-txt_5_2_zerofree: Zero delete free space
-txt_5_1_schedadd: Add schedule
-txt_5_1_schederr: Cannot create schedule
-txt_5_1_daily: Daily
-txt_5_1_day: Day
-txt_5_1_days: Days
-txt_5_1_enddate: End date
-txt_5_1_every: Every
-txt_5_1_w6: Friday
-txt_5_1_hourly: Hourly
-txt_5_1_hours: Hours
-txt_5_1_last: Last
-txt_5_1_schedmanage: Task Scheduler, manage tasks saved in PeaZip branch
-txt_5_1_scriptmanage: Manage saved scheduled scripts
-txt_5_1_w2: Monday
-txt_5_1_monthly: Monthly
-txt_5_1_months: Months
-txt_5_1_onlogin: On login
-txt_5_1_onstart: On start
-txt_5_1_once: Once
-txt_5_1_w7: Saturday
-txt_5_1_schedule: Schedule
-txt_5_1_schedexplain: Create a plain text script from GUI task definition and schedule it. Scheduled tasks' scripts are saved in "Scheduled scripts" folder. To edit or delete scheduled tasks you can use system's Task Scheduler, all scheduled tasks created by PeaZip are collected in "PeaZip" branch of the tasks library.
-txt_5_1_schedok: Schedule created successfully
-txt_5_1_schedscripts: Saved scheduled scripts
-txt_5_1_startdate: Start date
-txt_5_1_starttime: Start time
-txt_5_1_w1: Sunday
-txt_5_1_schedname: Task name, identify both the saved scheduled script and the system's scheduled task
-txt_5_1_ts: Task Scheduler
-txt_5_1_w5: Thursday
-txt_5_1_w3: Tuesday
-txt_5_1_w4: Wednesday
-txt_5_1_weekly: Weekly
-txt_5_1_weeks: Weeks
-txt_5_0_bc: Breadcrumb
-txt_5_0_resetpm: Do you confirm resetting Password Manager? All passwords stored in PeaZip's Password Manager will be lost if confirmed.
-txt_5_0_enum: Enumerate directories' content
-txt_5_0_music: Music
-txt_5_0_ps: Open PowerShell here
-txt_5_0_perf: Performances
-txt_5_0_pictures: Pictures
-txt_5_0_removeall: Remove all
-txt_5_0_resetbookmarks: Reset Bookmarks to default? (Bookmarks can then be customized with Bookmarks > Organize)
-txt_5_0_sh: Session history
-txt_5_0_skip: Skip enumerating directories' content in layout
-txt_5_0_videos: Videos
-txt_4_9_frame: Frame
-txt_4_9_listth: List and thumbnails
-txt_4_9_shadow: Shadow
-txt_4_9_style: Style
-txt_4_8_attach25: 25 MB (attachment limit)
-txt_4_8_crop: Crop
-txt_4_8_detailsno: Light file browser
-txt_4_8_details: File browser with thumbnails
-txt_4_8_fit: Fit to
-txt_4_8_fitl: Fit to largest
-txt_4_8_flip: Flip
-txt_4_8_fullscreen: Full screen
-txt_4_8_fun: Functions
-txt_4_8_h: Height
-txt_4_8_keeparchive: Keep archive
-txt_4_8_noresize: Keep original size
-txt_4_8_iconl: Large images
-txt_4_8_iconm: Icons and images
-txt_4_8_imagemanager: Image manager
-txt_4_8_immersive: Immersive
-txt_4_8_listno: Minimal list
-txt_4_8_aspect: Maintain aspect ratio
-txt_4_8_mirror: Mirror
-txt_4_8_presets: Presets
-txt_4_8_replace: Replace original image(s)? "No" apply the transformation in new file(s).
-txt_4_8_resize: Resize
-txt_4_8_rl: Rotate left
-txt_4_8_rr: Rotate right
-txt_4_8_stop: Stop
-txt_4_8_t: Transform
-txt_4_8_w: Width
+txt_6_3_syn: Sincronizar arquivo co disco
+txt_6_3_uar: Actualizar só os ficheiros xa presentes no arquivo
+txt_6_2_encext: Engadir o sufixo ".enc" aos arquivos cifrados
+txt_6_2_archive: Tipo de ficheiro de arquivo
+txt_6_2_container: Tipo de ficheiro contedor
+txt_6_1_ec: Expandir / colapsar árbore do arquivo
+txt_6_0_msq: Ordenar por tipo de ficheiro para compresión sólida
+txt_5_9_lff: Analizar ficheiros e cartafoles
+txt_5_9_pff: Analizar, amosar cabeceira/final dos ficheiros
+txt_5_9_start: Comezar desde
+txt_5_8_l0: Permitir calquera compoñente/formato compatíbel
+txt_5_8_l1: Permitir só compoñentes de Software Libre
+txt_5_8_l2: Permitir só formatos de arquivo abertos
+txt_5_8_ascii: Seguro en ASCII, os scripts son seguros en contornas antigas
+txt_5_8_cp: Seguro para páxina de códigos, os scripts poden causar problemas en contornas antigas con diferentes páxinas de códigos
+txt_5_8_fs: Cumprimento de Software Libre
+txt_5_8_utf: Os scripts precisan un contorno completo UTF-8 / Unicode
+txt_5_8_fsr: Este formato non é compatíbel por restricións de cumprimento de Software Libre (Opcións > Avanzado)
+txt_5_7_pinstalled: INSTALADO
+txt_5_7_pmissing: FALTANTE
+txt_5_7_plugin: Falta o complemento, pode instalarse desde Axuda > Comprobar complementos e extensións
+txt_5_6_basic: Básico
+txt_5_6_exarc: Extraer arquivo
+txt_5_6_tab: Abrir nunha nova lapela
+txt_5_6_rc: Clic dereito para opcións
+txt_5_6_layouts: Disposicións gardadas
+txt_5_6_upexisting: Actualizar arquivo existente
+txt_5_6_verbose: Detallado
+txt_5_5_case: (sensíbel a maiúsculas/minúsculas)
+txt_5_5_add: Engadir cadea na posición especificada
+txt_5_5_addsel: Engadir á selección actual
+txt_5_5_ext: Cambiar extensión dos ficheiros
+txt_5_5_plugin: Comprobar complementos e extensións
+txt_5_5_copypath: Copiar ruta
+txt_5_5_delete: Eliminar caracteres na posición especificada
+txt_5_5_halt: Apagar o sistema ao rematar a tarefa
+txt_5_5_positionw: Suxestión: 1 engade antes do primeiro carácter, 2 no segundo, etc... "z" para o final do nome do ficheiro
+txt_5_5_positionwd: Suxestión: 1 elimina desde o primeiro carácter incluído, 2 segundo, ... "z" para o final do nome do ficheiro
+txt_5_5_replaceneww: Suxestión: fornece unha nova cadea baleira para simplemente eliminar a vella
+txt_5_5_lower: Minúsculas
+txt_5_5_replaceoldw: Modificar todas as aparicións desta cadea ou carácter no nome do ficheiro
+txt_5_5_newext: Nova extensión
+txt_5_5_new: Nova cadea
+txt_5_5_n: Número de caracteres a eliminar
+txt_5_5_old: Cadea antiga
+txt_5_5_position: Posición (número ou "z" para o final)
+txt_5_5_intdir: Novo cartafol intelixente
+txt_5_5_replacestr: Substituír/eliminar cadea
+txt_5_5_datesameday: Mesmo día que o obxecto seleccionado
+txt_5_5_datesamehour: Mesma hora que o obxecto seleccionado
+txt_5_5_datesamemonth: Mesmo mes que o obxecto seleccionado
+txt_5_5_datesameweek: Mesma semana que o obxecto seleccionado
+txt_5_5_datesameyear: Mesmo ano que o obxecto seleccionado
+txt_5_5_scan: Escanear
+txt_5_5_select: Seleccionar
+txt_5_5_similar: Semellante ao obxecto seleccionado
+txt_5_5_starting: Comezando co mesmo carácter
+txt_5_5_string: Cadea a engadir
+txt_5_5_subtractsel: Restar da selección actual
+txt_5_5_datehour: Esta hora
+txt_5_5_datemonth: Este mes
+txt_5_5_dateweek: Esta semana
+txt_5_5_dateyear: Este ano
+txt_5_5_dateday: Hoxe
+txt_5_5_upper: Maiúsculas
+txt_5_5_extw: Aviso: cambiar a extensión do ficheiro pode facelo inutilizábel
+txt_5_4_da: Data engadida
+txt_5_4_deletearchives: Eliminar arquivos despois da extracción
+txt_5_4_deletefiles: Eliminar ficheiros despois de arquivar
+txt_5_4_deleteoriginal: O procedemento de eliminación, tal como está definido na pantalla principal, engadirase ao script.
+txt_5_4_lv: Última visita
+txt_5_4_deletearchivesconfirm: Confirmar eliminación dos arquivos orixinais?
+txt_5_4_deletefilesconfirm: Confirmar eliminación dos ficheiros orixinais?
+txt_5_4_used: Usado
 txt_4_7_pk: Crear constrasinal aletoria/arquivo de chave
 txt_4_7_spchar: Limitar os caracteres de letras e números
 txt_4_7_recycleask:Mover arquivo(s) selecionado(s) a a Papeleira de Reciclaxe?
@@ -1378,27 +1278,27 @@ Importante:
 
 Cambio de "" a “”
 
-EXTRACT ARCHIVE(S)
-From the system 
-- rightclick on the archive(s) and in system’s context menu click "Extract here" or "Extract here (in new folder)" to extract with no further interaction
-- otherwise use "Extract..." menu entry for having more options: output path, password, extract files to a new directory, chose to skip, rename or overwrite existing files etc.
+EXTRAER ARQUIVO(S)
+Desde o sistema
+- Fai clic dereito sobre o(s) arquivo(s) e, no menú contextual do sistema, selecciona "Extraer aquí" ou "Extraer aquí (nun novo cartafol)" para extraer sen máis interacción.
+- Tamén podes empregar a opción "Extraer..." para acceder a máis opcións: ruta de saída, contrasinal, extraer ficheiros a un novo directorio, elixir se omitir, renomear ou sobrescribir ficheiros existentes, etc.
 
-Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
-- click on "Extract" in toolbar or in context menu to extract only selected objects trough the confirmation dialog allowing to set all options (output path, password, naming policy, extract to a new directory etc)
-- drag files and folders to the desired destination, only selected content will be extracted (for more information see chapter about drag and drop in PeaZip)
-- click the quick extraction dropdown button on the right of “Extract” in the toolbar, it allows to directly extract the entire archive to most common destinations (skipping the confirmation dialog) and to set most important options; keyboard shortcuts: Ctrl+E (or F12) extracts the entire archive, asks for output directory; Ctrl+Alt+E extracts archive in its current folder; Ctrl+Shift+E extracts to desktop; Ctrl+Alt+Shift+E extracts to documents; Ctrl+1..8 extracts to path of bookmark 1..8 (if defined)
+Abre un arquivo en PeaZip (p. ex. facendo dobre clic ou arrastrando o arquivo á xanela ou icona de PeaZip)
+- Fai clic en "Extraer" na barra de ferramentas ou no menú contextual para extraer só os obxectos seleccionados a través do diálogo de confirmación, que permite configurar todas as opcións (ruta de saída, contrasinal, política de nomes, extraer a un novo directorio, etc).
+- Arrastra ficheiros e cartafoles ao destino desexado: só se extraerá o contido seleccionado (para máis información consulta o capítulo sobre arrastrar e soltar en PeaZip).
+- Fai clic no botón despregable de extracción rápida á dereita de "Extraer" na barra de ferramentas; permite extraer directamente todo o arquivo a destinos comúns (saltando o diálogo de confirmación) e establecer as opcións máis importantes. Atallos de teclado: Ctrl+E (ou F12) extrae todo o arquivo, pedindo o directorio de saída. Ctrl+Alt+E extrae o arquivo no seu cartafol actual. Ctrl+Shift+E extrae no escritorio. Ctrl+Alt+Shift+E extrae en Documentos. Ctrl+1..8 extrae á ruta do marcador 1..8 (se está definido).
 
-Open PeaZip, select one or more archives and click “Extract” in toolbar or context menu, or use quick extraction destinations as explained at the previous point.
+Abre PeaZip, selecciona un ou máis arquivos e fai clic en "Extraer" na barra de ferramentas ou no menú contextual, ou emprega os destinos de extracción rápida explicados no punto anterior.
 
-EXTRACT ONLY SELECTED OBJECTS FROM THE ARCHIVE
-Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
-- click "Extract" in toolbar: only selected items will be extracted
-- drag files and folders to the desired destination, only selected content will be extracted
-- rightclick and in “Extract” group of the context menu click “Extract selected” (to extract only selected items) or “Extract displayed” (to extract content of current directory or of current search filter)
+EXTRAER SÓ OS OBXECTOS SELECCIONADOS DO ARQUIVO
+Abre un arquivo en PeaZip (dobre clic ou arrastrar o arquivo á xanela ou icona).
+- Fai clic en "Extraer" na barra de ferramentas: só se extraerán os elementos seleccionados.
+- Arrastra ficheiros e cartafoles ao destino desexado: só se extraerá o contido seleccionado.
+- Fai clic dereito e, no grupo "Extraer" do menú contextual, selecciona "Extraer seleccionados" (para extraer só os elementos seleccionados) ou "Extraer mostrados" (para extraer o contido do directorio actual ou do filtro de busca actual).
 
-ENTER A PASSWORD TO BROWSE OR EXTRACT AN ARCHIVE
-Click on the padlock icon to enter a password and optionally a keyfile.
-The icon is featured both in PeaZip’s file browser’s status bar and in the archive extraction interface; once the password is set the icon will change color.
+INTRODUCIR UN CONTRASINAL PARA NAVEGAR OU EXTRAER UN ARQUIVO
+Fai clic na icona do cadeado para introducir un contrasinal e, opcionalmente, un ficheiro de clave.
+A icona aparece tanto na barra de estado do explorador de ficheiros de PeaZip como na interface de extracción. Unha vez establecido o contrasinal, a icona cambiará de cor.
 
 CREATE ARCHIVE
 From the system
