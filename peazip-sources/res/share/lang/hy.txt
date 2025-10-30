@@ -7,18 +7,18 @@ Last rev.: 20251010
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
+txt_10_7_errload: Չի հաջողվում ցուցադրել պատկերը
+txt_10_7_errfile: Ֆայլը չի գտնվել
+txt_10_7_first: Առաջինը
+txt_10_7_fit: Համապատասխանեցնել էկրանին
+txt_10_7_fith: Համապատասխանեցնել էկրանի բարձրությանը
+txt_10_7_fitw: Համապատասխանեցնել էկրանի լայնությանը
+txt_10_7_keep: Պահպանել ելքային ֆայլերը, եթե ապամշակումը ավարտվում է սխալով կամ չեղարկվում է
+txt_10_7_next: Հաջորդը
+txt_10_7_prev: Նախորդը
+txt_10_7_pwh: Գաղտնաբառ հեշից
+txt_10_7_images: Դիտել պատկերները
+txt_10_7_thumbnails: Դիտել մանրապատկերները
 txt_10_6_virtual: Դինամիկ վիրտուալ ռեժիմ
 txt_10_5_fr: (լրիվ հաշվետվություն)
 txt_10_5_sectype: Հարցնել հաստատում հետեւյալ նիշքերի տեսակների գործարկման համար
@@ -1375,21 +1375,21 @@ txt_time: Ժամանակ՝
 
 === about text group ===
 
-EXTRACT ARCHIVE(S)
-From the system 
-- rightclick on the archive(s) and in system’s context menu click "Extract here" or "Extract here (smart new folder)" to extract with no further interaction. Smart new folder option takes care to create a new top level folder only if necessary, when the archives root contains more than one file or folder.
-- otherwise use "Extract..." menu entry for having more options: output path, password, extract files to a new directory, chose to skip, rename or overwrite existing files etc.
+ԱՓԱՄՇԱԿԵԼ ՊԱՀՈՑ(ՆԵՐ)
+Համակարգից 
+- աջ սեղմեք պահոցի վրա և համակարգի համատեքստային մենյույում ընտրեք «Ապամշակել այստեղ» կամ «Ապամշակել այստեղ (խելացի նոր պանակ)»՝ առանց լրացուցիչ քայլերի ապամշակելու համար։ «Խելացի նոր պանակ»-ը նոր վերին մակարդակի պանակ է ստեղծում միայն անհրաժեշտության դեպքում, երբ պահոցի արմատը պարունակում է մեկից ավելի ֆայլ կամ պանակ։
+- կամ օգտագործեք «Ապամշակել...» ընտրացանկը՝ հավելյալ ընտրանքների համար. ելքային ուղի, գաղտնաբառ, ապամշակել նոր պանակ, ընտրել՝ բաց թողնել, վերանվանել կամ վերագրել գոյություն ունեցող ֆայլերը և այլն։
 
-Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
-- click on "Extract" in toolbar or in context menu to extract only selected objects trough the confirmation dialog allowing to set all options (output path, password, naming policy, extract to a new directory etc)
-- drag files and folders to the desired destination, only selected content will be extracted (for more information see chapter about drag and drop in PeaZip)
-- click the quick extraction dropdown button on the right of “Extract” in the toolbar, it allows to directly extract the entire archive to most common destinations (skipping the confirmation dialog) and to set most important options; keyboard shortcuts: Ctrl+E (or F12) extracts the entire archive, asks for output directory; Ctrl+Alt+E extracts archive in its current folder; Ctrl+Shift+E extracts to desktop; Ctrl+Alt+Shift+E extracts to documents; Ctrl+0 extracts to previous path; Ctrl+1..8 extracts to path of bookmark 1..8 (if defined)
+Բացեք պահոցը PeaZip-ում՝ կրկնակի սեղմելով կամ քաշելով պահոցը PeaZip-ի պատուհանին կամ պատկերակին
+- գործիքագոտում կամ համատեքստային մենյույում սեղմեք «Ապամշակել», որպեսզի ապամշակվեն միայն ընտրված տարրերը՝ հաստատման պատուհանով, որը թույլ է տալիս սահմանել բոլոր ընտրանքները (ելքային ուղի, գաղտնաբառ, անվանման քաղաքականություն, ապամշակում նոր պանակ և այլն)
+- քաշեք ֆայլերը և պանակները ցանկալի տեղը՝ ապամշակվելու է միայն ընտրված պարունակությունը (հավելյալ տեղեկությունների համար տես PeaZip-ում քաշել-թողնելու մասին գլուխը)
+- սեղմեք գործիքագոտու «Ապամշակել»-ի աջ կողմի արագ ապամշակման բացվող կոճակը՝ ամբողջ պահոցը անմիջապես ապամշակելու համար ամենահաճախ օգտագործվող վայրեր (առանց հաստատման պատուհանի) և կարևոր կարգավորումները սահմանելու համար։ Ստեղնային դյուրանցումներ՝ Ctrl+E (կամ F12)՝ ապամշակում է ամբողջ պահոցը և հարցնում է ելքային պանակը, Ctrl+Alt+E՝ ընթացիկ պանակ, Ctrl+Shift+E՝ Աշխատասեղան, Ctrl+Alt+Shift+E՝ Փաստաթղթեր, Ctrl+0՝ նախորդ ուղի, Ctrl+1..8՝ էջանիշ 1..8-ի ուղի (եթե սահմանված է)։
 
-Open PeaZip, select one or more archives and click “Extract” in toolbar or context menu, or use quick extraction destinations as explained at the previous point.
+Բացեք PeaZip-ը, ընտրեք մեկ կամ ավելի պահոց և գործիքագոտում կամ համատեքստային մենյույում սեղմեք «Ապամշակել», կամ օգտագործեք արագ ապամշակման նպատակակետերը՝ ինչպես նկարագրված է վերևում։
 
-EXTRACT ONLY SELECTED OBJECTS FROM THE ARCHIVE
-Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
-- click "Extract" in toolbar: only selected items will be extracted
+ԱՓԱՄՇԱԿԵԼ ՄԻԱՅՆ ԸՆՏՐՎԱԾ ՏԱՌԵՐԸ ՊԱՀՈՑԻՑ
+Բացեք պահոցը PeaZip-ում՝ կրկնակի սեղմելով կամ քաշելով պահոցը PeaZip-ի պատուհանին կամ պատկերակին
+- գործիքագոտում սեղմեք «Ապամշակել»՝ միայն ընտրված տարրերը կապամշակվեն
 - drag files and folders to the desired destination, only selected content will be extracted
 - rightclick and in “Extract” group of the context menu click “Extract selected” (to extract only selected items) or “Extract displayed” (to extract content of current directory or of current search filter)
 
@@ -1455,15 +1455,15 @@ F12 	extract all to...
 
 ABOUT PEAZIP
 
-PeaZip is an open source file and archive manager: cross platform, available as portable and installable software for Linux (desktop neutral application), macOS, and 32 and 64 bit Windows.
+PeaZip-ը բաց կոդով ֆայլերի և պահոցների կառավարիչ է՝ բազմահարթակ, հասանելի որպես տեղափոխելի և տեղադրվող ծրագրային ապահովում Linux-ի (ստոլային չեզոք ծրագիր), macOS-ի, ինչպես նաև 32- և 64-բիթանոց Windows-ի համար։
 
-PeaZip allows to apply powerful multiple search filters to archive's content; create and extract multiple archives at once; create self-extracting archives; export task definition as command line; save archiving and extraction layouts; bookmark archives and folders; scan and open with custom applications compressed and uncompressed files etc...
+PeaZip-ը թույլ է տալիս կիրառել հզոր բազմակի որոնման զտիչներ պահոցի պարունակության վրա, ստեղծել և ապամշակել միաժամանակ մի քանի պահոց, ստեղծել ինքնաապամշակվող պահոցներ, արտահանել առաջադրանքի սահմանումը որպես հրամանային տող, պահպանել պահոցման և ապամշակման դասավորությունները, էջանշել պահոցներ և պանակներ, ստուգել և բացել սեղմված ու չսեղմված ֆայլեր անհատական ծրագրերով և այլն։
 
-Other features: strong encryption, robust file copy, split/join files (file span), secure data deletion, compare, checksum and hash files, system benchmark, generate random passwords and keyfiles.
+Այլ հնարավորություններ. հզոր գաղտնագրում, կայուն ֆայլերի պատճենում, ֆայլերի բաժանում/միացում, տվյալների անվտանգ ջնջում, համեմատում, կոնտրոլային գումար և հեշ ֆայլեր, համակարգի կատարողականի չափում, պատահական գաղտնաբառերի և բանալիֆայլերի գեներացում։
 
 Downloads: https://peazip.github.io
 Learn more: https://peazip.github.io/peazip-free-archiver.html
 Support: https://peazip.github.io/peazip-help.html
 FAQ: https://peazip.github.io/peazip-help-faq.html
 
-Many thanks to all people contributing to PeaZip project's growth developing Open Source software components used in this application (see website for complete list), and to all users contributing with feedback, experience and advices.
+Շնորհակալություն բոլոր նրանց, ովքեր ներդրում են ունենում PeaZip նախագծի զարգացման մեջ՝ ստեղծելով բաց կոդով բաղադրիչներ, որոնք օգտագործվում են այս ծրագրում (ամբողջական ցուցակը՝ կայքում), ինչպես նաև բոլոր օգտագործողներին՝ իրենց արձագանքի, փորձի և խորհուրդների համար։
