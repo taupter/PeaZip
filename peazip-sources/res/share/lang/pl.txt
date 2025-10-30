@@ -3,55 +3,55 @@ Polski
 10.7
 Tłumaczenie: M. Trzebiatowski, M. Kacprzak, M. Kałużny, Jono13 <meerkat at interia dot eu>, CzakNorris <czaknorris małpa gmail kropka com>
 Ostatnia wersja: CzakNorris
-Data akt.: 12.02.2024
+Data akt.: 10.30.2025
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
+txt_10_7_errload: Nie można wyświetlić obrazu
+txt_10_7_errfile: Plik nie znaleziony
+txt_10_7_first: Pierwszy
+txt_10_7_fit: Dopasuj do ekranu
+txt_10_7_fith: Dopasuj do wysokości ekranu
+txt_10_7_fitw: Dopasuj do szerokości ekranu
+txt_10_7_keep: Zachowaj pliki wyjściowe, jeśli wypakowanie zakończy się błędem lub zostanie anulowane
+txt_10_7_next: Następny
+txt_10_7_prev: Poprzedni
+txt_10_7_pwh: Hasło z wartości skrótu
+txt_10_7_images: Wyświetl obrazy
+txt_10_7_thumbnails: Wyświetl miniatury
+txt_10_6_virtual: Dynamiczny tryb wirtualny
+txt_10_5_fr: (pełny raport)
+txt_10_5_sectype: Poproś o potwierdzenie uruchamiania następujących typów plików
+txt_10_5_checkmotw: Sprawdź Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Czy chcesz uruchomić ten plik?
+txt_10_5_pathlock: Elementów w tej ścieżce archiwum nie można edytować
+txt_10_5_type_description_rar: RAR: zastrzeżony format archiwum, wysoki współczynnik kompresji, obsługiwany przez zewnętrzny kompresor
+txt_10_5_sh: Pokaż ukryte pliki i foldery w systemie plików
+txt_10_5_ntfsalt: Ten format może przechowywać alternatywne strumienie danych NTFS, w tym Mark of The Web
+txt_10_4_moving: (Przenoszenie)
+txt_10_3_classic: Klasyczny
+txt_10_3_ascii: Zaleca się używać wyłącznie znaków ASCII w hasłach dla bieżącego formatu archiwum (litery z rozróżnieniem wielkości, cyfry i znaki specjalne).
+txt_10_3_minimal: Minimalny
 txt_10_3_m: Modern
 txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
+txt_10_3_aw: Obejście: zaznacz „Wymuś interaktywne wpisywanie hasła” w oknie hasła albo ustaw tryb Konsoli dla programów pomocniczych.
+txt_10_2_savecopy: Zapisz kopię
+txt_10_1_full: Pełny
+txt_10_1_kdfw: Obciążenie KDF
+txt_10_1_under: Podkreślony
+txt_10_0_exptrash: Przeglądaj Kosz
+txt_10_0_ptarzst: Najszybsza kompresja, TAR.ZST
+txt_10_0_ptarxz: Wysoka kompresja, TAR.XZ
+txt_10_0_ptargz: Średnia kompresja, TAR.GZ
+txt_10_0_comp: Czyste formaty kompresji akceptują tylko pojedynczy plik jako wejście. Konwersja archiwum do tych formatów nie powiedzie się, jeśli źródło zawiera wiele plików lub folderów, czego nie da się wcześniej ustalić.
+txt_10_0_save: Zapisz
+txt_10_0_tp: Podgląd tekstu
+txt_9_9_uac: Bieżący użytkownik nie może zapisywać w tej ścieżce wyjściowej. Uruchomić PeaZip z podniesieniem uprawnień UAC?
+TXT_9_9_kdf: Liczba rund KDF
+txt_9_9_utc: Wyświetlaj znaczniki czasu jako UTC
+txt_9_8_alwaysflat: Zawsze otwieraj archiwa w widoku płaskim
+txt_9_8_fnew: Wypakuj tutaj (do nowego katalogu)
+txt_9_8_fsmart: Wypakuj tutaj (nowy katalog – inteligentny)
 txt_9_7_tarpipe: 7z / p7zip użyj "tarpipe"
 txt_9_7_smartsorting: Inteligentne sortowanie nazw plików
 txt_9_6_centered: Wyśrodkowany
