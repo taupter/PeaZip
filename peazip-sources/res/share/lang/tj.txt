@@ -3,329 +3,329 @@ Tajik - Тоҷикӣ
 10.7
 Translated by: Zafar94
 Last rev. by:
-Last rev.: 2015.07.24
+Last rev.: 20251030
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
-txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
-txt_9_3_continue: Continue anyway?
-txt_9_3_contrast: Contrast
-txt_9_3_fsd: Free space on destination may not be enough
-txt_9_3_fsw: Free space on temporary work path may not be enough
-txt_9_3_mrar: Manually set RAR binary
-txt_9_3_canedit: This archive type can be edited
-txt_9_3_canforce: This archive type can be edited (forced)
-txt_9_3_cannotedit: This archive type cannot be edited
-txt_9_2_7za: 7z / p7zip alias
-txt_9_2_changelog: Change log
-txt_9_2_tfaq: Check for Translations
-txt_9_2_compact: Compact
-txt_9_2_swt: Swap Tool / Address bar
-txt_9_2_tos: TOS, Privacy
-txt_9_2_doc: Verify documentation, Issue Tracker...
-txt_9_2_updates: Verify updates, binaries, Plugins...
-txt_9_1_7zs: 7z / p7zip syntax level
-txt_9_1_ac: Archive conversion scripts allow user's interaction
-txt_9_1_closeall: Close all
-txt_9_1_enlargeicons: Enlarge file browser icons
-txt_9_1_ef: Exclude empty folders from archiving and extraction operations (7z / p7zip)
-txt_9_1_nw: Open in a new window
-txt_9_1_qdup: Use quick deduplication routine
-txt_9_0_autoexttar: Auto extract TAR archive from compressed TAR.* files
-txt_9_0_accesstime: Do not change last access time
-txt_9_0_mem: Maximum memory usage
-txt_9_0_showmainmenu: Open Main menu
-txt_9_0_navmenu: Open Navigation menu
-txt_9_0_plugind: Open binaries and Plugin directory
-txt_9_0_df: Sort dirs before files
-txt_9_0_hl: Store hard links as links
-txt_9_0_sl: Store symbolic links as links
-txt_9_0_tnav: Toggle side bar, treeview, none
-txt_8_9_empty: Archive seems empty
-txt_8_9_disp: Displaying archive content
-txt_8_9_parsing: Parsing archive content
-txt_8_9_stoptest: Stop to inspect report for error, list, test, auto-test
-txt_8_9_ttb: Toggle tool bar
-txt_8_8_ca: Accent color
-txt_8_8_btn: Button
-txt_8_8_cb: Button color
-txt_8_8_centered: Centered buttons
-txt_8_8_light: Light
-txt_8_8_lnk: Link
-txt_8_8_intnote: Please note that "Interactive extraction" option (in Options > Settings > Archive manager) is ignored for composing the command line in Console tab.
-txt_8_8_snz: Propagate Zone.Identifier stream (Windows)
-txt_8_8_sm: Small icons size
-txt_8_8_solcol: Solid bar
-txt_8_8_snoi: Store owner/group ids (TAR, Linux)
-txt_8_8_snon: Store owner/group names (TAR, Linux)
-txt_8_8_tab: Tab
-txt_8_8_altt: Tabs style
-txt_8_8_autotest: Test archives after creation, if supported by the format
-txt_8_8_cw: Window color
-txt_8_7_csvhelp: "," international standard, ";" common in Latin locales
-txt_8_7_after: After archiving / extraction
-txt_8_7_bintest: binaries tested.
-txt_8_7_csv: CSV separator
-txt_8_7_hok: Hash of binaries used by PeaZip match with expected values
-txt_8_7_mo: Set archive manager options
-txt_8_7_showhm: Show file browser Header menu
-txt_8_7_showsearchbar: Show search bar
-txt_8_7_showsm: Show Style menu
-txt_8_7_hnotok: Some hash of binaries used by PeaZip do not match with expected values:
-txt_8_7_verifybin: Verify hash of binaries
-txt_8_6_clear: "Clear" option removes temp edited files, otherwise available for further editing.
-txt_8_6_noclear: Discard all changes without updating the archive
-txt_8_6_nosimple: Do not update archive, keep temp edited files for further editing
-txt_8_6_immediate: Immediate execution
-txt_8_6_yessimple: Update archive, keep temp edited files for further editing
-txt_8_5_advbrowser: Apply filters to archive browser
-txt_8_5_detailslarge: Details, large
-txt_8_5_intext: Extract to temp work path then move to output (ask before overwriting)
-txt_8_5_listlarge: List, large
-txt_8_5_loadlayout: Load layout at startup
-txt_8_5_samplescripts: Sample scripts
-txt_8_4_keepopenerrorslist: Stop to inspect report for error, list
-txt_8_3_mbubin: Binary
-txt_8_3_cw: Change working directory? This will reset temporary work files and restart the application.
-txt_8_3_temperature: Color temperature
-txt_8_3_mbudec: Decimal
-txt_8_3_htab: Highlight tabs
-txt_8_3_maxarg: Maximum length of arguments
-txt_8_3_mbu: Multiple-byte unit
-txt_8_3_prefalgo: Preferred algorithms
-txt_8_3_skipdel: Skip deletion of locked temp files (use reset to delete on demand)
-txt_8_3_lw: Some files in working directory are locked and cannot be removed automatically
-txt_8_3_noupx: This binary cannot be compressed (may be already compressed)
-txt_8_2_slower: (slower)
-txt_8_2_df: 7z / p7zip display content of folders
-txt_8_2_vreport: 7z / p7zip non-verbose report
-txt_8_2_ta: Accessed
-txt_8_2_tc: Created
-txt_8_2_keep: Keep files
-txt_8_2_tm: Modified
-txt_8_2_skipet: Skip testing for encryption
-txt_8_2_alltimes: Store all timestamps
-txt_8_2_supportedby: Supported by
-txt_8_1_preparse: Always pre-parse archives
-txt_8_1_bo: Browser optimization
-txt_8_1_bop: Browser optimization options can be set from Options > Settings, General tab, in order to allow browser to display archives containing a very large number of items.
-txt_8_1_nopreparse: Do not pre-parse archives
-txt_8_1_ed: error(s) detected.
-txt_8_1_togglearc: Listing flat view of archive content may take long time, continue anyway?
-txt_8_1_preparsehint: Optimize performances limiting pre-parsing of large archives. Pre-parsing is meant to detect in advance possible issues in archive content.
-txt_8_1_slow: Slow
-txt_8_1_vslow: Very slow
-txt_8_1_volumes: volumes
-txt_8_0_altcol: Alternate grid color
-txt_8_0_forcebrowse: Browse non-canonical archive types (containers, disk images, installers,...)
-txt_8_0_commonalgo: Common algorithms
-txt_8_0_forceconvert: Convert non-canonical archive types
-txt_8_0_defaultactionhint: Default action double-clicking a file associated with PeaZip from the system
-txt_8_0_defaultaction: Default action on start-up
-txt_8_0_enableextand: Enable "Extract and open with" submenu
-txt_8_0_forcetyping: Force typing passwords interactively
-txt_8_0_setpwopt: Set password / keyfile options
-txt_8_0_forcetypinghelp: Will run backend binaries in console, cannot browse archives with encrypted filenames. Allows to create scripts that will not run unattended but rather ask user interactively for password.
-txt_7_9_spacing: Spacing
-txt_7_9_zooming: Zooming
-txt_7_8_changelocalization: Change PeaZip language
-txt_7_8_custext: Custom extension
-txt_7_8_destexistfile: Destination already contains processed files. Replace files with same name?
-txt_7_8_dd: Drag and Drop
-txt_7_8_priorityhigh: High
-txt_7_8_priorityidle: Idle
-txt_7_8_rel: Interactive extraction
-txt_7_8_prioritynormal: Normal
-txt_7_8_priorityrealtime: Real time
-txt_7_8_requirerestart: [requires restarting PeaZip]
-txt_7_8_tpriority: Tasks priority
-txt_7_8_update: Update
-txt_7_7_noneall: None (no preview, no Drag And Drop extraction)
-txt_7_7_nonetemp: None, User's temp if necessary
-txt_7_7_outtemp: Output, preview in User's temp
-txt_7_7_sys7zreq: Requires p7zip-full or equivalent to be installed
-txt_7_7_tw: Temporary work folder for archive creation, editing, preview and Drag And Drop extraction.
-txt_7_7_sys7z: Use system 7z in Linux
-txt_7_6_zipenc: 7z/p7zip ZIP filenames encoding
-txt_7_6_color: Color
-txt_7_6_custenc: Custom code page
-txt_7_6_dark: Dark
-txt_7_6_tno: Do not sync archive tree
-txt_7_6_forcelocalenc: Force local
-txt_7_6_forceutf8enc: Force UTF-8
-txt_7_6_cpnote: If the chosen custom code page is unsupported, tasks will always end in error (most likely memory allocation error). In case that happens, change code page or reset the application.
-txt_7_6_defaultenc: Local, UTF-8 for extra symbols
-txt_7_6_dim: Low light
-txt_7_6_setcurdef: Set current path as default output path
-txt_7_6_setdef: Set default output path
-txt_7_6_tadvanced: Sync archive tree, keep visited nodes
-txt_7_6_tsimple: Sync archive tree, simple
-txt_7_6_tacolor: Text accent
-txt_7_5_always: Always
-txt_7_5_ask: Ask
-txt_7_5_autoclosesingle: Auto close after extraction if no browsing actions took place
-txt_7_5_cutlen: Cut name at specified length
-txt_7_5_cutlenw: Cut name at specified length (4..255) naming conflicts can be fixed manually later
-txt_7_5_dragnone: Do not lock target
-txt_7_5_specialbrowse: Do you want to extract everything in order to provide the file with the extra data it may need?
-txt_7_5_ee: Extract everything for special file types
-txt_7_5_draghide: Hide drop target
-txt_7_5_draglh: Lock and hide target
-txt_7_5_draglock: Lock drop target
-txt_7_5_never: Never
-txt_7_5_repnascii: Replace/remove non-ASCII characters
-txt_7_4_comment: Comment
-txt_7_4_7zfbrotlicomp: Fastest compression, 7Z Brotli
-txt_7_4_7zfzstandardcomp: Fastest compression, 7Z Zstandard
-txt_7_4_presetrar: High compression, RAR
-txt_7_4_tkeep: Keep original archive timestamp
-txt_7_4_lock: Lock archive
-txt_7_4_locked: locked
-txt_7_4_lockconfirm: Locked archives cannot be further modified, proceed locking this archive?
-txt_7_4_recover: Repair archive
-txt_7_4_tcurr: Set archive timestamp from current system time
-txt_7_4_setarc: Set archiving options
-txt_7_4_setext: Set extraction options
-txt_7_4_swzipx: Switch to zipx extension for non-Deflate zip archives
-txt_7_3_archiveerrors: [archive may contain errors]
-txt_7_3_archiveerrorshint: Archive may not be valid (due missing, corrupted, or out of standard data), it is possible to run Test for detailed information. If archive's table of content is encrypted, password is needed before browsing it.
-txt_7_3_clickextall: Click "Extract all" to enable
-txt_7_3_noconfdel: Do not ask confirmation for delete after archiving / extraction
-txt_7_3_profile7zfastest: Fast compression, 7Z fastest
-txt_7_3_maxbr: Maximize Brotli compression using more memory (may be incompatible with some extractors)
-txt_7_3_maxzstd: Maximize Zstandard compression using more memory
-txt_7_3_profile7zfast: Medium compression, 7Z fast
-txt_7_3_stl: Set archive timestamp from most recent file
-txt_7_2_altcomp: Alternative compression, ARC
-txt_7_2_clearnoupdate: Clear edited files
-txt_7_2_autoclosepeazip: Close PeaZip when task completes
-txt_7_2_zpaqall: Extract all revisions
-txt_7_2_extcomp: Extreme compression, ZPAQ
-txt_7_2_extcompultra: Extreme compression, ZPAQ ultra
-txt_7_2_fbrotlicomp: Fastest compression, Brotli
-txt_7_2_fzstandardcomp: Fastest compression, Zstandard
-txt_7_2_loadcompsettings: Load compression settings
-txt_7_2_savecompsettings: Save compression settings
-txt_7_2_source: Source
-txt_7_2_updateclear: Update edited files in archive, and clear edited files
-txt_7_1_type_description_brotli: Brotli: fast compressor from Google, very fast decompression
-txt_7_1_new: Extract all here, in new folder
-txt_7_1_smart: Extract all here, smart
-txt_7_1_profileintermediate: Intermediate compression, ZIP/BZip2 fast
-txt_7_1_renfilesonly: Rename only files
-txt_7_1_typetosearch: Type to search in current path
-txt_7_1_type_description_zstd: Zstandard: fast compressor from Facebook, very fast decompression
-txt_7_0_af: Analyze content of folders
-txt_7_0_autoopentar: Auto open single tar archive inside tar.* files
-txt_7_0_exttmppath: Content will be extracted outside the temporary work path, in: 
-txt_6_9_autou: Auto update modified files in archives
-txt_6_9_forceu: Force update modified files in archives
-txt_6_9_opuns: Operation not supported for current archive type
-txt_6_9_overarch: Overwrite file(s) with same name already existing inside the archive?
-txt_6_9_uconf: Previewed file has been modified. Update the current archive?
-txt_6_8_ndrop: Use native Drag And Drop on Windows
-txt_6_7_nop: (no preview)
-txt_6_6_pdupfound: possible duplicates found (quick approximate test)
-txt_6_6_rsh: Reset search history
-txt_6_6_pdupfind: Suggest possible duplicates
-txt_6_6_forcemodify: Try to edit non explicitly supported file types
-txt_6_5_mandatory: (mandatory)
-txt_6_5_abort: Abort
-txt_6_5_askp: Ask to set password at startup
-txt_6_5_chp: Change password
-txt_6_5_def: Definition
-txt_6_5_nop: Don't ask to set password at startup
-txt_6_5_error: Error
-txt_6_5_seqerr: Error(s) detected, original files will not be deleted
-txt_6_5_sni: Include NT security information
-txt_6_5_sns: Include NTFS Alternate Data Stream
-txt_6_5_privacy: Privacy
-txt_6_5_showvolatile: Show which options are volatile / context depentent
-txt_6_5_force: Try to open archives containing errors
-txt_6_5_warning: Warning
-txt_6_5_yes: Yes
-txt_6_5_yesall: Yes to all
-txt_6_5_np: You can now change password of converted archive(s) to a new one, or blank the password to skip encryption
-txt_6_4_absolute: Absolute paths
-txt_6_4_appdirn: Append directory name
-txt_6_4_closeallother: Close all other tabs
-txt_6_4_closeright: Close tabs on the right
-txt_6_4_collapse: Collapse tabs
-txt_6_4_expand: Expand tabs
-txt_6_4_full: Full paths
-txt_6_4_new: New
-txt_6_4_openintab: Open in a new tab
-txt_6_4_paths: Paths
-txt_6_4_prepdirn: Prepend directory name
-txt_6_4_relative: Relative paths
-txt_6_4_tabbar: Tab bar
-txt_6_3_autoadjust: Auto adjust columns
+txt_10_7_errload: Наметавонад тасвирро намоиш диҳад
+txt_10_7_errfile: Файл ёфт нашуд
+txt_10_7_first: Аввалин
+txt_10_7_fit: Мувофиқ ба экран
+txt_10_7_fith: Мувофиқ ба баландии экран
+txt_10_7_fitw: Мувофиқ ба паҳнои экран
+txt_10_7_keep: Ҳангоми хатогӣ ё бекор шудан, файлҳои бароришро нигоҳ дор
+txt_10_7_next: Баъдӣ
+txt_10_7_prev: Пешина
+txt_10_7_pwh: Калимаи рамз аз ҳэш
+txt_10_7_images: Намоиши тасвирҳо
+txt_10_7_thumbnails: Намоиши эскизҳо
+txt_10_6_virtual: Ҳолати виртуалии динамикӣ
+txt_10_5_fr: (гузориши пурра)
+txt_10_5_sectype: Аз иҷозат барои иҷрои навъҳои дарпоён пурсед
+txt_10_5_checkmotw: Санҷиши Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Мехоҳед ин файлро иҷро кунед?
+txt_10_5_pathlock: Объектҳо дар ин роҳ дар бойгонӣ таҳрир намешаванд
+txt_10_5_type_description_rar: RAR: формати проприетарии бойгонӣ бо дараҷаи баланди фишурдан; тавассути компрессори беруна дастгирӣ мешавад
+txt_10_5_sh: Намоиши файлҳо ва ҷузъҳои пинҳон дар низоми файл
+txt_10_5_ntfsalt: Ин формат метавонад ҷараёни иловагии маълумоти NTFS (ADS)-ро, аз ҷумла Mark of The Web, захира кунад
+txt_10_4_moving: (Кӯчондан)
+txt_10_3_classic: Классикӣ
+txt_10_3_ascii: Пешниҳод мешавад, ки танҳо аломатҳои ASCII-ро дар паролҳо барои ин формати бойгон истифода баред (ҳуруфи калон/хурд, рақамҳо ва аломатҳои махсус).
+txt_10_3_minimal: Минималӣ
+txt_10_3_m: Муосир
+txt_10_3_pm: Постмодерн
+txt_10_3_aw: Ҳалномаи муваққатӣ: "Маъмурона ворид кардани парол"-ро дар равзанаи парол фаъол созед, ё барои бинарҳои пасзамина Ҳолати консолро интихоб кунед.
+txt_10_2_savecopy: Нусха захира кардан
+txt_10_1_full: Пурра
+txt_10_1_kdfw: Боркунии кори KDF
+txt_10_1_under: Хаткашида
+txt_10_0_exptrash: Кофтукови Сабад
+txt_10_0_ptarzst: Фишурдасозии тезтарин, TAR.ZST
+txt_10_0_ptarxz: Фишурдасозии баланд, TAR.XZ
+txt_10_0_ptargz: Фишурдасозии миёна, TAR.GZ
+txt_10_0_comp: Форматҳои поки фишурдашавӣ танҳо як файлро ҳамчун вуруд қабул мекунанд. Табдили бойгон ба ин формҳо бо нокомӣ анҷом меёбад, агар манбаъ дорои якчанд файл ё ҷузъгир бошад, ки пешакӣ муайян кардан имконнадорад.
+txt_10_0_save: Захира кардан
+txt_10_0_tp: Пешнамоиши матн
+txt_9_9_uac: Корбари ҷорӣ наметавонад ба ин роҳи барориш нависад. Оё мехоҳед PeaZip-ро бо баландбардории UAC иҷро кунед?
+TXT_9_9_kdf: Даврҳои KDF
+txt_9_9_utc: Намоиши муҳрҳои вақт ҳамчун UTC
+txt_9_8_alwaysflat: Ҳамеша бойгонҳоро дар намуди ҳамвор кушоед
+txt_9_8_fnew: Истиҳроҷ ба ин ҷо (дар ҷузъгирии нав)
+txt_9_8_fsmart: Истиҳроҷ ба ин ҷо (ҷузъгирии нави зеҳнӣ)
+txt_9_7_tarpipe: 7z / p7zip истифодаи қубур
+txt_9_7_smartsorting: Мураттабсозии зеҳнии номҳои файл
+txt_9_6_centered: Марказӣ
+txt_9_6_cside: Панели тарафи фишурда
+txt_9_6_loadpconfirm: Мехоҳед ин профилро бор кунед? Ҳамаи додаҳои профили ҷорӣ, аз ҷумла скриптҳои захирашуда ва Мудири паролҳо, бознавис мешаванд.
+txt_9_6_loadp: Бор кардани профил
+txt_9_6_saveppw: ИХТИЁРӢ: ин профилро бо парол/калидфайл ҳифз мекунед?
+txt_9_6_savepoverwrite: Профили мавҷудбударо бознавис кунем? Ҳамаи додаҳои профили мавҷудбуда, аз ҷумла скриптҳои захирашуда ва Мудири паролҳо, бознавис мешаванд.
+txt_9_6_savep: Захира кардани профил
+txt_9_6_scside: Намоиши панели тарафи фишурда
+txt_9_5_all: Ҳама
+txt_9_5_precond: Пешпарсинг агар хатоҳо ёфт шаванд
+txt_9_5_largea: Пешпарсинги бойгонҳои калон
+txt_9_5_mediuma: Пешпарсинги бойгонҳои миёна
+txt_9_5_smalla: Пешпарсинги бойгонҳои хурд
+txt_9_5_reopentab: Кушодани дубораи варақаи охирин
+txt_9_5_savetabs: Захира кардани варақаҳо
+txt_9_5_sb: Истифодаи бинарҳо аз роҳҳои системавӣ
+txt_9_4_r: хондан
+txt_9_4_rw: хондан/навиштан
+txt_9_4_savecomment: Захира кардани шарҳ
+txt_9_4_hintcomment: Шарҳро нависед ё часпонед, файли шарҳро бор кунед ё ба ин ҷо кашед.
+txt_9_3_continue: Ба ҳар ҳол идома диҳем?
+txt_9_3_contrast: Контраст
+txt_9_3_fsd: Фазои озод дар самт мумкин аст кофӣ набошад
+txt_9_3_fsw: Фазои озод дар роҳи муваққатии корӣ мумкин аст кофӣ набошад
+txt_9_3_mrar: Танзими дасти иҷроиши RAR
+txt_9_3_canedit: Ин намуди бойгонро метавон таҳрир кард
+txt_9_3_canforce: Ин намуди бойгонро метавон таҳрир кард (бо маҷбуркунӣ)
+txt_9_3_cannotedit: Ин намуди бойгонро таҳрир кардан мумкин нест
+txt_9_2_7za: 7z / p7zip алиас
+txt_9_2_changelog: Рӯйхати тағйирот
+txt_9_2_tfaq: Санҷиши тарҷумаҳо
+txt_9_2_compact: Пахшидан
+txt_9_2_swt: Иваз кардани Асбобҳо / Панели суроға
+txt_9_2_tos: Қоидаҳои хизматрасонӣ, Махфият
+txt_9_2_doc: Санҷиши санадҳо, Треккери масъалаҳо...
+txt_9_2_updates: Санҷиши навсозиҳо, бинарҳо, Плагинҳо...
+txt_9_1_7zs: Сатҳи синтаксиси 7z / p7zip
+txt_9_1_ac: Скриптҳои табдили бойгон муомилаи корбарро иҷозат медиҳанд
+txt_9_1_closeall: Пӯшидани ҳама
+txt_9_1_enlargeicons: Бузург кардани нишонаҳои пешниҳоди файл
+txt_9_1_ef: Истисно кардани ҷузъгирҳои холӣ аз амалиётҳои бойгонкунӣ ва истихроҷ (7z / p7zip)
+txt_9_1_nw: Кушодан дар равзанаи нав
+txt_9_1_qdup: Истифодаи тартиби зудтари дедупликация
+txt_9_0_autoexttar: Автоистихроҷи бойгони TAR аз файлҳои TAR.* фишурда
+txt_9_0_accesstime: Вақти охирини дастрасиро тағйир надиҳед
+txt_9_0_mem: Истифодаи максималии хотира
+txt_9_0_showmainmenu: Кушодани Менюи асосӣ
+txt_9_0_navmenu: Кушодани Менюи навигатсия
+txt_9_0_plugind: Кушодани ҷузъдони бинарҳо ва Плагин
+txt_9_0_df: Пеш аз файлҳо ҷузъгирҳоро ҷобаҷо кунед
+txt_9_0_hl: Захираи пайвандҳои сахт ҳамчун пайванд
+txt_9_0_sl: Захираи пайвандҳои рамзӣ ҳамчун пайванд
+txt_9_0_tnav: Гузариш байни паҳлӯпанел, дарахтнамо, нест
+txt_8_9_empty: Бойгон холиён менамояд
+txt_8_9_disp: Намоиши муҳтавои бойгон
+txt_8_9_parsing: Таҳлили муҳтавои бойгон
+txt_8_9_stoptest: Ист барои санҷиши гузориш: хато, рӯйхат, санҷиш, авто‑санҷиш
+txt_8_9_ttb: Гузариш додани лавҳаи асбобҳо
+txt_8_8_ca: Ранги акцент
+txt_8_8_btn: Тугма
+txt_8_8_cb: Ранги тугма
+txt_8_8_centered: Тугмаҳои марказӣ
+txt_8_8_light: Равшан
+txt_8_8_lnk: Пайванд
+txt_8_8_intnote: Лутфан қайд намоед, ки имкони «Истиҳроҷи мутақобила» (Дар Танзимот > Гузоришҳо > Менеҷери бойгон) ҳангоми тартиб додани сатри фармон дар варақаи Консол нодида гирифта мешавад.
+txt_8_8_snz: Паҳн кардани ҷараёни Zone.Identifier (Windows)
+txt_8_8_sm: Андозаи нишонаҳои хурд
+txt_8_8_solcol: Панели якпорча
+txt_8_8_snoi: Нигоҳ доштани ID‑ҳои соҳиб/гурӯҳ (TAR, Linux)
+txt_8_8_snon: Нигоҳ доштани номҳои соҳиб/гурӯҳ (TAR, Linux)
+txt_8_8_tab: Варақ
+txt_8_8_altt: Услуби варақҳо
+txt_8_8_autotest: Озмоиши бойгонҳо пас аз эҷод, агар формат дастгирӣ кунад
+txt_8_8_cw: Ранги равзана
+txt_8_7_csvhelp: "," стандарти байналмилалӣ, ";" дар муҳитҳои лотинӣ маъмул
+txt_8_7_after: Пас аз бойгонкунӣ / истиҳроҷ
+txt_8_7_bintest: бинарҳо санҷида шуданд.
+txt_8_7_csv: Ҷудокунандаи CSV
+txt_8_7_hok: Ҳэш‑ҳои бинарҳои истифодашуда дар PeaZip бо арзишҳои интизоршуда мувофиқанд
+txt_8_7_mo: Танзими имконоти менеҷери бойгон
+txt_8_7_showhm: Намоиши менюи сарлавҳаи намоиши файл
+txt_8_7_showsearchbar: Намоиши панели ҷустуҷӯ
+txt_8_7_showsm: Намоиши менюи услуб
+txt_8_7_hnotok: Баъзе ҳэшҳои бинарҳои истифодашуда дар PeaZip бо арзишҳои интизоршуда мувофиқат намекунанд:
+txt_8_7_verifybin: Санҷиши ҳэш‑и бинарҳо
+txt_8_6_clear: Имкони «Пок кардан» файлҳои муваққатии таҳриршударо меистонад, дар акси ҳол барои таҳрири минбаъда нигоҳ медорад.
+txt_8_6_noclear: Ҳама тағйиротҳоро бе навсозии бойгон рад кунед
+txt_8_6_nosimple: Бойгонро нав накунед, файлҳои муваққатии таҳриршударо барои таҳрири минбаъда нигоҳ доред
+txt_8_6_immediate: Иҷрои фаврӣ
+txt_8_6_yessimple: Бойгонро навсозӣ кунед, файлҳои муваққатии таҳриршударо барои таҳрири минбаъда нигоҳ доред
+txt_8_5_advbrowser: Иҷрои филтрҳо дар намоиши бойгон
+txt_8_5_detailslarge: Тафсилот, калон
+txt_8_5_intext: Истиҳроҷ ба роҳи муваққатӣ, баъд кӯчондан ба барориш (пурсидан пеш аз бознависӣ)
+txt_8_5_listlarge: Рӯйхат, калон
+txt_8_5_loadlayout: Боркунии тарҳ ҳангоми оғоз
+txt_8_5_samplescripts: Намунаи скриптҳо
+txt_8_4_keepopenerrorslist: Ист барои санҷидани гузориш: хато, рӯйхат
+txt_8_3_mbubin: Бинарӣ
+txt_8_3_cw: Ҷузъгирии кориро иваз мекунед? Ин файлҳои муваққатиро барқарор карда, барномаро аз нав оғоз мекунад.
+txt_8_3_temperature: Ҳарорати ранг
+txt_8_3_mbudec: Даҳонӣ
+txt_8_3_htab: Равшан кардани варақҳо
+txt_8_3_maxarg: Дарозии ҳадди аксари аргументҳо
+txt_8_3_mbu: Воҳиди чандбайтӣ
+txt_8_3_prefalgo: Алгоритмҳои авлотар
+txt_8_3_skipdel: Несткунии файлҳои муваққатии қулфшударо гузаред (барои несткунӣ аз навсозӣ истифода баред)
+txt_8_3_lw: Баъзе файлҳо дар ҷузъгири корӣ қулф шудаанд ва худкор тоза намешаванд
+txt_8_3_noupx: Ин бинарӣ фишурда намешавад (шояд аллакай фишурда шудааст)
+txt_8_2_slower: (сусттар)
+txt_8_2_df: 7z / p7zip намоиши муҳтавои ҷузъгирҳо
+txt_8_2_vreport: 7z / p7zip гузориши кӯтоҳ
+txt_8_2_ta: Дастрас шуд
+txt_8_2_tc: Эҷод шуд
+txt_8_2_keep: Нигоҳ доштани файлҳо
+txt_8_2_tm: Тағйир ёфт
+txt_8_2_skipet: Санҷиши рамзгузориро гузаред
+txt_8_2_alltimes: Нигоҳ доштани ҳамаи муҳрҳои вақт
+txt_8_2_supportedby: Дастгирӣ мешавад аз ҷониби
+txt_8_1_preparse: Ҳамеша пешпарсинги бойгонҳо
+txt_8_1_bo: Оптимизатсияи намоишгар
+txt_8_1_bop: Имконоти оптимизатсияи намоишгарро метавон аз Танзимот > Гузоришҳо, варақаи Умумӣ танзим кард, то намоишгар бойгонҳои дорои шумораи зиёди объектҳоро нишон диҳад.
+txt_8_1_nopreparse: Пешпарсинг накунед
+txt_8_1_ed: хатогӣ(ҳо) ёфт шуд.
+txt_8_1_togglearc: Рӯйхат дар намуди ҳамвори муҳтавои бойгон метавонад тӯлонӣ шавад, идома диҳем?
+txt_8_1_preparsehint: Самаранокиро бо маҳдуд кардани пешпарсинги бойгонҳои калон беҳтар намоед. Пешпарсинг барои пешакӣ ошкор кардани мушкилоти эҳтимолӣ дар муҳтавои бойгон аст.
+txt_8_1_slow: Суст
+txt_8_1_vslow: Бениҳоят суст
+txt_8_1_volumes: ҳаҷмҳо
+txt_8_0_altcol: Ранги иловагии шабака
+txt_8_0_forcebrowse: Гузариш дар навъҳои ғайриқонунии бойгон (контейнерҳо, тасвирҳои диск, насбкунандаҳо, ...)
+txt_8_0_commonalgo: Алгоритмҳои умумӣ
+txt_8_0_forceconvert: Табдил додани навъҳои ғайриқонунии бойгон
+txt_8_0_defaultactionhint: Амали пешфарз ҳангоми дукарата пахш кардани файли вобаста бо PeaZip аз система
+txt_8_0_defaultaction: Амали пешфарз ҳангоми оғозёбӣ
+txt_8_0_enableextand: Фаъол кардани зерменюи «Истиҳроҷ ва кушодан бо»
+txt_8_0_forcetyping: Маъмуран ворид кардани паролҳоро талаб кардан
+txt_8_0_setpwopt: Танзими имконоти парол / калидфайл
+txt_8_0_forcetypinghelp: Бинарҳои пасзаминаро дар консол иҷро мекунад; бойгонҳои дорои номҳои рамзшуда намоиш намешаванд. Имкон медиҳад, ки скриптҳое эҷод шаванд, ки бе ҳузури корбар иҷро намешаванд ва парол мепурсанд.
+txt_7_9_spacing: Фосилагузорӣ
+txt_7_9_zooming: Калонкунӣ
+txt_7_8_changelocalization: Ивази забони PeaZip
+txt_7_8_custext: Васеъкунии фармоишӣ
+txt_7_8_destexistfile: Дар макон файлҳои коркардшуда мавҷуданд. Файлҳои ҳамном иваз шаванд?
+txt_7_8_dd: Кашидан ва гузоштан
+txt_7_8_priorityhigh: Баланд
+txt_7_8_priorityidle: Бекор
+txt_7_8_rel: Истиҳроҷи мутақобила
+txt_7_8_prioritynormal: Оддӣ
+txt_7_8_priorityrealtime: Вақти воқеӣ
+txt_7_8_requirerestart: [аз нав оғоз кардани PeaZip талаб мешавад]
+txt_7_8_tpriority: Афзалияти вазифаҳо
+txt_7_8_update: Навсозӣ
+txt_7_7_noneall: Ҳеҷ (бе пешнамоиш, бе истиҳроҷи кашидан‑гузоштан)
+txt_7_7_nonetemp: Ҳеҷ, муваққатии корбар агар лозим бошад
+txt_7_7_outtemp: Барориш, пешнамоиш дар муваққатии корбар
+txt_7_7_sys7zreq: Насби p7zip-full ё монанди он лозим аст
+txt_7_7_tw: Ҷузъгирии кори муваққатӣ барои эҷод, таҳрир, пешнамоиш ва истиҳроҷи кашидан‑гузоштан.
+txt_7_7_sys7z: 7z‑и системавиро дар Linux истифода баред
+txt_7_6_zipenc: Рамзгузории номҳои ZIP барои 7z/p7zip
+txt_7_6_color: Ранг
+txt_7_6_custenc: Саҳифаи рамзи фармоишӣ
+txt_7_6_dark: Тира
+txt_7_6_tno: Дарахти бойгонро ҳамоҳанг насозед
+txt_7_6_forcelocalenc: Мазбур кардан ба маҳаллӣ
+txt_7_6_forceutf8enc: Мазбур ба UTF‑8
+txt_7_6_cpnote: Агар саҳифаи рамзи интихобшуда дастгирӣ нашавад, вазифаҳо эҳтимол бо хатои тақсимоти хотира анҷом меёбанд. Дар ин ҳолат, саҳифаи рамзро иваз ё барномаро бозсозӣ кунед.
+txt_7_6_defaultenc: Маҳаллӣ, UTF‑8 барои аломатҳои иловагӣ
+txt_7_6_dim: Нури паст
+txt_7_6_setcurdef: Роҳи ҷориро ҳамчун барориши пешфарз таъин кунед
+txt_7_6_setdef: Роҳи барориши пешфарзро таъин кунед
+txt_7_6_tadvanced: Ҳамоҳангсозии дарахти бойгон, гиреҳҳои боздидшударо нигоҳ доред
+txt_7_6_tsimple: Ҳамоҳангсозии дарахти бойгон, оддӣ
+txt_7_6_tacolor: Акцент‑и матн
+txt_7_5_always: Ҳамеша
+txt_7_5_ask: Пурсидан
+txt_7_5_autoclosesingle: Бастани худкор пас аз истиҳроҷ, агар амалҳои намоиш набуданд
+txt_7_5_cutlen: Буридани ном дар дарозии муайян
+txt_7_5_cutlenw: Буридани ном дар дарозии муайян (4..255); ихтилофи номҳоро метавон баъдтар дастӣ ислоҳ кард
+txt_7_5_dragnone: Ҳадафро қулф накунед
+txt_7_5_specialbrowse: Ҳама чизро барои таъмини маълумоти иловагӣ барои файл истихроҷ мекунед?
+txt_7_5_ee: Истиҳроҷи ҳама барои навъҳои махсуси файл
+txt_7_5_draghide: Пинҳон кардани ҳадафи партофтан
+txt_7_5_draglh: Қулф ва пинҳон кардани ҳадаф
+txt_7_5_draglock: Қулф кардани ҳадафи партофтан
+txt_7_5_never: Ҳеҷ гоҳ
+txt_7_5_repnascii: Иваз/нест кардани аломатҳои ғайри ASCII
+txt_7_4_comment: Шарҳ
+txt_7_4_7zfbrotlicomp: Зудтарин фишурдашавӣ, 7Z Brotli
+txt_7_4_7zfzstandardcomp: Зудтарин фишурдашавӣ, 7Z Zstandard
+txt_7_4_presetrar: Фишурдасозии баланд, RAR
+txt_7_4_tkeep: Нигоҳ доштани муҳри вақти аслии бойгон
+txt_7_4_lock: Қулф кардани бойгон
+txt_7_4_locked: қулф шудааст
+txt_7_4_lockconfirm: Бойгони қулфшуда дигар тағйир намеёбад, идома дода қулф кунем?
+txt_7_4_recover: Таъмири бойгон
+txt_7_4_tcurr: Муҳри вақтро аз вақти ҷории система танзим кунед
+txt_7_4_setarc: Танзими имконоти бойгонкунӣ
+txt_7_4_setext: Танзими имконоти истиҳроҷ
+txt_7_4_swzipx: Гузариш ба васеъкунии zipx барои ZIP‑ҳои ғайри Deflate
+txt_7_3_archiveerrors: [бойгон метавонад хатогӣ дошта бошад]
+txt_7_3_archiveerrorshint: Бойгон метавонад беэътибор бошад (бар асари додаҳои нопурра, вайроншуда ё ғайристандартӣ); метавонед барои маълумоти муфассал Санҷишро иҷро намоед. Агар ҷадвали мазмуни бойгон рамзшуда бошад, пеш аз намоиш парол лозим аст.
+txt_7_3_clickextall: «Истиҳроҷ кардани ҳама»-ро барои фаъолсозӣ пахш кунед
+txt_7_3_noconfdel: Пеш аз нест кардан пас аз бойгонкунӣ/истиҳроҷ тасдиқ напурсед
+txt_7_3_profile7zfastest: Фишурдашавии зуд, 7Z тезтарин
+txt_7_3_maxbr: Баланд бардоштани фишурдашавии Brotli бо истифодаи хотираи бештар (шояд бо баъзе барномаҳои истиҳроҷ номувофиқ бошад)
+txt_7_3_maxzstd: Баланд бардоштани фишурдашавии Zstandard бо истифодаи хотираи бештар
+txt_7_3_profile7zfast: Фишурдасозии миёна, 7Z тез
+txt_7_3_stl: Муайян кардани муҳри вақти бойгон аз файли навтарин
+txt_7_2_altcomp: Фишурдашавии алтернативӣ, ARC
+txt_7_2_clearnoupdate: Пок кардани файлҳои таҳриршуда
+txt_7_2_autoclosepeazip: Бастани PeaZip ҳангоми анҷоми вазифа
+txt_7_2_zpaqall: Истиҳроҷи ҳамаи ревизияҳо
+txt_7_2_extcomp: Фишурдасозии шадид, ZPAQ
+txt_7_2_extcompultra: Фишурдасозии хеле шадид, ZPAQ ultra
+txt_7_2_fbrotlicomp: Зудтарин фишурдашавӣ, Brotli
+txt_7_2_fzstandardcomp: Зудтарин фишурдашавӣ, Zstandard
+txt_7_2_loadcompsettings: Бор кардани танзимоти фишурдасозӣ
+txt_7_2_savecompsettings: Захира кардани танзимоти фишурдасозӣ
+txt_7_2_source: Манбаъ
+txt_7_2_updateclear: Навсозии файлҳои таҳриршуда дар бойгон ва пок кардани онҳо
+txt_7_1_type_description_brotli: Brotli: фишурдсозандаи тези Google, кушодани бисёр зуд
+txt_7_1_new: Истиҳроҷи ҳама дар ин ҷо, дар ҷузъгирии нав
+txt_7_1_smart: Истиҳроҷи ҳама дар ин ҷо, «ақлманд»
+txt_7_1_profileintermediate: Фишурдасозии миёна, ZIP/BZip2 тез
+txt_7_1_renfilesonly: Танҳо файлҳоро номиваз кунед
+txt_7_1_typetosearch: Барои ҷустуҷӯ дар роҳи ҷорӣ нависед
+txt_7_1_type_description_zstd: Zstandard: фишурдсозандаи тези Facebook, кушодани бисёр зуд
+txt_7_0_af: Таҳлили муҳтавои ҷузъгирҳо
+txt_7_0_autoopentar: Кушодани худкори бойгони ягонаи tar дар дохили файлҳои tar.*
+txt_7_0_exttmppath: Мундариҷа берун аз роҳи кори муваққатӣ истихроҷ мешавад, дар: 
+txt_6_9_autou: Навсозии худкори файлҳои тағйирёфта дар бойгонҳо
+txt_6_9_forceu: Бо маҷбурӣ нав кардани файлҳои тағйирёфта дар бойгонҳо
+txt_6_9_opuns: Амал барои ин намуди бойгон дастгирӣ намешавад
+txt_6_9_overarch: Файл(ҳо)-и ҳамноми дар бойгон мавҷудбударо бознавис намоем?
+txt_6_9_uconf: Файли пешнамоишшуда тағйир ёфт. Бойгони ҷориро нав мекунем?
+txt_6_8_ndrop: Истифодаи Drag And Drop‑и ватанӣ дар Windows
+txt_6_7_nop: (бе пешнамоиш)
+txt_6_6_pdupfound: такрори эҳтимолӣ ёфт шуд (санҷиши тахминии зуд)
+txt_6_6_rsh: Таърихи ҷустуҷӯро бозгузорӣ кунед
+txt_6_6_pdupfind: Пешниҳоди такрори эҳтимолӣ
+txt_6_6_forcemodify: Кӯшиши таҳрири навъҳои файл, ки расман дастгирӣ намешаванд
+txt_6_5_mandatory: (зарурӣ)
+txt_6_5_abort: Бекор кардан
+txt_6_5_askp: Ҳангоми оғоз парол пурсидан
+txt_6_5_chp: Ивази парол
+txt_6_5_def: Таъриф
+txt_6_5_nop: Ҳангоми оғоз парол напурсед
+txt_6_5_error: Хатогӣ
+txt_6_5_seqerr: Хатогӣ(ҳо) ёфт шуд, файлҳои аслӣ нест карда намешаванд
+txt_6_5_sni: Дар бар гирифтании иттилооти амнияти NT
+txt_6_5_sns: Дар бар гирифтании ҷараёни иловагии маълумоти NTFS
+txt_6_5_privacy: Махфият
+txt_6_5_showvolatile: Нишон додани имконоти муваққатӣ / вобаста ба замина
+txt_6_5_force: Кӯшиш барои кушодани бойгонҳои дорои хато
+txt_6_5_warning: Огоҳӣ
+txt_6_5_yes: Ҳа
+txt_6_5_yesall: Ҳа ба ҳама
+txt_6_5_np: Ҳоло шумо метавонед пароли бойгон(ҳо)-и табдилёфтаро ба нав иваз кунед, ё паролро холӣ гузоред, то рамзгузориро гузаред
+txt_6_4_absolute: Роҳҳои мутлақ
+txt_6_4_appdirn: Илова кардани номи ҷузъгир
+txt_6_4_closeallother: Бастани ҳамаи варақаҳои дигар
+txt_6_4_closeright: Бастани варақаҳои тарафи рост
+txt_6_4_collapse: Печонидани варақаҳо
+txt_6_4_expand: Кушодани варақаҳо
+txt_6_4_full: Роҳҳои пурра
+txt_6_4_new: Нав
+txt_6_4_openintab: Кушодан дар варақаи нав
+txt_6_4_paths: Роҳҳо
+txt_6_4_prepdirn: Пешгузоштани номи ҷузъгир
+txt_6_4_relative: Роҳҳои нисбӣ
+txt_6_4_tabbar: Лавҳаи варақаҳо
+txt_6_3_autoadjust: Танзими худкори сутунҳо
 txt_6_3_cinfo: Info and comments
 txt_6_3_syn: Synchronize archive with disk
 txt_6_3_uar: Update only files already in archive
