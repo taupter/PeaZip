@@ -3,23 +3,23 @@ Persian
 10.7
 Translated by: Alireza Rashidi
 Last rev. by: Alireza Rashidi
-Last rev.: 20250722
+Last rev.: 20251030
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
+txt_10_7_errload: نمی‌توان تصویر را نمایش داد
+txt_10_7_errfile: فایل یافت نشد
+txt_10_7_first: اولی
+txt_10_7_fit: متناسب با صفحه
+txt_10_7_fith: متناسب با ارتفاع صفحه
+txt_10_7_fitw: متناسب با عرض صفحه
+txt_10_7_keep: نگه داشتن فایل‌های خروجی در صورت بروز خطا یا لغو عملیات استخراج
+txt_10_7_next: بعدی
+txt_10_7_prev: قبلی
+txt_10_7_pwh: گذرواژه از هش
+txt_10_7_images: نمایش تصاویر
+txt_10_7_thumbnails: نمایش تصاویر بندانگشتی
+txt_10_6_virtual: حالت مجازی پویا
 txt_10_5_fr: (گزارش کامل)
 txt_10_5_sectype: درخواست پذیرش برای اجرای انواع پرونده‌های زیر
 txt_10_5_checkmotw: بررسی Zone.Identifier (MoTW)
