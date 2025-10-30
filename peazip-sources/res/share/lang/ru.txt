@@ -3,32 +3,32 @@
 10.7
 Перевод: Rytikov Slava, Dmitry Tsvetkov, xoxmodav, ViktorOn , Aleksandr (yupiter43@gmail.com)
 Посл. пров.: ViktorOn
-Посл. ред.: 25.02.2025
+Посл. ред.: 30.10.2025
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
+txt_10_7_errload: Не удаётся отобразить изображение
+txt_10_7_errfile: Файл не найден
+txt_10_7_first: Первый
+txt_10_7_fit: По размеру экрана
+txt_10_7_fith: По высоте экрана
+txt_10_7_fitw: По ширине экрана
+txt_10_7_keep: Сохранять выходные файлы, если извлечение завершилось ошибкой или было отменено
+txt_10_7_next: Далее
+txt_10_7_prev: Назад
+txt_10_7_pwh: Пароль из хэша
+txt_10_7_images: Просмотр изображений
+txt_10_7_thumbnails: Просмотр миниатюр
+txt_10_6_virtual: Динамический виртуальный режим
+txt_10_5_fr: (подробный отчёт)
+txt_10_5_sectype: Запрашивать подтверждение при запуске следующих типов файлов
+txt_10_5_checkmotw: Проверять Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Запустить этот файл?
+txt_10_5_pathlock: Объекты по этому пути в архиве нельзя редактировать
+txt_10_5_type_description_rar: RAR: проприетарный формат архива, высокая степень сжатия, поддерживается внешним компрессором
+txt_10_5_sh: Показывать скрытые файлы и папки в файловой системе
+txt_10_5_ntfsalt: Этот формат может хранить альтернативные потоки данных NTFS, включая Mark of The Web
+txt_10_4_moving: (Перемещение)
 txt_10_3_classic: Классический
 txt_10_3_ascii: Рекомендуется использовать только ASCII-символы в паролях для текущего формата архива (буквы в верхнем и нижнем регистре, цифры и спецсимволы).
 txt_10_3_minimal: Минималистичный
