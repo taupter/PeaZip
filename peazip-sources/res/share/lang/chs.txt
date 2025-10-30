@@ -3,22 +3,22 @@ Simplified Chinese - 简体中文
 10.7
 Translated by: Aerowolf, Junde Yhi, Dingzhong Chen, yangyangdaji, ddzzkunye, 無情天, 风之暇想
 Last rev. by: yangyangdaji
-Last rev.: 20250810
+Last rev.: 20251030
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
+txt_10_7_errload: 无法显示图像
+txt_10_7_errfile: 未找到文件
+txt_10_7_first: 第一个
+txt_10_7_fit: 适合屏幕
+txt_10_7_fith: 适合屏幕高度
+txt_10_7_fitw: 适合屏幕宽度
+txt_10_7_keep: 如果解压过程中出错或被取消，保留输出文件
+txt_10_7_next: 下一个
+txt_10_7_prev: 上一个
+txt_10_7_pwh: 从哈希获取密码
+txt_10_7_images: 查看图像
+txt_10_7_thumbnails: 查看缩略图
 txt_10_6_virtual: 动态虚拟模式
 txt_10_5_fr: （完整报告）
 txt_10_5_sectype: 在运行下列文件类型之前询问确认
