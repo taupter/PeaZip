@@ -692,75 +692,78 @@ txt_2_5_mini_help: Localized Tutorial
 txt_2_5_offline_help: PeaZip кумак
 txt_2_5_tray: Ба трей гузарондан
 txt_2_5_remove: Несткунӣ
-txt_2_5_hintpaths: Rightclick to open system's and user's paths
-txt_2_5_selectapp: Select application
-txt_2_5_strafter: String after input name
-txt_2_5_strbefore: String before input name
-txt_2_5_encoding: Text encoding
-txt_2_5_nopw: this type of archives does not support encryption
-txt_2_4_draghint: [drag to Explorer with enabled Address bar]
-txt_2_4_tb: Adapt toolbar buttons (restarts PeaZip)
-txt_2_4_adding: Adding
-txt_2_4_advclip: Clipboard keeps multiple selections
-txt_2_4_yanswers: Answers
-txt_2_4_itemsheight: Auto-size items height
-txt_2_4_clearclipboard: Clear clipboard (Esc)
+txt_2_5_hintpaths: Барои кушодани роҳҳои система ва корбар тугмаи ростро пахш кунед
+txt_2_5_selectapp: Барномаро интихоб кунед
+txt_2_5_strafter: Сатр пас аз номи вуруд
+txt_2_5_strbefore: Сатр пеш аз номи вуруд
+txt_2_5_encoding: Кодиронӣ (encoding) матн
+txt_2_5_nopw: ин намуди архивҳо рамзгузориро дастгирӣ намекунанд
+txt_2_4_draghint: [ба Explorer бо фаъол будани панели Суроға кашед]
+txt_2_4_tb: Тугмаҳои панели асбобҳоро мутобиқ кунед (PeaZip аз нав оғоз меёбад)
+txt_2_4_adding: Илова кардан
+txt_2_4_advclip: Буфер (Clipboard) интихобҳои сершуморро нигоҳ медорад
+txt_2_4_yanswers: Ҷавобҳо
+txt_2_4_itemsheight: Баландии ҷузъҳоро худкор танзим кунед
+txt_2_4_clearclipboard: Буферро тоза кунед (Esc)
 txt_2_4_wcommons: Commons
-txt_2_4_copyfrom: Нусхакунӣ дар
-txt_2_4_deletebookmarks: Do you want to delete the list of bookmarked files and folders?
-txt_2_4_documents: Documents
-txt_2_4_wenc: Encyclopedia
-txt_2_4_extractfrom: Extract from
-txt_2_4_hexp: Hex preview
-txt_2_4_operation: Operation
-txt_2_4_path: path is not writeable (i.e. read-only). Do you want to select a writeable output path?
-txt_2_4_removefromclipboard: Remove from clipboard
-txt_2_4_stdclip: Standard: keep a single selection in clipboard, clear cut operations on paste
-txt_2_4_totalmem: total memory
-txt_2_4_gvideo: Video
+txt_2_4_copyfrom: Нусхакунӣ аз
+txt_2_4_deletebookmarks: Оё мехоҳед рӯйхати файлҳо ва ҷузвдонҳои нишондодашударо нест кунед?
+txt_2_4_documents: Ҳуҷҷатҳо
+txt_2_4_wenc: Энсиклопедия
+txt_2_4_extractfrom: Гирифтан аз
+txt_2_4_hexp: Намоиши пешакии Hex
+txt_2_4_operation: Амалиёт
+txt_2_4_path: роҳ навишта намешавад (яъне танҳо барои хондан аст). Оё мехоҳед роҳи баромади навишташавандаро интихоб кунед?
+txt_2_4_removefromclipboard: Аз буфер хориҷ кунед
+txt_2_4_stdclip: Стандартӣ: дар буфер як интихобро нигоҳ доред, амалиёти буриданро ҳангоми часпонидан тоза кунед
+txt_2_4_totalmem: хотираи умумӣ
+txt_2_4_gvideo: Видео
 txt_2_4_wbook: Wikibook
 txt_2_4_wnews: Wikinews
 txt_2_4_wsrc: Wikisource
 txt_2_4_wdict: Wiktionary
-txt_2_3_pw_errorchar: quote character cannot be used by PeaZip GUI in passwords under current system, please change password or chose Console mode in Backend binaries user interface in Options > Settings
-txt_2_3_envstr: Display environment variables
-txt_2_3_never_pw: Don't ask for password
-txt_2_3_home: User's home
-txt_2_3_on_pw: On extract/list/test operations from system's menus:
-txt_2_3_test_pw100: Test for encryption <100MB archives
-txt_2_3_test_pw: Test for encryption (may be slow)
-txt_exclude_recourse: "exclude" recurse subdirs
-txt_action_extopen: "Extract and open with associated application" action
-txt_error_passwordnotmatch: "Password" and "Confirm password" fileds doesn't match, please correct them
-txt_action_preview: "Preview with associated application" action
-txt_preview_hint: "Preview" action perform the same task as "Extract and open" but to a temporary path in output directory, automathically removed when the archive is closed.
-txt_better: (better)
+txt_2_3_pw_errorchar: аломати нохунак аз ҷониби PeaZip GUI дар паролҳо дар системаи ҷорӣ истифода бурда намешавад, лутфан паролро иваз кунед ё дар Параметрҳо > Танзимот режими Консолро дар интерфейси корбарии файлҳои Backend интихоб кунед
+txt_2_3_envstr: Тағйирёбандаҳои муҳитро намоиш диҳед
+txt_2_3_never_pw: Паролро напурсед
+txt_2_3_home: Хом-папкаи корбар
+txt_2_3_on_pw: Дар амалиёти гирифтан/рӯйхат/озмоиш аз менюҳои система:
+txt_2_3_test_pw100: Рамзгузориро барои архивҳои <100MB санҷед
+txt_2_3_test_pw: Рамзгузориро санҷед (шояд суст бошад)
+txt_exclude_recourse: "хориҷ кардан" ҷузвдонҳои فرъиро такрор мекунад
+txt_action_extopen: Амали "Гирифтан ва бо барномаи алоқаманд кушодан"
+txt_error_passwordnotmatch: Майдонҳои "Парол" ва "Паролро тасдиқ кунед" мувофиқат намекунанд, лутфан онҳоро ислоҳ кунед
+txt_action_preview: Амали "Намоиши пешакӣ бо барномаи алоқаманд"
+txt_preview_hint: Амали "Намоиши пешакӣ" ҳамон вазифаро иҷро мекунад, ки "Гирифтан ва кушодан", аммо ба роҳи муваққатии дар ҷузвдони баромад ҷойгиршуда, ки ҳангоми пӯшидани архив ба таври худкор нест карда мешавад.
+txt_better: (беҳтар)
 txt_default2: (пешфарз)
 txt_faster: (тез)
-txt_fastermem: (faster, less memory)
-txt_tempdir: (PeaZip's temporary work folder)
-txt_stream: (set by "Stream control")
-txt_slowermem: (slower, more memory)
-txt_store: (store, fastest)
-txt_newfolder: (in new folder)
-txt_7z_exitcodeunknown: : Unknown error in task
-txt_list_isfolder:  [ҷузъгир]
+txt_fastermem: (тезтар, хотираи камтар)
+txt_tempdir: (Ҷузвдони муваққатии кори PeaZip)
+txt_stream: (бо "Stream control" муқаррар карда шудааст)
+txt_slowermem: (сусттар, хотираи бештар)
+txt_store: (нигоҳ доштан, тезтарин)
+txt_newfolder: (дар ҷузвдони нав)
+txt_7z_exitcodeunknown: : Хатогии номаълум дар вазифа
+txt_list_isfolder: [ҷузъгир]
 txt_none: <нест>
-txt_fd: 1.44 MB Floppy Disk
-txt_7z_exitcode1: 1: Warning: non fatal error(s); i.e. some files missing or locked
-txt_attach10: 10 MB (attachment limit)
-txt_7z_exitcode2: 2: Fatal error occurred
-txt_7z_exitcode255: 255: Task halted by the user
-txt_fat32: 4 GB (max FAT32 file size)
-txt_dvd: 4.7 GB DVD
-txt_attach5: 5 MB (attachment limit)
-txt_cd650: 650 MB CD
-txt_7z_exitcode7: 7: Error: got incorrect command line
-txt_cd700: 700 MB CD
-txt_type_description_7z: 7Z: feature rich archive format with high compression ratio
-txt_dvddl: 8.5 GB DVD DL
-txt_7z_exitcode8: 8: Error: not enough memory for requested operation
-txt_abort: Abort scheduled file copy/move operations?
+txt_fd: 1.44 МБ Диски нарм (Floppy Disk)
+txt_7z_exitcode1: 1: Огоҳӣ: хатогиҳои марговар набуда; яъне баъзе файлҳо гум шудаанд ё қулф шудаанд
+txt_attach10: 10 МБ (маҳдудияти замима)
+txt_7z_exitcode2: 2: Хатогии марговар рух дод
+txt_7z_exitcode255: 255: Вазифа аз ҷониби корбар қатъ карда шуд
+txt_fat32: 4 ГБ (максимум андозаи файли FAT32)
+txt_dvd: 4.7 ГБ DVD
+txt_attach5: 5 МБ (маҳдудияти замима)
+txt_cd650: 650 МБ CD
+txt_7z_exitcode7: 7: Хатогӣ: сатри фармони нодуруст гирифта шуд
+txt_cd700: 700 МБ CD
+txt_type_description_7z: 7Z: формати бойгонии дорои хусусиятҳои зиёд бо таносуби баланди фишурдасозӣ
+txt_dvddl: 8.5 ГБ DVD DL
+txt_7z_exitcode8: 8: Хатогӣ: барои амалиёти дархостшуда хотираи кофӣ нест
+txt_abort: Амалиёти нусхабардорӣ/кӯчонидани файли ба нақша гирифташударо бекор кунед?
+txt_about: Дар бораи
+txt_action: Амал
+txt_action_hint: Амал ҳангоми кушодан ё намоиши пешакӣ бо барномаи алоқаманд
 txt_about: Дар бораи
 txt_action: Амал
 txt_action_hint: Action on open or preview with associated application
@@ -778,596 +781,596 @@ txt_adv_filters: Advanced filters
 txt_algo: Алгоритм
 txt_all: ҳама
 txt_all_default: Ҳама (пешфарз)
-txt_all_type: All objects of this type
-txt_all_date: All objects with date...
-txt_all_psize: All objects with packed size...
-txt_all_attributes: All objects with same attributes
-txt_all_size: All objects with size...
-txt_error_input_upx: allows a single executable file as input
+txt_all_type: Ҳамаи объектҳои ин намуд
+txt_all_date: Ҳамаи объектҳо бо сана...
+txt_all_psize: Ҳамаи объектҳо бо андозаи фишурда...
+txt_all_attributes: Ҳамаи объектҳо бо ҳамон хусусиятҳо
+txt_all_size: Ҳамаи объектҳо бо андоза...
+txt_error_input_upx: як файли иҷрошавандаро ҳамчун вуруд иҷозат медиҳад
 txt_always_pw: Доим калимаи рамзро пурсидан
-txt_ignore_ext: Always ignore paths for "Extract and..."
-txt_ignore_disp: Always ignore paths for "Extract displayed..."
-txt_ignore_sel: Always ignore paths for "Extract selected..."
-txt_key_hint: Append keyfile's hash to password; the archive can be decrypted by PeaZip and other applications following the same standard, or entering the hash as part of the password
-txt_timestamp: Append timestamp to archive name
-txt_appoptions: Application options
-txt_type_description_arc: ARC: experimental archiver, powerful, efficient and feature-rich
+txt_ignore_ext: Роҳҳоро ҳамеша барои "Гирифтан ва..." нодида гиред
+txt_ignore_disp: Роҳҳоро ҳамеша барои "Гирифтани намоишшуда..." нодида гиред
+txt_ignore_sel: Роҳҳоро ҳамеша барои "Гирифтани интихобшуда..." нодида гиред
+txt_key_hint: Ҳеши файли калидро ба парол илова кунед; архив метавонад аз ҷониби PeaZip ва дигар барномаҳое, ки ҳамон стандартиро риоя мекунанд, ё бо ворид кардани ҳеш ҳамчун як қисми парол, рамзкушоӣ карда шавад.
+txt_timestamp: Сана/вақтро ба номи архив илова кунед
+txt_appoptions: Танзимоти барнома
+txt_type_description_arc: ARC: бойгони таҷрибавӣ, пурқувват, самаранок ва дорои хусусиятҳои зиёд
 txt_archive: Бойгон
-txt_un7z_browse_ok: archive browsed successfully
-txt_interface: Archive browser interface
-txt_archivecreation: Archive creation
-txt_tarbefore_hint: Archive data in TAR format before than in specified type.
-txt_archive_hint: Archive, compress, split and keep private files, folders and volumes
-txt_compressionratio_hint: Archive's compression ratio
+txt_un7z_browse_ok: архив бомуваффақият дида шуд
+txt_interface: Интерфейси браузери архив
+txt_archivecreation: Сохтани архив
+txt_tarbefore_hint: Маълумоти бойгониро дар формати TAR пеш аз намуди муайяншуда захира кунед.
+txt_archive_hint: Бойгонӣ, фишурдан, тақсим кардан ва файлҳо, ҷузвдонҳо ва ҳаҷмҳои шахсиро нигоҳ доштан
+txt_compressionratio_hint: Таносуби фишурдасозии архив
 txt_archiving: Бойгон:
-txt_cl_long: Arguments seem exceeding the maximum size that can be passed by PeaZip frontend, please select less input files (i.e. select dirs instead of single files)
-txt_overwrite_askbefore: Ask before overwriting (in console)
-txt_associated: Associated application
-txt_attributes: Attributes
+txt_cl_long: Чунин ба назар мерасад, ки аргументҳо аз андозаи максималие, ки метавонад аз ҷониби PeaZip frontend интиқол дода шавад, зиёд аст, лутфан файлҳои вуруди камтарро интихоб кунед (яъне ба ҷои файлҳои ягона ҷузвдонҳоро интихоб кунед)
+txt_overwrite_askbefore: Пеш аз аз нав навиштан пурсед (дар консол)
+txt_associated: Барномаи алоқаманд
+txt_attributes: Хусусиятҳо
 txt_author: Муаллиф
-txt_ren_existing: Auto rename existing files
-txt_ren_extracted: Auto rename extracted files
-txt_autofolder: Automatically create new folder to extract the archive in?
+txt_ren_existing: Файлҳои мавҷударо худкор номи нав диҳед
+txt_ren_extracted: Файлҳои гирифташударо худкор номи нав диҳед
+txt_autofolder: Барои гирифтани архив ба таври худкор ҷузвдони нав сохта шавад?
 txt_back: Ба қафо
-txt_backend: Backend binaries user interface
-txt_backupexe: Backup executable (recommended)
-txt_bettercompression: better compression
+txt_backend: Интерфейси корбарии файлҳои backend
+txt_backupexe: Файли иҷрошавандаи эҳтиётӣ (тавсия дода мешавад)
+txt_bettercompression: фишурдасозии беҳтар
 txt_blogs: Блокҳо
-txt_blowfish: Blowfish448 (64 bit blocks)
+txt_blowfish: Blowfish448 (64 бит блокҳо)
 txt_bookmarks: Хатчӯпҳо
 txt_browse: Чашмандозӣ
 txt_browser: Браузер
-txt_aborted_error: Browsing archive stopped, it would take too much time. You can narrow the selection using search (F3) or exiting Flat view mode (F6); extract/list/test operations are not affected by this issue.
-txt_list_browsing: Browsing
-txt_archive_root: Browsing: archive's root
-txt_type_description_bzip2: BZip2: quite powerful compression, average speed
-txt_pw_empty: Please provide a password (or a keyfile)
-txt_add_error: Cannot add/update or delete object(s); probably the archive type has browse/extract only support, or cannot support that particular operation (i.e. it's multi-volume or solid), or PeaZip cannot fully handle the archive name
-txt_un7z_browse_failure: cannot browse archive
-txt_list_error: Cannot list archive's content, please check if the archive is password protected or corrupted.
-txt_conf_cannotsave: Cannot save configuration file, check if the path is writeable and with some free space
-txt_check_hint: Check for casual data corruption; hash algorithms are suitable to detect even malicious data tampering (see the documentation)
-txt_check: Checksum/hash file(s)
-txt_check_select: Checksum/hash
+txt_aborted_error: Дидани архив қатъ карда шуд, он вақти зиёдро мегирад. Шумо метавонед интихобро бо истифода аз ҷустуҷӯ (F3) ё баромадан аз режими намоиши Flat (F6) маҳдуд кунед; амалиёти гирифтан/рӯйхат/озмоиш аз ин масъала осеб намебинанд.
+txt_list_browsing: Дида баромадан
+txt_archive_root: Дида баромадан: решаи архив
+txt_type_description_bzip2: BZip2: фишурдасозии хеле пурқувват, суръати миёна
+txt_pw_empty: Лутфан парол (ё файли калид) пешниҳод кунед
+txt_add_error: Объект(ҳо)-ро илова/навсозӣ ё нест кардан мумкин нест; эҳтимол намуди архив танҳо дастгирии дидан/гирифтанро дорад, ё ин амалиёти мушаххасро дастгирӣ карда наметавонад (яъне он бисёр-ҳаҷмӣ ё сахт аст), ё PeaZip наметавонад номи архив/амалиётро пурра идора кунад
+txt_un7z_browse_failure: архивро дидан мумкин нест
+txt_list_error: Мундариҷаи архивро рӯйхат кардан мумкин нест, лутфан тафтиш кунед, ки архив бо парол ҳифз шудааст ё вайрон шудааст.
+txt_conf_cannotsave: Файли конфигуратсияро захира кардан мумкин нест, тафтиш кунед, ки роҳ навишташаванда аст ва дорои ҷои холӣ аст
+txt_check_hint: Вайроншавии тасодуфии маълумотро тафтиш кунед; алгоритмҳои ҳеш ҳатто тағирёбии зараровари маълумотро ошкор кардан мувофиқанд (ба ҳуҷҷатҳо нигаред)
+txt_check: Файлҳои ҳисобкунаки маҷмӯӣ/ҳеш
+txt_check_select: Ҳисобкунаки маҷмӯӣ/ҳеш
 txt_clear: Пок кардан
-txt_clearlayout: Clear layout
-txt_pj_hint: Click to import task, reset changes and load up to date task definition from GUI
-txt_autoclose: Close PeaLauncher when task completes
-txt_cl: command line:
-txt_compare: Compare files
+txt_clearlayout: Намуди зоҳириро тоза кунед
+txt_pj_hint: Барои ворид кардани вазифа, аз нав танзим кардани тағирот ва бор кардани таърифи вазифаи муосир аз GUI клик кунед
+txt_autoclose: PeaLauncher-ро ҳангоми анҷоми вазифа пӯшед
+txt_cl: сатри фармон:
+txt_compare: Файлҳоро муқоиса кунед
 txt_compress: Фишордиҳӣ
-txt_compress_executable: Compress executable
-txt_compress_openforwriting: Compress files open for writing
+txt_compress_executable: Файли иҷрошавандаро фишуред
+txt_compress_openforwriting: Файлҳои барои навиштан кушодаро фишуред
 txt_compression: Фишордиҳӣ
-txt_compmanagement: Computer management
+txt_compmanagement: Идоракунии компютер
 txt_pw_confirm: Тасдиқкуни калимаи рамз
 txt_console: Консол
-txt_console_interface: Console: native interface
+txt_console_interface: Консол: интерфейси маҳаллӣ
 txt_content: Мундариҷа
-txt_controlpanel: Control panel
+txt_controlpanel: Панели идоракунӣ
 txt_convert: Табдилдиҳӣ диск ба NTFS
 txt_copy: Нусхакунӣ
 txt_copyto: Нусхакуни ба...
 txt_create: Сохтан
 txt_create_archive: Сохтани бойгон
-txt_title_create: Create archive, compress, encrypt, split...
-txt_create_keyfile: Create keyfile
-txt_create_folder: Create new folder
-txt_create_theme: Create Theme from current settings
-txt_rr: Create recovery records
+txt_title_create: Архив созед, фишуред, рамзгузорӣ кунед, тақсим кунед...
+txt_create_keyfile: Файли калид созед
+txt_create_folder: Ҷузвдони нав созед
+txt_create_theme: Аз танзимоти ҷорӣ Тема созед
+txt_rr: Сабтҳои барқарорсозӣ созед
 txt_create_sfx: Сохтани SFX-бойгон
-txt_cr_current: Current path or filter compression ratio
-txt_custom: Custom
-txt_type_description_custom: Custom (advanced users): enter executable name and parameters
-txt_customapp: Custom application
-txt_custom_parameters: Custom parameters
-txt_customsize: Custom size
+txt_cr_current: Таносуби фишурдасозии роҳ ё филтри ҷорӣ
+txt_custom: Фармоишӣ
+txt_type_description_custom: Фармоишӣ (корбарони пешрафта): номи иҷрошаванда ва параметрҳоро ворид кунед
+txt_customapp: Барномаи фармоишӣ
+txt_custom_parameters: Параметрҳои фармоишӣ
+txt_customsize: Андозаи фармоишӣ
 txt_cut: Буридан
 txt_datetime: Сана/вақт
 txt_default: пешфарз
-txt_default_compression: default compression
-txt_default_format: Default format
-txt_theme_default: Default theme
-txt_hard_reset_hint: Delete bookmarks file
+txt_default_compression: фишурдасозии пешфарз
+txt_default_format: Формати пешфарз
+txt_theme_default: Темаи пешфарз
+txt_hard_reset_hint: Файли хатчӯбҳоро нест кунед
 txt_desktop: Мизи кор
 txt_dictionary: Луғат
-txt_dirs: dir(s),
-txt_dis: Disambiguation:
-txt_disk_cleanup: Disk cleanup
-txt_disk_defrag: Disk defrag
-txt_disk_management: Disk management
-txt_dispaly: Display results as
-txt_displayedmnu_obj: displayed
-txt_displayedobjects: Displayed objects
-txt_nocompress: do not compress
-txt_delete: Do you want to delete selected file(s)? The operation can't be undone and files will be not recoverable from recycle bin
-txt_wipe: Do you want to securely delete selected file(s)? The operation can't be undone and files will be not recoverable
+txt_dirs: ҷузвдон(ҳо),
+txt_dis: Тавзеҳот:
+txt_disk_cleanup: Тозакунии диск
+txt_disk_defrag: Дефрагментатсияи диск
+txt_disk_management: Идоракунии диск
+txt_dispaly: Натиҷаҳоро ҳамчун намоиш диҳед
+txt_displayedmnu_obj: намоишшуда
+txt_displayedobjects: Объектҳои намоишшуда
+txt_nocompress: фишурда накунед
+txt_delete: Оё мехоҳед файл(ҳо)-и интихобшударо нест кунед? Амалиёт баргардонида намешавад ва файлҳо аз қуттии партов барқарор карда намешаванд
+txt_wipe: Оё мехоҳед файл(ҳо)-и интихобшударо бехатар нест кунед? Амалиёт баргардонида намешавад ва файлҳо барқарор карда намешаванд
 txt_done: Адо шуд
 txt_edit: Таҳрир
 txt_elapsed: гузашт:
-txt_error_emptycl: Ҳолии сатри фармон!
-txt_encrypt: Encrypt
-txt_encrypted: encrypted
-txt_encryption: Encryption
-txt_note: Enter note/description
-txt_random_keys: Enter random keys
-txt_random_keys_hint: Enter random keys (you not have to remember)
-txt_ent: Enthropy evaluation
-txt_ent_tools: Move the mouse or use additional enthropy sampling tools
-txt_eqorlarger: equal or larger than selected object
-txt_eqorrecent: equal or more recent than selected object
-txt_eqorolder: equal or older than selected object
-txt_eqorsmaller: equal or smaller than selected object
-txt_equal: equal to selected object
-txt_erase_hint: Secure delete: overwrite with random data, mask size, rename, finally delete
-txt_extraction_error: Error extracting the selected object. If the archive is password protected please provide it
-txt_exclude_hint: Exclude file(s), one per line; use * and ? wildcards; " and ' delimiters are not needed
-txt_exclusion_recourse: Exclusion filters recurse subdirs
-txt_exclusion: Exclusion:
+txt_error_emptycl: Сатри фармон холӣ аст!
+txt_encrypt: Рамзгузорӣ кунед
+txt_encrypted: рамзгузорӣ шудааст
+txt_encryption: Рамзгузорӣ
+txt_note: Эзоҳ/тавсифро ворид кунед
+txt_random_keys: Калидҳои тасодуфӣ ворид кунед
+txt_random_keys_hint: Калидҳои тасодуфӣ ворид кунед (ба шумо дар хотир нигоҳ доштан лозим нест)
+txt_ent: Арзёбии энтропия
+txt_ent_tools: Мушро ҳаракат диҳед ё асбобҳои иловагии интихоби энтропияро истифода баред
+txt_eqorlarger: баробар ё калонтар аз объекти интихобшуда
+txt_eqorrecent: баробар ё навтар аз объекти интихобшуда
+txt_eqorolder: баробар ё кӯҳнатар аз объекти интихобшуда
+txt_eqorsmaller: баробар ё хурдтар аз объекти интихобшуда
+txt_equal: ба объекти интихобшуда баробар
+txt_erase_hint: Нест кардани бехатар: бо маълумоти тасодуфӣ аз нав навиштан, андозаи ниқоб, номи нав додан, ниҳоят нест кардан
+txt_extraction_error: Хатогӣ ҳангоми гирифтани объекти интихобшуда. Агар архив бо парол ҳифз шуда бошад, лутфан онро пешниҳод кунед
+txt_exclude_hint: Файл(ҳо)-ро хориҷ кунед, якто дар як сатр; аломатҳои ёрирасони * ва ?-ро истифода баред; ҷудокунандаҳои " ва ' лозим нест
+txt_exclusion_recourse: Филтрҳои истисноӣ ҷузвдонҳои فرъиро такрор мекунанд
+txt_exclusion: Истисно:
 txt_exe: EXE-файл
-txt_overwrite_qry: exists in destination path; overwrite with file(s) with same name from source path? (Cancel: skip copying this objecy)
-txt_confirm_overwrite: exists; overwrite it? (no to skip)
-txt_explore_outpath: Explore output path
-txt_explore_path: Explore path
-txt_ext: Ext:
+txt_overwrite_qry: дар роҳи таъинот мавҷуд аст; бо файл(ҳо)-и ҳамном аз роҳи манбаъ аз нав навишта шавад? (Бекор: нусхабардории ин объектро гузаред)
+txt_confirm_overwrite: мавҷуд аст; аз нав навишта шавад? (не барои гузаштан)
+txt_explore_outpath: Роҳи баромадро биомӯзед
+txt_explore_path: Роҳро биомӯзед
+txt_ext: Кенг:
 txt_caption_extract: Истихроҷ
 txt_ext_nopath: Истихроҷ (бе роҳ)
 txt_ext_all: Истихроҷкуни ҳама
 txt_ext_allhere: Истихроҷкуни ҳамаш ба ин ҷо
 txt_ext_allto: Истихроҷкуни ҳамаш ба
-txt_extopen_custom: Extract and open with custom application
-txt_extopen_with: Extract and open with...
-txt_ext_disp_here: Extract displayed here
-txt_ext_disp: Extract displayed object(s)
-txt_ext_disp_to: Extract displayed object(s) to...
+txt_extopen_custom: Гирифтан ва бо барномаи фармоишӣ кушодан
+txt_extopen_with: Гирифтан ва кушодан бо...
+txt_ext_disp_here: Намоишшударо дар ин ҷо гиред
+txt_ext_disp: Объект(ҳо)-и намоишшударо гиред
+txt_ext_disp_to: Объект(ҳо)-и намоишшударо ба... гиред
 txt_ext_here: Истихроҷкуни ба ин ҷо
 txt_ext_sel_here: Истихроҷкуни интихобҳо ин ҷо
 txt_ext_sel: Истихроҷкуни интихобшудаи объект(ҳо)
-txt_ext_sel_to: Extract selected object(s) to...
-txt_extobj: Extract the object
-txt_newfoldermenu: Extract in new folder
+txt_ext_sel_to: Объект(ҳо)-и интихобшударо ба... гиред
+txt_extobj: Объектро гиред
+txt_newfoldermenu: Дар ҷузвдони нав гиред
 txt_extto: Истихроҷкуни ба...
 txt_level_fast: Тез
-txt_fastcompr: fast compression
-txt_fastopen: Fast open routine, stop browsing extremely large archives, use filters instead
-txt_level_fastest: Fastest
-txt_favformats: Favorite formats
+txt_fastcompr: фишурдасозии тез
+txt_fastopen: Раванди кушодани тез, дидани архивҳои ниҳоят калонро қатъ кунед, ба ҷои он филтрҳоро истифода баред
+txt_level_fastest: Тезтарин
+txt_favformats: Форматҳои дӯстдошта
 txt_file: Файл
-txt_filebrowser: File browser / archive browser
-txt_filetools: File tools
+txt_filebrowser: Браузери файл / браузери архив
+txt_filetools: Асбобҳои файл
 txt_files: файл(ҳо),
 txt_nfiles: Файлҳо
-txt_fs: Filesystem
-txt_filters_recourse: filter(s) recurse subdirs
+txt_fs: Файлсистема
+txt_filters_recourse: филтр(ҳо) ҷузвдонҳои فرъиро такрор мекунанд
 txt_filters: Филтрҳо
-txt_flat: Flat (show all)
-txt_list_flat: Flat view
-txt_unit_floppy: Floppy disk
-txt_foldername: Folder name
-txt_nfolders: Folders
-txt_error_input_multi: format allows a single file as input; you can use "TAR before" switch to save input in a .TAR archive before, otherwise you can chose another format. HINT: chose archive format after had selected input data: "TAR before" switch will be automatically set
-txt_fwd: Forward
-txt_list_found: Found
+txt_flat: Ҳамвор (ҳамаро нишон диҳед)
+txt_list_flat: Намоиши ҳамвор
+txt_unit_floppy: Диски нарм
+txt_foldername: Номи ҷузвдон
+txt_nfolders: Ҷузвдонҳо
+txt_error_input_multi: формат як файли ягонаро ҳамчун вуруд иҷозат медиҳад; шумо метавонед гузариши "TAR before"-ро барои захира кардани вуруд дар архиви .TAR пештар истифода баред, дар акси ҳол шумо метавонед формати дигарро интихоб кунед. МАЪЛУМОТ: формати архивро пас аз интихоби маълумоти вуруд интихоб кунед: гузариши "TAR before" ба таври худкор муқаррар карда мешавад
+txt_fwd: Ба пеш
+txt_list_found: Ёфт шуд
 txt_free: Ҷои ҳолӣ
 txt_free2: ҳолӣ
 txt_name_full: Номи пурра
 txt_function: Функсия
 txt_general: Асосӣ
-txt_multithreading: generic multithreading
-txt_go_browser: Go to file browser
-txt_go_path: Explore path (PeaZip)
-txt_guicl: Graphic + console
-txt_guipealauncher: Graphic: wrapped by PeaLauncher
-txt_graphic: Graphic's folder
-txt_gridaltcolor: Grids alternate color
-txt_gridrowheight: Grids row height
+txt_multithreading: бисёрриштагии умумӣ
+txt_go_browser: Ба браузери файл гузаред
+txt_go_path: Роҳро биомӯзед (PeaZip)
+txt_guicl: Графика + консол
+txt_guipealauncher: Графика: бо PeaLauncher печонида шудааст
+txt_graphic: Ҷузвдони Графика
+txt_gridaltcolor: Ранги алтернативии торҳо
+txt_gridrowheight: Баландии сатри торҳо
 txt_gui: GUI
-txt_type_description_gzip: GZip: fast compression
+txt_type_description_gzip: GZip: фишурдасозии тез
 txt_here: ин ҷо
 txt_list_history: Таърих
-txt_homeroot: Computer/archive's root level
-txt_quickbrowse_hint: If browsing is stopped the user can narrow the selection using search or filter functions; extract/list/test functions are not affected in any way.
-txt_backupexe_hint: If something goes wrong and lead to a non functional result, you may recover the original executable from the authomatic backup copy
-txt_attach: If the mail client supports that command, the archive will be attached to a new mail
-txt_images: Images
-txt_include_hint: Include file(s), one per line; use * and ? wildcards; " and ' delimiters are not needed
-txt_filters_hint: Inclusion and exclusion filters for 7z binary, please carefully read 7-Zip documentation to understand how those filters works
-txt_inclusion_recourse: Inclusion filters recurse subdirs
-txt_inclusion: Inclusion:
-txt_error_function: Incorrect function requested
+txt_homeroot: Сатҳи решаи компютер/архив
+txt_quickbrowse_hint: Агар дидан қатъ карда шавад, корбар метавонад интихобро бо истифода аз функсияҳои ҷустуҷӯ ё филтр маҳдуд кунад; функсияҳои гирифтан/рӯйхат/озмоиш ба ҳеҷ ваҷҳ осеб намебинанд.
+txt_backupexe_hint: Агар чизе нодуруст бошад ва ба натиҷаи ғайрифаъол оварда расонад, шумо метавонед файли иҷрошавандаи аслиро аз нусхаи эҳтиётии худкор барқарор кунед
+txt_attach: Агар муштарии почта ин фармонро дастгирӣ кунад, архив ба паёми нав замима карда мешавад
+txt_images: Тасвирҳо
+txt_include_hint: Файл(ҳо)-ро дохил кунед, якто дар як сатр; аломатҳои ёрирасони * ва ?-ро истифода баред; ҷудокунандаҳои " ва ' лозим нест
+txt_filters_hint: Филтрҳои дохилкунӣ ва истисноӣ барои 7z binary, лутфан ҳуҷҷатҳои 7-Zip-ро бодиққат хонед, то фаҳмед, ки ин филтрҳо чӣ гуна кор мекунанд
+txt_inclusion_recourse: Филтрҳои дохилкунӣ ҷузвдонҳои فرъиро такрор мекунанд
+txt_inclusion: Дохилкунӣ:
+txt_error_function: Функсияи нодуруст дархост карда шуд
 txt_info: Маълумот
-txt_infoall: Info on all
-txt_infodisp: Info on displayed object(s)
-txt_infosel: Info on selected object(s)
-txt_inputinfo: Input information
-txt_input_list: Input list:
-txt_iop: input, output, parameters
-txt_ipo: input, parameters, output
-txt_input: input:
-txt_integrity: Integrity check
-txt_chunk_size: Invalid custom size, please correct it in a numerical value
-txt_invertsel: Invert selection
-txt_type_exe: is a Windows executable, do you want to run it? ("No" to try open it as archive) HINT: some executables may not properly run unless the whole archive is extracted before
-txt_return_to_archive: is currently open; do you want to browse it?
-txt_not_accessible: is no longer accessible
-txt_type_unsupported: is not a supported archive type
-txt_checkname_failed: is not a valid name.
-txt_not_accessible_list: is not accessible, please check if the file list provided is correct and up to date
-txt_theme_create_error: It was not possible to create the theme, try to use a name valid for a folder as theme name and to chose a writeable path
-txt_theme_exists: yet exists, please provide a different path
-txt_job_code: task code:
-txt_job_definition_saved: Task definition successfully saved in
-txt_job_success: Task successfully completed!
+txt_infoall: Маълумот дар бораи ҳама
+txt_infodisp: Маълумот дар бораи объект(ҳо)-и намоишшуда
+txt_infosel: Маълумот дар бораи объект(ҳо)-и интихобшуда
+txt_inputinfo: Маълумоти вуруд
+txt_input_list: Рӯйхати вуруд:
+txt_iop: вуруд, баромад, параметрҳо
+txt_ipo: вуруд, параметрҳо, баромад
+txt_input: вуруд:
+txt_integrity: Тафтиши якпорчагӣ
+txt_chunk_size: Андозаи фармоишии нодуруст, лутфан онро дар арзиши ададӣ ислоҳ кунед
+txt_invertsel: Интихобро баръакс кунед
+txt_type_exe: файли иҷрошавандаи Windows аст, оё мехоҳед онро иҷро кунед? ("Не" барои кӯшиши кушодани он ҳамчун архив) МАЪЛУМОТ: баъзе файлҳои иҷрошаванда метавонанд дуруст кор накунанд, агар тамоми архив пешакӣ гирифта нашавад
+txt_return_to_archive: ҳоло кушода аст; оё мехоҳед онро дидан кунед?
+txt_not_accessible: дигар дастрас нест
+txt_type_unsupported: намуди архиви дастгирӣшаванда нест
+txt_checkname_failed: номи дуруст нест.
+txt_not_accessible_list: дастрас нест, лутфан тафтиш кунед, ки рӯйхати файлҳои пешниҳодшуда дуруст ва нав аст
+txt_theme_create_error: Сохтани тема имконнопазир буд, кӯшиш кунед, ки номи барои ҷузвдон дурустро ҳамчун номи тема истифода баред ва роҳи навишташавандаро интихоб кунед
+txt_theme_exists: аллакай мавҷуд аст, лутфан роҳи дигарро пешниҳод кунед
+txt_job_code: коди вазифа:
+txt_job_definition_saved: Таърифи вазифа бомуваффақият захира карда шуд дар
+txt_job_success: Вазифа бомуваффақият анҷом ёфт!
 txt_join: Васлкунӣ
 txt_joinfiles: Васлкуни файлҳо
 txt_keyfile: Муҳим файл
-txt_keyfile_not_found: Keyfile cannot be found or read. Please chose a different Keyfile.
-txt_keyfile_notcreated: KeyFile not created
-txt_larger: larger than selected object
-txt_lastused: Last used
-txt_launch: Launch task
-txt_layout: Layout
-txt_filelist_savedas: Layout saved as
+txt_keyfile_not_found: Файли калид ёфт нашуд ё хонда намешавад. Лутфан файли калиди дигарро интихоб кунед.
+txt_keyfile_notcreated: Файли калид сохта нашуд
+txt_larger: калонтар аз объекти интихобшуда
+txt_lastused: Охирин истифодашуда
+txt_launch: Оғози вазифа
+txt_layout: Намуди зоҳирӣ
+txt_filelist_savedas: Намуди зоҳирӣ ҳамчун захира карда шуд
 txt_level: Дараҷа
 txt_license: Лисензия
-txt_caption_list: List
-txt_list_details: List (with details)
-txt_list_all: List all
-txt_list_disp: List displayed object(s)
-txt_list_sel: List selected object(s)
-txt_toggle_warning: Listing flat view of path's content may take long time, continue anyway?
+txt_caption_list: Рӯйхат
+txt_list_details: Рӯйхат (бо тафсилот)
+txt_list_all: Ҳамаро рӯйхат кунед
+txt_list_disp: Объект(ҳо)-и намоишшударо рӯйхат кунед
+txt_list_sel: Объект(ҳо)-и интихобшударо рӯйхат кунед
+txt_toggle_warning: Рӯйхати намоиши ҳамвори мундариҷаи роҳ метавонад вақти зиёдро талаб кунад, ба ҳар ҳол идома диҳед?
 txt_loadfile: Боркуни файл
-txt_loadlayout: Load layout
+txt_loadlayout: Намуди зоҳириро бор кунед
 txt_unit_hd: Маҳалӣ диск
 txt_localization: Забонҳои барнома
-txt_lpaqver: LPAQ version
-txt_type_description_lpaq: LPAQ: faster version of PAQ, very good compression
-txt_maininterface: Main interface
-txt_maxcomp: Max compression mode
-txt_level_maximum: Maximum
-txt_restartrequired: May require restarting the application to be applied
-txt_required_memory: MB of memory required
+txt_lpaqver: LPAQ нусхаи
+txt_type_description_lpaq: LPAQ: нусхаи тезтари PAQ, фишурдасозии хеле хуб
+txt_maininterface: Интерфейси асосӣ
+txt_maxcomp: Режими фишурдасозии максималӣ
+txt_level_maximum: Максималӣ
+txt_restartrequired: Мумкин аст барои татбиқ аз нав оғоз кардани барномаро талаб кунад
+txt_required_memory: МБ хотираи талабшаванда
 txt_method: Услуб
-txt_misc: Misc
-txt_modify: Modify
-txt_morecontrols: More controls (history, bookmarks, ...)
-txt_morerecent: more recent than selected object
-txt_ent_hint: Move the mouse, enter keys in the edit field, load files to collect enthropy from the system...
-txt_moveto: Move to...
+txt_misc: Дигаргун
+txt_modify: Тағйир додан
+txt_morecontrols: Назоратҳои бештар (таърих, хатчӯбҳо, ...)
+txt_morerecent: навтар аз объекти интихобшуда
+txt_ent_hint: Мушро ҳаракат диҳед, калидҳоро дар майдони таҳрир ворид кунед, файлҳоро барои ҷамъоварии энтропия аз система бор кунед...
+txt_moveto: Кӯчонидан ба...
 txt_mypc: Роёна
 txt_list_na: м/н
 txt_name: Ном
-txt_naming: Naming policy
-txt_unit_remote: Network drive
+txt_naming: Сиёсати номгузорӣ
+txt_unit_remote: Диски шабакавӣ
 txt_newarchive: нав бойгон
 txt_cnewfolder: Нав ҷузъгир
-txt_news: News
+txt_news: Хабарҳо
 txt_no: Не
-txt_noinput: No accessible input received
-txt_nocompress_hint: no compression (faster)
-txt_split_noinput: No input selected; please select a file to split
-txt_open_noinput: No input selected; please select an archive (first archive's volume for multi-volume archives)
-txt_list_nomatch: no match
-txt_singlethread: no multithreading
-txt_none2: none
-txt_nonsolid: Non-solid
-txt_level_normal: Normal
-txt_copy_error: not successfully copied or moved, error code:
-txt_description: Note/description
-txt_compare_second: Now select file to be compared with
-txt_peaobj: Object control
+txt_noinput: Вуруди дастрас қабул карда нашуд
+txt_nocompress_hint: фишурдасозӣ нест (тезтар)
+txt_split_noinput: Вуруд интихоб нашудааст; лутфан файлеро барои тақсим интихоб кунед
+txt_open_noinput: Вуруд интихоб нашудааст; лутфан архивро интихоб кунед (ҳаҷми аввалини архив барои архивҳои бисёрҳаҷмӣ)
+txt_list_nomatch: мувофиқат нест
+txt_singlethread: бисёрриштагӣ нест
+txt_none2: нест
+txt_nonsolid: Ғайрисахт
+txt_level_normal: Муқаррарӣ
+txt_copy_error: бомуваффақият нусхабардорӣ ё кӯчонида нашуд, коди хато:
+txt_description: Эзоҳ/тавсиф
+txt_compare_second: Акнун файлеро, ки бо он муқоиса кардан лозим аст, интихоб кунед
+txt_peaobj: Назорати объект
 txt_displayed_obj: объект(ҳо)
-txt_olderthan: older than selected object
-txt_on: on
-txt_ondblclick: On doubleclick do:
+txt_olderthan: кӯҳнатар аз объекти интихобшуда
+txt_on: фаъол
+txt_ondblclick: Ҳангоми ду маротиба пахш кардан иҷро кунед:
 txt_opacity: Шаффофӣ
 txt_open: Кушодан
 txt_openarchive: Кушодани бойгон
-txt_title_open: Open archive, decrypt, join...
+txt_title_open: Кушодани архив, рамзкушоӣ, васлкунӣ...
 txt_open_bookmark: Кушодани хатчӯп
-txt_cphere: Open command prompt here
+txt_cphere: Сатри фармонро дар ин ҷо кушоед
 txt_open_file: Кушодани файл
 txt_open_files: Кушодани файл(ҳо)
 txt_open_path: Кушодани роҳ
-txt_opensource: Open source portable archiver
+txt_opensource: Архивгари портативии манбаи кушода
 txt_openwith: Кушодани бо...
 txt_aborted: Ҷараён бекор шуд
-txt_unit_cd: Optical drive
+txt_unit_cd: Диски оптикӣ
 txt_options: Танзимот
 txt_other: Дигар
 txt_otherparams: Дигар танзимҳо (free editing)
-txt_oip: output, input, parameters
-txt_opi: output, parameters, input
-txt_output: output:
-txt_overwrite: Overwrite existing files
-txt_compressed_size: Packed
-txt_paqver: PAQ version
-txt_type_description_paq: PAQ: slow but extremely powerful compressor
-txt_pio: parameters, input, output
-txt_poi: parameters, output, input
+txt_oip: баромад, вуруд, параметрҳо
+txt_opi: баромад, параметрҳо, вуруд
+txt_output: баромад:
+txt_overwrite: Файлҳои мавҷударо аз нав навиштан
+txt_compressed_size: Фишурда
+txt_paqver: PAQ нусхаи
+txt_type_description_paq: PAQ: фишурдасози суст, аммо бениҳоят пурқувват
+txt_pio: параметрҳо, вуруд, баромад
+txt_poi: параметрҳо, баромад, вуруд
 txt_parameters: Танзимҳо:
-txt_error_partial: Partial extraction not implemented for current archive type
-txt_passes: Passes
+txt_error_partial: Гирифтани қисман барои намуди архиви ҷорӣ амалӣ карда нашудааст
+txt_passes: Гузаришҳо
 txt_pw: Калимаи рамз
-txt_pwlength: Password length in characters (4..64)
-txt_un7z_browse_pw: password may be required
-txt_un7z_browse_pw_other: password may be wrong
+txt_pwlength: Дарозии парол дар аломатҳо (4..64)
+txt_un7z_browse_pw: парол лозим шуданаш мумкин
+txt_un7z_browse_pw_other: парол нодуруст шуданаш мумкин
 txt_paste: Гузоштан
 txt_path: Роҳ
-txt_pea_appcolor: Pea application color
-txt_pea_textcolor: Pea text color
-txt_type_description_pea: PEA: security oriented archive format with fast compression
-txt_peazip_new: PeaZip (new instance)
+txt_pea_appcolor: Ранги барномаи Pea
+txt_pea_textcolor: Ранги матни Pea
+txt_type_description_pea: PEA: формати архиви ба амният нигаронидашуда бо фишурдасозии тез
+txt_peazip_new: PeaZip (намунаи нав)
 txt_peazip_help: Кумак
 txt_peazip_web: Веб-сайти PeaZip
-txt_performall: Perform all supported algorithms
-txt_name_provide: New name (please avoid \ / : * ? ' " < > | characters)
-txt_upxorstrip: Please chose Strip and/or UPX on the binary
-txt_not_removable_file: Please close file in use, in order to allow PeaZip to remove it:
-txt_not_removable: Please close files in use, in order to allow PeaZip to remove the folder:
-txt_custom_executable_missing: Please provide the custom executable's name
-txt_type_unsupported_select: Please select a supported archive type:
-txt_no_theme_name: Please specify a theme name
+txt_performall: Ҳамаи алгоритмҳои дастгиришавандаро иҷро кунед
+txt_name_provide: Номи нав (лутфан аз аломатҳои \ / : * ? ' " < > | худдорӣ намоед)
+txt_upxorstrip: Лутфан Strip ва/ё UPX-ро дар файли иҷрошаванда интихоб кунед
+txt_not_removable_file: Лутфан файли истифодашавандаро пӯшед, то PeaZip онро нест кунад:
+txt_not_removable: Лутфан файлҳои истифодашавандаро пӯшед, то PeaZip ҷузвдонро нест кунад:
+txt_custom_executable_missing: Лутфан номи файли иҷрошавандаи фармоиширо пешниҳод кунед
+txt_type_unsupported_select: Лутфан намуди архиви дастгиришавандаро интихоб кунед:
+txt_no_theme_name: Лутфан номи темаро муайян кунед
 txt_please_wait: Интизорӣ
-txt_copy_wait: Please wait currently scheduled file copy/move operations to complete before scheduling other operations of the same type
+txt_copy_wait: Лутфан интизор шавед, ки амалиёти нусхабардорӣ/кӯчонидани файли ҷадвалбандӣшуда ба итмом расад, то амалиёти дигари ҳамон намудро ҷадвалбандӣ кунед
 txt_previewwith: Пешбин бо...
-txt_projectadmin: Project administrator:
-txt_type_description_quad: BALZ/QUAD: high-performance ROLZ-based file compressors
+txt_projectadmin: Администратори лоиҳа:
+txt_type_description_quad: BALZ/QUAD: фишурдасозҳои файлии ба ROLZ асосёфта бо иҷрои баланд
 txt_quickdelete: Тезкор хориҷкуни
 txt_quit: Баромад
-txt_unit_ram: RAM disk
+txt_unit_ram: Диски RAM
 txt_read: Хониш:
 txt_recentarchives: Бойгонҳои пешина
-txt_rr_hint: Recovery records allows to try to correct archives in case of data corruption
-txt_search_refine: Refine search filter, accepts ? and * wildcards
+txt_rr_hint: Сабтҳои барқарорсозӣ имкон медиҳанд, ки дар ҳолати вайрон шудани маълумот архивҳоро ислоҳ кунанд
+txt_search_refine: Филтри ҷустуҷӯро такмил диҳед, аломатҳои ёрирасони ? ва *-ро қабул мекунад
 txt_fefreshf5: Таҷдид (F5)
-txt_release: release:
-txt_unit_removable: Removable unit
-txt_remove_bookmark: Remove bookmark
-txt_remove_external_unit: Remove external device(s)
-txt_removeselected: Remove selected object(s)
+txt_release: нусхаи:
+txt_unit_removable: Воҳиди ҷудошаванда
+txt_remove_bookmark: Хатчӯбро нест кунед
+txt_remove_external_unit: Дастгоҳ(ҳо)-и берунаро нест кунед
+txt_removeselected: Объект(ҳо)-и интихобшударо нест кунед
 txt_rename: Номи нав додан
-txt_caption_repair: Repair
-txt_restartrequired2: requires restarting the application to apply
+txt_caption_repair: Таъмир
+txt_restartrequired2: барои татбиқ аз нав оғоз кардани барномаро талаб мекунад
 txt_reset: Пешфарз
-txt_reset_archivename: Reset archive name
-txt_hardreset: Reset bookmarks
-txt_reset_theme: Reset to embedded theme
-txt_restore_att: restore original attributes
-txt_run_as: Run as (cannot switch to users with blank password)
-txt_run_as2: Run as different user
-txt_sample: Sample: 
+txt_reset_archivename: Номи архивро аз нав танзим кунед
+txt_hardreset: Хатчӯбҳоро аз нав танзим кунед
+txt_reset_theme: Ба теми дохилшуда аз нав танзим кунед
+txt_restore_att: хусусиятҳои аслиро барқарор кунед
+txt_run_as: Ҳамчун иҷро кунед (ба корбарони дорои пароли холӣ гузашта наметавонад)
+txt_run_as2: Ҳамчун корбари дигар иҷро кунед
+txt_sample: Намуна:
 txt_saveas: Захиракуни ҳамчун
-txt_savehistory: Save history of latest used archive
+txt_savehistory: Таърихи охирин архиви истифодашударо захира кунед
 txt_save_infolder: Захиракуни ба ҷузъгир (худкор)
-txt_savejob: Save task definition
-txt_savejobdefinition: Save task definition
-txt_savejobdefinition_hint: Save task definition as plain text; you can use it from your scripts
-txt_savelayout: Save layout
-txt_save_winstate: Save main window state
-txt_search: Search (recursive, may take some time)
-txt_searchanddrag: Search and drag here
+txt_savejob: Таърифи вазифаро захира кунед
+txt_savejobdefinition: Таърифи вазифаро захира кунед
+txt_savejobdefinition_hint: Таърифи вазифаро ҳамчун матни оддӣ захира кунед; шумо метавонед онро аз скриптҳои худ истифода баред
+txt_savelayout: Намуди зоҳириро захира кунед
+txt_save_winstate: Ҳолати равзанаи асосиро захира кунед
+txt_search: Ҷустуҷӯ (такрорӣ, метавонад вақтро талаб кунад)
+txt_searchanddrag: Ҷустуҷӯ кунед ва ба ин ҷо кашед
 txt_searchfor: Ҷустуҷӯ
-txt_nrsearch: Search here (non recursive)
-txt_search_hint: Search in archive's subdirectories for matches with filter(s)
+txt_nrsearch: Дар ин ҷо ҷустуҷӯ кунед (ғайритакрорӣ)
+txt_search_hint: Дар зеркаталогҳои архив барои мувофиқат бо филтр(ҳо) ҷустуҷӯ кунед
 txt_search_web: Веб-ҷустуҷӯ
 txt_list_searching: Ҷустуҷӯии...
 txt_securedelete: Хориҷкунӣ
-txt_default_description: Select a function or drag files here
+txt_default_description: Функсияро интихоб кунед ё файлҳоро ба ин ҷо кашед
 txt_selectall: Интихоби ҳамаш
 txt_selectdir: Интихобкуни ҷузъгир
 txt_selected_obj: интихобшуд
-txt_selected_objects: Selected objects
-txt_sfx: Self-extracting
-txt_sendbymail: Send by mail
-txt_set_defaults: Set application's default parameters
+txt_selected_objects: Объектҳои интихобшуда
+txt_sfx: Худкор-гиранда
+txt_sendbymail: Бо почта фиристед
+txt_set_defaults: Параметрҳои пешфарзи барномаро муқаррар кунед
 txt_settings: Танзимотҳо
-txt_sfx_interface: sfx interface
-txt_showhints: Show hints
-txt_show_messages: Show information messages
-txt_showpw: Show password field content
-txt_singlevol: Single volume
+txt_sfx_interface: интерфейси sfx
+txt_showhints: Маслиҳатҳоро нишон диҳед
+txt_show_messages: Паёмҳои иттилоотиро нишон диҳед
+txt_showpw: Мундариҷаи майдони паролро нишон диҳед
+txt_singlevol: Ҳаҷми ягона
 txt_size: Ҳаҷм
 txt_sizeb: Ҳаҷм (B)
-txt_skip_existing: Skip existing files
-txt_slowercomp: slower compression but equally fast decompression
-txt_smaller: smaller than selected object
-txt_solid: Solid
-txt_solid_block: Solid block
-txt_solid_auto: Solid, auto-adjust
-txt_solid_extension: Solid, group by extension
-txt_listtest: sorry, list/test operation is not yet implemented for this format
-txt_sortbysel: Sort by selection status
+txt_skip_existing: Файлҳои мавҷударо гузаред
+txt_slowercomp: фишурдасозии сусттар, аммо кушодани баробар тез
+txt_smaller: хурдтар аз объекти интихобшуда
+txt_solid: Сахт
+txt_solid_block: Блоки сахт
+txt_solid_auto: Сахт, худкор танзим
+txt_solid_extension: Сахт, гурӯҳбандӣ аз рӯи васеъшавӣ
+txt_listtest: узр, амалиёти рӯйхат/озмоиш барои ин формат ҳанӯз амалӣ карда нашудааст
+txt_sortbysel: Аз рӯи ҳолати интихоб ҷудо кунед
 txt_list_sorting: Дараҷабандии...
 txt_speed: суръат
 txt_split: Ҷудокунӣ
-txt_type_description_split: Split a file with optional integrity check
-txt_split_file: Split file
-txt_list_nostats: stats not available
-txt_status: Status
-txt_level_store: Store
-txt_stream_control: Stream control
-txt_strip: Strip before UPX (recommended)
-txt_keyfile_created: Successfully created KeyFile as:
-txt_suggestpw: Create random password
-txt_noupx: Symbols stripped, UPX compression omitted
-txt_syntax: Syntax:
-txt_sysbenchmark: System benchmark
-txt_benchmark: System benchmark will take some minutes and will use all available CPU and memory resource. The system may not respond during the benchmark; run it anyway?
-txt_systools: System tools
-txt_tarbefore: TAR before
-txt_type_description_tar: TAR: archiving format mainstream on UNIX systems
-txt_taskman: Task Manager
+txt_type_description_split: Файлро бо тафтиши ихтиёрии якпорчагӣ тақсим кунед
+txt_split_file: Файлро тақсим кунед
+txt_list_nostats: омор дастрас нест
+txt_status: Ҳолат
+txt_level_store: Нигоҳ доштан
+txt_stream_control: Назорати ҷараён
+txt_strip: Пеш аз UPX нест кунед (тавсия дода мешавад)
+txt_keyfile_created: Файли калид бомуваффақият сохта шуд ҳамчун:
+txt_suggestpw: Пароли тасодуфӣ созед
+txt_noupx: Рамзҳо нест карда шуданд, фишурдасозии UPX гузаронида шуд
+txt_syntax: Синтаксис:
+txt_sysbenchmark: Нишондиҳандаи система
+txt_benchmark: Нишондиҳандаи система якчанд дақиқаро мегирад ва тамоми захираҳои дастраси CPU ва хотираро истифода мебарад. Система метавонад ҳангоми нишондиҳанда ҷавоб надиҳад; ба ҳар ҳол онро иҷро кунед?
+txt_systools: Асбобҳои система
+txt_tarbefore: TAR пеш аз
+txt_type_description_tar: TAR: формати бойгонӣ дар системаҳои UNIX
+txt_taskman: Мудири вазифаҳо
 txt_caption_test: Санҷиш
-txt_testall: Test all
-txt_testdisp: Test displayed object(s)
-txt_testpw: Test password / keyfile
-txt_testsel: Test selected object(s)
-txt_col_hint: The color should be chosen in order to integrate well with icon colors and to other GUI's elements
-txt_bookmarks_hint: The complete and editable list of bookmarks is available in the file browser interface, clicking on the "More controls" icon and on "Toggle history/bookmarks"
-txt_archive_noinput_tolist: The layout is empty: please use Add file(s), Add folder(s) or Load Layout to populate the archive's layout
+txt_testall: Ҳамаро санҷед
+txt_testdisp: Объект(ҳо)-и намоишшударо санҷед
+txt_testpw: Парол / файли калидро санҷед
+txt_testsel: Объект(ҳо)-и интихобшударо санҷед
+txt_col_hint: Ранг бояд интихоб карда шавад, то бо рангҳои нишонаҳо ва дигар элементҳои GUI хуб муттаҳид шавад
+txt_bookmarks_hint: Рӯйхати пурра ва таҳриршавандаи хатчӯбҳо дар интерфейси браузери файл дастрас аст, ки бо пахш кардани нишонаи "Назоратҳои бештар" ва "Таърих/хатчӯбҳоро иваз кунед"
+txt_archive_noinput_tolist: Намуди зоҳирӣ холӣ аст: лутфан барои пур кардани намуди зоҳирии архив Иловаи файл(ҳо), Иловаи ҷузвдон(ҳо) ё Боркунии намуди зоҳириро истифода баред
 txt_theme: Қолабҳо
-txt_icons_found: Theme loaded successfully.
+txt_icons_found: Тема бомуваффақият бор карда шуд.
 txt_themename: Номи қолаб
-txt_icons_not_found: Theme not loaded correctly. Try to switch to the default theme, or to a known working one.
-txt_theme_create_success: theme succesfully created in
-txt_theming: Theming
-txt_extand_error: This function can be performed on a single object at time
+txt_icons_not_found: Тема дуруст бор карда нашуд. Кӯшиш кунед, ки ба теми пешфарз ё ба теми маълуми корӣ гузаред.
+txt_theme_create_success: тема бомуваффақият сохта шуд дар
+txt_theming: Темасозӣ
+txt_extand_error: Ин функсия метавонад дар як вақт дар як объекти ягона иҷро карда шавад
 txt_threads: Риштаҳо
-txt_titlescolor: Titles color
+txt_titlescolor: Ранги сарлавҳаҳо
 txt_to: аз
-txt_toggle_browseflat: Toggle browse / flat view (show all)
-txt_toggle_historybookmarks: Toggle history/bookmarks
-txt_toolbarscolor: Bars color
+txt_toggle_browseflat: Намоиши дидан / ҳамворро иваз кунед (ҳамаро нишон диҳед)
+txt_toggle_historybookmarks: Таърих/хатчӯбҳоро иваз кунед
+txt_toolbarscolor: Ранги панелҳо
 txt_tools: Асбобҳо
-txt_best: try best settings (slow)
+txt_best: танзимоти беҳтаринро санҷед (суст)
 txt_type: Хел
-txt_level_ultra: Ultra
-txt_error_openfile: Unable to open the specified file
-txt_cl_hint: UNACE and UPX always run using console mode; list, test and benchmark tasks always run using GUI mode
-txt_ace_missing: UNACE plugin is missing; for handling ACE archives you can download the plugin form PeaZip's website (being UNACE closed source, the plugin is not featured in base package)
-txt_units: units
-txt_unit_unknown: Unknown drive type
-txt_un7z_pw_untested: Untested
+txt_level_ultra: Ултра
+txt_error_openfile: Файли муайяншударо кушодан ғайриимкон аст
+txt_cl_hint: UNACE ва UPX ҳамеша бо истифода аз режими консол кор мекунанд; вазифаҳои рӯйхат, озмоиш ва нишондиҳанда ҳамеша бо истифода аз режими GUI кор мекунанд
+txt_ace_missing: Плагини UNACE гум шудааст; барои идора кардани архивҳои ACE шумо метавонед плагинро аз вебсайти PeaZip зеркашӣ кунед (азбаски UNACE манбаи пӯшида аст, плагин дар бастаи асосӣ мавҷуд нест)
+txt_units: воҳидҳо
+txt_unit_unknown: Навъи диски номаълум
+txt_un7z_pw_untested: Санҷида нашудааст
 txt_up: Боло
-txt_update: update (if archive exists)
-txt_type_description_upx: UPX: compress executable files only
-txt_advfilters: Use advanced filters
-txt_openfiles_hint: Use this option to include in the archive files open for writing by other applications (useful in backup tasks)
+txt_update: навсозӣ (агар архив мавҷуд бошад)
+txt_type_description_upx: UPX: танҳо файлҳои иҷрошавандаро фишуред
+txt_advfilters: Филтрҳои пешрафтаро истифода баред
+txt_openfiles_hint: Ин интихобро барои дохил кардани файлҳои барои навиштан кушодашуда аз ҷониби дигар барномаҳо дар архив истифода баред (дар вазифаҳои эҳтиётӣ муфид аст)
 txt_usenet: Usenet
-txt_user_name: User name; use user@DOMAIN or DOMAIN\user form if needed.
+txt_user_name: Номи корбар; агар лозим бошад, шакли user@DOMAIN ё DOMAIN\user-ро истифода баред.
 txt_using: Истифода:
-txt_volumepea: Volume control
-txt_volume_size: Volume size
-txt_type_ext_uns: was successfully extracted
+txt_volumepea: Назорати ҳаҷм
+txt_volume_size: Андозаи ҳаҷм
+txt_type_ext_uns: бомуваффақият гирифта шуд
 txt_websearch: Веб-ҷустуҷӯ
 txt_websites: Веб-сайтҳо
 txt_word: Калима
 txt_write: Навис:
-txt_ramdompw_hint: You can copy the random generated password from here
-txt_exe_hint: You can freely enter executable name and parameters for custom compression, and chose syntax's contruction. Please note that you can also manually change command's syntax in "Console" tab.
-txt_pj_hint2: You can import the task's definition from the GUI frontend in the memo field below. Then, you can edit, launch or save it without changing or losing the task defined for the GUI frontend.
-txt_type_description_zip: ZIP: fast archiving/compression format, mainstream on Windows systems
-txt_zipcrypto_hint: ZipCrypto (legacy)
+txt_ramdompw_hint: Шумо метавонед пароли тасодуфии тавлидшударо аз ин ҷо нусхабардорӣ кунед
+txt_exe_hint: Шумо метавонед номи иҷрошаванда ва параметрҳоро барои фишурдасозии фармоишӣ озодона ворид кунед ва сохтори синтаксисро интихоб кунед. Илтимос дар хотир гиред, ки шумо инчунин метавонед синтаксиси фармонро дар ҷадвали "Консол" дастӣ тағир диҳед.
+txt_pj_hint2: Шумо метавонед таърифи вазифаро аз GUI frontend ба майдони ёддошти дар поён овардашуда ворид кунед. Сипас, шумо метавонед онро таҳрир кунед, оғоз кунед ё захира кунед, бе он ки вазифаи барои GUI frontend муайяншударо тағир диҳед ё гум кунед.
+txt_type_description_zip: ZIP: формати тез фишурдасозӣ/бойгонӣ, дар системаҳои Windows
+txt_zipcrypto_hint: ZipCrypto (меросӣ)
 
 === end PeaZip text group ===
 
 === PeaLauncher text group ===
 
-txt_6_9_remaining: remaining
-txt_6_5_abort: Abort
-txt_6_5_error: Error
-txt_6_5_no: No
-txt_6_5_warning: Warning
-txt_6_5_yes: Yes
-txt_6_5_yesall: Yes to all
-txt_5_6_update: Check for updates
-txt_5_6_cml: System context menu language
-txt_5_6_donations: Donations
-txt_5_6_localization: Localization
-txt_5_6_runasadmin: Run as administrator
-txt_5_6_help: Online support
-txt_5_5_cancelall: Cancel all
-txt_5_3_details: Details
-txt_5_3_files: files
-txt_5_3_folders: folders
-txt_5_3_info: Info
-txt_5_3_list: List
-txt_5_3_os: Original size
-txt_5_3_ps: Packed size
-txt_5_3_test: Test
+txt_6_9_remaining: боқимонда
+txt_6_5_abort: Қатъ кардан
+txt_6_5_error: Хатогӣ
+txt_6_5_no: Не
+txt_6_5_warning: Огоҳӣ
+txt_6_5_yes: Бале
+txt_6_5_yesall: Бале ба ҳама
+txt_5_6_update: Навсозиро тафтиш кунед
+txt_5_6_cml: Забони менюи контекстии система
+txt_5_6_donations: Хайрияҳо
+txt_5_6_localization: Маҳаллисозӣ
+txt_5_6_runasadmin: Ҳамчун администратор иҷро кунед
+txt_5_6_help: Дастгирии онлайн
+txt_5_5_cancelall: Ҳамаро бекор кунед
+txt_5_3_details: Тафсилот
+txt_5_3_files: файлҳо
+txt_5_3_folders: ҷузвдонҳо
+txt_5_3_info: Маълумот
+txt_5_3_list: Рӯйхат
+txt_5_3_os: Андозаи аслӣ
+txt_5_3_ps: Андозаи фишурдашуда
+txt_5_3_test: Санҷиш
 txt_5_0_extract: Истихроҷ
 txt_5_0_from: дар
 txt_5_0_in: аз
 txt_5_0_to: ба
 txt_4_5_search: Ҷустуҷӯ
-txt_4_0_drag: Drag here the archive to extract, or 
-txt_4_0_dragorselect: Drag here or select file
-txt_4_0_select: select file
-txt_3_6_selectdir: Select directory
+txt_4_0_drag: Барои гирифтан архив/файлро ба ин ҷо кашед, ё
+txt_4_0_dragorselect: Ба ин ҷо кашед ё файлро интихоб кунед
+txt_4_0_select: файлро интихоб кунед
+txt_3_6_selectdir: Феҳристро интихоб кунед
 txt_3_5_close: Бастан
-txt_3_0_details: For more details please see "Report" tab for the full task's log, and "Console" tab for task definition as command line.
-txt_3_0_hints: Hints about the error
-txt_3_0_arc: Possible causes of the error may be non readable input files (locked, not accessible, corrupted, missing volumes in multipart archive...), or full or not accessible output path.
-txt_3_0_ext: The archive may require a different password for the current operation.
-txt_2_8_oop: Open output path when task completes
-txt_2_7_validatefn: Operation stopped, invalid file name detected:
-txt_2_7_validatecl: Operation stopped, potentially dangerous command detected (i.e. command concatenation not allowed within the program):
+txt_3_0_details: Барои тафсилоти бештар лутфан ба ҷадвали "Ҳисобот" барои гузориши пурраи вазифа ва ҷадвали "Консол" барои таърифи вазифа ҳамчун сатри фармон нигаред.
+txt_3_0_hints: Маслиҳатҳо дар бораи хато
+txt_3_0_arc: Сабабҳои эҳтимолии хатогӣ метавонанд файлҳои вуруди ғайрихонанда (қулфшуда, дастнорас, вайроншуда, ҳаҷмҳои гумшуда дар архиви бисёрқисмат...) ё роҳи баромади пурра ё дастнорас бошанд.
+txt_3_0_ext: Архив метавонад барои амалиёти ҷорӣ пароли дигарро талаб кунад.
+txt_2_8_oop: Вақте ки вазифа ба итмом мерасад, роҳи баромадро кушоед
+txt_2_7_validatefn: Амалиёт қатъ шуд, номи файли нодуруст ошкор шуд:
+txt_2_7_validatecl: Амалиёт қатъ шуд, фармони эҳтимолан хатарнок ошкор шуд (яъне пайвасткунии фармон дар дохили барнома иҷозат дода намешавад):
 txt_2_6_open: Кушодани бойгон
-txt_2_5_ace_missing: UNACE plugin is missing; for handling ACE archives you can download the plugin form PeaZip's website (being UNACE closed source, the plugin is not featured in base package)
-txt_2_3_pw_errorchar_gwrap: quote character cannot be used by PeaLauncher in passwords under current system, please change password or chose Console mode in Backend binaries user interface in Options > Settings
-txt_2_3_renameexisting: Auto rename existing files
-txt_2_3_renameextracted: Auto rename extracted files
+txt_2_5_ace_missing: Плагини UNACE гум шудааст; барои идора кардани архивҳои ACE шумо метавонед плагинро аз вебсайти PeaZip зеркашӣ кунед (азбаски UNACE манбаи пӯшида аст, плагин дар бастаи асосӣ мавҷуд нест)
+txt_2_3_pw_errorchar_gwrap: аломати нохунак аз ҷониби PeaLauncher дар паролҳо дар системаи ҷорӣ истифода бурда намешавад, лутфан паролро иваз кунед ё дар Параметрҳо > Танзимот режими Консолро дар интерфейси корбарии файлҳои Backend интихоб кунед
+txt_2_3_renameexisting: Файлҳои мавҷударо худкор номи нав диҳед
+txt_2_3_renameextracted: Файлҳои гирифташударо худкор номи нав диҳед
 txt_2_3_cancel: Бекор кардан
-txt_2_3_encryption: Encryption
-txt_2_3_extinnew: Extract in new folder
-txt_2_3_keyfile: Keyfile
-txt_2_3_kf_not_found_gwrap: Keyfile cannot be found or read. Please chose a different Keyfile.
+txt_2_3_encryption: Рамзгузорӣ
+txt_2_3_extinnew: Гирифтан дар ҷузвдони нав
+txt_2_3_keyfile: Файли калид
+txt_2_3_kf_not_found_gwrap: Файли калид ёфт нашуд ё хонда намешавад. Лутфан файли калиди дигарро интихоб кунед.
 txt_2_3_moreoptions: Батафсил...
-txt_2_3_nopaths: No paths
+txt_2_3_nopaths: Роҳҳо нест
 txt_2_3_options: Танзимотҳо
-txt_2_3_overexisting: Overwrite existing files
+txt_2_3_overexisting: Аз нав навиштани файлҳои мавҷуда
 txt_2_3_pw: Калимаи рамз
-txt_2_3_skipexisting: Skip existing files
-txt_job_unknown: : Unknown error encountered
-txt_stdjob: [animation will stop at task's completion]
-txt_benchmarkjob: [system will respond slowly while running the benchmark (some minutes)]
-txt_defragjob: [will not respond while defragmenting, you can let it run in background]
-txt_consolejob: [task's feedback and detailed progress available in console window]
-txt_job1: 1: Warning: non fatal error(s); i.e. some files missing or locked
-txt_job127: 127: Cannot execute requested operation
-txt_job2: 2: Fatal error occurred
-txt_job255: 255: Task halted by the user
-txt_job7: 7: Error: got incorrect command line
-txt_job8: 8: Error: not enough memory for requested operation
-txt_autoclose: Close this window when task completes
+txt_2_3_skipexisting: Файлҳои мавҷударо гузаред
+txt_job_unknown: : Хатогии номаълум дучор омад
+txt_stdjob: [аниматсия ҳангоми анҷоми вазифа қатъ мешавад]
+txt_benchmarkjob: [система ҳангоми иҷрои нишондиҳанда (якчанд дақиқа) суст ҷавоб медиҳад]
+txt_defragjob: [ҳангоми дефрагментатсия ҷавоб намедиҳад, шумо метавонед онро дар замина иҷро кунед]
+txt_consolejob: [фикру мулоҳизаи вазифа ва пешрафти муфассал дар равзанаи консол дастрас аст]
+txt_job1: 1: Огоҳӣ: хатогиҳои марговар набуда; яъне баъзе файлҳо гум шудаанд ё қулф шудаанд
+txt_job127: 127: Амалиёти дархостшударо иҷро карда наметавонад
+txt_job2: 2: Хатогии марговар рух дод
+txt_job255: 255: Вазифа аз ҷониби корбар қатъ карда шуд
+txt_job7: 7: Хатогӣ: сатри фармони нодуруст гирифта шуд
+txt_job8: 8: Хатогӣ: барои амалиёти дархостшуда хотираи кофӣ нест
+txt_autoclose: Вақте ки вазифа ба итмом мерасад, ин равзанаро пӯшед
 txt_crscale: Дараҷаи фишор (паст, беҳтарин):
 txt_console: Консол
-txt_benchscale: Core 2 Duo 6600 rating, equivalent MHz speed.
+txt_benchscale: Рейтинги Core 2 Duo 6600, суръати муодили МГс.
 txt_create: Сохтан
 txt_done: Адо:
-txt_nocl: Empty command line
+txt_nocl: Сатри фармони холӣ
 txt_error: Хатогӣ:
 txt_explore: Ҷӯянда
 txt_extto: Истихроҷкуни ба
-txt_halt: Halt system when task completes
-txt_halted: Halted:
-txt_hardware: hardware
-txt_high: high priority
-txt_idle: idle priority
-txt_input: Input:
-txt_jpaused: Task paused
-txt_jresumed: Task resumed
-txt_job_started: Task started
-txt_jobstatus: Task status:
-txt_jstopped: Task halted by the user
-txt_jobstopped: Task halted by the user; you can inspect the partial outcome of the task clicking "Explore" button or reading the task log
-txt_job_success: Task successfully completed
-txt_lt: List/test
-txt_normal: normal priority
+txt_halt: Вақте ки вазифа ба итмом мерасад, системаро қатъ кунед
+txt_halted: Қатъ шуд:
+txt_hardware: таҷҳизот
+txt_high: афзалияти баланд
+txt_idle: афзалияти бекор
+txt_input: Вуруд:
+txt_jpaused: Вазифа таваққуф карда шуд
+txt_jresumed: Вазифа аз нав оғоз карда шуд
+txt_job_started: Вазифа оғоз ёфт
+txt_jobstatus: Ҳолати вазифа:
+txt_jstopped: Вазифа аз ҷониби корбар қатъ карда шуд
+txt_jobstopped: Вазифа аз ҷониби корбар қатъ карда шуд; шумо метавонед натиҷаи қисман вазифаро бо пахш кардани тугмаи "Ҷӯянда" ё хондани гузориши вазифа тафтиш кунед
+txt_job_success: Вазифа бомуваффақият анҷом ёфт
+txt_lt: Рӯйхат/озмоиш
+txt_normal: афзалияти муқаррарӣ
 txt_ok: OK
-txt_output: Output:
+txt_output: Баромад:
 txt_pause: Таваққуф
-txt_paused: Paused,
-txt_p_high: Priority set to high
-txt_p_idle: Priority set to idle
-txt_p_normal: Priority set to normal
-txt_p_realtime: Priority set to real time
-txt_rating: Rating:
-txt_rt: real time priority
+txt_paused: Таваққуф,
+txt_p_high: Афзалият ба баланд муқаррар карда шуд
+txt_p_idle: Афзалият ба бекор муқаррар карда шуд
+txt_p_normal: Афзалият ба муқаррарӣ муқаррар карда шуд
+txt_p_realtime: Афзалият ба вақти воқеӣ муқаррар карда шуд
+txt_rating: Рейтинг:
+txt_rt: афзалияти вақти воқеӣ
 txt_report: Ҳисобот
-txt_resume: Resume
-txt_priority: Click to set task's priority
+txt_resume: Давом додан
+txt_priority: Барои муқаррар кардани афзалияти вазифа клик кунед
 txt_running: Оғоз,
-txt_isrunning: Running...
+txt_isrunning: Иҷро шуда истодааст...
 txt_saveas: Захиракуни ҳамчун
-txt_savejob: Save task definition (may include password!)
-txt_savelog: Save task's log
+txt_savejob: Таърифи вазифаро захира кунед (метавонад паролро дар бар гирад!)
+txt_savelog: Гузориши вазифаро захира кунед
 txt_software: барнома
-txt_speedscale: Speed, logarithmic scale (higher, better):
+txt_speedscale: Суръат, миқёси логарифмӣ (баландтар, беҳтар):
 txt_status: Ҳолат
 txt_stop: Ист
-txt_bench: System benchmark
+txt_bench: Нишондиҳандаи система
 txt_threads: Риштаҳо:
 txt_time: Вақт:
 
@@ -1377,94 +1380,94 @@ txt_time: Вақт:
 
 EXTRACT ARCHIVE(S)
 From the system 
-- rightclick on the archive(s) and in system’s context menu click "Extract here" or "Extract here (in new folder)" to extract with no further interaction
-- otherwise use "Extract..." menu entry for having more options: output path, password, extract files to a new directory, chose to skip, rename or overwrite existing files etc.
+- тугмаи ростро ба архив(ҳо) пахш кунед ва дар менюи контекстии система "Истихроҷ ба ин ҷо" ё "Истихроҷ ба ин ҷо (дар ҷузвдони нав)" -ро пахш кунед, то бе ягон муносибати иловагӣ истихроҷ кунед
+- дар акси ҳол, барои доштани имконоти бештар "Истихроҷ..." -ро истифода баред: роҳи баромад, парол, истихроҷи файлҳо ба феҳристи нав, гузаштан, номи нав додан ё аз нав навиштани файлҳои мавҷуда ва ғайра.
 
 Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
-- click on "Extract" in toolbar or in context menu to extract only selected objects trough the confirmation dialog allowing to set all options (output path, password, naming policy, extract to a new directory etc)
-- drag files and folders to the desired destination, only selected content will be extracted (for more information see chapter about drag and drop in PeaZip)
-- click the quick extraction dropdown button on the right of “Extract” in the toolbar, it allows to directly extract the entire archive to most common destinations (skipping the confirmation dialog) and to set most important options; keyboard shortcuts: Ctrl+E (or F12) extracts the entire archive, asks for output directory; Ctrl+Alt+E extracts archive in its current folder; Ctrl+Shift+E extracts to desktop; Ctrl+Alt+Shift+E extracts to documents; Ctrl+0 extracts to previous path; Ctrl+1..8 extracts to path of bookmark 1..8 (if defined)
+- барои истихроҷи танҳо объектҳои интихобшуда тавассути муколамаи тасдиқкунанда, ки ба танзими ҳамаи имконот имкон медиҳад (роҳи баромад, парол, сиёсати номгузорӣ, истихроҷ ба феҳристи нав ва ғайра), "Истихроҷ"-ро дар панели асбобҳо ё дар менюи контекстӣ пахш кунед
+- файлҳо ва ҷузвдонҳоро ба макони дилхоҳ кашед, танҳо мундариҷаи интихобшуда истихроҷ карда мешавад (барои маълумоти бештар ба боби дар бораи кашола кардан ва партофтан дар PeaZip нигаред)
+- тугмаи афтандаи истихроҷи фаврӣ-ро дар тарафи рости "Истихроҷ" дар панели асбобҳо пахш кунед, он имкон медиҳад, ки тамоми архивро мустақиман ба маконҳои маъмултарин истихроҷ кунед (бо гузаштан аз муколамаи тасдиқ) ва имконоти муҳимтаринро танзим кунед; миёнбурҳои клавиатура: Ctrl+E (ё F12) тамоми архивро истихроҷ мекунад, роҳи баромадро мепурсад; Ctrl+Alt+E архивро дар ҷузвдони ҷории худ истихроҷ мекунад; Ctrl+Shift+E ба мизи корӣ истихроҷ мекунад; Ctrl+Alt+Shift+E ба ҳуҷҷатҳо истихроҷ мекунад; Ctrl+0 ба роҳи қаблӣ истихроҷ мекунад; Ctrl+1..8 ба роҳи хатчӯби 1..8 истихроҷ мекунад (агар муайян шуда бошад)
 
-Open PeaZip, select one or more archives and click “Extract” in toolbar or context menu, or use quick extraction destinations as explained at the previous point.
+PeaZip-ро кушоед, як ё якчанд архивҳоро интихоб кунед ва "Истихроҷ"-ро дар панели асбобҳо ё менюи контекстӣ пахш кунед, ё маконҳои истихроҷи фавриро тавре ки дар нуқтаи қаблӣ шарҳ дода шудааст, истифода баред.
 
 EXTRACT ONLY SELECTED OBJECTS FROM THE ARCHIVE
 Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
-- click "Extract" in toolbar: only selected items will be extracted
-- drag files and folders to the desired destination, only selected content will be extracted
-- rightclick and in “Extract” group of the context menu click “Extract selected” (to extract only selected items) or “Extract displayed” (to extract content of current directory or of current search filter)
+- "Истихроҷ"-ро дар панели асбобҳо пахш кунед: танҳо ҷузъҳои интихобшуда истихроҷ карда мешаванд
+- файлҳо ва ҷузвдонҳоро ба макони дилхоҳ кашед, танҳо мундариҷаи интихобшуда истихроҷ карда мешавад
+- тугмаи ростро пахш кунед ва дар гурӯҳи "Истихроҷ" -и менюи контекстӣ "Истихроҷи интихобшуда" (барои истихроҷи танҳо ҷузъҳои интихобшуда) ё "Истихроҷи намоишшуда" -ро (барои истихроҷи мундариҷаи феҳристи ҷорӣ ё филтри ҷустуҷӯи ҷорӣ) пахш кунед
 
 ENTER A PASSWORD TO BROWSE OR EXTRACT AN ARCHIVE
-Click on the padlock icon to enter a password and optionally a keyfile.
-The icon is featured both in PeaZip’s file browser’s status bar and in the archive extraction interface; once the password is set the icon will change color.
+Барои ворид кардани парол ва ихтиёрӣ файли калид нишонаи қулфро пахш кунед.
+Ин нишона ҳам дар сатри ҳолати браузери файлии PeaZip ва ҳам дар интерфейси истихроҷи архив мавҷуд аст; пас аз муқаррар кардани парол нишона рангро иваз мекунад.
 
 CREATE ARCHIVE
 From the system
-- rightclick on objects to be archived and click on "Add to archive" in context menu or SendTo menu. It will open the archive creation confirmation dialog, more options are available in “Advanced” tab; click OK to create the archive.
-- alternatively, drag files/folders to PeaZip’s window or shortcut; the same archive creation interface will be shown.
+- тугмаи ростро ба объектҳои бойгонӣшаванда пахш кунед ва "Илова ба архив"-ро дар менюи контекстӣ ё менюи Ирсол ба пахш кунед. Он муколамаи тасдиқи сохтани архивро мекушояд, имконоти бештар дар ҷадвали "Пешрафта" дастрас аст; OK-ро пахш кунед, то архив созед.
+- алтернативӣ, файлҳо/ҷузвдонҳоро ба равзанаи PeaZip ё миёнбур кашед; ҳамон интерфейси сохтани архив нишон дода мешавад.
 
 From PeaZip 
-- select objects to be archived and click on "Add" button; the same archive creation interface will be shown.
+- объектҳои бойгонӣшавандаро интихоб кунед ва тугмаи "Илова" -ро пахш кунед; ҳамон интерфейси сохтани архив нишон дода мешавад.
 
 ADD FILES/FOLDERS TO UPDATE EXISTING ARCHIVE
-Open an archive in PeaZip (i.e. with doubleclick, or drag an archive on PeaZip’s window or icon), then drag files and folders to be added in the archive (or click on "Add" button and use application's context menu to add objects to the archive).
-It will open the archive creation confirmation dialog, click OK to update the existing archive.
+Archive-ро дар PeaZip кушоед (яъне бо ду маротиба пахш кардан, ё кашола кардани архив ба равзана ё нишонаи PeaZip), сипас файлҳо ва ҷузвдонҳои иловашавандаро ба архив кашед (ё тугмаи "Илова"-ро пахш кунед ва менюи контекстии барномаро барои илова кардани объектҳо ба архив истифода баред).
+Он муколамаи тасдиқи сохтани архивро мекушояд, OK-ро пахш кунед, то архиви мавҷударо навсозӣ кунед.
 
 CREATE ARCHIVE SPLIT IN SMALLER FILES
-While creating an archive as explained in previous points, click on “Single volume” dropdown menu to select a size for output files (volumes) the archive will be split in.
-Most common types of archives supports this option.
+Ҳангоми сохтани архив тавре ки дар нуқтаҳои қаблӣ шарҳ дода шудааст, менюи афтандаи "Ҳаҷми ягона"-ро пахш кунед, то андозаи файлҳои баромад (ҳаҷмҳо)-ро, ки архив ба онҳо тақсим карда мешавад, интихоб кунед.
+Намудҳои маъмултарини архивҳо ин имконро дастгирӣ мекунанд.
 
 CREATE ENCRYPTED ARCHIVE
-Click on the padlock icon to enter a password and optionally a keyfile; the icon is featured both in PeaZip’s file browser’s status bar and in archive creation interface.
-To hide names of files and directories contained in the archive check “Encrypt also filenames”, please note that it will be applied only if the archive will be created in a format supporting this function, like 7Z and ARC.
-Note that in archive creation interface, alongside the padlock icon, there is a warning to visually inform if encryption is set and if the current archive format supports encryption.
+Барои ворид кардани парол ва ихтиёрӣ файли калид нишонаи қулфро пахш кунед; нишона ҳам дар сатри ҳолати браузери файлии PeaZip ва ҳам дар интерфейси сохтани архив мавҷуд аст.
+Барои пинҳон кардани номҳои файлҳо ва феҳристҳои дар архив мавҷудбуда "Рамзгузории номҳои файлҳо"-ро тафтиш кунед, лутфан таваҷҷӯҳ намоед, ки он танҳо дар сурати сохта шудани архив дар формати дастгирикунандаи ин функсия, ба монанди 7Z ва ARC, татбиқ карда мешавад.
+Дар интерфейси сохтани архив, дар баробари нишонаи қулф, огоҳӣ мавҷуд аст, ки ба таври визуалӣ огоҳ мекунад, ки оё рамзгузорӣ муқаррар шудааст ва оё формати архиви ҷорӣ рамзгузориро дастгирӣ мекунад.
 
 CREATE SEPARATE ARCHIVES
-Add objects to be archived (with PeaZip’s "Add" button, or from system’s context menu or SendTo menu) and before confirming with "Ok" check "Add each object to a separate archive" option.
+Объектҳои бойгонӣшавандаро илова кунед (бо тугмаи "Илова" -и PeaZip, ё аз менюи контекстии система ё менюи Ирсол ба) ва пеш аз тасдиқ бо "Ok" имконоти "Ҳар як объектро ба архиви алоҳида илова кунед" -ро тафтиш кунед.
 
 CONVERT ARCHIVES
-From PeaZip select archives to be converted and click on "Convert" on toolbar or context menu, non-archive files and folders can be added as well, the difference being in archives being extracted before compression stage.
-Using the “Convert existing archives” switch in conjunction with “Add each object to a separate archive" (default) it performs a mass conversion of listed archives, without that switch archive conversion is meant to consolidate input data in a single archive, improving compression efficiency because it allows recompression of the original data from its uncompressed form.
+Аз PeaZip архивҳои табдилшавандаро интихоб кунед ва "Табдил додан"-ро дар панели асбобҳо ё менюи контекстӣ пахш кунед, файлҳо ва ҷузвдонҳои ғайри-архивӣ низ илова карда мешаванд, фарқият дар он аст, ки архивҳо пеш аз марҳилаи фишурдасозӣ истихроҷ карда мешаванд.
+Истифодаи гузариши "Табдил додани архивҳои мавҷуда" дар якҷоягӣ бо "Ҳар як объектро ба архиви алоҳида илова кунед" (пешфарз) табдили оммавии архивҳои рӯйхатшударо иҷро мекунад, бе ин гузариш табдили архив барои муттаҳид кардани маълумоти вуруд дар як архиви ягона пешбинӣ шудааст, ки самаранокии фишурдасозиро беҳтар мекунад, зеро он имкон медиҳад, ки маълумоти аслӣ аз шакли фишурданашудаи он дубора фишурда шавад.
 
 DIRECTLY CREATE ARCHIVES IN A SPECIFIED FORMAT AND WITH A CHOSEN COMPRESSION LEVEL
-Using “System integration” procedure in Options menu it is possible to enable context menu entries to directly add selected files/folders to a ZIP, 7Z or self extracting archive.
-For Zip and 7Z formats it is also possible to enable context menu entries to compress to fastest, normal or ultra level, bypassing the default compression level for the selected format.
+Истифодаи раванди "Интегратсияи система" дар менюи Танзимот имкон медиҳад, ки вурудоти менюи контекстӣ барои мустақиман илова кардани файлҳо/ҷузвдонҳои интихобшуда ба архиви ZIP, 7Z ё худкор истихроҷшаванда фаъол карда шаванд.
+Барои форматҳои Zip ва 7Z инчунин имкон дорад, ки вурудоти менюи контекстӣ барои фишурдан ба сатҳи тезтарин, муқаррарӣ ё ултра фаъол карда шаванд, ки сатҳи фишурдасозии пешфарзро барои формати интихобшуда убур мекунанд.
 
 PASSWORD MANAGER
-Password manager is accessible from main menu, Tools > Password manager or from Password form, from drop down menu on the left of Password field.
-Saved passwords can be selected from the dropdown menu on the left of password filed in Password form, or can be copied from password manager to be used in any other application.
-If no master password is set for the password manager, the password list is accessible without prompting for authentication, otherwise passwords will not be displayed until the user correctly authenticates.
+Менеҷери парол аз менюи асосӣ, Асбобҳо > Менеҷери парол ё аз шакли Парол, аз менюи афтанда дар тарафи чапи майдони Парол дастрас аст.
+Паролҳои захирашударо метавон аз менюи афтанда дар тарафи чапи майдони парол дар шакли Парол интихоб кард, ё онҳоро аз менеҷери парол нусхабардорӣ кард, то дар ҳама гуна барномаи дигар истифода шаванд.
+Агар барои менеҷери парол пароли асосӣ муқаррар нашуда бошад, рӯйхати паролҳо бе дархости аутентификатсия дастрас аст, дар акси ҳол паролҳо то он даме, ки корбар дуруст аутентификатсия накунад, намоиш дода намешаванд.
 
 CONFIGURE THE APPLICATION
-Options > Localization (and in Options > Settings, first tab) allows to set application’s language.
-Options > Settings allows to edit applications’ settings
-Options > Theme allows to change application’s icons and appearance
-Options > System integration starts a procedure to configure file associations, context menu and SendTo menu entries (on Windows)
-Organize menu contains entry to customize, enable or disable browser’s features, like toolbar, address bar, navigation bar, etc
+Танзимот > Маҳаллисозӣ (ва дар Танзимот > Танзимотҳо, ҷадвали аввал) имкон медиҳад, ки забони барнома муқаррар карда шавад.
+Танзимот > Танзимотҳо имкон медиҳад, ки танзимоти барномаҳо таҳрир карда шаванд
+Танзимот > Тема имкон медиҳад, ки нишонаҳо ва намуди зоҳирии барнома тағйир дода шаванд
+Танзимот > Интегратсияи система равандеро барои танзими алоқамандии файлҳо, менюи контекстӣ ва вурудоти менюи Ирсол ба (дар Windows) оғоз мекунад
+Менюи Ташкил вурудотро барои танзим, фаъол ё ғайрифаъол кардани хусусиятҳои браузер, ба монанди панели асбобҳо, сатри суроға, панели паймоиш ва ғайра дар бар мегирад
 
-F1 	help
-F2 	rename file(s) / Ctrl+F2 copy selected to / Shift+F2 move selected to
-F3	search (recursivity option is remembered) / Ctrl+F3 start as non recursive (search here) / Shift+F3 recursive / Alt+F3 system search
-F4 	show navigation popup menu / Ctrl+Shift+F4 browse computer root / Ctrl+F4 browse desktop / Shift+F4 browse home
-F5 	refresh
-F6 	toggle browse/flat view
-F7 	add to bookmarks / Ctrl+F7 open in a new instance of PeaZip / Shift+F7 open command prompt in selected path / Alt+F7 explore selected path
-F8 	browse first item in bookmarks list (Ctrl, second, Shift, third)
-F9 	set password/keyfile / Shift+F9 password manager / Ctrl+F9 create keyfile or random password / Ctrl+Shift+F9 set advanced filters
-F10 	menu / Ctrl+F10 run as different user / Alt+F10 run as administrator (Windows Vista and newer systems)
-F11 	toggle full screen mode / Ctrl+F11 immersive
-F12 	extract all to...
+F1 	Кумак
+F2 	номи навро ба файл(ҳо) додан / Ctrl+F2 интихобшударо ба нусхабардорӣ кардан / Shift+F2 интихобшударо кӯчонидан ба
+F3	ҷустуҷӯ (имконоти такрорӣ дар хотир нигоҳ дошта мешавад) / Ctrl+F3 ҳамчун ғайритакрорӣ оғоз кардан (дар ин ҷо ҷустуҷӯ кунед) / Shift+F3 такрорӣ / Alt+F3 ҷустуҷӯи система
+F4 	менюи равзанаи паймоишро нишон додан / Ctrl+Shift+F4 решаи компютерро дидан / Ctrl+F4 мизи кориро дидан / Shift+F4 хонаро дидан
+F5 	таҷдид
+F6 	дидан/намоиши ҳамворро иваз кунед
+F7 	илова ба хатчӯбҳо / Ctrl+F7 кушодан дар намунаи нави PeaZip / Shift+F7 сатри фармонро дар роҳи интихобшуда кушодан / Alt+F7 роҳи интихобшударо омӯхтан
+F8 	аввалин ҷузъи рӯйхати хатчӯбҳоро дидан (Ctrl, дуюм, Shift, сеюм)
+F9 	парол/файли калидро муқаррар кунед / Shift+F9 менеҷери парол / Ctrl+F9 файли калид ё пароли тасодуфӣ созед / Ctrl+Shift+F9 филтрҳои пешрафтаро муқаррар кунед
+F10 	меню / Ctrl+F10 ҳамчун корбари дигар иҷро кунед / Alt+F10 ҳамчун администратор иҷро кунед (Windows Vista ва системаҳои навтар)
+F11 	режими пурраи экранро иваз кунед / Ctrl+F11 immersive
+F12 	ҳамаро ба... истихроҷ кунед
 
 ABOUT PEAZIP
 
-PeaZip is an open source file and archive manager: cross platform, available as portable and installable software for 32 and 64 bit Windows (9x, 2k, XP, Vista) and Linux (PeaZip is a desktop neutral application).
+PeaZip менеҷери файлии манбаи кушода ва архив мебошад: байниплатформавӣ, ҳамчун нармафзори портативӣ ва насбшаванда барои 32 ва 64 бит Windows (9x, 2k, XP, Vista) ва Linux (PeaZip як барномаи бетарафи мизи корӣ аст) дастрас аст.
 
-PeaZip allows to apply powerful multiple search filters to archive's content; create and extract multiple archives at once; create self-extracting archives; export task definition as command line; save archiving and extraction layouts; bookmark archives and folders; scan and open with custom applications compressed and uncompressed files etc...
+PeaZip имкон медиҳад, ки филтрҳои сершумори пурқуввати ҷустуҷӯ ба мундариҷаи архив татбиқ карда шаванд; якбора якчанд архивҳоро созед ва истихроҷ кунед; архивҳои худкор истихроҷшаванда созед; таърифи вазифаро ҳамчун сатри фармон содир кунед; намудҳои бойгонӣ ва истихроҷро захира кунед; архивҳо ва ҷузвдонҳоро хатчӯб кунед; файлҳои фишурда ва фишурданашударо бо барномаҳои фармоишӣ скан кунед ва кушоед ва ғайра...
 
-Other features: strong encryption, robust file copy, split/join files (file span), secure data deletion, compare, checksum and hash files, system benchmark, generate random passwords and keyfiles.
+Дигар хусусиятҳо: рамзгузории қавӣ, нусхабардории устувори файл, тақсим/васлкунии файлҳо (файл span), несткунии бехатари маълумот, муқоиса, ҳисобкунаки маҷмӯӣ ва файлҳои ҳеш, нишондиҳандаи система, тавлиди паролҳои тасодуфӣ ва файлҳои калид.
 
 Downloads: https://peazip.github.io
 Learn more: https://peazip.github.io/peazip-free-archiver.html
 Support: https://peazip.github.io/peazip-help.html
 FAQ: https://peazip.github.io/peazip-help-faq.html
 
-Many thanks to all people contributing to PeaZip project's growth developing Open Source software components used in this application (see website for complete list), and to all users contributing with feedback, experience and advices.
+Миннатдории зиёд ба ҳамаи одамоне, ки ба рушди лоиҳаи PeaZip саҳм мегузоранд ва ҷузъҳои нармафзори манбаи кушодаро, ки дар ин барнома истифода мешаванд, таҳия мекунанд (барои рӯйхати пурра ба вебсайт нигаред), ва ба ҳамаи корбароне, ки бо фикру мулоҳизаҳо, таҷриба ва маслиҳатҳо саҳм мегузоранд.
