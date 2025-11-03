@@ -3,7 +3,7 @@ Vietnamese - Việt
 10.7
 Translated by: Phan Anh
 Last rev. by: (please update the translation)
-Last rev.: 20110531
+Last rev.: 20251103
 
 === PeaZip text group ===
 
