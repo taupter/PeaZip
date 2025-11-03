@@ -7,51 +7,51 @@ Zadnja revizija: 20240211
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
-txt_10_3_minimal: Minimal
-txt_10_3_m: Modern
-txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
+txt_10_7_errload: Nie je možné zobraziť obrázok
+txt_10_7_errfile: Súbor nebol nájdený
+txt_10_7_first: Prvý
+txt_10_7_fit: Prispôsobiť obrazovke
+txt_10_7_fith: Prispôsobiť výške obrazovky
+txt_10_7_fitw: Prispôsobiť šírke obrazovky
+txt_10_7_keep: Ponechať výstupné súbory, ak sa extrakcia skončí chybou alebo je zrušená
+txt_10_7_next: Ďalší
+txt_10_7_prev: Predchádzajúci
+txt_10_7_pwh: Heslo z hašu
+txt_10_7_images: Zobraziť obrázky
+txt_10_7_thumbnails: Zobraziť miniatúry
+txt_10_6_virtual: Dynamický virtuálny režim
+txt_10_5_fr: (úplná správa)
+txt_10_5_sectype: Žiadať potvrdenie pre spustenie nasledujúcich typov súborov
+txt_10_5_checkmotw: Skontrolovať Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: Chcete spustiť tento súbor?
+txt_10_5_pathlock: Položky v tejto ceste archívu nemožno upravovať
+txt_10_5_type_description_rar: RAR: proprietárny archívny formát, vysoký kompresný pomer, podporovaný cez externý kompresor
+txt_10_5_sh: Zobraziť skryté súbory a priečinky v súborovom systéme
+txt_10_5_ntfsalt: Tento formát je schopný uložiť alternatívny dátový prúd NTFS, vrátane Mark of The Web
+txt_10_4_moving: (Presúvanie)
+txt_10_3_classic: Klasický
+txt_10_3_ascii: Pre aktuálny formát archívu sa odporúča používať v heslách iba znaky ASCII (zmiešané veľké a malé písmená, čísla a špeciálne znaky).
+txt_10_3_minimal: Minimálny
+txt_10_3_m: Moderný
+txt_10_3_pm: Postmoderný
+txt_10_3_aw: Riešenie: skontrolujte "Vynútiť interaktívne zadávanie hesla" vo výzve na zadanie hesla, alebo nastavte režim konzoly pre backend binárne súbory.
+txt_10_2_savecopy: Uložiť kópiu
+txt_10_1_full: Plný
+txt_10_1_kdfw: Pracovné zaťaženie KDF
+txt_10_1_under: Podčiarknuté
+txt_10_0_exptrash: Preskúmať kôš
+txt_10_0_ptarzst: Najrýchlejšia kompresia, TAR.ZST
+txt_10_0_ptarxz: Vysoká kompresia, TAR.XZ
+txt_10_0_ptargz: Stredná kompresia, TAR.GZ
+txt_10_0_comp: Formáty čistej kompresie prijímajú iba jeden súbor ako vstup. Konverzia archívu na tieto formáty zlyhá, ak zdroj obsahuje viac súborov alebo priečinkov, čo nemožno vopred určiť.
+txt_10_0_save: Uložiť
+txt_10_0_tp: Ukážka textu
+txt_9_9_uac: Aktuálny používateľ nemôže zapisovať do tejto výstupnej cesty. Chcete spustiť PeaZip so zvýšením UAC?
+TXT_9_9_kdf: KDF cykly
+txt_9_9_utc: Zobraziť časové pečiatky ako UTC
+txt_9_8_alwaysflat: Vždy otvoriť archívy v plochom zobrazení
+txt_9_8_fnew: Extrahovať sem (do nového priečinka)
+txt_9_8_fsmart: Extrahovať sem (inteligentný nový priečinok)
 txt_9_7_tarpipe: 7z/p7zip uporablja cev
 txt_9_7_smartsorting: Pametno razvrščanje imen datotek
 txt_9_6_centered: Na sredini

@@ -7,244 +7,244 @@ Last rev.: 20.10.2020
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
-txt_10_4_moving: (Moving)
-txt_10_3_classic: Classic
-txt_10_3_ascii: It is recommended to use only ASCII characters in passwords for the current archive format (mixed case letters, numbers, and special characters).
+txt_10_7_errload: Rasmni ko‘rsatib bo‘lmadi
+txt_10_7_errfile: Fayl topilmadi
+txt_10_7_first: Birinchi
+txt_10_7_fit: Ekranga sig‘dirish
+txt_10_7_fith: Ekran balandligiga sig‘dirish
+txt_10_7_fitw: Ekran kengligiga sig‘dirish
+txt_10_7_keep: Agar chiqarish xato bilan tugasa yoki bekor qilinsa, chiqarilgan fayllarni saqlab qolish
+txt_10_7_next: Keyingi
+txt_10_7_prev: Avvalgi
+txt_10_7_pwh: Xesh (hash)dan parol
+txt_10_7_images: Rasmlarni ko‘rish
+txt_10_7_thumbnails: Eskiz (kichik rasm)larni ko‘rish
+txt_10_6_virtual: Dinamik virtual rejim
+txt_10_5_fr: (to‘liq hisobot)
+txt_10_5_sectype: Quyidagi fayl turlarini ishga tushirish uchun tasdiqlashni so‘rash
+txt_10_5_checkmotw: Zone.Identifier (MoTW)ni tekshirish
+txt_10_5_sectypewarning: Ushbu faylni ishga tushirmoqchimisiz?
+txt_10_5_pathlock: Arxivning ushbu yo‘lidagi elementlarni tahrirlab bo‘lmaydi
+txt_10_5_type_description_rar: RAR: xususiy arxiv formati, yuqori siqish nisbati, tashqi siquvchi orqali qo‘llab-quvvatlanadi
+txt_10_5_sh: Fayl tizimidagi yashirin fayl va papkalarni ko‘rsatish
+txt_10_5_ntfsalt: Ushbu format NTFS Muqobil Ma’lumotlar Oqimini (Alternate Data Stream), shu jumladan Mark of The Webni saqlashi mumkin
+txt_10_4_moving: (Ko‘chirilmoqda)
+txt_10_3_classic: Klassik
+txt_10_3_ascii: Joriy arxiv formati uchun parollarda faqat ASCII belgilaridan foydalanish tavsiya etiladi (aralash katta-kichik harflar, raqamlar va maxsus belgilar).
 txt_10_3_minimal: Minimal
-txt_10_3_m: Modern
+txt_10_3_m: Zamonaviy
 txt_10_3_pm: Postmodern
-txt_10_3_aw: Workaround: check "Force typing password interactively" in the password prompt, or set Console mode for backend binaries.
-txt_10_2_savecopy: Save a copy
-txt_10_1_full: Full
-txt_10_1_kdfw: KDF work load
-txt_10_1_under: Underlined
-txt_10_0_exptrash: Explore Trash
-txt_10_0_ptarzst: Fastest compression, TAR.ZST
-txt_10_0_ptarxz: High compression, TAR.XZ
-txt_10_0_ptargz: Medium compression, TAR.GZ
-txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
-txt_10_0_save: Save
-txt_10_0_tp: Text preview
-txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
-TXT_9_9_kdf: KDF rounds
-txt_9_9_utc: Show timestamps as UTC
-txt_9_8_alwaysflat: Always open archives in flat view
-txt_9_8_fnew: Extract here (in new folder)
-txt_9_8_fsmart: Extract here (smart new folder)
-txt_9_7_tarpipe: 7z / p7zip use pipe
-txt_9_7_smartsorting: Smart file name sorting
-txt_9_6_centered: Centered
-txt_9_6_cside: Compact side bar
-txt_9_6_loadpconfirm: Do you want to load this profile? All the data of current profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_loadp: Load profile
-txt_9_6_saveppw: OPTIONAL: protect this profile with password / keyfile?
-txt_9_6_savepoverwrite: Overwrite existing profile? All the data of the existing profile will be overwritten, including saved scripts and Password Manager.
-txt_9_6_savep: Save profile
-txt_9_6_scside: Show Compact side bar
-txt_9_5_all: All
-txt_9_5_precond: Pre-parse if errors are detected
-txt_9_5_largea: Pre-parse large archives
-txt_9_5_mediuma: Pre-parse medium archives
-txt_9_5_smalla: Pre-parse small archives
-txt_9_5_reopentab: Reopen last tab
-txt_9_5_savetabs: Save tabs
-txt_9_5_sb: Use binaries in system paths
-txt_9_4_r: read
-txt_9_4_rw: read/write
-txt_9_4_savecomment: Save comment
-txt_9_4_hintcomment: Type or paste comment, load or drag here comment file.
-txt_9_3_continue: Continue anyway?
-txt_9_3_contrast: Contrast
-txt_9_3_fsd: Free space on destination may not be enough
-txt_9_3_fsw: Free space on temporary work path may not be enough
-txt_9_3_mrar: Manually set RAR binary
-txt_9_3_canedit: This archive type can be edited
-txt_9_3_canforce: This archive type can be edited (forced)
-txt_9_3_cannotedit: This archive type cannot be edited
-txt_9_2_7za: 7z / p7zip alias
-txt_9_2_changelog: Change log
-txt_9_2_tfaq: Check for Translations
-txt_9_2_compact: Compact
-txt_9_2_swt: Swap Tool / Address bar
-txt_9_2_tos: TOS, Privacy
-txt_9_2_doc: Verify documentation, Issue Tracker...
-txt_9_2_updates: Verify updates, binaries, Plugins...
-txt_9_1_7zs: 7z / p7zip syntax level
-txt_9_1_ac: Archive conversion scripts allow user's interaction
-txt_9_1_closeall: Close all
-txt_9_1_enlargeicons: Enlarge file browser icons
-txt_9_1_ef: Exclude empty folders from archiving and extraction operations (7z / p7zip)
-txt_9_1_nw: Open in a new window
-txt_9_1_qdup: Use quick deduplication routine
-txt_9_0_autoexttar: Auto extract TAR archive from compressed TAR.* files
-txt_9_0_accesstime: Do not change last access time
-txt_9_0_mem: Maximum memory usage
-txt_9_0_showmainmenu: Open Main menu
-txt_9_0_navmenu: Open Navigation menu
-txt_9_0_plugind: Open binaries and Plugin directory
-txt_9_0_df: Sort dirs before files
-txt_9_0_hl: Store hard links as links
-txt_9_0_sl: Store symbolic links as links
-txt_9_0_tnav: Toggle side bar, treeview, none
-txt_8_9_empty: Archive seems empty
-txt_8_9_disp: Displaying archive content
-txt_8_9_parsing: Parsing archive content
-txt_8_9_stoptest: Stop to inspect report for error, list, test, auto-test
-txt_8_9_ttb: Toggle tool bar
-txt_8_8_ca: Accent color
-txt_8_8_btn: Button
-txt_8_8_cb: Button color
-txt_8_8_centered: Centered buttons
-txt_8_8_light: Light
-txt_8_8_lnk: Link
-txt_8_8_intnote: Please note that "Interactive extraction" option (in Options > Settings > Archive manager) is ignored for composing the command line in Console tab.
-txt_8_8_snz: Propagate Zone.Identifier stream (Windows)
-txt_8_8_sm: Small icons size
-txt_8_8_solcol: Solid bar
-txt_8_8_snoi: Store owner/group ids (TAR, Linux)
-txt_8_8_snon: Store owner/group names (TAR, Linux)
-txt_8_8_tab: Tab
-txt_8_8_altt: Tabs style
-txt_8_8_autotest: Test archives after creation, if supported by the format
-txt_8_8_cw: Window color
-txt_8_7_csvhelp: "," international standard, ";" common in Latin locales
-txt_8_7_after: After archiving / extraction
-txt_8_7_bintest: binaries tested.
-txt_8_7_csv: CSV separator
-txt_8_7_hok: Hash of binaries used by PeaZip match with expected values
-txt_8_7_mo: Set archive manager options
-txt_8_7_showhm: Show file browser Header menu
-txt_8_7_showsearchbar: Show search bar
-txt_8_7_showsm: Show Style menu
-txt_8_7_hnotok: Some hash of binaries used by PeaZip do not match with expected values:
-txt_8_7_verifybin: Verify hash of binaries
-txt_8_6_clear: "Clear" option removes temp edited files, otherwise available for further editing.
-txt_8_6_noclear: Discard all changes without updating the archive
-txt_8_6_nosimple: Do not update archive, keep temp edited files for further editing
-txt_8_6_immediate: Immediate execution
-txt_8_6_yessimple: Update archive, keep temp edited files for further editing
-txt_8_5_advbrowser: Apply filters to archive browser
-txt_8_5_detailslarge: Details, large
-txt_8_5_intext: Extract to temp work path then move to output (ask before overwriting)
-txt_8_5_listlarge: List, large
-txt_8_5_loadlayout: Load layout at startup
-txt_8_5_samplescripts: Sample scripts
-txt_8_4_keepopenerrorslist: Stop to inspect report for error, list
-txt_8_3_mbubin: Binary
-txt_8_3_cw: Change working directory? This will reset temporary work files and restart the application.
-txt_8_3_temperature: Color temperature
-txt_8_3_mbudec: Decimal
-txt_8_3_htab: Highlight tabs
-txt_8_3_maxarg: Maximum length of arguments
-txt_8_3_mbu: Multiple-byte unit
-txt_8_3_prefalgo: Preferred algorithms
-txt_8_3_skipdel: Skip deletion of locked temp files (use reset to delete on demand)
-txt_8_3_lw: Some files in working directory are locked and cannot be removed automatically
-txt_8_3_noupx: This binary cannot be compressed (may be already compressed)
-txt_8_2_slower: (slower)
-txt_8_2_df: 7z / p7zip display content of folders
-txt_8_2_vreport: 7z / p7zip non-verbose report
-txt_8_2_ta: Accessed
-txt_8_2_tc: Created
-txt_8_2_keep: Keep files
-txt_8_2_tm: Modified
-txt_8_2_skipet: Skip testing for encryption
-txt_8_2_alltimes: Store all timestamps
-txt_8_2_supportedby: Supported by
-txt_8_1_preparse: Always pre-parse archives
-txt_8_1_bo: Browser optimization
-txt_8_1_bop: Browser optimization options can be set from Options > Settings, General tab, in order to allow browser to display archives containing a very large number of items.
-txt_8_1_nopreparse: Do not pre-parse archives
-txt_8_1_ed: error(s) detected.
-txt_8_1_togglearc: Listing flat view of archive content may take long time, continue anyway?
-txt_8_1_preparsehint: Optimize performances limiting pre-parsing of large archives. Pre-parsing is meant to detect in advance possible issues in archive content.
-txt_8_1_slow: Slow
-txt_8_1_vslow: Very slow
-txt_8_1_volumes: volumes
-txt_8_0_altcol: Alternate grid color
-txt_8_0_forcebrowse: Browse non-canonical archive types (containers, disk images, installers,...)
-txt_8_0_commonalgo: Common algorithms
-txt_8_0_forceconvert: Convert non-canonical archive types
-txt_8_0_defaultactionhint: Default action double-clicking a file associated with PeaZip from the system
-txt_8_0_defaultaction: Default action on start-up
-txt_8_0_enableextand: Enable "Extract and open with" submenu
-txt_8_0_forcetyping: Force typing passwords interactively
-txt_8_0_setpwopt: Set password / keyfile options
-txt_8_0_forcetypinghelp: Will run backend binaries in console, cannot browse archives with encrypted filenames. Allows to create scripts that will not run unattended but rather ask user interactively for password.
-txt_7_9_spacing: Spacing
-txt_7_9_zooming: Zooming
-txt_7_8_changelocalization: Change PeaZip language
-txt_7_8_custext: Custom extension
-txt_7_8_destexistfile: Destination already contains processed files. Replace files with same name?
-txt_7_8_dd: Drag and Drop
-txt_7_8_priorityhigh: High
-txt_7_8_priorityidle: Idle
-txt_7_8_rel: Interactive extraction
+txt_10_3_aw: Yechim (Workaround): parol so‘rovi oynasida "Parolni interaktiv kiritishni majburlash"ni belgilang yoki backend fayllari uchun Konsol rejimini o‘rnating.
+txt_10_2_savecopy: Nusxasini saqlash
+txt_10_1_full: To‘liq
+txt_10_1_kdfw: KDF ish yuki
+txt_10_1_under: Tagiga chizilgan
+txt_10_0_exptrash: Savatni (Trash) ko‘rish
+txt_10_0_ptarzst: Eng tez siqish, TAR.ZST
+txt_10_0_ptarxz: Yuqori siqish, TAR.XZ
+txt_10_0_ptargz: O‘rtacha siqish, TAR.GZ
+txt_10_0_comp: Sof siqish formatlari faqat bitta faylni kiritish sifatida qabul qiladi. Agar manba oldindan aniqlanmaydigan bir nechta fayl yoki papkalarni o‘z ichiga olsa, ushbu formatlarga arxiv konvertatsiyasi muvaffaqiyatsizlikka uchraydi.
+txt_10_0_save: Saqlash
+txt_10_0_tp: Matn oldindan ko‘rish
+txt_9_9_uac: Joriy foydalanuvchi ushbu chiqish yo‘liga yozolmaydi. PeaZipni UAC balandligi bilan ishga tushirmoqchimisiz?
+TXT_9_9_kdf: KDF raundlari
+txt_9_9_utc: Vaqt tamg‘alarini UTC sifatida ko‘rsatish
+txt_9_8_alwaysflat: Arxivlarni har doim yassi ko‘rinishda ochish
+txt_9_8_fnew: Shu yerga chiqarish (yangi papkada)
+txt_9_8_fsmart: Shu yerga chiqarish (aqlli yangi papkada)
+txt_9_7_tarpipe: 7z / p7zip quvurni (pipe) ishlatish
+txt_9_7_smartsorting: Aqlli fayl nomi bo‘yicha saralash
+txt_9_6_centered: Markazlashtirilgan
+txt_9_6_cside: Yig‘ma yon panel
+txt_9_6_loadpconfirm: Ushbu profilni yuklamoqchimisiz? Joriy profilning barcha ma'lumotlari, shu jumladan saqlangan skriptlar va Parollar menejeri qayta yoziladi.
+txt_9_6_loadp: Profilni yuklash
+txt_9_6_saveppw: Ixtiyoriy: ushbu profilni parol / kalit fayl bilan himoyalasizmi?
+txt_9_6_savepoverwrite: Mavjud profil ustidan yozilsinmi? Mavjud profilning barcha ma'lumotlari, shu jumladan saqlangan skriptlar va Parollar menejeri qayta yoziladi.
+txt_9_6_savep: Profilni saqlash
+txt_9_6_scside: Yig‘ma yon panelni ko‘rsatish
+txt_9_5_all: Hammasi
+txt_9_5_precond: Agar xatolar aniqlansa, oldindan tahlil qilish
+txt_9_5_largea: Katta arxivlarni oldindan tahlil qilish
+txt_9_5_mediuma: O‘rtacha arxivlarni oldindan tahlil qilish
+txt_9_5_smalla: Kichik arxivlarni oldindan tahlil qilish
+txt_9_5_reopentab: Oxirgi yorliqni qayta ochish
+txt_9_5_savetabs: Yorliqlarni saqlash
+txt_9_5_sb: Tizim yo‘llaridagi fayllarni (binaries) ishlatish
+txt_9_4_r: o‘qish
+txt_9_4_rw: o‘qish/yozish
+txt_9_4_savecomment: Izohni saqlash
+txt_9_4_hintcomment: Izoh kiriting yoki joylashtiring, izoh faylini yuklang yoki bu yerga torting.
+txt_9_3_continue: Baribir davom etilsinmi?
+txt_9_3_contrast: Kontrast
+txt_9_3_fsd: Manzildagi bo‘sh joy yetarli bo‘lmasligi mumkin
+txt_9_3_fsw: Vaqtinchalik ishchi yo‘lidagi bo‘sh joy yetarli bo‘lmasligi mumkin
+txt_9_3_mrar: RAR faylini (binary) qo‘lda o‘rnatish
+txt_9_3_canedit: Ushbu arxiv turini tahrirlash mumkin
+txt_9_3_canforce: Ushbu arxiv turini tahrirlash mumkin (majburlangan)
+txt_9_3_cannotedit: Ushbu arxiv turini tahrirlab bo‘lmaydi
+txt_9_2_7za: 7z / p7zip taxallusi (alias)
+txt_9_2_changelog: O‘zgarishlar jurnali
+txt_9_2_tfaq: Tarjimalarni tekshirish
+txt_9_2_compact: Yig‘ma
+txt_9_2_swt: Asboblar / Manzil panelini almashtirish
+txt_9_2_tos: Xizmat ko‘rsatish shartlari (TOS), Maxfiylik
+txt_9_2_doc: Hujjatlarni tekshirish, Muammolar izlovchi (Issue Tracker)...
+txt_9_2_updates: Yangilanishlar, fayllar (binaries), plaginlarni tekshirish...
+txt_9_1_7zs: 7z / p7zip sintaksis darajasi
+txt_9_1_ac: Arxiv konvertatsiya skriptlari foydalanuvchining o‘zaro aloqasiga imkon beradi
+txt_9_1_closeall: Hammasini yopish
+txt_9_1_enlargeicons: Fayl brauzeri piktogrammalarini kattalashtirish
+txt_9_1_ef: Arxivlash va chiqarish operatsiyalaridan bo‘sh papkalarni chiqarib tashlash (7z / p7zip)
+txt_9_1_nw: Yangi oynada ochish
+txt_9_1_qdup: Tez takrorlanishni olib tashlash tartibini ishlatish
+txt_9_0_autoexttar: Siqilgan TAR.* fayllaridan TAR arxivini avtomatik chiqarish
+txt_9_0_accesstime: Oxirgi kirish vaqtini o‘zgartirmaslik
+txt_9_0_mem: Maksimal xotira ishlatish
+txt_9_0_showmainmenu: Asosiy menyuni ochish
+txt_9_0_navmenu: Navigatsiya menyusini ochish
+txt_9_0_plugind: Fayllar (binaries) va Plagin papkasini ochish
+txt_9_0_df: Papkalarni fayllardan oldin saralash
+txt_9_0_hl: Qattiq havolalarni (hard links) havola sifatida saqlash
+txt_9_0_sl: Ramziy havolalarni (symbolic links) havola sifatida saqlash
+txt_9_0_tnav: Yon panel, daraxt ko‘rinishi, hech biri (o‘zgartirish)
+txt_8_9_empty: Arxiv bo‘sh ko‘rinadi
+txt_8_9_disp: Arxiv tarkibini ko‘rsatish
+txt_8_9_parsing: Arxiv tarkibini tahlil qilish
+txt_8_9_stoptest: Xato, ro‘yxat, sinov, avto-sinov hisobotini tekshirish uchun to‘xtatish
+txt_8_9_ttb: Asboblar panelini almashtirish
+txt_8_8_ca: Urg‘u rangi (Accent color)
+txt_8_8_btn: Tugma
+txt_8_8_cb: Tugma rangi
+txt_8_8_centered: Markazlashtirilgan tugmalar
+txt_8_8_light: Yorug‘
+txt_8_8_lnk: Havola
+txt_8_8_intnote: E'tibor bering, "Interaktiv chiqarish" opsiyasi (Parametrlar > Sozlamalar > Arxiv menejerida) Konsol yorlig‘idagi buyruq satrini tuzish uchun e'tiborga olinmaydi.
+txt_8_8_snz: Zone.Identifier oqimini tarqatish (Windows)
+txt_8_8_sm: Kichik piktogramma hajmi
+txt_8_8_solcol: Qattiq panel
+txt_8_8_snoi: Egasi/guruh identifikatorlarini saqlash (TAR, Linux)
+txt_8_8_snon: Egasi/guruh nomlarini saqlash (TAR, Linux)
+txt_8_8_tab: Yorliq
+txt_8_8_altt: Yorliqlar uslubi
+txt_8_8_autotest: Yaratilgandan so‘ng arxivlarni sinovdan o‘tkazish, agar format tomonidan qo‘llab-quvvatlansa
+txt_8_8_cw: Oyna rangi
+txt_8_7_csvhelp: "," xalqaro standart, ";" Lotin lokalizatsiyalarida keng tarqalgan
+txt_8_7_after: Arxivlash / chiqarishdan so‘ng
+txt_8_7_bintest: fayllar (binaries) sinovdan o‘tkazildi.
+txt_8_7_csv: CSV ajratuvchisi
+txt_8_7_hok: PeaZip tomonidan ishlatiladigan fayllarning (binaries) xesh qiymatlari kutilgan qiymatlarga mos keladi
+txt_8_7_mo: Arxiv menejeri parametrlarini o‘rnatish
+txt_8_7_showhm: Fayl brauzeri sarlavha menyusini ko‘rsatish
+txt_8_7_showsearchbar: Qidiruv panelini ko‘rsatish
+txt_8_7_showsm: Uslub menyusini ko‘rsatish
+txt_8_7_hnotok: PeaZip tomonidan ishlatiladigan ba'zi fayllarning (binaries) xesh qiymatlari kutilgan qiymatlarga mos kelmaydi:
+txt_8_7_verifybin: Fayllarning (binaries) xeshini tekshirish
+txt_8_6_clear: "Tozalash" opsiyasi vaqtinchalik tahrirlangan fayllarni o‘chiradi, aks holda keyingi tahrirlash uchun mavjud bo‘ladi.
+txt_8_6_noclear: Arxivni yangilamasdan barcha o‘zgarishlarni bekor qilish
+txt_8_6_nosimple: Arxivni yangilamaslik, vaqtinchalik tahrirlangan fayllarni keyingi tahrirlash uchun saqlab qolish
+txt_8_6_immediate: Zudlik bilan bajarish
+txt_8_6_yessimple: Arxivni yangilash, vaqtinchalik tahrirlangan fayllarni keyingi tahrirlash uchun saqlab qolish
+txt_8_5_advbrowser: Arxiv brauzeriga filtrlarni qo‘llash
+txt_8_5_detailslarge: Tafsilotlar, katta
+txt_8_5_intext: Vaqtinchalik ishchi yo‘liga chiqarish, so‘ngra manzilga ko‘chirish (ustidan yozishdan oldin so‘rash)
+txt_8_5_listlarge: Ro‘yxat, katta
+txt_8_5_loadlayout: Ishga tushirishda joylashuvni yuklash
+txt_8_5_samplescripts: Namuna skriptlari
+txt_8_4_keepopenerrorslist: Xato, ro‘yxat hisobotini tekshirish uchun to‘xtatish
+txt_8_3_mbubin: Fayl (Binary)
+txt_8_3_cw: Ishchi papkani o‘zgartirilsinmi? Bu vaqtinchalik ishchi fayllarni tiklaydi va dasturni qayta ishga tushiradi.
+txt_8_3_temperature: Rang harorati
+txt_8_3_mbudec: O‘nlik
+txt_8_3_htab: Yorliqlarni ajratib ko‘rsatish
+txt_8_3_maxarg: Argumentlarning maksimal uzunligi
+txt_8_3_mbu: Ko‘p baytli birlik
+txt_8_3_prefalgo: Afzal algoritmlar
+txt_8_3_skipdel: Qulflangan vaqtinchalik fayllarni o‘chirishni o‘tkazib yuborish (talab bo‘yicha o‘chirish uchun tiklashni ishlatish)
+txt_8_3_lw: Ishchi papkadagi ba'zi fayllar qulflangan va ularni avtomatik ravishda olib tashlab bo‘lmaydi
+txt_8_3_noupx: Ushbu faylni (binary) siqib bo‘lmaydi (allaqachon siqilgan bo‘lishi mumkin)
+txt_8_2_slower: (sekinroq)
+txt_8_2_df: 7z / p7zip papkalar tarkibini ko‘rsatish
+txt_8_2_vreport: 7z / p7zip batafsil bo‘lmagan hisobot
+txt_8_2_ta: Kirilgan (Accessed)
+txt_8_2_tc: Yaratilgan
+txt_8_2_keep: Fayllarni saqlab qolish
+txt_8_2_tm: O‘zgartirilgan
+txt_8_2_skipet: Shifrlashni tekshirishni o‘tkazib yuborish
+txt_8_2_alltimes: Barcha vaqt tamg‘alarini saqlash
+txt_8_2_supportedby: Tomonidan qo‘llab-quvvatlanadi
+txt_8_1_preparse: Arxivlarni har doim oldindan tahlil qilish
+txt_8_1_bo: Brauzer optimizatsiyasi
+txt_8_1_bop: Brauzer optimizatsiyasi opsiyalarini Parametrlar > Sozlamalar, Umumiy yorlig‘ida o‘rnatish mumkin, bu brauzerga juda ko‘p sonli elementlarni o‘z ichiga olgan arxivlarni ko‘rsatishga imkon beradi.
+txt_8_1_nopreparse: Arxivlarni oldindan tahlil qilmaslik
+txt_8_1_ed: xato(lar) aniqlandi.
+txt_8_1_togglearc: Arxiv tarkibining yassi ko‘rinishini ro‘yxatlash uzoq vaqt talab qilishi mumkin, baribir davom etilsinmi?
+txt_8_1_preparsehint: Katta arxivlarning oldindan tahlil qilishini cheklash orqali ishlashni optimallashtirish. Oldindan tahlil qilish arxiv tarkibidagi mumkin bo‘lgan muammolarni oldindan aniqlashni nazarda tutadi.
+txt_8_1_slow: Sekin
+txt_8_1_vslow: Juda sekin
+txt_8_1_volumes: hajmlar
+txt_8_0_altcol: Muqobil panjara rangi
+txt_8_0_forcebrowse: Kanonik bo‘lmagan arxiv turlarini ko‘rish (konteynerlar, disk tasvirlari, o‘rnatuvchilar,...)
+txt_8_0_commonalgo: Keng tarqalgan algoritmlar
+txt_8_0_forceconvert: Kanonik bo‘lmagan arxiv turlarini konvertatsiya qilish
+txt_8_0_defaultactionhint: Tizimdan PeaZip bilan bog‘langan faylni ikki marta bosganda standart amal
+txt_8_0_defaultaction: Ishga tushirishda standart amal
+txt_8_0_enableextand: "Chiqarish va bilan ochish" pastki menyusini yoqish
+txt_8_0_forcetyping: Parollarni interaktiv kiritishni majburlash
+txt_8_0_setpwopt: Parol / kalit fayl parametrlarini o‘rnatish
+txt_8_0_forcetypinghelp: Backend fayllarini konsolda ishga tushiradi, shifrlangan fayl nomlari bilan arxivlarni ko‘ra olmaydi. Skriptlarni yaratishga imkon beradi, ular nazoratsiz ishga tushmaydi, balki foydalanuvchidan interaktiv ravishda parol so‘raydi.
+txt_7_9_spacing: Oraliq
+txt_7_9_zooming: Katta qilish/Kichik qilish (Zooming)
+txt_7_8_changelocalization: PeaZip tilini o‘zgartirish
+txt_7_8_custext: Maxsus kengaytma
+txt_7_8_destexistfile: Manzil allaqachon qayta ishlangan fayllarni o‘z ichiga oladi. Bir xil nomdagi fayllar almashtirilsinmi?
+txt_7_8_dd: Tortib tushirish (Drag and Drop)
+txt_7_8_priorityhigh: Yuqori
+txt_7_8_priorityidle: Bo‘sh turish
+txt_7_8_rel: Interaktiv chiqarish
 txt_7_8_prioritynormal: Normal
-txt_7_8_priorityrealtime: Real time
-txt_7_8_requirerestart: [requires restarting PeaZip]
-txt_7_8_tpriority: Tasks priority
-txt_7_8_update: Update
-txt_7_7_noneall: None (no preview, no Drag And Drop extraction)
-txt_7_7_nonetemp: None, User's temp if necessary
-txt_7_7_outtemp: Output, preview in User's temp
-txt_7_7_sys7zreq: Requires p7zip-full or equivalent to be installed
-txt_7_7_tw: Temporary work folder for archive creation, editing, preview and Drag And Drop extraction.
-txt_7_7_sys7z: Use system 7z in Linux
-txt_7_6_zipenc: 7z/p7zip ZIP filenames encoding
-txt_7_6_color: Color
-txt_7_6_custenc: Custom code page
-txt_7_6_dark: Dark
-txt_7_6_tno: Do not sync archive tree
-txt_7_6_forcelocalenc: Force local
-txt_7_6_forceutf8enc: Force UTF-8
-txt_7_6_cpnote: If the chosen custom code page is unsupported, tasks will always end in error (most likely memory allocation error). In case that happens, change code page or reset the application.
-txt_7_6_defaultenc: Local, UTF-8 for extra symbols
-txt_7_6_dim: Low light
-txt_7_6_setcurdef: Set current path as default output path
-txt_7_6_setdef: Set default output path
-txt_7_6_tadvanced: Sync archive tree, keep visited nodes
-txt_7_6_tsimple: Sync archive tree, simple
-txt_7_6_tacolor: Text accent
-txt_7_5_always: Always
-txt_7_5_ask: Ask
-txt_7_5_autoclosesingle: Auto close after extraction if no browsing actions took place
-txt_7_5_cutlen: Cut name at specified length
-txt_7_5_cutlenw: Cut name at specified length (4..255) naming conflicts can be fixed manually later
-txt_7_5_dragnone: Do not lock target
-txt_7_5_specialbrowse: Do you want to extract everything in order to provide the file with the extra data it may need?
-txt_7_5_ee: Extract everything for special file types
-txt_7_5_draghide: Hide drop target
-txt_7_5_draglh: Lock and hide target
-txt_7_5_draglock: Lock drop target
-txt_7_5_never: Never
-txt_7_5_repnascii: Replace/remove non-ASCII characters
-txt_7_4_comment: Comment
-txt_7_4_7zfbrotlicomp: Fastest compression, 7Z Brotli
-txt_7_4_7zfzstandardcomp: Fastest compression, 7Z Zstandard
-txt_7_4_presetrar: High compression, RAR
-txt_7_4_tkeep: Keep original archive timestamp
+txt_7_8_priorityrealtime: Haqiqiy vaqt
+txt_7_8_requirerestart: [PeaZipni qayta ishga tushirishni talab qiladi]
+txt_7_8_tpriority: Vazifalar ustuvorligi
+txt_7_8_update: Yangilash
+txt_7_7_noneall: Hech biri (oldindan ko‘rish yo‘q, Tortib tushirish orqali chiqarish yo‘q)
+txt_7_7_nonetemp: Hech biri, zarur bo‘lsa Foydalanuvchining vaqtincha papkasi
+txt_7_7_outtemp: Chiqish papkasi, Foydalanuvchining vaqtincha papkasida oldindan ko‘rish
+txt_7_7_sys7zreq: p7zip-full yoki uning ekvivalenti o‘rnatilgan bo‘lishini talab qiladi
+txt_7_7_tw: Arxiv yaratish, tahrirlash, oldindan ko‘rish va Tortib tushirish orqali chiqarish uchun vaqtinchalik ishchi papka.
+txt_7_7_sys7z: Linuxda tizim 7zni ishlatish
+txt_7_6_zipenc: 7z/p7zip ZIP fayl nomlari kodlashi
+txt_7_6_color: Rang
+txt_7_6_custenc: Maxsus kod sahifasi
+txt_7_6_dark: Qorong‘i
+txt_7_6_tno: Arxiv daraxtini sinxronlashtirmaslik
+txt_7_6_forcelocalenc: Mahalliy kodlashni majburlash
+txt_7_6_forceutf8enc: UTF-8ni majburlash
+txt_7_6_cpnote: Agar tanlangan maxsus kod sahifasi qo‘llab-quvvatlanmasa, vazifalar har doim xato bilan tugaydi (ko‘pincha xotira ajratish xatosi). Agar shunday bo‘lsa, kod sahifasini o‘zgartiring yoki dasturni tiklang.
+txt_7_6_defaultenc: Mahalliy, qo‘shimcha belgilar uchun UTF-8
+txt_7_6_dim: Past yorug‘lik
+txt_7_6_setcurdef: Joriy yo‘lni standart chiqish yo‘li sifatida o‘rnatish
+txt_7_6_setdef: Standart chiqish yo‘lini o‘rnatish
+txt_7_6_tadvanced: Arxiv daraxtini sinxronlashtirish, ko‘rilgan tugunlarni saqlab qolish
+txt_7_6_tsimple: Arxiv daraxtini sinxronlashtirish, oddiy
+txt_7_6_tacolor: Matn urg‘u rangi (Text accent)
+txt_7_5_always: Har doim
+txt_7_5_ask: So‘rash
+txt_7_5_autoclosesingle: Chiqarishdan so‘ng, agar ko‘rish amallari bajarilmagan bo‘lsa, avtomatik yopish
+txt_7_5_cutlen: Ko‘rsatilgan uzunlikda nomni qisqartirish
+txt_7_5_cutlenw: Ko‘rsatilgan uzunlikda nomni qisqartirish (4..255) nomlashdagi ziddiyatlar keyinroq qo‘lda tuzatilishi mumkin
+txt_7_5_dragnone: Nishonni qulflamaslik
+txt_7_5_specialbrowse: Faylga kerak bo‘lishi mumkin bo‘lgan qo‘shimcha ma'lumotlarni ta'minlash uchun hamma narsani chiqarmoqchimisiz?
+txt_7_5_ee: Maxsus fayl turlari uchun hamma narsani chiqarish
+txt_7_5_draghide: Tushirish nishonini yashirish
+txt_7_5_draglh: Nishonni qulflash va yashirish
+txt_7_5_draglock: Tushirish nishonini qulflash
+txt_7_5_never: Hech qachon
+txt_7_5_repnascii: ASCII bo‘lmagan belgilarni almashtirish/olib tashlash
+txt_7_4_comment: Izoh
+txt_7_4_7zfbrotlicomp: Eng tez siqish, 7Z Brotli
+txt_7_4_7zfzstandardcomp: Eng tez siqish, 7Z Zstandard
+txt_7_4_presetrar: Yuqori siqish, RAR
+txt_7_4_tkeep: Original arxiv vaqt tamg‘asini saqlash
 txt_7_4_lock: Arxivni qulflamoq
 txt_7_4_locked: qulflangan
 txt_7_4_lockconfirm: Qulflangan arxivlarni boshqa o‘zgartirish mumkin emas, ushbu arxivni qulflashni davom ettirasizmi?
@@ -354,67 +354,67 @@ txt_5_6_tab: Yangi xatcho‘p ochmoq
 txt_5_6_rc: Right click for options
 txt_5_6_layouts: Saved layouts
 txt_5_6_upexisting: Mavjud arxivni yangilamoq
-txt_5_6_verbose: Verbose
-txt_5_5_case: (case sensitive)
-txt_5_5_add: Add string at specified position
-txt_5_5_addsel: Add to current selection
-txt_5_5_ext: Change files extension
+txt_5_6_verbose: Batafsil (Verbose)
+txt_5_5_case: (katta-kichik harflarga sezgir)
+txt_5_5_add: Belgilangan joyga satr (string) qo‘shish
+txt_5_5_addsel: Joriy tanlovga qo‘shish
+txt_5_5_ext: Fayl kengaytmasini o‘zgartirish
 txt_5_5_plugin: Qo‘shimchalarni tekshirish
-txt_5_5_copypath: Copy path
-txt_5_5_delete: Delete characters at specified position
-txt_5_5_halt: Halt system when task completes
-txt_5_5_positionw: Hint: 1 add before first char, 2 second, etc... "z" for end of file name
-txt_5_5_positionwd: Hint: 1 delete from first char included, 2 second, ... "z" for end of file name
-txt_5_5_replaceneww: Hint: provide an empty new string to simply remove the old string
+txt_5_5_copypath: Yo‘lni nusxalash
+txt_5_5_delete: Belgilangan joydagi belgilarni o‘chirish
+txt_5_5_halt: Vazifa tugagandan so‘ng tizimni to‘xtatish (Halt)
+txt_5_5_positionw: Maslahat: 1 birinchi belgidan oldin qo‘shish, 2 ikkinchi, va hokazo... Fayl nomining oxiri uchun "z"
+txt_5_5_positionwd: Maslahat: 1 birinchi belgidan boshlab o‘chirish, 2 ikkinchi, ... Fayl nomining oxiri uchun "z"
+txt_5_5_replaceneww: Maslahat: eski satrni shunchaki olib tashlash uchun bo‘sh yangi satr kiriting
 txt_5_5_lower: kichik harflarda
-txt_5_5_replaceoldw: Modify all occurrences of this string or character in the file name
-txt_5_5_newext: New extension
-txt_5_5_new: New string
-txt_5_5_n: Number of characters to delete
-txt_5_5_old: Old string
-txt_5_5_position: Position (number or "z" for end)
-txt_5_5_intdir: Smart new folder
-txt_5_5_replacestr: Replace/remove string
-txt_5_5_datesameday: Same day of selected object
-txt_5_5_datesamehour: Same hour of selected object
-txt_5_5_datesamemonth: Same month of selected object
-txt_5_5_datesameweek: Same week of selected object
-txt_5_5_datesameyear: Same year of selected object
+txt_5_5_replaceoldw: Fayl nomidagi ushbu satr yoki belgining barcha uchraydigan joylarini o‘zgartirish
+txt_5_5_newext: Yangi kengaytma
+txt_5_5_new: Yangi satr
+txt_5_5_n: O‘chiriladigan belgilar soni
+txt_5_5_old: Eski satr
+txt_5_5_position: Joylashuv (raqam yoki oxiri uchun "z")
+txt_5_5_intdir: Aqlli yangi papka
+txt_5_5_replacestr: Satrni almashtirish/olib tashlash
+txt_5_5_datesameday: Tanlangan obyektning shu kuni
+txt_5_5_datesamehour: Tanlangan obyektning shu soati
+txt_5_5_datesamemonth: Tanlangan obyektning shu oyi
+txt_5_5_datesameweek: Tanlangan obyektning shu haftasi
+txt_5_5_datesameyear: Tanlangan obyektning shu yili
 txt_5_5_scan: Tekshirish
 txt_5_5_select: Tanlash
-txt_5_5_similar: Similar to selected object
-txt_5_5_starting: Starting with same character
-txt_5_5_string: String to add
-txt_5_5_subtractsel: Subtract from current selection
+txt_5_5_similar: Tanlangan ob'ektga o'xshash
+txt_5_5_starting: Xuddi shu belgi bilan boshlanadigan
+txt_5_5_string: Qo‘shiladigan satr
+txt_5_5_subtractsel: Joriy tanlovdan ayirish
 txt_5_5_datehour: Shu soat
 txt_5_5_datemonth: Bu oy
 txt_5_5_dateweek: Bu hafta
 txt_5_5_dateyear: Bu yil
 txt_5_5_dateday: Bugun
 txt_5_5_upper: Bosh harflarda
-txt_5_5_extw: Warning: changing file extension the file may become unusable
+txt_5_5_extw: Ogohlantirish: fayl kengaytmasini o‘zgartirish faylning yaroqsiz bo‘lib qolishiga olib kelishi mumkin
 txt_5_4_da: Qo‘shilgan sanasi
-txt_5_4_deletearchives: Ajratilgandan so‘ng o‘chirmoq
-txt_5_4_deletefiles: Arxivlashdan so‘ng fayllarni o‘chirmoq
-txt_5_4_deleteoriginal: Deletion procedure, as set in main screen, will be appended to the script.
+txt_5_4_deletearchives: Chiqarilgandan so‘ng arxivlarni o‘chirish
+txt_5_4_deletefiles: Arxivlashdan so‘ng fayllarni o‘chirish
+txt_5_4_deleteoriginal: O‘chirish tartibi, asosiy ekranda o‘rnatilganidek, skriptga qo‘shiladi.
 txt_5_4_lv: So‘nggi murojaat
 txt_5_4_deletearchivesconfirm: Asl arxiv faylini o‘chirish tasdiqlansinmi?
 txt_5_4_deletefilesconfirm: Asl fayllarni o‘chirish tasdiqlansinmi?
 txt_5_4_used: Foydalanilgan
-txt_5_3_profilebest: Best compression, 7Z format Ultra level
-txt_5_3_profileadvanced: Advanced compression, 7Z format
-txt_5_3_profilenormal: Normal ZIP compression, compatible with most extractors
-txt_5_3_profileveryfast: Very fast ZIP compression, recommended for large multimedia files
-txt_5_3_profilepassword: Protect with password, 7Z format
-txt_5_3_profile10mb: Keep output under 25 MB, for mail attachment limitations
-txt_5_3_profilesfx: Auto extracting, recipient will not need an extraction software
-txt_5_3_cml: System context menu language
-txt_5_3_cmlmessage: Double click on desired context menu language and confirm registry merging. This setting needs to be re-applied when the application is installed/updated or after System integration wizard is used.
-txt_5_3_exc: Exclusion filters prevail on inclusion filters
-txt_5_3_ia: Include also
-txt_5_3_io: Include only
-txt_5_3_rec: Recurse subdirs
-txt_5_3_resetsi: Re-configure system integration (context menu, SendTo, file associations)?
+txt_5_3_profilebest: Eng yaxshi siqish, 7Z format Ultra darajasi
+txt_5_3_profileadvanced: Kengaytirilgan siqish, 7Z format
+txt_5_3_profilenormal: Oddiy ZIP siqish, ko‘pgina chiqargichlar bilan mos keladi
+txt_5_3_profileveryfast: Juda tez ZIP siqish, katta multimediya fayllari uchun tavsiya etiladi
+txt_5_3_profilepassword: Parol bilan himoyalash, 7Z format
+txt_5_3_profile10mb: Chiqish hajmini 25 MB dan pastda saqlash, pochta ilovasi cheklovlari uchun
+txt_5_3_profilesfx: Avtomatik chiqarish, qabul qiluvchiga chiqarish dasturi kerak bo‘lmaydi
+txt_5_3_cml: Tizim kontekst menyusi tili
+txt_5_3_cmlmessage: Kerakli kontekst menyusi tilini ikki marta bosing va registrlarni birlashtirishni tasdiqlang. Ushbu sozlamani dastur o‘rnatilganda/yangilanganda yoki Tizim integratsiyasi ustasi ishlatilgandan so‘ng qayta qo‘llash kerak.
+txt_5_3_exc: Istisno qilish filtrlari kiritish filtrlaridan ustun turadi
+txt_5_3_ia: Shuningdek, kiritish
+txt_5_3_io: Faqat kiritish
+txt_5_3_rec: Quyi papkalarni rekursiya qilish
+txt_5_3_resetsi: Tizim integratsiyasini qayta sozlash (kontekst menyusi, SendTo, fayl assotsiatsiyalari)?
 txt_5_2_oadd: Boshlang‘ich katalogga arxivlamoq
 txt_5_2_zerodelete: Do you want to delete and overwrite with all 0 selected file(s)? The operation can't be undone and files will be not recoverable
 txt_5_2_zfree: Siz ushbu diskdan zero bo‘shlig‘ini qaytayozishni xohlaysizmi?

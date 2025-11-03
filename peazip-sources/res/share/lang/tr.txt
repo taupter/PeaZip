@@ -7,19 +7,19 @@ Son güncelleme: 16 Haziran 2025
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
+txt_10_7_errload: Görüntülenemiyor
+txt_10_7_errfile: Dosya bulunamadı
+txt_10_7_first: İlk
+txt_10_7_fit: Ekrana sığdır
+txt_10_7_fith: Ekran yüksekliğine sığdır
+txt_10_7_fitw: Ekran genişliğine sığdır
+txt_10_7_keep: Çıkarma hatayla biterse veya iptal edilirse çıktı dosyalarını tut
+txt_10_7_next: Sonraki
+txt_10_7_prev: Önceki
+txt_10_7_pwh: Karmadan (hash) parola
+txt_10_7_images: Görüntüleri görüntüle
+txt_10_7_thumbnails: Küçük resimleri görüntüle
+txt_10_6_virtual: Dinamik sanal mod
 txt_10_5_fr: (tam rapor)
 txt_10_5_sectype: Aşağıdaki dosya türlerini çalıştırmak için onay isteyin
 txt_10_5_checkmotw: Zone.Identifier (MoTW) kontrolü
