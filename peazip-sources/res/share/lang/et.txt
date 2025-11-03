@@ -1,0 +1,1470 @@
+=== PeaZip language file ===
+Estonian
+10.7
+Translated by: khanhkhanhlele
+Last rev. by: khanhkhanhlele
+Last rev.: 20251103
+
+=== PeaZip text group ===
+
+txt_10_7_errload: Pilti ei saa kuvada
+txt_10_7_errfile: Faili ei leitud
+txt_10_7_first: Esimene
+txt_10_7_fit: Ekraanile sobitamine
+txt_10_7_fith: Sobita ekraani kõrgusega
+txt_10_7_fitw: Sobita ekraani laiusele
+txt_10_7_keep: Säilita väljundfailid, kui ekstraheerimine lõpeb veaga või tühistatakse
+txt_10_7_next: Järgmine
+txt_10_7_prev: Eelmine
+txt_10_7_pwh: Parool räsikoodist
+txt_10_7_images: Vaata pilte
+txt_10_7_thumbnails: Kuva pisipildid
+txt_10_6_virtual: Dünaamiline virtuaalrežiim
+txt_10_5_fr: (täielik aruanne)
+txt_10_5_sectype: Küsi kinnitust järgmiste failitüüpide käivitamiseks
+txt_10_5_checkmotw: Kontrolli tsooni.Identifier (MoTW)
+txt_10_5_sectypewarning: Kas soovite seda faili käivitada?
+txt_10_5_pathlock: Selle arhiivi teekonna üksusi ei saa muuta
+txt_10_5_type_description_rar: RAR: patenteeritud arhiivivorming, kõrge tihendussuhe, toetab väline kompressor
+txt_10_5_sh: Näita peidetud faile (failisüsteemis)
+txt_10_5_ntfsalt: See vorming suudab salvestada NTFS-i alternatiivset andmevoogu, sealhulgas Mark of The Web'i
+txt_10_4_moving: (Liikumine)
+txt_10_3_classic: Klassikaline
+txt_10_3_ascii: Praeguse arhiivivormingu paroolides on soovitatav kasutada ainult ASCII-tähemärke (suur- ja väiketähed, numbrid ning erimärgid).
+txt_10_3_minimal: Minimaalne
+txt_10_3_m: Moodne
+txt_10_3_pm: Postmodernistlik
+txt_10_3_aw: Lahendus: märkige parooliviibal valik „Sundi parooli interaktiivselt sisestama” või määrake taustaprogrammide binaarfailide jaoks konsoolirežiim.
+txt_10_2_savecopy: Salvesta koopia
+txt_10_1_full: Täis
+txt_10_1_kdfw: KDF-i töökoormus
+txt_10_1_under: Allajoonitud
+txt_10_0_exptrash: Avasta prügikast
+txt_10_0_ptarzst: Kiireim tihendus, TAR.ZST
+txt_10_0_ptarxz: Kõrge tihendusaste, TAR.XZ
+txt_10_0_ptargz: Keskmise tihendusega, TAR.GZ
+txt_10_0_comp: Puhtad tihendusvormingud aktsepteerivad sisendina ainult ühte faili. Arhiivi teisendamine nendesse vormingutesse ebaõnnestub, kui allikas sisaldab mitut faili või kausta, mida ei saa eelnevalt kindlaks määrata.
+txt_10_0_save: Salvesta
+txt_10_0_tp: Teksti eelvaade
+txt_9_9_uac: Praegune kasutaja ei saa sellele väljundteele kirjutada. Kas soovite käivitada PeaZipi UAC-õiguste laiendamisega?
+txt_9_9_kdf: KDF voorud
+txt_9_9_utc: Näita ajatempleid UTC-s
+txt_9_8_alwaysflat: Ava arhiivid alati lamevaates
+txt_9_8_fnew: Pakki siia lahti (uude kausta)
+txt_9_8_fsmart: Pakki siia lahti (nutikas uus kaust)
+txt_9_7_tarpipe: 7z / p7zip kasutab toru
+txt_9_7_smartsorting: Nutikas failinimede sortimine
+txt_9_6_centered: Tsentreeritud
+txt_9_6_cside: Kompaktne külgriba
+txt_9_6_loadpconfirm: Kas soovite seda profiili laadida? Kõik praeguse profiili andmed, sh salvestatud skriptid ja paroolihaldur, kirjutatakse üle.
+txt_9_6_loadp: Koormusprofiil
+txt_9_6_saveppw: VALIKULINE: kaitsta seda profiili parooliga/võtmefailiga?
+txt_9_6_savepoverwrite: Kas kirjutada olemasolev profiil üle? Kõik olemasoleva profiili andmed, sh salvestatud skriptid ja paroolihaldur, kirjutatakse üle.
+txt_9_6_savep: Salvesta profiil
+txt_9_6_scside: Näita kompaktset külgriba
+txt_9_5_all: Kõik
+txt_9_5_precond: Eelparsib vigade tuvastamisel
+txt_9_5_largea: Suurte arhiivide eelparsimine
+txt_9_5_mediuma: Keskmise arhiivi eelparsimine
+txt_9_5_smalla: Väikeste arhiivide eelparsimine
+txt_9_5_reopentab: Ava viimane sakk uuesti
+txt_9_5_savetabs: Salvesta vahekaardid
+txt_9_5_sb: Kasutage süsteemiradades binaarfaile
+txt_9_4_r: loetud
+txt_9_4_rw: lugemine/kirjutamine
+txt_9_4_savecomment: Salvesta kommentaar
+txt_9_4_hintcomment: Tippige või kleebige kommentaar, laadige või lohistage kommentaarifail siia.
+txt_9_3_continue: Kas jätkata ikkagi?
+txt_9_3_contrast: Kontrast
+txt_9_3_fsd: Sihtkohas ei pruugi olla piisavalt vaba ruumi
+txt_9_3_fsw: Ajutisel töörajal ei pruugi olla piisavalt vaba ruumi
+txt_9_3_mrar: RAR-i kahendfaili käsitsi määramine
+txt_9_3_canedit: Seda arhiivitüüpi saab muuta
+txt_9_3_canforce: Seda arhiivitüüpi saab muuta (sundida)
+txt_9_3_cannotedit: Seda arhiivitüüpi ei saa muuta
+txt_9_2_7za: 7z / p7zip alias
+txt_9_2_changelog: Muudatuste logi
+txt_9_2_tfaq: Kontrolli tõlkeid
+txt_9_2_compact: Kompaktne
+txt_9_2_swt: Vaheta vahekaardiriba / aadressiriba
+txt_9_2_tos: Kasutustingimused, Privaatsus
+txt_9_2_doc: Dokumentatsiooni kontrollimine, probleemide jälgija...
+txt_9_2_updates: Kontrolli värskendusi, binaarfaile, pluginaid...
+txt_9_1_7zs: 7z / p7zip süntaksi tase
+txt_9_1_ac: Arhiivi konverteerimise skriptid võimaldavad kasutajal interaktsiooni
+txt_9_1_closeall: Sule kõik
+txt_9_1_enlargeicons: Suurenda failibrauseri ikoone
+txt_9_1_ef: Jäta tühjad kaustad arhiveerimis- ja ekstraktimistoimingutest välja (7z / p7zip)
+txt_9_1_nw: Ava uues aknas
+txt_9_1_qdup: Kasutage kiiret deduplikatsioonirutiini
+txt_9_0_autoexttar: TAR-arhiivi automaatne ekstraktimine tihendatud TAR.* failidest
+txt_9_0_accesstime: Viimase juurdepääsu aega ei muudeta
+txt_9_0_mem: Maksimaalne mälukasutus
+txt_9_0_showmainmenu: Ava peamenüü
+txt_9_0_navmenu: Ava navigeerimismenüü
+txt_9_0_plugind: Ava binaarfailid ja pluginate kataloog
+txt_9_0_df: Sorteeri kataloogid enne faile
+txt_9_0_hl: Salvesta kõvad lingid linkidena
+txt_9_0_sl: Salvesta sümboolsed lingid linkidena
+txt_9_0_tnav: Navigeerimisriba sisse/välja lülitamine
+txt_8_9_empty: Arhiiv tundub tühi olevat
+txt_8_9_disp: Kuvatakse arhiivi sisu
+txt_8_9_parsing: Arhiivi sisu parsimine
+txt_8_9_stoptest: Peata, et kontrollida aruannet vea, loendi, testi või automaattesti osas
+txt_8_9_ttb: Tööriistariba sisse/välja lülitamine
+txt_8_8_ca: Aktsentvärv
+txt_8_8_btn: Nupp
+txt_8_8_cb: Nupu värv
+txt_8_8_centered: Tsentreeritud nupud
+txt_8_8_light: Valgus
+txt_8_8_lnk: Link
+txt_8_8_intnote: Palun arvestage, et konsooli vahekaardil käsurea koostamisel ignoreeritakse valikut „Ekstrakti ja seejärel teisalda” (valikud > Seaded > Arhiivihaldur).
+txt_8_8_snz: Levitamistsooni identifikaator (MoTW) (Windows, NTFS)
+txt_8_8_sm: Väikesed ikoonid
+txt_8_8_solcol: Leivapuru riba
+txt_8_8_snoi: Salvesta omaniku/grupi ID-d (TAR, Linux)
+txt_8_8_snon: Omaniku/grupi nimede salvestamine (TAR, Linux)
+txt_8_8_tab: Vahekaart
+txt_8_8_altt: Tabuleerimisstiil
+txt_8_8_autotest: Testi arhiive pärast loomist, kui vorming seda toetab
+txt_8_8_cw: Akna värv
+txt_8_7_csvhelp: "," rahvusvaheline standard, ";" levinud ladina keeltes
+txt_8_7_after: Pärast arhiveerimist / ekstraheerimist
+txt_8_7_bintest: testitud binaarfailid.
+txt_8_7_csv: CSV eraldaja
+txt_8_7_hok: PeaZipi poolt kasutatud binaarfailide räsi vastab oodatavatele väärtustele
+txt_8_7_mo: Arhiivihalduri valikute määramine
+txt_8_7_showhm: Ava brauseri päisemenüü
+txt_8_7_showsearchbar: Näita otsinguriba
+txt_8_7_showsm: Ava stiilimenüü
+txt_8_7_hnotok: Mõned PeaZipi poolt kasutatavad binaarfailide räsiväärtused ei vasta oodatavatele väärtustele:
+txt_8_7_verifybin: Binaarfailide räsi kontrollimine
+txt_8_6_clear: Valik „Tühjenda” eemaldab ajutiselt redigeeritud failid, mis on muidu edasiseks redigeerimiseks saadaval.
+txt_8_6_noclear: Tühista kõik muudatused arhiivi uuendamata
+txt_8_6_nosimple: Ära uuenda arhiivi, hoia ajutiselt redigeeritud faile edasiseks redigeerimiseks
+txt_8_6_immediate: Kohene täitmine
+txt_8_6_yessimple: Arhiivi uuendamine, ajutiselt redigeeritud failide säilitamine edasiseks redigeerimiseks
+txt_8_5_advbrowser: Rakenda filtreid arhiivibrauserile
+txt_8_5_detailslarge: Detailid, suur
+txt_8_5_intext: Ekstrakti ajutisse töökataloogi ja seejärel väljundsihtkohta teisaldamine, interaktiivselt küsimine enne ülekirjutamist
+txt_8_5_listlarge: loend, suur
+txt_8_5_loadlayout: Laadi paigutus käivitamisel
+txt_8_5_samplescripts: Näidisskriptid
+txt_8_4_keepopenerrorslist: Peatage, et kontrollida aruannet vea osas, loend
+txt_8_3_mbubin: Binaarne
+txt_8_3_cw: Kas muuta töökataloogi? See lähtestab ajutised tööfailid ja taaskäivitab rakenduse.
+txt_8_3_temperature: Värvitemperatuur
+txt_8_3_mbudec: Kümnendsüsteemis
+txt_8_3_htab: Tõsta vahekaardid esile
+txt_8_3_maxarg: Argumentide maksimaalne pikkus
+txt_8_3_mbu: Mitmebaidine ühik
+txt_8_3_prefalgo: Eelistatud algoritmid
+txt_8_3_skipdel: Jäta lukustatud ajutiste failide kustutamine vahele (nõudmisel kustutamiseks kasutage lähtestamist)
+txt_8_3_lw: Mõned töökataloogi failid on lukustatud ja neid ei saa automaatselt eemaldada.
+txt_8_3_noupx: Seda binaarfaili ei saa tihendada (võib olla juba tihendatud)
+txt_8_2_slower: (aeglasem)
+txt_8_2_df: 7z / p7zip kuvab kaustade sisu
+txt_8_2_vreport: 7z / p7zip mitte-sõnav aruanne
+txt_8_2_ta: Ligipääs tehtud
+txt_8_2_tc: Loodud
+txt_8_2_keep: Säilita failid
+txt_8_2_tm: Muudetud
+txt_8_2_skipet: jätke krüptimise testimine vahele
+txt_8_2_alltimes: Salvesta kõik ajatemplid
+txt_8_2_supportedby: Toetatud poolt
+txt_8_1_preparse: Parsi arhiive alati eelnevalt
+txt_8_1_bo: Brauseri optimeerimine
+txt_8_1_bop: Brauseri optimeerimisvalikuid saab määrata vahekaardil Valikud > Seaded > Üldine, et brauser kuvaks arhiive, mis sisaldavad väga suurt hulka üksusi.
+txt_8_1_nopreparse: Ära eelparsi arhiive
+txt_8_1_ed: tuvastati viga(d).
+txt_8_1_togglearc: Arhiivisisu lamevaate kuvamine võib kaua aega võtta, kas jätkata ikkagi?
+txt_8_1_preparsehint: Optimeerib jõudlust, piirates suurte arhiivide eelparsimist. Eelparsimise eesmärk on tuvastada arhiivisisu võimalikke probleeme eelnevalt.
+txt_8_1_slow: Aeglane
+txt_8_1_vslow: Väga aeglane
+txt_8_1_volumes: köited
+txt_8_0_altcol: Alternatiivne ruudustiku värv
+txt_8_0_forcebrowse: Sirvi mittekanoonilisi arhiivitüüpe (konteinerid, kettakujutised, installijad jne)
+txt_8_0_commonalgo: Levinud algoritmid
+txt_8_0_forceconvert: Teisenda mittekanoonilised arhiivitüübid
+txt_8_0_defaultactionhint: Vaikimisi toiming PeaZipiga seotud faili topeltklõpsamisel süsteemist
+txt_8_0_defaultaction: Vaikimisi toiming sisendil (avamine, automaatne ekstraktimine...)
+txt_8_0_enableextand: Luba alammenüü "Ekstrakti ja ava programmiga"
+txt_8_0_forcetyping: Sunnib paroole interaktiivselt sisestama
+txt_8_0_setpwopt: Parooli / võtmefaili valikute määramine
+txt_8_0_forcetypinghelp: Kui taustsüsteem seda toetab, küsib ülesanne interaktiivselt parooli. PIIRANGUD: ülesanne käivitub konsoolis, ei käivitu järelevalveta ja ei saa sirvida krüptitud failinimedega arhiive.
+txt_7_9_spacing: Tühikud
+txt_7_9_zooming: Suumi
+txt_7_8_changelocalization: PeaZipi keele muutmine
+txt_7_8_custext: Kohandatud laiendus
+txt_7_8_destexistfile: Sihtkoht sisaldab juba töödeldud faile. Kas asendada failid sama nimega?
+txt_7_8_dd: Lohistamine
+txt_7_8_priorityhigh: Kõrge
+txt_7_8_priorityidle: Jõudeolek
+txt_7_8_rel: Ekstrakti ja seejärel sihtkohta teisaldamine
+txt_7_8_prioritynormal: Tavaline
+txt_7_8_priorityrealtime: Reaalajas
+txt_7_8_requirerestart: [nõuab PeaZipi taaskäivitamist]
+txt_7_8_tpriority: Ülesannete prioriteet
+txt_7_8_update: Värskendus
+txt_7_7_noneall: Puudub: eelvaate, redigeerimise, lohistamise ja interaktiivse ekstraktimise keelamine
+txt_7_7_nonetemp: Puudub, kasutaja temperatuur vajadusel
+txt_7_7_outtemp: Väljund, eelvaade kasutaja ajutises salvestusruumis
+txt_7_7_sys7zreq: Installimiseks on vaja 7z, 7-Zip või p7zip või samaväärset paketti.
+txt_7_7_tw: Ajutine töökaust arhiivi loomiseks, redigeerimiseks, eelvaatamiseks ja lohistamiseks lahtipakkimiseks
+txt_7_7_sys7z: Kasuta süsteemi 7z, kui see on saadaval
+txt_7_6_zipenc: ZIP-failinimede kodeering
+txt_7_6_color: Värv
+txt_7_6_custenc: Kohandatud koodileht
+txt_7_6_dark: Tumedam
+txt_7_6_tno: Ära sünkroniseeri arhiivipuud
+txt_7_6_forcelocalenc: Kohaliku sundkäivitus
+txt_7_6_forceutf8enc: UTF-8 sunniviisiline kasutamine
+txt_7_6_cpnote: Kui valitud kohandatud koodilehte ei toetata, lõpevad ülesanded alati veaga (tõenäoliselt mälu eraldamise veaga). Sellisel juhul muutke koodilehte või lähtestage rakendus.
+txt_7_6_defaultenc: Kohalik, UTF-8 lisasümbolite jaoks
+txt_7_6_dim: Tume
+txt_7_6_setcurdef: Määra praegune tee vaikeväljunditeeks
+txt_7_6_setdef: Määrake vaikimisi väljundtee
+txt_7_6_tadvanced: Sünkroniseeri arhiivipuu, säilita külastatud sõlmed
+txt_7_6_tsimple: Sünkroniseerimisarhiivipuu, lihtne
+txt_7_6_tacolor: Tekstiaktsent
+txt_7_5_always: Alati
+txt_7_5_ask: Küsi
+txt_7_5_autoclosesingle: Automaatne sulgemine pärast ekstraktimist, kui sirvimistoiminguid ei toimunud
+txt_7_5_cutlen: Lõika nimi määratud pikkuse juurest
+txt_7_5_cutlenw: Lõika nimi määratud pikkuse juures (4..255) nimekonflikte saab hiljem käsitsi parandada
+txt_7_5_dragnone: Ära lukusta sihtmärki
+txt_7_5_specialbrowse: Kas soovite kõik lahti pakkida, et varustada faili vajalike lisaandmetega?
+txt_7_5_ee: Ekstrakti kõik spetsiaalsete failitüüpide jaoks
+txt_7_5_draghide: Peida kukutamise sihtmärk
+txt_7_5_draglh: Lukusta ja peida sihtmärk
+txt_7_5_draglock: Lukusta kukutamise sihtmärk
+txt_7_5_never: Mitte kunagi
+txt_7_5_repnascii: Asenda/eemalda mitte-ASCII tähemärke
+txt_7_4_comment: Kommentaar
+txt_7_4_7zfbrotlicomp: Kiireim tihendus, 7Z Brotli
+txt_7_4_7zfzstandardcomp: kiireim tihendus, 7Z Zstandard
+txt_7_4_presetrar: Kõrge tihendus, RAR
+txt_7_4_tkeep: Säilita algse arhiivi ajatempel
+txt_7_4_lock: Lukusta arhiiv
+txt_7_4_locked: lukus
+txt_7_4_lockconfirm: Lukustatud arhiive ei saa enam muuta, kas jätkata arhiivi lukustamisega?
+txt_7_4_recover: Paranda arhiiv
+txt_7_4_tcurr: Määra arhiivi ajatempli praeguse süsteemiaja põhjal
+txt_7_4_setarc: Määrake täpsemad arhiveerimisvalikud
+txt_7_4_setext: Määrake täpsemad ekstraktimisvalikud
+txt_7_4_swzipx: Lülitu zipx-laiendile mitte-Deflate zip-arhiivide jaoks
+txt_7_3_archiveerrors: [arhiiv võib sisaldada vigu]
+txt_7_3_archiveerrorshint: Arhiiv ei pruugi olla kehtiv (puuduvad, rikutud või ebastandardsed andmed), üksikasjaliku teabe saamiseks on võimalik käivitada test. Kui arhiivi sisukord on krüpteeritud, on enne selle sirvimist vaja parooli.
+txt_7_3_clickextall: Lubamiseks klõpsake nuppu „Ekstrakti kõik”
+txt_7_3_noconfdel: Ära küsi kustutamise kinnitust pärast arhiveerimist/ekstraktimist
+txt_7_3_profile7zfastest: Kiire tihendamine, 7Z kiireim
+txt_7_3_maxbr: Brotli tihendamise maksimeerimine suurema mälumahuga (võib olla mõne ekstraktoriga ühildumatu)
+txt_7_3_maxzstd: Maksimeerib Zstandardi tihendust, kasutades rohkem mälu
+txt_7_3_profile7zfast: Keskmise tihendusega, 7Z kiire
+txt_7_3_stl: Määra arhiivi ajatempli viimase faili põhjal
+txt_7_2_altcomp: Kõrge tihendusaste, ARC
+txt_7_2_clearnoupdate: Tühjenda muudetud failid
+txt_7_2_autoclosepeazip: Sulge PeaZip pärast ülesande täitmist
+txt_7_2_zpaqall: Ekstrakti kõik redaktsioonid
+txt_7_2_extcomp: Äärmuslik tihendamine, ZPAQ
+txt_7_2_extcompultra: Äärmuslik tihendus, ZPAQ ultra
+txt_7_2_fbrotlicomp: Kiireim tihendus, Brotli
+txt_7_2_fzstandardcomp: Kiireim tihendus, Zstandard
+txt_7_2_loadcompsettings: Laadi tihendusseaded
+txt_7_2_savecompsettings: Salvesta tihendusseaded
+txt_7_2_source: Allikas
+txt_7_2_updateclear: Värskenda arhiivi, tühjenda ajutiselt muudetud failid
+txt_7_1_type_description_brotli: Brotli: kiire tihendaja Google'ilt, väga kiire lahtipakkimine
+txt_7_1_new: Ekstrakti kõik siia (uude kausta)
+txt_7_1_smart: Ekstrakti kõik siia (nutikas uus kaust)
+txt_7_1_profileintermediate: Keskmise tihendusega, kiire ZIP/BZip2
+txt_7_1_renfilesonly: Nimeta ümber ainult failid
+txt_7_1_typetosearch: Tippige, et otsida praeguses teekonnas
+txt_7_1_type_description_zstd: Zstandard: kiire tihendaja Facebookist, väga kiire lahtipakkimine
+txt_7_0_af: Analüüsi kaustade sisu
+txt_7_0_autoopentar: Avab TAR-arhiivi automaatselt tihendatud TAR.* failides
+txt_7_0_exttmppath: Sisu ekstraheeritakse väljaspool ajutist tööteed, kohast:
+txt_6_9_autou: Muudetud failide automaatne värskendamine arhiivides
+txt_6_9_forceu: Redigeeritud failide uuendamine arhiivis
+txt_6_9_opuns: Toiming pole praeguse arhiivitüübi puhul toetatud
+txt_6_9_overarch: Kas kirjutada üle arhiivis juba olev(ad) samanimeline(d) fail(id)?
+txt_6_9_uconf: Eelvaatlusel olevat faili on muudetud. Kas uuendada praegust arhiivi?
+txt_6_8_ndrop: Kasutage Windowsis natiivset lohistamist
+txt_6_7_nop: (eelvaadet pole)
+txt_6_6_pdupfound: leitud võimalikud duplikaadid (kiire ligikaudne test)
+txt_6_6_rsh: Lähtesta otsinguajalugu
+txt_6_6_pdupfind: Soovita duplikaate
+txt_6_6_forcemodify: Muuda mittekanoonilisi arhiivitüüpe järgmiselt
+txt_6_5_kohustuslik: (kohustuslik)
+txt_6_5_abort: Katkesta
+txt_6_5_askp: Küsi käivitamisel parooli määramist
+txt_6_5_chp: Parooli muutmine
+txt_6_5_def: Definitsioon
+txt_6_5_nop: Ära küsi käivitamisel parooli määramist
+txt_6_5_error: Viga
+txt_6_5_seqerr: Tuvastati viga(d), algseid faile ei kustutata
+txt_6_5_sni: Lisa NT turvateave
+txt_6_5_sns: Lisa NTFS-i alternatiivne andmevoog
+txt_6_5_privacy: Privaatsus ja turvalisus
+txt_6_5_showvolatile: Näita, millised valikud on volatiilsed / kontekstist sõltuvad
+txt_6_5_force: Proovige avada vigu sisaldavaid arhiive
+txt_6_5_warning: Hoiatus
+txt_6_5_yes: Jah
+txt_6_5_yesall: Jah kõigile
+txt_6_5_np: Nüüd saate teisendatud arhiivi(de) parooli uue vastu vahetada või krüptimise vahelejätmiseks paroolivälja tühjaks jätta.
+txt_6_4_absolute: Absoluutsed teed
+txt_6_4_appdirn: Lisa kataloogi nimi
+txt_6_4_closeallother: Sulge kõik teised vahelehed
+txt_6_4_closeright: Sulge paremal olevad vahekaardid
+txt_6_4_collapse: Sulge vahekaardid
+txt_6_4_expand: Laienda vahelehti
+txt_6_4_full: Täielikud teed
+txt_6_4_new: Uus
+txt_6_4_openintab: Ava uuel vahelehel
+txt_6_4_paths: Teed
+txt_6_4_prepdirn: Lisa kataloogi nimi ette
+txt_6_4_relative: Suhtelised teed
+txt_6_4_tabbar: Tabeliriba
+txt_6_3_autoadjust: Veergude automaatne reguleerimine
+txt_6_3_cinfo: Info ja kommentaarid
+txt_6_3_syn: Sünkroniseeri arhiiv kettaga
+txt_6_3_uar: Uuenda ainult arhiivis olevaid faile
+txt_6_2_encext: Lisa krüpteeritud arhiividele sufiks ".enc"
+txt_6_2_archive: Arhiivifaili tüüp
+txt_6_2_container: Konteineri failitüüp
+txt_6_1_ec: Arhiivipuu laiendamine / ahendamine
+txt_6_0_msq: Sorteeri failitüübi järgi kindla tihenduse saamiseks
+txt_5_9_lff: Failide ja kaustade analüüsimine
+txt_5_9_pff: Analüüsi, kuva failide päised/EOF
+txt_5_9_start: Alusta alates
+txt_5_8_l0: Lubab kõik toetatud komponendid/vormingud
+txt_5_8_l1: Luba ainult tasuta tarkvara komponendid
+txt_5_8_l2: Luba ainult avatud arhiivivormingud
+txt_5_8_ascii: ASCII-turvaline, skriptid on turvalised ka pärandkeskkondades
+txt_5_8_cp: Koodileht on ohutu, skriptid võivad probleeme tekitada pärandkeskkondades, kus on erinevad koodilehed.
+txt_5_8_fs: Vaba tarkvara nõuetele vastavus
+txt_5_8_utf: Skriptid vajavad täielikku UTF-8 / Unicode keskkonda
+txt_5_8_fsr: Seda vormingut ei toetata vaba tarkvara nõuetele vastavuse piirangute tõttu (Valikud > Seaded > Lisateave)
+txt_5_7_pinstalled: PAIGALDATUD
+txt_5_7_pmissing: PUUDUB
+txt_5_7_plugin: Plugin puudub, selle saab installida menüüst Abi > Kontrolli pluginaid
+txt_5_6_basic: Põhiline
+txt_5_6_exarc: Arhiivi ekstraktimine
+txt_5_6_tab: Ava uuel vahelehel
+txt_5_6_rc: Paremklõps valikute jaoks
+txt_5_6_layouts: Salvestatud paigutused
+txt_5_6_upexisting: Olemasoleva arhiivi uuendamine
+txt_5_6_verbose: Pikksõnaline
+txt_5_5_case: (suur- ja väiketähtede tundlik)
+txt_5_5_add: Lisa string määratud positsioonile
+txt_5_5_addsel: Lisa praegusele valikule
+txt_5_5_ext: Muuda faililaiendit
+txt_5_5_plugin: Kontrolli pluginate olemasolu
+txt_5_5_copypath: Kopeerimise tee
+txt_5_5_delete: Kustuta tähemärgid määratud positsioonilt
+txt_5_5_halt: Peata süsteem, kui ülesanne on lõpule viidud
+txt_5_5_positionw: Vihje: 1 lisa enne esimest märki, 2 teine jne... "z" failinime lõpu jaoks
+txt_5_5_positionwd: Vihje: 1 kustutatakse esimene märk, 2 teine, ... "z" failinime lõppu
+txt_5_5_replaceneww: Vihje: vana stringi eemaldamiseks sisesta tühi uus string
+txt_5_5_lower: väiketähed
+txt_5_5_replaceoldw: Muuda selle stringi või tähemärgi kõiki esinemisi failinimes
+txt_5_5_newext: Uus laiendus
+txt_5_5_new: Uus string
+txt_5_5_n: Kustutatavate märkide arv
+txt_5_5_old: Vana string
+txt_5_5_position: Positsioon (number või "z" lõpu tähistamiseks)
+txt_5_5_intdir: Nutikas uus kaust
+txt_5_5_replacestr: Asenda/eemalda string
+txt_5_5_datesameday: Valitud objekti sama päev
+txt_5_5_datesamehour: Valitud objekti sama tund
+txt_5_5_datesamemonth: Valitud objekti sama kuu
+txt_5_5_datesameweek: Valitud objekti sama nädal
+txt_5_5_datesameyear: Valitud objekti sama aasta
+txt_5_5_scan: Skannimine
+txt_5_5_select: Vali
+txt_5_5_similar: Sarnane valitud objektiga
+txt_5_5_starting: Alustades sama tähemärgiga
+txt_5_5_string: Lisatav string
+txt_5_5_subtractsel: Lahuta praegusest valikust
+txt_5_5_datehour: See tund
+txt_5_5_datemonth: See kuu
+txt_5_5_dateweek: See nädal
+txt_5_5_dateyear: Sel aastal
+txt_5_5_dateday: Täna
+txt_5_5_upper: SUURTÄHTED
+txt_5_5_extw: Hoiatus: faililaiendi muutmisel võib fail muutuda kasutuskõlbmatuks
+txt_5_4_da: Lisamise kuupäev
+txt_5_4_deletearchives: Kustuta arhiivid pärast lahtipakkimist
+txt_5_4_deletefiles: Kustuta failid pärast arhiveerimist
+txt_5_4_deleteoriginal: Skriptile lisatakse põhiekraanil seadistatud kustutusprotseduur.
+txt_5_4_lv: Viimati külastatud
+txt_5_4_deletearchivesconfirm: Kas kinnitada algsete arhiivide kustutamine?
+txt_5_4_deletefilesconfirm: Kas kinnitada algsete failide kustutamine?
+txt_5_4_used: Kasutatud
+txt_5_3_profilebest: Äärmuslik tihendus, 7Z ultra
+txt_5_3_profileadvanced: Kõrge tihendusaste, 7Z
+txt_5_3_profilenormal: Keskmise tihendusega, ZIP (ühildub enamiku ekstraktoritega)
+txt_5_3_profileveryfast: Kiire tihendamine, kiire ZIP-vorming (ühildub enamiku ekstraktoritega)
+txt_5_3_profilepassword: Kaitse parooliga, 7Z-vormingus
+txt_5_3_profile10mb: Väljundmaht jääb alla 25 MB, et tagada meilimanuste piirangud.
+txt_5_3_profilesfx: Automaatne lahtipakkimine, saaja ei vaja lahtipakkimistarkvara
+txt_5_3_cml: Süsteemi kontekstimenüü keel
+txt_5_3_cmlmessage: Topeltklõpsake soovitud kontekstimenüü keelel ja kinnitage registri liitmine. See säte tuleb uuesti rakendada rakenduse installimisel/värskendamisel või pärast süsteemi integreerimise viisardi kasutamist.
+txt_5_3_exc: Välistamisfiltrid on kaasamisfiltrite puhul ülimuslikud
+txt_5_3_ia: Lisa ka
+txt_5_3_io: Lisa ainult
+txt_5_3_rec: Rekursiivsed alamkaustad
+txt_5_3_resetsi: Kas seadistada süsteemi integratsioon uuesti (kontekstimenüü, Saada aadressile, failide seosed)?
+txt_5_2_oadd: Arhiveeri algsele teele
+txt_5_2_zerodelete: Kas soovite kustutada ja üle kirjutada kõik 0 valitud faili? Toimingut ei saa tagasi võtta ja faile ei saa taastada.
+txt_5_2_zfree: Kas soovite selle draivi kogu vaba ruumiga üle kirjutada?
+txt_5_2_sdfree: Kas soovite sellelt draivilt vaba ruumi turvaliselt kustutada?
+txt_5_2_oext: Ekstrakti algsele teele
+txt_5_2_securedeletefree: Vaba ruumi turvaline kustutamine
+txt_5_2_free: See toiming võib võtta paar minutit ja kui seda sageli teha, võib see välkmälupõhised kettad kiiresti ära kulutada.
+txt_5_2_zerofiles: Null kustutamist
+txt_5_2_zerofree: Vaba ruumi kustutamine nulliga
+txt_5_1_schedadd: Lisa ajakava
+txt_5_1_schederr: Ajakava loomine ebaõnnestus
+txt_5_1_daily: Igapäevane
+txt_5_1_day: Päev
+txt_5_1_days: Päevad
+txt_5_1_enddate: Lõppkuupäev
+txt_5_1_every: Iga
+txt_5_1_w6: Reede
+txt_5_1_hourly: Iga tund
+txt_5_1_hours: Tunnid
+txt_5_1_last: Viimane
+txt_5_1_schedmanage: Ülesannete ajastaja, PeaZipi harus salvestatud ülesannete haldamine
+txt_5_1_scriptmanage: Salvestatud ajastatud skriptide haldamine
+txt_5_1_w2: Esmaspäev
+txt_5_1_monthly: Igakuine
+txt_5_1_months: Kuud
+txt_5_1_onlogin: Sisselogimisel
+txt_5_1_onstart: Käivitamisel
+txt_5_1_once: Üks kord
+txt_5_1_w7: Laupäev
+txt_5_1_schedule: Ajakava
+txt_5_1_schedexplain: Loob GUI ülesande definitsioonist lihttekstiskripti ja ajastab selle. Ajastatud ülesannete skriptid salvestatakse kausta "Ajastatud skriptid". Ajastatud ülesannete muutmiseks või kustutamiseks saate kasutada süsteemi ülesannete ajastajat, kõik PeaZipi loodud ajastatud ülesanded kogutakse ülesannete teegi harusse "PeaZip".
+txt_5_1_schedok: Ajakava loodud edukalt
+txt_5_1_schedscripts: Salvestatud ajastatud skriptid
+txt_5_1_startdate: Alguskuupäev
+txt_5_1_starttime: Algusaeg
+txt_5_1_w1: Pühapäev
+txt_5_1_schedname: Ülesande nimi, mis tuvastab nii salvestatud ajastatud skripti kui ka süsteemi ajastatud ülesande
+txt_5_1_ts: Ülesannete ajastaja
+txt_5_1_w5: Neljapäev
+txt_5_1_w3: Teisipäev
+txt_5_1_w4: Kolmapäev
+txt_5_1_weekly: Iganädalane
+txt_5_1_weeks: Nädalad
+txt_5_0_bc: Leivapuru
+txt_5_0_resetpm: Kas kinnitate paroolihalduri lähtestamise? Kinnitamisel lähevad kõik PeaZipi paroolihalduris salvestatud paroolid kaotsi.
+txt_5_0_enum: Loetle kausta sisu
+txt_5_0_music: Muusika
+txt_5_0_ps: Ava PowerShell siin
+txt_5_0_perf: Etendused
+txt_5_0_pictures: Pildid
+txt_5_0_removeall: Eemalda kõik
+txt_5_0_resetbookmarks: Kas lähtestada järjehoidjad vaikesätetele? (Järjehoidjaid saab seejärel kohandada menüüst Järjehoidjad > Korrasta)
+txt_5_0_sh: Seansi ajalugu
+txt_5_0_skip: Jäta kataloogide sisu loetlemine paigutuses vahele
+txt_5_0_videos: Videod
+txt_4_9_frame: Raam
+txt_4_9_listth: Loend ja pisipildid
+txt_4_9_shadow: Vari
+txt_4_9_style: Stiil
+txt_4_8_attach25: 25 MB manus
+txt_4_8_crop: Kärbi
+txt_4_8_detailsno: Üksikasjad
+txt_4_8_details: Üksikasjad ja pisipildid
+txt_4_8_fit: Sobita
+txt_4_8_fitl: Sobita suurimale
+txt_4_8_flip: Pööra ümber
+txt_4_8_fullscreen: Täisekraan
+txt_4_8_fun: Funktsioonid
+txt_4_8_h: Kõrgus
+txt_4_8_keeparchive: Säilita arhiiv
+txt_4_8_noresize: Säilita algne suurus
+txt_4_8_iconl: Suured pildid
+txt_4_8_iconm: Ikoonid ja pildid
+txt_4_8_imagemanager: Pildihaldur
+txt_4_8_immersive: Kaasahaarav
+txt_4_8_listno: Loend
+txt_4_8_aspect: Säilita kuvasuhe
+txt_4_8_mirror: Peegel
+txt_4_8_presets: Eelseadistused
+txt_4_8_replace: Kas asendada algne(d) pilt(id)? "Ei" rakenda teisendust uues(tes) failis(ides).
+txt_4_8_resize: Suuruse muutmine
+txt_4_8_rl: Pööra vasakule
+txt_4_8_rr: Pööra paremale
+txt_4_8_stop: Stopp
+txt_4_8_t: Teisendus
+txt_4_8_w: Laius
+txt_4_7_pk: Loo juhuslik parool / võtmefail
+txt_4_7_spchar: Piira tähemärke tähtede ja numbritega
+txt_4_7_recycleask: Kas teisaldada valitud fail(id) prügikasti?
+txt_4_7_recycle: Teisalda prügikasti
+txt_4_7_pcomp: Potentsiaalne tihendamine
+txt_4_6_am: Arhiivihaldur
+txt_4_6_fm: Failihaldur
+txt_4_6_users: Kasutajad
+txt_4_5_goupdate: Saadaval on uus versioon. Kas avada PeaZipi ametlik veebisait värskenduse allalaadimiseks?
+txt_4_5_b: Alumine osa
+txt_4_5_koupdate: Värskendusi ei saa kontrollida, värskendusserveriga pole ühendust
+txt_4_5_update: Kontrolli värskendusi
+txt_4_5_dock: Dokkimine
+txt_4_5_l: Vasakule
+txt_4_5_noupdate: PeaZip on ajakohane
+txt_4_5_properties: Omadused
+txt_4_5_r: Paremale
+txt_4_5_pj: Salvestatud skriptid
+txt_4_5_shaddress: Näita aadressiriba
+txt_4_5_shnav: Näita külgriba
+txt_4_5_shstatus: Näita olekuriba
+txt_4_5_shtool: Näita tööriistariba
+txt_4_5_upxpj: Vabandust, ülesande definitsiooni ei saa eksportida, kuna see toiming või valik nõuab mitme erineva käsu täitmist.
+txt_4_5_t: Ülemine
+txt_4_4_confremoveall: Kas eemaldada kõik PeaZipi kohandamisfailid (rakendused, järjehoidjad)?
+txt_4_4_confremove: Kas eemaldada PeaZipi konfiguratsioon?
+txt_4_3_pwmanhint: Parooliloendi üksuste muutmiseks topeltklõpsake, valikute kuvamiseks paremklõpsake, paroolide kopeerimiseks vajutage Ctrl+C
+txt_4_3_expl: Paroolide loendi eksport
+txt_4_3_expple: Krüpteeritud (varundusparoolihaldur)
+txt_4_3_keeppw: Säilita parool/võtmefail praeguse seansi jaoks
+txt_4_3_pwmanpwhint: Parooliloendi krüpteerimiseks on soovitatav määrata parool/võtmefail (valikuline), kuna sel viisil on paroolihaldurile juurdepääsuks vaja autentimist. Parooli/võtmefaili saab sellelt vormilt igal ajal muuta.
+txt_4_3_pwmanmaster: PM-i peaparooli määramine/muuda
+txt_4_3_pwmanlist: Paroolide loend
+txt_4_3_pwman: Paroolihaldur
+txt_4_3_pwmancorr: Paroolihaldur tundub olevat muudetud või rikutud. Kas soovite paroolihaldurit ikkagi alles hoida ja proovida praegust paroolide loendit taastada, kui te seda usaldate? (Ei, paroolihaldur lähtestatakse, see on soovitatav)
+txt_4_3_expplp: Lihttekst (kõik kasutusalad)
+txt_4_3_recsrc: Vaikimisi rekursiivne otsing
+txt_4_3_resetpm: Kas lähtestada paroolihaldur? Kõik salvestatud paroolid kustutatakse.
+txt_4_3_breadcrumb: Näita aadressi leivapuruna
+txt_4_2_arcabspath: Kasuta absoluutseid teid
+txt_4_1_duplicateshint: CRC veerus kuvatakse string "size"/"checksum" kõigi praeguses kataloogis või otsingufiltris leitud duplikaatide kohta
+txt_4_1_adminhint: (VIHJE: Teise võimalusena saate taotleda UAC-i laiendamist, et see töötaks kaitstud radadel, vajutades Alt+F10 või valides Valikud > Käivita administraatorina)
+txt_4_1_valitud: (valitud)
+txt_4_1_duplicatesfound: leitud duplikaadid
+txt_4_1_duplicatesfind: Leia duplikaate
+txt_4_1_runasadmin: Käivita administraatorina
+txt_4_1_simplesearch: Lihtne otsing
+txt_4_0_thim: Näita piltide pisipilte
+txt_3_8_type_description_wim: WIM: Microsofti ketta kujutise vorming
+txt_3_8_type_description_xz: XZ: võimas failide tihendamine LZMA2-l põhinev
+txt_3_7_donations: Annetused
+txt_3_7_nameasparent: Nimeta arhiiv valitud üksuse ülemkaustana, kui lisatud on mitu üksust
+txt_3_7_tracker: Probleemide jälgija
+txt_3_7_sort: Sorteeri
+txt_3_7_swapbars: Vahetustööriistariba / Aadressiriba
+txt_3_7_themedbars: Teemapõhised baarid
+txt_3_6_ignoredd: Lohistamise teel ekstraheerimise korral ignoreeri alati teid
+txt_3_6_close: Sule
+txt_3_6_resetapps: Kas soovite lähtestada rakendused (kohandatav programmide ja skriptide rühm failide avamiseks, mis tühistab failide seosed)?
+txt_3_6_ethemes: Olemasolevad teemad
+txt_3_5_td: Teemade kontrollimine
+txt_3_5_managecustomthemes: Teemade haldamine
+txt_3_4_nopaths: Teid pole
+txt_3_4_smallicons: Ikoonid
+txt_3_3_skipunits: (Windows) Hankige võrguseadmete helitugevuse teavet, aeglasem käivitus
+txt_3_3_stralt: Alternatiivne käsk, kui parameetrit ei edastata
+txt_3_3_apps: Rakendused
+txt_3_3_multi: Mitmekordne valik
+txt_3_3_runexp: Avab programmi, faili, kausta või veebisaidi
+txt_3_3_apppath: PeaZipi kaust
+txt_3_3_run: Käivita
+txt_3_2_7zutf8nonascii: 7z / p7zip -mcu kasutab UTF8 koodi failinimede puhul, mis sisaldavad .zip-failides mitte-ASCII sümboleid
+txt_3_2_alltasks: Kõik ülesanded
+txt_3_2_conf: Konfiguratsioon
+txt_3_2_donations: Anneta heategevusorganisatsioonidele
+txt_3_1_sccenc: 7z / p7zip konsooli märgikodeering
+txt_3_1_downloads: Allalaadimised
+txt_3_1_lib: Teegid
+txt_3_1_more: Rohkem
+txt_3_1_openasarchive: Ava arhiivina
+txt_3_1_sendto: Kasutaja Saada menüükaust
+txt_3_1_pathexc: Tee pikkus ületab lubatud maksimumi
+txt_3_1_recent: Hiljutine
+txt_3_1_plsmartmin: Käivita minimeerituna, näita/hoia avatuna ainult vajadusel
+txt_3_1_src: Otsingud
+txt_3_1_systmp: Kasutaja temperatuur
+txt_3_1_languagetools: Tõlgi
+txt_3_1_workingdir: Töökataloog
+txt_3_0_nonreadableorpw: Arhiivi ei saa lugeda. Arhiiv ei pruugi olla kehtiv, köited võivad puududa või selle sisukord on krüpteeritud. Kas soovite proovida parooli?
+txt_3_0_readablepw: Arhiiv on loetamatu, võib olla parooliga kaitstud
+txt_3_0_configure: Failide seosed ja süsteemimenüü integratsioon
+txt_3_0_resettmp: Lähtesta ajutised tööfailid
+txt_2_9_address: Aadressiriba
+txt_2_9_adv: Täiustatud filtreid rakendatakse kõigi 7z või FreeArc taustaprogrammide kaudu toetatud failide haldamisel (vt dokumentatsiooni) ja need tühistavad põhifiltrid (mida kasutatakse otsingufunktsioonide jaoks ja mis kuvatakse järjehoidjate ja ajaloo paneelidel).
+txt_2_9_columns: Veerud
+txt_2_9_copyhere: Kopeeri siia
+txt_2_9_noscan: Ära skanni faile, mida küljendusele lisatakse
+txt_2_9_extconsole: Ekstraktimise konsool on saadaval ainult arhiivide sirvimise ajal
+txt_2_9_thl: Nuppude esiletõstmine
+txt_2_9_home: Avaleht
+txt_2_9_lt: Suur
+txt_2_9_mt: Keskmine
+txt_2_9_movehere: Liigu siia
+txt_2_9_nav: Navigeerimine
+txt_2_9_navbar: Külgriba
+txt_2_9_none: Puudub
+txt_2_9_organize: Korralda
+txt_2_9_public: Avalik
+txt_2_9_rec: Rekursiivne: otsing alamkataloogides võib võtta aega
+txt_2_9_selected: Valitud
+txt_2_9_setapps: Rakenduste korraldamine
+txt_2_9_showmenu: Näita menüüriba
+txt_2_9_st: Väike
+txt_2_9_test_pw2G: Krüptimise test <2GB arhiivides
+txt_2_9_vst: Ainult tekst
+txt_2_9_toolbar: Tööriistariba
+txt_2_9_tree: Puu
+txt_2_9_views: Vaatamisi
+txt_2_8_experimental: (eksperimentaalne)
+txt_2_8_zcopy: (Windows) Kopeeri failid taaskäivitusrežiimis, aeglasem kopeerimine
+txt_2_8_addvol: Terve köite lisamine arhiivi võib võtta kaua aega, kas jätkata ikkagi?
+txt_2_8_uniterror: Üksusele ei pääse ligi
+txt_2_8_cannotconvert: Valitud arhiive ei saa teisendada
+txt_2_8_convertbegin: Kas jätkata tihendamisetapiga, et konversioon lõpule viia?
+txt_2_8_convert: Teisenda
+txt_2_8_convertexisting: Teisenda olemasolevad arhiivid
+txt_2_8_convertdelete: Kas kustutada ajutiselt teisendamiseks loodud failid ja kaustad?
+txt_2_8_details: Üksikasjad
+txt_2_8_parallel: Võimaluse korral käivita ülesanded paralleelselt
+txt_2_8_convertnote: Igal juhul ei muudetud algseid arhiive, et kasutaja saaks neid alles hoida või eemaldada.
+txt_2_8_custom: PeaZip ei toeta seda otseselt, aga ekstraktimise etapis saate vahekaardil "Täpsemalt" seadistada PeaZipi käsitlema kohandatud failitüüpe. Kas jätkata selle faili avamist?
+txt_2_8_unitrecommend: Soovitatav on failisüsteemid kas arvuti juurkataloogist lahti pakkida (paremklõps > lahtipakkimine) või avada (Süsteemitööriistad > Ava üksus arhiivina).
+txt_2_8_viewasarchive: Ava üksus arhiivina
+txt_2_8_nounit: Ühikut pole valitud
+txt_2_8_rowselect: Rea valik
+txt_2_8_statusbar: Olekuriba
+txt_2_8_typeunit: Sisestage loogilise või füüsilise üksuse nimi
+txt_2_8_usedefactoutpath: Kasuta alati vaikimisi väljundrada
+txt_2_7_experimental: (eksperimentaalne, vaata dokumentatsiooni)
+txt_2_7_valikuline: (valikuline)
+txt_2_7_list_tryflatorpw: , võimalikud lahendused: proovige lamevaadet (F6), sisestage parool (F9), hankige arhiivist värske koopia
+txt_2_7_separate: Lisa eraldi arhiividesse
+txt_2_7_pwsupported: arhiveerimine parooliga
+txt_2_7_cancel: Tühista
+txt_2_7_encfn: Krüpteeri ka failinimed (kui vorming seda toetab)
+txt_2_7_setpw: Parooli / võtmefaili määramine
+txt_2_7_ext: Väljavõte:
+txt_2_7_extfrom: Arhiivist väljavõtmine:
+txt_2_7_es: Ekstrakti toetatud mittearhiivfailitüübid, nt käivitatavad failid, MS Office'i ja OOo failid
+txt_2_7_eu: Ekstraheeri toetuseta failitüüpe, määrates kohandatud ekstraktimise utiliidi
+txt_2_7_clipboard: Lõikelaud
+txt_2_7_goarclayout: Mine arhiveerimispaigutusse
+txt_2_7_goextlayout: Mine ekstraktsiooni paigutusele
+txt_2_7_ok: Olgu
+txt_2_7_drag_archive: kas avada fail uue arhiivina? ("Ei", et lisada fail praegusesse arhiveerimispaigutusse)
+txt_2_7_oop: Ava väljundtee, kui ülesanne on lõppenud
+txt_2_7_validatefn: Toiming peatatud, tuvastati sobimatu failinimi:
+txt_2_7_validatecl: Toiming peatatud, tuvastatud potentsiaalselt ohtlik käsk (st käskude liitmine pole programmis lubatud):
+txt_2_7_output: Väljund
+txt_2_7_pwnotset: Parool pole määratud
+txt_2_7_pwarcset: Parool on määratud
+txt_2_7_pwextset: Parool on määratud, krüptitud arhiive on võimalik ekstraktida/loendada/testida
+txt_2_7_archivehint: Lohistage failid ja kaustad siia arhiveerimiseks või paremklõpsake lisavalikute nägemiseks
+txt_2_7_exthint: Lohistage arhiivid siia, et neid lahti pakkida, või paremklõpsake lisavalikute nägemiseks
+txt_2_7_setadvf: Määra täpsemad filtrid
+txt_2_7_selpath: Valitud elemendi tee
+txt_2_7_separateerror: Vabandust, ülesande definitsiooni käsurea importimine pole võimalik, kui kasutate lülitit "Lisa eraldi arhiivi", kuna ülesannet täidetakse mitme eraldi käsuna.
+txt_2_7_noinput: Paigutus on tühi: palun kasutage valikut „Lisa fail(id)” või „Laadi paigutus”, et täita lahtipakkitavate arhiivide loend.
+txt_2_7_dirsize: Kaustade sisu suurust kogumahu arvutamisel ei kontrollita.
+txt_2_7_un7z_browse_flat: proovi lamevaadet (F6)
+txt_2_7_updating: [Olemasoleva arhiivi uuendamine]
+txt_2_6_kaustad: (kaustad)
+txt_2_6_advanced: Täpsem
+txt_2_6_plalways: Peatu alati, et ülesande aruannet kontrollida
+txt_2_6_plsmart: Peatage, et kontrollida aruannet vea, loendi või testi osas
+txt_2_5_sessionio: (see seanss)
+txt_2_5_advanced: Täiustatud muudatus: vajadusel lisage parameetristringide ja failinime vahele tühikud
+txt_2_5_basic: Põhimuudatus: rakendus ja parameetrid enne sisendnime
+txt_2_5_cannotrun: Ei saa käivitada
+txt_2_5_custeditors: Kohandatud redaktorid, mängijad, viirusetõrjeskannerid jne... (süsteemi failide seoste tühistamine)
+txt_2_5_delete: Kustuta
+txt_2_5_delete_fromarchive: Kustuta arhiivist
+txt_2_5_langflag: Kuva arhiveeritud objekti nimi UTF-8 tekstina; tühjendage märkeruut, et asendada laiendatud tähemärgid tähega "?".
+txt_2_5_encpj: Kodeeri ülesande definitsioon UTF-8 tekstina
+txt_2_5_execommand: Käivitatav fail või käsk
+txt_2_5_help: Abi
+txt_2_5_langhint: Vihje: laiendatud märkide asendamine tähemärgiga "?" võib süntaksit parandada, kui arhiivi märgistikku ei saa praeguses masinas edukalt teisendada.
+txt_2_5_mini_help: Lokaliseeritud õpetus
+txt_2_5_offline_help: PeaZipi abi
+txt_2_5_tray: Vähenda salve
+txt_2_5_remove: Eemalda
+txt_2_5_hintpaths: Paremklõps süsteemi ja kasutaja teekondade avamiseks
+txt_2_5_selectapp: Valige rakendus
+txt_2_5_strafter: Sõne pärast sisendi nime
+txt_2_5_strbefore: Sõne enne sisendi nime
+txt_2_5_encoding: Teksti kodeering
+txt_2_5_nopw: seda tüüpi arhiivid ei toeta krüpteerimist
+txt_2_4_draghint: [lohistage Explorerisse, kui aadressiriba on lubatud]
+txt_2_4_tb: Tööriistariba nuppude kohandamine (taaskäivitab PeaZipi)
+txt_2_4_adding: Lisamine
+txt_2_4_advclip: Lõikelaud säilitab mitu valikut
+txt_2_4_yanswers: Vastused
+txt_2_4_itemsheight: Elemendi kõrguse automaatne suuruse muutmine
+txt_2_4_clearclipboard: Tühjenda lõikelaud (Esc)
+txt_2_4_wcommons: Commons
+txt_2_4_copyfrom: Kopeeri allikast
+txt_2_4_deletebookmarks: Kas soovite kustutada järjehoidjatesse lisatud failide ja kaustade loendi?
+txt_2_4_documents: Dokumendid
+txt_2_4_wenc: Entsüklopeedia
+txt_2_4_extractfrom: Väljavõte allikast
+txt_2_4_hexp: Kuueteistkümnendsüsteemis eelvaade
+txt_2_4_operation: Toiming
+txt_2_4_path: tee ei ole kirjutatav (st täielik või kirjutuskaitstud). Kas soovite valida kirjutatava väljundtee?
+txt_2_4_removefromclipboard: Eemalda lõikelaualt
+txt_2_4_stdclip: Standardne: üks valik lõikelaual, kleepimisel toimingud tühistatakse
+txt_2_4_totalmem: mälu kogumaht
+txt_2_4_gvideo: Video
+txt_2_4_wbook: Vikipeedia
+txt_2_4_wnews: Vikipeedia uudised
+txt_2_4_wsrc: Vikipeedia allikas
+txt_2_4_wdict: Vikisõnastik
+txt_2_3_pw_errorchar: tsitaatmärgi kasutamine paroolides (PeaZipi ja skriptide puhul) ei ole soovitatav. Kui teil on vaja selle parooliga arhiiv luua või lahti pakkida, saate teate sulgeda ja teil palutakse parool interaktiivselt konsoolis sisestada.
+txt_2_3_envstr: Kuva keskkonnamuutujad
+txt_2_3_never_pw: Ära küsi parooli
+txt_2_3_home: Kasutaja kodu
+txt_2_3_on_pw: Süsteemi menüüdest toimingute väljavõtmisel/loendamisel/testimisel:
+txt_2_3_test_pw100: Krüptimise test <100MB arhiivides
+txt_2_3_test_pw: Krüpteeringu test (võib olla aeglane)
+txt_exclude_recourse: "välista" rekurrentsed alamkaustad
+txt_action_extopen: "Ekstrakti ja ava seotud rakendusega" toiming
+txt_error_passwordnotmatch: Väljad "Parool" ja "Kinnita" ei ühti, palun parandage need
+txt_action_preview: Toiming "Eelvaade seotud rakendusega"
+txt_preview_hint: Toiming "Eelvaade" teostab sama ülesande mis "Ekstrakti ja ava", aga ajutisele teele väljundkataloogis, mis eemaldatakse automaatselt arhiivi sulgemisel.
+txt_better: (parem)
+txt_default2: (vaikimisi)
+txt_faster: (kiirem)
+txt_fastermem: (kiirem, vähem mälu)
+txt_tempdir: (PeaZipi ajutine töökaust)
+txt_stream: (määratud "Voo juhtimise" poolt)
+txt_slowermem: (aeglasem, rohkem mälu)
+txt_store: (pood, kiireim)
+txt_newfolder: (uues kaustas)
+txt_7z_exitcodeunknown: : Tundmatu viga ülesandes
+txt_list_isfolder: [kaust]
+txt_none: <puudub>
+txt_fd: 1,44 MB diskett
+txt_7z_exitcode1: 1: Hoiatus: mittesaatuslik(ad) viga(d); nt mõned failid puuduvad või on lukus
+txt_attach10: 10 MB manus
+txt_7z_exitcode2: 2: Tekkis saatuslik viga
+txt_7z_exitcode255: 255: Kasutaja peatas ülesande
+txt_fat32: 4 GB FAT32 fail
+txt_dvd: 4,7 GB DVD
+txt_attach5: 5 MB manus
+txt_cd650: 650 MB CD
+txt_7z_exitcode7: 7: Viga: saime vale käsurea
+txt_cd700: 700 MB CD
+txt_type_description_7z: 7Z: funktsiooniderikas arhiivivorming kõrge tihendusastmega
+txt_dvddl: 8,5 GB DVD-ketas
+txt_7z_exitcode8: 8: Viga: taotletud toimingu jaoks pole piisavalt mälu
+txt_abort: Kas katkestada ajastatud failide kopeerimise/teisaldamise toimingud?
+txt_about: Teave
+txt_action: Toiming
+txt_action_hint: Toiming seotud rakenduse avamisel või eelvaates
+txt_add: Lisa
+txt_add_existing_archive: Lisa (kui arhiiv on olemas)
+txt_add_archive: Lisa arhiiv
+txt_add_files: Lisa faile
+txt_add_folder: Lisa kaust
+txt_add_path: Lisa tee
+txt_add_tolayout: Lisa valitud failid ja kaustad arhiivi paigutusse
+txt_add_toarchive: Lisa arhiivi
+txt_add_tobookmarks: Lisa järjehoidjatesse
+txt_address_hint: Filter: aktsepteerib metamärke * ja ?
+txt_adv_filters: Täiustatud filtrid
+txt_algo: Algoritm
+txt_all: kõik
+txt_all_default: Kõik (vaikimisi)
+txt_all_type: Sama tüüp
+txt_all_date: Kuupäev
+txt_all_psize: Pakitud faili suurus
+txt_all_attributes: Samad atribuudid
+txt_all_size: Faili suurus
+txt_error_input_upx: lubab sisendina kasutada ühte käivitatavat faili
+txt_always_pw: Küsi alati parooli
+txt_ignore_ext: Ignoreeri alati teid funktsiooni "Ekstrakti ja..." puhul
+txt_ignore_disp: Ignoreeri alati teid valiku "Kuvatav väljavõte..." puhul
+txt_ignore_sel: Ignoreeri alati teid funktsiooni "Ekstrakti valitud..." puhul
+txt_key_hint: Lisa võtmefaili räsi paroolile; arhiivi saab dekrüpteerida PeaZip ja teised rakendused sama standardi järgides või räsi parooli osana sisestades.
+txt_timestamp: Lisa nimele ajatempli
+txt_appoptions: Rakenduse valikud
+txt_type_description_arc: ARC: eksperimentaalne arhiveerija, võimas, tõhus ja funktsiooniderikas
+txt_archive: Arhiiv
+txt_un7z_browse_ok: arhiivi sirvimine õnnestus
+txt_interface: Arhiivi brauseri liides
+txt_archivecreation: Arhiivi loomine
+txt_tarbefore_hint: Arhiveerib andmed TAR-vormingus enne määratud tüüpi.
+txt_archive_hint: Arhiveerib, tihendab, jagab ja säilitab privaatseid faile, kaustu ja köiteid
+txt_compressionratio_hint: Arhiivi tihendussuhe
+txt_archiving: Arhiveerimine:
+txt_cl_long: Argumendid tunduvad ületavat PeaZip'i esiotsa poolt edastatava maksimaalse suuruse, palun valige vähem sisendfaile (st valige kataloogid üksikute failide asemel)
+txt_overwrite_askbefore: Küsi enne ülekirjutamist (konsoolis)
+txt_associated: Seotud rakendus
+txt_attributes: Atribuudid
+txt_author: Autor
+txt_ren_existing: Nimeta olemasolevad failid automaatselt ümber
+txt_ren_extracted: Nimeta ekstraheeritud failid automaatselt ümber
+txt_autofolder: Kas luua automaatselt uus kaust arhiivi lahtipakkimiseks?
+txt_back: Tagasi
+txt_backend: Taustaprogrammi binaarfailid
+txt_backupexe: Varukoopia käivitatav fail (soovitatav)
+txt_bettercompression: parem tihendus
+txt_blogs: Blogid
+txt_blowfish: Blowfish448 (64-bitised plokid)
+txt_bookmarks: Järjehoidjad
+txt_browse: Sirvi
+txt_browser: Brauser
+txt_aborted_error: Arhiivi sirvimine peatati, see võtaks liiga palju aega. Valikut saab kitsendada otsingu abil (F3) või vältides lameda vaate režiimi (F6). Arhiivi saab otse ekstraktida, loetleda või testida.
+txt_list_browsing: Sirvimine
+txt_archive_root: Sirvimine: arhiivi juurkaust
+txt_type_description_bzip2: BZip2: üsna võimas tihendus, keskmine kiirus
+txt_pw_empty: Palun sisesta parool (või võtmefail)
+txt_add_error: Objekte ei saa lisada/värskendada ega kustutada. Arhiiv ei ole kirjutatav või ei toeta seda toimingut. Mittekanooniliste arhiivitüüpide muutmise saab lubada arhiivihalduri valikutes.
+txt_un7z_browse_failure: arhiivi ei saa sirvida
+txt_list_error: Arhiivi sisu ei saa loetleda, palun kontrollige, kas arhiiv on parooliga kaitstud või rikutud.
+txt_conf_cannotsave: Konfiguratsioonifaili ei õnnestunud salvestada, kontrollige, kas tee on kirjutatav ja kas seal on vaba ruumi.
+txt_check_hint: Kontrollib juhuslikku andmete riknemist; räsialgoritmid sobivad isegi pahatahtliku andmetega manipuleerimise tuvastamiseks (vt dokumentatsiooni)
+txt_check: Kontrollsumma/räsifail(id)
+txt_check_select: Kontrollsumma/räsi
+txt_clear: Tühjenda
+txt_clearlayout: Selge paigutus
+txt_pj_hint: Klõpsake ülesande importimiseks, muudatuste lähtestamiseks ja ajakohase ülesande definitsiooni laadimiseks graafilisest kasutajaliidesest
+txt_autoclose: Ära kunagi peatu ülesande aruande kontrollimiseks
+txt_cl: käsurea:
+txt_compare: Failide võrdlemine
+txt_compress: Tihenda
+txt_compress_executable: Paki käivitatav fail kokku
+txt_compress_openforwriting: Kirjutamiseks avatud failide tihendamine
+txt_compression: Pakkimine
+txt_compmanagement: Arvutihaldus
+txt_pw_confirm: Kinnita
+txt_console: Konsool
+txt_console_interface: Konsool
+txt_content: Sisu
+txt_controlpanel: Juhtpaneel
+txt_convert: Teisenda ketas NTFS-iks
+txt_copy: Kopeeri
+txt_copyto: Kopeeri asukohta...
+txt_create: Loo
+txt_create_archive: Loo uus arhiiv
+txt_title_create: Loo arhiiv, tihenda, krüpti, jaga...
+txt_create_keyfile: Loo võtmefail
+txt_create_folder: Loo uus kaust
+txt_create_theme: Loo teema praeguste sätete põhjal
+txt_rr: Loo taastamiskirjed
+txt_create_sfx: Loo iseavanev arhiiv
+txt_cr_current: Praegune tee või filtri tihendussuhe
+txt_custom: Kohandatud
+txt_type_description_custom: Kohandatud (edasijõudnud kasutajad): sisestage käivitatava faili nimi ja parameetrid
+txt_customapp: Kohandatud rakendus
+txt_custom_parameters: Kohandatud parameetrid
+txt_customsize: Kohandatud suurus
+txt_cut: Lõika
+txt_datetime: Kuupäev/kellaaeg
+txt_default: Vaikimisi
+txt_default_compression: vaikimisi tihendus
+txt_default_format: Vaikimisi vorming
+txt_theme_default: Vaikimisi teema
+txt_hard_reset_hint: Järjehoidjate faili kustutamine
+txt_desktop: Töölaud
+txt_dictionary: Sõnastik
+txt_dirs: kaust(id),
+txt_dis: Täpsustus:
+txt_disk_cleanup: Kettapuhastus
+txt_disk_defrag: Ketta defragmenteerimine
+txt_disk_management: Kettahaldus
+txt_dispaly: Kuva tulemused järgmiselt
+txt_displayedmnu_obj: kuvatud
+txt_displayedobjects: Kuvatud üksused
+txt_nocompress: ära tihenda
+txt_delete: Kas soovite valitud faili(d) kustutada? Toimingut ei saa tagasi võtta ja faile ei saa prügikastist taastada.
+txt_wipe: Kas soovite valitud faili(d) turvaliselt kustutada? Toimingut ei saa tagasi võtta ja faile ei saa taastada.
+txt_done: Valmis
+txt_edit: Redigeeri
+txt_möödunud: möödunud:
+txt_error_emptycl: Tühi käsurida!
+txt_encrypt: Krüpti
+txt_encrypted: krüpteeritud
+txt_encryption: Krüptimine
+txt_note: Sisesta märkus / kirjeldus
+txt_random_keys: Sisesta juhuslikud võtmed
+txt_random_keys_hint: Sisesta juhuslikud võtmed (sa ei pea neid meeles pidama)
+txt_ent: Entroopia hindamine
+txt_ent_tools: Liiguta hiirt või kasuta täiendavaid entroopia valimi võtmise tööriistu
+txt_eqorlarger: Sama või suurem kui valitud objekt
+txt_eqorrecent: Sama või uuem kui valitud objekt
+txt_eqorolder: Sama või vanem kui valitud objekt
+txt_eqorsmaller: Sama või väiksem kui valitud objekt
+txt_equal: Sama mis valitud objekt
+txt_erase_hint: Turvaline kustutamine: kirjuta üle juhuslike andmetega, maski suurus, nimeta ümber, lõpuks kustuta
+txt_extraction_error: Valitud objekti ekstraktimisel tekkis viga. Kui arhiiv on parooliga kaitstud, palun sisestage see.
+txt_exclude_hint: Jäta fail(id) välja, üks rea kohta; kasuta metamärke * ja ?; eraldajaid " ja ' pole vaja
+txt_exclusion_recourse: Välistamisfiltrite rekurrentsed alamkaustad
+txt_exclusion: Välista
+txt_exe: Täidetav fail
+txt_overwrite_qry: sihtkoha teel on see olemas; kas kirjutada üle samanimelise(te) faili(de)ga lähtekoha teelt? (Tühista: jäta selle objekti kopeerimine vahele)
+txt_confirm_overwrite: on olemas; kas kirjutada üle? (ei, et vahele jätta)
+txt_explore_outpath: Avasta väljundtee
+txt_explore_path: Avasta tee
+txt_ext: Laiendus:
+txt_caption_extract: Väljavõte
+txt_ext_nopath: Väljavõte (ilma teekonnata)
+txt_ext_all: Ekstrakti kõik
+txt_ext_allhere: Ekstrakti kõik siit
+txt_ext_allto: Ekstrakti kõik
+txt_extopen_custom: Ekstrakti ja ava kohandatud rakendusega
+txt_extopen_with: Ekstrakti ja ava programmiga...
+txt_ext_disp_here: Siin kuvatakse väljavõtet
+txt_ext_disp: Eksporti kuvatud objekt(id)
+txt_ext_disp_to: Ekstrakti kuvatud objekt(id)...
+txt_ext_here: Väljavõte siit
+txt_ext_sel_here: Siit valitud väljavõte
+txt_ext_sel: Valitud objekti(de) väljavõtmine
+txt_ext_sel_to: Valitud objekti(de) ekstraktimine...
+txt_extobj: Objekti ekstraktimine
+txt_newfoldermenu: Ekstrakti uude kausta
+txt_extto: Ekstrakti asukohta...
+txt_level_fast: Kiire
+txt_fastcompr: kiire tihendamine
+txt_fastopen: Kiire avamisrutiin, lõpetage äärmiselt suurte arhiivide sirvimine, kasutage filtreid
+txt_level_fastest: Kiireim
+txt_favformats: Lemmikvormingute otseteed
+txt_file: Fail
+txt_filebrowser: Failibrauser
+txt_filetools: Failitööriistad
+txt_files: fail(id),
+txt_nfiles: Failid
+txt_fs: Failisüsteem
+txt_filters_recourse: filtri(te) rekurrentsed alamkaustad
+txt_filters: Filtrid
+txt_flat: Korter (näita kõiki)
+txt_list_flat: Tasapinnaline vaade
+txt_unit_floppy: Disketi
+txt_foldername: Kausta nimi
+txt_nfolders: Kaustad
+txt_error_input_multi: vorming lubab sisendina kasutada ühte faili; sisendi salvestamiseks .TAR-arhiivi saab kasutada lülitit "TAR enne", vastasel juhul saab valida mõne muu vormingu. VIHJE: arhiivivorming valiti pärast sisendandmete valimist: lüliti "TAR enne" seatakse automaatselt.
+txt_fwd: Edasi
+txt_list_found: Leitud
+txt_free: Tasuta
+txt_free2: tasuta
+txt_name_full: Täisnimi
+txt_function: Funktsioon
+txt_general: Üldine
+txt_multithreading: Üldine mitmekeermeline töö
+txt_go_browser: Mine failibrauserisse
+txt_go_path: Avasta tee (PeaZip)
+txt_guicl: GUI + konsool
+txt_guipealauncher: Graafiline kasutajaliides
+txt_graphic: Graafika kaust
+txt_gridaltcolor: Ruudustikud vahelduva värviga
+txt_gridrowheight: Ruudustiku rea kõrgus
+txt_gui: graafiline kasutajaliides
+txt_type_description_gzip: GZip: kiire tihendamine
+txt_here: siin
+txt_list_history: Ajalugu
+txt_homeroot: Arvuti/arhiivi juurkataloog
+txt_quickbrowse_hint: Kui sirvimine on peatatud, saab kasutaja valikut otsingu- või filtreerimisfunktsioonide abil kitsendada; ekstraktimise/loendi/testimise funktsioone see mingil moel ei mõjuta.
+txt_backupexe_hint: Kui midagi läheb valesti ja tulemuseks on mittefunktsionaalne tulemus, saate algse käivitatava faili automaatsest varukoopiast taastada.
+txt_attach: Kui meiliklient seda käsku toetab, lisatakse arhiiv uuele meilile.
+txt_images: Pildid
+txt_include_hint: Lisa fail(id), üks rea kohta; kasuta metamärke * ja ?; eraldajaid " ja ' pole vaja
+txt_filters_hint: 7z binaarfaili kaasamis- ja välistamisfiltrid. Palun lugege hoolikalt 7-Zip dokumentatsiooni, et mõista, kuidas need filtrid toimivad.
+txt_inclusion_recourse: Kaasamise filtrid rekurrentsed alamkaustad
+txt_inclusion: Lisa
+txt_error_function: Taotletud funktsioon on vale
+txt_info: Info
+txt_infoall: Info kõige kohta
+txt_infodisp: Info kuvatava(te) objekti(de) kohta
+txt_infosel: Teave valitud objekti(de) kohta
+txt_inputinfo: Sisendinfo
+txt_input_list: Sisendite loend:
+txt_iop: sisend, väljund, parameetrid
+txt_ipo: sisend, parameetrid, väljund
+txt_input: Sisend
+txt_integrity: Terviklikkuse kontroll
+txt_chunk_size: Kehtetu kohandatud suurus, palun parandage see numbrilise väärtusena
+txt_invertsel: Pööra valik
+txt_type_exe: kas see on Windowsi käivitatav fail, kas soovite seda käivitada? ("Ei", et proovida seda arhiivina avada) VIHJE: mõned käivitatavad failid ei pruugi korralikult töötada, kui kogu arhiiv pole enne lahti pakitud
+txt_return_to_archive: on hetkel avatud; kas soovite seda sirvida?
+txt_not_accessible: pole enam ligipääsetav
+txt_type_unsupported: ei ole toetatud arhiivitüüp
+txt_checkname_failed: ei ole kehtiv nimi.
+txt_not_accessible_list: pole ligipääsetav, palun kontrollige, kas esitatud failide loend on õige ja ajakohane
+txt_theme_create_error: Teema loomine ebaõnnestus, proovige teema nimena kasutada kausta jaoks kehtivat nime ja valige kirjutatav tee.
+txt_theme_exists: on veel olemas, palun sisestage teine tee
+txt_job_code: ülesande kood:
+txt_job_definition_saved: Ülesande definitsioon salvestati edukalt asukohta
+txt_job_success: Ülesanne edukalt täidetud!
+txt_join: Liitu
+txt_joinfiles: Ühenda failid
+txt_keyfile: Võtmefail
+txt_keyfile_not_found: Võtmefaili ei leitud või seda ei saa lugeda. Palun valige teine võtmefail.
+txt_keyfile_notcreated: Võtmefaili pole loodud
+txt_larger: Suurem kui valitud objekt
+txt_lastused: Viimati kasutatud
+txt_launch: Käivitusülesanne
+txt_layout: Paigutus
+txt_filelist_savedas: Paigutus salvestatud kui
+txt_level: Tase
+txt_license: Litsents
+txt_caption_list: Loend
+txt_list_details: Loend (koos üksikasjadega)
+txt_list_all: Loetle kõik
+txt_list_disp: Loetle kuvatud objekt(id)
+txt_list_sel: Loetle valitud objekt(id)
+txt_toggle_warning: Tee sisu lamevaate kuvamine võib võtta kaua aega, kas jätkata ikkagi?
+txt_loadfile: Laadi fail
+txt_loadlayout: Laadi paigutus
+txt_unit_hd: Kohalik ketas
+txt_localization: Lokaliseerimine
+txt_lpaqver: LPAQ versioon
+txt_type_description_lpaq: LPAQ: PAQ kiirem versioon, väga hea tihendusvõime
+txt_maininterface: Peamine liides
+txt_maxcomp: Maksimaalne tihendusrežiim
+txt_level_maximum: Maksimaalne
+txt_restartrequired: Rakendamiseks võib olla vaja rakendust taaskäivitada
+txt_required_memory: Vajalik mälumaht MB
+txt_method: Meetod
+txt_misc: Muu
+txt_modify: Muuda
+txt_morecontrols: Rohkem juhtelemente (ajalugu, järjehoidjad, ...)
+txt_morerecent: Valitud objektist uuem
+txt_ent_hint: Liiguta hiirt, sisesta võtmed muutmisväljale, lae failid, et süsteemist entroopiat koguda...
+txt_moveto: Liiguta kohta...
+txt_mypc: Arvuti juurkataloog
+txt_list_na: pole saadaval
+txt_name: Nimi
+txt_naming: Nimetamine
+txt_unit_remote: Võrgudraiv
+txt_newarchive: Uus arhiiv
+txt_cnewfolder: Uus kaust
+txt_news: Uudised
+txt_no: Ei
+txt_noinput: Ligipääsetavat sisendit ei saadud
+txt_nocompress_hint: pakkimist pole (kiirem)
+txt_split_noinput: Sisendit pole valitud; palun valige jagamiseks fail
+txt_open_noinput: Sisendit pole valitud; palun valige arhiiv (mitmeköiteliste arhiivide puhul esimese arhiivi köide)
+txt_list_nomatch: vastet pole
+txt_singlethread: Mitmekeermeline töötlemine puudub
+txt_none2: puudub
+txt_nonsolid: Mittetahke
+txt_level_normal: Tavaline
+txt_copy_error: kopeerimine või teisaldamine ebaõnnestus, veakood:
+txt_description: Märkused
+txt_compare_second: Nüüd vali fail, millega võrrelda
+txt_peaobj: Objekti kontroll
+txt_displayed_obj: objekt(id)
+txt_olderthan: Vanem kui valitud objekt
+txt_on: sees
+txt_ondblclick: Topeltklõpsu korral
+txt_opacity: Läbipaistmatus
+txt_open: Avatud
+txt_openarchive: Ava arhiiv
+txt_title_open: Ava arhiiv, dekrüpteeri, liitu...
+txt_open_bookmark: Ava järjehoidja
+txt_cphere: Ava käsuviip siin
+txt_open_file: Ava fail
+txt_open_files: Ava fail(id)
+txt_open_path: Avatud tee
+txt_opensource: Avatud lähtekoodiga kaasaskantav arhiveerija
+txt_openwith: Ava programmiga...
+txt_aborted: Toiming katkestatud
+txt_unit_cd: Optiline draiv
+txt_options: Valikud
+txt_other: Muu
+txt_otherparams: Muud parameetrid (vaba redigeerimine)
+txt_oip: väljund, sisend, parameetrid
+txt_opi: väljund, parameetrid, sisend
+txt_output: väljund:
+txt_overwrite: Kirjuta olemasolevad failid üle
+txt_compressed_size: Pakitud
+txt_paqver: PAQ versioon
+txt_type_description_paq: PAQ: aeglane, aga äärmiselt võimas kompressor
+txt_pio: parameetrid, sisend, väljund
+txt_poi: parameetrid, väljund, sisend
+txt_parameters: Parameetrid:
+txt_error_partial: Praeguse arhiivitüübi puhul pole osalist ekstraheerimist rakendatud
+txt_passes: Läbib
+txt_pw: Parool
+txt_pwlength: Parooli pikkus tähemärkides (4..64)
+txt_un7z_browse_pw: parooli võib vaja minna
+txt_un7z_browse_pw_other: parool võib olla vale
+txt_paste: Kleebi
+txt_path: Tee
+txt_pea_appcolor: Rakenduse aktsent
+txt_pea_textcolor: herne teksti värv
+txt_type_description_pea: PEA: turvalisusele orienteeritud arhiivivorming kiire tihendusega
+txt_peazip_new: PeaZip (uus eksemplar)
+txt_peazip_help: Veebipõhine tugi
+txt_peazip_web: PeaZipi veebisait
+txt_performall: Kõik algoritmid
+txt_name_provide: \ / : * ? ' " < > | tähemärgid ei ole failinimedes lubatud
+txt_upxorstrip: Palun vali binaarfailil Strip ja/või UPX
+txt_not_removable_file: Palun sulgege kasutusel olev fail, et PeaZip saaks selle eemaldada:
+txt_not_removable: Palun sulgege kasutusel olevad failid, et PeaZip saaks kausta eemaldada:
+txt_custom_executable_missing: Palun sisestage kohandatud käivitatava faili nimi
+txt_type_unsupported_select: Palun vali toetatud arhiivitüüp:
+txt_no_theme_name: Palun määrake teema nimi
+txt_please_wait: Palun oodake
+txt_copy_wait: Palun oodake, kuni hetkel ajastatud failide kopeerimise/teisaldamise toimingud on lõppenud, enne kui saate ajastada teisi sama tüüpi toiminguid.
+txt_previewwith: Eelvaade...
+txt_projectadmin: Projekti administraator:
+txt_type_description_quad: BALZ/QUAD: suure jõudlusega ROLZ-põhised failikompressorid
+txt_quickdelete: Kiire kustutamine
+txt_quit: Välju
+txt_unit_ram: RAM-ketas
+txt_read: Loetud:
+txt_recentarchives: Hiljutised arhiivid
+txt_rr_hint: Taastekirjete abil saab andmete rikkumise korral arhiive parandada.
+txt_search_refine: Täpsusta otsingufiltrit, aktsepteerib metamärke ? ja *
+txt_fefreshf5: Värskenda
+txt_release: väljalase:
+txt_unit_removable: Eemaldatav üksus
+txt_remove_bookmark: Eemalda järjehoidja
+txt_remove_external_unit: Eemalda väline(d) seade(d)
+txt_removeselected: Eemalda valitud objekt(id)
+txt_rename: Nimeta ümber
+txt_caption_repair: Parandus
+txt_restartrequired2: rakendamiseks on vaja rakendust taaskäivitada
+txt_reset: Lähtesta
+txt_reset_archivename: Lähtesta arhiivi nimi
+txt_hardreset: Lähtesta järjehoidjad
+txt_reset_theme: Lähtesta manustatud teemale
+txt_restore_att: taasta algsed atribuudid
+txt_run_as: Käivita nimega (ei saa lülituda tühja parooliga kasutajatele)
+txt_run_as2: Käivita teise kasutajana
+txt_sample: Näidis:
+txt_saveas: Salvesta nimega
+txt_savehistory: Salvesta ajalooandmed
+txt_save_folder: Salvesta kausta (automaatne)
+txt_savejob: Salvesta ülesande definitsioon skriptina
+txt_savejobdefinition: Salvesta ülesande definitsioon skriptina
+txt_savejobdefinition_hint: Salvesta ülesande definitsioon lihttekstina; saad seda oma skriptidest kasutada
+txt_savelayout: Salvesta paigutus
+txt_save_winstate: Salvesta peaakna olek
+txt_search: Otsing (rekursiivne, võib võtta aega)
+txt_searchanddrag: Otsi ja lohista siia
+txt_searchfor: Otsi
+txt_nrsearch: Otsi siit (mitterekursiivne)
+txt_search_hint: Otsi arhiivi alamkataloogidest filtri(te)ga vasteid
+txt_search_web: Veebiotsing
+txt_list_searching: Otsitakse...
+txt_securedelete: Turvaline kustutamine
+txt_default_description: Valige funktsioon või lohistage failid siia
+txt_selectall: Vali kõik
+txt_selectdir: Valige kataloog
+txt_selected_obj: valitud
+txt_selected_objects: Valitud üksused
+txt_sfx: Iseavanev
+txt_sendbymail: Saada posti teel
+txt_set_defaults: Määrab rakenduse vaikeparameetrid
+txt_settings: Seaded
+txt_sfx_interface: sfx-liides
+txt_showhints: Näita vihjeid ja kohtspikriid
+txt_show_messages: Näita infosõnumeid
+txt_showpw: Näita paroolivälja sisu
+txt_singlevol: Üksik köide, ära jaga
+txt_size: Suurus
+txt_sizeb: Suurus (B)
+txt_skip_existing: Jäta olemasolevad failid vahele
+txt_slowercomp: aeglasem tihendamine, aga sama kiire lahtipakkimine
+txt_smaller: Väiksem kui valitud objekt
+txt_solid: Tahke
+txt_solid_block: Ploki suurus
+txt_solid_auto: Ühtlane, automaatne reguleerimine
+txt_solid_extension: Solid, grupeeri laienduse järgi
+txt_listtest: vabandust, loendi/testi toiming pole selle vormingu jaoks veel rakendatud
+txt_sortbysel: Sorteeri valiku staatuse järgi
+txt_list_sorting: Sorteerimine...
+txt_speed: kiirus
+txt_split: Jaga
+txt_type_description_split: Faili jagamine valikulise terviklikkuse kontrolliga
+txt_split_file: Faili jagamine
+txt_list_nostats: statistika pole saadaval
+txt_status: Staatus
+txt_level_store: Pood
+txt_stream_control: Voo juhtimine
+txt_strip: Eemalda enne UPX-i (soovitatav)
+txt_keyfile_created: Võtmefail loodi edukalt järgmiselt:
+txt_suggestpw: Loo juhuslik parool
+txt_noupx: Sümbolid eemaldatud, UPX-tihendus ära jäetud
+txt_syntax: Süntaks:
+txt_sysbenchmark: Süsteemi võrdlusalus
+txt_benchmark: Süsteemi võrdlustest võtab paar minutit ja kasutab ära kogu saadaoleva protsessori ja mälu ressursi. Süsteem ei pruugi võrdlustesti ajal reageerida; kas käivitada see ikkagi?
+txt_systools: Süsteemi tööriistad
+txt_tarbefore: TAR enne
+txt_type_description_tar: TAR: UNIX-süsteemides levinud arhiveerimisvorming
+txt_taskman: Tegumihaldur
+txt_caption_test: Test
+txt_testall: Testi kõiki
+txt_testdisp: Testi kuvatud objekti(de)
+txt_testpw: Testparool / võtmefail
+txt_testsel: Testi valitud objekti(sid)
+txt_col_hint: Värv tuleks valida nii, et see sobiks hästi ikoonivärvide ja teiste graafilise kasutajaliidese elementidega.
+txt_bookmarks_hint: Täielik ja muudetav järjehoidjate loend on saadaval failibrauseri liideses, klõpsates ikoonil „Rohkem juhtelemente“ ja seejärel valikul „Lülita ajalugu/järjehoidjad sisse/välja“.
+txt_archive_noinput_tolist: Paigutus on tühi: arhiivi paigutuse täitmiseks kasutage valikut „Lisa fail(id), „Lisa kaust(id)“ või „Laadi paigutus“.
+txt_theme: Teema
+txt_icons_found: Teema laaditi edukalt.
+txt_themename: Teema nimi
+txt_icons_not_found: Teema ei laaditud õigesti. Proovige lülituda vaiketeemale või teadaolevalt toimivale teemale.
+txt_theme_create_success: teema loodi edukalt
+txt_theming: Kujundus
+txt_extand_error: Seda funktsiooni saab korraga täita ainult ühe objekti peal
+txt_threads: Lõimed
+txt_titlescolor: Pealkirjade värv
+txt_to: kuni
+txt_toggle_browseflat: Sirvimise/tasapinnalise vaate sisse/välja lülitamine (näita kõiki)
+txt_toggle_historybookmarks: Olekuriba sisse/välja lülitamine
+txt_toolbarscolor: Ribade värv
+txt_tools: Tööriistad
+txt_best: proovi parimaid seadeid (aeglane)
+txt_type: Tüüp
+txt_level_ultra: Ülimalt hea
+txt_error_openfile: Määratud faili avamine ebaõnnestus
+txt_cl_hint: UNACE ja UPX töötavad alati konsoolirežiimis; loendi-, testimis- ja võrdlusülesanded töötavad alati graafilises režiimis
+txt_ace_missing: UNACE plugin puudub; ACE arhiivide haldamiseks saate selle alla laadida PeaZipi veebisaidilt (kuna see on UNACE suletud lähtekoodiga, siis see plugin ei kuulu baaspaketti)
+txt_units: ühikud
+txt_unit_unknown: Tundmatu draivi tüüp
+txt_un7z_pw_untested: Testimata
+txt_up: Üles
+txt_update: Värskendus (kui arhiiv on olemas)
+txt_type_description_upx: UPX: tihenda ainult käivitatavaid faile
+txt_advfilters: Kasuta täpsemaid filtreid
+txt_openfiles_hint: Selle valiku abil saab arhiivi lisada faile, mis on teiste rakenduste jaoks kirjutamiseks avatud (kasulik varundamise ülesannete puhul).
+txt_usenet: Usenet
+txt_user_name: Kasutajanimi; vajadusel kasutage vormi user@DOMAIN või DOMAIN\user.
+txt_using: Kasutatakse:
+txt_volumepea: Helitugevuse reguleerimine
+txt_volume_size: Köite suurus
+txt_type_ext_uns: edukalt ekstraheeritud
+txt_websearch: Veebiotsing
+txt_websites: Veebilehed
+txt_word: Sõna
+txt_write: Kirjuta:
+txt_ramdompw_hint: Siit saate kopeerida juhuslikult genereeritud parooli
+txt_exe_hint: Saate vabalt sisestada käivitatava faili nime ja parameetreid kohandatud tihendamiseks ning valida süntaksi konstruktsiooni. Pange tähele, et saate käsu süntaksit ka käsitsi muuta vahekaardil "Konsool".
+txt_pj_hint2: Saate ülesande definitsiooni GUI-liidesest importida ülaltoodud memoväljale. Seejärel saate seda muuta, käivitada või salvestada ilma GUI-liidese jaoks määratletud ülesannet muutmata või kaotamata.
+txt_type_description_zip: ZIP: kiire arhiveerimis-/tihendusvorming, Windowsi süsteemides laialt levinud
+txt_zipcrypto_hint: ZipCrypto (pärand)
+
+=== PeaZip tekstigrupi lõpp ===
+
+=== PeaLauncheri tekstigrupp ===
+
+txt_6_9_remaining: järelejäänud
+txt_6_5_abort: Katkesta
+txt_6_5_error: Viga
+txt_6_5_no: Ei
+txt_6_5_warning: Hoiatus
+txt_6_5_yes: Jah
+txt_6_5_yesall: Jah kõigile
+txt_5_6_update: Kontrolli värskendusi
+txt_5_6_cml: Süsteemi kontekstimenüü keel
+txt_5_6_donations: Annetused
+txt_5_6_localization: Lokaliseerimine
+txt_5_6_runasadmin: Käivita administraatorina
+txt_5_6_help: Veebipõhine tugi
+txt_5_5_cancelall: Tühista kõik
+txt_5_3_details: Üksikasjad
+txt_5_3_failid: failid
+txt_5_3_kaustad: kaustad
+txt_5_3_info: Info
+txt_5_3_list: Loend
+txt_5_3_os: Algne suurus
+txt_5_3_ps: Pakendatud suurus
+txt_5_3_test: Test
+txt_5_0_extract: Väljavõte
+txt_5_0_from: alates
+txt_5_0_in: sisse
+txt_5_0_to: kuni
+txt_4_5_search: Otsi
+txt_4_0_drag: Lohistage arhiiv siia, et seda lahti pakkida, või
+txt_4_0_dragorselect: Lohistage siia või valige fail
+txt_4_0_select: vali fail
+txt_3_6_selectdir: Valige kataloog
+txt_3_5_close: Sule
+txt_3_0_details: Lisateabe saamiseks vaadake ülesande täieliku logi vahekaarti „Aruanne” ja käsurea käsurea käsurea käsurea definitsiooni vahekaarti „Konsool”.
+txt_3_0_hints: Vihjed vea kohta
+txt_3_0_arc: Vea võimalikud põhjused võivad olla loetamatud sisendfailid (lukustatud, ligipääsmatud, rikutud, puuduvad köited mitmeosalises arhiivis...) või täielik või ligipääsmatu väljundtee.
+txt_3_0_ext: Arhiiv võib praeguse toimingu jaoks vajada teistsugust parooli.
+txt_2_8_oop: Ava väljundtee, kui ülesanne on lõppenud
+txt_2_7_validatefn: Toiming peatatud, tuvastati sobimatu failinimi:
+txt_2_7_validatecl: Toiming peatatud, tuvastatud potentsiaalselt ohtlik käsk (st käskude liitmine pole programmis lubatud):
+txt_2_6_open: Ava arhiiv
+txt_2_5_ace_missing: UNACE plugin puudub; ACE arhiivide haldamiseks saate selle alla laadida PeaZipi veebisaidilt (kuna see on UNACE suletud lähtekoodiga, siis see plugin ei kuulu baaspaketti)
+txt_2_3_pw_errorchar_gwrap: tsitaatmärki ei saa praeguses süsteemis paroolides kasutada, palun muutke parooli või valige konsoolirežiim taustaprogrammi binaarfailide kasutajaliideses valikute > seadete alt.
+txt_2_3_renameexisting: Nimeta olemasolevad failid automaatselt ümber
+txt_2_3_renameextracted: Nimeta ekstraheeritud failid automaatselt ümber
+txt_2_3_cancel: Tühista
+txt_2_3_encryption: Krüptimine
+txt_2_3_extinnew: Ekstrakti uude kausta
+txt_2_3_keyfile: Võtmefail
+txt_2_3_kf_not_found_gwrap: Võtmefaili ei leitud või seda ei saa lugeda. Palun valige teine võtmefail.
+txt_2_3_moreoptions: Rohkem valikuid...
+txt_2_3_nopaths: Teid pole
+txt_2_3_options: Valikud
+txt_2_3_overexisting: Kirjuta olemasolevad failid üle
+txt_2_3_pw: Parool
+txt_2_3_skipexisting: Jäta olemasolevad failid vahele
+txt_job_unknown: : Ilmnes tundmatu viga
+txt_stdjob: [animatsioon peatub ülesande lõppedes]
+txt_benchmarkjob: [süsteem reageerib võrdlustesti käivitamise ajal aeglaselt (mõned minutid)]
+txt_defragjob: [ei reageeri defragmentimise ajal, võite lasta sellel taustal töötada]
+txt_consolejob: [ülesande tagasiside ja detailne edenemine on saadaval konsooliaknas]
+txt_job1: 1: Hoiatus: mittesaatuslik(ad) viga(d); nt mõned failid puuduvad või on lukus
+txt_job127: 127: Taotletud toimingut ei saa käivitada
+txt_job2: 2: Tekkis saatuslik viga
+txt_job255: 255: Kasutaja peatas ülesande
+txt_job7: 7: Viga: saime vale käsurea
+txt_job8: 8: Viga: taotletud toimingu jaoks pole piisavalt mälu
+txt_autoclose: Sulge see aken, kui ülesanne on lõpetatud
+txt_crscale: Tihendussuhe (madalam, parem):
+txt_console: Konsool
+txt_benchscale: Core 2 Duo 6600 nimivõimsus, samaväärne MHz kiirus.
+txt_create: Loo
+txt_done: Valmis:
+txt_nocl: Tühi käsurida
+txt_error: Viga:
+txt_explore: Avasta
+txt_extto: Ekstrakti asukoht
+txt_halt: Peata süsteem, kui ülesanne on lõpule viidud
+txt_halted: Peatatud:
+txt_hardware: riistvara
+txt_high: kõrge prioriteet
+txt_idle: jõudeoleku prioriteet
+txt_input: Sisend:
+txt_jpaused: Ülesanne peatatud
+txt_jresumed: Ülesanne jätkati
+txt_job_started: Ülesanne alustatud
+txt_jobstatus: Ülesande staatus:
+txt_jstopped: Kasutaja peatas ülesande
+txt_jobstopped: Kasutaja peatas ülesande; osalist tulemust saab kontrollida väljundtee lingile klõpsates.
+txt_job_success: Ülesanne edukalt lõpule viidud
+txt_lt: Loend/test
+txt_normal: tavaline prioriteet
+txt_ok: Olgu
+txt_output: Väljund:
+txt_pause: Paus
+txt_paused: Peatatud,
+txt_p_high: Prioriteet on seatud kõrgeks
+txt_p_idle: Prioriteediks on seatud jõudeolek
+txt_p_normal: Prioriteet on seatud tavaliseks
+txt_p_realtime: Prioriteediks on seatud reaalajas
+txt_rating: Hinnang:
+txt_rt: reaalajas prioriteet
+txt_report: Aruanne
+txt_resume: CV
+txt_priority: Klõpsake ülesande prioriteedi määramiseks
+txt_running: Töötab,
+txt_isrunning: Töötab...
+txt_saveas: Salvesta nimega
+txt_savejob: Salvesta ülesande definitsioon skriptina
+txt_savelog: Salvesta ülesande logi
+txt_software: tarkvara
+txt_speedscale: Kiirus, logaritmiline skaala (mida suurem, seda parem):
+txt_status: Staatus
+txt_stop: Stopp
+txt_bench: Süsteemi võrdlustest
+txt_threads: Teemad:
+txt_time: Aeg:
+
+=== PeaLauncheri tekstigrupi lõpp ===
+
+=== tekstigrupi kohta ===
+
+ARHIIVIDE VÄLJAVÕTMINE
+Süsteemist
+- paremklõpsake arhiivil/arhiividel ja klõpsake süsteemi kontekstimenüüs käsku „Ekstrakti siia” või „Ekstrakti siia (nutikas uus kaust)”, et ekstraktida need ilma edasiste toiminguteta. Nutika uue kausta valik loob uue ülataseme kausta ainult vajadusel, kui arhiivi juurkaust sisaldab rohkem kui ühte faili või kausta.
+- vastasel juhul kasutage menüükirjet "Ekstrakti...", et saada rohkem valikuid: väljundrada, parool, failide uude kausta ekstraktimine, olemasolevate failide vahelejätmine, ümbernimetamine või ülekirjutamine jne.
+
+Ava arhiiv PeaZipis, st topeltklõpsuga või lohista arhiiv PeaZipi aknasse või ikoonile
+- klõpsa tööriistaribal või kontekstimenüüs nupul „Ekstrakti“, et ekstraheerida ainult valitud objektid kinnitusdialoogi kaudu, mis võimaldab määrata kõik suvandid (väljundrada, parool, nimetamispoliitika, ekstraktimine uude kataloogi jne).
+- lohistage failid ja kaustad soovitud sihtkohta, ainult valitud sisu ekstraheeritakse (lisateavet leiate peatükist PeaZipi lohistamise kohta)
+- klõpsake tööriistaribal valiku „Ekstrakti“ paremal pool asuvat kiire ekstraheerimise rippmenüü nuppu, see võimaldab kogu arhiivi otse kõige levinumatesse sihtkohtadesse ekstraheerida (kinnitusdialoogi vahele jättes) ja määrata kõige olulisemad suvandid; klaviatuuri otseteed: Ctrl+E (või F12) ekstraheerib kogu arhiivi, küsib väljundkataloogi; Ctrl+Alt+E ekstraheerib arhiivi praegusest kaustast; Ctrl+Shift+E ekstraheerib töölauale; Ctrl+Alt+Shift+E ekstraheerib dokumentidesse; Ctrl+0 ekstraheerib eelmisele teele; Ctrl+1..8 ekstraheerib järjehoidja 1..8 teele (kui see on määratletud)
+
+Ava PeaZip, vali üks või mitu arhiivi ja klõpsa tööriistaribal või kontekstimenüüs nupul „Ekstrakti” või kasuta eelmises punktis kirjeldatud kiire ekstraheerimise sihtkohti.
+
+EKSTRAKTEERI ARHIIVIST AINULT VALITUD OBJEKTE
+Ava arhiiv PeaZipis, st topeltklõpsuga või lohista arhiiv PeaZipi aknasse või ikoonile
+- klõpsa tööriistaribal nupul „Ekstrakti”: ekstraheeritakse ainult valitud üksused
+- lohista failid ja kaustad soovitud sihtkohta, ainult valitud sisu ekstraheeritakse
+- paremklõpsake ja kontekstimenüü rühmas „Ekstrakti“ klõpsake nuppu „Ekstrakti valitud“ (ainult valitud üksuste ekstraheerimiseks) või nuppu „Ekstrakti kuvatud“ (praeguse kataloogi või praeguse otsingufiltri sisu ekstraheerimiseks)
+
+ARHIIVI SIRVIMISEKS VÕI VÄLJAVÕTMISEKS SISESTAGE PAROOL
+Parooli ja valikuliselt võtmefaili sisestamiseks klõpsake tabalukuikoonil.
+Ikoon kuvatakse nii PeaZipi failibrauseri olekuribal kui ka arhiivi lahtipakkimise liideses; kui parool on määratud, muudab ikooni värvi.
+
+LOO ARHIIV
+Süsteemist
+- paremklõpsake arhiveeritavatel objektidel ja klõpsake kontekstimenüüs või menüüs Saada käsul „Lisa arhiivi“. See avab arhiivi loomise kinnitusdialoogi, rohkem valikuid on saadaval vahekaardil „Täpsemalt“; arhiivi loomiseks klõpsake nuppu OK.
+- teise võimalusena lohistage failid/kaustad PeaZipi aknasse või otseteele; kuvatakse sama arhiivi loomise liides.
+
+PeaZipist
+- vali arhiveeritavad objektid ja klõpsa nupul „Lisa“; kuvatakse sama arhiivi loomise liides.
+
+LISA FAILID/KAUSTAD OLEMASOLEVA ARHIIVI UUENDAMISEKS
+Ava PeaZipis arhiiv (nt topeltklõpsuga või lohista arhiiv PeaZipi aknasse või ikoonile) ja seejärel lohista arhiivi lisatavad failid ja kaustad (või klõpsa nupul „Lisa“ ja lisa objektid arhiivi rakenduse kontekstimenüü kaudu).
+See avab arhiivi loomise kinnitusdialoogi, kus olemasoleva arhiivi värskendamiseks klõpsake nuppu OK.
+
+LOO ARHIIV JAGATUD VÄIKSEMATEKS FAILIKS
+Eelmistes punktides selgitatud arhiivi loomisel klõpsake rippmenüül „Üks köide“, et valida väljundfailide (köidete) suurus, milleks arhiiv jagatakse.
+Enamik levinumaid arhiivitüüpe toetab seda valikut.
+
+Loo krüpteeritud arhiiv
+Parooli ja valikuliselt võtmefaili sisestamiseks klõpsake tabalukuikoonil; ikoon kuvatakse nii PeaZipi failibrauseri olekuribal kui ka arhiivi loomise liideses.
+Arhiivis olevate failide ja kataloogide nimede peitmiseks märkige ruut „Krüpti ka failinimed”. Pange tähele, et see rakendatakse ainult siis, kui arhiiv luuakse seda funktsiooni toetavas vormingus, näiteks 7Z ja ARC.
+Pane tähele, et arhiivi loomise liideses on tabaluku ikooni kõrval hoiatus, mis annab visuaalselt teada, kas krüptimine on seatud ja kas praegune arhiivivorming toetab krüptimist.
+
+LOO ERALDI ARHIIVID
+Lisa arhiveeritavad objektid (PeaZipi nupu "Lisa" abil või süsteemi kontekstimenüü või menüü "Saada" kaudu) ja enne "Ok" nupuga kinnitamist märgi valik "Lisa eraldi arhiividesse".
+
+ARHIIVIDE TEISENDAMINE
+Valige PeaZipist teisendatavad arhiivid ja klõpsake tööriistaribal või kontekstimenüüs nuppu "Teisenda". Lisada saab ka mittearhiivitud faile ja kaustu, erinevus seisneb selles, et arhiivid pakitakse enne pakkimisetappi lahti.
+Kasutades lülitit „Teisenda olemasolevad arhiivid” koos lülitiga „Lisa eraldi arhiivi” (vaikimisi), teostatakse loetletud arhiivide massiline teisendamine; ilma selle lülitita on arhiivi teisendamise eesmärk koondada sisendandmed ühte arhiivi, parandades tihendamise efektiivsust, kuna see võimaldab algandmeid pakkimata kujul uuesti tihendada.
+
+LOO ARHIIVE OTSE MÄÄRATUD FORMAADIS JA VALITUD PAKKIMISE TASEMEGA
+Valike menüüs protseduuri „Süsteemi integreerimine“ abil on võimalik lubada kontekstimenüü kirjete lisamine valitud failidele/kaustadele otse ZIP-, 7Z- või isepakendavale arhiivile.
+Zip- ja 7Z-vormingute puhul on võimalik lubada ka kontekstimenüü kirjete tihendamine kiireimale, tavalisele või ülimale tasemele, möödudes valitud vormingu vaikesätetest.
+
+PAROOLIHALDUR
+Paroolihaldurile pääseb ligi peamenüüst, Tööriistad > Paroolihaldur või paroolivormilt, mis asub paroolivälja vasakul pool asuvas rippmenüüs.
+Salvestatud paroole saab valida paroolivormil parooli kõrval asuvast rippmenüüst või kopeerida need paroolihaldurist mis tahes muus rakenduses kasutamiseks.
+Kui paroolihaldurile pole peaparooli määratud, pääseb paroolide loendile ligi autentimist küsimata, vastasel juhul ei kuvata paroole enne, kui kasutaja on õigesti autentinud.
+
+RAKENDUSE KONFIGUREERIMINE
+Valikud > Lokaliseerimine (ja Valikud > Seaded, esimene vahekaart) võimaldab määrata rakenduse keele.
+Valikud > Failide seosed ja süsteemiintegratsioon käivitab viisardi failide seoste, kontekstimenüü ja menüü Saada aadressile kirjete konfigureerimiseks (Windowsis).
+Valikud > Seaded võimaldab muuta rakenduste seadeid
+Korraldamismenüü sisaldab kirjeid brauseri funktsioonide (nt tööriistariba, aadressiriba, külgriba jne) kohandamiseks, lubamiseks või keelamiseks.
+
+F1 	abi
+F2 	faili(de) ümbernimetamine / Ctrl+F2 valitud kopeerimine / Shift+F2 valitud teisaldamine
+F3 	otsing (rekursiivsuse valik jäetakse meelde) / Ctrl+F3 mitterekursiivse otsingu alustamine (otsi siit) / Shift+F3 rekursiivne otsing / Alt+F3 süsteemne otsing
+F4 	kuva navigeerimise hüpikmenüü / Ctrl+Shift+F4 sirvi arvuti juurkataloogi / Ctrl+F4 sirvi töölauda / Shift+F4 sirvi avalehte
+F5 	värskenda
+F6 	sirvimise/tasapinnalise vaate vahetamine
+F7 	lisa järjehoidjatesse / Ctrl+F7 ava PeaZipi uues eksemplaris / Shift+F7 ava käsuviip valitud teel / Alt+F7 uuri valitud teed
+F8 	Sirvi järjehoidjate loendi esimest üksust (Ctrl, teine, Shift, kolmas)
+F9 	parooli/võtmefaili määramine / Shift+F9 paroolihaldur / Ctrl+F9 võtmefaili või juhusliku parooli loomine / Ctrl+Shift+F9 täpsemate filtrite määramine
+F10 	menüü / Ctrl+F10 käivita teise kasutajana / Alt+F10 käivita administraatorina (Windows Vista ja uuemad süsteemid)
+F11 	täisekraanirežiimi sisse/välja lülitamine / Ctrl+F11 kaasahaarav
+F12 	ekstrakti kõik...
+
+PEAZIPI KOHTA
+
+PeaZip on avatud lähtekoodiga faili- ja arhiivihaldur: platvormideülene, saadaval kaasaskantava ja installitava tarkvarana Linuxile (töölauaneutraalne rakendus), macOS-ile ning 32- ja 64-bitisele Windowsile.
+
+PeaZip võimaldab arhiivi sisule rakendada võimsaid mitut otsingufiltrit; luua ja lahti pakkida mitu arhiivi korraga; luua ise lahti pakkivaid arhiive; eksportida ülesande määratlust käsurea abil; salvestada arhiveerimis- ja lahtipakkimispaigutusi; arhiive ja kaustu järjehoidjatesse lisada; skannida ja avada kohandatud rakendustega tihendatud ja lahti pakkimata faile jne...
+
+Muud funktsioonid: tugev krüptimine, usaldusväärne failide kopeerimine, failide jagamine/liitmine (failiulatus), turvaline andmete kustutamine, võrdlemine, kontrollsumma- ja räsifailid, süsteemi võrdlustest, juhuslike paroolide ja võtmefailide genereerimine.
+
+Allalaadimised: https://peazip.github.io
+Lisateave: https://peazip.github.io/peazip-free-archiver.html
+Tugi: https://peazip.github.io/peazip-help.html
+KKK: https://peazip.github.io/peazip-help-faq.html
+
+Suur tänu kõigile inimestele, kes panustasid PeaZip projekti kasvu ja arendasid selles rakenduses kasutatavaid avatud lähtekoodiga tarkvarakomponente (täieliku loendi leiate veebisaidilt), ning kõigile kasutajatele, kes panustavad tagasiside, kogemuste ja nõuannetega.
+

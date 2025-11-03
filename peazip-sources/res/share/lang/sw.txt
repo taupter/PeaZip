@@ -1,0 +1,1470 @@
+=== PeaZip language file ===
+Swahili
+10.7
+Translated by: khanhkhanhlele
+Last rev. by: khanhkhanhlele
+Last rev.: 20251103
+
+=== PeaZip text group ===
+
+txt_10_7_errload: Haiwezi kuonyesha picha
+txt_10_7_errfile: Faili haijapatikana
+txt_10_7_kwanza: Kwanza
+txt_10_7_fit: Inafaa kwa skrini
+txt_10_7_fith: Inafaa kwa urefu wa skrini
+txt_10_7_fitw: Inafaa kwa upana wa skrini
+txt_10_7_keep: Weka faili za towe ikiwa uchimbaji utaisha kimakosa au umeghairiwa
+txt_10_7_ijayo: Inayofuata
+txt_10_7_prev: Iliyotangulia
+txt_10_7_pwh: Nenosiri kutoka kwa heshi
+txt_10_7_images: Tazama picha
+txt_10_7_vijipicha: Tazama vijipicha
+txt_10_6_virtual: Hali ya pepe inayobadilika
+txt_10_5_fr: (ripoti kamili)
+txt_10_5_sectype: Uliza uthibitisho wa kuendesha aina zifuatazo za faili
+txt_10_5_checkmotw: Kitambulisho cha Eneo la Kuangalia (MoTW)
+txt_10_5_sectypewarning: Je, unataka kuendesha faili hii?
+txt_10_5_pathlock: Vipengee katika njia hii ya kumbukumbu haziwezi kuhaririwa
+txt_10_5_type_description_rar: RAR: umbizo la hifadhi ya wamiliki, uwiano wa juu wa mgandamizo, unaoauniwa kupitia compressor ya nje
+txt_10_5_sh: Onyesha faili zilizofichwa (katika mfumo wa faili)
+txt_10_5_ntfsalt: Umbizo hili linaweza kuhifadhi Mtiririko wa Data Mbadala wa NTFS, pamoja na Alama ya Wavuti.
+txt_10_4_inasonga: (Inasonga)
+txt_10_3_classic: Classic
+txt_10_3_ascii: Inapendekezwa kutumia herufi za ASCII pekee katika manenosiri kwa umbizo la sasa la kumbukumbu (herufi, nambari na vibambo maalum).
+txt_10_3_ndogo: Ndogo
+txt_10_3_m: Kisasa
+txt_10_3_pm: Postmodern
+txt_10_3_aw: Suluhu: angalia "Lazimisha kuandika nenosiri kwa maingiliano" katika kidokezo cha nenosiri, au weka modi ya Dashibodi kwa jozi za nyuma.
+txt_10_2_savecopy: Hifadhi nakala
+txt_10_1_full: Imejaa
+txt_10_1_kdfw: mzigo wa kazi wa KDF
+txt_10_1_chini: Imepigiwa mstari
+txt_10_0_exptrash: Gundua Tupio
+txt_10_0_ptarzst: Mfinyazo wa haraka zaidi, TAR.ZST
+txt_10_0_ptarxz: Mfinyazo wa juu, TAR.XZ
+txt_10_0_ptrgz: Mfinyazo wa wastani, TAR.GZ
+txt_10_0_comp: Miundo safi ya kubana inakubali faili moja tu kama ingizo. Ugeuzaji wa kumbukumbu kuelekea umbizo hizo hautafaulu ikiwa chanzo kina faili au folda nyingi, ambazo haziwezi kubainishwa mapema.
+txt_10_0_hifadhi: Hifadhi
+txt_10_0_tp: Onyesho la kukagua maandishi
+txt_9_9_uac: Mtumiaji wa sasa hawezi kuandika kwa njia hii ya pato. Je, unataka kuendesha PeaZip yenye mwinuko wa UAC?
+txt_9_9_kdf: Mizunguko ya KDF
+txt_9_9_utc: Onyesha mihuri ya muda kama UTC
+txt_9_8_alwaysflat: Fungua kumbukumbu kila wakati katika mwonekano bapa
+txt_9_8_fnew: Toa hapa (katika folda mpya)
+txt_9_8_fsmart: Toa hapa (folda mpya ya busara)
+txt_9_7_tarpipe: 7z / p7zip tumia bomba
+txt_9_7_smartsorting: Upangaji wa jina la faili mahiri
+txt_9_6_katikati: Iliyowekwa katikati
+txt_9_6_cside: Upau wa upande ulioshikamana
+txt_9_6_loadpconfirm: Je, unataka kupakia wasifu huu? Data yote ya wasifu wa sasa itafutwa, ikijumuisha hati zilizohifadhiwa na Kidhibiti cha Nenosiri.
+txt_9_6_loadp: Pakia wasifu
+txt_9_6_saveppw: SI LAZIMA: linda wasifu huu kwa nenosiri / faili kuu?
+txt_9_6_savepoverwrite: Je, ungependa kufuta wasifu uliopo? Data yote ya wasifu uliopo itafutwa, ikijumuisha hati zilizohifadhiwa na Kidhibiti cha Nenosiri.
+txt_9_6_savep: Hifadhi wasifu
+txt_9_6_scside: Onyesha upau wa upande wa Compact
+txt_9_5_all: Zote
+txt_9_5_precond: Changanua mapema ikiwa makosa yatagunduliwa
+txt_9_5_largea: Changanua mapema kumbukumbu kubwa
+txt_9_5_medium: Changanua mapema kumbukumbu za kati
+txt_9_5_smalla: Changanua mapema kumbukumbu ndogo
+txt_9_5_reopentab: Fungua upya kichupo cha mwisho
+txt_9_5_savetabs: Hifadhi vichupo
+txt_9_5_sb: Tumia jozi katika njia za mfumo
+txt_9_4_r: soma
+txt_9_4_rw: soma/andika
+txt_9_4_savecomment: Hifadhi maoni
+txt_9_4_hintcomment: Andika au ubandike maoni, pakia au buruta hapa faili ya maoni.
+txt_9_3_endelea: Ungependa kuendelea?
+txt_9_3_contrast: Tofauti
+txt_9_3_fsd: Nafasi ya bure kwenye unakoenda inaweza isitoshe
+txt_9_3_fsw: Nafasi ya bure kwenye njia ya kazi ya muda inaweza isitoshe
+txt_9_3_mrar: Weka wewe mwenyewe mfumo wa jozi wa RAR
+txt_9_3_canedit: Aina hii ya kumbukumbu inaweza kuhaririwa
+txt_9_3_canforce: Aina hii ya kumbukumbu inaweza kuhaririwa (kulazimishwa)
+txt_9_3_cannotedit: Aina hii ya kumbukumbu haiwezi kuhaririwa
+txt_9_2_7za: 7z / p7zip lakabu
+txt_9_2_changelog: Badilisha logi
+txt_9_2_tfaq: Angalia Tafsiri
+txt_9_2_compact: Compact
+txt_9_2_swt: Badilisha upau wa Kichupo / Upau wa anwani
+txt_9_2_tos: TOS, Faragha
+txt_9_2_doc: Thibitisha hati, Kifuatiliaji cha Matoleo...
+txt_9_2_updates: Thibitisha masasisho, jozi, Programu-jalizi...
+txt_9_1_7zs: 7z / p7zip kiwango cha sintaksia
+txt_9_1_ac: Hati za ubadilishaji kwenye kumbukumbu huruhusu mwingiliano wa mtumiaji
+txt_9_1_closeall: Funga zote
+txt_9_1_enlargeicons: Panua aikoni za kivinjari za faili
+txt_9_1_ef: Ondoa folda tupu kutoka kwa kumbukumbu na shughuli za uchimbaji (7z / p7zip)
+txt_9_1_nw: Fungua katika dirisha jipya
+txt_9_1_qdup: Tumia utaratibu wa utengaji wa haraka
+txt_9_0_autoexttar: Toa kiotomatiki kumbukumbu ya TAR kutoka faili zilizobanwa za TAR.*
+txt_9_0_accesstime: Usibadilishe muda wa mwisho wa kufikia
+txt_9_0_mem: Upeo wa matumizi ya kumbukumbu
+txt_9_0_showmainmenu: Fungua Menyu kuu
+txt_9_0_navmenu: Fungua menyu ya Urambazaji
+txt_9_0_plugind: Fungua jozi na saraka ya programu-jalizi
+txt_9_0_df: Panga dirs kabla ya faili
+txt_9_0_hl: Hifadhi viungo ngumu kama viungo
+txt_9_0_sl: Hifadhi viungo vya ishara kama viungo
+txt_9_0_tnav: Geuza upau wa kusogeza
+txt_8_9_tupu: Kumbukumbu inaonekana tupu
+txt_8_9_disp: Inaonyesha yaliyomo kwenye kumbukumbu
+txt_8_9_changanuzi: Kuchanganua yaliyomo kwenye kumbukumbu
+txt_8_9_stoptest: Acha kukagua ripoti kwa hitilafu, orodha, jaribio, jaribio la kiotomatiki
+txt_8_9_ttb: Geuza upau wa zana
+txt_8_8_ca: rangi ya lafudhi
+txt_8_8_btn: Kitufe
+txt_8_8_cb: Rangi ya kitufe
+txt_8_8_centered: Vifungo vilivyo katikati
+txt_8_8_mwanga: Mwanga
+txt_8_8_lnk: Kiungo
+txt_8_8_intnote: Tafadhali kumbuka kuwa chaguo la "Toa kisha usogeze" (katika Chaguzi > Mipangilio > Kidhibiti cha Kumbukumbu) limepuuzwa kwa kuunda safu ya amri kwenye kichupo cha Console.
+txt_8_8_snz: Propagate Zone.Identifier (MoTW) (Windows, NTFS)
+txt_8_8_sm: Ukubwa wa ikoni ndogo
+txt_8_8_solcol: Upau wa mkate
+txt_8_8_snoi: Vitambulisho vya mmiliki/kikundi (TAR, Linux)
+txt_8_8_snon: Majina ya mmiliki/kikundi (TAR, Linux)
+txt_8_8_tab: Kichupo
+txt_8_8_altt: Mtindo wa vichupo
+txt_8_8_autotest: Jaribio la kumbukumbu baada ya kuunda, ikiwa inatumika na umbizo
+txt_8_8_cw: rangi ya dirisha
+txt_8_7_csvhelp: "," kiwango cha kimataifa, ";" kawaida katika lugha za Kilatini
+txt_8_7_after: Baada ya kuhifadhi / uchimbaji
+txt_8_7_bintest: jozi zimejaribiwa.
+txt_8_7_csv: Kitenganishi cha CSV
+txt_8_7_hok: Heshi ya jozi zinazotumiwa na PeaZip zinazolingana na thamani zinazotarajiwa
+txt_8_7_mo: Weka chaguo za msimamizi wa kumbukumbu
+txt_8_7_showhm: Fungua menyu ya kichwa cha Kivinjari
+txt_8_7_showsearchbar: Onyesha upau wa kutafutia
+txt_8_7_showsm: Fungua menyu ya Mtindo
+txt_8_7_hnotok: Baadhi ya heshi ya jozi zinazotumiwa na PeaZip hazilingani na thamani zinazotarajiwa:
+txt_8_7_verifybin: Thibitisha heshi ya jozi
+txt_8_6_clear: "Futa" chaguo huondoa faili zilizohaririwa, vinginevyo zinapatikana kwa uhariri zaidi.
+txt_8_6_noclear: Tupa mabadiliko yote bila kusasisha kumbukumbu
+txt_8_6_nosimple: Usisasishe kumbukumbu, weka faili zilizohaririwa kwa uhariri zaidi.
+txt_8_6_mara moja: Utekelezaji wa papo hapo
+txt_8_6_yessimple: Sasisha kumbukumbu, weka faili zilizohaririwa kwa uhariri zaidi.
+txt_8_5_advbrowser: Tekeleza vichujio kwenye kumbukumbu ya kivinjari
+txt_8_5_detailslarge: Maelezo, kubwa
+txt_8_5_intext: Toa kwa saraka ya kufanya kazi kwa muda kisha uhamishe hadi mahali pa pato, uliza kwa maingiliano kabla ya kubatilisha
+txt_8_5_listkubwa: Orodha, kubwa
+txt_8_5_loadlayout: Pakia mpangilio wakati wa kuanza
+txt_8_5_samplescripts: Mfano wa maandishi
+txt_8_4_keepopenerrorslist: Acha kukagua ripoti kwa makosa, orodhesha
+txt_8_3_mbubin: Nambari
+txt_8_3_cw: Badilisha saraka ya kufanya kazi? Hii itaweka upya faili za kazi za muda na kuanzisha upya programu.
+txt_8_3_joto: Halijoto ya rangi
+txt_8_3_mbudec: Desimali
+txt_8_3_htab: Angazia vichupo
+txt_8_3_maxarg: Upeo wa urefu wa hoja
+txt_8_3_mbu: Kitengo cha baiti nyingi
+txt_8_3_prefalgo: Kanuni za algoriti zinazopendelewa
+txt_8_3_skipdel: Ruka ufutaji wa faili za muda zilizofungwa (tumia kuweka upya kufuta unapohitaji)
+txt_8_3_lw: Baadhi ya faili katika saraka ya kufanya kazi zimefungwa na haziwezi kuondolewa kiotomatiki
+txt_8_3_noupx: binary hii haiwezi kubanwa (huenda tayari imebanwa)
+txt_8_2_polepole: (polepole)
+txt_8_2_df: 7z / p7zip onyesho la maudhui ya folda
+txt_8_2_vreport: 7z / p7zip ripoti isiyo ya kitenzi
+txt_8_2_ta: Imefikiwa
+txt_8_2_tc: Imeundwa
+txt_8_2_keep: Weka faili
+txt_8_2_tm: Imebadilishwa
+txt_8_2_skipet: Ruka majaribio ya usimbaji fiche
+txt_8_2_wakati wote: Hifadhi mihuri yote ya muda
+txt_8_2_inaungwa mkono na: Inaungwa mkono na
+txt_8_1_tayarisha: Changanua kumbukumbu kila wakati
+txt_8_1_bo: Uboreshaji wa kivinjari
+txt_8_1_bop: Chaguo za uboreshaji wa Kivinjari zinaweza kuwekwa kutoka kwa Chaguzi > Mipangilio > Kichupo cha Jumla, ili kuruhusu kivinjari kuonyesha kumbukumbu zilizo na idadi kubwa sana ya vipengee.
+txt_8_1_nopreparse: Usichanganye mapema kumbukumbu
+txt_8_1_ed: hitilafu imegunduliwa.
+txt_8_1_togglearc: Kuorodhesha mwonekano bapa wa maudhui ya kumbukumbu kunaweza kuchukua muda mrefu, ungependa kuendelea?
+txt_8_1_preparsehint: Boresha utendakazi ukizuia uchanganuzi wa mapema wa kumbukumbu kubwa. Uchanganuzi wa mapema unakusudiwa kugundua mapema masuala yanayoweza kutokea katika maudhui ya kumbukumbu.
+txt_8_1_polepole: Polepole
+txt_8_1_vslow: polepole sana
+txt_8_1_juzuu: juzuu
+txt_8_0_altcol: Rangi mbadala ya gridi
+txt_8_0_lazimisha kuvinjari: Vinjari aina za kumbukumbu zisizo za kisheria (vyombo, picha za diski, visakinishi,...)
+txt_8_0_commonalgo: Kanuni za kawaida
+txt_8_0_forceconvert: Badilisha aina za kumbukumbu zisizo za kisheria
+txt_8_0_defaultactionhint: Kitendo chaguomsingi kubofya mara mbili faili inayohusishwa na PeaZip kutoka kwa mfumo.
+txt_8_0_defaultaction: Kitendo chaguo-msingi kwenye ingizo (fungua, toa kiotomatiki...)
+txt_8_0_enableextand: Washa "Dondoo na ufungue na" menyu ndogo
+txt_8_0_forcetyping: Lazimisha kuandika manenosiri kwa maingiliano
+txt_8_0_setpwopt: Weka chaguzi za nenosiri / faili kuu
+txt_8_0_forcetypinghelp: Ikiwa inaungwa mkono na mazingira ya nyuma, kazi itauliza kwa kuingiliana kwa nenosiri. VIKOMO: kazi itaendeshwa kwa kiweko, haitaendeshwa bila kushughulikiwa, na haiwezi kuvinjari kumbukumbu zilizo na majina ya faili yaliyosimbwa kwa njia fiche.
+txt_7_9_nafasi: Nafasi
+txt_7_9_kuzaza: Kuza
+txt_7_8_changelocalization: Badilisha lugha ya PeaZip
+txt_7_8_custext: Kiendelezi maalum
+txt_7_8_destexistfile: Lengwa tayari lina faili zilizochakatwa. Je, ungependa kubadilisha faili zilizo na jina moja?
+txt_7_8_dd: Buruta na Achia
+txt_7_8_priorityhigh: Juu
+txt_7_8_priorityidle: Haifanyi kitu
+txt_7_8_rel: Toa kisha usogeze hadi unakoenda
+txt_7_8_prioritynormal: Kawaida
+txt_7_8_priorityrealtime: Wakati halisi
+txt_7_8_requirerestart: [inahitaji kuanzisha upya PeaZip]
+txt_7_8_tpriority: Kazi kipaumbele
+txt_7_8_sasisho: Sasisha
+txt_7_7_noneall: Hamna: zima onyesho la kukagua, hariri, buruta na dondosha na uchimbaji mwingiliano
+txt_7_7_nonetemp: Hakuna, halijoto ya mtumiaji ikihitajika
+txt_7_7_outtemp: Pato, hakiki katika halijoto ya mtumiaji
+txt_7_7_sys7zreq: Inahitaji 7z, 7-Zip, au p7zip, au kifurushi sawa kusakinishwa
+txt_7_7_tw: Folda ya kazi ya muda ya kuunda kumbukumbu, kuhariri, kuchungulia na kuburuta na kudondosha uchimbaji.
+txt_7_7_sys7z: Tumia mfumo 7z ikiwa inapatikana
+txt_7_6_zipenc: usimbaji wa majina ya faili za ZIP
+txt_7_6_color: Rangi
+txt_7_6_custenc: Ukurasa maalum wa msimbo
+txt_7_6_giza: Nyeusi zaidi
+txt_7_6_tno: Usilandanishe mti wa kumbukumbu
+txt_7_6_forcelocalenc: Lazimisha eneo
+txt_7_6_forceutf8enc: Lazimisha UTF-8
+txt_7_6_cpnote: Ikiwa ukurasa wa msimbo maalum uliochaguliwa hautumiki, majukumu yataisha kwa hitilafu kila wakati (uwezekano mkubwa ni hitilafu ya ugawaji kumbukumbu). Ikitokea hivyo, badilisha ukurasa wa msimbo au uweke upya programu.
+txt_7_6_defaultenc: Karibu Nawe, UTF-8 kwa alama za ziada
+txt_7_6_dim: Nyeusi
+txt_7_6_setcurdef: Weka njia ya sasa kama njia chaguo-msingi ya pato
+txt_7_6_setdef: Weka njia chaguo-msingi ya pato
+txt_7_6_tadvanced: Sawazisha mti wa kumbukumbu, weka nodi zilizotembelewa
+txt_7_6_tsimple: Sawazisha mti wa kumbukumbu, rahisi
+txt_7_6_tacolor: Lafudhi ya maandishi
+txt_7_5_daima: Daima
+txt_7_5_uliza: Uliza
+txt_7_5_autoclosesingle: Funga kiotomatiki baada ya uchimbaji ikiwa hakuna vitendo vya kuvinjari vilivyofanyika
+txt_7_5_cutlen: Kata jina kwa urefu maalum
+txt_7_5_cutlenw: Kata jina kwa urefu maalum (4..255) migogoro ya majina inaweza kusuluhishwa mwenyewe baadaye
+txt_7_5_dragnone: Usifunge lengo
+txt_7_5_specialbrowse: Je, unataka kutoa kila kitu ili kutoa faili na data ya ziada ambayo inaweza kuhitaji?
+txt_7_5_ee: Toa kila kitu kwa aina maalum za faili
+txt_7_5_draghide: Ficha lengo la kuangusha
+txt_7_5_draglh: Funga na ufiche lengo
+txt_7_5_draglock: Funga lengo la kuangusha
+txt_7_5_kamwe: Kamwe
+txt_7_5_repnascii: Badilisha/ondoa herufi zisizo za ASCII
+txt_7_4_maoni: Maoni
+txt_7_4_7zfbrotlicomp: Mfinyazo wa haraka zaidi, 7Z Brotli
+txt_7_4_7zfzstandardcomp: Mfinyazo wa haraka zaidi, 7Z Zstandard
+txt_7_4_presetrar: Mfinyazo wa juu, RAR
+txt_7_4_tkeep: Weka muhuri wa wakati wa kumbukumbu
+txt_7_4_lock: Funga kumbukumbu
+txt_7_4_imefungwa: imefungwa
+txt_7_4_lockconfirm: Kumbukumbu zilizofungwa haziwezi kurekebishwa zaidi, uendelee kufunga kumbukumbu hii?
+txt_7_4_recover: Rekebisha kumbukumbu
+txt_7_4_tcurr: Weka muhuri wa wakati kwenye kumbukumbu kutoka kwa wakati wa sasa wa mfumo
+txt_7_4_setarc: Weka chaguzi za hali ya juu za kuhifadhi
+txt_7_4_setext: Weka chaguo za uchimbaji wa hali ya juu
+txt_7_4_swzipx: Badilisha hadi zipx kiendelezi kwa kumbukumbu zisizo Deflate zip
+txt_7_3_archiveerrors: [kumbukumbu inaweza kuwa na makosa]
+txt_7_3_archiveerrorshint: Kumbukumbu inaweza kuwa si halali (kwa sababu ya kukosekana, kuharibika, au nje ya data ya kawaida), inawezekana kuendesha Jaribio kwa maelezo ya kina. Ikiwa jedwali la yaliyomo kwenye kumbukumbu limesimbwa kwa njia fiche, nenosiri linahitajika kabla ya kulivinjari.
+txt_7_3_clickextall: Bofya "Nyoa zote" ili kuwezesha
+txt_7_3_noconfdel: Usiulize uthibitisho wa kufutwa baada ya kuhifadhi / uchimbaji
+txt_7_3_profile7zfastest: Mfinyazo wa haraka, 7Z haraka zaidi
+txt_7_3_maxbr: Ongeza ukandamizaji wa Brotli kwa kutumia kumbukumbu zaidi (inaweza kuwa haiendani na baadhi ya dondoo)
+txt_7_3_maxzstd: Ongeza mbano wa Zstandard kwa kutumia kumbukumbu zaidi
+txt_7_3_profile7zfast: Mfinyazo wa wastani, 7Z haraka
+txt_7_3_stl: Weka muhuri wa wakati wa kumbukumbu kutoka kwa faili ya hivi majuzi zaidi
+txt_7_2_altcomp: Mfinyazo wa juu, ARC
+txt_7_2_clearnoupdate: Futa faili zilizohaririwa
+txt_7_2_autoclosepeazip: Funga PeaZip kazi inapokamilika
+txt_7_2_zpaqall: Toa masahihisho yote
+txt_7_2_extcomp: Mfinyazo wa hali ya juu, ZPAQ
+txt_7_2_extcompultra: Mfinyazo wa hali ya juu, ZPAQ Ultra
+txt_7_2_fbrotlicomp: Mfinyazo wa haraka zaidi, Brotli
+txt_7_2_fzstandardcomp: Mfinyazo wa haraka zaidi, Zstandard
+txt_7_2_loadcompsettings: Mipangilio ya mbano ya pakia
+txt_7_2_savecompsettings: Hifadhi mipangilio ya mbano
+txt_7_2_source: Chanzo
+txt_7_2_updateclear: Sasisha kumbukumbu, futa faili zilizohaririwa kwa muda
+txt_7_1_type_description_brotli: Brotli: compressor ya haraka kutoka Google, mtengano wa haraka sana
+txt_7_1_new: Toa yote hapa (kwenye folda mpya)
+txt_7_1_smart: Toa yote hapa (folda mpya ya busara)
+txt_7_1_profileintermediate: Mfinyazo wa wastani, ZIP/BZip2 haraka
+txt_7_1_renfilesonly: Badilisha jina la faili pekee
+txt_7_1_typetosearch: Andika ili kutafuta katika njia ya sasa
+txt_7_1_type_description_zstd: Zstandard: compressor ya haraka kutoka Facebook, mtengano wa haraka sana
+txt_7_0_af: Changanua maudhui ya folda
+txt_7_0_autoopentar: Fungua kiotomatiki kumbukumbu ya TAR ndani ya faili zilizobanwa za TAR.*
+txt_7_0_exttmppath: Maudhui yatatolewa nje ya njia ya kazi ya muda, katika:
+txt_6_9_autou: Sasisha kiotomatiki faili zilizobadilishwa kwenye kumbukumbu
+txt_6_9_forceu: Sasisha faili zilizohaririwa kwenye kumbukumbu
+txt_6_9_opuns: Uendeshaji hautumiki kwa aina ya sasa ya kumbukumbu
+txt_6_9_overarch: Je, ungependa kuandika juu ya faili zilizo na jina moja ambalo tayari lipo ndani ya kumbukumbu?
+txt_6_9_uconf: Faili iliyochunguliwa imebadilishwa. Ungependa kusasisha kumbukumbu ya sasa?
+txt_6_8_drop: Tumia Buruta na Achia asili kwenye Windows
+txt_6_7_nop: (hakuna muhtasari)
+txt_6_6_pdupfound: nakala zinazowezekana zimepatikana (jaribio la kukadiria la haraka)
+txt_6_6_rsh: Weka upya historia ya utafutaji
+txt_6_6_pdupfind: Pendekeza nakala
+txt_6_6_forcemodify: Hariri aina za kumbukumbu zisizo za kisheria kama
+txt_6_5_lazima: (lazima)
+txt_6_5_abort: Acha
+txt_6_5_askp: Uliza kuweka nenosiri wakati wa kuanza
+txt_6_5_chp: Badilisha nenosiri
+txt_6_5_def: Ufafanuzi
+txt_6_5_nop: Usiulize kuweka nenosiri wakati wa kuanza
+txt_6_5_kosa: Hitilafu
+txt_6_5_seqerr: Hitilafu zimegunduliwa, faili asili hazitafutwa.
+txt_6_5_sni: Jumuisha maelezo ya usalama ya NT
+txt_6_5_sns: Jumuisha Mkondo wa Data Mbadala wa NTFS
+txt_6_5_faragha: Faragha na Usalama
+txt_6_5_showvolatile: Onyesha chaguo ambazo ni tete / tegemezi la muktadha
+txt_6_5_force: Jaribu kufungua kumbukumbu zilizo na hitilafu
+txt_6_5_onyo: Onyo
+txt_6_5_ndiyo: Ndiyo
+txt_6_5_yesall: Ndiyo kwa wote
+txt_6_5_np: Sasa unaweza kubadilisha nenosiri la kumbukumbu zilizobadilishwa hadi mpya, au tupu neno la siri ili kuruka usimbaji fiche.
+txt_6_4_absolute: Njia kabisa
+txt_6_4_appdirn: Weka jina la saraka
+txt_6_4_closeallother: Funga vichupo vingine vyote
+txt_6_4_close kulia: Funga vichupo upande wa kulia
+txt_6_4_collapse: Kunja vichupo
+txt_6_4_panua: Panua vichupo
+txt_6_4_full: Njia kamili
+txt_6_4_mpya: Mpya
+txt_6_4_openintab: Fungua kwenye kichupo kipya
+txt_6_4_paths: Njia
+txt_6_4_prepdirn: Tayarisha jina la saraka
+txt_6_4_relative: Njia za jamaa
+txt_6_4_tabbar: Upau wa kichupo
+txt_6_3_kurekebisha kiotomatiki: Rekebisha safu wima kiotomatiki
+txt_6_3_cinfo: Maelezo na maoni
+txt_6_3_syn: Sawazisha kumbukumbu na diski
+txt_6_3_uar: Sasisha faili ambazo tayari ziko kwenye kumbukumbu pekee
+txt_6_2_encext: Ongeza kiambishi tamati ".enc" kwenye kumbukumbu zilizosimbwa kwa njia fiche
+txt_6_2_archive: Hifadhi aina ya faili
+txt_6_2_container: Aina ya faili ya kontena
+txt_6_1_ec: Panua / kunja mti wa kumbukumbu
+txt_6_0_msq: Panga kwa aina ya faili kwa mgandamizo thabiti
+txt_5_9_lff: Changanua faili na folda
+txt_5_9_pff: Chambua, onyesha kichwa cha faili/EOF
+txt_5_9_start: Anza kutoka
+txt_5_8_l0: Ruhusu kijenzi/umbizo lolote linalotumika
+txt_5_8_l1: Ruhusu vipengele vya Programu Bila Malipo pekee
+txt_5_8_l2: Ruhusu fungua fomati za kumbukumbu pekee
+txt_5_8_ascii: ASCII salama, hati ni salama kwenye mazingira ya urithi
+txt_5_8_cp: Salama ya Ukurasa wa Msimbo, hati zinaweza kusababisha matatizo kwenye mazingira ya urithi na Kurasa tofauti za Kanuni.
+txt_5_8_fs: Utiifu wa Programu Bila Malipo
+txt_5_8_utf: Hati zinahitaji mazingira kamili ya UTF-8 / Unicode
+txt_5_8_fsr: Umbizo hili halitumiki kutokana na vikwazo vya Utiifu wa Programu Bila Malipo (Chaguo > Mipangilio > Kina)
+txt_5_7_imesakinishwa: IMEsakinishwa
+txt_5_7_pmissing: MISSING
+txt_5_7_plugin: Programu-jalizi haipo, inaweza kusakinishwa kutoka kwa Usaidizi > Angalia Programu-jalizi
+txt_5_6_msingi: Msingi
+txt_5_6_exarc: Toa kumbukumbu
+txt_5_6_tab: Fungua kwenye kichupo kipya
+txt_5_6_rc: Bonyeza kulia kwa chaguzi
+txt_5_6_layouts: Miundo iliyohifadhiwa
+txt_5_6_upexisting: Sasisha kumbukumbu iliyopo
+txt_5_6_verbose: Verbose
+txt_5_5_case: (kesi nyeti)
+txt_5_5_add: Ongeza kamba katika nafasi maalum
+txt_5_5_addel: Ongeza kwenye uteuzi wa sasa
+txt_5_5_ext: Badilisha kiendelezi cha faili
+txt_5_5_plugin: Angalia programu-jalizi
+txt_5_5_copypath: Njia ya kunakili
+txt_5_5_delete: Futa herufi katika nafasi maalum
+txt_5_5_halt: Sitisha mfumo kazi inapokamilika
+txt_5_5_positionw: Kidokezo: 1 ongeza kabla ya char ya kwanza, sekunde 2, nk... "z" kwa mwisho wa jina la faili
+txt_5_5_positionwd: Kidokezo: Futa 1 kutoka kwa herufi ya kwanza iliyojumuishwa, sekunde 2, ... "z" kwa mwisho wa jina la faili
+txt_5_5_replaceneww: Kidokezo: toa kamba mpya tupu ili kuondoa tu uzi wa zamani.
+txt_5_5_chini: herufi ndogo
+txt_5_5_replaceoldw: Rekebisha matukio yote ya kamba hii au herufi katika jina la faili.
+txt_5_5_newext: Kiendelezi kipya
+txt_5_5_new: Mfuatano mpya
+txt_5_5_n: Idadi ya herufi za kufuta
+txt_5_5_old: Kamba ya zamani
+txt_5_5_position: Nafasi (nambari au "z" kwa mwisho)
+txt_5_5_intdir: Folda mpya mahiri
+txt_5_5_replacestr: Badilisha/ondoa kamba
+txt_5_5_datesameday: Siku hiyo hiyo ya kitu kilichochaguliwa
+txt_5_5_datesamehour: Saa sawa ya kitu kilichochaguliwa
+txt_5_5_datesamemonth: Mwezi huo huo wa kitu kilichochaguliwa
+txt_5_5_datesameweek: Wiki hiyo hiyo ya kitu kilichochaguliwa
+txt_5_5_datesameyear: Mwaka huo huo wa kitu kilichochaguliwa
+txt_5_5_scan: Changanua
+txt_5_5_chagua: Chagua
+txt_5_5_sawa: Sawa na kitu kilichochaguliwa
+txt_5_5_starting: Kuanzia na herufi sawa
+txt_5_5_string: Kamba ya kuongeza
+txt_5_5_subtractsel: Ondoa kutoka kwa uteuzi wa sasa
+txt_5_5_tarehe: Saa hii
+txt_5_5_tarehe: Mwezi huu
+txt_5_5_dateweek: Wiki hii
+txt_5_5_dateyear: Mwaka huu
+txt_5_5_dateday: Leo
+txt_5_5_juu: JUU
+txt_5_5_extw: Onyo: Kubadilisha kiendelezi cha faili huenda kusiweze kutumika
+txt_5_4_da: Tarehe iliyoongezwa
+txt_5_4_deletearchives: Futa kumbukumbu baada ya uchimbaji
+txt_5_4_deletefiles: Futa faili baada ya kuhifadhi
+txt_5_4_deleteoriginal: Utaratibu wa kufuta, kama ulivyowekwa kwenye skrini kuu, utaambatishwa kwa hati.
+txt_5_4_lv: Ilitembelewa mwisho
+txt_5_4_deletearchivesconfirm: Thibitisha ufutaji wa kumbukumbu asili?
+txt_5_4_deletefilesconfirm: Thibitisha ufutaji wa faili asili?
+txt_5_4_used: Imetumika
+txt_5_3_profilebest: Mfinyazo wa hali ya juu, 7Z Ultra
+txt_5_3_profileadvanced: Mfinyazo wa juu, 7Z
+txt_5_3_profilenormal: Mfinyazo wa wastani, ZIP (inayoendana na vichimbaji vingi)
+txt_5_3_profileveryfast: Mfinyazo wa haraka, ZIP haraka (sambamba na vichimbaji vingi)
+txt_5_3_profilepassword: Linda kwa nenosiri, umbizo la 7Z
+txt_5_3_profile10mb: Weka pato chini ya MB 25, kwa vikwazo vya viambatisho vya barua
+txt_5_3_profilesfx: Kuchimba kiotomatiki, mpokeaji hatahitaji programu ya uchimbaji
+txt_5_3_cml: Lugha ya menyu ya muktadha wa mfumo
+txt_5_3_cmlmessage: Bonyeza mara mbili kwenye lugha ya menyu ya muktadha unayotaka na uthibitishe kuunganishwa kwa Usajili. Mpangilio huu unahitaji kutumika tena wakati programu imesakinishwa/kusasishwa au baada ya kichawi cha kuunganisha Mfumo kutumika.
+txt_5_3_exc: Vichujio vya kutojumuisha vinatawala kwenye vichujio vya kujumuisha
+txt_5_3_ia: Jumuisha pia
+txt_5_3_io: Jumuisha pekee
+txt_5_3_rec: Recurse subdirs
+txt_5_3_resetsi: Sanidi upya ujumuishaji wa mfumo (menyu ya muktadha, SendTo, miunganisho ya faili)?
+txt_5_2_oadd: Hifadhi kwenye njia asili
+txt_5_2_zerodelete: Je, unataka kufuta na kuandika juu ya faili zote 0 zilizochaguliwa? Uendeshaji hauwezi kutenduliwa na faili hazitarejeshwa
+txt_5_2_zfree: Je, ungependa kubatilisha kwa nafasi 0 ya bure kwenye hifadhi hii?
+txt_5_2_sdfree: Je, unataka kufuta nafasi isiyolipishwa kwa usalama kwenye hifadhi hii?
+txt_5_2_oext: Toa kwa njia asili
+txt_5_2_securedeletefree: Salama kufuta nafasi bila malipo
+txt_5_2_free: Operesheni hii inaweza kuchukua dakika kadhaa na, ikiwa inafanywa mara kwa mara, inaweza kuvaa haraka diski za msingi.
+txt_5_2_zerofiles: Futa sifuri
+txt_5_2_zerofree: Sufuri futa nafasi isiyolipishwa
+txt_5_1_schedadd: Ongeza ratiba
+txt_5_1_schederr: Haiwezi kuunda ratiba
+txt_5_1_kila siku: Kila siku
+txt_5_1_siku: Siku
+txt_5_1_siku: Siku
+txt_5_1_mwisho: Tarehe ya mwisho
+txt_5_1_kila: Kila
+txt_5_1_w6: Ijumaa
+txt_5_1_hourly: Kila saa
+txt_5_1_hours: Saa
+txt_5_1_mwisho: Mwisho
+txt_5_1_schedmanage: Kiratibu Kazi, dhibiti kazi zilizohifadhiwa katika tawi la PeaZip
+txt_5_1_scriptmanage: Dhibiti hati zilizoratibiwa zilizohifadhiwa
+txt_5_1_w2: Jumatatu
+txt_5_1_kila mwezi: Kila mwezi
+txt_5_1_miezi: Miezi
+txt_5_1_kuingia: Unapoingia
+txt_5_1_onstart: Imeanza
+txt_5_1_mara moja: Mara moja
+txt_5_1_w7: Jumamosi
+txt_5_1_ratiba: Ratiba
+txt_5_1_schedexplain: Huunda hati ya maandishi wazi kutoka kwa ufafanuzi wa kazi ya GUI na uipange. Hati za kazi zilizoratibiwa zimehifadhiwa kwenye folda ya "Hati zilizoratibiwa". Ili kuhariri au kufuta kazi zilizoratibiwa unaweza kutumia Kipanga Majukumu cha mfumo, majukumu yote yaliyoratibiwa yaliyoundwa na PeaZip yanakusanywa katika tawi la "PeaZip" la maktaba ya majukumu.
+txt_5_1_schedok: Ratiba imeundwa kwa mafanikio
+txt_5_1_schedscripts: Hati zilizopangwa zilizohifadhiwa
+txt_5_1_tarehe ya kuanza: Tarehe ya kuanza
+txt_5_1_starttime: Muda wa kuanza
+txt_5_1_w1: Jumapili
+txt_5_1_schedname: Jina la kazi, tambua hati iliyopangwa iliyohifadhiwa na kazi iliyoratibiwa ya mfumo.
+txt_5_1_ts: Kipanga Kazi
+txt_5_1_w5: Alhamisi
+txt_5_1_w3: Jumanne
+txt_5_1_w4: Jumatano
+txt_5_1_kila wiki: Kila wiki
+txt_5_1_wiki: Wiki
+txt_5_0_bc: Mkate wa mkate
+txt_5_0_resetpm: Je, unathibitisha kuweka upya Kidhibiti cha Nenosiri? Manenosiri yote yaliyohifadhiwa kwenye Kidhibiti cha Nenosiri cha PeaZip yatapotea ikiwa yatathibitishwa.
+txt_5_0_enum: Hesabu maudhui ya folda
+txt_5_0_muziki: Muziki
+txt_5_0_ps: Fungua PowerShell hapa
+txt_5_0_perf: Utendaji
+txt_5_0_pictures: Picha
+txt_5_0_removeall: Ondoa zote
+txt_5_0_resetbookmarks: Weka upya Alamisho ziwe chaguomsingi? (Alamisho zinaweza kubinafsishwa kwa kutumia Alamisho > Panga)
+txt_5_0_sh: Historia ya kipindi
+txt_5_0_skip: Ruka maudhui ya saraka katika mpangilio
+txt_5_0_videos: Video
+txt_4_9_frame: Fremu
+txt_4_9_listth: Orodha na vijipicha
+txt_4_9_kivuli: Kivuli
+txt_4_9_style: Mtindo
+txt_4_8_attach25: MB 25 kiambatisho
+txt_4_8_crop: Punguza
+txt_4_8_detailsno: Maelezo
+txt_4_8_details: Maelezo na vijipicha
+txt_4_8_fit: Inafaa kwa
+txt_4_8_fitl: Inafaa kwa ukubwa zaidi
+txt_4_8_flip: Geuza
+txt_4_8_skrini nzima: Skrini nzima
+txt_4_8_fun: Kazi
+txt_4_8_h: Urefu
+txt_4_8_keerchive: Weka kumbukumbu
+txt_4_8_noresize: Weka ukubwa asili
+txt_4_8_iconl: Picha kubwa
+txt_4_8_iconm: Ikoni na picha
+txt_4_8_imagemanager: Kidhibiti cha picha
+txt_4_8_inayozama: Inayozama
+txt_4_8_listno: Orodha
+txt_4_8_aspect: Dumisha uwiano wa kipengele
+txt_4_8_mirror: Kioo
+txt_4_8_presets: Mipangilio mapema
+txt_4_8_replace: Ungependa kubadilisha picha asili? "Hapana" tumia mabadiliko katika faili mpya.
+txt_4_8_resize: Badilisha ukubwa
+txt_4_8_rl: Zungusha kushoto
+txt_4_8_rr: Zungusha kulia
+txt_4_8_stop: Acha
+txt_4_8_t: Badilisha
+txt_4_8_w: Upana
+txt_4_7_pk: Unda nenosiri la nasibu / faili kuu
+txt_4_7_spchar: Weka kikomo herufi kwa herufi na nambari
+txt_4_7_recycleask: Ungependa kuhamisha faili zilizochaguliwa hadi kwenye Tupio?
+txt_4_7_recycle: Hamisha hadi kwenye Tupio
+txt_4_7_pcomp: Mfinyazo unaowezekana
+txt_4_6_am: Kidhibiti cha kumbukumbu
+txt_4_6_fm: Kidhibiti faili
+txt_4_6_users: Watumiaji
+txt_4_5_goupdate: Toleo jipya linapatikana. Ungependa kufungua tovuti rasmi ya PeaZip ili kupakua sasisho?
+txt_4_5_b: Chini
+txt_4_5_koupdate: Haiwezi kuangalia masasisho, hakuna muunganisho na seva ya sasisho
+txt_4_5_sasisho: Angalia masasisho
+txt_4_5_kiziti: Gati
+txt_4_5_l: Kushoto
+txt_4_5_noupdate: PeaZip imesasishwa
+txt_4_5_properties: Sifa
+txt_4_5_r: Kulia
+txt_4_5_pj: Hati zilizohifadhiwa
+txt_4_5_shaddress: Onyesha upau wa Anwani
+txt_4_5_shnav: Onyesha Upau wa Upande
+txt_4_5_shstatus: Onyesha upau wa Hali
+txt_4_5_shtool: Onyesha upau wa Zana
+txt_4_5_upxpj: Samahani, haiwezi kuhamisha ufafanuzi wa kazi kwani kitendo au chaguo hili linahitaji kutekeleza amri nyingi tofauti.
+txt_4_5_t: Juu
+txt_4_4_confremoveall: Ondoa faili zote za ubinafsishaji za PeaZip (Programu, Alamisho)?
+txt_4_4_confremove: Ondoa usanidi wa PeaZip?
+txt_4_3_pwmanhint: Bofya mara mbili ili kuhariri vipengee katika orodha ya nenosiri, bonyeza kulia kwa chaguo, Ctrl+C ili kunakili manenosiri.
+txt_4_3_exppl: Hamisha orodha ya nenosiri
+txt_4_3_expple: Imesimbwa kwa njia fiche (Kidhibiti cha Nenosiri chelezo)
+txt_4_3_keeppw: Weka nenosiri/faili kuu kwa kipindi cha sasa
+txt_4_3_pwmanpwhint: Kuweka nenosiri/faili kuu (si lazima) ili kusimba orodha ya nenosiri kunapendekezwa, kwa njia hii uthibitishaji utahitajika ili kufikia Kidhibiti cha Nenosiri. Nenosiri/faili kuu linaweza kubadilishwa wakati wowote kutoka kwa fomu hii.
+txt_4_3_pwmanmaster: Weka/badilisha nenosiri kuu la PM
+txt_4_3_pwmanlist: Orodha ya nenosiri
+txt_4_3_pwman: Kidhibiti Nenosiri
+txt_4_3_pwmancorr: Kidhibiti cha Nenosiri kinaonekana kubadilishwa au kupotoshwa. Je, ungependa kuhifadhi Kidhibiti cha Nenosiri hata hivyo na ujaribu kurejesha orodha ya sasa ya nenosiri, ikiwa unaiamini? (Hakuna kitakachoweka upya Kidhibiti cha Nenosiri, kinapendekezwa)
+txt_4_3_expplp: Maandishi wazi (matumizi yote)
+txt_4_3_recsrc: Utafutaji wa kujirudia kwa chaguomsingi
+txt_4_3_resetpm: Ungependa kuweka upya Kidhibiti cha Nenosiri? Manenosiri yote yaliyohifadhiwa yatafutwa
+txt_4_3_breadcrumb: Onyesha Anwani kama mkate
+txt_4_2_arcabspath: Tumia njia kabisa
+txt_4_1_duplicateshint: mfuatano wa "ukubwa"/"checksum" umeripotiwa katika safu wima ya CRC kwa watahiniwa wote wanaopatikana katika saraka ya sasa au kichujio cha utafutaji.
+txt_4_1_adminhint: (DONDOO: vinginevyo, unaweza kuomba mwinuko wa UAC kufanya kazi katika njia zilizolindwa, Alt+F10 au Chaguzi > Endesha kama msimamizi)
+txt_4_1_imechaguliwa: (imechaguliwa)
+txt_4_1_duplicatesfound: nakala zimepatikana
+txt_4_1_duplicatesfind: Tafuta nakala
+txt_4_1_runasadmin: Endesha kama msimamizi
+txt_4_1_simplesearch: Utafutaji rahisi
+txt_4_0_thim: Onyesha vijipicha vya picha
+txt_3_8_type_description_wim: WIM: Umbizo la taswira ya diski ya Microsoft
+txt_3_8_type_description_xz: XZ: mgandamizo wa faili wenye nguvu kulingana na LZMA2
+txt_3_7_michango: Michango
+txt_3_7_nameasparent: Ipe jina la kumbukumbu kama folda kuu ya kitu kilichochaguliwa, ikiwa vitu vingi vimeongezwa.
+txt_3_7_tracker: Kifuatiliaji cha Toleo
+txt_3_7_sort: Panga kwa
+txt_3_7_swapbars: Badilisha upau wa Zana / Upau wa anwani
+txt_3_7_themedbars: Pau zenye mada
+txt_3_6_ignoredd: Puuza njia kila wakati za uchimbaji wa Buruta na Achia
+txt_3_6_funga: Funga
+txt_3_6_resetapps: Je, unataka kuweka upya Programu (kikundi kinachoweza kubinafsishwa cha programu na hati ili kufungua faili nazo, kubatilisha miunganisho ya faili)?
+txt_3_6_ethemes: Mandhari Zilizopo
+txt_3_5_td: Angalia Mandhari
+txt_3_5_managecustomthemes: Dhibiti Mandhari
+txt_3_4_nopaths: Hakuna njia
+txt_3_4_smallicons: Ikoni
+txt_3_3_skipunits: (Windows) Pata maelezo ya sauti ya vitengo vya mtandao, uanzishaji wa polepole
+txt_3_3_stralt: Amri mbadala, wakati hakuna kigezo kinachopitishwa
+txt_3_3_programu: Programu
+txt_3_3_multi: Chaguo nyingi
+txt_3_3_runexp: Fungua programu, faili, folda au tovuti
+txt_3_3_apppath: Folda ya PeaZip
+txt_3_3_run: Endesha
+txt_3_2_7zutf8nonascii: 7z / p7zip -mcu tumia UTF8 kwa majina ya faili yaliyo na alama zisizo za ASCII ndani ya faili za .zip
+txt_3_2_majukumu yote: Kazi zote
+txt_3_2_conf: Usanidi
+txt_3_2_donations: Changia mashirika ya kutoa misaada
+txt_3_1_sccenc: 7z / p7zip usimbaji wa herufi CONSOLE
+txt_3_1_kupakuliwa: Vipakuliwa
+txt_3_1_lib: Maktaba
+txt_3_1_zaidi: Zaidi
+txt_3_1_openasarchive: Fungua kama kumbukumbu
+txt_3_1_sendto: Folda ya menyu ya SendTo ya Mtumiaji
+txt_3_1_pathexc: Njia inayozidi kiwango cha juu kinachoruhusiwa
+txt_3_1_hivi karibuni: Hivi majuzi
+txt_3_1_plsmartmin: Endesha kwa kupunguzwa, onyesha/weka wazi ikiwa inahitajika
+txt_3_1_src: Utafutaji
+txt_3_1_systmp: Joto la mtumiaji
+txt_3_1_languagetools: Tafsiri
+txt_3_1_workingdir: Saraka ya kufanya kazi
+txt_3_0_nonreadableorpw: Kumbukumbu haisomeki. Kumbukumbu inaweza kuwa si halali, majuzuu yanaweza kukosa, au jedwali lake la maudhui linaweza kusimbwa kwa njia fiche. Je, ungependa kujaribu nenosiri?
+txt_3_0_readablepw: Kumbukumbu haisomeki, huenda imelindwa kwa nenosiri
+txt_3_0_configure: Uhusiano wa faili na ujumuishaji wa menyu ya mfumo
+txt_3_0_resettmp: Weka upya faili za kazi za muda
+txt_2_9_anwani: Upau wa anwani
+txt_2_9_adv: Vichujio vya kina hutumika wakati wa kudhibiti faili yoyote inayotumika kupitia 7z au viambajengo vya nyuma vya FreeArc, angalia hati, na kubatilisha vichujio vya kimsingi (vinavyotumika kwa vipengele vya utafutaji na vinaonyeshwa katika Alamisho na vidirisha vya Historia)
+txt_2_9_safu: Safu
+txt_2_9_copyhere: Nakili hapa
+txt_2_9_noscan: Usichanganue faili zinazoongezwa kwenye mpangilio
+txt_2_9_extconsole: Dashibodi ya uchimbaji inapatikana tu wakati wa kuvinjari kumbukumbu
+txt_2_9_thl: Angazia vitufe
+txt_2_9_nyumbani: Nyumbani
+txt_2_9_lt: Kubwa
+txt_2_9_mt: Kati
+txt_2_9_sogeahapa: Sogeza hapa
+txt_2_9_nav: Urambazaji
+txt_2_9_navbar: Upau wa kando
+txt_2_9_hakuna: Hakuna
+txt_2_9_panga: Panga
+txt_2_9_public: Umma
+txt_2_9_rec: Kujirudia: tafuta katika saraka ndogo, inaweza kuchukua muda
+txt_2_9_imechaguliwa: Imechaguliwa
+txt_2_9_setapps: Panga Programu
+txt_2_9_showmenu: Onyesha upau wa Menyu
+txt_2_9_st: Ndogo
+txt_2_9_test_pw2G: Jaribio la usimbaji <2GB kumbukumbu
+txt_2_9_vst: Maandishi pekee
+txt_2_9_toolbar: Upau wa zana
+txt_2_9_tree: Mti
+txt_2_9_views: Maoni
+txt_2_8_majaribio: (majaribio)
+txt_2_8_zcopy: (Windows) Nakili faili katika hali ya kuanza tena, nakala polepole
+txt_2_8_addvol: Kuongeza juzuu zima kwenye kumbukumbu kunaweza kuchukua muda mrefu, ungependa kuendelea?
+txt_2_8_uniterror: Haiwezi kufikia kitengo
+txt_2_8_haiwezi kugeuza: Haiwezi kubadilisha kumbukumbu zilizochaguliwa
+txt_2_8_convertbegin: Ungependa kuendelea na hatua ya kubana ili kukamilisha ubadilishaji?
+txt_2_8_badilisha: Geuza
+txt_2_8_convertexisting: Badilisha kumbukumbu zilizopo
+txt_2_8_convertdelete: Je, ungependa kufuta faili na folda zilizoundwa kwa muda kwa ajili ya ubadilishaji?
+txt_2_8_details: Maelezo
+txt_2_8_parallel: Tekeleza kazi sambamba inapowezekana
+txt_2_8_convertnote: Kwa vyovyote vile kumbukumbu asili hazikubadilishwa, ili kuruhusu mtumiaji kudhibiti juu ya kuziweka au kuziondoa.
+txt_2_8_custom: haitumiki moja kwa moja na PeaZip, lakini katika hatua ya uchimbaji unaweza kuweka PeaZip kushughulikia aina za faili maalum kwenye kichupo cha "Advanced". Ungependa kuendelea kufungua faili hii?
+txt_2_8_unitrecommend: Inapendekezwa ama kutoa (bonyeza kulia> toa iliyochaguliwa) au kufungua mifumo ya faili kutoka kwa mzizi wa kompyuta (Zana za Mfumo> Fungua kitengo kama kumbukumbu)
+txt_2_8_viewasarchive: Fungua kitengo kama kumbukumbu
+txt_2_8_nounit: Hakuna kitengo kilichochaguliwa
+txt_2_8_chagua safu mlalo: Chagua safu mlalo
+txt_2_8_statusbar: Upau wa hali
+txt_2_8_typeunit: Andika jina la kitengo cha mantiki au halisi
+txt_2_8_usedefaultoutpath: Tumia njia chaguomsingi kila wakati
+txt_2_7_majaribio: (majaribio, angalia hati)
+txt_2_7_optional: (si lazima)
+txt_2_7_list_tryflatorpw: , suluhisho zinazowezekana: jaribu mtazamo bapa (F6), toa nenosiri (F9), pata nakala mpya ya kumbukumbu
+txt_2_7_separate: Ongeza kwenye kumbukumbu tofauti
+txt_2_7_pwinatumika: kuhifadhi kwenye kumbukumbu kwa nenosiri
+txt_2_7_ghairi: Ghairi
+txt_2_7_encfn: Simbua pia majina ya faili (ikiwa yanaungwa mkono na umbizo)
+txt_2_7_setpw: Weka nenosiri / faili kuu
+txt_2_7_ext: Kuchimbua:
+txt_2_7_extfrom: Kutoa kutoka kwenye kumbukumbu:
+txt_2_7_es: Toa aina za faili zisizo za kumbukumbu zinazotumika, yaani zinazoweza kutekelezwa, MS Office na faili za OOo
+txt_2_7_eu: Toa aina za faili zisizotumika, ukibainisha matumizi maalum ya uchimbaji
+txt_2_7_clipboard: Ubao wa kunakili
+txt_2_7_goarclayout: Nenda kwenye mpangilio wa kumbukumbu
+txt_2_7_goextlayout: Nenda kwa mpangilio wa uchimbaji
+txt_2_7_sawa: Sawa
+txt_2_7_drag_archive: kufungua faili kama kumbukumbu mpya? ("Hapana" ili kuongeza faili kwenye mpangilio wa uhifadhi wa sasa)
+txt_2_7_oop: Fungua njia ya kutoa kazi inapokamilika
+txt_2_7_validatefn: Uendeshaji umesimamishwa, jina batili la faili limegunduliwa:
+txt_2_7_validatecl: Uendeshaji umesimamishwa, amri inayoweza kuwa hatari iligunduliwa (yaani, muunganisho wa amri hauruhusiwi ndani ya programu):
+txt_2_7_output: Pato
+txt_2_7_pwnotset: Nenosiri halijawekwa
+txt_2_7_pwarcset: Nenosiri limewekwa
+txt_2_7_pwextset: Nenosiri limewekwa, inawezekana kutoa/kuorodhesha/kujaribu kumbukumbu zilizosimbwa.
+txt_2_7_archivehint: Buruta hapa faili na folda ili kuweka kwenye kumbukumbu, au bofya kulia kwa chaguo zaidi.
+txt_2_7_exthint: Buruta hapa kumbukumbu ili kutoa, au bofya kulia kwa chaguo zaidi
+txt_2_7_setadvf: Weka vichujio vya hali ya juu
+txt_2_7_selpath: Njia ya kipengee kilichochaguliwa
+txt_2_7_separateerror: Samahani, haiwezi kuingiza safu ya amri ya ufafanuzi wa kazi wakati unatumia swichi ya "Ongeza kwenye kumbukumbu tofauti", kwa kuwa kazi inafanywa kama amri nyingi tofauti.
+txt_2_7_noinput: Mpangilio hauna kitu: tafadhali tumia Ongeza faili au Mpangilio wa Mzigo ili kujaza orodha ya kumbukumbu zitakazotolewa.
+txt_2_7_dirsize: Saizi ya yaliyomo kwenye folda haijaangaliwa ili kuhesabu saizi ya jumla.
+txt_2_7_un7z_browse_flat: jaribu mtazamo bapa (F6)
+txt_2_7_updating: [Kusasisha kumbukumbu iliyopo]
+txt_2_6_folda: (folda)
+txt_2_6_advanced: Advanced
+txt_2_6_plalways: Simamisha kila wakati ili kukagua ripoti ya kazi
+txt_2_6_plsmart: Acha kukagua ripoti kwa hitilafu, orodha, jaribio
+txt_2_5_sessionio: (kipindi hiki)
+txt_2_5_advanced: Hariri ya hali ya juu: weka nafasi kati ya kamba za kigezo na jina la faili ikiwa inahitajika.
+txt_2_5_basic: Hariri ya msingi: programu na vigezo kabla ya jina la ingizo
+txt_2_5_cannotrun: Haiwezi kukimbia
+txt_2_5_custeditors: Vihariri maalum, vichezaji, vichanganuzi vya kingavirusi, n.k... (batilisha uhusiano wa faili za mfumo)
+txt_2_5_futa: Futa
+txt_2_5_delete_fromrchive: Futa kutoka kwenye kumbukumbu
+txt_2_5_langflag: Onyesha jina la kitu kilichohifadhiwa kama maandishi ya UTF-8; ondoa uteuzi ili kubadilisha herufi zilizopanuliwa na "?"
+txt_2_5_encpj: Sanidi ufafanuzi wa kazi kama maandishi ya UTF-8
+txt_2_5_execommand: Inaweza kutekelezwa au amri
+txt_2_5_help: Msaada
+txt_2_5_langhint: Kidokezo: kubadilisha herufi zilizopanuliwa na "?" herufi ya kuchekesha inaweza kuboresha sintaksia ikiwa seti ya herufi ya kumbukumbu haiwezi kubadilishwa kwa mafanikio kwenye mashine ya sasa
+txt_2_5_mini_help: Mafunzo Yaliyojanibishwa
+txt_2_5_msaada_wa_nje ya mtandao: Usaidizi wa PeaZip
+txt_2_5_tray: Punguza hadi trei
+txt_2_5_remove: Ondoa
+txt_2_5_hintpaths: Bofya kulia ili kufungua njia za mfumo na mtumiaji
+txt_2_5_selectapp: Chagua programu
+txt_2_5_strater: Mfuatano baada ya jina la ingizo
+txt_2_5_strbefore: Kamba kabla ya jina la kuingiza
+txt_2_5_encoding: Usimbaji wa maandishi
+txt_2_5_nopw: aina hii ya kumbukumbu haitumii usimbaji fiche
+txt_2_4_draghint: [buruta kwa Kivinjari na upau wa Anwani uliowezeshwa]
+txt_2_4_tb: Badili vitufe vya upau wa vidhibiti (kuwasha upya PeaZip)
+txt_2_4_adding: Kuongeza
+txt_2_4_advclip: Ubao wa kunakili huweka chaguo nyingi
+txt_2_4_yanswers: Majibu
+txt_2_4_itemsheight: Vipengee vya ukubwa wa kiotomatiki urefu
+txt_2_4_clearclipboard: Futa ubao wa kunakili (Esc)
+txt_2_4_wcommons: Commons
+txt_2_4_copyfrom: Nakili kutoka
+txt_2_4_deletebookmarks: Je, unataka kufuta orodha ya faili na folda zilizoalamishwa?
+txt_2_4_documents: Nyaraka
+txt_2_4_wenc: Encyclopedia
+txt_2_4_dondookutoka: Dondoo kutoka
+txt_2_4_hexp: Onyesho la kukagua Hex
+txt_2_4_operation: Operesheni
+txt_2_4_path: njia haiandikiki (yaani imejaa, au ya kusomeka pekee). Je, ungependa kuchagua njia ya kutoa inayoweza kuandikwa?
+txt_2_4_removefromclipboard: Ondoa kwenye ubao wa kunakili
+txt_2_4_stdclip: Kawaida: weka chaguo moja kwenye ubao wa kunakili, futa shughuli za kukata kwenye kubandika
+txt_2_4_totalmem: jumla ya kumbukumbu
+txt_2_4_gvideo: Video
+txt_2_4_wkitabu: Wikibook
+txt_2_4_wnews: Wikipedia
+txt_2_4_wsrc: Wikisource
+txt_2_4_wdict: Wiktionary
+txt_2_3_pw_errorchar: herufi ya kunukuu haipendekezwi kutumika katika manenosiri (kwa PeaZip na hati). Ikiwa unahitaji kuunda au kutoa kumbukumbu kwa nenosiri hili unaweza kuondoa ujumbe na utaombwa kuingiza nenosiri kwa maingiliano kwenye kiweko.
+txt_2_3_envstr: Onyesha vigezo vya mazingira
+txt_2_3_never_pw: Usiulize nenosiri
+txt_2_3_nyumbani: Nyumbani kwa mtumiaji
+txt_2_3_on_pw: Kwenye dondoo/orodha/uendeshaji wa jaribio kutoka kwa menyu za mfumo:
+txt_2_3_test_pw100: Jaribio la usimbuaji <100MB kumbukumbu
+txt_2_3_test_pw: Jaribio la usimbaji fiche (linaweza kuwa polepole)
+txt_exclude_recourse: "tenga" tafsiri ndogo ndogo
+txt_action_extopen: "Nyoa na ufungue kwa kutumia programu inayohusishwa".
+txt_error_passwordnotmatch: sehemu za "Nenosiri" na "Thibitisha" hazilingani, tafadhali zirekebishe.
+txt_action_preview: "Onyesho la kukagua ukitumia programu inayohusishwa".
+txt_preview_hint: Kitendo cha "Onyesho la kukagua" fanya kazi sawa na "Nyoa na ufungue" lakini kwa njia ya muda katika saraka ya matokeo, huondolewa kiotomati wakati kumbukumbu imefungwa.
+txt_better: (bora)
+txt_default2: (chaguo-msingi)
+txt_faster: (haraka)
+txt_fastermem: (haraka, kumbukumbu kidogo)
+txt_tempdir: (Folda ya kazi ya muda ya PeaZip)
+txt_stream: (iliyowekwa na "Udhibiti wa mtiririko")
+txt_slowermem: (polepole, kumbukumbu zaidi)
+txt_store: (duka, haraka sana)
+txt_newfolder: (kwenye folda mpya)
+txt_7z_exitcodeunknown: : Hitilafu isiyojulikana katika kazi
+txt_list_isfolder: [folda]
+txt_none: <hakuna>
+txt_fd: 1.44 MB Floppy Diski
+txt_7z_exitcode1: 1: Onyo: hitilafu zisizo mbaya); yaani faili zingine hazipo au zimefungwa
+txt_attach10: MB 10 kiambatisho
+txt_7z_exitcode2: 2: Hitilafu mbaya imetokea
+txt_7z_exitcode255: 255: Kazi imesimamishwa na mtumiaji
+txt_fat32: faili ya FAT32 ya GB 4
+txt_dvd: DVD ya GB 4.7
+txt_attach5: kiambatisho cha MB 5
+txt_cd650: 650 MB CD
+txt_7z_exitcode7: 7: Hitilafu: nilipata mstari wa amri usio sahihi
+txt_cd700: 700 MB CD
+txt_type_description_7z: 7Z: huangazia umbizo zuri la kumbukumbu na uwiano wa juu wa mbano
+txt_dvddl: GB 8.5 DVD DL
+txt_7z_exitcode8: 8: Hitilafu: hakuna kumbukumbu ya kutosha kwa operesheni iliyoombwa
+txt_abort: Ungependa kuacha kunakili/hamisha shughuli za faili zilizoratibiwa?
+txt_about: Kuhusu
+txt_action: Kitendo
+txt_action_hint: Kitendo cha kufungua au kuhakiki na programu inayohusishwa
+txt_add: Ongeza
+txt_add_existing_archive: Ongeza (kama kumbukumbu ipo)
+txt_add_archive: Ongeza kumbukumbu
+txt_add_files: Ongeza faili
+txt_add_folder: Ongeza folda
+txt_add_path: Ongeza njia
+txt_add_tolayout: Ongeza faili na folda zilizochaguliwa kwenye mpangilio wa kumbukumbu
+txt_add_toarchive: Ongeza kwenye kumbukumbu
+txt_add_tobookmarks: Ongeza kwa Alamisho
+txt_address_hint: Kichujio: kinakubali * na ? kadi za mwitu
+txt_adv_filters: Vichujio vya hali ya juu
+txt_algo: Algorithm
+txt_all: zote
+txt_all_default: Zote (chaguo-msingi)
+txt_all_type: Aina sawa
+txt_all_date: Tarehe
+txt_all_psize: Saizi ya faili iliyopakiwa
+txt_all_attributes: Sifa zinazofanana
+txt_all_size: Ukubwa wa faili
+txt_error_input_upx: inaruhusu faili moja inayoweza kutekelezeka kama ingizo
+txt_always_pw: Omba nenosiri kila wakati
+txt_ignore_ext: Puuza kila wakati njia za "Dondoo na..."
+txt_ignore_disp: Puuza kila wakati njia za "Dondoo limeonyeshwa..."
+txt_ignore_sel: Puuza njia kila wakati za "Dondoo lililochaguliwa..."
+txt_key_hint: Ongeza heshi ya faili kuu kwa nenosiri; kumbukumbu inaweza kusimbwa na PeaZip na programu zingine kwa kufuata kiwango sawa, au kuweka heshi kama sehemu ya nenosiri.
+txt_timestamp: Weka muhuri wa muda kwa jina
+txt_appoptions: Chaguo za programu
+txt_type_description_arc: ARC: hifadhidata ya majaribio, yenye nguvu, bora na yenye vipengele vingi
+txt_archive: Kumbukumbu
+txt_un7z_browse_ok: kumbukumbu imevinjariwa kwa mafanikio
+txt_interface: Hifadhi kiolesura cha kivinjari
+txt_archivecreation: Uundaji wa kumbukumbu
+txt_tarbefore_hint: Hifadhi data katika umbizo la TAR hapo awali kuliko katika aina maalum.
+txt_archive_hint: Hifadhi, bana, gawanya na uweke faili za kibinafsi, folda na juzuu.
+txt_compressionratio_hint: Uwiano wa kubana kwenye kumbukumbu
+txt_archiving: Kuhifadhi kwenye kumbukumbu:
+txt_cl_long: Hoja zinaonekana kuzidi ukubwa wa juu zaidi unaoweza kupitishwa na ukurasa wa mbele wa PeaZip, tafadhali chagua faili chache za ingizo (yaani chagua dirs badala ya faili moja)
+txt_overwrite_askbefore: Uliza kabla ya kubandika (kwenye kiweko)
+txt_associated: Programu inayohusishwa
+txt_attributes: Sifa
+txt_mwandishi: Mwandishi
+txt_ren_existing: Badilisha jina kiotomatiki faili zilizopo
+txt_ren_extracted: Badilisha jina kiotomatiki faili zilizotolewa
+txt_autofolder: Unda folda mpya kiotomatiki ili kutoa kumbukumbu ndani?
+txt_back: Nyuma
+txt_backend: Nyuma jozi
+txt_backupexe: Hifadhi rudufu inayoweza kutekelezwa (inapendekezwa)
+txt_bettercompression: compression bora
+txt_blogs: Blogu
+txt_blowfish: Blowfish448 (vizuizi 64-bit)
+txt_alamisho: Alamisho
+txt_browse: Vinjari
+txt_browser: Kivinjari
+txt_aborted_error: Kumbukumbu ya kuvinjari imesimamishwa, itachukua muda mwingi sana. Unaweza kupunguza uteuzi kwa kutumia utafutaji (F3) au kuepuka hali ya mtazamo wa Flat (F6). Unaweza kutoa moja kwa moja, kuorodhesha au kujaribu kumbukumbu.
+txt_list_browsing: Kuvinjari
+txt_archive_root: Kuvinjari: mzizi wa kumbukumbu
+txt_type_description_bzip2: BZip2: mbano yenye nguvu kabisa, kasi ya wastani
+txt_pw_empty: Tafadhali toa nenosiri (au faili muhimu)
+txt_add_error: Haiwezi kuongeza/kusasisha au kufuta vipengee. Kumbukumbu haiwezi kuandikwa, au haiwezi kutumia utendakazi huu. Kuhariri aina za kumbukumbu zisizo za kisheria kunaweza kuwashwa katika chaguo za kidhibiti cha Kumbukumbu.
+txt_un7z_browse_failure: haiwezi kuvinjari kumbukumbu
+txt_list_error: Haiwezi kuorodhesha maudhui ya kumbukumbu, tafadhali angalia kama kumbukumbu imelindwa kwa nenosiri au imeharibika.
+txt_conf_cannotsave: Haiwezi kuhifadhi faili ya usanidi, angalia ikiwa njia inaweza kuandikwa na kwa nafasi ya bure.
+txt_check_hint: Angalia uharibifu wa data wa kawaida; algoriti za hashi zinafaa kugundua hata upotoshaji wa data mbaya (angalia hati)
+txt_check: Checksum/hash faili
+txt_check_select: Checksum/hash
+txt_clear: Futa
+txt_clearlayout: Futa mpangilio
+txt_pj_hint: Bofya ili kuleta kazi, weka upya mabadiliko na upakie ufafanuzi wa kazi kutoka kwa GUI
+txt_autoclose: Usisimame kamwe ili kukagua ripoti ya kazi
+txt_cl: mstari wa amri:
+txt_compare: Linganisha faili
+txt_compress: Finyaza
+txt_compress_executable: Finyaza inayoweza kutekelezwa
+txt_compress_openforwriting: Finyaza faili wazi kwa maandishi
+txt_compression: Mfinyazo
+txt_compmanagement: Usimamizi wa kompyuta
+txt_pw_confirm: Thibitisha
+txt_console: Console
+txt_console_interface: Console
+txt_content: Maudhui
+txt_controlpanel: Paneli ya kudhibiti
+txt_convert: Badilisha diski kuwa NTFS
+txt_copy: Copy
+txt_copyto: Nakili kwa...
+txt_create: Unda
+txt_create_archive: Unda kumbukumbu mpya
+txt_title_create: Unda kumbukumbu, bana, usimbaji fiche, gawanya...
+txt_create_keyfile: Unda faili kuu
+txt_create_folder: Unda folda mpya
+txt_create_theme: Unda Mandhari kutoka kwa mipangilio ya sasa
+txt_rr: Unda rekodi za uokoaji
+txt_create_sfx: Unda kumbukumbu inayojitolea
+txt_cr_current: Njia ya sasa au uwiano wa mbano wa kichujio
+txt_custom: Maalum
+txt_type_description_custom: Maalum (watumiaji wa hali ya juu): weka jina na vigezo vinavyoweza kutekelezeka
+txt_customapp: Programu maalum
+txt_custom_parameters: Vigezo maalum
+txt_Customsize: Ukubwa maalum
+txt_cut: Kata
+txt_datetime: Tarehe/saa
+txt_default: Chaguomsingi
+txt_default_compression: mbano chaguomsingi
+txt_default_format: Umbizo chaguo-msingi
+txt_theme_default: Mandhari chaguo-msingi
+txt_hard_reset_hint: Futa faili ya alamisho
+txt_desktop: Eneo-kazi
+txt_kamusi: Kamusi
+txt_dirs: dir(s),
+txt_dis: Kutofautisha:
+txt_disk_cleanup: Kusafisha diski
+txt_disk_defrag: Defrag ya diski
+txt_disk_management: Usimamizi wa diski
+txt_dispaly: Onyesha matokeo kama
+txt_displayedmnu_obj: imeonyeshwa
+txt_displayedobjects: Vipengee vilivyoonyeshwa
+txt_nocompress: usilazimishe
+txt_delete: Je, unataka kufuta faili zilizochaguliwa? Uendeshaji hauwezi kutenduliwa na faili hazitaweza kurejeshwa kutoka kwa Tupio
+txt_wipe: Je, unataka kufuta faili zilizochaguliwa kwa usalama? Uendeshaji hauwezi kutenduliwa na faili hazitarejeshwa
+txt_done: Imekamilika
+txt_edit: Hariri
+txt_elapsed: ilipita:
+txt_error_emptycl: Mstari wa amri tupu!
+txt_encrypt: Simbua
+txt_encrypted: encrypted
+txt_encryption: Usimbaji fiche
+txt_note: Ingiza dokezo / maelezo
+txt_random_keys: Ingiza vitufe nasibu
+txt_random_keys_dokezo: Ingiza funguo za nasibu (sio lazima ukumbuke)
+txt_ent: Tathmini ya Entropy
+txt_ent_tools: Sogeza kipanya au tumia zana za ziada za sampuli za entropy
+txt_eqorlarger: Sawa au kubwa kuliko kitu kilichochaguliwa
+txt_eqorrecent: Sawa au hivi karibuni zaidi kuliko kitu kilichochaguliwa
+txt_eqorolder: Sawa au nzee kuliko kitu kilichochaguliwa
+txt_eqorsmaller: Sawa au ndogo kuliko kitu kilichochaguliwa
+txt_equal: Sawa ya kitu kilichochaguliwa
+txt_erase_hint: Futa salama: andika upya kwa data nasibu, saizi ya barakoa, badilisha jina, hatimaye futa
+txt_extraction_error: Hitilafu katika kutoa kitu kilichochaguliwa. Ikiwa kumbukumbu imelindwa kwa nenosiri tafadhali itoe
+txt_exclude_hint: Ondoa faili, moja kwa kila mstari; tumia * na ? kadi za mwitu; " na ' delimiters hazihitajiki
+txt_exclusion_recourse: Vichujio vya kutojumuisha huleta nakala ndogo
+txt_exclusion: Tenga
+txt_exe: Inaweza kutekelezwa
+txt_overwrite_qry: ipo katika njia lengwa; ubadilishe na faili (za) zilizo na jina moja kutoka kwa njia ya chanzo? (Ghairi: ruka kunakili kipengee hiki)
+txt_confirm_overwrite: ipo; kuibatilisha? (hapana kuruka)
+txt_explore_outpath: Chunguza njia ya kutoa
+txt_explore_path: Chunguza njia
+txt_ext: Ext:
+txt_caption_extract: Dondoo
+txt_ext_nopath: Dondoo (bila njia)
+txt_ext_all: Toa zote
+txt_ext_allhere: Toa yote hapa
+txt_ext_allto: Toa zote kwa
+txt_extopen_custom: Toa na ufungue na programu maalum
+txt_extopen_with: Toa na ufungue kwa...
+txt_ext_disp_here: Dondoo limeonyeshwa hapa
+txt_ext_disp: Toa vitu vilivyoonyeshwa
+txt_ext_disp_to: Toa vitu vilivyoonyeshwa kwa...
+txt_ext_here: Toa hapa
+txt_ext_sel_here: Dondoo iliyochaguliwa hapa
+txt_ext_sel: Toa vitu vilivyochaguliwa
+txt_ext_sel_to: Toa vitu vilivyochaguliwa kwa...
+txt_extobj: Toa kitu
+txt_newfoldermenu: Toa kwenye folda mpya
+txt_extto: Dondoo kwa...
+txt_level_fast: Haraka
+txt_fastcompr: mgandamizo wa haraka
+txt_fastopen: Utaratibu wa kufungua haraka, acha kuvinjari kumbukumbu kubwa sana, tumia vichungi badala yake
+txt_level_haraka zaidi: Haraka zaidi
+txt_favformats: Njia za mkato za umbizo unazopenda
+txt_faili: Faili
+txt_filebrowser: Kivinjari cha faili
+txt_filetools: Vyombo vya faili
+txt_files: faili,
+txt_nfiles: Faili
+txt_fs: Mfumo wa faili
+txt_filters_recourse: vichujio hurudisha tanzu
+txt_filters: Vichujio
+txt_flat: Gorofa (onyesha yote)
+txt_list_flat: Mwonekano tambarare
+txt_unit_floppy: Floppy disk
+txt_foldername: Jina la folda
+txt_nfolders: Folda
+txt_error_input_multi: umbizo huruhusu faili moja kama ingizo; unaweza kutumia swichi ya "TAR kabla" ili kuhifadhi ingizo katika kumbukumbu ya .TAR hapo awali, vinginevyo unaweza kuchagua umbizo lingine. DOKEZO: chagua umbizo la kumbukumbu baada ya kuchagua data ya ingizo: swichi ya "TAR kabla" itawekwa kiotomatiki
+txt_fwd: Mbele
+txt_list_found: Imepatikana
+txt_free: Bila malipo
+txt_free2: bure
+txt_name_full: Jina kamili
+txt_function: Kazi
+txt_general: Jumla
+txt_multithreading: Usomaji mwingi wa kawaida
+txt_go_browser: Nenda kwenye kivinjari cha faili
+txt_go_path: Chunguza njia (PeaZip)
+txt_guicl: GUI + Console
+txt_guipealauncher: GUI
+txt_graphic: Folda ya picha
+txt_gridaltcolor: Gridi za rangi mbadala
+txt_gridrowheight: Urefu wa safu ya gridi
+txt_gui: GUI
+txt_type_description_gzip: GZip: mbano wa haraka
+txt_hapa: hapa
+txt_list_history: Historia
+txt_homeroot: Kiwango cha mizizi cha kompyuta/jalada
+txt_quickbrows_hint: Ikiwa kuvinjari kutasimamishwa, mtumiaji anaweza kupunguza uteuzi kwa kutumia vipengele vya utafutaji au kichujio; kazi za dondoo/orodha/jaribio haziathiriwi kwa njia yoyote.
+txt_backupexe_hint: Ikiwa kitu kitaenda vibaya na kusababisha matokeo yasiyofanya kazi, unaweza kurejesha utekelezekaji wa asili kutoka kwa nakala ya nakala kiotomatiki.
+txt_attach: Ikiwa mteja wa barua ataunga mkono amri hiyo, kumbukumbu itaambatishwa kwa barua mpya.
+txt_images: Picha
+txt_include_hint: Jumuisha faili, moja kwa kila mstari; tumia * na ? kadi za mwitu; " na ' delimiters hazihitajiki
+txt_filters_hint: Vichujio vya kujumuisha na kutengwa kwa 7z binary, tafadhali soma kwa makini hati za 7-Zip ili kuelewa jinsi vichujio hivyo hufanya kazi.
+txt_inclusion_recourse: Vichujio vya ujumuishaji hurejesha tanzu
+txt_inclusion: Jumuisha
+txt_error_function: Chaguo za kukokotoa zisizo sahihi zimeombwa
+txt_info: Maelezo
+txt_infoall: Taarifa kwa wote
+txt_infodisp: Maelezo juu ya vitu vilivyoonyeshwa
+txt_infosel: Maelezo juu ya vitu vilivyochaguliwa
+txt_inputinfo: Taarifa ya ingizo
+txt_input_list: Orodha ya ingizo:
+txt_iop: pembejeo, pato, vigezo
+txt_ipo: pembejeo, vigezo, pato
+txt_input: Ingizo
+txt_integrity: Angalia uadilifu
+txt_chunk_size: Saizi maalum isiyo sahihi, tafadhali isahihishe kwa nambari ya nambari
+txt_invertsel: Geuza uteuzi
+txt_type_exe: ni Windows inayoweza kutekelezwa, unataka kuiendesha? ("Hapana" kujaribu kuifungua kama kumbukumbu) DONDOO: baadhi ya utekelezaji huenda usiendeshwe ipasavyo isipokuwa kumbukumbu nzima imetolewa hapo awali.
+txt_return_to_archive: imefunguliwa kwa sasa; unataka kuivinjari?
+txt_not_accessible: haipatikani tena
+txt_type_isiyotumika: si aina ya kumbukumbu inayotumika
+txt_checkname_failed: si jina halali.
+txt_not_accessible_list: haipatikani, tafadhali angalia ikiwa orodha ya faili iliyotolewa ni sahihi na imesasishwa.
+txt_theme_create_error: Haikuwezekana kuunda mada, jaribu kutumia jina halali kwa folda kama jina la mada na kuchagua njia inayoweza kuandikwa.
+txt_theme_exists: bado ipo, tafadhali toa njia tofauti
+txt_job_code: nambari ya kazi:
+txt_job_definition_saved: Ufafanuzi wa kazi umehifadhiwa kwa ufanisi
+txt_job_success: Jukumu limekamilika!
+txt_join: Jiunge
+txt_joinfiles: Jiunge na faili
+txt_keyfile: Faili kuu
+txt_keyfile_not_found: Faili kuu haiwezi kupatikana au kusomwa. Tafadhali chagua Faili muhimu tofauti.
+txt_keyfile_notcreated: KeyFile haijaundwa
+txt_larger: Kubwa kuliko kitu kilichochaguliwa
+txt_lastused: Ilitumika mwisho
+txt_launch: Kazi ya kuzindua
+txt_layout: Mpangilio
+txt_filelist_savedas: Mpangilio umehifadhiwa kama
+txt_level: Kiwango
+txt_leseni: Leseni
+txt_caption_list: Orodha
+txt_list_details: Orodha (pamoja na maelezo)
+txt_list_all: Orodhesha zote
+txt_list_disp: Orodhesha vitu vilivyoonyeshwa
+txt_list_sel: Orodhesha vitu vilivyochaguliwa
+txt_toggle_warning: Kuorodhesha mwonekano bapa wa maudhui ya njia kunaweza kuchukua muda mrefu, ungependa kuendelea?
+txt_loadfile: Pakia faili
+txt_loadlayout: Mpangilio wa mzigo
+txt_unit_hd: diski ya ndani
+txt_localization: Ujanibishaji
+txt_lpaqver: Toleo la LPAQ
+txt_type_description_lpaq: LPAQ: toleo la haraka la PAQ, mbano mzuri sana
+txt_maininterface: Kiolesura kikuu
+txt_maxcomp: Hali ya juu zaidi ya mgandamizo
+txt_level_upeo: Upeo
+txt_restartrequired: Inaweza kuhitaji kuanzisha upya programu ili kutumika
+txt_required_memory: MB ya kumbukumbu inahitajika
+txt_method: Mbinu
+txt_misc: Nyingine
+txt_modify: Rekebisha
+txt_morecontrols: Vidhibiti zaidi (historia, alamisho, ...)
+txt_morerecent: Hivi majuzi zaidi ya kitu kilichochaguliwa
+txt_ent_hint: Sogeza kipanya, ingiza vitufe kwenye sehemu ya kuhariri, pakia faili ili kukusanya entropy kutoka kwa mfumo...
+txt_moveto: Hamisha hadi...
+txt_mypc: Mizizi ya kompyuta
+txt_list_na: n/a
+txt_name: Jina
+txt_naming: Kutaja
+txt_unit_remote: Hifadhi ya mtandao
+txt_newarchive: Kumbukumbu mpya
+txt_cnewfolder: Folda mpya
+txt_news: Habari
+txt_no: Hapana
+txt_noinput: Hakuna ingizo linaloweza kufikiwa lililopokelewa
+txt_nocompress_hint: hakuna compression (haraka)
+txt_split_noinput: Hakuna ingizo lililochaguliwa; tafadhali chagua faili ya kugawanya
+txt_open_noinput: Hakuna ingizo lililochaguliwa; tafadhali chagua kumbukumbu (kiasi cha kumbukumbu cha kwanza kwa kumbukumbu za ujazo nyingi)
+txt_list_nomatch: hakuna mechi
+txt_singlethread: Hakuna multithreading
+txt_none2: hakuna
+txt_nonsolid: Isiyo imara
+txt_level_normal: Kawaida
+txt_copy_error: haijanakiliwa au kuhamishwa kwa mafanikio, msimbo wa hitilafu:
+txt_description: Vidokezo
+txt_compare_second: Sasa chagua faili ya kulinganishwa nayo
+txt_peaobj: Udhibiti wa kitu
+txt_displayed_obj: kitu/vitu
+txt_olderthan: Kongwe kuliko kitu kilichochaguliwa
+txt_on: imewashwa
+txt_ondblclick: On doubleclick
+txt_opacity: Opacity
+txt_fungua: Fungua
+txt_openarchive: Fungua kumbukumbu
+txt_title_open: Fungua kumbukumbu, simbua, jiunge...
+txt_open_alamisho: Fungua alamisho
+txt_cphere: Fungua haraka ya amri hapa
+txt_open_file: Fungua faili
+txt_open_files: Fungua faili
+txt_open_path: Fungua njia
+txt_opensource: Fungua jalada linalobebeka la chanzo
+txt_openwith: Fungua kwa...
+txt_aborted: Operesheni imesitishwa
+txt_unit_cd: Hifadhi ya macho
+txt_options: Chaguzi
+txt_other: Nyingine
+txt_otherparams: Vigezo vingine (kuhariri bila malipo)
+txt_oip: pato, pembejeo, vigezo
+txt_opi: pato, vigezo, ingizo
+txt_output: pato:
+txt_overwrite: Batilisha faili zilizopo
+txt_compressed_size: Imefungwa
+txt_paqver: Toleo la PAQ
+txt_type_description_paq: PAQ: compressor polepole lakini yenye nguvu sana
+txt_pio: vigezo, ingizo, pato
+txt_poi: vigezo, pato, ingizo
+txt_parameters: Vigezo:
+txt_error_partial: Uchimbaji kiasi haujatekelezwa kwa aina ya kumbukumbu ya sasa
+txt_passes: Pasi
+txt_pw: Nenosiri
+txt_pwlength: Urefu wa nenosiri katika herufi (4..64)
+txt_un7z_browse_pw: nenosiri linaweza kuhitajika
+txt_un7z_browse_pw_other: nenosiri linaweza kuwa si sahihi
+txt_paste: Bandika
+txt_path: Njia
+txt_pea_appcolor: Lafudhi ya programu
+txt_pea_textcolor: Rangi ya maandishi ya Pea
+txt_type_description_pea: PEA: umbizo la kumbukumbu lenye mwelekeo wa usalama na mbano wa haraka
+txt_peazip_new: PeaZip (mfano mpya)
+txt_peazip_help: Usaidizi wa mtandaoni
+txt_peazip_web: Tovuti ya PeaZip
+txt_performall: Kanuni zote
+txt_name_provide: \ / : * ? ' " < > | herufi haziruhusiwi katika majina ya faili
+txt_upxorstrip: Tafadhali chagua Strip na/au UPX kwenye jozi
+txt_not_removable_file: Tafadhali funga faili inayotumika, ili kuruhusu PeaZip kuiondoa:
+txt_not_removable: Tafadhali funga faili zinazotumika, ili kuruhusu PeaZip kuondoa folda:
+txt_custom_executable_missing: Tafadhali toa jina la kitekelezo maalum
+txt_type_unsupported_select: Tafadhali chagua aina ya kumbukumbu inayotumika:
+txt_no_theme_name: Tafadhali taja jina la mandhari
+txt_please_subiri: Tafadhali subiri
+txt_copy_wait: Tafadhali subiri shughuli za kunakili/hamisha faili zilizoratibiwa kwa sasa zikamilike kabla ya kuratibu utendakazi mwingine wa aina sawa.
+txt_previewwith: Hakiki na...
+txt_projectadmin: Msimamizi wa mradi:
+txt_type_description_quad: BALZ/QUAD: vibandiko vya faili vyenye utendakazi wa juu wa ROLZ
+txt_quickdelete: Futa haraka
+txt_quit: Acha
+txt_unit_ram: diski ya RAM
+txt_soma: Soma:
+txt_recentarchives: Kumbukumbu za hivi majuzi
+txt_rr_hint: Rekodi za uokoaji huruhusu kujaribu kusahihisha kumbukumbu katika kesi ya ufisadi wa data
+txt_search_refine: Chuja kichujio cha utafutaji, unakubali? na * wildcards
+txt_fefreshf5: Onyesha upya
+txt_release: kutolewa:
+txt_unit_removable: Kitengo kinachoweza kutolewa
+txt_remove_bookmark: Ondoa alamisho
+txt_remove_external_unit: Ondoa kifaa/vifaa vya nje
+txt_removeselected: Ondoa kitu/vitu vilivyochaguliwa
+txt_rename: Badilisha jina
+txt_caption_repair: Rekebisha
+txt_restartrequired2: inahitaji kuanzisha upya programu ili kuomba
+txt_reset: Weka upya
+txt_reset_archivename: Weka upya jina la kumbukumbu
+txt_hardreset: Weka upya vialamisho
+txt_reset_theme: Weka upya hadi mandhari iliyopachikwa
+txt_restore_att: kurejesha sifa asili
+txt_run_as: Endesha kama (haiwezi kubadili kwa watumiaji na nenosiri tupu)
+txt_run_as2: Endesha kama mtumiaji tofauti
+txt_sample: Mfano:
+txt_saveas: Hifadhi kama
+txt_savehistory: Hifadhi data ya historia
+txt_save_infolder: Hifadhi kwenye folda (otomatiki)
+txt_savejob: Hifadhi ufafanuzi wa kazi kama hati
+txt_savejobdefinition: Hifadhi ufafanuzi wa kazi kama hati
+txt_savejobdefinition_hint: Hifadhi ufafanuzi wa kazi kama maandishi wazi; unaweza kuitumia kutoka kwa maandishi yako
+txt_savelayout: Hifadhi mpangilio
+txt_save_winstate: Hifadhi hali ya dirisha kuu
+txt_search: Tafuta (inarudiwa, inaweza kuchukua muda)
+txt_searchanddrag: Tafuta na uburute hapa
+txt_searchfor: Tafuta
+txt_nrsearch: Tafuta hapa (isiyorudiwa)
+txt_search_hint: Tafuta katika saraka ndogo za kumbukumbu kwa zinazolingana na vichujio.
+txt_search_web: Utafutaji wa wavuti
+txt_list_searching: Inatafuta...
+txt_securedelete: Futa salama
+txt_default_description: Chagua chaguo la kukokotoa au buruta faili hapa
+txt_selectall: Chagua zote
+txt_selectdir: Chagua saraka
+txt_selected_obj: imechaguliwa
+txt_selected_objects: Vipengee vilivyochaguliwa
+txt_sfx: Kuchimba mwenyewe
+txt_sendbymail: Tuma kwa barua
+txt_set_defaults: Weka vigezo chaguo-msingi vya programu
+txt_settings: Mipangilio
+txt_sfx_interface: kiolesura cha sfx
+txt_showhints: Onyesha vidokezo na vidokezo
+txt_show_messages: Onyesha ujumbe wa taarifa
+txt_showpw: Onyesha maudhui ya sehemu ya nenosiri
+txt_singlevol: Kiasi kimoja, usigawanye
+txt_size: Ukubwa
+txt_sizeb: Ukubwa (B)
+txt_skip_existing: Ruka faili zilizopo
+txt_slowercomp: mbano polepole lakini mtengano wa haraka sawa
+txt_smaller: Ndogo kuliko kitu kilichochaguliwa
+txt_solid: Imara
+txt_solid_block: Ukubwa wa kuzuia
+txt_solid_auto: Imara, rekebisha kiotomatiki
+txt_solid_extension: Imara, kikundi kwa kiendelezi
+txt_listtest: samahani, oparesheni ya orodha/jaribio bado haijatekelezwa kwa umbizo hili
+txt_sortbysel: Panga kwa hali ya uteuzi
+txt_list_sorting: Inapanga...
+txt_speed: kasi
+txt_split: Gawanya
+txt_type_description_split: Gawanya faili na ukaguzi wa hiari wa uadilifu
+txt_split_file: Gawanya faili
+txt_list_nostats: takwimu hazipatikani
+txt_status: Hali
+txt_level_store: Store
+txt_stream_control: Udhibiti wa mtiririko
+txt_strip: Vua kabla ya UPX (inapendekezwa)
+txt_keyfile_created: Imefaulu kuunda KeyFile kama:
+txt_suggestpw: Unda nenosiri nasibu
+txt_noupx: Alama zimevuliwa, mgandamizo wa UPX umeachwa
+txt_syntax: Sintaksia:
+txt_sysbenchmark: Kigezo cha mfumo
+txt_benchmark: Kielelezo cha mfumo kitachukua dakika kadhaa na kitatumia CPU zote zinazopatikana na rasilimali ya kumbukumbu. Mfumo hauwezi kujibu wakati wa alama; kuiendesha hata hivyo?
+txt_systools: Vyombo vya mfumo
+txt_tarbefore: TAR hapo awali
+txt_type_description_tar: TAR: uhifadhi wa umbizo kuu kwenye mifumo ya UNIX
+txt_taskman: Kidhibiti Kazi
+txt_caption_test: Jaribio
+txt_testall: Jaribu zote
+txt_testdisp: Jaribu kitu/vitu vinavyoonyeshwa
+txt_testpw: Jaribu nenosiri / faili kuu
+txt_testsel: Jaribu kitu/vitu vilivyochaguliwa
+txt_col_hint: Rangi inapaswa kuchaguliwa ili kuunganishwa vizuri na rangi za ikoni na vitu vingine vya GUI.
+txt_bookmarks_hint: Orodha kamili na inayoweza kuhaririwa ya alamisho inapatikana katika kiolesura cha kivinjari cha faili, kubofya aikoni ya "Vidhibiti zaidi" na kwenye "Geuza historia/alamisho"
+txt_archive_noinput_tolist: Mpangilio hauna chochote: tafadhali tumia Ongeza faili, Ongeza folda au Mpangilio wa Pakia ili kujaza mpangilio wa kumbukumbu.
+txt_mandhari: Mandhari
+txt_icons_found: Mandhari yamepakiwa.
+txt_themename: Jina la mandhari
+txt_icons_not_found: Mandhari hayajapakiwa ipasavyo. Jaribu kubadili hadi mandhari chaguo-msingi, au kwa inayojulikana inayofanya kazi.
+txt_theme_create_success: mandhari imeundwa kwa ufanisi
+txt_theming: Mandhari
+txt_extand_error: Chaguo hili la kukokotoa linaweza kufanywa kwa kitu kimoja kwa wakati
+txt_threads: Nyuzi
+txt_titlescolor: Rangi ya mada
+txt_to: kwa
+txt_toggle_browseflat: Geuza kuvinjari / mwonekano bapa (onyesha yote)
+txt_toggle_historybookmarks: Geuza upau wa hali
+txt_toolbarscolor: Rangi ya paa
+txt_tools: Zana
+txt_best: jaribu mipangilio bora (polepole)
+txt_aina: Aina
+txt_level_ultra: Ultra
+txt_error_openfile: Haiwezi kufungua faili maalum
+txt_cl_hint: UNACE na UPX huendesha kila wakati kwa kutumia hali ya kiweko; list, test na benchmark kazi daima huendeshwa kwa kutumia GUI mode
+txt_ace_missing: programu-jalizi ya UNACE haipo; kwa kushughulikia kumbukumbu za ACE unaweza kupakua fomu ya programu-jalizi tovuti ya PeaZip (ikiwa ni chanzo kilichofungwa cha UNACE, programu-jalizi haijaangaziwa kwenye kifurushi cha msingi)
+txt_units: vitengo
+txt_unit_unknown: Aina ya hifadhi isiyojulikana
+txt_un7z_pw_haijajaribiwa: Haijajaribiwa
+txt_up: Juu
+txt_update: Sasisha (ikiwa kumbukumbu ipo)
+txt_type_description_upx: UPX: bana faili zinazotekelezeka pekee
+txt_advfilters: Tumia vichujio vya hali ya juu
+txt_openfiles_hint: Tumia chaguo hili kujumuisha kwenye kumbukumbu faili zilizofunguliwa kwa ajili ya kuandikwa na programu zingine (zinazofaa katika kazi za chelezo)
+txt_usenet: Usenet
+txt_jina_la_mtumiaji: Jina la mtumiaji; tumia user@DOMAIN au DOMAIN\mtumiaji fomu ikihitajika.
+txt_using: Kutumia:
+txt_volumepea: Udhibiti wa sauti
+txt_volume_size: Ukubwa wa sauti
+txt_type_ext_uns: ilitolewa kwa ufanisi
+txt_webssearch: Utafutaji wa wavuti
+txt_tovuti: Tovuti
+txt_word: Neno
+txt_write: Andika:
+txt_ramdompw_hint: Unaweza kunakili nenosiri lililotolewa nasibu kutoka hapa
+txt_exe_hint: Unaweza kuingiza kwa uhuru jina na vigezo vinavyoweza kutekelezeka kwa ukandamizaji maalum, na kuchagua muundo wa syntax. Tafadhali kumbuka kuwa unaweza pia kubadilisha syntax ya amri kwa kichupo cha "Console".
+txt_pj_hint2: Unaweza kuingiza ufafanuzi wa kazi kutoka kwa sehemu ya mbele ya GUI kwenye uga wa memo hapo juu. Kisha, unaweza kuhariri, kuizindua au kuihifadhi bila kubadilisha au kupoteza kazi iliyoainishwa kwa sehemu ya mbele ya GUI.
+txt_type_description_zip: ZIP: uhifadhi wa haraka wa kumbukumbu/umbizo la kubana, kawaida kwenye mifumo ya Windows
+txt_zipcrypto_hint: ZipCrypto (urithi)
+
+=== malizia kikundi cha maandishi cha PeaZip ===
+
+=== Kikundi cha maandishi cha PeaLauncher ===
+
+txt_6_9_iliyobaki: iliyobaki
+txt_6_5_abort: Acha
+txt_6_5_kosa: Hitilafu
+txt_6_5_no: Hapana
+txt_6_5_onyo: Onyo
+txt_6_5_ndiyo: Ndiyo
+txt_6_5_yesall: Ndiyo kwa wote
+txt_5_6_sasisho: Angalia masasisho
+txt_5_6_cml: Lugha ya menyu ya muktadha wa mfumo
+txt_5_6_donations: Michango
+txt_5_6_ujanibishaji: Ujanibishaji
+txt_5_6_runasadmin: Endesha kama msimamizi
+txt_5_6_help: Usaidizi wa mtandaoni
+txt_5_5_ghairi: Ghairi yote
+txt_5_3_details: Maelezo
+txt_5_3_faili: faili
+txt_5_3_folda: folda
+txt_5_3_maelezo: Maelezo
+txt_5_3_orodha: Orodha
+txt_5_3_os: Ukubwa halisi
+txt_5_3_ps: Saizi iliyopakiwa
+txt_5_3_test: Jaribio
+txt_5_0_dondoo: Dondoo
+txt_5_0_kutoka: kutoka
+txt_5_0_katika: ndani
+txt_5_0_kwa: kwa
+txt_4_5_search: Tafuta
+txt_4_0_buruta: Buruta hapa kumbukumbu ili kutoa, au
+txt_4_0_dragorselect: Buruta hapa au chagua faili
+txt_4_0_chagua: chagua faili
+txt_3_6_selectdir: Chagua saraka
+txt_3_5_funga: Funga
+txt_3_0_details: Kwa maelezo zaidi tafadhali angalia kichupo cha "Ripoti" kwa kumbukumbu kamili ya kazi, na kichupo cha "Console" kwa ufafanuzi wa kazi kama safu ya amri.
+txt_3_0_hints: Vidokezo kuhusu hitilafu
+txt_3_0_arc: Sababu zinazowezekana za hitilafu zinaweza kuwa faili za ingizo zisizoweza kusomeka (zilizofungwa, hazipatikani, zimeharibika, hazipo katika hifadhi ya sehemu nyingi...), au njia ya kutoa iliyojaa au isiyofikika.
+txt_3_0_ext: Kumbukumbu inaweza kuhitaji nenosiri tofauti kwa uendeshaji wa sasa.
+txt_2_8_oop: Fungua njia ya kutoa kazi inapokamilika
+txt_2_7_validatefn: Uendeshaji umesimamishwa, jina batili la faili limegunduliwa:
+txt_2_7_validatecl: Uendeshaji umesimamishwa, amri inayoweza kuwa hatari iligunduliwa (yaani, muunganisho wa amri hauruhusiwi ndani ya programu):
+txt_2_6_fungua: Fungua kumbukumbu
+txt_2_5_ace_missing: programu-jalizi ya UNACE haipo; kwa kushughulikia kumbukumbu za ACE unaweza kupakua fomu ya programu-jalizi tovuti ya PeaZip (ikiwa ni chanzo kilichofungwa cha UNACE, programu-jalizi haijaangaziwa kwenye kifurushi cha msingi)
+txt_2_3_pw_errorchar_gwrap: herufi ya nukuu haiwezi kutumika katika manenosiri chini ya mfumo wa sasa, tafadhali badilisha nenosiri au chagua modi ya Console katika kiolesura cha Nyuma cha jozi katika Chaguzi > Mipangilio.
+txt_2_3_renameexsting: Badilisha jina kiotomatiki faili zilizopo
+txt_2_3_renameextracted: Badilisha jina kiotomatiki faili zilizotolewa
+txt_2_3_ghairi: Ghairi
+txt_2_3_encryption: Usimbaji fiche
+txt_2_3_extinnew: Toa katika folda mpya
+txt_2_3_keyfile: Faili kuu
+txt_2_3_kf_not_found_gwrap: Faili kuu haiwezi kupatikana au kusomeka. Tafadhali chagua Faili muhimu tofauti.
+txt_2_3_chaguo zaidi: Chaguo zaidi...
+txt_2_3_nopaths: Hakuna njia
+txt_2_3_chaguo: Chaguzi
+txt_2_3_overexist: Batilisha faili zilizopo
+txt_2_3_pw: Nenosiri
+txt_2_3_skipexisting: Ruka faili zilizopo
+txt_job_unknown: : Hitilafu isiyojulikana imetokea
+txt_stdjob: [uhuishaji utaacha kukamilika kwa kazi]
+txt_benchmarkjob: [mfumo utajibu polepole wakati wa kuweka alama (dakika kadhaa)]
+txt_defragjob: [haitajibu wakati wa kugawanyika, unaweza kuiruhusu iendeshe chinichini]
+txt_consolejob: [maoni ya kazi na maendeleo ya kina yanapatikana kwenye dirisha la kiweko]
+txt_job1: 1: Onyo: makosa yasiyo ya kuua; yaani faili zingine hazipo au zimefungwa
+txt_job127: 127: Haiwezi kutekeleza operesheni iliyoombwa
+txt_job2: 2: Hitilafu mbaya imetokea
+txt_job255: 255: Jukumu limesitishwa na mtumiaji
+txt_job7: 7: Kosa: nilipata mstari wa amri usio sahihi
+txt_job8: 8: Kosa: hakuna kumbukumbu ya kutosha kwa operesheni iliyoombwa
+txt_autoclose: Funga dirisha hili kazi inapokamilika
+txt_crscale: Uwiano wa mbano (chini, bora):
+txt_console: Console
+txt_benchscale: Ukadiriaji wa Core 2 Duo 6600, kasi sawa ya MHz.
+txt_create: Unda
+txt_done: Imekamilika:
+txt_nocl: Mstari wa amri tupu
+txt_error: Hitilafu:
+txt_explore: Chunguza
+txt_extto: Dondoo kwa
+txt_halt: Sitisha mfumo kazi inapokamilika
+txt_halted: Imesitishwa:
+txt_hardware: maunzi
+txt_high: kipaumbele cha juu
+txt_idle: kipaumbele cha kutofanya kitu
+txt_input: Ingizo:
+txt_jpaused: Jukumu limesitishwa
+txt_jresumed: Jukumu limeanza tena
+txt_job_started: Jukumu limeanza
+txt_jobstatus: Hali ya kazi:
+txt_jstopped: Jukumu limesitishwa na mtumiaji
+txt_jobstopped: Jukumu limesitishwa na mtumiaji; unaweza kukagua sehemu ya matokeo ya kubofya kiungo cha njia ya pato.
+txt_job_success: Jukumu limekamilika
+txt_lt: Orodha/mtihani
+txt_normal: kipaumbele cha kawaida
+txt_ok: Sawa
+txt_output: Pato:
+txt_pause: Sitisha
+txt_paused: Imesitishwa,
+txt_p_high: Kipaumbele kimewekwa juu
+txt_p_idle: Kipaumbele kimewekwa bila kufanya kitu
+txt_p_normal: Kipaumbele kimewekwa kuwa kawaida
+txt_p_realtime: Kipaumbele kimewekwa kwa wakati halisi
+txt_rating: Ukadiriaji:
+txt_rt: kipaumbele cha wakati halisi
+txt_report: Ripoti
+txt_resume: Endelea tena
+txt_priority: Bofya ili kuweka kipaumbele cha kazi
+txt_running: Kukimbia,
+txt_isrunning: Inaendesha...
+txt_saveas: Hifadhi kama
+txt_savejob: Hifadhi ufafanuzi wa kazi kama hati
+txt_savelog: Hifadhi kumbukumbu ya kazi
+txt_software: programu
+txt_speedscale: Kasi, kiwango cha logarithmic (juu, bora):
+txt_status: Hali
+txt_stop: Acha
+txt_bench: Kigezo cha mfumo
+txt_threads: Threads:
+txt_time: Saa:
+
+=== end PeaZip text group ===
+
+=== PeaLauncher text group ===
+
+DONDOO YA Kumbukumbu
+Kutoka kwa mfumo
+- bofya kulia kwenye kumbukumbu na katika menyu ya muktadha ya mfumo bofya "Toa hapa" au "Dondoo hapa (folda mpya mahiri)" ili kutoa bila mwingiliano wowote. Chaguo la folda mpya mahiri hutunza kuunda folda mpya ya kiwango cha juu tu ikiwa ni lazima, wakati mzizi wa kumbukumbu una zaidi ya faili au folda moja.
+- vinginevyo tumia kiingilio cha menyu cha "Dondoo ..." kwa kuwa na chaguo zaidi: njia ya pato, nenosiri, toa faili kwenye saraka mpya, ulichagua kuruka, kubadilisha jina au kubatilisha faili zilizopo n.k.
+
+Fungua kumbukumbu katika PeaZip, yaani kwa kubofya mara mbili, au buruta kumbukumbu kwenye dirisha au ikoni ya PeaZip.
+- bofya kwenye "Dondoo" kwenye upau wa vidhibiti au kwenye menyu ya muktadha ili kutoa vitu vilivyochaguliwa pekee kupitia mazungumzo ya uthibitishaji yanayoruhusu kuweka chaguo zote (njia ya pato, nenosiri, sera ya kumtaja, dondoo kwa saraka mpya n.k)
+- Buruta faili na folda hadi unakotaka, maudhui yaliyochaguliwa pekee yatatolewa (kwa maelezo zaidi angalia sura kuhusu kuburuta na kudondosha kwenye PeaZip)
+- bofya kitufe cha kunjuzi cha uchimbaji wa haraka kilicho upande wa kulia wa "Dondoo" kwenye upau wa vidhibiti, hukuruhusu kutoa kumbukumbu nzima moja kwa moja kwa maeneo yanayojulikana zaidi (kuruka mazungumzo ya uthibitishaji) na kuweka chaguo muhimu zaidi; njia za mkato za kibodi: Ctrl+E (au F12) huchota kumbukumbu nzima, inauliza saraka ya pato; Ctrl+Alt+E hutoa kumbukumbu katika folda yake ya sasa; Ctrl+Shift+E dondoo kwenye eneo-kazi; Ctrl+Alt+Shift+E dondoo kwa hati; Ctrl+0 dondoo kwa njia ya awali; Ctrl+1..8 dondoo kwa njia ya alamisho 1..8 (ikiwa imefafanuliwa)
+
+Fungua PeaZip, chagua kumbukumbu moja au zaidi na ubofye "Nyoa" katika upau wa vidhibiti au menyu ya muktadha, au utumie sehemu za utoboaji wa haraka kama ilivyoelezwa katika hatua iliyotangulia.
+
+DONDOO YA VITU ILIVYOCHAGULIWA TU KUTOKA NDANI YA Kumbukumbu
+Fungua kumbukumbu katika PeaZip, yaani kwa kubofya mara mbili, au buruta kumbukumbu kwenye dirisha au ikoni ya PeaZip.
+- bofya "Dondoo" kwenye upau wa vidhibiti: vitu vilivyochaguliwa pekee vitatolewa
+- Buruta faili na folda hadi unakotaka, maudhui yaliyochaguliwa pekee yatatolewa
+- bofya kulia na katika kikundi cha "Dondoo" cha menyu ya muktadha bofya "Dondoo iliyochaguliwa" (ili kutoa vitu vilivyochaguliwa pekee) au "Dondoo limeonyeshwa" (kutoa maudhui ya saraka ya sasa au ya kichujio cha sasa cha utafutaji)
+
+WEKA NENOSIRI ILI KUVUNJA AU KUONDOA Kumbukumbu
+Bofya kwenye ikoni ya kufuli ili kuingiza nenosiri na kwa hiari faili muhimu.
+Aikoni imeangaziwa katika upau wa hali ya kivinjari wa faili ya PeaZip na katika kiolesura cha uchimbaji wa kumbukumbu; mara tu nenosiri limewekwa ikoni itabadilika rangi.
+
+TENGENEZA Kumbukumbu
+Kutoka kwa mfumo
+- bonyeza kulia juu ya vitu vya kuhifadhiwa na ubofye "Ongeza kwenye kumbukumbu" kwenye menyu ya muktadha au menyu ya SendTo. Itafungua mazungumzo ya uthibitishaji wa uundaji wa kumbukumbu, chaguo zaidi zinapatikana kwenye kichupo cha "Advanced"; bofya Sawa ili kuunda kumbukumbu.
+- vinginevyo, buruta faili / folda kwenye dirisha la PeaZip au njia ya mkato; kiolesura sawa cha kuunda kumbukumbu kitaonyeshwa.
+
+Kutoka kwa PeaZip
+- chagua vitu vya kuhifadhiwa na bofya kitufe cha "Ongeza"; kiolesura sawa cha kuunda kumbukumbu kitaonyeshwa.
+
+ONGEZA FAILI/FODA ILI KUSASISHA Kumbukumbu ILIYOPO
+Fungua kumbukumbu katika PeaZip (yaani kwa kubofya mara mbili, au buruta kumbukumbu kwenye dirisha au ikoni ya PeaZip), kisha uburute faili na folda ili kuongezwa kwenye kumbukumbu (au ubofye kitufe cha "Ongeza" na utumie menyu ya muktadha ya programu kuongeza vitu kwenye kumbukumbu).
+Itafungua kidirisha cha kuthibitisha uundaji wa kumbukumbu, bofya SAWA ili kusasisha kumbukumbu iliyopo.
+
+UTENGENEZA MGAWANYO WA Kumbukumbu KATIKA FAILI NDOGO
+Unapounda kumbukumbu kama ilivyoelezewa katika vidokezo vilivyotangulia, bofya kwenye menyu kunjuzi ya "Volume Moja" ili kuchagua ukubwa wa faili za towe (idadi) ambazo kumbukumbu itagawanywa.
+Aina nyingi za kumbukumbu zinaunga mkono chaguo hili.
+
+TUNZA HIFADHI YA Kumbukumbu
+Bofya kwenye ikoni ya kufuli ili kuingiza nenosiri na kwa hiari faili kuu; ikoni imeangaziwa katika upau wa hali ya kivinjari wa faili ya PeaZip na katika kiolesura cha kuunda kumbukumbu.
+Ili kuficha majina ya faili na saraka zilizo katika kumbukumbu chagua "Simba kwa njia fiche pia majina ya faili", tafadhali kumbuka kuwa itatumika ikiwa tu kumbukumbu itaundwa katika umbizo linaloauni utendakazi huu, kama vile 7Z na ARC.
+Kumbuka kuwa katika kiolesura cha kuunda kumbukumbu, kando ya aikoni ya kufuli, kuna onyo la kuarifu kwa kuonekana ikiwa usimbaji fiche umewekwa na ikiwa umbizo la sasa la kumbukumbu linakubali usimbaji fiche.
+
+TENGENEZA HIFADHI MBALIMBALI
+Ongeza vitu vya kuhifadhiwa kwenye kumbukumbu (na kitufe cha "Ongeza" cha PeaZip, au kutoka kwa menyu ya muktadha ya mfumo au menyu ya SendTo) na kabla ya kuthibitisha kwa "Sawa" angalia chaguo la "Ongeza kwenye kumbukumbu tofauti".
+
+BADILISHA HIFADHI
+Kutoka kwa PeaZip chagua kumbukumbu za kubadilishwa na ubofye "Badilisha" kwenye upau wa vidhibiti au menyu ya muktadha, faili na folda zisizo za kumbukumbu zinaweza kuongezwa pia, tofauti ikiwa katika kumbukumbu zinazotolewa kabla ya hatua ya kubana.
+Kwa kutumia swichi ya "Badilisha kumbukumbu zilizopo" pamoja na "Ongeza kwenye kumbukumbu tofauti" (chaguo-msingi) hufanya ubadilishaji mkubwa wa kumbukumbu zilizoorodheshwa, bila ubadilishaji huo wa kumbukumbu wa swichi unakusudiwa kuunganisha data ya ingizo katika hifadhi moja, kuboresha ufanisi wa ukandamizaji kwa sababu inaruhusu upatanisho wa data asili kutoka kwa fomu yake isiyobanwa.
+
+TUNZA HIFADHI MOJA KWA MOJA KATIKA MFUMO ULIOANDIKWA NA KWA KIWANGO CHA KUBANA KILICHOCHAGULIWA.
+Kwa kutumia utaratibu wa "Muunganisho wa Mfumo" katika menyu ya Chaguzi inawezekana kuwezesha maingizo ya menyu ya muktadha ili kuongeza faili/folda zilizochaguliwa moja kwa moja kwenye ZIP, 7Z au kumbukumbu ya kujitolea.
+Kwa umbizo la Zip na 7Z pia inawezekana kuwezesha maingizo ya menyu ya muktadha kubana hadi kiwango cha kasi zaidi, cha kawaida au cha juu zaidi, kupita kiwango cha mbano chaguomsingi cha umbizo lililochaguliwa.
+
+MENEJA WA NAMBA
+Kidhibiti cha nenosiri kinaweza kufikiwa kutoka kwa menyu kuu, Zana > Kidhibiti cha Nenosiri au kutoka kwa fomu ya Nenosiri, kutoka kwenye menyu kunjuzi iliyo upande wa kushoto wa sehemu ya Nenosiri.
+Manenosiri yaliyohifadhiwa yanaweza kuchaguliwa kutoka kwenye menyu kunjuzi iliyo upande wa kushoto wa nenosiri lililowekwa katika fomu ya Nenosiri, au inaweza kunakiliwa kutoka kwa kidhibiti nenosiri ili kutumika katika programu nyingine yoyote.
+Ikiwa hakuna nenosiri kuu lililowekwa kwa kidhibiti cha nenosiri, orodha ya nenosiri inaweza kufikiwa bila kuombwa uthibitisho, vinginevyo manenosiri hayataonyeshwa hadi mtumiaji athibitishe kwa usahihi.
+
+Sanidi MAOMBI
+Chaguzi > Ujanibishaji (na katika Chaguzi > Mipangilio, kichupo cha kwanza) inaruhusu kuweka lugha ya programu.
+Chaguzi > Uhusiano wa faili na ujumuishaji wa mfumo huanzisha mchawi ili kusanidi uhusiano wa faili, menyu ya muktadha na maingizo ya menyu ya SendTo (kwenye Windows)
+Chaguzi > Mipangilio inaruhusu kuhariri mipangilio ya programu
+Menyu ya kupanga ina ingizo la kubinafsisha, kuwezesha au kuzima vipengele vya kivinjari, kama vile upau wa vidhibiti, upau wa anwani, upau wa kando, n.k.
+
+Msaada wa F1	
+F2 	badilisha jina la faili / Ctrl+F2 nakala iliyochaguliwa hadi / Shift+F2 imechaguliwa hadi
+wa F3 	(chaguo la kujirudia linakumbukwa) / Ctrl+F3 anza kama isiyojirudia (tafuta hapa) / Shift+F3 inayojirudia / Alt+F3 utafutaji wa mfumo
+F4 	onyesha menyu ibukizi ya kusogeza / Ctrl+Shift+F4 vinjari mzizi wa kompyuta / Ctrl+F4 vinjari eneo-kazi / Shift+F4 vinjari nyumbani
+F5 	onyesha upya
+F6 	geuza kuvinjari/mwonekano bapa
+F7 	ongeza kwenye alamisho / Ctrl+F7 fungua kwa mfano mpya wa PeaZip / Shift+F7 fungua amri ya haraka katika njia iliyochaguliwa / Alt+F7 chunguza njia iliyochaguliwa
+F8 	kuvinjari kipengee cha kwanza katika orodha ya alamisho (Ctrl, pili, Shift, tatu)
+F9 	weka nenosiri/faili kuu / Shift+F9 kidhibiti cha nenosiri / Ctrl+F9 unda faili kuu au nenosiri nasibu / Ctrl+Shift+F9 weka vichujio vya hali ya juu
+F10 	/ Ctrl+F10 endesha kama mtumiaji tofauti / Alt+F10 endesha kama msimamizi (Windows Vista na mifumo mpya zaidi)
+F11 	geuza hali ya skrini nzima / Ctrl+F11 ya kuzama
+F12 	toa yote kwa...
+
+KUHUSU PEAZIP
+
+PeaZip ni faili ya chanzo huria na kidhibiti cha kumbukumbu: jukwaa tofauti, linapatikana kama programu inayobebeka na inayoweza kusakinishwa ya Linux (programu ya kompyuta ya mezani isiyoegemea upande wowote), macOS, na Windows 32 na 64 bit.
+
+PeaZip inaruhusu kutumia vichujio vingi vya utaftaji kwa yaliyomo kwenye kumbukumbu; kuunda na kutoa kumbukumbu nyingi kwa wakati mmoja; kuunda kumbukumbu za kujiondoa; ufafanuzi wa kazi ya kuuza nje kama mstari wa amri; kuokoa kumbukumbu na mipangilio ya uchimbaji; alamisho za kumbukumbu na folda; soma na ufungue ukitumia programu maalum zilizobanwa na faili ambazo hazijabanwa nk...
+
+Vipengele vingine: usimbaji fiche dhabiti, nakala thabiti ya faili, mgawanyiko/uunganishe faili (muda wa faili), ufutaji salama wa data, linganisha, hundi na faili za hashi, alama ya mfumo, toa manenosiri nasibu na faili muhimu.
+
+Vipakuliwa: https://peazip.github.io
+Pata maelezo zaidi: https://peazip.github.io/peazip-free-archiver.html
+Usaidizi: https://peazip.github.io/peazip-help.html
+Maswali Yanayoulizwa Mara kwa Mara: https://peazip.github.io/peazip-help-faq.html
+
+Shukrani nyingi kwa watu wote wanaochangia ukuaji wa mradi wa PeaZip kutengeneza vipengele vya programu ya Open Source vinavyotumika katika programu hii (tazama tovuti kwa orodha kamili), na kwa watumiaji wote wanaochangia kwa maoni, uzoefu na ushauri.
+
