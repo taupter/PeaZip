@@ -7,27 +7,27 @@ Last rev.: 20250853
 
 === PeaZip text group ===
 
-txt_10_7_errload: Cannot display image
-txt_10_7_errfile: File not found
-txt_10_7_first: First
-txt_10_7_fit: Fit to screen
-txt_10_7_fith: Fit to screen height
-txt_10_7_fitw: Fit to screen width
-txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
-txt_10_7_next: Next
-txt_10_7_prev: Previous
-txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
-txt_10_7_thumbnails: View thumbnails
-txt_10_6_virtual: Dynamic virtual mode
-txt_10_5_fr: (full report)
-txt_10_5_sectype: Ask confirmation for running following file types
-txt_10_5_checkmotw: Check Zone.Identifier (MoTW)
-txt_10_5_sectypewarning: Do you want to run this file?
-txt_10_5_pathlock: Items in this path of the archive cannot be edited
-txt_10_5_type_description_rar: RAR: proprietary archive format, high compression ratio, supported through external compressor
-txt_10_5_sh: Show hidden files and folders in the filesystem
-txt_10_5_ntfsalt: This format is able to store NTFS Alternate Data Stream, including Mark of The Web
+txt_10_7_errload: אין אפשרות להציג תמונה
+txt_10_7_errfile: הקובץ לא נמצא
+txt_10_7_first: ראשון
+txt_10_7_fit: התאם למסך
+txt_10_7_fith: התאם לגובה המסך
+txt_10_7_fitw: התאם לרוחב המסך
+txt_10_7_keep: שמור קבצי פלט אם החילוץ מסתיים בשגיאה או מבוטל
+txt_10_7_next: הבא
+txt_10_7_prev: קודם
+txt_10_7_pwh: סיסמה מגיבוב (hash)
+txt_10_7_images: הצג תמונות
+txt_10_7_thumbnails: הצג תמונות ממוזערות
+txt_10_6_virtual: מצב וירטואלי דינמי
+txt_10_5_fr: (דוח מלא)
+txt_10_5_sectype: בקש אישור להפעלת סוגי הקבצים הבאים
+txt_10_5_checkmotw: בדוק Zone.Identifier (MoTW)
+txt_10_5_sectypewarning: האם ברצונך להפעיל קובץ זה?
+txt_10_5_pathlock: לא ניתן לערוך פריטים בנתיב זה של הארכיון
+txt_10_5_type_description_rar: RAR: פורמט ארכיון קנייני, יחס דחיסה גבוה, נתמך באמצעות דוחסן חיצוני
+txt_10_5_sh: הצג קבצים ותיקיות נסתרים במערכת הקבצים
+txt_10_5_ntfsalt: פורמט זה מסוגל לאחסן זרם נתונים חלופי של NTFS (Alternate Data Stream), כולל סימן הרשת (Mark of The Web)
 txt_10_4_moving: (העברה)
 txt_10_3_classic: קלאסי
 txt_10_3_ascii: מומלץ להשתמש רק בתווי ASCII בסיסמאות עבור פורמט הארכיון הנוכחי (אותיות רישיות, מספרים ותווים מיוחדים מעורבים).
@@ -1376,95 +1376,96 @@ txt_time: שעה:
 === about text group ===
 
 EXTRACT ARCHIVE(S)
-From the system
-- rightclick on the archive(s) and in system’s context menu click "Extract here" or "Extract here (in new folder)" to extract with no further interaction
-- otherwise use "Extract..." menu entry for having more options: output path, password, extract files to a new directory, chose to skip, rename or overwrite existing files etc.
+From the system 
+- לחץ לחיצה ימנית על הארכיון(נים) ובתפריט ההקשר של המערכת לחץ על "חלץ לכאן" (Extract here) או "חלץ לכאן (בתיקייה חדשה)" (Extract here (in new folder)) לחילוץ ללא אינטראקציה נוספת
+- אחרת, השתמש בפריט התפריט "חלץ..." (Extract...) כדי לקבל אפשרויות נוספות: נתיב פלט, סיסמה, חילוץ קבצים לתיקייה חדשה, בחירה לדלג, לשנות שם או להחליף קבצים קיימים וכו'.
 
 Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
-- click on "Extract" in toolbar or in context menu to extract only selected objects trough the confirmation dialog allowing to set all options (output path, password, naming policy, extract to a new directory etc)
-- drag files and folders to the desired destination, only selected content will be extracted (for more information see chapter about drag and drop in PeaZip)
-- click the quick extraction dropdown button on the right of “Extract” in the toolbar, it allows to directly extract the entire archive to most common destinations (skipping the confirmation dialog) and to set most important options; keyboard shortcuts: Ctrl+E (or F12) extracts the entire archive, asks for output directory; Ctrl+Alt+E extracts archive in its current folder; Ctrl+Shift+E extracts to desktop; Ctrl+Alt+Shift+E extracts to documents; Ctrl+0 extracts to previous path; Ctrl+1..8 extracts to path of bookmark 1..8 (if defined)
+- לחץ על "חלץ" (Extract) בסרגל הכלים או בתפריט ההקשר כדי לחלץ רק אובייקטים נבחרים דרך תיבת הדו-שיח לאישור המאפשרת להגדיר את כל האפשרויות (נתיב פלט, סיסמה, מדיניות שמות, חילוץ לתיקייה חדשה וכו')
+- גרור קבצים ותיקיות ליעד הרצוי, רק התוכן הנבחר יחולץ (למידע נוסף ראה פרק על גרירה ושחרור ב-PeaZip)
+- לחץ על כפתור התפריט הנפתח לחילוץ מהיר מימין ל"חלץ" בסרגל הכלים, הוא מאפשר לחלץ ישירות את הארכיון כולו ליעדים הנפוצים ביותר (בדילוג על תיבת הדו-שיח לאישור) ולהגדיר את האפשרויות החשובות ביותר; קיצורי מקלדת: Ctrl+E (או F12) מחלץ את הארכיון כולו, מבקש נתיב פלט; Ctrl+Alt+E מחלץ ארכיון לתיקייה הנוכחית שלו; Ctrl+Shift+E מחלץ לשולחן העבודה; Ctrl+Alt+Shift+E מחלץ למסמכים; Ctrl+0 מחלץ לנתיב הקודם; Ctrl+1..8 מחלץ לנתיב של סימנייה 1..8 (אם הוגדר)
 
 Open PeaZip, select one or more archives and click “Extract” in toolbar or context menu, or use quick extraction destinations as explained at the previous point.
+פתח את PeaZip, בחר ארכיון אחד או יותר ולחץ על "חלץ" בסרגל הכלים או בתפריט ההקשר, או השתמש ביעדי חילוץ מהיר כפי שהוסבר בנקודה הקודמת.
 
 EXTRACT ONLY SELECTED OBJECTS FROM THE ARCHIVE
 Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
-- click "Extract" in toolbar: only selected items will be extracted
-- drag files and folders to the desired destination, only selected content will be extracted
-- rightclick and in “Extract” group of the context menu click “Extract selected” (to extract only selected items) or “Extract displayed” (to extract content of current directory or of current search filter)
+- לחץ על "חלץ" בסרגל הכלים: רק הפריטים הנבחרים יחולצו
+- גרור קבצים ותיקיות ליעד הרצוי, רק התוכן הנבחר יחולץ
+- לחץ לחיצה ימנית ובלחצן "חלץ" של תפריט ההקשר לחץ על "חלץ נבחר" (Extract selected) (כדי לחלץ רק פריטים נבחרים) או "חלץ מוצג" (Extract displayed) (כדי לחלץ תוכן של התיקייה הנוכחית או של מסנן החיפוש הנוכחי)
 
 ENTER A PASSWORD TO BROWSE OR EXTRACT AN ARCHIVE
-Click on the padlock icon to enter a password and optionally a keyfile.
-The icon is featured both in PeaZip’s file browser’s status bar and in the archive extraction interface; once the password is set the icon will change color.
+לחץ על סמל המנעול כדי להזין סיסמה ואופציונלית קובץ מפתח.
+הסמל מוצג גם בשורת המצב של סייר הקבצים של PeaZip וגם בממשק חילוץ הארכיון; לאחר שהסיסמה מוגדרת, הסמל ישנה את צבעו.
 
 CREATE ARCHIVE
 From the system
-- rightclick on objects to be archived and click on "Add to archive" in context menu or SendTo menu. It will open the archive creation confirmation dialog, more options are available in “Advanced” tab; click OK to create the archive.
-- alternatively, drag files/folders to PeaZip’s window or shortcut; the same archive creation interface will be shown.
+- לחץ לחיצה ימנית על אובייקטים לארכיון ולחץ על "הוסף לארכיון" (Add to archive) בתפריט ההקשר או בתפריט SendTo. זה יפתח את תיבת הדו-שיח לאישור יצירת ארכיון, אפשרויות נוספות זמינות בכרטיסייה "מתקדם" (Advanced); לחץ על OK כדי ליצור את הארכיון.
+- לחילופין, גרור קבצים/תיקיות לחלון או לקיצור הדרך של PeaZip; אותו ממשק יצירת ארכיון יוצג.
 
 From PeaZip
-- select objects to be archived and click on "Add" button; the same archive creation interface will be shown.
+- בחר אובייקטים לארכיון ולחץ על כפתור "הוסף" (Add); אותו ממשק יצירת ארכיון יוצג.
 
 ADD FILES/FOLDERS TO UPDATE EXISTING ARCHIVE
-Open an archive in PeaZip (i.e. with doubleclick, or drag an archive on PeaZip’s window or icon), then drag files and folders to be added in the archive (or click on "Add" button and use application's context menu to add objects to the archive).
-It will open the archive creation confirmation dialog, click OK to update the existing archive.
+פתח ארכיון קיים ב-PeaZip (כלומר, בלחיצה כפולה, או גרירת ארכיון לחלון או לסמל של PeaZip), ולאחר מכן גרור קבצים ותיקיות להוספה לארכיון (או לחץ על כפתור "הוסף" והשתמש בתפריט ההקשר של היישום כדי להוסיף אובייקטים לארכיון).
+זה יפתח את תיבת הדו-שיח לאישור יצירת ארכיון, לחץ על OK כדי לעדכן את הארכיון הקיים.
 
 CREATE ARCHIVE SPLIT IN SMALLER FILES
-While creating an archive as explained in previous points, click on “Single volume” dropdown menu to select a size for output files (volumes) the archive will be split in.
-Most common types of archives supports this option.
+בעת יצירת ארכיון כפי שהוסבר בנקודות הקודמות, לחץ על התפריט הנפתח "נפח יחיד" (Single volume) כדי לבחור גודל עבור קבצי הפלט (נפחים) שהארכיון יפוצל אליהם.
+רוב סוגי הארכיונים הנפוצים תומכים באפשרות זו.
 
 CREATE ENCRYPTED ARCHIVE
-Click on the padlock icon to enter a password and optionally a keyfile; the icon is featured both in PeaZip’s file browser’s status bar and in archive creation interface.
-To hide names of files and directories contained in the archive check “Encrypt also filenames”, please note that it will be applied only if the archive will be created in a format supporting this function, like 7Z and ARC.
-Note that in archive creation interface, alongside the padlock icon, there is a warning to visually inform if encryption is set and if the current archive format supports encryption.
+לחץ על סמל המנעול כדי להזין סיסמה ואופציונלית קובץ מפתח; הסמל מוצג גם בשורת המצב של סייר הקבצים של PeaZip וגם בממשק יצירת הארכיון.
+כדי להסתיר שמות של קבצים ותיקיות הכלולים בארכיון, סמן "הצפן גם שמות קבצים" (Encrypt also filenames), שים לב שזה ייושם רק אם הארכיון ייווצר בפורמט התומך בפונקציה זו, כמו 7Z ו-ARC.
+שים לב שבממשק יצירת הארכיון, לצד סמל המנעול, ישנה אזהרה המודיעה חזותית אם ההצפנה מוגדרת ואם פורמט הארכיון הנוכחי תומך בהצפנה.
 
 CREATE SEPARATE ARCHIVES
-Add objects to be archived (with PeaZip’s "Add" button, or from system’s context menu or SendTo menu) and before confirming with "Ok" check "Add each object to a separate archive" option.
+הוסף אובייקטים לארכיון (עם כפתור "הוסף" של PeaZip, או מתפריט ההקשר של המערכת או מתפריט SendTo) ולפני האישור עם "Ok" סמן את האפשרות "הוסף כל אובייקט לארכיון נפרד" (Add each object to a separate archive).
 
 CONVERT ARCHIVES
-From PeaZip select archives to be converted and click on "Convert" on toolbar or context menu, non-archive files and folders can be added as well, the difference being in archives being extracted before compression stage.
-Using the “Convert existing archives” switch in conjunction with “Add each object to a separate archive" (default) it performs a mass conversion of listed archives, without that switch archive conversion is meant to consolidate input data in a single archive, improving compression efficiency because it allows recompression of the original data from its uncompressed form.
+מתוך PeaZip בחר ארכיונים להמרה ולחץ על "המר" (Convert) בסרגל הכלים או בתפריט ההקשר, ניתן להוסיף גם קבצים ותיקיות שאינם ארכיון, כאשר ההבדל הוא שבארכיונים מתבצע חילוץ לפני שלב הדחיסה.
+שימוש במתג "המר ארכיונים קיימים" (Convert existing archives) בשילוב עם "הוסף כל אובייקט לארכיון נפרד" (Add each object to a separate archive) (ברירת מחדל) מבצע המרה המונית של ארכיונים הרשומים, ללא מתג זה המרת הארכיון נועדה לאחד נתוני קלט בארכיון יחיד, ולשפר את יעילות הדחיסה מכיוון שהיא מאפשרת דחיסה חוזרת של הנתונים המקוריים מהצורה הלא דחוסה שלהם.
 
 DIRECTLY CREATE ARCHIVES IN A SPECIFIED FORMAT AND WITH A CHOSEN COMPRESSION LEVEL
-Using “System integration” procedure in Options menu it is possible to enable context menu entries to directly add selected files/folders to a ZIP, 7Z or self extracting archive.
-For Zip and 7Z formats it is also possible to enable context menu entries to compress to fastest, normal or ultra level, bypassing the default compression level for the selected format.
+באמצעות הליך "שילוב מערכת" (System integration) בתפריט אפשרויות, ניתן להפעיל פריטים בתפריט ההקשר כדי להוסיף ישירות קבצים/תיקיות נבחרים לארכיון ZIP, 7Z או ארכיון עם חילוץ עצמי.
+עבור פורמטים Zip ו-7Z ניתן גם להפעיל פריטים בתפריט ההקשר לדחיסה לרמת המהירה ביותר, רגילה או אולטרה, תוך עקיפת רמת הדחיסה המוגדרת כברירת מחדל עבור הפורמט הנבחר.
 
 PASSWORD MANAGER
-Password manager is accessible from main menu, Tools > Password manager or from Password form, from drop down menu on the left of Password field.
-Saved passwords can be selected from the dropdown menu on the left of password filed in Password form, or can be copied from password manager to be used in any other application.
-If no master password is set for the password manager, the password list is accessible without prompting for authentication, otherwise passwords will not be displayed until the user correctly authenticates.
+מנהל הסיסמאות נגיש מהתפריט הראשי, כלים > מנהל סיסמאות (Tools > Password manager) או מטופס סיסמה, מהתפריט הנפתח משמאל לשדה סיסמה.
+ניתן לבחור סיסמאות שמורות מהתפריט הנפתח משמאל לשדה הסיסמה בטופס סיסמה, או להעתיק אותן ממנהל הסיסמאות לשימוש בכל יישום אחר.
+אם לא מוגדרת סיסמת אב עבור מנהל הסיסמאות, רשימת הסיסמאות נגישה ללא צורך באימות, אחרת הסיסמאות לא יוצגו עד שהמשתמש יבצע אימות נכון.
 
 CONFIGURE THE APPLICATION
-Options > Localization (and in Options > Settings, first tab) allows to set application’s language.
-Options > Settings allows to edit applications’ settings
-Options > Theme allows to change application’s icons and appearance
-Options > System integration starts a procedure to configure file associations, context menu and SendTo menu entries (on Windows)
-Organize menu contains entry to customize, enable or disable browser’s features, like toolbar, address bar, navigation bar, etc
+אפשרויות > לוקליזציה (Options > Localization) (ובאפשרויות > הגדרות, כרטיסייה ראשונה) מאפשר להגדיר את שפת היישום.
+אפשרויות > הגדרות (Options > Settings) מאפשר לערוך את הגדרות היישום
+אפשרויות > ערכת נושא (Options > Theme) מאפשר לשנות את סמלי היישום ואת המראה שלו
+אפשרויות > שילוב מערכת (Options > System integration) מתחיל הליך להגדרת שיוכי קבצים, תפריט הקשר ופריטי תפריט SendTo (ב-Windows)
+תפריט ארגון (Organize) מכיל פריט להתאמה אישית, הפעלה או השבתה של תכונות הדפדפן, כגון סרגל כלים, שורת כתובת, סרגל ניווט וכו'
 
-F1 help
-F2 rename file(s) / Ctrl+F2 copy selected to / Shift+F2 move selected to
-F3 search (recursivity option is remembered) / Ctrl+F3 start as non recursive (search here) / Shift+F3 recursive / Alt+F3 system search
-F4 show navigation popup menu / Ctrl+Shift+F4 browse computer root / Ctrl+F4 browse desktop / Shift+F4 browse home
-F5 refresh
-F6 toggle browse/flat view
-F7 add to bookmarks / Ctrl+F7 open in a new instance of PeaZip / Shift+F7 open command prompt in selected path / Alt+F7 explore selected path
-F8 browse first item in bookmarks list (Ctrl, second, Shift, third)
-F9 set password/keyfile / Shift+F9 password manager / Ctrl+F9 create keyfile or random password / Ctrl+Shift+F9 set advanced filters
-F10 menu / Ctrl+F10 run as different user / Alt+F10 run as administrator (Windows Vista and newer systems)
-F11 toggle full screen mode / Ctrl+F11 immersive
-F12 extract all to...
+F1 עזרה
+F2 שנה שם קובץ(ים) / Ctrl+F2 העתק נבחר ל / Shift+F2 העבר נבחר ל
+F3 חפש (אפשרות הרקורסיה נזכרת) / Ctrl+F3 התחל כלא רקורסיבי (חפש כאן) / Shift+F3 רקורסיבי / Alt+F3 חיפוש מערכת
+F4 הצג תפריט מוקפץ לניווט / Ctrl+Shift+F4 דפדף בשורש המחשב / Ctrl+F4 דפדף בשולחן העבודה / Shift+F4 דפדף בבית
+F5 רענן
+F6 החלף בין דפדוף / תצוגה שטוחה
+F7 הוסף לסימניות / Ctrl+F7 פתח במופע חדש של PeaZip / Shift+F7 פתח שורת פקודה בנתיב הנבחר / Alt+F7 חקור נתיב נבחר
+F8 דפדף בפריט הראשון ברשימת הסימניות (Ctrl, שני, Shift, שלישי)
+F9 הגדר סיסמה/קובץ מפתח / Shift+F9 מנהל סיסמאות / Ctrl+F9 צור קובץ מפתח או סיסמה אקראית / Ctrl+Shift+F9 הגדר מסננים מתקדמים
+F10 תפריט / Ctrl+F10 הפעל כמשתמש אחר / Alt+F10 הפעל כמנהל (Windows Vista ומערכות חדשות יותר)
+F11 החלף מצב מסך מלא / Ctrl+F11 סוחף
+F12 חלץ הכל ל...
 
 ABOUT PEAZIP
 
-PeaZip is an open source file and archive manager: cross platform, available as portable and installable software for 32 and 64 bit Windows (9x, 2k, XP, Vista) and Linux (PeaZip is a desktop neutral application).
+PeaZip הוא מנהל קבצים וארכיונים בקוד פתוח: בין-פלטפורמלי, זמין כתוכנה ניידת וניתנת להתקנה עבור Windows 32 ו-64 סיביות (9x, 2k, XP, Vista) ולינוקס (PeaZip הוא יישום ניטרלי לשולחן העבודה).
 
-PeaZip allows to apply powerful multiple search filters to archive's content; create and extract multiple archives at once; create self-extracting archives; export task definition as command line; save archiving and extraction layouts; bookmark archives and folders; scan and open with custom applications compressed and uncompressed files etc...
+PeaZip מאפשר להחיל מסנני חיפוש מרובים חזקים על תוכן הארכיון; ליצור ולחלץ ארכיונים מרובים בבת אחת; ליצור ארכיונים עם חילוץ עצמי; לייצא הגדרת משימה כשורת פקודה; לשמור תבניות ארכיון וחילוץ; לסמן ארכיונים ותיקיות; לסרוק ולפתוח עם יישומים מותאמים אישית קבצים דחוסים ולא דחוסים וכו'...
 
-Other features: strong encryption, robust file copy, split/join files (file span), secure data deletion, compare, checksum and hash files, system benchmark, generate random passwords and keyfiles.
+תכונות נוספות: הצפנה חזקה, העתקת קבצים חזקה, פיצול/איחוד קבצים (טווח קבצים), מחיקת נתונים מאובטחת, השוואה, בדיקת סכום וגיבוב קבצים, בדיקת ביצועי מערכת, יצירת סיסמאות וקבצי מפתח אקראיים.
 
-Downloads: https://peazip.github.io
-Learn more: https://peazip.github.io/peazip-free-archiver.html
-Support: https://peazip.github.io/peazip-help.html
-FAQ: https://peazip.github.io/peazip-help-faq.html
+הורדות: https://peazip.github.io
+למידע נוסף: https://peazip.github.io/peazip-free-archiver.html
+תמיכה: https://peazip.github.io/peazip-help.html
+שאלות נפוצות: https://peazip.github.io/peazip-help-faq.html
 
-Many thanks to all people contributing to PeaZip project's growth developing Open Source software components used in this application (see website for complete list), and to all users contributing with feedback, experience and advices.
+תודה רבה לכל האנשים התורמים לצמיחת פרויקט PeaZip על ידי פיתוח רכיבי תוכנת קוד פתוח המשמשים ביישום זה (ראה אתר לרשימה מלאה), ולכל המשתמשים התורמים עם משוב, ניסיון ועצות.
