@@ -1,0 +1,1470 @@
+=== PeaZip language file ===
+Icelandic
+10.7
+Translated by: khanhkhanhlele
+Last rev. by: khanhkhanhlele
+Last rev.: 20251103
+
+=== PeaZip text group ===
+
+txt_10_7_errload: Get ekki birt myndina
+txt_10_7_errfile: Skráin fannst ekki
+txt_10_7_first: Fyrsta
+txt_10_7_fit: Aðlaga að skjá
+txt_10_7_fith: Aðlaga að skjáhæð
+txt_10_7_fitw: Aðlaga að skjábreidd
+txt_10_7_keep: Geymið úttaksskrár ef útdráttur lýkur með villu eða er hætt við
+txt_10_7_next: Næsta
+txt_10_7_prev: Fyrri
+txt_10_7_pwh: Lykilorð úr kjötkássu
+txt_10_7_myndir: Skoða myndir
+txt_10_7_thumbnails: Skoða smámyndir
+txt_10_6_virtual: Kvikur sýndarhamur
+txt_10_5_fr: (heildarskýrsla)
+txt_10_5_sectype: Spyrja staðfestingu fyrir keyrslu eftirfarandi skráartegunda
+txt_10_5_checkmotw: Athugaðu svæðis.auðkenni (MoTW)
+txt_10_5_sectypewarning: Viltu keyra þessa skrá?
+txt_10_5_pathlock: Ekki er hægt að breyta atriðum í þessari slóð skjalasafnsins.
+txt_10_5_type_description_rar: RAR: Sérsniðið skjalasafnssnið, hátt þjöppunarhlutfall, stutt með ytri þjöppu
+txt_10_5_sh: Sýna faldar skrár (í skráarkerfinu)
+txt_10_5_ntfsalt: Þetta snið getur geymt NTFS varagagnastrauma, þar á meðal Mark of The Web
+txt_10_4_moving: (Færist)
+txt_10_3_classic: Klassískt
+txt_10_3_ascii: Mælt er með að nota aðeins ASCII stafi í lykilorðum fyrir núverandi skjalasafnssnið (blanda af lág- og lágstöfum, tölum og sértáknum).
+txt_10_3_minimal: Lágmarks
+texti_10_3_m: Nútímalegt
+texti_10_3_pm: Póstmódernískt
+txt_10_3_aw: Lausn: hakaðu við „Þvingaðu inn lykilorð gagnvirkt“ í lykilorðsfyrirspurninni eða stilltu stjórnborðsstillingu fyrir bakendaskrár.
+txt_10_2_savecopy: Vista afrit
+txt_10_1_fullt: Fullt
+txt_10_1_kdfw: KDF vinnuálag
+txt_10_1_undir: Undirstrikað
+txt_10_0_exptrash: Skoða ruslið
+txt_10_0_ptarzst: Hraðasta þjöppunin, TAR.ZST
+txt_10_0_ptarxz: Mikil þjöppun, TAR.XZ
+txt_10_0_ptargz: Miðlungs þjöppun, TAR.GZ
+txt_10_0_comp: Hrein þjöppunarsnið taka aðeins við einni skrá sem inntaki. Umbreyting skjalasafns í þessi snið mun mistakast ef frumkóðinn inniheldur margar skrár eða möppur sem ekki er hægt að ákvarða fyrirfram.
+txt_10_0_save: Vista
+txt_10_0_tp: Forskoðun texta
+txt_9_9_uac: Núverandi notandi getur ekki skrifað á þessa úttaksslóð. Viltu keyra PeaZip með UAC-hækkun?
+txt_9_9_kdf: KDF skothríð
+txt_9_9_utc: Sýna tímastimpla sem UTC
+txt_9_8_alwaysflat: Opna alltaf skjalasöfn í flatri sýn
+txt_9_8_fnew: Draga út hér (í nýrri möppu)
+txt_9_8_fsmart: Draga út hér (snjall ný mappa)
+txt_9_7_tarpipe: 7z / p7zip nota pípu
+txt_9_7_smartsorting: Snjall röðun skráarheita
+txt_9_6_centered: Miðjusett
+txt_9_6_cside: Þétt hliðarstika
+txt_9_6_loadpconfirm: Viltu hlaða inn þessum prófíl? Öllum gögnum núverandi prófíls verður skrifað yfir, þar á meðal vistuð forskriftir og Lykilorðastjórnun.
+txt_9_6_loadp: Hlaða prófíl
+txt_9_6_saveppw: VALFRJÁLS: vernda þetta prófíl með lykilorði / lykilskrá?
+txt_9_6_savepoverwrite: Yfirskrifa núverandi prófíl? Öll gögn núverandi prófíls verða yfirskrifuð, þar á meðal vistuð forskriftir og Lykilorðastjóri.
+txt_9_6_savep: Vista prófíl
+txt_9_6_scside: Sýna þjappaða hliðarstiku
+txt_9_5_all: Allt
+txt_9_5_precond: Forgreina ef villur finnast
+txt_9_5_largea: Forgreina stór skjalasöfn
+txt_9_5_mediuma: Forgreina miðilsskjalasafn
+txt_9_5_smalla: Forgreina litlar skjalasöfn
+txt_9_5_reopentab: Opna síðasta flipa aftur
+txt_9_5_savetabs: Vista flipa
+txt_9_5_sb: Nota tvíundaskrár í kerfisslóðum
+txt_9_4_r: lesa
+txt_9_4_rw: lesa/skrifa
+txt_9_4_savecomment: Vista athugasemd
+txt_9_4_hintcomment: Skrifaðu eða límdu athugasemd, hlaðið eða dragðu athugasemdaskrána hingað.
+txt_9_3_continue: Halda samt áfram?
+txt_9_3_contrast: Andstæður
+txt_9_3_fsd: Laust pláss á áfangastað er hugsanlega ekki nægilegt
+txt_9_3_fsw: Laust pláss á tímabundinni vinnuslóð gæti ekki verið nægilegt.
+txt_9_3_mrar: Stilltu RAR tvöfaldur handvirkt
+txt_9_3_canedit: Hægt er að breyta þessari gerð skjalasafns
+txt_9_3_canforce: Þessari skjalasafnsgerð er hægt að breyta (þvinga)
+txt_9_3_cannotedit: Ekki er hægt að breyta þessari gerð skjalasafns
+txt_9_2_7za: 7z / p7zip dulnefni
+txt_9_2_changelog: Breytingaskrá
+txt_9_2_tfaq: Athugaðu þýðingar
+txt_9_2_compact: Þétt
+txt_9_2_swt: Skipta um flipastiku / veffangastiku
+txt_9_2_tos: Skilmálar, Persónuvernd
+txt_9_2_doc: Staðfesta skjöl, Vandamálaeftirlit...
+txt_9_2_updates: Staðfesta uppfærslur, tvíundarskrár, viðbætur...
+txt_9_1_7zs: 7z / p7zip setningafræðistig
+txt_9_1_ac: Forskriftir fyrir umbreytingu skjalasafns leyfa notendum að hafa samskipti
+txt_9_1_closeall: Loka öllu
+txt_9_1_enlargeicons: Stækka tákn fyrir skráarvafra
+txt_9_1_ef: Útiloka tómar möppur frá geymslu- og útdráttaraðgerðum (7z / p7zip)
+txt_9_1_nw: Opna í nýjum glugga
+txt_9_1_qdup: Nota hraðvirka afritunarrútínu
+txt_9_0_autoexttar: Sjálfvirk útdráttur úr TAR skjalasafni úr þjöppuðum TAR.* skrám
+txt_9_0_accesstime: Ekki breyta síðasta aðgangstíma
+txt_9_0_mem: Hámarksnotkun minnis
+txt_9_0_showmainmenu: Opna aðalvalmyndina
+txt_9_0_navmenu: Opna leiðsöguvalmyndina
+txt_9_0_plugind: Opna tvíundaskrár og viðbótarskrá
+txt_9_0_df: Raða möppum á undan skrám
+txt_9_0_hl: Geymið harða tengla sem tengla
+txt_9_0_sl: Geymið táknræna tengla sem tengla
+txt_9_0_tnav: Opna/loka flakkstiku
+txt_8_9_empty: Skjalasafn virðist tómt
+txt_8_9_disp: Sýnir innihald skjalasafns
+txt_8_9_parsing: Að greina innihald skjalasafns
+txt_8_9_stoptest: Stöðva til að skoða skýrslu fyrir villur, lista, próf, sjálfvirka prófun
+txt_8_9_ttb: Opna/loka verkfærastiku
+txt_8_8_ca: Hreimlitur
+txt_8_8_btn: Hnappur
+txt_8_8_cb: Litur hnapps
+txt_8_8_centered: Miðjusettir hnappar
+texti_8_8_ljós: Ljós
+txt_8_8_lnk: Tengill
+txt_8_8_intnote: Athugið að valkosturinn „Draga út og færa“ (í Valkostir > Stillingar > Skjalasafnsstjóri) er hunsaður þegar skipanalínan er sett saman í flipanum Stjórnborð.
+txt_8_8_snz: Dreifa Zone.Identifier (MoTW) (Windows, NTFS)
+txt_8_8_sm: Lítil táknstærð
+txt_8_8_solcol: Brauðmylsnustikan
+txt_8_8_snoi: Auðkenni eiganda/hóps verslunar (TAR, Linux)
+txt_8_8_snon: Nöfn eiganda/hópa verslunar (TAR, Linux)
+txt_8_8_tab: Flipi
+txt_8_8_altt: Tab-stíll
+txt_8_8_autotest: Prófa skjalasöfn eftir stofnun, ef sniðið styður þau
+txt_8_8_cw: Litur glugga
+txt_8_7_csvhelp: "," alþjóðlegur staðall, ";" algengur í latneskum tungumálakóða
+txt_8_7_after: Eftir geymslu / útdrátt
+txt_8_7_bintest: prófaðar tvíundarskrár.
+txt_8_7_csv: CSV-skiljari
+txt_8_7_hok: Kassi af tvíundarskrám sem PeaZip notar passar við væntanleg gildi
+txt_8_7_mo: Stilla valkosti fyrir skjalasafnsstjóra
+txt_8_7_showhm: Opna hausvalmynd vafrans
+txt_8_7_showsearchbar: Sýna leitarstiku
+txt_8_7_showsm: Opna Stílvalmyndina
+txt_8_7_hnotok: Sumar kjötskrár (hash) af tvíundarskrám sem PeaZip notar passa ekki við væntanleg gildi:
+txt_8_7_verifybin: Staðfesta kjötkássu tvíundarskráa
+txt_8_6_clear: Valkosturinn „Hreinsa“ fjarlægir tímabundið breyttar skrár, sem annars eru tiltækar til frekari breytinga.
+txt_8_6_noclear: Hendið öllum breytingum án þess að uppfæra skjalasafnið
+txt_8_6_nosimple: Ekki uppfæra skjalasafnið, geymdu tímabundnar breyttar skrár til frekari breytinga
+txt_8_6_immediate: Tafarlaus framkvæmd
+txt_8_6_yessimple: Uppfæra skjalasafn, geyma tímabundnar breyttar skrár til frekari breytinga
+txt_8_5_advbrowser: Nota síur á skjalasafnsvafra
+txt_8_5_detailslarge: Nánari upplýsingar, stór
+txt_8_5_intext: Draga út í tímabundna vinnumöppu og færa síðan á úttaksstað, spyrja gagnvirkt áður en skrifað er yfir
+txt_8_5_listlarge: Listi, stór
+txt_8_5_loadlayout: Hlaða uppsetningu við ræsingu
+txt_8_5_samplescripts: Dæmi um forskriftir
+txt_8_4_keepopenerrorslist: Stöðva til að skoða skýrsluna fyrir villur, lista
+txt_8_3_mbun: Tvöfaldur skrá
+txt_8_3_cw: Breyta vinnuskrá? Þetta mun endurstilla tímabundnar vinnuskrár og endurræsa forritið.
+txt_8_3_temperature: Litahitastig
+txt_8_3_mbudec: Tugabrot
+txt_8_3_htab: Merkja flipa
+txt_8_3_maxarg: Hámarkslengd breytna
+txt_8_3_mbu: Eining með mörgum bætum
+txt_8_3_prefalgo: Æskileg reiknirit
+txt_8_3_skipdel: Sleppa eyðingu læstra tímabundinna skráa (notaðu endurstillingu til að eyða eftir þörfum)
+txt_8_3_lw: Sumar skrár í vinnumöppunni eru læstar og ekki er hægt að fjarlægja þær sjálfkrafa.
+txt_8_3_noupx: Ekki er hægt að þjappa þessari tvíundarskrá (hugsanlega þegar þjappað)
+txt_8_2_slower: (hægara)
+txt_8_2_df: 7z / p7zip birtir innihald möppna
+txt_8_2_vreport: 7z / p7zip skýrsla án orða
+txt_8_2_ta: Aðgengilegt
+txt_8_2_tc: Búið til
+txt_8_2_keep: Geyma skrár
+txt_8_2_tm: Breytt
+txt_8_2_skipet: Slepptu prófun fyrir dulkóðun
+txt_8_2_alltimes: Geymið öll tímastimpla
+txt_8_2_supportedby: Stuðningur við
+txt_8_1_preparse: Alltaf forgreina skjalasöfn
+txt_8_1_bo: Vafrafínstilling
+txt_8_1_bop: Hægt er að stilla valkosti fyrir vafrafínstillingar í Valkostir > Stillingar > flipanum Almennt til að leyfa vafranum að birta skjalasöfn sem innihalda mjög mikið magn af atriðum.
+txt_8_1_nopreparse: Ekki forgreina skjalasöfn
+txt_8_1_ed: villa(r) greind(ar).
+txt_8_1_togglearc: Það gæti tekið langan tíma að birta flata sýn á skjalasafnsinnihaldi, haldið samt áfram?
+txt_8_1_preparsehint: Hámarkar afköst með því að takmarka forgreiningu stórra skjalasafna. Forgreining er ætluð til að greina fyrirfram hugsanleg vandamál í innihaldi skjalasafnsins.
+txt_8_1_slow: Hægt
+txt_8_1_vslow: Mjög hægt
+txt_8_1_volumes: bindi
+txt_8_0_altcol: Annar litur á grindinni
+txt_8_0_forcebrowse: Skoða óhefðbundnar skjalasöfn (ílát, diskamyndir, uppsetningarforrit,...)
+txt_8_0_commonalgo: Algengar reiknirit
+txt_8_0_forceconvert: Umbreyta óhefðbundnum skjalasafnstegundum
+txt_8_0_defaultactionhint: Sjálfgefin aðgerð er að tvísmella á skrá sem tengist PeaZip úr kerfinu.
+txt_8_0_defaultaction: Sjálfgefin aðgerð við inntak (opna, sjálfvirk útdráttur...)
+txt_8_0_enableextand: Virkja undirvalmyndina „Draga út og opna með“
+txt_8_0_forcetyping: Þvinga innslátt lykilorða gagnvirkt
+txt_8_0_setpwopt: Stilla lykilorð / lykilskrárvalkosti
+txt_8_0_forcetypinghelp: Ef bakhliðin styður það mun verkefnið biðja um lykilorð gagnvirkt. TAKMARKANIR: Verkefnið keyrir í stjórnborði, keyrir ekki án eftirlits og getur ekki skoðað skjalasöfn með dulkóðuðum skráarheitum.
+txt_7_9_spacing: Bil
+txt_7_9_zooming: Aðdráttur
+txt_7_8_changelocalization: Breyta PeaZip tungumáli
+txt_7_8_custext: Sérsniðin viðbót
+txt_7_8_destexistfile: Áfangastaðurinn inniheldur þegar unnar skrár. Skipta út skrám með sama nafni?
+txt_7_8_dd: Draga og sleppa
+txt_7_8_priorityhigh: Hátt
+txt_7_8_priorityidle: Óvirkt
+txt_7_8_rel: Draga út og færa á áfangastað
+txt_7_8_prioritynormal: Venjulegt
+txt_7_8_priorityrealtime: Rauntími
+txt_7_8_requirestart: [krefst þess að PeaZip sé endurræst]
+txt_7_8_tpriority: Forgangsröðun verkefna
+txt_7_8_update: Uppfærsla
+txt_7_7_noneall: Ekkert: slökkva á forskoðun, breytingum, draga og sleppa og gagnvirkri útdrátt
+txt_7_7_nonetemp: Enginn, tímabundið gildi notanda ef þörf krefur
+txt_7_7_outtemp: Úttak, forskoðun í tímabundnu skjali notanda
+txt_7_7_sys7zreq: Krefst uppsetningar á 7z, 7-Zip eða p7zip, eða sambærilegu pakka.
+txt_7_7_tw: Tímabundin vinnumappa fyrir stofnun skjalasafns, breytinga, forskoðun og draga og sleppa útdrátt
+txt_7_7_sys7z: Notið kerfi 7z ef það er tiltækt
+txt_7_6_zipenc: Kóðun á ZIP skráarnafnum
+txt_7_6_color: Litur
+txt_7_6_custenc: Sérsniðin kóðasíða
+txt_7_6_dark: Dökkra
+txt_7_6_tno: Ekki samstilla skjalasafnstréð
+txt_7_6_forcelocalenc: Þvinga staðbundna stillingu
+txt_7_6_forceutf8enc: Þvinga fram UTF-8
+txt_7_6_cpnote: Ef valin sérsniðin kóðasíða er ekki studd, munu verkefni alltaf enda með villu (líklegast minnisúthlutunarvilla). Ef það gerist, breytið kóðasíðunni eða endurstillið forritið.
+txt_7_6_defaultenc: Staðbundið, UTF-8 fyrir auka tákn
+txt_7_6_dim: Dökkt
+txt_7_6_setcurdef: Stilla núverandi slóð sem sjálfgefna úttaksslóð
+txt_7_6_setdef: Stilla sjálfgefna úttaksslóð
+txt_7_6_tadvanced: Samstilla skjalasafnstré, halda heimsóttum hnútum
+txt_7_6_tsimple: Samstilling skjalasafnstrés, einfalt
+txt_7_6_tacolor: Textahreimur
+txt_7_5_always: Alltaf
+txt_7_5_ask: Spyrja
+txt_7_5_autoclosesingle: Loka sjálfkrafa eftir útdrátt ef engar vafraaðgerðir áttu sér stað
+txt_7_5_cutlen: Skerið nafnið í tilgreindri lengd
+txt_7_5_cutlenw: Skerið nafnið út með tilgreindri lengd (4..255) nafngiftarárekstra er hægt að laga handvirkt síðar.
+txt_7_5_dragnone: Ekki læsa skotmarkinu
+txt_7_5_specialbrowse: Viltu draga allt út til að veita skránni þau auka gögn sem hún gæti þurft?
+txt_7_5_ee: Draga út allt fyrir sérstakar skráartegundir
+txt_7_5_draghide: Fela sleppimarkmið
+txt_7_5_draglh: Læsa og fela skotmark
+txt_7_5_draglock: Læsa slepptu skotmarki
+txt_7_5_never: Aldrei
+txt_7_5_repnascii: Skipta út/fjarlægja stafi sem eru ekki í ASCII-flokki
+txt_7_4_comment: Athugasemd
+txt_7_4_7zfbrotlicomp: Hraðasta þjöppunin, 7Z Brotli
+txt_7_4_7zfzstandardcomp: Hraðasta þjöppun, 7Z Zstandard
+txt_7_4_presetrar: Mikil þjöppun, RAR
+txt_7_4_tkeep: Geymið upprunalega tímastimpil skjalasafnsins
+txt_7_4_lock: Læsa skjalasafni
+txt_7_4_locked: læst
+txt_7_4_lockconfirm: Ekki er hægt að breyta læstum skjalasöfnum frekar, viltu halda áfram að læsa þessu skjalasafni?
+txt_7_4_recover: Gera við skjalasafn
+txt_7_4_tcurr: Setja tímastimpil skjalasafns frá núverandi kerfistíma
+txt_7_4_setarc: Stilla ítarlegri geymsluvalkosti
+txt_7_4_setext: Stilla ítarlega útdráttarvalkosti
+txt_7_4_swzipx: Skipta yfir í zipx viðbótina fyrir zip skjalasöfn sem ekki eru Deflate
+txt_7_3_archiveerrors: [skjalasafnið gæti innihaldið villur]
+txt_7_3_archiveerrorshint: Skjalasafn gæti verið ógilt (vegna þess að það vantar, er skemmt eða inniheldur ekki staðlaðar upplýsingar). Hægt er að keyra prófun til að fá ítarlegri upplýsingar. Ef efnisyfirlit skjalasafnsins er dulkóðað þarf lykilorð áður en hægt er að skoða það.
+txt_7_3_clickextall: Smelltu á "Draga út allt" til að virkja
+txt_7_3_noconfdel: Ekki biðja um staðfestingu á eyðingu eftir geymslu / útdrátt
+txt_7_3_profile7zfastest: Hraðþjöppun, 7Z hraðast
+txt_7_3_maxbr: Hámarka Brotli þjöppun með því að nota meira minni (gæti verið ósamhæft við suma útdráttarforrita)
+txt_7_3_maxzstd: Hámarka Zstandard þjöppun með því að nota meira minni
+txt_7_3_profile7zfast: Miðlungs þjöppun, 7Z hröð
+txt_7_3_stl: Setja tímastimpil skjalasafns frá nýjustu skránni
+txt_7_2_altcomp: Mikil þjöppun, ARC
+txt_7_2_clearnoupdate: Hreinsa breyttar skrár
+txt_7_2_autoclosepeazip: Lokaðu PeaZip þegar verkefni er lokið
+txt_7_2_zpaqall: Draga út allar útgáfur
+txt_7_2_extcomp: Öfgakennd þjöppun, ZPAQ
+txt_7_2_extcompultra: Öfgakennd þjöppun, ZPAQ ultra
+txt_7_2_fbrotlicomp: Hraðasta þjöppun, Brotli
+txt_7_2_fzstandardcomp: Hraðasta þjöppun, Zstandard
+txt_7_2_loadcompsettings: Hlaða þjöppunarstillingum
+txt_7_2_savecompsettings: Vista þjöppunarstillingar
+txt_7_2_source: Heimild
+txt_7_2_updateclear: Uppfæra skjalasafn, hreinsa tímabundnar breyttar skrár
+txt_7_1_type_description_brotli: Brotli: hröð þjöppun frá Google, mjög hröð afþjöppun
+txt_7_1_new: Draga allt út hér (í nýja möppu)
+txt_7_1_smart: Draga allt út hér (snjall ný mappa)
+txt_7_1_profileintermediate: Miðlungs þjöppun, ZIP/BZip2 hröð
+txt_7_1_renfilesonly: Endurnefna aðeins skrár
+txt_7_1_typetosearch: Sláðu inn til að leita í núverandi slóð
+txt_7_1_type_description_zstd: Zstandard: hröð þjöppun frá Facebook, mjög hröð afþjöppun
+txt_7_0_af: Greina innihald möppna
+txt_7_0_autoopentar: Opnar sjálfkrafa TAR skjalasafn innan þjappaðra TAR.* skráa
+txt_7_0_exttmppath: Efni verður dregið út fyrir tímabundna vinnuslóðina, í:
+txt_6_9_autou: Uppfæra breyttar skrár í skjalasafni sjálfkrafa
+txt_6_9_forceu: Uppfæra breyttar skrár í skjalasafninu
+txt_6_9_opuns: Aðgerðin er ekki studd fyrir núverandi skjalasafnstegund.
+txt_6_9_overarch: Yfirskrifa skrá(r) með sama nafni sem eru þegar til staðar í skjalasafninu?
+txt_6_9_uconf: Forskoðuð skrá hefur verið breytt. Uppfæra núverandi skjalasafn?
+txt_6_8_ndrop: Nota innbyggða Drag and Drop í Windows
+txt_6_7_nop: (engin forskoðun)
+txt_6_6_pdupfound: möguleg tvítekningar fundust (fljótleg nálgun)
+txt_6_6_rsh: Endurstilla leitarferil
+txt_6_6_pdupfind: Leggja til afrit
+txt_6_6_forcemodify: Breyta óviðurkenndum skjalasafnstegundum sem
+txt_6_5_skylda: (skylda)
+txt_6_5_abort: Hætta við
+txt_6_5_askp: Biðja um að setja lykilorð við ræsingu
+txt_6_5_chp: Breyta lykilorði
+txt_6_5_def: Skilgreining
+txt_6_5_nop: Ekki biðja um að setja lykilorð við ræsingu
+txt_6_5_error: Villa
+txt_6_5_seqerr: Villa(r) fundust, upprunalegu skrárnar verða ekki eytt
+txt_6_5_sni: Hafa með NT öryggisupplýsingar
+txt_6_5_sns: Hafa með NTFS varagagnastraum
+txt_6_5_privacy: Persónuvernd og öryggi
+txt_6_5_showvolatile: Sýna hvaða valkostir eru óstöðugir / samhengisháðir
+txt_6_5_force: Reyndu að opna skjalasöfn sem innihalda villur
+txt_6_5_warning: Viðvörun
+txt_6_5_yes: Já
+txt_6_5_yesall: Já við öllu
+txt_6_5_np: Þú getur nú breytt lykilorði umbreyttra skjalasafna í nýtt eða tæmt lykilorðið til að sleppa dulkóðun.
+txt_6_4_absolute: Algildar slóðir
+txt_6_4_appdirn: Bæta við nafni möppu
+txt_6_4_closeallother: Lokaðu öllum öðrum flipum
+txt_6_4_closeright: Loka flipum hægra megin
+txt_6_4_collapse: Fella saman flipa
+txt_6_4_expand: Stækka flipa
+txt_6_4_full: Heilar slóðir
+txt_6_4_new: Nýtt
+txt_6_4_openintab: Opna í nýjum flipa
+txt_6_4_paths: Slóðir
+txt_6_4_prepdirn: Setja nafn möppu á undan
+txt_6_4_relative: Afstæð slóð
+txt_6_4_tabbar: Flipastika
+txt_6_3_autoadjust: Stilla dálka sjálfkrafa
+txt_6_3_cinfo: Upplýsingar og athugasemdir
+txt_6_3_syn: Samstilla skjalasafn við disk
+txt_6_3_uar: Uppfæra aðeins skrár sem eru þegar í skjalasafninu
+txt_6_2_encext: Bæta við viðskeytinu ".enc" við dulkóðaðar skjalasöfn
+txt_6_2_archive: Tegund skjalasafnsskráar
+txt_6_2_container: Tegund ílátsskráar
+txt_6_1_ec: Stækka / minnka skjalasafnstré
+txt_6_0_msq: Raða eftir skráartegund fyrir samþjöppun
+txt_5_9_lff: Greina skrár og möppur
+txt_5_9_pff: Greina, sýna skráarhaus/EOF
+txt_5_9_start: Byrjaðu frá
+txt_5_8_l0: Leyfa alla studda íhluti/snið
+txt_5_8_l1: Leyfa aðeins íhluti frjálsra hugbúnaðar
+txt_5_8_l2: Leyfa aðeins opin skjalasnið
+txt_5_8_ascii: ASCII öruggt, forskriftir eru öruggar í eldri umhverfum
+txt_5_8_cp: Öruggt fyrir kóðasíður, forskriftir geta valdið vandamálum í eldri umhverfum með mismunandi kóðasíðum
+txt_5_8_fs: Samræmi við frjálsan hugbúnað
+txt_5_8_utf: Forskriftir þurfa fullt UTF-8 / Unicode umhverfi
+txt_5_8_fsr: Þetta snið er ekki stutt vegna takmarkana á fylgni við frjálsan hugbúnað (Valkostir > Stillingar > Ítarlegt)
+txt_5_7_pinstalled: UPPSETT
+txt_5_7_pmissing: VANTAR
+txt_5_7_plugin: Viðbót vantar, hægt er að setja hana upp úr Hjálp > Leita að viðbótum
+txt_5_6_basic: Grunnatriði
+txt_5_6_exarc: Taka út skjalasafn
+txt_5_6_tab: Opna í nýjum flipa
+txt_5_6_rc: Hægrismelltu til að sjá valkosti
+txt_5_6_layouts: Vistaðar skipulagsuppsetningar
+txt_5_6_upexisting: Uppfæra núverandi skjalasafn
+txt_5_6_verbose: Ítarlegt
+txt_5_5_case: (hástafaviðkvæmt)
+txt_5_5_add: Bæta við streng á tilgreindum stað
+txt_5_5_addsel: Bæta við núverandi val
+txt_5_5_ext: Breyta skráarendingu
+txt_5_5_plugin: Athuga hvort viðbætur séu til staðar
+txt_5_5_copypath: Afrita slóð
+txt_5_5_delete: Eyða stöfum á tilgreindum stað
+txt_5_5_halt: Stöðva kerfið þegar verkefni er lokið
+txt_5_5_positionw: Vísbending: 1 bæta við fyrir fyrsta staf, 2 öðru, o.s.frv... "z" fyrir lok skráarnafnsins
+txt_5_5_positionwd: Vísbending: 1 eyðing úr fyrsta stafi innifalin, 2 önnur, ... "z" fyrir lok skráarnafnsins
+txt_5_5_replaceneww: Vísbending: Gefðu upp tóman nýjan streng til að fjarlægja einfaldlega gamla strenginn
+txt_5_5_lower: lágstafir
+txt_5_5_replaceoldw: Breyta öllum tilvikum þessarar strengjar eða stafs í skráarnafninu
+txt_5_5_newext: Ný viðbót
+txt_5_5_new: Nýr strengur
+txt_5_5_n: Fjöldi stafa sem á að eyða
+txt_5_5_old: Gamall strengur
+txt_5_5_position: Staða (tala eða "z" fyrir enda)
+txt_5_5_intdir: Snjall ný mappa
+txt_5_5_replacestr: Skipta út/fjarlægja streng
+txt_5_5_datesameday: Sami dagur og valinn hlutur
+txt_5_5_datesamehour: Sama klukkustund og valinn hlutur
+txt_5_5_datesamemonth: Sami mánuður og valinn hlutur
+txt_5_5_datesameweek: Sama vika fyrir valinn hlut
+txt_5_5_datesameyear: Sama ár og valinn hlutur
+txt_5_5_scan: Skanna
+txt_5_5_select: Velja
+txt_5_5_similar: Líkt og valinn hlutur
+txt_5_5_starting: Byrjar á sama staf
+txt_5_5_strengur: Strengur til að bæta við
+txt_5_5_subtractsel: Draga frá núverandi vali
+txt_5_5_datehour: Þessi klukkustund
+txt_5_5_datemonth: Þessi mánuður
+txt_5_5_dateweek: Þessi vika
+txt_5_5_dateyear: Í ár
+txt_5_5_dateday: Í dag
+txt_5_5_upper: HÁSTAFIR
+txt_5_5_extw: Viðvörun: Ef skráarendingunni er breytt gæti skráin orðið ónothæf
+txt_5_4_da: Dagsetning bætt við
+txt_5_4_deletearchives: Eyða skjalasöfnum eftir útdrátt
+txt_5_4_deletefiles: Eyða skrám eftir geymslu
+txt_5_4_deleteoriginal: Eyðingarferlið, eins og það er stillt á aðalskjánum, verður bætt við handritið.
+txt_5_4_lv: Síðast heimsótt
+txt_5_4_deletearchivesconfirm: Staðfesta eyðingu upprunalegu skjalasafnanna?
+txt_5_4_deletefilesconfirm: Staðfesta eyðingu upprunalegu skráanna?
+txt_5_4_used: Notað
+txt_5_3_profilebest: Öfgakennd þjöppun, 7Z ultra
+txt_5_3_profileadvanced: Mikil þjöppun, 7Z
+txt_5_3_profilenormal: Miðlungs þjöppun, ZIP (samhæft við flesta útdráttarforrit)
+txt_5_3_profileveryfast: Hraðþjöppun, ZIP hröð (samhæft við flesta útdráttarforrit)
+txt_5_3_profilepassword: Vernda með lykilorði, 7Z snið
+txt_5_3_profile10mb: Haltu úttaki undir 25 MB, vegna takmarkana á viðhengjum í tölvupósti
+txt_5_3_profilesfx: Sjálfvirk útdráttur, viðtakandinn þarf ekki útdráttarhugbúnað
+txt_5_3_cml: Tungumál kerfisvalmyndar
+txt_5_3_cmmessage: Tvísmellið á tungumál samhengisvalmyndarinnar sem þið viljið nota og staðfestið sameiningu skrásetningarinnar. Þessa stillingu þarf að endurnýta þegar forritið er sett upp/uppfært eða eftir að kerfissamþættingarhjálpin er notuð.
+txt_5_3_exc: Útilokunarsíur gilda umfram innifalunarsíur
+txt_5_3_ia: Einnig meðtalið
+txt_5_3_io: Aðeins með
+txt_5_3_rec: Endurtekningar undirmöppur
+txt_5_3_resetsi: Endurstilla kerfissamþættingu (samhengisvalmynd, SendTo, skráartengingar)?
+txt_5_2_oadd: Geyma á upprunalega slóð
+txt_5_2_zerodelete: Viltu eyða og skrifa yfir allar 0 valdar skrár? Ekki er hægt að afturkalla aðgerðina og ekki verður hægt að endurheimta skrárnar.
+txt_5_2_zfree: Viltu skrifa yfir með öllu lausa plássinu á þessum diski?
+txt_5_2_sdfree: Viltu eyða lausu plássi á þessum diski á öruggan hátt?
+txt_5_2_oext: Draga út í upprunalega slóð
+txt_5_2_securedeletefree: Örugg eyðing á lausu plássi
+txt_5_2_free: Þessi aðgerð getur tekið nokkrar mínútur og ef hún er framkvæmd oft getur hún fljótt slitið á glampadiskum.
+txt_5_2_zerofiles: Núll eyðing
+txt_5_2_zerofree: Engin eyðing á lausu plássi
+txt_5_1_schedadd: Bæta við áætlun
+txt_5_1_schederr: Get ekki búið til áætlun
+texti_5_1_daglega: Daglega
+texti_5_1_dagur: Dagur
+txt_5_1_days: Dagar
+txt_5_1_enddate: Lokadagur
+txt_5_1_á hverjum: Á hverjum
+texti_5_1_w6: Föstudagur
+txt_5_1_hourly: Á klukkustundarfresti
+txt_5_1_hours: Klukkustundir
+txt_5_1_last: Síðasta
+txt_5_1_schedmanage: Verkefnaáætlun, stjórna verkefnum sem eru vistuð í PeaZip greininni
+txt_5_1_scriptmanage: Stjórna vistuðum áætluðum forskriftum
+texti_5_1_w2: Mánudagur
+txt_5_1_mánaðarlega: Mánaðarlega
+txt_5_1_months: Mánuðir
+txt_5_1_onlogin: Við innskráningu
+txt_5_1_onstart: Við ræsingu
+txt_5_1_once: Einu sinni
+texti_5_1_w7: Laugardagur
+txt_5_1_schedule: Dagskrá
+txt_5_1_schedexplain: Býr til látlaust textaforskrift úr skilgreiningu á verkefni í notendaviðmótinu og skipuleggur það. Forskriftir áætlaðra verkefna eru vistaðar í möppunni „Áætluð forskrift“. Til að breyta eða eyða áætluðum verkefnum er hægt að nota verkefnaáætlun kerfisins, öll áætluð verkefni sem PeaZip býr til eru safnað saman í „PeaZip“ grein verkefnasafnsins.
+txt_5_1_schedok: Áætlun búin til
+txt_5_1_schedscripts: Vistaðar áætlaðar forskriftir
+txt_5_1_startdate: Upphafsdagur
+txt_5_1_starttime: Upphafstími
+texta_5_1_w1: Sunnudagur
+txt_5_1_schedname: Verkefnisheiti, auðkennir bæði vistað áætlað handrit og áætlað verkefni kerfisins.
+txt_5_1_ts: Verkefnaáætlun
+texti_5_1_w5: Fimmtudagur
+texti_5_1_w3: Þriðjudagur
+texti_5_1_w4: Miðvikudagur
+txt_5_1_weekly: Vikulega
+txt_5_1_weeks: Vikur
+txt_5_0_bc: Brauðmylsna
+txt_5_0_resetpm: Staðfestir þú endurstillingu Lykilorðastjórans? Öll lykilorð sem eru geymd í Lykilorðastjóra PeaZip glatast ef staðfest er.
+txt_5_0_enum: Telja upp innihald möppu
+texta_5_0_tónlist: Tónlist
+txt_5_0_ps: Opnaðu PowerShell hér
+txt_5_0_perf: Sýningar
+txt_5_0_pictures: Myndir
+txt_5_0_removeall: Fjarlægja allt
+txt_5_0_resetbookmarks: Endurstilla bókamerki á sjálfgefið gildi? (Hægt er að aðlaga bókamerki með Bókamerki > Skipuleggja)
+txt_5_0_sh: Lotuferill
+txt_5_0_skip: Sleppa því að telja upp innihald möppna í útliti
+txt_5_0_videos: Myndbönd
+txt_4_9_rammi: Rammi
+txt_4_9_listth: Listi og smámyndir
+txt_4_9_skuggi: Skuggi
+txt_4_9_style: Stíll
+txt_4_8_attach25: 25 MB viðhengi
+txt_4_8_crop: Skerið
+txt_4_8_detailsno: Nánari upplýsingar
+txt_4_8_details: Nánari upplýsingar og smámyndir
+txt_4_8_fit: Passa að
+txt_4_8_fitl: Passa að stærsta
+txt_4_8_flip: Flip
+txt_4_8_fullscreen: Fullur skjár
+txt_4_8_fun: Föll
+txt_4_8_h: Hæð
+txt_4_8_keeparchive: Geyma skjalasafn
+txt_4_8_noresize: Halda upprunalegri stærð
+txt_4_8_iconl: Stórar myndir
+txt_4_8_iconm: Táknmyndir og myndir
+txt_4_8_myndastjóri: Myndastjóri
+txt_4_8_immersive: Upplifun
+txt_4_8_listnr.: Listi
+txt_4_8_aspect: Halda hlutföllum
+txt_4_8_mirror: Spegill
+txt_4_8_presets: Forstillingar
+txt_4_8_replace: Skipta út upprunalegu myndinni/myndunum? "Nei" beita umbreytingunni í nýju skránni/skránum.
+txt_4_8_resize: Breyta stærð
+txt_4_8_rl: Snúa til vinstri
+txt_4_8_rr: Snúa til hægri
+txt_4_8_stop: Stöðva
+txt_4_8_t: Umbreyta
+txt_4_8_w: Breidd
+txt_4_7_pk: Búa til handahófskennt lykilorð / lykilskrá
+txt_4_7_spchar: Takmarkaðu stafi við bókstafi og tölustafi
+txt_4_7_recycleask: Færa valda skrá(r) í ruslið?
+txt_4_7_recycle: Færa í ruslið
+txt_4_7_pcomp: Möguleg þjöppun
+txt_4_6_am: Skjalasafnsstjóri
+txt_4_6_fm: Skráarstjóri
+txt_4_6_users: Notendur
+txt_4_5_goupdate: Ný útgáfa er tiltæk. Viltu opna opinberu vefsíðu PeaZip til að sækja uppfærsluna?
+texti_4_5_b: Neðst
+txt_4_5_koupdate: Get ekki athugað hvort uppfærslur séu til staðar, engin tenging við uppfærsluþjóninn
+txt_4_5_update: Athuga hvort uppfærslur séu til staðar
+txt_4_5_dokk: Dokk
+texti_4_5_l: Vinstri
+txt_4_5_noupdate: PeaZip er uppfært
+txt_4_5_properties: Eiginleikar
+txt_4_5_r: Hægri
+txt_4_5_pj: Vistaðar forskriftir
+txt_4_5_shaddress: Sýna veffangsstiku
+txt_4_5_shnav: Sýna hliðarstiku
+txt_4_5_shstatus: Sýna stöðustiku
+txt_4_5_shtool: Sýna verkfærastiku
+txt_4_5_upxpj: Því miður er ekki hægt að flytja út skilgreiningu verkefnis þar sem þessi aðgerð eða valkostur krefst þess að margar mismunandi skipanir séu framkvæmdar.
+texti_4_5_t: Efst
+txt_4_4_confremoveall: Fjarlægja allar sérstillingarskrár PeaZip (forrit, bókamerki)?
+txt_4_4_confremove: Fjarlægja PeaZip stillingar?
+txt_4_3_pwmanhint: Tvísmellið til að breyta atriðum í lykilorðalistanum, hægrismellið til að sjá valkosti, Ctrl+C til að afrita lykilorð.
+txt_4_3_exppl: Flytja út lykilorðalista
+txt_4_3_expple: Dulkóðað (afrit af lykilorðastjóra)
+txt_4_3_keeppw: Geyma lykilorð/lykilskrá fyrir núverandi lotu
+txt_4_3_pwmanpwhint: Mælt er með að setja lykilorð/lykilskrá (valfrjálst) til að dulkóða lykilorðalistann, þannig þarf auðkenningu til að fá aðgang að Lykilorðastjóranum. Hægt er að breyta lykilorðinu/lykilskránni hvenær sem er úr þessu eyðublaði.
+txt_4_3_pwmanmaster: Setja/breyta lykilorði aðalforrits
+txt_4_3_pwmanlist: Lykilorðalisti
+txt_4_3_pwman: Lykilorðsstjóri
+txt_4_3_pwmancorr: Lykilorðastjórinn virðist hafa verið illa notaður eða skemmdur. Haltu Lykilorðastjóranum samt sem áður og reyndu að endurheimta núverandi lykilorðalista, ef þú treystir honum? (Nei, það mun endurstilla Lykilorðastjórann, mælt er með)
+txt_4_3_expplp: Einfaldur texti (allar notkunarmöguleikar)
+txt_4_3_recsrc: Endurkvæm leit sjálfgefið
+txt_4_3_resetpm: Endurstilla lykilorðastjóra? Öllum vistuðum lykilorðum verður eytt.
+txt_4_3_breadcrumb: Sýna heimilisfang sem brauðmylsnu
+txt_4_2_arcabspath: Nota algildar slóðir
+txt_4_1_duplicateshint: Strengurinn „size“/„checksum“ er skráður í CRC dálkinn fyrir alla tvítekna möguleika sem finnast í núverandi möppu eða leitarsíu.
+txt_4_1_adminhint: (VÍSENNING: Einnig er hægt að óska eftir hækkun á notendaviðmóti (UAC) til að virka í vernduðum slóðum, Alt+F10 eða Valkostir > Keyra sem stjórnandi)
+texta_4_1_valin: (valin)
+txt_4_1_duplicatesfound: tvítekningar fundust
+txt_4_1_duplicatesfind: Finna afrit
+txt_4_1_runasadmin: Keyra sem stjórnandi
+txt_4_1_simplesearch: Einföld leit
+txt_4_0_thim: Sýna smámyndir af myndum
+txt_3_8_type_description_wim: WIM: Diskamyndasnið Microsoft
+txt_3_8_type_description_xz: XZ: Öflug skráarþjöppun byggð á LZMA2
+txt_3_7_donations: Framlög
+txt_3_7_nameasparent: Nefndu skjalasafn sem yfirmöppu valins hlutar, ef fleiri en einn hlutur er bætt við
+txt_3_7_tracker: Vandamálarækir
+txt_3_7_sort: Raða eftir
+txt_3_7_swapbars: Skipta um verkfærastiku / veffangsstiku
+txt_3_7_themedbars: Þemabarir
+txt_3_6_ignoredd: Hunsa alltaf slóðir fyrir Drag and Drop útdrátt
+txt_3_6_close: Loka
+txt_3_6_resetapps: Viltu endurstilla Forrit (sérsniðinn hópur forrita og forskrifta til að opna skrár með, yfirskrifa skráartengingar)?
+txt_3_6_ethemes: Fyrirliggjandi þemu
+txt_3_5_td: Athuga hvort þemu séu til staðar
+txt_3_5_managecustomthemes: Stjórna þemum
+txt_3_4_nopaths: Engar slóðir
+txt_3_4_smallicons: Táknmyndir
+txt_3_3_skipunits: (Windows) Fá upplýsingar um magn neteininga, hægari ræsing
+txt_3_3_stralt: Önnur skipun, þegar engin breyta er send
+txt_3_3_apps: Forrit
+txt_3_3_multi: Margfeldi val
+txt_3_3_runexp: Opna forrit, skrá, möppu eða vefsíðu
+txt_3_3_apppath: Mappa PeaZip
+txt_3_3_run: Keyra
+txt_3_2_7zutf8nonascii: 7z / p7zip -mcu nota UTF8 fyrir skráarnöfn sem innihalda tákn sem ekki eru ASCII í .zip skrám
+txt_3_2_alltasks: Öll verkefni
+txt_3_2_conf: Stillingar
+txt_3_2_donations: Gefa til góðgerðarstofnana
+txt_3_1_sccenc: 7z / p7zip CONSOLE stafakóðun
+txt_3_1_downloads: Niðurhal
+txt_3_1_lib: Bókasöfn
+txt_3_1_more: Meira
+txt_3_1_openasarchive: Opna sem skjalasafn
+txt_3_1_sendto: Mappa notanda fyrir SendTo valmyndina
+txt_3_1_pathexc: Slóðin fer yfir leyfilega hámarksstærð
+txt_3_1_recent: Nýlegt
+txt_3_1_plsmartmin: Keyra lágmarkað, sýna/halda opnu aðeins ef þörf krefur
+txt_3_1_src: Leitir
+txt_3_1_systmp: Tímabundið notanda
+txt_3_1_languagetools: Þýða
+txt_3_1_workingdir: Vinnumöppuskrá
+txt_3_0_nonreadableorpw: Skjalasafn er ekki læsilegt. Skjalasafninu gæti verið ógilt, bindi gætu vantað eða efnisyfirlit þess gæti verið dulkóðað. Viltu prófa lykilorð?
+txt_3_0_readablepw: Skjalasafn er ólesanlegt, gæti verið varið með lykilorði
+txt_3_0_configure: Skráartengingar og samþætting kerfisvalmynda
+txt_3_0_resettmp: Endurstilla tímabundnar vinnuskrár
+txt_2_9_address: Heimilisfangsstika
+txt_2_9_adv: Ítarlegar síur eru notaðar þegar skrár eru meðhöndlaðar sem 7z eða FreeArc bakendastýringar styðja, sjá skjölun og hnekkir grunnsíum (sem eru notaðar fyrir leitaraðgerðir og birtast í bókamerkjum og sögu spjöldum).
+txt_2_9_dálkar: Dálkar
+txt_2_9_copyhere: Afrita hingað
+txt_2_9_noscan: Ekki skanna skrár sem verið er að bæta við útlit
+txt_2_9_extconsole: Útdráttarstjórnborðið er aðeins tiltækt þegar vafrað er um skjalasöfn
+txt_2_9_thl: Merkja hnappa
+txt_2_9_home: Heim
+txt_2_9_lt: Stór
+txt_2_9_mt: Miðlungs
+txt_2_9_movehere: Færa hingað
+txt_2_9_nav: Leiðsögn
+txt_2_9_navbar: Hliðarstika
+txt_2_9_none: Ekkert
+txt_2_9_organize: Skipuleggja
+txt_2_9_public: Opinbert
+txt_2_9_rec: Endurkvæmt: leit í undirmöppum, getur tekið smá tíma
+txt_2_9_selected: Valið
+txt_2_9_setapps: Skipuleggja forrit
+txt_2_9_showmenu: Sýna valmyndastiku
+txt_2_9_st: Lítil
+txt_2_9_test_pw2G: Prófun á dulkóðun <2GB skjalasafna
+txt_2_9_vst: Aðeins texti
+txt_2_9_toolbar: Verkfærastika
+txt_2_9_tree: Tré
+txt_2_9_views: Skoðanir
+txt_2_8_tilraunaskrá: (tilraunaskrá)
+txt_2_8_zcopy: (Windows) Afrita skrár í endurræsingarham, hægari afritun
+txt_2_8_addvol: Að bæta öllu bindi við skjalasafnið gæti tekið langan tíma, halda samt áfram?
+txt_2_8_uniterror: Ekki er hægt að nálgast eininguna
+txt_2_8_cannotconvert: Ekki er hægt að umbreyta völdum skjalasöfnum
+txt_2_8_convertbegin: Halda áfram með þjöppunarstigið til að ljúka umbreytingunni?
+txt_2_8_convert: Umbreyta
+txt_2_8_convertexisting: Umbreyta núverandi skjalasöfnum
+txt_2_8_convertdelete: Eyða skrám og möppum sem búnar voru til tímabundið fyrir umbreytingu?
+txt_2_8_details: Nánari upplýsingar
+txt_2_8_parallel: Keyrðu verkefni samhliða ef mögulegt er
+txt_2_8_convertnote: Í öllum tilvikum voru upprunalegu skjalasöfnin ekki breytt, til að leyfa notandanum að stjórna hvort þau séu geymd eða fjarlægð.
+txt_2_8_custom: PeaZip styður ekki beint txt_2_8_custom, en í útdráttarstiginu er hægt að stilla PeaZip til að meðhöndla sérsniðnar skráartegundir í flipanum „Ítarlegt“. Halda áfram að opna þessa skrá?
+txt_2_8_unitrecommend: Mælt er með að annað hvort draga út (hægrismelltu > draga út valið) eða opna skráarkerfi úr rót tölvunnar (Kerfisverkfæri > Opna einingu sem skjalasafn)
+txt_2_8_viewasarchive: Opna einingu sem skjalasafn
+txt_2_8_nounit: Engin eining valin
+txt_2_8_rowselect: Röðval
+txt_2_8_statusbar: Stöðustika
+txt_2_8_typeunit: Sláðu inn heiti rökfræðilegrar eða efnislegrar einingar
+txt_2_8_usedefaultoutpath: Notið alltaf sjálfgefna úttaksslóð
+txt_2_7_experimental: (tilraunakennt, sjá skjöl)
+txt_2_7_optional: (valfrjálst)
+txt_2_7_list_tryflatorpw: , mögulegar lausnir: prófaðu flat view (F6), gefðu upp lykilorð (F9), fáðu nýtt eintak af skjalasafninu
+txt_2_7_separate: Bæta við í aðskildar skjalasöfn
+txt_2_7_pwsupported: geymsla með lykilorði
+txt_2_7_cancel: Hætta við
+txt_2_7_encfn: Dulkóða einnig skráarnöfn (ef sniðið styður það)
+txt_2_7_setpw: Setja lykilorð / lykilskrá
+txt_2_7_ext: Útdráttur:
+txt_2_7_extfrom: Útdráttur úr skjalasafni:
+txt_2_7_es: Draga út studdar skráartegundir sem ekki eru í skjalasafni, þ.e. keyrsluskrár, MS Office og OOo skrár.
+txt_2_7_eu: Draga út óstuddar skráartegundir, tilgreinið sérsniðið útdráttarforrit
+txt_2_7_klippiborð: Klippiborð
+txt_2_7_goarclayout: Fara í skjalasafnsútlit
+txt_2_7_goextlayout: Fara í útdráttarútlit
+txt_2_7_ok: Í lagi
+txt_2_7_drag_archive: opna skrá sem nýtt skjalasafn? ("Nei" til að bæta skrá við núverandi skjalasafnsútlit)
+txt_2_7_oop: Opna úttaksslóð þegar verkefni er lokið
+txt_2_7_validatefn: Aðgerð stöðvuð, ógilt skráarnafn greint:
+txt_2_7_validatecl: Aðgerð stöðvuð, hugsanlega hættuleg skipun greind (þ.e. samtenging skipana er ekki leyfð innan forritsins):
+txt_2_7_output: Úttak
+txt_2_7_pwnotset: Lykilorð er ekki stillt
+txt_2_7_pwarcset: Lykilorðið er stillt
+txt_2_7_pwextset: Lykilorð er stillt, það er hægt að sækja/lista/prófa dulkóðaðar skjalasöfn
+txt_2_7_archivehint: Dragðu skrár og möppur hingað til að geyma, eða hægrismelltu til að fá fleiri valkosti
+txt_2_7_exthint: Dragðu skjalasöfnin hingað til að draga þau út, eða hægrismelltu til að fá fleiri valkosti.
+txt_2_7_setadvf: Stilla ítarlegar síur
+txt_2_7_selpath: Slóð valins hlutar
+txt_2_7_separateerror: Því miður er ekki hægt að flytja inn skipanalínu verkefnisskilgreiningarinnar þegar rofinn "Bæta við aðskilið skjalasafn" er notaður, þar sem verkefnið er framkvæmt sem margar aðskildar skipanir.
+txt_2_7_noinput: Útlitið er tómt: vinsamlegast notið Bæta við skrá(m) eða Hlaða inn útliti til að fylla út listann yfir skjalasöfn sem á að draga út.
+txt_2_7_dirsize: Stærð innihalds möppna er ekki athuguð til að reikna út heildarstærðina
+txt_2_7_un7z_browse_flat: prófaðu flata sýn (F6)
+txt_2_7_updating: [Uppfæri núverandi skjalasafn]
+txt_2_6_möppur: (möppur)
+txt_2_6_advanced: Ítarlegt
+txt_2_6_plalways: Stoppaðu alltaf til að skoða verkefnaskýrslu
+txt_2_6_plsmart: Stöðva til að skoða skýrslu fyrir villur, lista, prófun
+txt_2_5_sessionio: (þessi lota)
+txt_2_5_advanced: Ítarleg breyting: setjið bil á milli strengja breytu og skráarnafns ef þörf krefur
+txt_2_5_basic: Grunnbreyting: forrit og breytur fyrir innslátt nafns
+txt_2_5_cannotrun: Get ekki keyrt
+txt_2_5_custeditors: Sérsniðnir ritlar, spilarar, vírusvarnarforrit, o.s.frv. (hnekki skráartengingum kerfisins)
+txt_2_5_delete: Eyða
+txt_2_5_delete_fromarchive: Eyða úr skjalasafni
+txt_2_5_langflag: Birta nafn á vistuðum hlut sem UTF-8 texta; hakaðu úr ef þú vilt skipta út lengri stöfum fyrir "?"
+txt_2_5_encpj: Kóða skilgreiningu verkefnis sem UTF-8 texta
+txt_2_5_execommand: Keyrsluskrá eða skipun
+txt_2_5_help: Hjálp
+txt_2_5_langhint: Vísbending: að skipta út útvíkkuðum stöfum fyrir „?“ táknið getur bætt setningafræði ef ekki er hægt að umbreyta stafasetti skjalasafnsins á núverandi vél.
+txt_2_5_mini_help: Staðbundin kennsla
+txt_2_5_offline_help: Hjálp með PeaZip
+txt_2_5_tray: Minnka í bakka
+txt_2_5_remove: Fjarlægja
+txt_2_5_hintpaths: Hægrismelltu til að opna slóðir kerfisins og notandans
+txt_2_5_selectapp: Veldu forrit
+txt_2_5_strafter: Strengur eftir inntaksheiti
+txt_2_5_strbefore: Strengur fyrir inntaksnafn
+txt_2_5_encoding: Textakóðun
+txt_2_5_nopw: þessi tegund skjalasafna styður ekki dulkóðun
+txt_2_4_draghint: [dragðu í Explorer með virka veffangastiku]
+txt_2_4_tb: Aðlaga hnappa tækjastikunnar (endurræsir PeaZip)
+txt_2_4_adding: Bætir við
+txt_2_4_advclip: Klippiborð geymir marga valkosti
+txt_2_4_ysvörur: Svör
+txt_2_4_itemsheight: Sjálfvirk stærðarbreyting á hæð hluta
+txt_2_4_clearclipboard: Hreinsa klippiborð (Esc)
+txt_2_4_wcommons: Almennt
+txt_2_4_copyfrom: Afrita frá
+txt_2_4_deletebookmarks: Viltu eyða listanum yfir bókamerktar skrár og möppur?
+txt_2_4_documents: Skjöl
+txt_2_4_wenc: Alfræðiorðabók
+txt_2_4_extractfrom: Útdráttur úr
+txt_2_4_hexp: Forskoðun á sextándakóða
+txt_2_4_operation: Aðgerð
+txt_2_4_path: slóðin er ekki skrifanleg (þ.e. full eða aðeins lesin). Viltu velja skrifanlega úttaksslóð?
+txt_2_4_removefromclipboard: Fjarlægja af klippiborði
+txt_2_4_stdclip: Staðall: Halda einni valmynd á klippiborðinu, skýrar aðgerðir við límingu
+txt_2_4_totalmem: heildarminni
+txt_2_4_gvideo: Myndband
+txt_2_4_wbook: Wikibook
+txt_2_4_wnews: Wikifréttir
+txt_2_4_wsrc: Wikiheimild
+txt_2_4_wdict: Wikiorðabók
+txt_2_3_pw_errorchar: Ekki er mælt með notkun gæsalappa í lykilorðum (fyrir PeaZip og forskriftir). Ef þú þarft að búa til eða sækja skjalasafn með þessu lykilorði geturðu hunsað skilaboðin og þú verður beðinn um að slá inn lykilorðið gagnvirkt í stjórnborðinu.
+txt_2_3_envstr: Sýna umhverfisbreytur
+txt_2_3_never_pw: Ekki biðja um lykilorð
+txt_2_3_home: Heimili notanda
+txt_2_3_on_pw: Við útdrátt/lista/prófun aðgerða úr valmyndum kerfisins:
+txt_2_3_test_pw100: Prófun á dulkóðun <100MB skjalasafni
+txt_2_3_test_pw: Prófun á dulkóðun (gæti verið hægfara)
+txt_exclude_recourse: "útiloka" undirmöppur fyrir endurkvæmni
+txt_action_extopen: Aðgerðin "Draga út og opna með tengdu forriti"
+txt_error_passwordnotmatch: Reitirnir „Lykilorð“ og „Staðfesta“ stemma ekki, vinsamlegast leiðréttu þá.
+txt_action_preview: Aðgerðin "Forskoðun með tengdu forriti"
+txt_preview_hint: Aðgerðin „Forskoða“ framkvæmir sama verkefni og „Draga út og opna“ en á tímabundna slóð í úttaksmöppu, sem fjarlægðist sjálfkrafa þegar skjalasafninu er lokað.
+txt_betri: (betri)
+txt_default2: (sjálfgefið)
+txt_faster: (hraðari)
+txt_fastermem: (hraðari, minna minni)
+txt_tempdir: (tímabundin vinnumöppa PeaZip)
+txt_stream: (stillt af "Straumstýringu")
+txt_slowermem: (hægara, meira minni)
+txt_store: (verslun, hraðast)
+txt_newfolder: (í nýrri möppu)
+txt_7z_exitcodeunknown: : Óþekkt villa í verkefni
+txt_list_ismappa: [mappa]
+txt_none: <enginn>
+txt_fd: 1,44 MB disklingur
+txt_7z_exitcode1: 1: Viðvörun: ekki banvæn villa; t.d. sumar skrár vantar eða eru læstar
+txt_attach10: 10 MB viðhengi
+txt_7z_exitcode2: 2: Alvarleg villa kom upp
+txt_7z_exitcode255: 255: Verkefni stöðvað af notandanum
+txt_fat32: 4 GB FAT32 skrá
+txt_dvd: 4,7 GB DVD
+txt_attach5: 5 MB viðhengi
+txt_cd650: 650 MB geisladiskur
+txt_7z_exitcode7: 7: Villa: rang skipanalína kom upp
+txt_cd700: 700 MB geisladiskur
+txt_type_description_7z: 7Z: eiginleikaríkt skjalasafnssnið með háu þjöppunarhlutfalli
+txt_dvddl: 8,5 GB DVD DL
+txt_7z_exitcode8: 8: Villa: ekki nægilegt minni fyrir umbeðna aðgerð
+txt_abort: Hætta við áætlaða afritun/flutning skráa?
+txt_about: Um
+txt_action: Aðgerð
+txt_action_hint: Aðgerð við opnun eða forskoðun með tengdu forriti
+txt_add: Bæta við
+txt_add_existing_archive: Bæta við (ef skjalasafn er til staðar)
+txt_add_archive: Bæta við skjalasafni
+txt_add_files: Bæta við skrám
+txt_add_folder: Bæta við möppu
+txt_add_path: Bæta við slóð
+txt_add_tolayout: Bæta við völdum skrám og möppum við útlit skjalasafnsins
+txt_add_toarchive: Bæta við skjalasafn
+txt_add_tobookmarks: Bæta við bókamerki
+txt_address_hint: Sía: samþykkir * og ? algildisstafi
+txt_adv_filters: Ítarlegar síur
+txt_algo: Reiknirit
+txt_all: allt
+txt_all_default: Allt (sjálfgefið)
+txt_all_type: Sama tegund
+txt_all_date: Dagsetning
+txt_all_psize: Stærð pakkaðrar skráar
+txt_all_attributes: Sömu eiginleikar
+txt_all_size: Skráarstærð
+txt_error_input_upx: leyfir eina keyrsluskrá sem inntak
+txt_always_pw: Biðja alltaf um lykilorð
+txt_ignore_ext: Hunsa alltaf slóðir fyrir "Útdrátt og..."
+txt_ignore_disp: Hunsa alltaf slóðir fyrir "Útdráttur birtur..."
+txt_ignore_sel: Hunsa alltaf slóðir fyrir "Draga út valið..."
+txt_key_hint: Bæta við hass-kóða lykilskráar við lykilorðið; hægt er að afkóða skjalasafnið með PeaZip og öðrum forritum sem fylgja sama staðli, eða með því að slá inn hass-kóðann sem hluta af lykilorðinu.
+txt_timestamp: Bæta tímastimpli við nafn
+txt_appoptions: Forritsvalkostir
+txt_type_description_arc: ARC: Tilraunageymsluforrit, öflugt, skilvirkt og með miklum eiginleikum
+txt_archive: Skjalasafn
+txt_un7z_browse_ok: Skoðað var skjalasafn með góðum árangri
+txt_interface: Viðmót fyrir skjalasafnsvafra
+txt_archivecreation: Sköpun skjalasafns
+txt_tarbefore_hint: Geyma gögn í TAR-sniði áður en þau eru af tilgreindri gerð.
+txt_archive_hint: Geyma, þjappa, skipta og geyma einkaskrár, möppur og geymslurými
+txt_compressionratio_hint: Þjöppunarhlutfall skjalasafnsins
+txt_archiving: Geymsla:
+txt_cl_long: Færibreyturnar virðast fara yfir hámarksstærð sem PeaZip notendaviðmótið getur sent, vinsamlegast veldu færri inntaksskrár (þ.e. veldu möppur í stað stakra skráa).
+txt_overwrite_askbefore: Spyrja áður en skrifað er yfir (í stjórnborði)
+txt_associated: Tengt forrit
+txt_attributes: Eiginleikar
+txt_author: Höfundur
+txt_ren_existing: Endurnefna núverandi skrár sjálfkrafa
+txt_ren_extracted: Endurnefna útdregnar skrár sjálfkrafa
+txt_autofolder: Búa sjálfkrafa til nýja möppu til að draga skjalasafnið út í?
+txt_back: Til baka
+txt_backend: Bakendaskrár
+txt_backupexe: Keyrsluskrá fyrir afritun (ráðlagt)
+txt_bettercompression: betri þjöppun
+txt_blogg: Blogg
+txt_blowfish: Blowfish448 (64 bita blokkir)
+txt_bookmarks: Bókamerki
+txt_browse: Skoða
+txt_browser: Vafri
+txt_aborted_error: Skoðun skjalasafnsins stöðvaðist, það myndi taka of langan tíma. Þú getur þrengt valið með leit (F3) eða forðast flata sýn (F6). Þú getur sótt skjalasafnið beint, birt lista eða prófað það.
+txt_list_browsing: Vafra
+txt_archive_root: Skoðar: rót skjalasafnsins
+txt_type_description_bzip2: BZip2: frekar öflug þjöppun, meðalhraði
+txt_pw_empty: Vinsamlegast gefðu upp lykilorð (eða lykilskrá)
+txt_add_error: Ekki er hægt að bæta við/uppfæra eða eyða hlut(um). Ekki er hægt að skrifa í skjalasafnið eða það styður ekki þessa aðgerð. Hægt er að virkja breytingar á óhefðbundnum skjalagerðum í valkostum skjalasafnsstjóra.
+txt_un7z_browse_failure: get ekki skoðað skjalasafnið
+txt_list_error: Get ekki listað innihald skjalasafnsins, vinsamlegast athugaðu hvort skjalasafnið sé varið með lykilorði eða skemmt.
+txt_conf_cannotsave: Get ekki vistað stillingarskrána, athugaðu hvort slóðin sé skrifanleg og hvort eitthvað laust pláss sé til staðar.
+txt_check_hint: Athugaðu hvort gögn séu spillt af handahófi; hash-reiknirit henta jafnvel til að greina illgjarn gagnamisnotkun (sjá skjölun)
+txt_check: Athugunarsumma/kjölluskrá(r)
+txt_check_select: Athugunarsumma/kjöltás
+txt_clear: Hreinsa
+txt_clearlayout: Hreinsa útlit
+txt_pj_hint: Smelltu til að flytja inn verkefni, endurstilla breytingar og hlaða inn uppfærðri skilgreiningu verkefnis úr notendaviðmótinu.
+txt_autoclose: Aldrei hætta að skoða verkefnaskýrslu
+txt_cl: skipanalína:
+txt_compare: Berðu saman skrár
+txt_compress: Þjappa
+txt_compress_executable: Þjappa keyrsluskrá
+txt_compress_openforwriting: Þjappa skrám sem eru opnar til skrifunar
+txt_compression: Þjöppun
+txt_compmanagement: Tölvustjórnun
+txt_pw_confirm: Staðfesta
+txt_console: Stjórnborð
+txt_console_interface: Stjórnborð
+txt_content: Efni
+txt_controlpanel: Stjórnborð
+txt_convert: Breyta diski í NTFS
+txt_copy: Afrita
+txt_copyto: Afrita til...
+txt_create: Búa til
+txt_create_archive: Búa til nýtt skjalasafn
+txt_title_create: Búa til skjalasafn, þjappa, dulkóða, skipta...
+txt_create_keyfile: Búa til lyklaskrá
+txt_create_folder: Búa til nýja möppu
+txt_create_theme: Búa til þema úr núverandi stillingum
+txt_rr: Búa til endurheimtarfærslur
+txt_create_sfx: Búa til sjálfútdráttar skjalasafn
+txt_cr_current: Núverandi slóð eða þjöppunarhlutfall síu
+txt_custom: Sérsniðið
+txt_type_description_custom: Sérsniðið (erfðamenn): sláðu inn heiti og breytur keyrsluskráarinnar
+txt_customapp: Sérsniðið forrit
+txt_custom_parameters: Sérsniðnar breytur
+txt_customsize: Sérsniðin stærð
+txt_cut: Klippi
+txt_datetime: Dagsetning/tími
+txt_default: Sjálfgefið
+txt_default_compression: sjálfgefin þjöppun
+txt_default_format: Sjálfgefið snið
+txt_theme_default: Sjálfgefið þema
+txt_hard_reset_hint: Eyða bókamerkjaskrá
+txt_desktop: Skjáborð
+txt_orðabók: Orðabók
+txt_dirs: möppur,
+txt_dis: Aðgreining:
+txt_disk_cleanup: Diskahreinsun
+txt_disk_defrag: Diskaafritun
+txt_disk_management: Diskastjórnun
+txt_dispaly: Birta niðurstöður sem
+txt_displayedmnu_obj: birt
+txt_displayedobjects: Sýndir hlutir
+txt_nocompress: ekki þjappa
+txt_delete: Viltu eyða völdum skrám? Ekki er hægt að afturkalla aðgerðina og ekki verður hægt að endurheimta skrár úr ruslinu.
+txt_wipe: Viltu eyða völdum skrám á öruggan hátt? Ekki er hægt að afturkalla aðgerðina og ekki verður hægt að endurheimta skrárnar.
+txt_done: Lokið
+txt_edit: Breyta
+txt_elapsed: liðið:
+txt_error_emptycl: Tóm skipanalína!
+txt_encrypt: Dulkóða
+txt_dulkóðað: dulkóðað
+txt_dulkóðun: Dulkóðun
+txt_note: Sláðu inn athugasemd / lýsingu
+txt_random_keys: Sláðu inn handahófskennda lykla
+txt_random_keys_hint: Sláðu inn handahófskennda lykla (þú þarft ekki að muna þá)
+txt_ent: Mat á óreiðu
+txt_ent_tools: Færðu músina eða notaðu viðbótarverkfæri til að taka úrtak af óreiðu
+txt_eqorlarger: Sama eða stærra en valinn hlutur
+txt_eqorrecent: Sama eða nýrra en valinn hlutur
+txt_eqorolder: Sama eða eldra en valinn hlutur
+txt_eqorsmaller: Sama eða minna en valinn hlutur
+txt_equal: Sama og valinn hlutur
+txt_erase_hint: Örugg eyðing: skrifa yfir með handahófskenndum gögnum, stærð grímu, endurnefna, að lokum eyða
+txt_extraction_error: Villa við að draga út valinn hlut. Ef skjalasafnið er varið með lykilorði, vinsamlegast gefðu það upp.
+txt_exclude_hint: Útiloka skrá(r), eina í hverri línu; nota * og ? algildisstafi; " og ' afmörkunartáknin eru ekki nauðsynleg
+txt_exclusion_recourse: Útilokunarsíur endurkvæma undirmöppur
+txt_exclusion: Útiloka
+txt_exe: Keyrsluskrá
+txt_overwrite_qry: er til staðar í áfangaslóð; skrifa yfir með skrá(m) með sama nafni frá upprunaslóð? (Hætta við: sleppa afritun þessa hlutar)
+txt_confirm_overwrite: er til; skrifa yfir það? (nei til að sleppa)
+txt_explore_outpath: Kanna úttaksslóð
+txt_explore_path: Kanna slóð
+txt_ext: Viðbót:
+txt_caption_extract: Útdráttur
+txt_ext_nopath: Útdráttur (án slóðar)
+txt_ext_all: Draga út allt
+txt_ext_allhere: Draga allt út hér
+txt_ext_allto: Draga allt út í
+txt_extopen_custom: Draga út og opna með sérsniðnu forriti
+txt_extopen_with: Draga út og opna með...
+txt_ext_disp_here: Útdráttur birtur hér
+txt_ext_disp: Draga út birtan(a) hlut(i)
+txt_ext_disp_to: Draga út birtan(a) hlut(i) í...
+txt_ext_here: Draga út hér
+txt_ext_sel_here: Útdráttur valinn hér
+txt_ext_sel: Draga út valinn(a) hlut(i)
+txt_ext_sel_to: Draga út valinn hlut(a) í...
+txt_extobj: Draga út hlutinn
+txt_newfoldermenu: Draga út í nýja möppu
+txt_extto: Draga út í...
+txt_level_fast: Hratt
+txt_fastcompr: hröð þjöppun
+txt_fastopen: Hraðopnunarrútína, hætta að skoða mjög stór skjalasöfn, nota síur í staðinn
+txt_level_fastest: Hraðast
+txt_favformats: Flýtileiðir fyrir uppáhaldssnið
+txt_skrá: Skrá
+txt_filebrowser: Skráarvafri
+txt_filetools: Skráartól
+txt_skrár: skrá(r),
+txt_nfiles: Skrár
+txt_fs: Skráakerfi
+txt_filters_recourse: undirmöppur síu(a) fyrir endurtekningar
+txt_filters: Síur
+txt_flat: Flatt (sýna allt)
+txt_list_flat: Flat sýn
+txt_unit_floppy: Diskettingur
+txt_foldername: Möppunafn
+txt_nfolders: Möppur
+txt_error_input_multi: Sniðið leyfir eina skrá sem inntak; þú getur notað „TAR áður“ rofann til að vista inntak í .TAR skjalasafni áður, annars geturðu valið annað snið. VÍSUN: Veldu skjalasafnssnið eftir að hafa valið inntaksgögn: „TAR áður“ rofinn verður sjálfkrafa stilltur
+txt_fwd: Áframsenda
+txt_list_found: Fundið
+txt_free: Ókeypis
+txt_free2: ókeypis
+txt_name_full: Fullt nafn
+txt_function: Fall
+txt_general: Almennt
+txt_multithreading: Almenn fjölþráðun
+txt_go_browser: Fara í skráarvafra
+txt_go_path: Skoða slóð (PeaZip)
+txt_guicl: GUI + Stjórnborð
+txt_guipealauncher: Viðmót
+txt_graphic: Mappa grafíkarinnar
+txt_gridaltcolor: Skipti á lit rista
+txt_gridrowheight: Raðhæð hnitanetsins
+txt_gui: GUI
+txt_type_description_gzip: GZip: hraðþjöppun
+txt_here: hér
+txt_list_history: Saga
+txt_homeroot: Rótarstig tölvu/skjalasafns
+txt_quickbrowse_hint: Ef vafra er hætt getur notandinn þrengt valið með leitar- eða síunaraðgerðum; útdráttar-/lista-/prófunaraðgerðirnar hafa engin áhrif.
+txt_backupexe_hint: Ef eitthvað fer úrskeiðis og leiðir til óvirkrar niðurstöðu geturðu endurheimt upprunalegu keyrsluskrána úr sjálfvirka öryggisafriti.
+txt_attach: Ef póstforritið styður þá skipun verður skjalasafnið tengt við nýjan póst.
+txt_images: Myndir
+txt_include_hint: Hafa með skrá(r), eina í hverri línu; nota * og ? algildisstafi; " og ' afmörkunartáknin eru ekki nauðsynleg
+txt_filters_hint: Inn- og útilokunarsíur fyrir 7z tvíundarskrá, vinsamlegast lestu vandlega 7-Zip skjölunina til að skilja hvernig þessar síur virka.
+txt_inclusion_recourse: Innfellingarsíur endurkvæmar undirmöppur
+txt_inclusion: Hafa með
+txt_error_function: Óskað var eftir röngum aðgerðum
+txt_info: Upplýsingar
+txt_infoall: Upplýsingar um allt
+txt_infodisp: Upplýsingar um sýndan hlut(a)
+txt_infosel: Upplýsingar um valinn hlut(a)
+txt_inputinfo: Inntaksupplýsingar
+txt_input_list: Inntakslisti:
+txt_iop: inntak, úttak, breytur
+txt_ipo: inntak, breytur, úttak
+txt_input: Inntak
+txt_integrity: Heiðarleikaprófun
+txt_chunk_size: Ógild sérsniðin stærð, vinsamlegast leiðréttu hana með tölulegu gildi.
+txt_invertsel: Snúa vali við
+txt_type_exe: er keyrsluskrá fyrir Windows, viltu keyra hana? ("Nei" til að reyna að opna hana sem skjalasafn) ÁBENDING: Sumar keyrsluskrár keyra hugsanlega ekki rétt nema allt skjalasafnið sé tekið út áður en...
+txt_return_to_archive: er opið núna; viltu skoða það?
+txt_not_accessible: er ekki lengur aðgengilegt
+txt_type_unsupported: er ekki studd skjalasafnstegund
+txt_checkname_failed: er ekki gilt nafn.
+txt_not_accessible_list: er ekki aðgengilegur, vinsamlegast athugið hvort skráarlistinn sem gefinn er upp sé réttur og uppfærður.
+txt_theme_create_error: Ekki var hægt að búa til þemað, reyndu að nota gilt nafn fyrir möppu sem þemaheiti og veldu skrifanlega slóð.
+txt_theme_exists: er enn til, vinsamlegast gefðu upp aðra slóð
+txt_job_code: verkefnakóði:
+txt_job_definition_saved: Skilgreining verkefnis vistuð í
+txt_job_success: Verkefni lokið með góðum árangri!
+txt_join: Tengjast
+txt_joinfiles: Tengja skrár
+txt_keyfile: Lyklaskrá
+txt_keyfile_not_found: Lykilskráin fannst ekki eða lesin. Veldu aðra lykilskrá.
+txt_keyfile_notcreated: Lyklaskrá ekki búin til
+txt_larger: Stærri en valinn hlutur
+txt_lastused: Síðast notað
+txt_launch: Ræsa verkefni
+txt_layout: Útlit
+txt_filelist_savedas: Útlit vistað sem
+textastig: Stig
+txt_license: Leyfi
+txt_caption_list: Listi
+txt_list_details: Listi (með upplýsingum)
+txt_list_all: Listi yfir allt
+txt_list_disp: Listi yfir birta hluti
+txt_list_sel: Listi yfir valinn(a) hlut(i)
+txt_toggle_warning: Það gæti tekið langan tíma að birta flata sýn á innihaldi slóðarinnar, viltu samt halda áfram?
+txt_loadfile: Hlaða skrá
+txt_loadlayout: Hlaða útliti
+txt_unit_hd: Staðbundinn diskur
+txt_localization: Staðfærsla
+txt_lpaqver: LPAQ útgáfa
+txt_type_description_lpaq: LPAQ: hraðari útgáfa af PAQ, mjög góð þjöppun
+txt_maininterface: Aðalviðmót
+txt_maxcomp: Hámarksþjöppunarstilling
+txt_level_maximum: Hámark
+txt_restartrequired: Gæti þurft að endurræsa forritið til að það virki.
+txt_required_memory: MB af minni sem þarf
+txt_method: Aðferð
+txt_misc: Ýmislegt
+txt_modify: Breyta
+txt_morecontrols: Fleiri stýringar (saga, bókamerki, ...)
+txt_morerecent: Nýrra en valinn hlutur
+txt_ent_hint: Færðu músina, sláðu inn lykla í breytingarreitinn, hlaððu inn skrám til að safna óreiðu úr kerfinu...
+txt_moveto: Færa til...
+txt_mypc: Rót tölvunnar
+txt_list_na: ekki til
+txt_name: Nafn
+txt_naming: Nöfnun
+txt_unit_remote: Netdrif
+txt_newrarchive: Nýtt skjalasafn
+txt_cnewfolder: Ný mappa
+txt_news: Fréttir
+textanúmer: Nei
+txt_noinput: Engin aðgengileg inntak móttekin
+txt_nocompress_hint: engin þjöppun (hraðari)
+txt_split_noinput: Engin inntak valin; vinsamlegast veldu skrá til að skipta
+txt_open_noinput: Engin inntak valin; vinsamlegast veldu skjalasafn (fyrsta bindi skjalasafnsins fyrir skjalasöfn með mörgum bindum)
+txt_list_nomatch: engin samsvörun
+txt_singlethread: Engin fjölþráðun
+txt_none2: ekkert
+txt_nonsolid: Ófast efni
+txt_level_normal: Venjulegt
+txt_copy_error: afritað eða fært tókst ekki, villukóði:
+txt_lýsing: Athugasemdir
+txt_compare_second: Veldu nú skrána sem á að bera saman við
+txt_peaobj: Hlutastýring
+txt_displayed_obj: hlutur(ar)
+txt_olderthan: Eldra en valinn hlutur
+texti_á: á
+txt_ondblclick: Við tvísmellun
+txt_opacity: Ógagnsæi
+txt_open: Opna
+txt_openarchive: Opna skjalasafn
+txt_title_open: Opna skjalasafn, afkóða, tengjast...
+txt_open_bookmark: Opna bókamerki
+txt_cphere: Opnaðu skipanalínuna hér
+txt_open_file: Opna skrá
+txt_open_files: Opna skrá(r)
+txt_open_path: Opna slóð
+txt_opensource: Opinn flytjanlegur skjalasafnari
+txt_openwith: Opna með...
+txt_aborted: Aðgerð hætt
+txt_unit_cd: Ljósdrif
+txt_options: Valkostir
+txt_other: Annað
+txt_otherparams: Aðrar breytur (frjáls breyting)
+txt_oip: úttak, inntak, breytur
+txt_opi: úttak, breytur, inntak
+txt_output: úttak:
+txt_overwrite: Yfirskrifa núverandi skrár
+txt_compressed_size: Pakkað
+txt_paqver: PAQ útgáfa
+txt_type_description_paq: PAQ: hæg en afar öflug þjöppu
+txt_pio: breytur, inntak, úttak
+txt_poi: breytur, úttak, inntak
+txt_parameters: Færibreytur:
+txt_error_partial: Hlutaútdráttur ekki framkvæmdur fyrir núverandi skjalasafnstegund
+txt_passes: Passar
+txt_pw: Lykilorð
+txt_pwlength: Lengd lykilorðs í stöfum (4..64)
+txt_un7z_browse_pw: lykilorð gæti verið krafist
+txt_un7z_browse_pw_other: lykilorðið gæti verið rangt
+txt_paste: Líma
+txt_path: Slóð
+txt_pea_appcolor: Forritshreim
+txt_pea_textcolor: Textalitur í baun
+txt_type_description_pea: PEA: Öryggismiðað skjalasafnssnið með hraðri þjöppun
+txt_peazip_new: PeaZip (nýtt tilvik)
+txt_peazip_help: Netaðstoð
+txt_peazip_web: PeaZip vefsíða
+txt_performall: Öll reiknirit
+txt_name_provide: \ / : * ? ' " < > | stafir eru ekki leyfðir í skráarheitum
+txt_upxorstrip: Veldu Strip og/eða UPX á tvíundarskránni
+txt_not_removable_file: Vinsamlegast lokaðu skránni sem er í notkun til að leyfa PeaZip að fjarlægja hana:
+txt_not_removable: Vinsamlegast lokaðu skrám sem eru í notkun til að leyfa PeaZip að fjarlægja möppuna:
+txt_custom_executable_missing: Vinsamlegast gefðu upp nafn sérsniðnu keyrsluskrárinnar.
+txt_type_unsupported_select: Veldu studda skjalasafnsgerð:
+txt_no_theme_name: Vinsamlegast tilgreindu þemaheiti
+txt_please_wait: Vinsamlegast bíðið
+txt_copy_wait: Vinsamlegast bíðið þar til áætlaðar skráarafritunar-/flutningsaðgerðir ljúki áður en aðrar aðgerðir af sama tagi eru áætlaðar
+txt_previewwith: Forskoðun með...
+txt_projectadmin: Verkefnastjóri:
+txt_type_description_quad: BALZ/QUAD: afkastamiklir ROLZ-byggðir skráarþjöppur
+txt_quickdelete: Fljótleg eyðing
+txt_quit: Hætta
+txt_unit_ram: RAM diskur
+txt_read: Lesið:
+txt_recentarchives: Nýleg skjalasöfn
+txt_rr_hint: Endurheimtarskrár leyfa að reyna að leiðrétta skjalasöfn ef gögn eru spillt
+txt_search_refine: Fínstilla leitarsíu, samþykkir ? og * algildisstafi
+txt_fefreshf5: Endurnýja
+txt_release: útgáfa:
+txt_unit_removable: Fjarlægjanleg eining
+txt_remove_bookmark: Fjarlægja bókamerki
+txt_remove_external_unit: Fjarlægja ytri tæki
+txt_removeselected: Fjarlægja valinn(a) hlut(a)
+txt_rename: Endurnefna
+txt_caption_repair: Viðgerð
+txt_restartrequired2: krefst endurræsingar forritsins til að virkja
+txt_reset: Endurstilla
+txt_reset_archivename: Endurstilla skjalasafnsheiti
+txt_hardreset: Endurstilla bókamerki
+txt_reset_theme: Endurstilla í innbyggt þema
+txt_restore_att: endurheimta upprunalega eiginleika
+txt_run_as: Keyra sem (ekki er hægt að skipta yfir í notendur með autt lykilorð)
+txt_run_as2: Keyra sem annar notandi
+txt_sample: Dæmi:
+txt_saveas: Vista sem
+txt_savehistory: Vista sögugögn
+txt_save_infolder: Vista í möppu (sjálfvirkt)
+txt_savejob: Vista skilgreiningu verkefnis sem forskrift
+txt_savejobdefinition: Vista skilgreiningu verkefnis sem forskrift
+txt_savejobdefinition_hint: Vistaðu verkefnisskilgreininguna sem venjulegan texta; þú getur notað hana úr forskriftunum þínum.
+txt_savelayout: Vista útlit
+txt_save_winstate: Vista stöðu aðalglugga
+txt_search: Leit (endurkvæm, getur tekið smá tíma)
+txt_searchanddrag: Leita og draga hingað
+txt_searchfor: Leita
+txt_nrsearch: Leita hér (ekki endurkvæmt)
+txt_search_hint: Leita í undirmöppum skjalasafnsins að samsvörun með síu(um)
+txt_search_web: Vefleit
+txt_list_searching: Leitar...
+txt_securedelete: Örugg eyðing
+txt_default_description: Veldu fall eða dragðu skrár hingað
+txt_selectall: Velja allt
+txt_selectdir: Veldu möppu
+txt_selected_obj: valið
+txt_selected_objects: Valdir hlutir
+txt_sfx: Sjálfútdráttur
+txt_sendbymail: Senda með pósti
+txt_set_defaults: Stilla sjálfgefnar breytur forritsins
+txt_settings: Stillingar
+txt_sfx_interface: sfx viðmót
+txt_showhints: Sýna vísbendingar og verkfæratákn
+txt_show_messages: Sýna upplýsingaskilaboð
+txt_showpw: Sýna innihald lykilorðsreitsins
+txt_singlevol: Eitt bindi, ekki skipta
+txt_size: Stærð
+txt_sizeb: Stærð (B)
+txt_skip_existing: Sleppa núverandi skrám
+txt_slowercomp: hægari þjöppun en jafn hröð afþjöppun
+txt_smaller: Minni en valinn hlutur
+texti_fastur: Fastur
+txt_solid_block: Stærð blokkar
+txt_solid_auto: Solid, sjálfvirk stilling
+txt_solid_extension: Solid, flokka eftir viðbót
+txt_listtest: því miður er listi/prófunaraðgerðin ekki enn útfærð fyrir þetta snið
+txt_sortbysel: Raða eftir stöðu vals
+txt_list_sorting: Röðun...
+txt_speed: hraði
+txt_split: Skipta
+txt_type_description_split: Skipta skrá með valfrjálsri heilleikaprófun
+txt_split_file: Skipta skrá
+txt_list_nostats: tölfræði ekki tiltæk
+txt_status: Staða
+textastigsverslun: Verslun
+txt_stream_control: Straumstýring
+txt_strip: Fjarlægja fyrir UPX (ráðlagt)
+txt_keyfile_created: Lykilskráin var búin til sem:
+txt_suggestpw: Búa til handahófskennt lykilorð
+txt_noupx: Tákn fjarlægð, UPX þjöppun sleppt
+txt_syntax: Setningafræði:
+txt_sysbenchmark: Kerfisviðmið
+txt_benchmark: Kerfisviðmiðun tekur nokkrar mínútur og notar alla tiltæka örgjörva og minnisauðlindir. Kerfið svarar hugsanlega ekki meðan á viðmiðuninni stendur; keyra hana samt?
+txt_systools: Kerfisverkfæri
+txt_tarbefore: TAR áður
+txt_type_description_tar: TAR: algengt skjalasafnssnið á UNIX kerfum
+txt_taskman: Verkefnastjóri
+txt_caption_test: Prófun
+txt_testall: Prófa allt
+txt_testdisp: Prófa birtan(a) hlut(i)
+txt_testpw: Prófunarlykilorð / lykilskrá
+txt_testsel: Prófa valinn(a) hlut(i)
+txt_col_hint: Liturinn ætti að vera valinn þannig að hann falli vel að litum táknanna og öðrum þáttum í notendaviðmótinu.
+txt_bookmarks_hint: Hægt er að breyta öllum bókamerkjum í skráarvafranum með því að smella á táknið „Fleiri stýringar“ og síðan á „Slökkva á sögu/bókamerkjum“.
+txt_archive_noinput_tolist: Útlitið er tómt: vinsamlegast notið Bæta við skrá(m), Bæta við möppu(m) eða Hlaða inn útliti til að fylla út útlit skjalasafnsins.
+txt_theme: Þema
+txt_icons_found: Þemað hlóðst inn með góðum árangri.
+txt_themename: Þemaheiti
+txt_icons_not_found: Þemað hlóðst ekki rétt inn. Reyndu að skipta yfir í sjálfgefið þema eða þema sem þú veist að virkar.
+txt_theme_create_success: þema búið til í
+txt_theming: Þema
+txt_extand_error: Þessa aðgerð er hægt að framkvæma á einum hlut í einu.
+txt_threads: Þræðir
+txt_titlescolor: Litur titla
+txt_to: til
+txt_toggle_browseflat: Skipta á milli vafra / flatrar sýn (sýna allt)
+txt_toggle_historybookmarks: Opna/loka stöðustiku
+txt_toolbarscolor: Litur á stikum
+txt_tools: Verkfæri
+txt_best: prófaðu bestu stillingarnar (hægt)
+txt_type: Tegund
+textastig_ultra: Ultra
+txt_error_openfile: Gat ekki opnað tilgreinda skrá
+txt_cl_hint: UNACE og UPX keyra alltaf í stjórnborðsstillingu; lista-, prófunar- og viðmiðunarverkefni keyra alltaf í notendaviðmótsstillingu.
+txt_ace_missing: UNACE viðbót vantar; til að meðhöndla ACE skjalasöfn er hægt að sækja viðbótina af vefsíðu PeaZip (þar sem UNACE er lokuð hugbúnaðarlausn er viðbótin ekki innifalin í grunnpakkanum)
+textaeiningar: einingar
+txt_unit_unknown: Óþekkt gerð drifs
+txt_un7z_pw_untested: Óprófað
+texti_upp: Upp
+txt_update: Uppfæra (ef skjalasafn er til staðar)
+txt_type_description_upx: UPX: þjappa aðeins keyrsluskrám
+txt_advfilters: Nota háþróaðar síur
+txt_openfiles_hint: Notið þennan valkost til að hafa með í skjalasafninu skrár sem eru opnar til að skrifa í af öðrum forritum (gagnlegt í afritunarverkefnum)
+txt_usenet: Usenet
+txt_notandanafn: Notandanafn; notið notandi@LÉN eða LÉN\notandi ef þörf krefur.
+txt_using: Notkun:
+txt_volumepea: Hljóðstyrksstýring
+txt_volume_size: Stærð bindis
+txt_type_ext_uns: var sótt með góðum árangri
+txt_websearch: Vefleit
+txt_websites: Vefsíður
+txt_word: Orð
+txt_write: Skrifa:
+txt_ramdompw_hint: Þú getur afritað handahófskennda lykilorðið héðan
+txt_exe_hint: Þú getur slegið inn nafn og breytur keyrsluskrárinnar fyrir sérsniðna þjöppun að vild og valið uppbyggingu setningafræðinnar. Athugið að þú getur einnig breytt setningafræði skipunarinnar handvirkt í flipanum „Stjórnborð“.
+txt_pj_hint2: Þú getur flutt inn skilgreiningu verkefnisins úr notendaviðmótinu í minnisreitinn hér að ofan. Þá geturðu breytt því, ræst það eða vistað það án þess að breyta eða glata verkefninu sem skilgreint er fyrir notendaviðmótið.
+txt_type_description_zip: ZIP: hraðvirkt geymslu-/þjöppunarsnið, algengt í Windows kerfum
+txt_zipcrypto_hint: ZipCrypto (eldri útgáfa)
+
+=== enda PeaZip textahóp ===
+
+=== PeaLauncher textahópur ===
+
+txt_6_9_remaining: eftir
+txt_6_5_abort: Hætta við
+txt_6_5_error: Villa
+txt_6_5_no: Nei
+txt_6_5_warning: Viðvörun
+txt_6_5_yes: Já
+txt_6_5_yesall: Já við öllu
+txt_5_6_update: Athuga hvort uppfærslur séu til staðar
+txt_5_6_cml: Tungumál kerfisvalmyndar
+txt_5_6_donations: Framlög
+txt_5_6_localization: Staðfærsla
+txt_5_6_runasadmin: Keyra sem stjórnandi
+txt_5_6_help: Netaðstoð
+txt_5_5_cancelall: Hætta við allt
+txt_5_3_details: Nánari upplýsingar
+txt_5_3_skrár: skrár
+txt_5_3_möppur: möppur
+txt_5_3_info: Upplýsingar
+txt_5_3_listi: Listi
+txt_5_3_os: Upprunaleg stærð
+txt_5_3_ps: Pakkað stærð
+txt_5_3_test: Prófun
+txt_5_0_extract: Útdráttur
+txt_5_0_frá: frá
+txt_5_0_in: í
+txt_5_0_to: til
+txt_4_5_search: Leita
+txt_4_0_drag: Dragðu hingað skjalasafnið til að draga það út, eða
+txt_4_0_dragorselect: Dragðu hingað eða veldu skrá
+txt_4_0_select: veldu skrá
+txt_3_6_selectdir: Veldu möppu
+txt_3_5_close: Loka
+txt_3_0_details: Fyrir frekari upplýsingar, sjá flipann „Skýrsla“ fyrir alla verkefnaskrána og flipann „Stjórnborð“ fyrir skilgreiningu verksins sem skipanalínu.
+txt_3_0_hints: Vísbendingar um villuna
+txt_3_0_arc: Mögulegar orsakir villunnar geta verið ólæsilegar inntaksskrár (læstar, ekki aðgengilegar, skemmdar, vantar bindi í marghluta skjalasafni...), eða full eða óaðgengileg úttaksslóð.
+txt_3_0_ext: Skjalasafninu gæti verið krafist annars lykilorðs fyrir núverandi aðgerð.
+txt_2_8_oop: Opna úttaksslóð þegar verkefni er lokið
+txt_2_7_validatefn: Aðgerð stöðvuð, ógilt skráarnafn greint:
+txt_2_7_validatecl: Aðgerð stöðvuð, hugsanlega hættuleg skipun greind (þ.e. samtenging skipana er ekki leyfð innan forritsins):
+txt_2_6_open: Opna skjalasafn
+txt_2_5_ace_missing: UNACE viðbót vantar; til að meðhöndla ACE skjalasöfn er hægt að sækja viðbótina af vefsíðu PeaZip (þar sem UNACE er lokuð hugbúnaðarlausn er viðbótin ekki innifalin í grunnpakkanum)
+txt_2_3_pw_errorchar_gwrap: Ekki er hægt að nota gæsalappir í lykilorðum í núverandi kerfi, vinsamlegast breyttu lykilorðinu eða veldu Stjórnborðsstillingu í notendaviðmóti Bakhliðarskráa í Valkostir > Stillingar
+txt_2_3_renameexisting: Endurnefna núverandi skrár sjálfkrafa
+txt_2_3_renameextracted: Endurnefna útdregnar skrár sjálfkrafa
+txt_2_3_cancel: Hætta við
+txt_2_3_dulkóðun: Dulkóðun
+txt_2_3_extinnew: Draga út í nýja möppu
+txt_2_3_keyfile: Lyklaskrá
+txt_2_3_kf_not_found_gwrap: Lykilskráin fannst ekki eða lesin. Veldu aðra lykilskrá.
+txt_2_3_moreoptions: Fleiri valkostir...
+txt_2_3_nopaths: Engar slóðir
+txt_2_3_options: Valkostir
+txt_2_3_overexisting: Yfirskrifa núverandi skrár
+txt_2_3_pw: Lykilorð
+txt_2_3_skipexisting: Sleppa núverandi skrám
+txt_job_unknown: : Óþekkt villa kom upp
+txt_stdjob: [hreyfimyndin hættir þegar verkefni er lokið]
+txt_benchmarkjob: [kerfið mun bregðast hægt við á meðan viðmiðunarprófið er keyrt (nokkrar mínútur)]
+txt_defragjob: [mun ekki svara við afkóðun, þú getur látið það keyra í bakgrunni]
+txt_consolejob: [endurgjöf verkefnisins og nákvæm framvinda er aðgengileg í stjórnborðsglugganum]
+txt_job1: 1: Viðvörun: ekki banvæn villa; t.d. sumar skrár vantar eða eru læstar
+txt_job127: 127: Ekki er hægt að framkvæma umbeðna aðgerð
+txt_job2: 2: Alvarleg villa kom upp
+txt_job255: 255: Verkefni stöðvað af notandanum
+txt_job7: 7: Villa: fékk ranga skipanalínu
+txt_job8: 8: Villa: ekki nægilegt minni fyrir umbeðna aðgerð
+txt_autoclose: Lokaðu þessum glugga þegar verkefni er lokið
+txt_crscale: Þjöppunarhlutfall (lægra, betra):
+txt_console: Stjórnborð
+txt_benchscale: Core 2 Duo 6600 einkunn, jafngildir MHz hraði.
+txt_create: Búa til
+txt_done: Lokið:
+txt_nocl: Tóm skipanalína
+txt_error: Villa:
+txt_explore: Kanna
+txt_extto: Útdráttur í
+txt_halt: Stöðva kerfið þegar verkefni er lokið
+txt_halted: Stöðvað:
+txt_hardware: vélbúnaður
+txt_high: mikil forgangsröðun
+txt_idle: forgangur aðgerðaleysis
+txt_input: Inntak:
+txt_jpaused: Verkefni sett í bið
+txt_jresumed: Verkefni haldið áfram
+txt_job_started: Verkefni hafið
+txt_jobstatus: Staða verkefnis:
+txt_jstopped: Verkefni stöðvað af notandanum
+txt_jobstopped: Notandi stöðvaði verkefnið; þú getur skoðað hluta af niðurstöðunni með því að smella á tengilinn á úttaksslóðina.
+txt_job_success: Verkefni lokið með góðum árangri
+txt_lt: Listi/prófun
+txt_normal: venjulegur forgangur
+txt_ok: Í lagi
+txt_output: Úttak:
+txt_pause: Hlé
+txt_paused: Hlé gert,
+txt_p_high: Forgangsröðun stillt á háan
+txt_p_idle: Forgangsröðun stillt á biðstöðu
+txt_p_normal: Forgangsröðun stillt á venjulegt
+txt_p_realtime: Forgangsröðun stillt á rauntíma
+txt_rating: Einkunn:
+txt_rt: forgangur í rauntíma
+txt_report: Skýrsla
+txt_resume: Ferilskrá
+txt_priority: Smelltu til að stilla forgang verkefnis
+txt_running: Hlaupandi,
+txt_isrunning: Keyrsla...
+txt_saveas: Vista sem
+txt_savejob: Vista skilgreiningu verkefnis sem forskrift
+txt_savelog: Vista verkefnaskrá
+txt_software: hugbúnaður
+txt_speedscale: Hraði, lógaritmískur kvarði (hærri, betri):
+txt_status: Staða
+txt_stop: Stöðva
+txt_bench: Kerfisviðmið
+txt_threads: Þræðir:
+txt_time: Tími:
+
+=== enda PeaLauncher textahóp ===
+
+=== um textahóp ===
+
+ÚTDRAGA SAFNSKRÁ(R)
+Frá kerfinu
+- hægrismelltu á skjalasafnið/skjalasafnið og smelltu á "Draga út hér" eða "Draga út hér (snjall ný mappa)" í samhengisvalmynd kerfisins til að draga út án frekari aðgerða. Snjall ný mappa valkosturinn sér um að búa til nýja möppu á efsta stigi aðeins ef nauðsyn krefur, þegar rót skjalasafnsins inniheldur fleiri en eina skrá eða möppu.
+- annars er hægt að nota valmyndina „Útdráttur...“ til að fá fleiri valkosti: úttaksslóð, lykilorð, draga skrár út í nýja möppu, velja að sleppa, endurnefna eða skrifa yfir núverandi skrár o.s.frv.
+
+Opnaðu skjalasafn í PeaZip, þ.e. með tvísmelli, eða dragðu skjalasafn á glugga eða táknmynd PeaZip.
+- smelltu á "Útdráttur" í tækjastikunni eða í samhengisvalmyndinni til að draga aðeins út valda hluti í gegnum staðfestingargluggann sem gerir kleift að stilla alla valkosti (úttaksslóð, lykilorð, nafngiftarstefnu, útdrátt í nýja möppu o.s.frv.)
+- dragðu skrár og möppur á viðkomandi áfangastað, aðeins valið efni verður dregið út (sjá nánari upplýsingar í kafla um drag and drop í PeaZip)
+- smelltu á fellivalmyndina fyrir flýtiútdrátt hægra megin við „Útdráttur“ í tækjastikunni, þá er hægt að draga allt skjalasafnið beint út á algengustu áfangastaði (sleppa staðfestingarglugganum) og stilla mikilvægustu valkostina; flýtilyklar: Ctrl+E (eða F12) dregur út allt skjalasafnið, biður um úttaksmöppu; Ctrl+Alt+E dregur út skjalasafnið í núverandi möppu; Ctrl+Shift+E dregur út á skjáborð; Ctrl+Alt+Shift+E dregur út í skjöl; Ctrl+0 dregur út á fyrri slóð; Ctrl+1..8 dregur út á slóð bókamerkis 1..8 (ef skilgreint er).
+
+Opnaðu PeaZip, veldu eitt eða fleiri skjalasöfn og smelltu á „Extract“ í tækjastikunni eða samhengisvalmyndinni, eða notaðu flýtileiðir fyrir útdrátt eins og útskýrt var í fyrri lið.
+
+DRA AÐEINS ÚT VALDA HLUTI ÚR SAFNINU
+Opnaðu skjalasafn í PeaZip, þ.e. með tvísmelli, eða dragðu skjalasafn á glugga eða táknmynd PeaZip.
+- smelltu á "Útdráttur" í tækjastikunni: aðeins valin atriði verða dregin út
+- dragðu skrár og möppur á viðkomandi áfangastað, aðeins valið efni verður dregið út
+- hægrismelltu og í hópnum „Útdráttur“ í samhengisvalmyndinni smelltu á „Útdráttur valinna“ (til að draga aðeins út valin atriði) eða „Útdráttur birtan“ (til að draga út efni úr núverandi möppu eða leitarsíu)
+
+SLÁÐU INN LYKILORÐ TIL AÐ SKÖFRA EÐA DRA ÚT SAFNI
+Smelltu á hengilásatáknið til að slá inn lykilorð og valfrjálst lykilskrá.
+Táknið birtist bæði í stöðustiku skráarvafrans í PeaZip og í útdráttarviðmóti skjalasafnsins; þegar lykilorðið hefur verið stillt mun táknið breyta um lit.
+
+BÚA TIL SAFN
+Frá kerfinu
+- hægrismelltu á hluti sem á að vista og smelltu á "Bæta við skjalasafn" í samhengisvalmyndinni eða SendaTil valmyndinni. Þá opnast staðfestingargluggi fyrir stofnun skjalasafns, fleiri valkostir eru í boði í flipanum „Ítarlegt“; smelltu á Í lagi til að búa til skjalasafnið.
+- eða dragðu skrár/möppur í glugga eða flýtileið í PeaZip; sama viðmót fyrir skjalagerð mun birtast.
+
+Frá PeaZip
+- veldu hluti sem á að vista og smelltu á hnappinn „Bæta við“; sama viðmót fyrir stofnun skjalasafns mun birtast.
+
+BÆTA VIÐ SKRÁM/MÖPPUM TIL AÐ UPPDATERA FYRIRLIGGANDI SAFNSKRÁ
+Opnaðu skjalasafn í PeaZip (þ.e. með tvísmellum eða dragðu skjalasafn á glugga eða táknmynd PeaZip), dragðu síðan skrár og möppur sem á að bæta við skjalasafnið (eða smelltu á "Bæta við" hnappinn og notaðu samhengisvalmynd forritsins til að bæta hlutum við skjalasafnið).
+Þá opnast staðfestingargluggi fyrir stofnun skjalasafns, smellið á Í lagi til að uppfæra núverandi skjalasafn.
+
+BÚA TIL AÐ SKILA SAFNI Í MINNRI SKRÁR
+Þegar þú býrð til skjalasafn eins og útskýrt er í fyrri atriðum, smelltu á fellivalmyndina „Eitt bindi“ til að velja stærð fyrir úttaksskrárnar (bindi) sem skjalasafninu verður skipt í.
+Algengustu gerðir skjalasafna styðja þennan valkost.
+
+BÚA TIL DULKRYPT SAFN
+Smelltu á lástáknið til að slá inn lykilorð og valfrjálst lykilskrá; táknið birtist bæði í stöðustiku skráarvafrans í PeaZip og í viðmóti við gerð skjalasafns.
+Til að fela nöfn skráa og möppna sem eru í skjalasafninu skaltu haka við „Dulkóða einnig skráarnöfn“. Athugið að þetta verður aðeins notað ef skjalasafnið verður búið til í sniði sem styður þessa aðgerð, eins og 7Z og ARC.
+Athugið að í viðmóti fyrir skjalasöfnun, við hliðina á hengilásatákninu, er viðvörun sem sýnir sjónrænt hvort dulkóðun er stillt og hvort núverandi skjalasnið styður dulkóðun.
+
+BÚA TIL AÐSKILIN SAFN
+Bætið við hlutum sem á að vista (með „Bæta við“ hnappinum í PeaZip, eða úr samhengisvalmynd kerfisins eða SendaTil valmyndinni) og áður en þið staðfestið með „Í lagi“, hakið við valkostinn „Bæta við í aðskilin skjalasöfn“.
+
+UMBREYTA SAFNSKJÖLUM
+Í PeaZip skaltu velja skjalasöfn sem á að umbreyta og smella á "Umbreyta" á tækjastikunni eða samhengisvalmyndinni. Einnig er hægt að bæta við skrám og möppum sem ekki eru skjalasafn, en munurinn er sá að skjalasöfnin eru dregin út fyrir þjöppunarstigið.
+Með því að nota rofann „Umbreyta núverandi skjalasöfnum“ ásamt rofanum „Bæta við í sérstakt skjalasafn“ (sjálfgefið) framkvæmir það fjöldaumbreytingu á skráðum skjalasöfnum. Án þess rofa er skjalasöfnunarumbreytingin ætluð til að sameina inntaksgögn í eitt skjalasafn, sem bætir skilvirkni þjöppunar þar sem hún gerir kleift að þjappa upprunalegu gögnunum aftur úr óþjöppuðu formi.
+
+BÚA TIL SKJÖLSKÝRSLUR BEINT Í ÁKVÆÐNU FORMI OG MEÐ VALIÐU ÞJÓTTUNARSTIGI
+Með því að nota aðferðina „Kerfissamþætting“ í Valkostavalmyndinni er hægt að virkja færslur í samhengisvalmyndinni til að bæta völdum skrám/möppum beint við ZIP-, 7Z- eða sjálfútdráttar skjalasafn.
+Fyrir Zip og 7Z snið er einnig hægt að virkja færslur í samhengisvalmyndinni til að þjappa á hraðasta, venjulega eða öfgaþjöppunarstig, og komast framhjá sjálfgefna þjöppunarstigi fyrir valið snið.
+
+LYKILORÐASTJÓRI
+Lykilorðastjórinn er aðgengilegur úr aðalvalmyndinni, Verkfæri > Lykilorðastjóri eða úr Lykilorðseyðublaðinu, úr fellivalmyndinni vinstra megin við Lykilorðsreitinn.
+Hægt er að velja vistuð lykilorð úr fellivalmyndinni vinstra megin við lykilorðið sem er skráð í Lykilorðseyðublaðinu, eða afrita þau úr lykilorðastjóranum til að nota í hvaða öðru forriti sem er.
+Ef ekkert aðallykilorð er stillt fyrir lykilorðastjórann er lykilorðalistinn aðgengilegur án þess að biðja um staðfestingu, annars birtast lykilorð ekki fyrr en notandinn staðfestir sig rétt.
+
+STILLA FORRITIÐ
+Valkostir > Staðsetning (og í Valkostir > Stillingar, fyrsti flipi) gerir kleift að stilla tungumál forritsins.
+Valkostir > Skráartengingar og kerfissamþætting ræsir leiðsagnarforrit til að stilla skráartengingar, samhengisvalmynd og færslur í SendaTil-valmyndinni (í Windows).
+Valkostir > Stillingar leyfa að breyta stillingum forrita
+Skipulagsvalmyndin inniheldur færslu til að sérsníða, virkja eða slökkva á eiginleikum vafrans, eins og tækjastiku, veffangastiku, hliðarstiku o.s.frv.
+
+Hjálp í Formúlu 1	
+F2 	endurnefna skrá(r) / Ctrl+F2 afrita valda í / Shift+F2 færa valda í
+F3 	leit (endurkvæmnivalkostur er munaður) / Ctrl+F3 byrja sem ekki endurkvæm (leita hér) / Shift+F3 endurkvæm / Alt+F3 kerfisleit
+F4 	sýna sprettivalmynd / Ctrl+Shift+F4 skoða rót tölvunnar / Ctrl+F4 skoða skjáborð / Shift+F4 skoða forsíðu
+F5 	endurnýjun
+F6 	skipta um vafra/flat sýn
+F7 	bæta við bókamerki / Ctrl+F7 opna í nýju tilviki af PeaZip / Shift+F7 opna skipanalínu í völdum slóð / Alt+F7 kanna valda slóð
+F8 	skoða fyrsta atriðið í bókamerkjalistanum (Ctrl, annað, Shift, þriðja)
+F9 	setja lykilorð/lykilskrá / Shift+F9 lykilorðastjórnun / Ctrl+F9 búa til lykilskrá eða handahófskennt lykilorð / Ctrl+Shift+F9 setja ítarlegar síur
+F10 	valmynd / Ctrl+F10 keyra sem annar notandi / Alt+F10 keyra sem stjórnandi (Windows Vista og nýrri kerfi)
+F11 	skipta um allan skjá / Ctrl+F11 ívafsstillingu
+F12 	dregur allt út í...
+
+UM PEAZIP
+
+PeaZip er opinn hugbúnaður fyrir skráar- og skjalasafnsstjórnun: fjölpallaforrit, fáanlegt sem flytjanlegur og uppsetningarhæfur hugbúnaður fyrir Linux (skjáborðshlutlaust forrit), macOS og 32 og 64 bita Windows.
+
+PeaZip gerir kleift að nota öflugar leitarsíur fyrir efni skjalasafna; búa til og draga út mörg skjalasöfn í einu; búa til sjálfútdragandi skjalasöfn; flytja út verkefnaskilgreiningar sem skipanalínu; vista skjalavörslu- og útdráttarútlit; bókamerkja skjalasöfn og möppur; skanna og opna með sérsniðnum forritum þjappaðar og óþjappaðar skrár o.s.frv. ...
+
+Aðrir eiginleikar: sterk dulkóðun, öflug afritun skráa, skipting/sameining skráa (skráarspann), örugg gagnaeyðing, samanburður, eftirlits- og kjötsamsetningarskrár, kerfisviðmið, myndun handahófskenndra lykilorða og lykilskráa.
+
+Niðurhal: https://peazip.github.io
+Frekari upplýsingar: https://peazip.github.io/peazip-free-archiver.html
+Aðstoð: https://peazip.github.io/peazip-help.html
+Algengar spurningar: https://peazip.github.io/peazip-help-faq.html
+
+Þökkum öllum þeim sem lögðu sitt af mörkum til vaxtar PeaZip verkefnisins við þróun hugbúnaðaríhluta með opnum hugbúnaði sem notaðir eru í þessu forriti (sjá vefsíðu fyrir fullan lista), og öllum notendum sem leggja sitt af mörkum með endurgjöf, reynslu og ráðleggingum.
+
