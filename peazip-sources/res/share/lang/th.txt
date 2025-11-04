@@ -1,4 +1,4 @@
-=== PeaZip language file ===
+﻿=== PeaZip language file ===
 Thai
 10.7
 Translated by: khanhkhanhlele
@@ -1250,9 +1250,9 @@ txt_pj_hint2: คุณสามารถนำเข้าคำจำกัด
 txt_type_description_zip: ZIP: รูปแบบการเก็บถาวร/บีบอัดที่รวดเร็ว เป็นที่นิยมบนระบบ Windows
 txt_zipcrypto_hint: ZipCrypto (รุ่นเก่า)
 
-=== end PeaLauncher text group ===
+=== end PeaZip text group ===
 
-=== about text group ===
+=== PeaLauncher text group ===
 
 txt_6_9_remaining: ที่เหลืออยู่
 txt_6_5_abort: ยกเลิก
@@ -1371,9 +1371,9 @@ txt_bench: การประเมินผลระบบ
 txt_threads: เธรด:
 txt_time: เวลา:
 
-=== สิ้นสุดกลุ่มข้อความ PeaLauncher ===
+=== end PeaLauncher text group ===
 
-=== เกี่ยวกับกลุ่มข้อความ ===
+=== about text group ===
 
 สกัดไฟล์เก็บถาวร
 จากระบบ

@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Česky
-10.7
+10.8
 Translated by: José Sabata
 Last rev. by: José Sabata
 Last rev.: 20251030
 
 === PeaZip text group ===
 
+txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
 txt_10_7_errload: Nelze zobrazit obrázek
 txt_10_7_errfile: Soubor nebyl nalezen
 txt_10_7_first: První

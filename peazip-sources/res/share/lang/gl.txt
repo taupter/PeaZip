@@ -401,6 +401,106 @@ txt_5_4_lv: Última visita
 txt_5_4_deletearchivesconfirm: Confirmar eliminación dos arquivos orixinais?
 txt_5_4_deletefilesconfirm: Confirmar eliminación dos ficheiros orixinais?
 txt_5_4_used: Usado
+txt_5_3_profilebest: Best compression, 7Z format Ultra level
+txt_5_3_profileadvanced: Advanced compression, 7Z format
+txt_5_3_profilenormal: Normal ZIP compression, compatible with most extractors
+txt_5_3_profileveryfast: Very fast ZIP compression, recommended for large multimedia files
+txt_5_3_profilepassword: Protect with password, 7Z format
+txt_5_3_profile10mb: Keep output under 25 MB, for mail attachment limitations
+txt_5_3_profilesfx: Auto extracting, recipient will not need an extraction software
+txt_5_3_cml: System context menu language
+txt_5_3_cmlmessage: Double click on desired context menu language and confirm registry merging. This setting needs to be re-applied when the application is installed/updated or after System integration wizard is used.
+txt_5_3_exc: Exclusion filters prevail on inclusion filters
+txt_5_3_ia: Include also
+txt_5_3_io: Include only
+txt_5_3_rec: Recurse subdirs
+txt_5_3_resetsi: Re-configure system integration (context menu, SendTo, file associations)?
+txt_5_2_oadd: Archive to original path
+txt_5_2_zerodelete: Do you want to delete and overwrite with all 0 selected file(s)? The operation can't be undone and files will be not recoverable
+txt_5_2_zfree: Do you want to overwrite with all 0 free space on this drive?
+txt_5_2_sdfree: Do you want to securely delete free space on this drive?
+txt_5_2_oext: Extract to original path
+txt_5_2_securedeletefree: Secure delete free space
+txt_5_2_free: This operation can take some minutes and, if performed often, it can quickly wear flash-based disks
+txt_5_2_zerofiles: Zero delete
+txt_5_2_zerofree: Zero delete free space
+txt_5_1_schedadd: Add schedule
+txt_5_1_schederr: Cannot create schedule
+txt_5_1_daily: Daily
+txt_5_1_day: Day
+txt_5_1_days: Days
+txt_5_1_enddate: End date
+txt_5_1_every: Every
+txt_5_1_w6: Friday
+txt_5_1_hourly: Hourly
+txt_5_1_hours: Hours
+txt_5_1_last: Last
+txt_5_1_schedmanage: Task Scheduler, manage tasks saved in PeaZip branch
+txt_5_1_scriptmanage: Manage saved scheduled scripts
+txt_5_1_w2: Monday
+txt_5_1_monthly: Monthly
+txt_5_1_months: Months
+txt_5_1_onlogin: On login
+txt_5_1_onstart: On start
+txt_5_1_once: Once
+txt_5_1_w7: Saturday
+txt_5_1_schedule: Schedule
+txt_5_1_schedexplain: Create a plain text script from GUI task definition and schedule it. Scheduled tasks' scripts are saved in "Scheduled scripts" folder. To edit or delete scheduled tasks you can use system's Task Scheduler, all scheduled tasks created by PeaZip are collected in "PeaZip" branch of the tasks library.
+txt_5_1_schedok: Schedule created successfully
+txt_5_1_schedscripts: Saved scheduled scripts
+txt_5_1_startdate: Start date
+txt_5_1_starttime: Start time
+txt_5_1_w1: Sunday
+txt_5_1_schedname: Task name, identify both the saved scheduled script and the system's scheduled task
+txt_5_1_ts: Task Scheduler
+txt_5_1_w5: Thursday
+txt_5_1_w3: Tuesday
+txt_5_1_w4: Wednesday
+txt_5_1_weekly: Weekly
+txt_5_1_weeks: Weeks
+txt_5_0_bc: Breadcrumb
+txt_5_0_resetpm: Do you confirm resetting Password Manager? All passwords stored in PeaZip's Password Manager will be lost if confirmed.
+txt_5_0_enum: Enumerate directories' content
+txt_5_0_music: Music
+txt_5_0_ps: Open PowerShell here
+txt_5_0_perf: Performances
+txt_5_0_pictures: Pictures
+txt_5_0_removeall: Remove all
+txt_5_0_resetbookmarks: Reset Bookmarks to default? (Bookmarks can then be customized with Bookmarks > Organize)
+txt_5_0_sh: Session history
+txt_5_0_skip: Skip enumerating directories' content in layout
+txt_5_0_videos: Videos
+txt_4_9_frame: Frame
+txt_4_9_listth: List and thumbnails
+txt_4_9_shadow: Shadow
+txt_4_9_style: Style
+txt_4_8_attach25: 25 MB (attachment limit)
+txt_4_8_crop: Crop
+txt_4_8_detailsno: Light file browser
+txt_4_8_details: File browser with thumbnails
+txt_4_8_fit: Fit to
+txt_4_8_fitl: Fit to largest
+txt_4_8_flip: Flip
+txt_4_8_fullscreen: Full screen
+txt_4_8_fun: Functions
+txt_4_8_h: Height
+txt_4_8_keeparchive: Keep archive
+txt_4_8_noresize: Keep original size
+txt_4_8_iconl: Large images
+txt_4_8_iconm: Icons and images
+txt_4_8_imagemanager: Image manager
+txt_4_8_immersive: Immersive
+txt_4_8_listno: Minimal list
+txt_4_8_aspect: Maintain aspect ratio
+txt_4_8_mirror: Mirror
+txt_4_8_presets: Presets
+txt_4_8_replace: Replace original image(s)? "No" apply the transformation in new file(s).
+txt_4_8_resize: Resize
+txt_4_8_rl: Rotate left
+txt_4_8_rr: Rotate right
+txt_4_8_stop: Stop
+txt_4_8_t: Transform
+txt_4_8_w: Width
 txt_4_7_pk: Crear constrasinal aletoria/arquivo de chave
 txt_4_7_spchar: Limitar os caracteres de letras e números
 txt_4_7_recycleask:Mover arquivo(s) selecionado(s) a a Papeleira de Reciclaxe?
@@ -1278,27 +1378,27 @@ Importante:
 
 Cambio de "" a “”
 
-EXTRAER ARQUIVO(S)
-Desde o sistema
-- Fai clic dereito sobre o(s) arquivo(s) e, no menú contextual do sistema, selecciona "Extraer aquí" ou "Extraer aquí (nun novo cartafol)" para extraer sen máis interacción.
-- Tamén podes empregar a opción "Extraer..." para acceder a máis opcións: ruta de saída, contrasinal, extraer ficheiros a un novo directorio, elixir se omitir, renomear ou sobrescribir ficheiros existentes, etc.
+EXTRACT ARCHIVE(S)
+From the system 
+- rightclick on the archive(s) and in system’s context menu click "Extract here" or "Extract here (in new folder)" to extract with no further interaction
+- otherwise use "Extract..." menu entry for having more options: output path, password, extract files to a new directory, chose to skip, rename or overwrite existing files etc.
 
-Abre un arquivo en PeaZip (p. ex. facendo dobre clic ou arrastrando o arquivo á xanela ou icona de PeaZip)
-- Fai clic en "Extraer" na barra de ferramentas ou no menú contextual para extraer só os obxectos seleccionados a través do diálogo de confirmación, que permite configurar todas as opcións (ruta de saída, contrasinal, política de nomes, extraer a un novo directorio, etc).
-- Arrastra ficheiros e cartafoles ao destino desexado: só se extraerá o contido seleccionado (para máis información consulta o capítulo sobre arrastrar e soltar en PeaZip).
-- Fai clic no botón despregable de extracción rápida á dereita de "Extraer" na barra de ferramentas; permite extraer directamente todo o arquivo a destinos comúns (saltando o diálogo de confirmación) e establecer as opcións máis importantes. Atallos de teclado: Ctrl+E (ou F12) extrae todo o arquivo, pedindo o directorio de saída. Ctrl+Alt+E extrae o arquivo no seu cartafol actual. Ctrl+Shift+E extrae no escritorio. Ctrl+Alt+Shift+E extrae en Documentos. Ctrl+1..8 extrae á ruta do marcador 1..8 (se está definido).
+Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
+- click on "Extract" in toolbar or in context menu to extract only selected objects trough the confirmation dialog allowing to set all options (output path, password, naming policy, extract to a new directory etc)
+- drag files and folders to the desired destination, only selected content will be extracted (for more information see chapter about drag and drop in PeaZip)
+- click the quick extraction dropdown button on the right of “Extract” in the toolbar, it allows to directly extract the entire archive to most common destinations (skipping the confirmation dialog) and to set most important options; keyboard shortcuts: Ctrl+E (or F12) extracts the entire archive, asks for output directory; Ctrl+Alt+E extracts archive in its current folder; Ctrl+Shift+E extracts to desktop; Ctrl+Alt+Shift+E extracts to documents; Ctrl+1..8 extracts to path of bookmark 1..8 (if defined)
 
-Abre PeaZip, selecciona un ou máis arquivos e fai clic en "Extraer" na barra de ferramentas ou no menú contextual, ou emprega os destinos de extracción rápida explicados no punto anterior.
+Open PeaZip, select one or more archives and click “Extract” in toolbar or context menu, or use quick extraction destinations as explained at the previous point.
 
-EXTRAER SÓ OS OBXECTOS SELECCIONADOS DO ARQUIVO
-Abre un arquivo en PeaZip (dobre clic ou arrastrar o arquivo á xanela ou icona).
-- Fai clic en "Extraer" na barra de ferramentas: só se extraerán os elementos seleccionados.
-- Arrastra ficheiros e cartafoles ao destino desexado: só se extraerá o contido seleccionado.
-- Fai clic dereito e, no grupo "Extraer" do menú contextual, selecciona "Extraer seleccionados" (para extraer só os elementos seleccionados) ou "Extraer mostrados" (para extraer o contido do directorio actual ou do filtro de busca actual).
+EXTRACT ONLY SELECTED OBJECTS FROM THE ARCHIVE
+Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
+- click "Extract" in toolbar: only selected items will be extracted
+- drag files and folders to the desired destination, only selected content will be extracted
+- rightclick and in “Extract” group of the context menu click “Extract selected” (to extract only selected items) or “Extract displayed” (to extract content of current directory or of current search filter)
 
-INTRODUCIR UN CONTRASINAL PARA NAVEGAR OU EXTRAER UN ARQUIVO
-Fai clic na icona do cadeado para introducir un contrasinal e, opcionalmente, un ficheiro de clave.
-A icona aparece tanto na barra de estado do explorador de ficheiros de PeaZip como na interface de extracción. Unha vez establecido o contrasinal, a icona cambiará de cor.
+ENTER A PASSWORD TO BROWSE OR EXTRACT AN ARCHIVE
+Click on the padlock icon to enter a password and optionally a keyfile.
+The icon is featured both in PeaZip’s file browser’s status bar and in the archive extraction interface; once the password is set the icon will change color.
 
 CREATE ARCHIVE
 From the system

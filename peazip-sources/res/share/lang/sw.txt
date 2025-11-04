@@ -1,4 +1,4 @@
-=== PeaZip language file ===
+﻿=== PeaZip language file ===
 Swahili
 10.7
 Translated by: khanhkhanhlele
@@ -1250,9 +1250,9 @@ txt_pj_hint2: Unaweza kuingiza ufafanuzi wa kazi kutoka kwa sehemu ya mbele ya G
 txt_type_description_zip: ZIP: uhifadhi wa haraka wa kumbukumbu/umbizo la kubana, kawaida kwenye mifumo ya Windows
 txt_zipcrypto_hint: ZipCrypto (urithi)
 
-=== malizia kikundi cha maandishi cha PeaZip ===
+=== end PeaZip text group ===
 
-=== Kikundi cha maandishi cha PeaLauncher ===
+=== PeaLauncher text group ===
 
 txt_6_9_iliyobaki: iliyobaki
 txt_6_5_abort: Acha
@@ -1467,4 +1467,3 @@ Usaidizi: https://peazip.github.io/peazip-help.html
 Maswali Yanayoulizwa Mara kwa Mara: https://peazip.github.io/peazip-help-faq.html
 
 Shukrani nyingi kwa watu wote wanaochangia ukuaji wa mradi wa PeaZip kutengeneza vipengele vya programu ya Open Source vinavyotumika katika programu hii (tazama tovuti kwa orodha kamili), na kwa watumiaji wote wanaochangia kwa maoni, uzoefu na ushauri.
-

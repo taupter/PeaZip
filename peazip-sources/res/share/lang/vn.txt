@@ -1151,7 +1151,6 @@ txt_searchfor: Tìm kiếm
 txt_nrsearch: Tìm kiếm tại đây (không đệ quy)
 txt_search_hint: Tìm kiếm trong các thư mục con của kho lưu trữ các mục khớp với bộ lọc
 txt_search_web: Tìm kiếm trên web
-txt_2_9_selected: Đã chọn
 txt_list_searching: Đang tìm kiếm...
 txt_securedelete: Xóa an toàn
 txt_default_description: Chọn một chức năng hoặc kéo tệp vào đây
@@ -1251,9 +1250,9 @@ txt_pj_hint2: Bạn có thể nhập định nghĩa tác vụ từ giao diện n
 txt_type_description_zip: ZIP: định dạng nén/lưu trữ nhanh, phổ biến trên các hệ thống Windows
 txt_zipcrypto_hint: ZipCrypto (cũ)
 
----
-## PeaLauncher Text Group (Nhóm Văn bản PeaLauncher)
----
+=== end PeaZip text group ===
+
+=== PeaLauncher text group ===
 
 txt_6_9_remaining: còn lại
 txt_6_5_abort: Hủy bỏ
@@ -1378,170 +1377,101 @@ txt_time: Thời gian:
 
 Yêu cầu đã rõ, tôi sẽ dịch toàn bộ văn bản sang tiếng Việt mà không dùng dấu ngoặc đơn cho các từ gốc.
 
-EXTRACT ARCHIVE(S)
 GIẢI NÉN KHO LƯU TRỮ
 
-From the system 
 Từ hệ thống
-- rightclick on the archive(s) and in system’s context menu click "Extract here" or "Extract here (in new folder)" to extract with no further interaction
 - nhấp chuột phải vào kho lưu trữ và trong menu ngữ cảnh của hệ thống nhấp "Giải nén tại đây" hoặc "Giải nén tại đây (trong thư mục mới)" để giải nén mà không cần tương tác thêm
-- otherwise use "Extract..." menu entry for having more options: output path, password, extract files to a new directory, chose to skip, rename or overwrite existing files etc.
 - nếu không, sử dụng mục menu "Giải nén..." để có thêm tùy chọn: đường dẫn đầu ra, mật khẩu, giải nén tệp vào một thư mục mới, chọn bỏ qua, đổi tên hoặc ghi đè các tệp hiện có, v.v.
 
-Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
 Mở một kho lưu trữ trong PeaZip, tức là bằng cách nhấp đúp, hoặc kéo kho lưu trữ vào cửa sổ hoặc biểu tượng của PeaZip
-- click on "Extract" in toolbar or in context menu to extract only selected objects trough the confirmation dialog allowing to set all options (output path, password, naming policy, extract to a new directory etc)
 - nhấp vào "Giải nén" trên thanh công cụ hoặc trong menu ngữ cảnh để chỉ giải nén các đối tượng đã chọn thông qua hộp thoại xác nhận cho phép đặt tất cả các tùy chọn (đường dẫn đầu ra, mật khẩu, chính sách đặt tên, giải nén vào một thư mục mới, v.v.)
-- drag files and folders to the desired destination, only selected content will be extracted (for more information see chapter about drag and drop in PeaZip)
 - kéo tệp và thư mục đến đích mong muốn, chỉ nội dung đã chọn sẽ được giải nén (để biết thêm thông tin xem chương về kéo và thả trong PeaZip)
-- click the quick extraction dropdown button on the right of “Extract” in the toolbar, it allows to directly extract the entire archive to most common destinations (skipping the confirmation dialog) and to set most important options; keyboard shortcuts: Ctrl+E (or F12) extracts the entire archive, asks for output directory; Ctrl+Alt+E extracts archive in its current folder; Ctrl+Shift+E extracts to desktop; Ctrl+Alt+Shift+E extracts to documents; Ctrl+1..8 extracts to path of bookmark 1..8 (if defined)
-- nhấp vào nút thả xuống giải nén nhanh ở bên phải "Giải nén" trên thanh công cụ, nó cho phép giải nén trực tiếp toàn bộ kho lưu trữ đến các đích phổ biến nhất (bỏ qua hộp thoại xác nhận) và đặt các tùy chọn quan trọng nhất; phím tắt: Ctrl+E hoặc F12 giải nén toàn bộ kho lưu trữ, hỏi thư mục đầu ra; Ctrl+Alt+E giải nén kho lưu trữ trong thư mục hiện tại của nó; Ctrl+Shift+E giải nén vào màn hình nền; Ctrl+Alt+Shift+E giải nén vào tài liệu; Ctrl+1..8 giải nén vào đường dẫn của dấu trang 1 đến 8 nếu được định nghĩa
+- nhấp vào nút thả xuống giải nén nhanh ở bên phải "Giải nén" trên thanh công cụ, nó cho phép giải nén trực tiếp toàn bộ kho lưu trữ đến các đích phổ biến nhất (bỏ qua hộp thoại xác nhận) và đặt các tùy chọn quan trọng nhất; phím tắt: Ctrl+E hoặc F12 giải
 
-Open PeaZip, select one or more archives and click “Extract” in toolbar or context menu, or use quick extraction destinations as explained at the previous point.
 Mở PeaZip, chọn một hoặc nhiều kho lưu trữ và nhấp “Giải nén” trên thanh công cụ hoặc menu ngữ cảnh, hoặc sử dụng các đích giải nén nhanh như đã giải thích ở điểm trước.
 
-EXTRACT ONLY SELECTED OBJECTS FROM THE ARCHIVE
 CHỈ GIẢI NÉN CÁC ĐỐI TƯỢNG ĐÃ CHỌN TỪ KHO LƯU TRỮ
 
-Open an archive in PeaZip, i.e. with doubleclick, or drag an archive on PeaZip’s window or icon
 Mở một kho lưu trữ trong PeaZip, tức là bằng cách nhấp đúp, hoặc kéo kho lưu trữ vào cửa sổ hoặc biểu tượng của PeaZip
-- click "Extract" in toolbar: only selected items will be extracted
 - nhấp "Giải nén" trên thanh công cụ: chỉ các mục đã chọn sẽ được giải nén
-- drag files and folders to the desired destination, only selected content will be extracted
 - kéo tệp và thư mục đến đích mong muốn, chỉ nội dung đã chọn sẽ được giải nén
-- rightclick and in “Extract” group of the context menu click “Extract selected” (to extract only selected items) or “Extract displayed” (to extract content of current directory or of current search filter)
-- nhấp chuột phải và trong nhóm “Giải nén” của menu ngữ cảnh nhấp “Giải nén đã chọn” để chỉ giải nén các mục đã chọn hoặc “Giải nén đang hiển thị” để giải nén nội dung của thư mục hiện tại hoặc của bộ lọc tìm kiếm hiện tại
 
-ENTER A PASSWORD TO BROWSE OR EXTRACT AN ARCHIVE
 NHẬP MẬT KHẨU ĐỂ DUYỆT HOẶC GIẢI NÉN KHO LƯU TRỮ
 
-Click on the padlock icon to enter a password and optionally a keyfile.
 Nhấp vào biểu tượng ổ khóa để nhập mật khẩu và tùy chọn tệp khóa.
-The icon is featured both in PeaZip’s file browser’s status bar and in the archive extraction interface; once the password is set the icon will change color.
 Biểu tượng được hiển thị cả trên thanh trạng thái của trình duyệt tệp của PeaZip và trong giao diện giải nén kho lưu trữ; sau khi mật khẩu được đặt, biểu tượng sẽ đổi màu.
 
-CREATE ARCHIVE
 TẠO KHO LƯU TRỮ
 
-From the system
 Từ hệ thống
-- rightclick on objects to be archived and click on "Add to archive" in context menu or SendTo menu. It will open the archive creation confirmation dialog, more options are available in “Advanced” tab; click OK to create the archive.
 - nhấp chuột phải vào các đối tượng cần lưu trữ và nhấp vào "Thêm vào kho lưu trữ" trong menu ngữ cảnh hoặc menu SendTo. Nó sẽ mở hộp thoại xác nhận tạo kho lưu trữ, có thêm tùy chọn trong tab “Nâng cao”; nhấp OK để tạo kho lưu trữ.
-- alternatively, drag files/folders to PeaZip’s window or shortcut; the same archive creation interface will be shown.
 - thay vào đó, kéo tệp hoặc thư mục vào cửa sổ hoặc phím tắt của PeaZip; giao diện tạo kho lưu trữ tương tự sẽ được hiển thị.
 
-From PeaZip 
 Từ PeaZip
-- select objects to be archived and click on "Add" button; the same archive creation interface will be shown.
 - chọn các đối tượng cần lưu trữ và nhấp vào nút "Thêm"; giao diện tạo kho lưu trữ tương tự sẽ được hiển thị.
 
-ADD FILES/FOLDERS TO UPDATE EXISTING ARCHIVE
 THÊM TỆP HOẶC THƯ MỤC ĐỂ CẬP NHẬT KHO LƯU TRỮ HIỆN CÓ
 
-Open an archive in PeaZip (i.e. with doubleclick, or drag an archive on PeaZip’s window or icon), then drag files and folders to be added in the archive (or click on "Add" button and use application's context menu to add objects to the archive).
 Mở một kho lưu trữ trong PeaZip tức là bằng cách nhấp đúp, hoặc kéo kho lưu trữ vào cửa sổ hoặc biểu tượng của PeaZip, sau đó kéo tệp và thư mục cần thêm vào kho lưu trữ hoặc nhấp vào nút "Thêm" và sử dụng menu ngữ cảnh của ứng dụng để thêm đối tượng vào kho lưu trữ.
-It will open the archive creation confirmation dialog, click OK to update the existing archive.
 Nó sẽ mở hộp thoại xác nhận tạo kho lưu trữ, nhấp OK để cập nhật kho lưu trữ hiện có.
 
-CREATE ARCHIVE SPLIT IN SMALLER FILES
 TẠO KHO LƯU TRỮ CHIA THÀNH CÁC TỆP NHỎ HƠN
 
-While creating an archive as explained in previous points, click on “Single volume” dropdown menu to select a size for output files (volumes) the archive will be split in.
 Trong khi tạo kho lưu trữ như đã giải thích ở các điểm trước, nhấp vào menu thả xuống “Một tập” để chọn kích thước cho các tệp đầu ra (các tập) mà kho lưu trữ sẽ được chia thành.
-Most common types of archives supports this option.
 Các loại kho lưu trữ phổ biến nhất đều hỗ trợ tùy chọn này.
 
-CREATE ENCRYPTED ARCHIVE
 TẠO KHO LƯU TRỮ ĐƯỢC MÃ HÓA
 
-Click on the padlock icon to enter a password and optionally a keyfile; the icon is featured both in PeaZip’s file browser’s status bar and in archive creation interface.
 Nhấp vào biểu tượng ổ khóa để nhập mật khẩu và tùy chọn tệp khóa; biểu tượng được hiển thị cả trên thanh trạng thái của trình duyệt tệp của PeaZip và trong giao diện tạo kho lưu trữ.
-To hide names of files and directories contained in the archive check “Encrypt also filenames”, please note that it will be applied only if the archive will be created in a format supporting this function, like 7Z and ARC.
 Để ẩn tên của các tệp và thư mục có trong kho lưu trữ, chọn “Mã hóa cả tên tệp”, vui lòng lưu ý rằng nó sẽ chỉ được áp dụng nếu kho lưu trữ được tạo ở định dạng hỗ trợ chức năng này, như 7Z và ARC.
-Note that in archive creation interface, alongside the padlock icon, there is a warning to visually inform if encryption is set and if the current archive format supports encryption.
 Lưu ý rằng trong giao diện tạo kho lưu trữ, bên cạnh biểu tượng ổ khóa, có một cảnh báo để thông báo trực quan nếu mã hóa được đặt và nếu định dạng kho lưu trữ hiện tại hỗ trợ mã hóa.
 
-CREATE SEPARATE ARCHIVES
 TẠO CÁC KHO LƯU TRỮ RIÊNG BIỆT
 
-Add objects to be archived (with PeaZip’s "Add" button, or from system’s context menu or SendTo menu) and before confirming with "Ok" check "Add each object to a separate archive" option.
 Thêm các đối tượng cần lưu trữ bằng nút "Thêm" của PeaZip, hoặc từ menu ngữ cảnh hoặc menu SendTo của hệ thống và trước khi xác nhận bằng "Ok" chọn tùy chọn "Thêm mỗi đối tượng vào một kho lưu trữ riêng".
 
-CONVERT ARCHIVES
 CHUYỂN ĐỔI KHO LƯU TRỮ
 
-From PeaZip select archives to be converted and click on "Convert" on toolbar or context menu, non-archive files and folders can be added as well, the difference being in archives being extracted before compression stage.
 Từ PeaZip chọn các kho lưu trữ cần chuyển đổi và nhấp vào "Chuyển đổi" trên thanh công cụ hoặc menu ngữ cảnh, các tệp và thư mục không phải kho lưu trữ cũng có thể được thêm vào, sự khác biệt là kho lưu trữ sẽ được giải nén trước giai đoạn nén.
-Using the “Convert existing archives” switch in conjunction with “Add each object to a separate archive" (default) it performs a mass conversion of listed archives, without that switch archive conversion is meant to consolidate input data in a single archive, improving compression efficiency because it allows recompression of the original data from its uncompressed form.
 Sử dụng công tắc “Chuyển đổi các kho lưu trữ hiện có” kết hợp với “Thêm mỗi đối tượng vào một kho lưu trữ riêng” mặc định nó thực hiện chuyển đổi hàng loạt các kho lưu trữ được liệt kê, không có công tắc đó chuyển đổi kho lưu trữ nhằm mục đích hợp nhất dữ liệu đầu vào thành một kho lưu trữ duy nhất, cải thiện hiệu quả nén vì nó cho phép nén lại dữ liệu gốc từ dạng chưa nén của nó.
 
-DIRECTLY CREATE ARCHIVES IN A SPECIFIED FORMAT AND WITH A CHOSEN COMPRESSION LEVEL
 TẠO KHO LƯU TRỮ TRỰC TIẾP Ở ĐỊNH DẠNG ĐÃ CHỈ ĐỊNH VÀ VỚI MỨC NÉN ĐÃ CHỌN
 
-Using “System integration” procedure in Options menu it is possible to enable context menu entries to directly add selected files/folders to a ZIP, 7Z or self extracting archive.
 Sử dụng quy trình “Tích hợp hệ thống” trong menu Tùy chọn, có thể bật các mục menu ngữ cảnh để trực tiếp thêm các tệp hoặc thư mục đã chọn vào kho lưu trữ ZIP, 7Z hoặc tự giải nén.
-For Zip and 7Z formats it is also possible to enable context menu entries to compress to fastest, normal or ultra level, bypassing the default compression level for the selected format.
 Đối với định dạng Zip và 7Z, cũng có thể bật các mục menu ngữ cảnh để nén ở mức nhanh nhất, bình thường hoặc ultra, bỏ qua mức nén mặc định cho định dạng đã chọn.
 
-CONFIGURE THE APPLICATION
 CẤU HÌNH ỨNG DỤNG
 
-Options > Localization (and in Options > Settings, first tab) allows to set application’s language.
 Tùy chọn > Bản địa hóa và trong Tùy chọn > Cài đặt, tab đầu tiên cho phép đặt ngôn ngữ của ứng dụng.
-Options > Settings allows to edit applications’ settings
 Tùy chọn > Cài đặt cho phép chỉnh sửa cài đặt của ứng dụng
-Options > Theme allows to change application’s icons and appearance
 Tùy chọn > Chủ đề cho phép thay đổi biểu tượng và giao diện của ứng dụng
-Options > System integration starts a procedure to configure file associations, context menu and SendTo menu entries (on Windows)
 Tùy chọn > Tích hợp hệ thống bắt đầu một quy trình để cấu hình liên kết tệp, menu ngữ cảnh và mục menu SendTo trên Windows
-Organize menu contains entry to customize, enable or disable browser’s features, like toolbar, address bar, navigation bar, etc
 Menu Tổ chức chứa mục để tùy chỉnh, bật hoặc tắt các tính năng của trình duyệt, như thanh công cụ, thanh địa chỉ, thanh điều hướng, v.v.
 
-F1 	help
 F1 Trợ giúp
-F2 	browse desktop / Ctrl+F2 browse user’s home / Shift+F2 browse computer’s root / Ctrl+Shift+F2 browse archive root, if browsing inside an archive (otherwise browse computer’s root)
 F2 Duyệt màn hình nền / Ctrl+F2 duyệt thư mục nhà của người dùng / Shift+F2 duyệt thư mục gốc của máy tính / Ctrl+Shift+F2 duyệt thư mục gốc của kho lưu trữ, nếu đang duyệt bên trong một kho lưu trữ (ngược lại duyệt thư mục gốc của máy tính)
-F3	search (recursivity option is remembered) / Ctrl+F3 start as non recursive (search here) / Shift+F3 recursive
 F3 Tìm kiếm (tùy chọn đệ quy được ghi nhớ) / Ctrl+F3 bắt đầu dưới dạng không đệ quy (tìm kiếm tại đây) / Shift+F3 đệ quy
-F4 	up one level
 F4 Lên một cấp
-F5 	refresh
 F5 Làm mới
-F6 	toggle browse/flat view
 F6 Bật hoặc tắt chế độ xem duyệt hoặc phẳng
-F7 	browse most recently visited item (Ctrl, second, Shift, third)
 F7 Duyệt mục được truy cập gần đây nhất (Ctrl, thứ hai, Shift, thứ ba)
-F8 	browse first item in bookmarks list (Ctrl, second, Shift, third)
 F8 Duyệt mục đầu tiên trong danh sách dấu trang (Ctrl, thứ hai, Shift, thứ ba)
-F9 	set password/keyfile / Ctrl+F9 create keyfile or random password
 F9 Đặt mật khẩu hoặc tệp khóa / Ctrl+F9 tạo tệp khóa hoặc mật khẩu ngẫu nhiên
-F10 	menu
 F10 Menu
-F11 	set advanced filters
 F11 Đặt bộ lọc nâng cao
-F12 	extract all to...
 F12 Giải nén tất cả đến...
 
-ABOUT PEAZIP
 VỀ PEAZIP
 
-PeaZip is an open source file and archive manager: cross platform, available as portable and installable software for 32 and 64 bit Windows (9x, 2k, XP, Vista) and Linux (PeaZip is a desktop neutral application).
 PeaZip là một trình quản lý tệp và kho lưu trữ mã nguồn mở: đa nền tảng, có sẵn dưới dạng phần mềm di động và cài đặt cho Windows 32 và 64 bit (9x, 2k, XP, Vista) và Linux (PeaZip là một ứng dụng trung lập về môi trường desktop).
 
-PeaZip allows to apply powerful multiple search filters to archive's content; create and extract multiple archives at once; create self-extracting archives; export job definition as command line; save archive's layouts; bookmark archives and folders; scan and open with custom applications compressed and uncompressed files etc...
 PeaZip cho phép áp dụng các bộ lọc tìm kiếm đa dạng mạnh mẽ cho nội dung kho lưu trữ; tạo và giải nén nhiều kho lưu trữ cùng một lúc; tạo kho lưu trữ tự giải nén; xuất định nghĩa tác vụ dưới dạng dòng lệnh; lưu bố cục của kho lưu trữ; đánh dấu kho lưu trữ và thư mục; quét và mở bằng các ứng dụng tùy chỉnh các tệp đã nén và chưa nén, v.v.
 
-Other features: strong encryption, robust file copy, split/join files (file span), secure data deletion, compare, checksum and hash files, system benchmark, generate random passwords and keyfiles.
 Các tính năng khác: mã hóa mạnh, sao chép tệp mạnh mẽ, chia hoặc nối tệp (file span), xóa dữ liệu an toàn, so sánh, checksum và hash tệp, điểm chuẩn hệ thống, tạo mật khẩu và tệp khóa ngẫu nhiên.
 
-Downloads: https://peazip.github.io
 Tải xuống: https://peazip.github.io
-Learn more: https://peazip.github.io/peazip-free-archiver.html
 Tìm hiểu thêm: https://peazip.github.io/peazip-free-archiver.html
-Support: https://peazip.github.io/peazip-help.html
 Hỗ trợ: https://peazip.github.io/peazip-help.html
-FAQ: https://peazip.github.io/peazip-help-faq.html 
 Câu hỏi thường gặp: https://peazip.github.io/peazip-help-faq.html
 
-Many thanks to all people contributing to PeaZip project's growth developing Open Source software components used in this application (see website for complete list), and to all users contributing with feedback, experience and advices.
 Chân thành cảm ơn tất cả những người đã đóng góp vào sự phát triển của dự án PeaZip bằng cách phát triển các thành phần phần mềm Mã nguồn mở được sử dụng trong ứng dụng này (xem trang web để có danh sách đầy đủ), và tất cả người dùng đã đóng góp bằng phản hồi, kinh nghiệm và lời khuyên.

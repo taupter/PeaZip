@@ -1,4 +1,4 @@
-=== PeaZip language file ===
+﻿=== PeaZip language file ===
 Estonian
 10.7
 Translated by: khanhkhanhlele
@@ -1250,9 +1250,9 @@ txt_pj_hint2: Saate ülesande definitsiooni GUI-liidesest importida ülaltoodud 
 txt_type_description_zip: ZIP: kiire arhiveerimis-/tihendusvorming, Windowsi süsteemides laialt levinud
 txt_zipcrypto_hint: ZipCrypto (pärand)
 
-=== PeaZip tekstigrupi lõpp ===
+=== end PeaZip text group ===
 
-=== PeaLauncheri tekstigrupp ===
+=== PeaLauncher text group ===
 
 txt_6_9_remaining: järelejäänud
 txt_6_5_abort: Katkesta
@@ -1371,9 +1371,9 @@ txt_bench: Süsteemi võrdlustest
 txt_threads: Teemad:
 txt_time: Aeg:
 
-=== PeaLauncheri tekstigrupi lõpp ===
+=== end PeaLauncher text group ===
 
-=== tekstigrupi kohta ===
+=== about text group ===
 
 ARHIIVIDE VÄLJAVÕTMINE
 Süsteemist
@@ -1467,4 +1467,3 @@ Tugi: https://peazip.github.io/peazip-help.html
 KKK: https://peazip.github.io/peazip-help-faq.html
 
 Suur tänu kõigile inimestele, kes panustasid PeaZip projekti kasvu ja arendasid selles rakenduses kasutatavaid avatud lähtekoodiga tarkvarakomponente (täieliku loendi leiate veebisaidilt), ning kõigile kasutajatele, kes panustavad tagasiside, kogemuste ja nõuannetega.
-

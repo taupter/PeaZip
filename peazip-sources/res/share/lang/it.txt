@@ -176,7 +176,7 @@ txt_8_1_preparse: Analizza tutti gli archivi all'apertura
 txt_8_1_bo: Ottimizzazione del browser
 txt_8_1_bop: E' possibile mostrare più files regolando l'ottimizzazione del browser in Opzioni > Impostazioni, tab Generale.
 txt_8_1_nopreparse: Non analizzare gli archivi all'apertura
-txt_8_1_ed: errori rilevati.
+txt_8_1_ed: Errori rilevati.
 txt_8_1_togglearc: Elencare il contenuto di un archivio in modo flat può richiedere molto tempo, continuare?
 txt_8_1_preparsehint: Ottimizza le prestazioni del browser regolando l'analisi all'aperture per archivi molto grandi. L'analisi all'apertura serve ad avvisare in anticipo di possibili problemi con il contenuto dell'archivio.
 txt_8_1_slow: Lento

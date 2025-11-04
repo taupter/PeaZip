@@ -1,4 +1,4 @@
-=== PeaZip language file ===
+﻿=== PeaZip language file ===
 Urdu
 10.7
 Translated by: khanhkhanhlele
@@ -1250,9 +1250,9 @@ txt_pj_hint2: آپ اوپر میمو فیلڈ میں GUI فرنٹ اینڈ سے 
 txt_type_description_zip: ZIP: فاسٹ آرکائیونگ/کمپریشن فارمیٹ، ونڈوز سسٹم پر مین اسٹریم
 txt_zipcrypto_hint: ZipCrypto (وراثت)
 
-=== ختم PeaZip ٹیکسٹ گروپ ===
+=== end PeaZip text group ===
 
-=== PeaLauncher ٹیکسٹ گروپ ===
+=== PeaLauncher text group ===
 
 txt_6_9_remaining: باقی
 txt_6_5_abort: اسقاط
@@ -1371,9 +1371,9 @@ txt_bench: سسٹم بینچ مارک
 txt_threads: تھریڈز:
 txt_time: وقت:
 
-=== ختم PeaLauncher ٹیکسٹ گروپ ===
+=== end PeaLauncher text group ===
 
-=== ٹیکسٹ گروپ کے بارے میں ===
+=== about text group ===
 
 آرکائیو نکالیں
 سسٹم سے
@@ -1467,4 +1467,3 @@ PeaZip آرکائیو کے مواد پر طاقتور متعدد سرچ فلٹر
 اکثر پوچھے گئے سوالات: https://peazip.github.io/peazip-help-faq.html
 
 اس ایپلی کیشن میں استعمال ہونے والے اوپن سورس سافٹ ویئر کے اجزاء (مکمل فہرست کے لیے ویب سائٹ دیکھیں)، اور تاثرات، تجربے اور مشوروں کے ساتھ تعاون کرنے والے تمام صارفین کا PeaZip پروجیکٹ کی ترقی میں تعاون کرنے والے تمام لوگوں کا بہت شکریہ۔
-

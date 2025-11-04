@@ -1,10 +1,9 @@
-=== PeaZip language file ===
+﻿=== PeaZip language file ===
 Hindi हिन्दी
 10.7
 Translated by: user-contributed
 Last rev. by: user-contributed
 Last rev.: 20251103
-
 
 === PeaZip text group ===
 
@@ -1251,9 +1250,9 @@ txt_pj_hint2: आप ऊपर दिए गए मेमो फ़ील्ड 
 txt_type_description_zip: ज़िप: तेज़ संग्रहण/संपीड़न प्रारूप, विंडोज़ सिस्टम पर मुख्य धारा
 txt_zipcrypto_hint: ZipCrypto (विरासत)
 
-=== पीज़िप पाठ समूह समाप्त ===
+=== end PeaZip text group ===
 
-=== पीलांचर पाठ समूह ===
+=== PeaLauncher text group ===
 
 txt_6_9_remaining: शेष
 txt_6_5_abort: निरस्त करें

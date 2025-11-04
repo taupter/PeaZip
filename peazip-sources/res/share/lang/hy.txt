@@ -1,6 +1,6 @@
 ﻿=== PeaZip language file ===
 Armenian - Հայերեն
-10.6
+10.7
 Translated by: Հրանտ Հակոբյան
 Last rev. by: Հրանտ Հակոբյան
 Last rev.: 20251010

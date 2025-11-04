@@ -1,4 +1,4 @@
-=== PeaZip language file ===
+﻿=== PeaZip language file ===
 Icelandic
 10.7
 Translated by: khanhkhanhlele
@@ -1250,9 +1250,9 @@ txt_pj_hint2: Þú getur flutt inn skilgreiningu verkefnisins úr notendaviðmó
 txt_type_description_zip: ZIP: hraðvirkt geymslu-/þjöppunarsnið, algengt í Windows kerfum
 txt_zipcrypto_hint: ZipCrypto (eldri útgáfa)
 
-=== enda PeaZip textahóp ===
+=== end PeaZip text group ===
 
-=== PeaLauncher textahópur ===
+=== PeaLauncher text group ===
 
 txt_6_9_remaining: eftir
 txt_6_5_abort: Hætta við
@@ -1371,9 +1371,9 @@ txt_bench: Kerfisviðmið
 txt_threads: Þræðir:
 txt_time: Tími:
 
-=== enda PeaLauncher textahóp ===
+=== end PeaLauncher text group ===
 
-=== um textahóp ===
+=== about text group ===
 
 ÚTDRAGA SAFNSKRÁ(R)
 Frá kerfinu
@@ -1467,4 +1467,3 @@ Aðstoð: https://peazip.github.io/peazip-help.html
 Algengar spurningar: https://peazip.github.io/peazip-help-faq.html
 
 Þökkum öllum þeim sem lögðu sitt af mörkum til vaxtar PeaZip verkefnisins við þróun hugbúnaðaríhluta með opnum hugbúnaði sem notaðir eru í þessu forriti (sjá vefsíðu fyrir fullan lista), og öllum notendum sem leggja sitt af mörkum með endurgjöf, reynslu og ráðleggingum.
-
