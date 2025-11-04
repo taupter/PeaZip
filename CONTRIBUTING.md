@@ -1,4 +1,4 @@
-There are various ways to cntribute to the project.
+There are various ways to contribute to the project.
 
 USER EXPERIENCE
 
@@ -10,7 +10,7 @@ TRANSLATIONS
 
 PeaZip is localized in over 30 languages thanking the effort of the community in providing and maintaining the translations
 
-Information about translation is available in PeaZip's Translation reporitory https://github.com/peazip/PeaZip-Translations and on https://peazip.github.io/peazip-translations.html page.
+Information about translation is available in PeaZip's Translation repository https://github.com/peazip/PeaZip-Translations and on https://peazip.github.io/peazip-translations.html page.
 
 Translations can be sent to the developer (https://peazip.github.io/peazip-more.html for contact details) or directly committed to main PeaZip's repository https://github.com/peazip/PeaZip/tree/sources/peazip-sources/res/share (translations are in the "lang" subdirectory)
 
@@ -24,7 +24,7 @@ CODE CONTRIBUTIONS
 
 PeaZip is mainly developed in FreePascal using the Lazarus IDE https://www.lazarus-ide.org/
 
-If you are familiar with Pascal language family, or if you are studying one of the many Pascal dialects, you may find interesting to work on sources starting fromn https://peazip.github.io/peazip-sources.html page, in order to improve the program either for your own use or for sharing it with the community, either as a fork of the project or as a codde contribution to the project itself.
+If you are familiar with Pascal language family, or if you are studying one of the many Pascal dialects, you may find interesting to work on sources starting from https://peazip.github.io/peazip-sources.html page, in order to improve the program either for your own use or for sharing it with the community, either as a fork of the project or as a code contribution to the project itself.
 
 If you are not familiar nor interested in Pascal, there are other ways to contribute code to the project, especially in the system integration side, in example: creating Windows context menu entries (currently static methods are employed), creating Linux/BSD .desktop files and generally improving integration on the various DE, creating macOS services menus with Automator.
 
