@@ -1380,7 +1380,7 @@ Fra systemet
 - høyreklikk på arkivet(-ene) og klikk "Pakk ut her" eller "Pakk ut her (i ny mappe)" i kontekstmenyen for å pakke ut uten flere operasjoner
 - ellers brukes "Pakk ut..." menyvalget for flere muligheter: lagringssti, passord, pakk ut filer til en ny mappe, velg overhopp, omdøp eller overskriv eksisterende filer osv.
 
-Åpne et arkiv i PeaZip, d.v.s med dobbeltklikk, eller dra et arkiv til PeaZip’s vindu eller ikon
+Åpne et arkiv i PeaZip, d.v.s med dobbeltklikk, eller dra et arkiv til PeaZip sitt vindu eller ikon
 - klikk på "Pakk ut" i verktøylinja eller i kontekstmenyen for å kun pakke ut valgte objekter via bekreftelses dialogen som gir tilgang til alle valg (lagresti, passord, navnevalg, pakk ut til ny mappe osv.)
 - dra filer og mapper til ønsket mål, og bare valgt innhold blir pakket ut (for mer informasjon, se kapittel om dra og slipp i PeaZip)
 - klikk hurtig-utpakkings nedtrekksknapp til høyre for "Pakk ut" i verktøylinjar, som muliggjør direkte utpakking av hele arkivet til de vanligste målmappene (hopper over bekreftelsesdialogen) og sette de viktigste valgene; tastatursnarveier: Ctrl+E (eller F12) pakker ut hele arkivet, spør etter målkatalog; Ctrl+Alt+E pakker ut arkivet i dets nåværend mappe; Ctrl+Shift+E pakker ut til skrivebord; Ctrl+Alt+Shift+E pakker ut til dokumenter; Ctrl+1..8 parkker ut til bokmerkesti 1..8 (hvis definert)
@@ -1395,18 +1395,18 @@ PAKK UT KUN VALGTE OBJEKTER FRA ARKIVET
 
 ANGI PASSORD FOR Å VISE ELLER PAKKE UT ET ARKIV
 Klikk på hengelåsikonet for å angi et passord og eventuelt en nøkkelfil.
-Ikonet er aktivt både i PeaZip’s filoversikt’s statuslilnje og i utpakkingsbildet; straks passordet er angitt vil ikonet endre farge.
+Ikonet er aktivt både i PeaZip sin filoversikts statuslilnje og i utpakkingsbildet; straks passordet er angitt vil ikonet endre farge.
 
 OPPRETT ARKIV
 Fra systemet
 - høyreklikk på objekter som skal arkiverees og klikk "Legg til arkiv" i kontektsmenyen eller "Send til"-menyen. Det vil åpne en "Opprett arkiv"- bekreftelsesdialog, flere valg er tilgjengelig i "Avansert"-knappen; klikk OK for å opprette arkivet.
-- alternativt, dra filer/mapper til PeaZip’s vindu eller snarvei; samme opprett arkiv dialogen blir vist.
+- alternativt, dra filer/mapper til PeaZip sitt vindu eller snarvei; samme opprett arkiv dialogen blir vist.
 
 Fra PeaZip 
 - velg objekter som skal arkiveres og klikk på "Legg til"-knappen; samme opprett arkiv dialogen blir vist.
 
 OPPDATER EKSISTERENDE ARKIV MED FILER/MAPPER
-Åpne et arkiv i PeaZip (d.v.s. med dobbeltklikk, eller dra et arkiv til PeaZip’s vindu eller ikon), og dra de nye filene og mappene til arkivet (eller klikk på "Legg til" knappen og bruk kontekstmenyen til å legge til objekter i arkivet).
+Åpne et arkiv i PeaZip (d.v.s. med dobbeltklikk, eller dra et arkiv til PeaZip sitt vindu eller ikon), og dra de nye filene og mappene til arkivet (eller klikk på "Legg til" knappen og bruk kontekstmenyen til å legge til objekter i arkivet).
 Det vil åpne opprett arkiv diralogen, klikk OK for å oppdatere eksisterende arkiv.
 
 OPPRETT ARKIV DELT I MINDRE FILER
@@ -1414,7 +1414,7 @@ Ved oppretting av et arkiv som forklart tidligere, klikk på “Enkeltvolum” n
 De fleste vanlige arkivtyper støtter dette.
 
 OPPRETT KRYPTERT ARKIV
-Klikk på hengelåsikonet for å angi et passord og eventuelt en nøkkelvil; ikonet er tilgjengelig både i PeaZip’s filoversikt’s statuslinje og i opprett arkiv dialogen.
+Klikk på hengelåsikonet for å angi et passord og eventuelt en nøkkelvil; ikonet er tilgjengelig både i PeaZip sin filoversikts statuslinje og i opprett arkiv dialogen.
 For å skjule navn på filer og kataloger i arkivet, marker "Krypter filnavn også", merk at dette kun blir utført hvis arkivet opprettes i et format som støtter denne funksjonen, som 7Z og ARC.
 Merk at i opprett arkiv dialogen, ved siden av hengelåsikonet, vises det en advarsel hvis kryptering er satt og hvis nåværende arkivformat støtter kryptering.
 
@@ -1429,7 +1429,7 @@ OPPRETTE ARKIVER DIREKTE I ET SPESIFISERT FORMAT OG ET VALGT KOMPRESJONSNIVÅ
 Bruk av “Systemintegrasjon” funksjonen i Alternativermenye muligjør aktivisering av kontekstmeny-valg for å legge valgte filer/mapper direkte til et ZIP, 7Z eller selvutpakkende arkiv.
 For Zip og 7Z formater er det også mulig å aktivisere kontektsmeny-valg for å pakke til raskest, normal eller ultra-nivå, ved å angi standard kompresjonsnivå for valgt format.
 
-Sett opp PROGRAMMET
+SETT OPP PROGRAMMET
 Alternativer > Språk (og i Alternativer > Innstillinger, første fane) for å velge språk i programmet.
 Alternativer > Innstillinger gir valg for å endre programinnstillinger
 Alternativer > Tema gir valg for å endre programikon og utseende
@@ -1451,7 +1451,7 @@ F12   pakk ut alle til...
 
 Om PEAZIP
 
-PeaZip er en åpen kildekode fil- og arkiv behandler: cross-plattform, tilgjengelig som flyttbar og installerbar programvare for 32 og 64 bit Windows (9x, 2K, XP, Vista, 7, 8, 10, 11) og Linux (PeaZip er et desktop-nøytralt program).
+PeaZip er en åpen kildekode fil- og arkivbehandler: multiplattform, tilgjengelig som flyttbar og installerbar programvare for 32- og 64-bit Windows (9x, 2K, XP, Vista, 7, 8, 10, 11) og Linux (PeaZip er et desktop-nøytralt program).
 
 PeaZip tillater å bruke kraftige flere søkefiltrene til arkivets innhold, opprette og pakke ut flere arkiver på en gang; lage selvutpakkende arkiver; eksport jobb definisjon som kommandolinje; lagre arkivering og utpakkingsoppsett; bokmerke arkiver og mapper, skann og åpne med tilpassede programmer komprimerte og ukomprimerte filer etc. .
 
