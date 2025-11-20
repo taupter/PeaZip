@@ -30,7 +30,7 @@ txt_10_5_sh: Vis skjulte filer og mapper i filsystemet
 txt_10_5_ntfsalt: Dette formatet kan lagre NTFS Alternate Data Stream, inkludert Mark of The Web
 txt_10_4_moving: (Flytter)
 txt_10_3_classic: Klassisk
-txt_10_3_ascii: Det anbefales å kun bruke ASCII-tegn i passord til nåværende arkiv-format (store/små bokstaver, tall,  spesial-tegn).
+txt_10_3_ascii: Det anbefales å kun bruke ASCII-tegn i passord til nåværende arkiv-format (store/små bokstaver, tall, spesial-tegn).
 txt_10_3_minimal: Minimal
 txt_10_3_m: Moderne
 txt_10_3_pm: Postmoderne
@@ -770,7 +770,7 @@ txt_add_archive: Opprett arkiv
 txt_add_files: Legg til fil(er)
 txt_add_folder: Legg til mappe
 txt_add_path: Legg til sti
-txt_add_tolayout: Legg til valgte filer og mapper til  arkivets oppsett
+txt_add_tolayout: Legg til valgte filer og mapper til arkivets oppsett
 txt_add_toarchive: Legg til arkiv
 txt_add_tobookmarks: Legg til bokmerke
 txt_address_hint: Adresse: godta jokertegn ? for tegn og * for tekststreng; trenger ikke " eller ' skilletegn
@@ -1419,7 +1419,7 @@ For å skjule navn på filer og kataloger i arkivet, marker "Krypter filnavn ogs
 Merk at i opprett arkiv dialogen, ved siden av hengelåsikonet, vises det en advarsel hvis kryptering er satt og hvis nåværende arkivformat støtter kryptering.
 
 OPPRETT ADSKILTE ARKIVER
-Tilføy objekter  som skal arkives (med PeaZip sin "Legg til"-knapp, eller fra kontekstmenyen eller SentTil menyen) og hak av "Legg hvert objekt i adskilte arkiver" før bekretelse med "Ok".
+Tilføy objekter som skal arkives (med PeaZip sin "Legg til"-knapp, eller fra kontekstmenyen eller "Sendt til"-menyen) og hak av "Legg hvert objekt i adskilte arkiver" før bekreftelse med "Ok".
 
 KONVERTER ARKIVER
 Velg arkiver som skal konverteres fra PeaZip og klikk "Konverter" på verktøylinjen eller kontekstmenyen, ikke-arkiv filer og mapper kan også legges til, forskjellen er at arkiver pakkes ut før kompresjonssteget.
@@ -1438,7 +1438,7 @@ Organisermenyen inneholder valg for tilpasning, sette eller fjerne visningsvalg,
 
 F1    hjelp
 F2    vis skrivebord / Ctrl+F2 vis brukerens mappe / Shift+F2 vis datamaskinens mappe / Ctrl+Shift+F2 vis arkivmappe, hvis vising inni et arkiv (ellers vis datamaskinens mappe)
-F3 søk (rekursiv setting huskes) / Ctrl+F3 start som ikke-rekursiv (søk her) / Shift+F3 rekursiv
+F3    søk (rekursiv setting huskes) / Ctrl+F3 start som ikke-rekursiv (søk her) / Shift+F3 rekursiv
 F4    opp ett nivå
 F5    oppfrisk
 F6    skift mellom vis/flat liste
@@ -1463,4 +1463,3 @@ Support: https://peazip.github.io/peazip-help.html
 FAQ: https://peazip.github.io/peazip-help-faq.html
 
 Mange takk til alle dere som har bidratt til PeaZip-prosjektets vekst, utviklere av programvare med åpen kildekode-komponenter som brukes i dette programmet (se nettsiden for fullstendig liste). Og til alle dere brukere som har bidratt med tilbakemeldinger, råd og tips.
-
