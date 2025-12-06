@@ -1,8 +1,8 @@
 ﻿[Setup]        
 AppId={{5A2BC38A-406C-4A5B-BF45-6991F9A05325}
 AppName=PeaZip
-AppVerName=PeaZip 10.7.0 (WIN64)
-AppVersion=10.7.0
+AppVerName=PeaZip 10.8.0 (WIN64)
+AppVersion=10.8.0
 AppPublisher=Giorgio Tani
 AppPublisherURL=https://peazip.github.io
 AppSupportURL=https://peazip.github.io
@@ -11,9 +11,9 @@ DefaultDirName={pf}\PeaZip
 DisableDirPage=no
 DefaultGroupName=PeaZip
 DisableProgramGroupPage=yes
-LicenseFile=C:\input\peazip-10.7.0.WIN64\res\share\copying\copying.txt
+LicenseFile=C:\input\peazip-10.8.0.WIN64\res\share\copying\copying.txt
 OutputDir=C:\output\
-OutputBaseFilename=peazip-10.7.0.WIN64
+OutputBaseFilename=peazip-10.8.0.WIN64
 SetupIconFile=peazip-icon-green.ico
 Compression=lzma2/max
 SolidCompression=yes
@@ -29,10 +29,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\input\peazip-10.7.0.WIN64\peazip.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\input\peazip-10.7.0.WIN64\pea.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\input\peazip-10.7.0.WIN64\dragdropfilesdll.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\input\peazip-10.7.0.WIN64\res\*"; DestDir: "{app}\res"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "C:\input\peazip-10.8.0.WIN64\peazip.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\input\peazip-10.8.0.WIN64\pea.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\input\peazip-10.8.0.WIN64\dragdropfilesdll.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\input\peazip-10.8.0.WIN64\res\*"; DestDir: "{app}\res"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [INI]
@@ -426,11 +426,14 @@ begin
     Items.Add('ES-ES - Spanish');
     Items.Add('ES-LA - Spanish (Latin-America)');
     Items.Add('EU - Basque');
+    Items.Add('FA - Persian');
     Items.Add('FI - Finnish');
     Items.Add('FR - French');
     Items.Add('GL - Galician');
     Items.Add('GR - Greek');
+    Items.Add('HE - Hebrew');
     Items.Add('HU - Hungarian');
+    Items.Add('HY - Armenian');
     Items.Add('ID - Bahasa Indonesia');
     Items.Add('IT - Italian');
     Items.Add('JA - Japanese');
@@ -449,6 +452,7 @@ begin
     Items.Add('SV - Swedish');
     Items.Add('TJ - Tajik');
     Items.Add('TR - Turkish');
+    Items.Add('TT - Tatar');
     Items.Add('UK - Ukrainian');
     Items.Add('UZ - Uzbek');
     Items.Add('VN - Vietnamese');
@@ -475,32 +479,36 @@ begin
   'ES-ES','ES': i:=12;
   'ES-LA': i:=13;
   'EU': i:=14;
-  'FI': i:=15;
-  'FR': i:=16;
-  'GL': i:=17;
-  'GR': i:=18;
-  'HU': i:=19;
-  'ID': i:=20;
-  'IT': i:=21;
-  'JA': i:=22;
-  'KO': i:=23;
-  'LV': i:=24;
-  'NL': i:=25;
-  'NO': i:=26;
-  'PL': i:=27;
-  'PT-BR': i:=28;
-  'PT-PT','PT': i:=29;
-  'RO': i:=30;
-  'RU': i:=31;
-  'SI': i:=32;
-  'SK': i:=33;
-  'SL': i:=34;
-  'SV': i:=35;
-  'TJ': i:=36;
-  'TR': i:=37;
-  'UK': i:=38;
-  'UZ': i:=39;
-  'VN': i:=40;
+  'FA': i:=15;
+  'FI': i:=16;
+  'FR': i:=17;
+  'GL': i:=18;
+  'GR': i:=19;
+  'HE': i:=20;
+  'HU': i:=21;
+  'HY': i:=22;
+  'ID': i:=23;
+  'IT': i:=24;
+  'JA': i:=25;
+  'KO': i:=26;
+  'LV': i:=27;
+  'NL': i:=28;
+  'NO': i:=29;
+  'PL': i:=30;
+  'PT-BR': i:=31;
+  'PT-PT','PT': i:=32;
+  'RO': i:=33;
+  'RU': i:=34;
+  'SI': i:=35;
+  'SK': i:=36;
+  'SL': i:=37;
+  'SV': i:=38;
+  'TJ': i:=39;
+  'TR': i:=40;
+  'TT': i:=41;
+  'UK': i:=42;
+  'UZ': i:=43;
+  'VN': i:=44;
   else i:=9;
   end;
   if i>=0 then 
@@ -3167,32 +3175,36 @@ case combobox1.itemindex of
  12: slang:='es-es.txt';
  13: slang:='es-la.txt';
  14: slang:='eu.txt';
- 15: slang:='fi.txt';
- 16: slang:='fr.txt';
- 17: slang:='gl.txt';
- 18: slang:='gr.txt';
- 19: slang:='hu.txt';
- 20: slang:='id.txt';
- 21: slang:='it.txt';
- 22: slang:='ja.txt';
- 23: slang:='ko.txt';
- 24: slang:='lv.txt';
- 25: slang:='nl.txt';
- 26: slang:='no.txt';
- 27: slang:='pl.txt';
- 28: slang:='pt-br.txt';
- 29: slang:='pt-pt.txt';
- 30: slang:='ro.txt';
- 31: slang:='ru.txt';
- 32: slang:='si.txt';
- 33: slang:='sk.txt';
- 34: slang:='sl.txt';
- 35: slang:='sv.txt';
- 36: slang:='tj.txt';
- 37: slang:='tr.txt';
- 38: slang:='uk.txt';
- 39: slang:='uz.txt';
- 40: slang:='vn.txt';
+ 15: slang:='fa.txt';
+ 16: slang:='fi.txt';
+ 17: slang:='fr.txt';
+ 18: slang:='gl.txt';
+ 19: slang:='gr.txt';
+ 20: slang:='he.txt';
+ 21: slang:='hu.txt';
+ 22: slang:='hy.txt';
+ 23: slang:='id.txt';
+ 24: slang:='it.txt';
+ 25: slang:='ja.txt';
+ 26: slang:='ko.txt';
+ 27: slang:='lv.txt';
+ 28: slang:='nl.txt';
+ 29: slang:='no.txt';
+ 30: slang:='pl.txt';
+ 31: slang:='pt-br.txt';
+ 32: slang:='pt-pt.txt';
+ 33: slang:='ro.txt';
+ 34: slang:='ru.txt';
+ 35: slang:='si.txt';
+ 36: slang:='sk.txt';
+ 37: slang:='sl.txt';
+ 38: slang:='sv.txt';
+ 39: slang:='tj.txt';
+ 40: slang:='tr.txt';
+ 41: slang:='tt.txt';
+ 42: slang:='uk.txt';
+ 43: slang:='uz.txt';
+ 44: slang:='vn.txt';
  else slang:='';
 end;
 if slang<>'' then
