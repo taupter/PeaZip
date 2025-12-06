@@ -7,11 +7,11 @@ Last rev.: 20250327
 
 === PeaZip text group ===
 
-txt_10_8_log: Commands log
-txt_10_8_rv: Create recovery volumes
-txt_10_8_bk: Execute small workloads in background
-txt_10_8_params: Pass command line as separate parameters
-txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
+txt_10_8_log: Registro de comandos
+txt_10_8_rv: Criar volumes de recuperação
+txt_10_8_bk: Executar pequenas cargas de trabalho em segundo plano
+txt_10_8_params: Passar a linha de comando como parâmetros separados
+txt_10_8_untarerr: O nome TAR não corresponde ao nome do arquivo. É possível tentar abrir o arquivo para extrair manualmente o conteúdo TAR.
 txt_10_7_errload: Não foi possível exibir a imagem
 txt_10_7_errfile: Arquivo não encontrado
 txt_10_7_first: Primeiro
@@ -181,7 +181,7 @@ txt_8_1_preparse: Sempre pré-analisar arquivos
 txt_8_1_bo: Otimização do navegador
 txt_8_1_bop: As opções de otimização do navegador podem ser definidas a partir de Opções>Configurações, aba Geral, para permitir que o navegador exiba arquivos contendo um número muito grande de itens.
 txt_8_1_nopreparse: Não pré-analise arquivos
-txt_8_1_ed: erro(s) detectado.
+txt_8_1_ed: Erro(s) detectado(s).
 txt_8_1_togglearc: Exibição plana da lista de arquivos, conteúdo pode levar um longo tempo, continuar assim mesmo?
 txt_8_1_preparsehint: Otimize os desempenhos que limitam a pré-análise dos grandes arquivos. A pré-análise destina-se a detectar antecipadamente possíveis problemas no conteúdo do arquivo.
 txt_8_1_slow: Lento
@@ -838,7 +838,7 @@ txt_clear: Limpar
 txt_clearlayout: Limpar layout
 txt_pj_hint: Clique para importar tarefa, reiniciar mudanças e carrega-las para definição da interface
 txt_autoclose: Fechar PeaLauncher quando a tarefa estiver concluída
-txt_cl: linha de comando:
+txt_cl: Linha de comando
 txt_compare: Comparar arquivos
 txt_compress: Comprimir
 txt_compress_executable: Comprimir em executável
