@@ -1,12 +1,17 @@
 ﻿=== PeaZip language file ===
 Swedish - Svenska
-10.7
+10.8
 Översatt av: FX (old translation: Mikael Hiort af Ornäs 20140413)
 Senast rev. av: Sprinto (hanseriksson980@gmail.com)
 Senast rev.: 2025-10-30
 
 === PeaZip text group ===
 
+txt_10_8_log: Commands log
+txt_10_8_rv: Create recovery volumes
+txt_10_8_bk: Execute small workloads in background
+txt_10_8_params: Pass command line as separate parameters
+txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
 txt_10_7_errload: Kan inte visa bilden
 txt_10_7_errfile: Filen hittades inte
 txt_10_7_first: Första

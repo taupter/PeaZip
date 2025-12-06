@@ -1,12 +1,17 @@
 ﻿=== PeaZip language file ===
 Hindi हिन्दी
-10.7
+10.8
 Translated by: user-contributed
 Last rev. by: user-contributed
 Last rev.: 20251103
 
 === PeaZip text group ===
 
+txt_10_8_log: Commands log
+txt_10_8_rv: Create recovery volumes
+txt_10_8_bk: Execute small workloads in background
+txt_10_8_params: Pass command line as separate parameters
+txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
 txt_10_7_errload: छवि प्रदर्शित नहीं की जा सकती
 txt_10_7_errfile: फ़ाइल नहीं मिली
 txt_10_7_first: पहला

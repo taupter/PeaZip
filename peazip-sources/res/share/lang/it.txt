@@ -1,12 +1,17 @@
 ﻿=== PeaZip language file ===
 Italian - Italiano
-10.7
+10.8
 Tradotto da: Giorgio Tani
 Ultima rev. di: Giorgio Tani
 Ultima rev.: 20250327
 
 === PeaZip text group ===
 
+txt_10_8_log: Log dei lavori
+txt_10_8_rv: Crea recovery volumes
+txt_10_8_bk: Esegui lavori brevi in background
+txt_10_8_params: Processare la linea di comando come parametri separati
+txt_10_8_untarerr: Il nome del file TAR non corrisponde con il nome dell'archivio. E'possibile aprire l'archivio per estrarre manualmente il contenuto del file TAR.
 txt_10_7_errload: Impossibile visualizzare l'immagine
 txt_10_7_errfile: File non trovato
 txt_10_7_first: Primo
@@ -833,7 +838,7 @@ txt_clear: Pulisci
 txt_clearlayout: Svuota layout
 txt_pj_hint: Cliccare qui per importare il lavoro dalla GUI e/o resettare le modifiche
 txt_autoclose: Non visualizzare i report dei lavori
-txt_cl: linea di comando:
+txt_cl: Linea di comando
 txt_compare: Compara file
 txt_compress: Comprimi
 txt_compress_executable: Comprimi eseguibile

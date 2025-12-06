@@ -1,12 +1,17 @@
 ﻿=== PeaZip language file ===
 Swahili
-10.7
+10.8
 Translated by: khanhkhanhlele
 Last rev. by: khanhkhanhlele
 Last rev.: 20251103
 
 === PeaZip text group ===
 
+txt_10_8_log: Commands log
+txt_10_8_rv: Create recovery volumes
+txt_10_8_bk: Execute small workloads in background
+txt_10_8_params: Pass command line as separate parameters
+txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
 txt_10_7_errload: Haiwezi kuonyesha picha
 txt_10_7_errfile: Faili haijapatikana
 txt_10_7_kwanza: Kwanza
@@ -1467,3 +1472,4 @@ Usaidizi: https://peazip.github.io/peazip-help.html
 Maswali Yanayoulizwa Mara kwa Mara: https://peazip.github.io/peazip-help-faq.html
 
 Shukrani nyingi kwa watu wote wanaochangia ukuaji wa mradi wa PeaZip kutengeneza vipengele vya programu ya Open Source vinavyotumika katika programu hii (tazama tovuti kwa orodha kamili), na kwa watumiaji wote wanaochangia kwa maoni, uzoefu na ushauri.
+
