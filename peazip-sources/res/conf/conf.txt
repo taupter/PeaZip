@@ -12,7 +12,7 @@ clWindowText
 0
 [language]
 default.txt
-,
+0
 [0: always keep open task window for inspection of reports 1: (default) keep open only for errors, list, test operations 2: keep open only for errors, list 3: never keep open for inspection]
 2
 
@@ -823,4 +823,19 @@ exe cmd msi bat ps1 vbs reg
 0
 
 [Zstd backend keep extracted files if errors are detected 0 no (default) 1 yes]
+0
+
+[compact mode for task window 0 no (default) 1 yes]
+0
+
+[multivolume RAR create recovery volumes]
+0
+
+[multivolume RAR recovery volumes]
+1
+
+[execute in background tasks with a small workload]
+0
+
+[keep log of tasks]
 0
