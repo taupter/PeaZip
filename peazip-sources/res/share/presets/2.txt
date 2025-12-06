@@ -216,3 +216,9 @@ KDF type for PEA cascaded encryption
 10.6.0 EXTENSION
 Zpaq threads
 0
+
+10.8.0 EXTENSION
+Multivolume RAR create recovery volumes
+0
+Multivolume RAR recovery volumes
+1
