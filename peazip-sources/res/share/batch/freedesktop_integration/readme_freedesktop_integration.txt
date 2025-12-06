@@ -72,7 +72,18 @@ Copy peazip.desktop file or other .desktop files to standard locations specified
 For Xfce, Xfdesktop 4.5 or higher is required
 
 
-3) OPTIONAL CUSTOMISATION
+3) FLATPAK AND OTHER SANDBOXED / CONTAINERIZED PACKAGE MANAGERS
+
+If installation takes place in a sanboxed / containerized environment, adapt paragraph 2) instructions starting from the virtual root path created by the package manager for the application.
+
+In example, for PeaZip Flatpak, all Desktop Environment integration paths suggested in paragraph 2) will be replicated starting from the directory
+~/.var/app/io.github.peazip.PeaZip/
+which is the root directory of the sandboxed environment creted by Flatpak for PeaZip app.
+
+Refer to package manager's documentation for more details about how the sandboxed paths are managed, and translated in actual paths for the host system.
+
+
+4) OPTIONAL CUSTOMISATION
 
 .desktop files can be modified to implement functions described "Customisation and scripting" chapter of PeaZip help file.
 
