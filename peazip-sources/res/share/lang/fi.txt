@@ -1,9 +1,9 @@
 ﻿=== PeaZip language file ===
 Finnish
 10.8
-Translated by: Veikko M.
+Translated by: Veikko M., TJL
 Last rev. by: Giorgio Tani
-Last rev.: 20251030
+Last rev.: 20141220
 
 === PeaZip text group ===
 
@@ -12,318 +12,318 @@ txt_10_8_rv: Create recovery volumes
 txt_10_8_bk: Execute small workloads in background
 txt_10_8_params: Pass command line as separate parameters
 txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
-txt_10_7_errload: Kuvaa ei voi näyttää
-txt_10_7_errfile: Tiedostoa ei löydy
+txt_10_7_errload: Kuvaa ei voida näyttää
+txt_10_7_errfile: Tiedostoa ei löytynyt
 txt_10_7_first: Ensimmäinen
 txt_10_7_fit: Sovita näyttöön
 txt_10_7_fith: Sovita näytön korkeuteen
 txt_10_7_fitw: Sovita näytön leveyteen
-txt_10_7_keep: Säilytä tulostiedostot, jos purku päättyy virheeseen tai perutaan
+txt_10_7_keep: Säilytä tulostiedostot jos poiminta päättyy virheeseen tai se keskeytetään
 txt_10_7_next: Seuraava
 txt_10_7_prev: Edellinen
-txt_10_7_pwh: Salasana tiivisteestä
+txt_10_7_pwh: Salasana hash-funktiosta
 txt_10_7_images: Näytä kuvat
 txt_10_7_thumbnails: Näytä pikkukuvat
 txt_10_6_virtual: Dynaaminen virtuaalitila
-txt_10_5_fr: (täysi raportti)
-txt_10_5_sectype: Pyydä vahvistus seuraavien tiedostotyyppien suorittamiseen
+txt_10_5_fr: (täydellinen raportti)
+txt_10_5_sectype: Pyydä vahvistusta seuraavien tiedostotyyppien suorittamiselle
 txt_10_5_checkmotw: Tarkista Zone.Identifier (MoTW)
 txt_10_5_sectypewarning: Haluatko suorittaa tämän tiedoston?
-txt_10_5_pathlock: Tämän arkiston polun kohteita ei voi muokata
-txt_10_5_type_description_rar: RAR: suljettu arkistomuoto, korkea pakkaussuhde, tuettu ulkoisen pakkaimen kautta
+txt_10_5_pathlock: Tämän arkistopolun kohteita ei voi muokata
+txt_10_5_type_description_rar: RAR: patentoitu arkistomuoto, korkea pakkaussuhde, tuettu ulkoisen pakkaajan kautta
 txt_10_5_sh: Näytä piilotetut tiedostot ja kansiot tiedostojärjestelmässä
-txt_10_5_ntfsalt: Tämä formaatti voi tallentaa NTFS:n vaihtoehtoisen tietovirran, mukaan lukien Mark of The Web
-txt_10_4_moving: (Siirretään)
+txt_10_5_ntfsalt: Tämä muoto pystyy tallentamaan NTFS Alternate Data Streamin, mukaan lukien Mark of The Webin.
+txt_10_4_moving: (Liikkuva)
 txt_10_3_classic: Klassinen
-txt_10_3_ascii: On suositeltavaa käyttää vain ASCII-merkkejä salasanoissa nykyiselle arkistomuodolle (isot ja pienet kirjaimet, numerot ja erikoismerkit).
+txt_10_3_ascii: Nykyisen arkistomuodon salasanoissa on suositeltavaa käyttää vain ASCII-merkkejä (sekoitetaan kirjaimia, numeroita ja erikoismerkkejä).
 txt_10_3_minimal: Minimaalinen
 txt_10_3_m: Moderni
 txt_10_3_pm: Postmoderni
-txt_10_3_aw: Vaihtoehtoinen ratkaisu: valitse ”Pakota salasanan syöttö vuorovaikutteisesti” salasanaikkunassa tai aseta konsolitila taustaohjelmille.
+txt_10_3_aw: Kiertotapa: valitse salasanakehotteessa "Pakota salasanan kirjoittaminen vuorovaikutteisesti" tai aseta konsolitila taustabinääreille.
 txt_10_2_savecopy: Tallenna kopio
 txt_10_1_full: Täysi
 txt_10_1_kdfw: KDF-työmäärä
 txt_10_1_under: Alleviivattu
-txt_10_0_exptrash: Selaa roskakoria
+txt_10_0_exptrash: Tutki roskia
 txt_10_0_ptarzst: Nopein pakkaus, TAR.ZST
 txt_10_0_ptarxz: Korkea pakkaus, TAR.XZ
-txt_10_0_ptargz: Keskitasoinen pakkaus, TAR.GZ
-txt_10_0_comp: Puhdat pakkausformaatit hyväksyvät vain yhden tiedoston syötteeksi. Arkistomuunnos näihin formaatteihin epäonnistuu, jos lähde sisältää useita tiedostoja tai kansioita, mikä ei ole etukäteen määritettävissä.
+txt_10_0_ptargz: Keskitason pakkaus, TAR.GZ
+txt_10_0_comp: Puhtaat pakkausformaatit hyväksyvät vain ykden tiedoston. Arkiston muuntaminen näihin muotoihin epäonnistuu, jos lähdetiedosto sisältää useita tiedostoja tai kansioita, joita ei voida määrittää etukäteen.
 txt_10_0_save: Tallenna
 txt_10_0_tp: Tekstin esikatselu
-txt_9_9_uac: Nykyinen käyttäjä ei voi kirjoittaa tähän tulostuspolkuun. Haluatko suorittaa PeaZipin järjestelmänvalvojan oikeuksilla (UAC)?
+txt_9_9_uac: Nykyinen käyttäjä ei voi kirjoittaa tähän kohdepolkuun. Haluatko suorittaa PeaZipin UAC-laajennuksella?
 TXT_9_9_kdf: KDF-kierrokset
-txt_9_9_utc: Näytä aikaleimat UTC-muodossa
-txt_9_8_alwaysflat: Avaa arkistot aina tasanäkymässä
+txt_9_9_utc: Näytä aikaleimat UTC-aikana
+txt_9_8_alwaysflat: Avaa arkistot aina tasaisessa näkymässä
 txt_9_8_fnew: Pura tähän (uuteen kansioon)
 txt_9_8_fsmart: Pura tähän (älykäs uusi kansio)
-txt_9_7_tarpipe: 7z / p7zip käyttää putkea
+txt_9_7_tarpipe: 7z / p7zip käytä putkea
 txt_9_7_smartsorting: Älykäs tiedostonimien lajittelu
 txt_9_6_centered: Keskitetty
 txt_9_6_cside: Kompakti sivupalkki
-txt_9_6_loadpconfirm: Haluatko ladata tämän profiilin? Kaikki nykyisen profiilin tiedot, mukaan lukien tallennetut skriptit ja salasananhallinta, korvataan.
+txt_9_6_loadpconfirm: Haluatko ladata tämän profiilin? Kaikki nykyisen profiilin tiedot korvataan, mukaan lukien tallennetut skriptit ja salasananhallinta.
 txt_9_6_loadp: Lataa profiili
-txt_9_6_saveppw: VALINNAINEN: suojaa tämä profiili salasanalla / avaintiedostolla?
-txt_9_6_savepoverwrite: Korvataanko olemassa oleva profiili? Kaikki sen tiedot, mukaan lukien skriptit ja salasananhallinta, korvataan.
+txt_9_6_saveppw: VALINNAINEN: suojataanko tämä profiili salasanalla/avaintiedostolla?
+txt_9_6_savepoverwrite: Korvataanko olemassa oleva profiili? Kaikki olemassa olevan profiilin tiedot korvataan, mukaan lukien tallennetut skriptit ja salasananhallinta.
 txt_9_6_savep: Tallenna profiili
 txt_9_6_scside: Näytä kompakti sivupalkki
 txt_9_5_all: Kaikki
-txt_9_5_precond: Esikäsittele, jos virheitä havaitaan
-txt_9_5_largea: Esikäsittele suuret arkistot
-txt_9_5_mediuma: Esikäsittele keskisuuret arkistot
-txt_9_5_smalla: Esikäsittele pienet arkistot
-txt_9_5_reopentab: Avaa viimeinen välilehti uudelleen
+txt_9_5_precond: Esijäsennä, jos virheitä havaitaan
+txt_9_5_largea: Esijäsennä suuret arkistot
+txt_9_5_mediuma: Esijäsennä keskisuuret arkistot
+txt_9_5_smalla: Esijäsennä pienet arkistot
+txt_9_5_reopentab: Avaa viimeisin välilehti uudelleen
 txt_9_5_savetabs: Tallenna välilehdet
-txt_9_5_sb: Käytä järjestelmäpolkujen binäärejä
+txt_9_5_sb: Käytä binääritiedostoja järjestelmäpoluissa
 txt_9_4_r: luku
 txt_9_4_rw: luku/kirjoitus
 txt_9_4_savecomment: Tallenna kommentti
 txt_9_4_hintcomment: Kirjoita tai liitä kommentti, lataa tai vedä kommenttitiedosto tähän.
 txt_9_3_continue: Jatketaanko silti?
 txt_9_3_contrast: Kontrasti
-txt_9_3_fsd: Kohdekohteessa ei ehkä ole tarpeeksi vapaata tilaa
-txt_9_3_fsw: Väliaikaisella työpolulla ei ehkä ole tarpeeksi vapaata tilaa
-txt_9_3_mrar: Aseta RAR-binääri manuaalisesti
+txt_9_3_fsd: Kohteessa ei välttämättä ole tarpeeksi vapaata tilaa
+txt_9_3_fsw: Vapaa tila väliaikaisella työpolulla ei välttämättä riitä
+txt_9_3_mrar: Aseta käsin RAR-binääritiedosto
 txt_9_3_canedit: Tätä arkistotyyppiä voidaan muokata
-txt_9_3_canforce: Tätä arkistotyyppiä voidaan muokata (pakotettu)
+txt_9_3_canforce: Tätä arkistotyyppiä voidaan muokata (pakottaa)
 txt_9_3_cannotedit: Tätä arkistotyyppiä ei voi muokata
-txt_9_2_7za: 7z / p7zip alias
+txt_9_2_7za: 7z / p7zip-alias
 txt_9_2_changelog: Muutosloki
 txt_9_2_tfaq: Tarkista käännökset
 txt_9_2_compact: Kompakti
 txt_9_2_swt: Vaihtotyökalu / Osoiterivi
-txt_9_2_tos: Käyttöehdot, tietosuoja
-txt_9_2_doc: Tarkista dokumentaatio, virheraportit...
-txt_9_2_updates: Tarkista päivitykset, binäärit, liitännäiset...
+txt_9_2_tos: Käyttöehdot, Tietosuoja
+txt_9_2_doc: Tarkista dokumentaatio, ongelmanseuranta...
+txt_9_2_updates: Tarkista päivitykset, binäärit, laajennukset...
 txt_9_1_7zs: 7z / p7zip syntaksitaso
-txt_9_1_ac: Arkistomuunnosskriptit sallivat käyttäjän vuorovaikutuksen
+txt_9_1_ac: Arkiston muunnosskriptit mahdollistavat käyttäjän vuorovaikutuksen
 txt_9_1_closeall: Sulje kaikki
-txt_9_1_enlargeicons: Suurenna tiedostoselaimen kuvakkeet
-txt_9_1_ef: Jätä tyhjät kansiot pois arkistoinnista ja purkutoiminnoista (7z / p7zip)
+txt_9_1_enlargeicons: Suurenna tiedostoselaimen kuvakkeita
+txt_9_1_ef: Älä huomioi tyhjiä kansioita arkistointi- ja purkutoiminnoissa (7z / p7zip)
 txt_9_1_nw: Avaa uudessa ikkunassa
-txt_9_1_qdup: Käytä nopeaa kaksoiskappaleiden poistorutiinia
-txt_9_0_autoexttar: Pura automaattisesti TAR-arkisto pakatuista TAR.* -tiedostoista
-txt_9_0_accesstime: Älä muuta viimeistä käyttökertaa
-txt_9_0_mem: Suurin muistin käyttö
+txt_9_1_qdup: Käytä nopeaa deduplikaatiorutiinia
+txt_9_0_autoexttar: Pura TAR-arkisto automaattisesti pakatuista TAR.*-tiedostoista
+txt_9_0_accesstime: Älä muuta viimeisintä käyttöaikaa
+txt_9_0_mem: Muistin enimmäiskäyttö
 txt_9_0_showmainmenu: Avaa päävalikko
 txt_9_0_navmenu: Avaa navigointivalikko
-txt_9_0_plugind: Avaa binäärit ja liitännäishakemisto
+txt_9_0_plugind: Avaa binääritiedostot ja laajennushakemisto
 txt_9_0_df: Lajittele kansiot ennen tiedostoja
-txt_9_0_hl: Tallenna kovia linkkejä linkkeinä
+txt_9_0_hl: Tallenna kovat linkit linkkeinä
 txt_9_0_sl: Tallenna symboliset linkit linkkeinä
-txt_9_0_tnav: Vaihda sivupalkin, puunäkymän tai ei mitään välillä
-txt_8_9_empty: Arkisto vaikuttaa tyhjältä
-txt_8_9_disp: Näytetään arkiston sisältö
-txt_8_9_parsing: Jäsennetään arkiston sisältöä
-txt_8_9_stoptest: Pysähdy tarkastelemaan virhe-/lista-/testi-/automaattitestiraporttia
-txt_8_9_ttb: Näytä tai piilota työkalupalkki
+txt_9_0_tnav: Näytä/piilota sivupalkki, puunäkymä, ei mitään
+txt_8_9_empty: Arkisto näyttää tyhjältä
+txt_8_9_disp: Arkiston sisällön näyttäminen
+txt_8_9_parsing: Arkiston sisällön jäsentäminen
+txt_8_9_stoptest: Pysähdy tarkastaaksesi raportti virheiden, listan, testin tai automaattisen testin varalta
+txt_8_9_ttb: Näytä/piilota työkalupalkki
 txt_8_8_ca: Korostusväri
 txt_8_8_btn: Painike
 txt_8_8_cb: Painikkeen väri
 txt_8_8_centered: Keskitetyt painikkeet
-txt_8_8_light: Vaalea
+txt_8_8_light: Kevyt
 txt_8_8_lnk: Linkki
-txt_8_8_intnote: Huomaa, että ”Vuorovaikutteinen purku” -asetus (Asetukset > Arkistonhallinta) ohitetaan, kun komentorivi muodostetaan konsolivälilehdessä.
-txt_8_8_snz: Välitä Zone.Identifier-virta (Windows)
-txt_8_8_sm: Pienten kuvakkeiden koko
-txt_8_8_solcol: Täysväripalkki
-txt_8_8_snoi: Tallenna omistaja-/ryhmätunnukset (TAR, Linux)
-txt_8_8_snon: Tallenna omistaja-/ryhmänimet (TAR, Linux)
+txt_8_8_intnote: Huomaa, että "Interaktiivinen purku" -vaihtoehto (kohdassa Asetukset > Arkiston hallinta) ohitetaan komentorivin luonnissa Konsoli-välilehdellä.
+txt_8_8_snz: Levitä Zone.Identifier-virta (Windows)
+txt_8_8_sm: Pienet kuvakkeet
+txt_8_8_solcol: Kiinteä palkki
+txt_8_8_snoi: Säilytä omistajan/ryhmän tunnukset (TAR, Linux)
+txt_8_8_snon: Säilytä omistajan/ryhmän nimet (TAR, Linux)
 txt_8_8_tab: Välilehti
-txt_8_8_altt: Välilehtityyli
-txt_8_8_autotest: Testaa arkistot luomisen jälkeen, jos muoto tukee
+txt_8_8_altt: Välilehtien tyyli
+txt_8_8_autotest: Testaa arkistot luomisen jälkeen, jos formaatti tukee sitä
 txt_8_8_cw: Ikkunan väri
 txt_8_7_csvhelp: "," kansainvälinen standardi, ";" yleinen latinalaisissa kielissä
-txt_8_7_after: Arkistoinnin/purkamisen jälkeen
+txt_8_7_after: Arkistoinnin/purun jälkeen
 txt_8_7_bintest: binäärit testattu.
 txt_8_7_csv: CSV-erotin
-txt_8_7_hok: PeaZipin käyttämien binäärien tiivisteet vastaavat odotettuja arvoja
-txt_8_7_mo: Aseta arkistonhallinnan asetukset
+txt_8_7_hok: PeaZipin käyttämien binäärien tiiviste vastaa odotettuja arvoja
+txt_8_7_mo: Arkistonhallinnan asetusten määrittäminen
 txt_8_7_showhm: Näytä tiedostoselaimen otsikkovalikko
 txt_8_7_showsearchbar: Näytä hakupalkki
-txt_8_7_showsm: Näytä tyyli-valikko
-txt_8_7_hnotok: Jotkin PeaZipin käyttämien binäärien tiivisteet eivät vastaa odotettuja arvoja:
-txt_8_7_verifybin: Varmenna binäärien tiivisteet
-txt_8_6_clear: ”Tyhjennä”-vaihtoehto poistaa väliaikaiset muokatut tiedostot, muuten ne ovat edelleen käytettävissä muokkaukseen.
+txt_8_7_showsm: Näytä tyylivalikko
+txt_8_7_hnotok: Jotkin PeaZipin käyttämät binääritiedostojen tiivisteet eivät vastaa odotettuja arvoja:
+txt_8_7_verifybin: Tarkista binäärien tiiviste
+txt_8_6_clear: "Tyhjennä"-vaihtoehto poistaa väliaikaisesti muokatut tiedostot, jotka muuten ovat käytettävissä jatkomuokkaukseen.
 txt_8_6_noclear: Hylkää kaikki muutokset päivittämättä arkistoa
-txt_8_6_nosimple: Älä päivitä arkistoa, pidä väliaikaiset muokatut tiedostot
-txt_8_6_immediate: Välitön suoritus
-txt_8_6_yessimple: Päivitä arkisto, pidä väliaikaiset muokatut tiedostot
+txt_8_6_nosimple: Älä päivitä arkistoa, säilytä väliaikaisesti muokatut tiedostot myöhempää muokkausta varten
+txt_8_6_immediate: Välitön toteutus
+txt_8_6_yessimple: Päivitä arkisto, säilytä väliaikaisesti muokatut tiedostot myöhempää muokkausta varten
 txt_8_5_advbrowser: Käytä suodattimia arkistoselaimessa
 txt_8_5_detailslarge: Yksityiskohdat, suuret
-txt_8_5_intext: Pura väliaikaiseen työhakemistoon ja siirrä sitten tulokseen (kysy ennen ylikirjoitusta)
+txt_8_5_intext: Pura väliaikaiseen työpolkuun ja siirry sitten tulosteeseen (kysy ennen päällekirjoittamista)
 txt_8_5_listlarge: Lista, suuri
-txt_8_5_loadlayout: Lataa asettelu käynnistyksessä
-txt_8_5_samplescripts: Esimerkkiskriptit
-txt_8_4_keepopenerrorslist: Pysähdy tarkastelemaan virhe-/listaraporttia
+txt_8_5_loadlayout: Lataa asettelu käynnistyksen yhteydessä
+txt_8_5_samplescripts: Näyteskriptit
+txt_8_4_keepopenerrorslist: Pysähdy tarkastamaan raportti virheiden varalta, listaa
 txt_8_3_mbubin: Binääri
-txt_8_3_cw: Vaihdetaanko työskentelyhakemistoa? Tämä nollaa väliaikaiset työskentelytiedostot ja käynnistää sovelluksen uudelleen.
+txt_8_3_cw: Vaihdetaanko työhakemisto? Tämä nollaa väliaikaiset työtiedostot ja käynnistää sovelluksen uudelleen.
 txt_8_3_temperature: Värilämpötila
 txt_8_3_mbudec: Desimaali
 txt_8_3_htab: Korosta välilehdet
 txt_8_3_maxarg: Argumenttien enimmäispituus
-txt_8_3_mbu: Monitavuyksikkö
-txt_8_3_prefalgo: Ensisijaiset algoritmit
-txt_8_3_skipdel: Ohita lukittujen väliaikaistiedostojen poisto (käytä nollaus-toimintoa poistaaksesi tarvittaessa)
-txt_8_3_lw: Joitakin työskentelyhakemiston tiedostoja on lukittu, eikä niitä voi poistaa automaattisesti
-txt_8_3_noupx: Tätä binääriä ei voida pakata (se voi olla jo pakattu)
+txt_8_3_mbu: Usean tavun yksikkö
+txt_8_3_prefalgo: Suositellut algoritmit
+txt_8_3_skipdel: Ohita lukittujen väliaikaistiedostojen poistaminen (käytä palautustoimintoa poistaaksesi tiedostot tarvittaessa)
+txt_8_3_lw: Jotkin työhakemiston tiedostot on lukittu, eikä niitä voida poistaa automaattisesti
+txt_8_3_noupx: Tätä binääritiedostoa ei voida pakata (se on ehkä jo pakattu)
 txt_8_2_slower: (hitaampi)
 txt_8_2_df: 7z / p7zip näyttää kansioiden sisällön
-txt_8_2_vreport: 7z / p7zip ei-yksityiskohtainen raportti
-txt_8_2_ta: Käytetty
+txt_8_2_vreport: 7z / p7zip lyhyt raportti
+txt_8_2_ta: Käytössä
 txt_8_2_tc: Luotu
 txt_8_2_keep: Säilytä tiedostot
 txt_8_2_tm: Muokattu
 txt_8_2_skipet: Ohita salauksen testaus
 txt_8_2_alltimes: Tallenna kaikki aikaleimat
-txt_8_2_supportedby: Tuettu ohjelmalla
-txt_8_1_preparse: Esikäsittele aina arkistot
+txt_8_2_supportedby: Tukee
+txt_8_1_preparse: Jäsennä aina arkistot etukäteen
 txt_8_1_bo: Selaimen optimointi
-txt_8_1_bop: Selaimen optimointiasetukset voidaan määrittää Asetukset > Yleiset -välilehdeltä, jotta selain voi näyttää suuren määrän kohteita sisältävät arkistot.
-txt_8_1_nopreparse: Älä esikäsittele arkistoja
-txt_8_1_ed: virheitä havaittu.
-txt_8_1_togglearc: Arkiston sisällön tasalistanäkymän lataaminen voi kestää kauan, jatketaanko silti?
-txt_8_1_preparsehint: Optimoi suorituskyky rajoittamalla suurten arkistojen esikäsittelyä. Esikäsittelyn tarkoitus on havaita mahdolliset ongelmat etukäteen.
+txt_8_1_bop: Selaimen optimointiasetukset voidaan määrittää kohdassa Valinnat > Asetukset, Yleiset-välilehdellä, jotta selain voi näyttää arkistoja, jotka sisältävät erittäin suuren määrän kohteita.
+txt_8_1_nopreparse: Älä jäsennä arkistoja etukäteen
+txt_8_1_ed: havaittu virheitä.
+txt_8_1_togglearc: Arkistosisällön listaaminen tasanäkymänä voi kestää kauan, jatketaanko silti?
+txt_8_1_preparsehint: Optimoi suorituskykyä rajoittamalla suurten arkistojen esijäsennystä. Esijäsennyksen tarkoituksena on havaita etukäteen mahdolliset ongelmat arkistosisällössä.
 txt_8_1_slow: Hidas
-txt_8_1_vslow: Erittäin hidas
-txt_8_1_volumes: osat
+txt_8_1_vslow: Hyvin hidas
+txt_8_1_volumes: levyt
 txt_8_0_altcol: Vaihtoehtoinen ruudukon väri
-txt_8_0_forcebrowse: Selaa ei-kanonisia arkistotyyppejä (kontit, levykuvat, asennusohjelmat,...)
+txt_8_0_forcebrowse: Selaa ei-kanonisia arkistotyyppejä (säilöt, levykuvat, asennusohjelmat,...)
 txt_8_0_commonalgo: Yleiset algoritmit
-txt_8_0_forceconvert: Muunna ei-kanonisia arkistotyyppejä
-txt_8_0_defaultactionhint: Oletustoiminto, kun tiedostoa kaksoisnapsautetaan järjestelmässä, jos se on liitetty PeaZipiin
-txt_8_0_defaultaction: Oletustoiminto käynnistyksessä
-txt_8_0_enableextand: Ota käyttöön ”Pura ja avaa ohjelmalla” -alivalikko
-txt_8_0_forcetyping: Pakota salasanan kirjoittaminen vuorovaikutteisesti
-txt_8_0_setpwopt: Aseta salasanan / avaintiedoston asetukset
-txt_8_0_forcetypinghelp: Suorittaa taustabinaarit konsolissa, ei voi selata arkistoja, joissa tiedostonimet on salattu. Mahdollistaa sellaisten skriptien luomisen, jotka eivät toimi automaattisesti, vaan pyytävät käyttäjältä salasanaa.
-txt_7_9_spacing: Välit
+txt_8_0_forceconvert: Muunna ei-kanoniset arkistotyypit
+txt_8_0_defaultactionhint: Oletustoiminto kaksoisnapsauttaa PeaZipiin liittyvää tiedostoa järjestelmästä
+txt_8_0_defaultaction: Oletustoiminto käynnistyksen yhteydessä
+txt_8_0_enableextand: Ota käyttöön "Pura ja avaa sovelluksella" -alivalikko
+txt_8_0_forcetyping: Pakota kirjoittamaan salasanat interaktiivisesti
+txt_8_0_setpwopt: Aseta salasana / avaintiedostoasetukset
+txt_8_0_forcetypinghelp: Suorittaa taustajärjestelmän binäärejä konsolissa, ei voi selata salatuilla tiedostonimillä varustettuja arkistoja. Sallii komentosarjojen luomisen, jotka eivät suorita valvomatta, vaan kysyvät käyttäjältä salasanaa interaktiivisesti.
+txt_7_9_spacing: Välistys
 txt_7_9_zooming: Zoomaus
 txt_7_8_changelocalization: Vaihda PeaZipin kieli
-txt_7_8_custext: Mukautettu tiedostopääte
-txt_7_8_destexistfile: Kohde sisältää jo käsiteltyjä tiedostoja. Korvataanko samannimiset tiedostot?
+txt_7_8_custext: Mukautettu laajennus
+txt_7_8_destexistfile: Kohde sisältää jo käsiteltyjä tiedostoja. Korvataanko tiedostot samalla nimellä?
 txt_7_8_dd: Vedä ja pudota
 txt_7_8_priorityhigh: Korkea
-txt_7_8_priorityidle: Lepotila
-txt_7_8_rel: Vuorovaikutteinen purku
+txt_7_8_priorityidle: Lepotilassa
+txt_7_8_rel: Interaktiivinen purku
 txt_7_8_prioritynormal: Normaali
 txt_7_8_priorityrealtime: Reaaliaikainen
 txt_7_8_requirerestart: [vaatii PeaZipin uudelleenkäynnistyksen]
 txt_7_8_tpriority: Tehtävien prioriteetti
 txt_7_8_update: Päivitä
-txt_7_7_noneall: Ei mitään (ei esikatselua, ei Vedä ja Pudota -purkua)
-txt_7_7_nonetemp: Ei mitään, käyttäjän väliaikainen jos tarpeen
-txt_7_7_outtemp: Tuloste, esikatselu käyttäjän väliaikaisessa kansiossa
-txt_7_7_sys7zreq: Vaatii asennetun p7zip-full tai vastaavan
-txt_7_7_tw: Väliaikainen työskentelykansio arkistojen luontiin, muokkaukseen, esikatseluun ja Vedä ja Pudota -purkuun
-txt_7_7_sys7z: Käytä järjestelmän 7z-ohjelmaa Linuxissa
-txt_7_6_zipenc: 7z/p7zip ZIP-tiedostonimien merkistökoodaus
+txt_7_7_noneall: Ei mitään (ei esikatselua, ei vetämällä ja pudottamalla tapahtuvaa poimintaa)
+txt_7_7_nonetemp: Ei mitään, käyttäjän väliaikainen tila tarvittaessa
+txt_7_7_outtemp: Tuloste, esikatselu käyttäjän väliaikaisessa tilassa
+txt_7_7_sys7zreq: Vaatii p7zip-fullin tai vastaavan asennettuna
+txt_7_7_tw: Väliaikainen työkansio arkiston luomista, muokkaamista, esikatselua ja vetämällä ja pudottamalla tapahtuvaa purkamista varten.
+txt_7_7_sys7z: Käytä 7z-järjestelmää Linuxissa
+txt_7_6_zipenc: 7z/p7zip ZIP-tiedostonimien koodaus
 txt_7_6_color: Väri
-txt_7_6_custenc: Mukautettu merkistösivu
+txt_7_6_custenc: Mukautettu koodisivu
 txt_7_6_dark: Tumma
 txt_7_6_tno: Älä synkronoi arkistopuuta
 txt_7_6_forcelocalenc: Pakota paikallinen
 txt_7_6_forceutf8enc: Pakota UTF-8
-txt_7_6_cpnote: Jos valittu mukautettu merkistösivu ei ole tuettu, tehtävät epäonnistuvat aina (todennäköisesti muistiallokointivirhe). Jos näin käy, vaihda merkistösivu tai nollaa sovellus.
+txt_7_6_cpnote: Jos valittua mukautettua koodisivua ei tueta, tehtävät päättyvät aina virheeseen (todennäköisimmin muistin allokointivirheeseen). Jos näin käy, vaihda koodisivu tai nollaa sovellus.
 txt_7_6_defaultenc: Paikallinen, UTF-8 lisäsymboleille
-txt_7_6_dim: Himmeä
-txt_7_6_setcurdef: Aseta nykyinen polku oletustulostuspoluksi
-txt_7_6_setdef: Aseta oletustulostuspolku
-txt_7_6_tadvanced: Synkronoi arkistopuu, säilytä käydyt solmut
+txt_7_6_dim: Hämärä
+txt_7_6_setcurdef: Aseta nykyinen polku oletuslähtöpoluksi
+txt_7_6_setdef: Aseta oletuslähtöpolku
+txt_7_6_tadvanced: Synkronoi arkistopuu, säilytä käytetyt solmut
 txt_7_6_tsimple: Synkronoi arkistopuu, yksinkertainen
-txt_7_6_tacolor: Tekstin korostusväri
+txt_7_6_tacolor: Tekstin aksentti
 txt_7_5_always: Aina
 txt_7_5_ask: Kysy
-txt_7_5_autoclosesingle: Sulje automaattisesti purun jälkeen, jos selaustoimia ei tehty
-txt_7_5_cutlen: Lyhennä nimi määritettyyn pituuteen
-txt_7_5_cutlenw: Lyhennä nimi määritettyyn pituuteen (4..255), nimeämiskonfliktit voidaan korjata myöhemmin manuaalisesti
+txt_7_5_autoclosesingle: Sulje automaattisesti purkamisen jälkeen, jos selaustoimintoja ei ole tehty
+txt_7_5_cutlen: Leikkaa nimi määrättyyn pituuteen
+txt_7_5_cutlenw: Leikkaa nimi määritetyn pituuden kohdalle (4..255). Nimeämisristiriidat voidaan korjata manuaalisesti myöhemmin.
 txt_7_5_dragnone: Älä lukitse kohdetta
 txt_7_5_specialbrowse: Haluatko purkaa kaiken, jotta tiedosto saa tarvitsemansa lisätiedot?
-txt_7_5_ee: Pura kaikki erityistyypeille
+txt_7_5_ee: Pura kaikki erikoistiedostotyyppejä varten
 txt_7_5_draghide: Piilota pudotuskohde
 txt_7_5_draglh: Lukitse ja piilota kohde
 txt_7_5_draglock: Lukitse pudotuskohde
 txt_7_5_never: Ei koskaan
-txt_7_5_repnascii: Korvaa/poista ei-ASCII-merkit
+txt_7_5_repnascii: Korvaa/poista muita kuin ASCII-merkkejä
 txt_7_4_comment: Kommentti
 txt_7_4_7zfbrotlicomp: Nopein pakkaus, 7Z Brotli
-txt_7_4_7zfzstandardcomp: Nopein pakkaus, 7Z Zstandard
+txt_7_4_7zfzstandardcomp: Nopein pakkaus, 7Z Z-standardi
 txt_7_4_presetrar: Korkea pakkaus, RAR
-txt_7_4_tkeep: Säilytä alkuperäisen arkiston aikaleima
+txt_7_4_tkeep: Säilytä alkuperäinen arkiston aikaleima
 txt_7_4_lock: Lukitse arkisto
 txt_7_4_locked: lukittu
-txt_7_4_lockconfirm: Lukittuja arkistoja ei voi enää muokata. Lukitaanko tämä arkisto?
+txt_7_4_lockconfirm: Lukittuja arkistoja ei voi enää muokata, jatketaanko arkiston lukitsemista?
 txt_7_4_recover: Korjaa arkisto
 txt_7_4_tcurr: Aseta arkiston aikaleima nykyisestä järjestelmäajasta
-txt_7_4_setarc: Aseta arkistointivaihtoehdot
-txt_7_4_setext: Aseta purkuvaihtoehdot
-txt_7_4_swzipx: Vaihda zipx-päätteeseen ei-Deflate ZIP-arkistoille
+txt_7_4_setarc: Määritä arkistointiasetukset
+txt_7_4_setext: Aseta purkuasetukset
+txt_7_4_swzipx: Vaihda zipx-laajennukseen muille kuin Deflate-zip-arkistoille
 txt_7_3_archiveerrors: [arkisto saattaa sisältää virheitä]
-txt_7_3_archiveerrorshint: Arkisto ei ehkä ole kelvollinen (puuttuvia, vioittuneita tai epästandardin mukaisia tietoja). Yksityiskohtainen testi voidaan suorittaa. Jos arkiston sisältötaulukko on salattu, salasana tarvitaan ennen selaamista.
-txt_7_3_clickextall: Napsauta ”Pura kaikki” ottaaksesi käyttöön
-txt_7_3_noconfdel: Älä kysy vahvistusta poistolle arkistoinnin/purkamisen jälkeen
+txt_7_3_archiveerrorshint: Arkisto ei ehkä ole kelvollinen (puuttuvien, vioittuneiden tai standardinvastaisten tietojen vuoksi). Voit suorittaa testin saadaksesi lisätietoja. Jos arkiston sisällysluettelo on salattu, salasana tarvitaan ennen sen selaamista.
+txt_7_3_clickextall: Ota käyttöön napsauttamalla "Pura kaikki"
+txt_7_3_noconfdel: Älä kysy vahvistusta poistolle arkistoinnin/purun jälkeen
 txt_7_3_profile7zfastest: Nopea pakkaus, 7Z nopein
-txt_7_3_maxbr: Maksimoi Brotli-pakkaus käyttämällä enemmän muistia (ei ehkä yhteensopiva joidenkin purkajien kanssa)
-txt_7_3_maxzstd: Maksimoi Zstandard-pakkaus käyttämällä enemmän muistia
-txt_7_3_profile7zfast: Keskitasoinen pakkaus, 7Z nopea
-txt_7_3_stl: Aseta arkiston aikaleima viimeisimmän tiedoston mukaan
-txt_7_2_altcomp: Vaihtoehtoinen pakkaus, ARC
+txt_7_3_maxbr: Maksimoi Brotlin pakkaus käyttämällä enemmän muistia (voi olla yhteensopimaton joidenkin purkajien kanssa)
+txt_7_3_maxzstd: Maksimoi Z-standardin pakkaus käyttämällä enemmän muistia
+txt_7_3_profile7zfast: Keskitason pakkaus, 7Z nopea
+txt_7_3_stl: Aseta arkiston aikaleima viimeisimmästä tiedostosta
+txt_7_2_altcomp:Vaihtoehtoinen pakkaus, ARC
 txt_7_2_clearnoupdate: Tyhjennä muokatut tiedostot
 txt_7_2_autoclosepeazip: Sulje PeaZip, kun tehtävä on valmis
 txt_7_2_zpaqall: Pura kaikki versiot
 txt_7_2_extcomp: Äärimmäinen pakkaus, ZPAQ
 txt_7_2_extcompultra: Äärimmäinen pakkaus, ZPAQ ultra
 txt_7_2_fbrotlicomp: Nopein pakkaus, Brotli
-txt_7_2_fzstandardcomp: Nopein pakkaus, Zstandard
+txt_7_2_fzstandardcomp: Nopein pakkaus, Z-standardi
 txt_7_2_loadcompsettings: Lataa pakkausasetukset
 txt_7_2_savecompsettings: Tallenna pakkausasetukset
 txt_7_2_source: Lähde
 txt_7_2_updateclear: Päivitä muokatut tiedostot arkistossa ja tyhjennä muokatut tiedostot
-txt_7_1_type_description_brotli: Brotli: Googlen nopea pakkausalgoritmi, erittäin nopea purku
+txt_7_1_type_description_brotli: Brotli: nopea pakkaus Googlelta, erittäin nopea purku
 txt_7_1_new: Pura kaikki tähän, uuteen kansioon
-txt_7_1_smart: Pura kaikki tähän, älykkäästi
-txt_7_1_profileintermediate: Keskitasoinen pakkaus, ZIP/BZip2 nopea
-txt_7_1_renfilesonly: Nimeä uudelleen vain tiedostot
-txt_7_1_typetosearch: Kirjoita hakeaksesi nykyisestä polusta
-txt_7_1_type_description_zstd: Zstandard: Facebookin nopea pakkausalgoritmi, erittäin nopea purku
+txt_7_1_smart: Pura kaikki tähän, fiksu
+txt_7_1_profileintermediate: Keskitason pakkaus, nopea ZIP/BZip2
+txt_7_1_renfilesonly: Nimeä vain tiedostot uudelleen
+txt_7_1_typetosearch: Kirjoita etsiäksesi nykyisestä polusta
+txt_7_1_type_description_zstd: Zstandard: nopea pakkaus Facebookilta, erittäin nopea purku
 txt_7_0_af: Analysoi kansioiden sisältö
-txt_7_0_autoopentar: Avaa automaattisesti yksittäinen tar-arkisto tar.* -tiedostojen sisältä
-txt_7_0_exttmppath: Sisältö puretaan väliaikaisen työkansion ulkopuolelle kohteeseen:
-txt_6_9_autou: Päivitä automaattisesti muokatut tiedostot arkistoissa
+txt_7_0_autoopentar: Avaa automaattisesti yksittäinen tar-arkisto tar.*-tiedostojen sisällä
+txt_7_0_exttmppath: Sisältö puretaan väliaikaisen työpolun ulkopuolelta seuraavasti:
+txt_6_9_autou: Päivitä muokatut tiedostot automaattisesti arkistoissa
 txt_6_9_forceu: Pakota muokattujen tiedostojen päivitys arkistoissa
-txt_6_9_opuns: Toiminto ei ole tuettu nykyiselle arkistotyypille
-txt_6_9_overarch: Korvataanko arkistossa jo olemassa olevat samannimiset tiedostot?
-txt_6_9_uconf: Esikatseltu tiedosto on muokattu. Päivitetäänkö nykyinen arkisto?
-txt_6_8_ndrop: Käytä Windowsin omaa Vedä ja Pudota -toimintoa
+txt_6_9_opuns: Toimintoa ei tueta nykyiselle arkistotyypille
+txt_6_9_overarch: Korvataanko arkistossa jo olevat samanniminent tiedostot?
+txt_6_9_uconf: Esikatseltua tiedostoa on muokattu. Päivitetäänkö nykyinen arkisto?
+txt_6_8_ndrop: Käytä Windowsissa natiivia vedä ja pudota -toimintoa
 txt_6_7_nop: (ei esikatselua)
-txt_6_6_pdupfound: mahdollisia kaksoiskappaleita löytynyt (nopea likimääräinen testi)
+txt_6_6_pdupfound: mahdollisia kaksoiskappaleita löytyi (nopea likimääräinen testi)
 txt_6_6_rsh: Nollaa hakuhistoria
 txt_6_6_pdupfind: Ehdota mahdollisia kaksoiskappaleita
-txt_6_6_forcemodify: Yritä muokata tiedostotyyppejä, joita ei tueta suoraan
+txt_6_6_forcemodify: Yritä muokata tiedostotyyppejä, joita ei nimenomaisesti tueta
 txt_6_5_mandatory: (pakollinen)
 txt_6_5_abort: Keskeytä
-txt_6_5_askp: Kysy salasanan asettamista käynnistyksessä
+txt_6_5_askp: Pyydä salasanan asettamista käynnistyksen yhteydessä
 txt_6_5_chp: Vaihda salasana
 txt_6_5_def: Määritelmä
-txt_6_5_nop: Älä kysy salasanan asettamista käynnistyksessä
+txt_6_5_nop: Älä pyydä salasanan asettamista käynnistyksen yhteydessä
 txt_6_5_error: Virhe
 txt_6_5_seqerr: Virheitä havaittu, alkuperäisiä tiedostoja ei poisteta
-txt_6_5_sni: Sisällytä NT-turvatiedot
-txt_6_5_sns: Sisällytä NTFS:n vaihtoehtoinen tietovirta
+txt_6_5_sni: Sisällytä NT-tietoturvatiedot
+txt_6_5_sns: Sisällytä NTFS-vaihtoehtoinen tietovirta
 txt_6_5_privacy: Tietosuoja
-txt_6_5_showvolatile: Näytä, mitkä asetukset ovat tilapäisiä / kontekstiriippuvaisia
+txt_6_5_showvolatile: Näytä mitkä vaihtoehdot ovat epävakaita / kontekstista riippuvia
 txt_6_5_force: Yritä avata virheitä sisältävät arkistot
 txt_6_5_warning: Varoitus
 txt_6_5_yes: Kyllä
 txt_6_5_yesall: Kyllä kaikkiin
-txt_6_5_np: Voit nyt vaihtaa muunnetun arkiston salasanan uuteen tai jättää salasanan tyhjäksi ohittaaksesi salauksen
+txt_6_5_np: Voit nyt vaihtaa muunnettujen arkistojen salasanan uuteen tai tyhjentää salasanan ohittaaksesi salauksen.
 txt_6_4_absolute: Absoluuttiset polut
-txt_6_4_appdirn: Lisää hakemiston nimi perään
+txt_6_4_appdirn: Lisää hakemiston nimi
 txt_6_4_closeallother: Sulje kaikki muut välilehdet
 txt_6_4_closeright: Sulje oikealla olevat välilehdet
-txt_6_4_collapse: Supista välilehdet
+txt_6_4_collapse: Pienennä välilehdet
 txt_6_4_expand: Laajenna välilehdet
-txt_6_4_full: Täydelliset polut
+txt_6_4_full: Täydet polut
 txt_6_4_new: Uusi
 txt_6_4_openintab: Avaa uudessa välilehdessä
 txt_6_4_paths: Polut
@@ -334,25 +334,25 @@ txt_6_3_autoadjust: Säädä sarakkeet automaattisesti
 txt_6_3_cinfo: Tiedot ja kommentit
 txt_6_3_syn: Synkronoi arkisto levyn kanssa
 txt_6_3_uar: Päivitä vain arkistossa jo olevat tiedostot
-txt_6_2_encext: Lisää ”.enc”-pääte salattuihin arkistoihin
+txt_6_2_encext: Lisää salattuihin arkistoihin pääte ".enc"
 txt_6_2_archive: Arkistotiedoston tyyppi
-txt_6_2_container: Konttitiedoston tyyppi
-txt_6_1_ec: Laajenna / supista arkistopuu
-txt_6_0_msq: Lajittele tiedostotyypin mukaan solid-pakkauksessa
+txt_6_2_container: Säiliötiedoston tyyppi
+txt_6_1_ec: Laajenna / kutista arkistopuu
+txt_6_0_msq: Lajittele tiedostotyypin mukaan tasaisen pakkauksen saavuttamiseksi
 txt_5_9_lff: Analysoi tiedostot ja kansiot
-txt_5_9_pff: Analysoi, näytä tiedostojen otsake / EOF
+txt_5_9_pff: Analysoi, näytä tiedostojen otsikot/EOF
 txt_5_9_start: Aloita kohdasta
-txt_5_8_l0: Salli kaikki tuetut komponentit/formaatit
-txt_5_8_l1: Salli vain vapaiden ohjelmistojen komponentit
+txt_5_8_l0: Salli kaikki tuetut komponentit/muodot
+txt_5_8_l1: Salli vain ilmaisohjelmistokomponentit
 txt_5_8_l2: Salli vain avoimet arkistomuodot
-txt_5_8_ascii: ASCII-turvallinen, skriptit toimivat vanhoissa ympäristöissä
-txt_5_8_cp: Koodisivuturvallinen, skriptit voivat aiheuttaa ongelmia vanhoissa ympäristöissä, joissa on eri koodisivu
-txt_5_8_fs: Vapaa ohjelmistoyhteensopivuus
-txt_5_8_utf: Skriptit tarvitsevat täyden UTF-8 / Unicode -ympäristön
-txt_5_8_fsr: Tämä formaatti ei ole tuettu vapaiden ohjelmistojen yhteensopivuusrajoitusten vuoksi (Asetukset > Lisäasetukset)
+txt_5_8_ascii: ASCII-turvallinen, skriptit ovat turvallisia vanhoissa ympäristöissä
+txt_5_8_cp: Koodisivuturvallinen, skriptit voivat aiheuttaa ongelmia vanhoissa ympäristöissä, joissa on eri koodisivut
+txt_5_8_fs: Free Software vaatimustenmukaisuus
+txt_5_8_utf: Skriptit tarvitsevat täyden UTF-8 / Unicode-ympäristön
+txt_5_8_fsr: Tätä muotoa ei tueta vapaiden ohjelmistojen vaatimustenmukaisuusrajoitusten vuoksi (Asetukset > Lisäasetukset)
 txt_5_7_pinstalled: ASENNETTU
 txt_5_7_pmissing: PUUTTUU
-txt_5_7_plugin: Liitännäinen puuttuu, sen voi asentaa valikosta Ohje > Tarkista liitännäiset ja lisäosat
+txt_5_7_plugin: Liitännäinen puuttuu, sen voi asentaa Ohje > Tarkista liitännäinen ja lisäosa -kohdasta
 txt_5_6_basic: Perus
 txt_5_6_exarc: Pura arkisto
 txt_5_6_tab: Avaa uudessa välilehdessä
@@ -770,7 +770,7 @@ txt_about: Tietoja
 txt_action: Toiminto
 txt_action_hint: Toiminto liitetyn sovelluksen avauksessa tai esikatselussa
 txt_add: Lisää
-txt_add_existing_archive: lisää (jos paketti on olemassa)
+txt_add_existing_archive: Lisää (jos paketti on olemassa)
 txt_add_archive: Lisää paketti
 txt_add_files: Lisää tiedosto(ja)
 txt_add_folder: Lisää kansio
@@ -1044,7 +1044,7 @@ txt_list_na: n/a
 txt_name: Nimi
 txt_naming: Nimeämiskäytäntö
 txt_unit_remote: Verkkoasema
-txt_newarchive: uusi paketti
+txt_newarchive: Uusi paketti
 txt_cnewfolder: Uusi kansio
 txt_news: Uutiset
 txt_no: Ei
@@ -1190,7 +1190,7 @@ txt_type_description_split: Jaa tiedosto valinnaisella eheystarkistuksella
 txt_split_file: Jaa tiedosto
 txt_list_nostats: tilastoja ei ole käytettävissä
 txt_status: Tila
-txt_level_store: Säilö
+txt_level_store: Varasto
 txt_stream_control: Virran hallinta
 txt_strip: Riisu ennen UPXia (suositus)
 txt_keyfile_created: Avaintiedosto luotu:
@@ -1235,7 +1235,7 @@ txt_units: asema(a)
 txt_unit_unknown: Tuntematon asematyyppi
 txt_un7z_pw_untested: Testaamaton
 txt_up: Yksi taso ylöspäin
-txt_update: päivitä (mikäli paketti on olemassa)
+txt_update: Päivitä (mikäli paketti on olemassa)
 txt_type_description_upx: UPX: pakkaa vain ohjelmatiedostoja
 txt_advfilters: Käytä lisäsuodattimia
 txt_openfiles_hint: Tällä vaihtoehdolla voit sisällyttää pakettitiedostojen avaamisen muille sovelluksille (hyödyllinen varmuuskopioinnissa)
