@@ -1496,4 +1496,11 @@ object FormPea: TFormPea
       A14A9FB396CEC1C239FC280F2BEF42587DFFC14A5FD5FEFECCDF8C8FBC3E
     }
   end
+  object TimerDropInput: TTimer
+    Enabled = False
+    Interval = 250
+    OnTimer = TimerDropInputTimer
+    Left = 456
+    Top = 248
+  end
 end

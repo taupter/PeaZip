@@ -227,6 +227,7 @@ type
     LabelWarning: TLabel;
     MemoTmp: TMemo;
     MemoConsole: TMemo;
+    pmCompact: TMenuItem;
     MenuItemRecycle: TMenuItem;
     MenuItemQuickdelete: TMenuItem;
     MenuItemZerodelete: TMenuItem;
@@ -341,6 +342,7 @@ type
     procedure pm2restoreClick(Sender: TObject);
     procedure pm2searchClick(Sender: TObject);
     procedure pmbackgroundClick(Sender: TObject);
+    procedure pmCompactClick(Sender: TObject);
     procedure pmeiClick(Sender: TObject);
     procedure pmeoClick(Sender: TObject);
     procedure pmetClick(Sender: TObject);
@@ -777,7 +779,7 @@ try
    assignfile(t,(sharepath+'lang'+Directoryseparator+lang));
    filemode:=0;
    reset(t);
-   read_header(t);
+   read_header(t,filemode);
    readln(t,s); //declaration
    if (s<>'=== PeaZip language file ===') and (s<>'== PeaZip language file ===') then
       begin
@@ -1783,7 +1785,6 @@ if FormGwrap.Visible=true then Application.ProcessMessages;
 setwrap;
 
 P:=TProcessUTF8.Create(nil);
-P.CommandLine:=(cl);
 M := TMemoryStream.Create;
 BytesRead := 0;
 M.setsize(32*1024);
@@ -1858,7 +1859,7 @@ FormGwrap.StringGridReport.Rowcount:=1;
          P.Priority:=ppIdle;
          end;
       end;
-   P.Execute;
+   peapexecute(P,cl);
 
    if ppipepw<>'' then
       begin
@@ -2187,10 +2188,9 @@ begin
    {$ELSE}
    cl:='halt';
    {$ENDIF}
-   P.commandline:=cl;
    if FormGwrap.Visible=true then Application.ProcessMessages;
    if validatecl(cl)<>0 then begin pMessageWarningOK(txt_2_7_validatecl+' '+cl); exit; end;
-   P.Execute;
+   peapexecute(P,cl);
    P.Free;
    end;}
 if autoopen=1 then
@@ -2676,9 +2676,8 @@ in_param:=stringdelim(escapefilename(cl,desk_env));
 bin_name:=stringdelim(escapefilename(peazippath,desk_env)+'peazip'+EXEEXT);
 {$IFDEF MSWINDOWS}P.Options := [poNoConsole];{$ELSE}P.Options := [poWaitOnExit];{$ENDIF}
 cl:=bin_name+' -ext2open '+in_param; //ext2open handles a single input in open interface
-P.Commandline:=cl;
 if validatecl(cl)<>0 then begin pMessageWarningOK(txt_2_7_validatecl+' '+cl); exit; end;
-P.Execute;
+peapexecute(P,cl);
 P.Free;
 Application.Terminate;
 end;
@@ -2803,9 +2802,8 @@ if erasemode=2 then eraselevel:='ZERO';
 if erasemode=3 then eraselevel:='RECYCLE';
 {$IFDEF MSWINDOWS}P.Options := [poNoConsole, poWaitOnExit];{$ELSE}P.Options := [poWaitOnExit];{$ENDIF}
 cl:=bin_name+' WIPE '+eraselevel+' '+in_param;
-P.CommandLine:=cl;
 if validatecl(cl)<>0 then begin pMessageWarningOK(txt_2_7_validatecl+' '+cl); exit; end;
-P.Execute;
+peapexecute(P,cl);
 P.Free;
 end;
 
@@ -2909,6 +2907,31 @@ TrayIconTask.visible:=true;
 FormGwrap.visible:=false;
 end;
 
+procedure setgwrapcompact;
+begin
+FormGwrap.pmCompact.Checked:=not(FormGwrap.pmCompact.Checked);
+if FormGwrap.pmCompact.Checked = false then //non compact
+   begin
+   FormGwrap.imagetask.Visible:=true;
+   if (FormGwrap.Width=FormGwrap.Constraints.MinWidth) and (FormGwrap.Height=FormGwrap.Constraints.MinHeight) then
+      begin
+      FormGwrap.Width:=640;
+      FormGwrap.Height:=320;
+      end;
+   end
+else //compact
+   begin
+   FormGwrap.imagetask.Visible:=false;
+   FormGwrap.Width:=FormGwrap.Constraints.MinWidth;
+   FormGwrap.Height:=FormGwrap.Constraints.MinHeight;
+   end;
+end;
+
+procedure TFormGwrap.pmCompactClick(Sender: TObject);
+begin
+setgwrapcompact;
+end;
+
 procedure TFormGwrap.pmeiClick(Sender: TObject);
 begin
 explore_in;
@@ -2939,9 +2962,8 @@ P:=tprocessutf8.Create(nil);
 cl:=s;
 if FormGwrap.Visible=true then Application.ProcessMessages;
 if validatecl(cl)<>0 then begin pMessageWarningOK(txt_2_7_validatecl+' '+cl); exit; end;
-P.CommandLine:=cl;
 try
-P.Execute;
+peapexecute(P,cl);
 except
 end;
 P.Free;
@@ -2967,8 +2989,7 @@ cl:='open '+s;
 {$ENDIF}
 if FormGwrap.Visible=true then Application.ProcessMessages;
 if validatecl(cl)<>0 then begin pMessageWarningOK(txt_2_7_validatecl+' '+cl); exit; end;
-P.CommandLine:=cl;
-P.Execute;
+peapexecute(P,cl);
 P.Free;
 {$ENDIF}
 end;

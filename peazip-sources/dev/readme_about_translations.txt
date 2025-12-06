@@ -1,11 +1,8 @@
-Notes to 10.7 release
+Notes to 10.8 release
 
 Modified existing text
-txt_10_5_sh: Show hidden files (in the filesystem)
-txt_5_0_perf: Performances
-txt_default: Default
-txt_add_tobookmarks: Add to Bookmarks
-txt_2_3_pw_errorchar_gwrap: quote character cannot be used in passwords under current system, please change password or chose Console mode in Backend binaries user interface in Options > Settings
+txt_8_1_ed: Error(s) detected.
+txt_cl: Command line
 
 = GENERAL NOTES =
 
@@ -27,7 +24,7 @@ Plain UTF-8 text files are supported too, but the preferred encoding is UTF-8 wi
 To create a new translation file you can:
 1 - make a copy of default.txt (in PeaZip's path in /res/share/lang subfolder) or of any other language file if you prefer starting from a language other than English;
 2 - edit lines 2 to 6 of the document to enter language name (both in English and in the original language for better readability), PeaZip's version (major.minor) the translation is aimed to, translator's and last last revisor's name and last revision date;
-3 - translate the text after the "variable_name: " part (don't add, move or delete lines, don't change the "variable_name: " part);
+3 - translate ONLY the text after the "variable_name: " part (don't add, move or delete lines, don't change the "variable_name: " part);
 4 - optionally, translate the mini-tutorial after "=== about text group ===" line (free editing, it is loaded and displayed "as is" as application's mini-tutorial); it is very important to improve usability of the program for non-English speaking users.
 5 - name your language file: it is recommended to use the standard two letter international code to identify the country https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 
 

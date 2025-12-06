@@ -2206,7 +2206,7 @@ try
    assignfile(f_list,listfile_param);
    filemode:=0;
    reset(f_list);
-   if read_header(f_list)=true then
+   if read_header(f_list,filemode)=true then
       begin
       k:=0;
       repeat

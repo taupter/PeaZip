@@ -190,27 +190,29 @@ LazarusResources.Add('TFormReport','FORMDATA',[
   +'on'#6#30'Search hash on Jotti VirusScan'#7'OnClick'#7#14'MenuItem6Click'#0#0
   +#9'TMenuItem'#9'MenuItem4'#7'Caption'#6#25'Search hash on VirusTotal'#7'OnCl'
   +'ick'#7#14'MenuItem4Click'#0#0#9'TMenuItem'#10'Separator1'#7'Caption'#6#1'-'
-  +#0#0#9'TMenuItem'#9'MenuItem3'#7'Caption'#6#31'Save hash values and file nam'
-  +'es'#7'OnClick'#7#14'MenuItem3Click'#0#0#9'TMenuItem'#9'MenuItem1'#7'Caption'
-  +#6#22'Save CRC or hash value'#7'OnClick'#7#14'MenuItem1Click'#0#0#9'TMenuIte'
-  ,'m'#9'MenuItem2'#7'Caption'#6#14'Save file info'#7'OnClick'#7#14'MenuItem2Cl'
-  +'ick'#0#0#0#10'TPopupMenu'#17'PopupMenuEncoding'#4'Left'#3'p'#3#3'Top'#2#4#0
-  +#9'TMenuItem'#7'encansi'#7'Caption'#6#4'ANSI'#7'OnClick'#7#12'encansiClick'#0
-  +#0#9'TMenuItem'#8'encascii'#7'Caption'#6#5'ASCII'#7'OnClick'#7#13'encasciiCl'
-  +'ick'#0#0#9'TMenuItem'#10'encdefault'#7'Caption'#6#14'System default'#7'Chec'
-  +'ked'#9#7'OnClick'#7#15'encdefaultClick'#0#0#9'TMenuItem'#12'encunicodebe'#7
-  +'Caption'#6#10'Unicode-BE'#7'OnClick'#7#17'encunicodebeClick'#0#0#9'TMenuIte'
-  +'m'#12'encunicodele'#7'Caption'#6#10'Unicode-LE'#7'OnClick'#7#17'encunicodel'
-  +'eClick'#0#0#9'TMenuItem'#7'encutf7'#7'Caption'#6#5'UTF-7'#7'OnClick'#7#12'e'
-  +'ncutf7Click'#0#0#9'TMenuItem'#7'encutf8'#7'Caption'#6#5'UTF-8'#7'OnClick'#7
-  +#12'encutf8Click'#0#0#9'TMenuItem'#10'Separator2'#7'Caption'#6#1'-'#0#0#9'TM'
-  +'enuItem'#8'encwwrap'#7'Caption'#6#9'Word wrap'#7'OnClick'#7#13'encwwrapClic'
-  +'k'#0#0#9'TMenuItem'#10'Separator3'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#16'en'
-  +'ccasesensitive'#7'Caption'#6#14'Case sensitive'#7'OnClick'#7#21'enccasesens'
-  +'itiveClick'#0#0#0#11'TActionList'#14'ActionListFind'#4'Left'#3#144#3#3'Top'
-  +#2#4#0#7'TAction'#11'peafindnext'#7'Caption'#6#11'peafindnext'#8'ShortCut'#2
-  +'r'#9'OnExecute'#7#18'peafindnextExecute'#0#0#7'TAction'#11'peafindprev'#7'C'
-  +'aption'#6#13'Find previous'#8'ShortCut'#3'r '#9'OnExecute'#7#18'peafindprev'
-  +'Execute'#0#0#7'TAction'#7'peafind'#7'Caption'#6#7'peafind'#8'ShortCut'#3'F@'
-  +#9'OnExecute'#7#14'peafindExecute'#0#0#0#0
+  +#0#0#9'TMenuItem'#16'MenuItemOpenPath'#7'Caption'#6#12'Explore path'#7'OnCli'
+  +'ck'#7#21'MenuItemOpenPathClick'#0#0#9'TMenuItem'#10'Separator4'#7'Caption'#6
+  +#1'-'#0#0#9'TMenuItem'#9'MenuItem3'#7'Caption'#6#31'Save hash values and fil'
+  ,'e names'#7'OnClick'#7#14'MenuItem3Click'#0#0#9'TMenuItem'#9'MenuItem1'#7'Ca'
+  +'ption'#6#22'Save CRC or hash value'#7'OnClick'#7#14'MenuItem1Click'#0#0#9'T'
+  +'MenuItem'#9'MenuItem2'#7'Caption'#6#14'Save file info'#7'OnClick'#7#14'Menu'
+  +'Item2Click'#0#0#0#10'TPopupMenu'#17'PopupMenuEncoding'#4'Left'#3'p'#3#3'Top'
+  +#2#4#0#9'TMenuItem'#7'encansi'#7'Caption'#6#4'ANSI'#7'OnClick'#7#12'encansiC'
+  +'lick'#0#0#9'TMenuItem'#8'encascii'#7'Caption'#6#5'ASCII'#7'OnClick'#7#13'en'
+  +'casciiClick'#0#0#9'TMenuItem'#10'encdefault'#7'Caption'#6#14'System default'
+  +#7'Checked'#9#7'OnClick'#7#15'encdefaultClick'#0#0#9'TMenuItem'#12'encunicod'
+  +'ebe'#7'Caption'#6#10'Unicode-BE'#7'OnClick'#7#17'encunicodebeClick'#0#0#9'T'
+  +'MenuItem'#12'encunicodele'#7'Caption'#6#10'Unicode-LE'#7'OnClick'#7#17'encu'
+  +'nicodeleClick'#0#0#9'TMenuItem'#7'encutf7'#7'Caption'#6#5'UTF-7'#7'OnClick'
+  +#7#12'encutf7Click'#0#0#9'TMenuItem'#7'encutf8'#7'Caption'#6#5'UTF-8'#7'OnCl'
+  +'ick'#7#12'encutf8Click'#0#0#9'TMenuItem'#10'Separator2'#7'Caption'#6#1'-'#0
+  +#0#9'TMenuItem'#8'encwwrap'#7'Caption'#6#9'Word wrap'#7'OnClick'#7#13'encwwr'
+  +'apClick'#0#0#9'TMenuItem'#10'Separator3'#7'Caption'#6#1'-'#0#0#9'TMenuItem'
+  +#16'enccasesensitive'#7'Caption'#6#14'Case sensitive'#7'OnClick'#7#21'enccas'
+  +'esensitiveClick'#0#0#0#11'TActionList'#14'ActionListFind'#4'Left'#3#144#3#3
+  +'Top'#2#4#0#7'TAction'#11'peafindnext'#7'Caption'#6#11'peafindnext'#8'ShortC'
+  +'ut'#2'r'#9'OnExecute'#7#18'peafindnextExecute'#0#0#7'TAction'#11'peafindpre'
+  +'v'#7'Caption'#6#13'Find previous'#8'ShortCut'#3'r '#9'OnExecute'#7#18'peafi'
+  +'ndprevExecute'#0#0#7'TAction'#7'peafind'#7'Caption'#6#7'peafind'#8'ShortCut'
+  +#3'F@'#9'OnExecute'#7#14'peafindExecute'#0#0#0#0
 ]);

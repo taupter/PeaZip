@@ -1,11 +1,11 @@
 object FormGwrap: TFormGwrap
   Left = 30
-  Height = 401
+  Height = 400
   Top = 178
   Width = 800
   AllowDropFiles = True
   Caption = 'PeaLauncher'
-  ClientHeight = 401
+  ClientHeight = 400
   ClientWidth = 800
   Color = clWindow
   Constraints.MinHeight = 300
@@ -25,7 +25,7 @@ object FormGwrap: TFormGwrap
     AnchorSideBottom.Side = asrBottom
     Left = 0
     Height = 60
-    Top = 341
+    Top = 340
     Width = 0
     Anchors = [akLeft, akBottom]
     BevelOuter = bvNone
@@ -57,7 +57,7 @@ object FormGwrap: TFormGwrap
     AnchorSideBottom.Side = asrCenter
     Left = 665
     Height = 30
-    Top = 356
+    Top = 355
     Width = 120
     Anchors = [akRight, akBottom]
     AutoSize = True
@@ -74,7 +74,7 @@ object FormGwrap: TFormGwrap
     AnchorSideBottom.Side = asrCenter
     Left = 537
     Height = 30
-    Top = 356
+    Top = 355
     Width = 120
     Anchors = [akRight, akBottom]
     AutoSize = True
@@ -92,7 +92,7 @@ object FormGwrap: TFormGwrap
     AnchorSideBottom.Side = asrCenter
     Left = 665
     Height = 30
-    Top = 356
+    Top = 355
     Width = 120
     Anchors = [akRight, akBottom]
     AutoSize = True
@@ -110,7 +110,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress2
     Left = 333
     Height = 2
-    Top = 370
+    Top = 369
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 15
@@ -127,7 +127,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress3
     Left = 337
     Height = 2
-    Top = 370
+    Top = 369
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -144,7 +144,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress4
     Left = 341
     Height = 2
-    Top = 370
+    Top = 369
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -161,7 +161,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress5
     Left = 345
     Height = 2
-    Top = 370
+    Top = 369
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -178,7 +178,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress6
     Left = 349
     Height = 2
-    Top = 370
+    Top = 369
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -195,7 +195,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress7
     Left = 353
     Height = 2
-    Top = 370
+    Top = 369
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -212,7 +212,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress8
     Left = 357
     Height = 2
-    Top = 370
+    Top = 369
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -229,7 +229,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress9
     Left = 361
     Height = 2
-    Top = 370
+    Top = 369
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -246,7 +246,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress10
     Left = 365
     Height = 2
-    Top = 370
+    Top = 369
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -263,7 +263,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress11
     Left = 369
     Height = 0
-    Top = 371
+    Top = 370
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -280,7 +280,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ShapeProgress12
     Left = 373
     Height = 0
-    Top = 371
+    Top = 370
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -297,7 +297,7 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Control = ButtonOptions
     Left = 377
     Height = 0
-    Top = 371
+    Top = 370
     Width = 2
     Anchors = [akTop, akRight]
     BorderSpacing.Left = 2
@@ -313,7 +313,7 @@ object FormGwrap: TFormGwrap
     Cursor = crHandPoint
     Left = 15
     Height = 20
-    Top = 361
+    Top = 360
     Width = 138
     BorderSpacing.Left = 15
     Caption = 'Hints about the error'
@@ -328,7 +328,7 @@ object FormGwrap: TFormGwrap
     AnchorSideBottom.Side = asrBottom
     Left = 0
     Height = 5
-    Top = 396
+    Top = 395
     Width = 4
     Anchors = [akLeft, akBottom]
     BevelOuter = bvNone
@@ -344,7 +344,7 @@ object FormGwrap: TFormGwrap
     AnchorSideBottom.Side = asrBottom
     Left = 379
     Height = 30
-    Top = 356
+    Top = 355
     Width = 30
     Anchors = [akTop, akRight, akBottom]
     Flat = True
@@ -361,7 +361,7 @@ object FormGwrap: TFormGwrap
     Left = 187
     Height = 20
     Hint = 'Save job log'
-    Top = 361
+    Top = 360
     Width = 76
     BorderSpacing.Left = 15
     Caption = 'Save report'
@@ -380,7 +380,7 @@ object FormGwrap: TFormGwrap
     Left = 187
     Height = 20
     Hint = 'Save job definition (may include password!)'
-    Top = 361
+    Top = 360
     Width = 129
     BorderSpacing.Left = 15
     Caption = 'Save task definition'
@@ -396,12 +396,12 @@ object FormGwrap: TFormGwrap
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = PanelAlignBottom
     Left = 0
-    Height = 341
+    Height = 340
     Top = 0
     Width = 800
     Anchors = [akTop, akLeft, akRight, akBottom]
     BevelOuter = bvNone
-    ClientHeight = 341
+    ClientHeight = 340
     ClientWidth = 800
     ParentBackground = False
     ParentFont = False
@@ -650,12 +650,12 @@ object FormGwrap: TFormGwrap
       AnchorSideBottom.Control = NotebookTask
       AnchorSideBottom.Side = asrBottom
       Left = 0
-      Height = 296
+      Height = 295
       Top = 45
       Width = 800
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
-      ClientHeight = 296
+      ClientHeight = 295
       ClientWidth = 800
       ParentBackground = False
       ParentFont = False
@@ -668,7 +668,7 @@ object FormGwrap: TFormGwrap
         AnchorSideBottom.Control = PageConsole3
         AnchorSideBottom.Side = asrBottom
         Left = 0
-        Height = 296
+        Height = 295
         Top = 0
         Width = 800
         Anchors = [akTop, akLeft, akRight, akBottom]
@@ -688,12 +688,12 @@ object FormGwrap: TFormGwrap
       AnchorSideBottom.Control = NotebookTask
       AnchorSideBottom.Side = asrBottom
       Left = 0
-      Height = 296
+      Height = 295
       Top = 45
       Width = 800
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
-      ClientHeight = 296
+      ClientHeight = 295
       ClientWidth = 800
       ParentBackground = False
       ParentFont = False
@@ -706,7 +706,7 @@ object FormGwrap: TFormGwrap
         AnchorSideBottom.Control = PageReport2
         AnchorSideBottom.Side = asrBottom
         Left = 0
-        Height = 296
+        Height = 295
         Top = 0
         Width = 800
         Anchors = [akTop, akLeft, akRight, akBottom]
@@ -732,12 +732,12 @@ object FormGwrap: TFormGwrap
       AnchorSideBottom.Control = NotebookTask
       AnchorSideBottom.Side = asrBottom
       Left = 0
-      Height = 296
+      Height = 295
       Top = 45
       Width = 800
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
-      ClientHeight = 296
+      ClientHeight = 295
       ClientWidth = 800
       ParentBackground = False
       ParentFont = False
@@ -750,12 +750,12 @@ object FormGwrap: TFormGwrap
         AnchorSideBottom.Control = PageOpt4
         AnchorSideBottom.Side = asrBottom
         Left = 0
-        Height = 296
+        Height = 295
         Top = 0
         Width = 800
         Anchors = [akTop, akLeft, akRight, akBottom]
         BevelOuter = bvNone
-        ClientHeight = 296
+        ClientHeight = 295
         ClientWidth = 800
         ParentBackground = False
         ParentFont = False
@@ -803,12 +803,12 @@ object FormGwrap: TFormGwrap
       AnchorSideBottom.Control = NotebookTask
       AnchorSideBottom.Side = asrBottom
       Left = 0
-      Height = 296
+      Height = 295
       Top = 45
       Width = 800
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
-      ClientHeight = 296
+      ClientHeight = 295
       ClientWidth = 800
       ParentBackground = False
       ParentFont = False
@@ -821,12 +821,12 @@ object FormGwrap: TFormGwrap
         AnchorSideBottom.Control = PageStatus1
         AnchorSideBottom.Side = asrBottom
         Left = 0
-        Height = 296
+        Height = 295
         Top = 0
         Width = 800
         Anchors = [akTop, akLeft, akRight, akBottom]
         BevelOuter = bvNone
-        ClientHeight = 296
+        ClientHeight = 295
         ClientWidth = 800
         ParentBackground = False
         ParentFont = False
@@ -842,7 +842,7 @@ object FormGwrap: TFormGwrap
           AnchorSideBottom.Side = asrBottom
           Left = 190
           Height = 16
-          Top = 140
+          Top = 139
           Width = 595
           Anchors = [akTop, akLeft, akRight]
           AutoSize = True
@@ -911,7 +911,7 @@ object FormGwrap: TFormGwrap
           AnchorSideBottom.Side = asrBottom
           Left = 190
           Height = 77
-          Top = 110
+          Top = 109
           Width = 595
           Anchors = [akTop, akLeft, akRight]
           AutoSize = True
@@ -1086,7 +1086,7 @@ object FormGwrap: TFormGwrap
           AnchorSideTop.Side = asrCenter
           Left = 40
           Height = 120
-          Top = 88
+          Top = 87
           Width = 120
           BorderSpacing.Left = 40
         end
@@ -1099,7 +1099,7 @@ object FormGwrap: TFormGwrap
     AnchorSideBottom.Side = asrCenter
     Left = 409
     Height = 30
-    Top = 356
+    Top = 355
     Width = 120
     Anchors = [akRight, akBottom]
     AutoSize = True
@@ -1116,7 +1116,7 @@ object FormGwrap: TFormGwrap
     AnchorSideBottom.Control = ShapeGlobalProgress
     Left = 0
     Height = 5
-    Top = 391
+    Top = 390
     Width = 4
     Anchors = [akLeft, akBottom]
     BevelOuter = bvNone
@@ -1132,7 +1132,7 @@ object FormGwrap: TFormGwrap
     AnchorSideTop.Side = asrCenter
     Left = 168
     Height = 20
-    Top = 361
+    Top = 360
     Width = 4
     BorderSpacing.Left = 15
     Caption = '|'
@@ -1149,7 +1149,7 @@ object FormGwrap: TFormGwrap
     Left = 187
     Height = 20
     Hint = 'Keep files'
-    Top = 361
+    Top = 360
     Width = 34
     BorderSpacing.Left = 15
     Caption = 'Keep'
@@ -1212,6 +1212,10 @@ object FormGwrap: TFormGwrap
     end
     object pmspacer2: TMenuItem
       Caption = '-'
+    end
+    object pmCompact: TMenuItem
+      Caption = 'Compact'
+      OnClick = pmCompactClick
     end
     object pmbackground: TMenuItem
       Caption = 'Background'

@@ -516,6 +516,13 @@ object FormReport: TFormReport
     object Separator1: TMenuItem
       Caption = '-'
     end
+    object MenuItemOpenPath: TMenuItem
+      Caption = 'Explore path'
+      OnClick = MenuItemOpenPathClick
+    end
+    object Separator4: TMenuItem
+      Caption = '-'
+    end
     object MenuItem3: TMenuItem
       Caption = 'Save hash values and file names'
       OnClick = MenuItem3Click

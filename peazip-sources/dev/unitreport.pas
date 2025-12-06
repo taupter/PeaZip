@@ -81,6 +81,8 @@ type
   { TFormReport }
 
   TFormReport = class(TForm)
+    MenuItemOpenPath: TMenuItem;
+    Separator4: TMenuItem;
     peafind: TAction;
     encutf7: TMenuItem;
     peafindprev: TAction;
@@ -176,6 +178,7 @@ type
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
+    procedure MenuItemOpenPathClick(Sender: TObject);
     procedure peafindExecute(Sender: TObject);
     procedure peafindnextExecute(Sender: TObject);
     procedure peafindprevExecute(Sender: TObject);
@@ -203,7 +206,7 @@ var
    conf:text;
    opacity,grid1index,grid2index,alttabstyle,highlighttabs,psearchpos,texstatsresult:integer;
    desk_env:byte;
-   confpath,csvsep,intextfile,sizeastr:ansistring;
+   confpath,intextfile,sizeastr:ansistring;
    grid1switch,grid2switch,needclose,noreportdetails,peacasesensitive:boolean;
    executable_path,dummy,color1,color2,color3,color4,color5:string;
    Binfo,Bloadlayout:TBitmap;
@@ -439,11 +442,17 @@ end;
 procedure save_hashfn;
 var
 x,hcol:dword;
-fname:ansistring;
+fname,p:ansistring;
 begin
 if FormReport.StringGridInput.Cells[0,FormReport.StringGridInput.Row]='* Digest *' then exit;
 hcol:=FormReport.StringGridInput.Col;
 fname:=FormReport.StringGridInput.Cells[hcol,0]+'.txt';
+if pathistmp(GetCurrentDir)=true then //switch to desktop if file is in PeaZip's temp path (i.e. using the function on a preview of archived item)
+   begin
+   {$IFDEF MSWINDOWS}wingetdesk(p);{$ELSE}get_desktop_path(p);{$ENDIF}
+   if p[length(p)]<>directoryseparator then p:=p+directoryseparator;
+   fname:=p+extractfilename(fname);
+   end;
 assignfile(t,fname);
 rewrite(t);
 //write_header(t);
@@ -899,7 +908,7 @@ end;
 
 procedure TFormReport.MenuItem1Click(Sender: TObject);
 var
-   s,fname:AnsiString;
+   s,p,fname:AnsiString;
 begin
 if StringGridInput.Row>0 then
    if (StringGridInput.Col>7) and (StringGridInput.Col<25) then
@@ -907,6 +916,12 @@ if StringGridInput.Row>0 then
       s:=StringGridInput.Cells[StringGridInput.Col,StringGridInput.Row];
       if StringGridInput.Cells[0,StringGridInput.Row]='* Digest *' then exit;
       fname:=StringGridInput.Cells[0,StringGridInput.Row]+'.'+StringGridInput.Cells[StringGridInput.Col,0]+'.txt';
+      if pathistmp(GetCurrentDir)=true then //switch to desktop if file is in PeaZip's temp path (i.e. using the function on a preview of archived item)
+         begin
+         {$IFDEF MSWINDOWS}wingetdesk(p);{$ELSE}get_desktop_path(p);{$ENDIF}
+         if p[length(p)]<>directoryseparator then p:=p+directoryseparator;
+         fname:=p+extractfilename(fname);
+         end;
       assignfile(t,fname);
       rewrite(t);
       write(t,s);
@@ -916,13 +931,19 @@ end;
 
 procedure TFormReport.MenuItem2Click(Sender: TObject);
 var
-   s,fname:AnsiString;
+   s,fname,p:AnsiString;
    y:integer;
 begin
 if StringGridInput.Row>0 then
    begin
    if StringGridInput.Cells[0,StringGridInput.Row]='* Digest *' then exit;
    fname:=StringGridInput.Cells[0,StringGridInput.Row]+'.info.txt';
+   if pathistmp(GetCurrentDir)=true then //switch to desktop if file is in PeaZip's temp path (i.e. using the function on a preview of archived item)
+      begin
+      {$IFDEF MSWINDOWS}wingetdesk(p);{$ELSE}get_desktop_path(p);{$ENDIF}
+      if p[length(p)]<>directoryseparator then p:=p+directoryseparator;
+      fname:=p+extractfilename(fname);
+      end;
    assignfile(t,fname);
    rewrite(t);
    write_header(t);
@@ -957,6 +978,25 @@ webopen:=ShellExecuteW(FormReport.Handle, PWideChar ('open'), PWideChar(w), PWid
 {$IFDEF NETBSD}webopen:=cp_open_linuxlike(s,desk_env);{$ENDIF}
 {$IFDEF OPENBSD}webopen:=cp_open_linuxlike(s,desk_env);{$ENDIF}
 {$IFDEF DARWIN}webopen:=cp_open_linuxlike(s,desk_env);{$ENDIF}
+end;
+
+function cp_open(s:ansistring; desk_env:byte):integer;
+var
+   w:widestring;
+begin
+cp_open:=-1;
+if s<>'' then
+   {$IFDEF MSWINDOWS}
+   w:=utf8decode(s);
+   cp_open:=ShellExecuteW(FormReport.Handle, PWideChar ('open'), PWideChar(w), PWideChar (''), PWideChar (''), 1);//all Windows from 95 and NT3.1
+   if cp_open<33 then
+      cp_open:=shellexecuteW(FormReport.handle,PWideChar('open'),PWideChar('RUNDLL32.EXE'),PWideChar('shell32.dll,OpenAs_RunDLL '+w),PWideChar (''), 1);
+   {$ENDIF}
+   {$IFDEF LINUX}cp_open:=cp_open_linuxlike(s,desk_env);{$ENDIF}//try to open via Gnome or KDE
+   {$IFDEF FREEBSD}cp_open:=cp_open_linuxlike(s,desk_env);{$ENDIF}
+   {$IFDEF NETBSD}cp_open:=cp_open_linuxlike(s,desk_env);{$ENDIF}
+   {$IFDEF OPENBSD}cp_open:=cp_open_linuxlike(s,desk_env);{$ENDIF}
+   {$IFDEF DARWIN}cp_open:=cp_open_linuxlike(s,desk_env);{$ENDIF}
 end;
 
 procedure TFormReport.MenuItem4Click(Sender: TObject);
@@ -996,6 +1036,12 @@ if StringGridInput.Row>0 then
       if StringGridInput.Cells[0,StringGridInput.Row]='* Digest *' then exit;
       webopen('https://virusscan.jotti.org/en-EN/search/hash/'+s);
       end;
+end;
+
+procedure TFormReport.MenuItemOpenPathClick(Sender: TObject);
+begin
+if StringGridInput.Row>0 then
+   cp_open(extractfilepath(StringGridInput.Cells[0,StringGridInput.Row]),desk_env);
 end;
 
 procedure TFormReport.peafindExecute(Sender: TObject);

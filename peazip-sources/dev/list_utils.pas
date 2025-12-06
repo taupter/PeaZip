@@ -129,6 +129,7 @@ unit list_utils;
  0.67     20251010  G.Tani      Moved here various filename handling functions from peach unit
                                 Moved here ansiutf8_utils functions as the unit was suppressed
                                 New functions to read file header's magic bytes, and to split strings
+ 0.68     20251110  G.Tani      New function to conditionally pass ansistring to TProcess as command line or as executable name + list of parameters
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
@@ -176,9 +177,26 @@ const
   DWORD_DECODE_TO_ATTRIBUTES_ERROR = 5;
   STRING_DECODE_TO_ATTRIBUTES_ERROR = 6;
   OBJECT_NOT_ACCESSIBLE = 7;
+  //PeaZip's folder in working directory, containing all temporary work files unless 1) set to be created in output 2) archive conversion, always run in output
+  STR_PZWORKTMP = 'peazip-tmp';
+  //temp app subfolder, where different peazip instances can exchange messages and data
+  STR_PEAZIPTMP = '.pztmp';
+  //temp subdirs, deleted as soon as possible by each instance during use
+  STR_TMP       = '.ptmp';
+  STR_STMP      = '.pstmp';//special preview
+  STR_TMPEXT    = '.petmp';//interactive extraction
+  STR_TMPDD     = '.pdtmp';//drag and drop extraction
+  //temp files
+  STR_TESTOUT   = '.ptestouttmp';
+  STR_STOPALL   = '.pstopalltmp';
+  STR_TMPDROPE  = '.pdropetmp';
+  STR_TMPERRI   = '.perritmp';
 
 var
   showhidden:boolean;
+  cllog:TStringList;
+  pmode:integer = 0;//set, and changed, in main unit
+  logcommands:integer = 0;//set, and changed, in main unit
 
 //represent a time string with suffixes
 function nicetime(s: ansistring): ansistring;
@@ -365,9 +383,6 @@ function escapefilenamelinuxlike(s: ansistring; desk_env: byte): ansistring;
 //cross platform filename escaping
 function escapefilename(s: ansistring; desk_env: byte): ansistring;
 
-//escape file names and apply correct quotes
-function escapefilenamedelim(s: ansistring; desk_env: byte): ansistring;
-
 //apply correct quotes (on *x like swap ' and " quotes if needed)
 function stringdelim(s:ansistring): ansistring;
 
@@ -505,7 +520,8 @@ procedure cutenddelim(var s1:ansistring; inparam:ansistring); //if archive name 
 function unpadaddress(s:ansistring):ansistring;
 
 procedure write_header(var tf:text); //write UTF-8 with BOM text file header
-function read_header(var tf:text):boolean; //read UTF-8 with BOM text file header
+function read_header(var tf:text; fm:integer):boolean; //read optional UTF-8 with BOM text file header
+function read_header_strict(var tf:text):boolean; //read mandatory UTF-8 with BOM text file header
 function udeletefile(s:ansistring):boolean; //on Windows changes file attributes to allow file to be deleted
 function upredeletefile(s:ansistring):boolean; //on Windows changes file attributes to allow file to be deleted separately
 
@@ -514,11 +530,14 @@ function getmagicbytes_img(s:ansistring):ansistring;
 //read magic bytes to gather information about the file type (archive formats)
 function getmagicbytes_arc(s:ansistring):ansistring;
 
+//check if a path (of dir or file) is inside a PeaZip's temp path
+function pathistmp(s:ansistring):boolean;
+
 //split a string in words separated by space: ignore empty strings, ignore quotes
 function peasplitstring(s:AnsiString; var sfin:TStringList):integer;
 
-//split a string in words separated by space: ignore empty strings, use custom quote character
-function peasplitstring_custquote(s:AnsiString; qchar:Char; var sfin:TStringList):integer;
+//launch TProcess with command line or parameters: pmode 0 use cl in Process.CommandLine; pmode 1 Process.ParseCmdLine cl, don't assign a value to Process.CommandLine (even empty CommandLine disables Parameters)
+function peapexecute(var P:TProcessUTF8; var cl:ansistring): integer;
 
 implementation
 
@@ -1598,30 +1617,6 @@ begin
   str.Free;
 end;
 
-{
-possible implementation converting process command line to array of parameters and vice-versa
-issues: some parameters are currently passed at once in single variable, advanced filters are strings built from arrays of multiple filepathnames
-
-function writecla(s:ansistring; var cla:TFoundList):integer;
-begin
-result:=-1;
-if s='' then exit;
-SetLength(cla,length(cla)+1);
-cla[length(cla)-1]:=s;
-result:=0;
-end;
-
-function readcla(cla:array of ansistring; var P:tprocessutf8):integer;
-var
-   i:integer;
-begin
-result:=-1;
-if Length(cla)<=0 then exit;
-P.Executable:=cla[0];
-for i:=1 to Length(cla)-1 do P.Parameters.Add(cla[i]);
-result:=0;
-end;}
-
 function checkfiledirname(s: ansistring): integer;
 //function errs on safe side to prevent cross platform interoperability issues
 var
@@ -1693,24 +1688,44 @@ function escapefilenamelinuxlike(s: ansistring; desk_env: byte): ansistring;
 //the solution is replacing TProcess.CommandLine with TProcess.Executable and a list of TProcess.Parameters rewriting the sections composing the command lines, this method will also supersede most of the checks peformed in custom escaping functions
 var
   varstr,dstr: ansistring;
-  i: integer;
+  i,j: integer;
 begin
   varstr := s;
-  dstr:=correctdelimiter(s);
-  //replace quote characters if found in string; correctdelimiter swaps ' and " quotes, but that cannot guarantee against both characters being used in the same string - the remaining character is replaced by a jolly
-  i := 1;
-  if dstr='''' then
-     repeat
-     i := pos('''', varstr);
-     if i > 0 then
-        varstr[pos('''', varstr)] := '?';
-     until i = 0;
-  if dstr='"' then
-     repeat
-     i := pos('"', varstr);
-     if i > 0 then
-        varstr[pos('"', varstr)] := '?';
-     until i = 0;
+  dstr:=correctdelimiter(s); //correctdelimiter swaps ' and " quotes, but that cannot guarantee against both characters being used in the same string
+  case pmode of
+     0: begin //replace correctdelimiter quote character with ? jolly
+        i := 1;
+        repeat
+        i := pos(dstr, varstr);
+        if i > 0 then
+           varstr[pos(dstr, varstr)] := '?';
+        until i = 0;
+        end;
+     1: begin //quote correctdelimiter quote character with \, command will be passed as list of parameters with ReadBackslash set to true
+        //escape \ char with \
+        j := 1;
+        i := 1;
+        repeat
+        i := pos('\', varstr,j);
+        if i > 0 then
+           begin
+           insert('\',varstr,i);
+           j:=i+2;
+           end;
+        until i = 0;
+        //escape quote char with \
+        j := 1;
+        i := 1;
+        repeat
+        i := pos(dstr, varstr,j);
+        if i > 0 then
+           begin
+           insert('\',varstr,i);
+           j:=i+2;
+           end;
+        until i = 0;
+        end;
+  end;
   // find and delete 'file://' (and any part before) if it is passed as part of filename (it happens sometimes in Gnome, i.e. using "open with" context menu entry)
   i := pos('file://', varstr);
   if i > 0 then
@@ -1726,41 +1741,16 @@ begin
           insert(' ', varstr, i);
         end;
       until i = 0;
-  escapefilenamelinuxlike := varstr;
+  result := varstr;
 end;
 
 function escapefilename(s: ansistring; desk_env: byte): ansistring;
 begin
 {$IFDEF MSWINDOWS}
-  escapefilename := s;
+result := s;
+{$ELSE}
+result := escapefilenamelinuxlike(s, desk_env);
 {$ENDIF}
-{$IFDEF LINUX}
-  escapefilename := escapefilenamelinuxlike(s, desk_env);
-{$ENDIF}
-{$IFDEF FREEBSD}
-  escapefilename := escapefilenamelinuxlike(s, desk_env);
-{$ENDIF}
-{$IFDEF NETBSD}
-  escapefilename := escapefilenamelinuxlike(s, desk_env);
-{$ENDIF}
-{$IFDEF OPENBSD}
-  escapefilename := escapefilenamelinuxlike(s, desk_env);
-{$ENDIF}
-{$IFDEF DARWIN}
-  escapefilename := escapefilenamelinuxlike(s, desk_env);
-{$ENDIF}
-end;
-
-function escapefilenamedelim(s: ansistring; desk_env: byte): ansistring;
-var
-   cdelim,estr:utf8string;
-begin
-estr:=escapefilename(s, desk_env);
-if pos(' ',estr)<>0 then
-   cdelim:=correctdelimiter(s)
-else
-   cdelim:='';
-result:=cdelim+estr+cdelim;
 end;
 
 function stringdelim(s:ansistring): ansistring;
@@ -1786,8 +1776,9 @@ end;
 function cp_open_linuxlike(s: ansistring; desk_env: byte): integer;
 var
   P: TProcessUTF8;
+  cl:AnsiString;
 begin
-  cp_open_linuxlike := -1;
+  result := -1;
   if s = '' then
     exit;
   if (desk_env = 10) then //continue for gnome=1 kde=2 and unknown desktop manager =0, exit for Windows=10
@@ -1796,15 +1787,14 @@ begin
   P.Options := [poWaitOnExit];
   if desk_env = 20 then // Darwin=20
     begin
-    P.CommandLine:='open ' + escapefilenamedelim(s, desk_env);
+    cl:='open ' + stringdelim(escapefilename(s, desk_env));
     end
   else
     begin
-    P.Executable:='xdg-open';
-    P.Parameters.Add(escapefilename(s, desk_env));
+    cl:='xdg-open ' + stringdelim(escapefilename(s, desk_env));
     end;
-  P.Execute;
-  cp_open_linuxlike := P.ExitStatus;
+  peapexecute(P,cl);
+  result := P.ExitStatus;
   P.Free;
 end;
 
@@ -1826,8 +1816,7 @@ else
    else
        cl := 'explorer "' + extractfilepath(s) + '"';
 cl := (cl);
-P.CommandLine := cl;
-P.Execute;
+peapexecute(P,cl);
 P.Free;
 {$ENDIF}
 end;
@@ -1835,30 +1824,31 @@ end;
 procedure macexplorepath(s: ansistring);
 var
   P: TProcessUTF8;
+  cl:AnsiString;
 begin
-  if s = '' then
-    exit;
-  P := TProcessUTF8.Create(nil);
-  P.Options := [poWaitOnExit];
-  P.CommandLine:='open -R ' + escapefilenamedelim(s, 20);
-  P.Execute;
-  P.Free;
+if s = '' then  exit;
+P := TProcessUTF8.Create(nil);
+P.Options := [poWaitOnExit];
+cl:='open -R '+stringdelim(escapefilename(s, 20));
+peapexecute(P,cl);
+P.Free;
 end;
 
 procedure cp_search_linuxlike(desk_env: byte);
 var
   P: TProcessUTF8;
+  cl:AnsiString;
 begin
   if (desk_env = 0) or (desk_env = 10) then
     exit;
   P := TProcessUTF8.Create(nil);
   P.Options := [poWaitOnExit];
   case desk_env of
-     1: P.CommandLine := 'xdg-open /';//'gnome-search-tool';
-     2: P.Executable := 'kfind';
-     20: P.CommandLine := 'open /';
+     1: cl:='xdg-open /';//'gnome-search-tool';
+     2: cl:='kfind';
+     20: cl:='open /';
      end;
-  P.Execute;
+  peapexecute(P,cl);
   P.Free;
 end;
 
@@ -2034,7 +2024,7 @@ get_usrtmp_path(s);
 result:=s;
 end;
 
-procedure cutextension(var s: ansistring);//uses a small sett of rules to avoid cutting strings which are not really meant as extensions
+procedure cutextension(var s: ansistring);//uses a small set of rules to avoid cutting strings which are not really meant as extensions
 var
    sext:ansistring;
 begin
@@ -2826,18 +2816,34 @@ write(tf,char($bb));
 write(tf,char($bf));
 end;
 
-function read_header(var tf:text):boolean;
+function read_header(var tf:text; fm:integer):boolean;
+var
+   carr:array [1..3] of char;
+begin
+result:=false;
+read(tf,carr[1]);
+read(tf,carr[2]);
+read(tf,carr[3]);
+if (carr[1]<>char($ef)) or (carr[2]<>char($bb)) or (carr[3]<>char($bf)) then
+  begin
+  filemode:=fm;
+  Reset(tf); //if BOM header is not found, return text file to first character
+  end;
+result:=true; //if no error is encountered, the function is successful
+end;
+
+function read_header_strict(var tf:text):boolean;
 var
    c:char;
 begin
-read_header:=false;
+result:=false;
 read(tf,c);
 if c<>char($ef) then exit;
 read(tf,c);
 if c<>char($bb) then exit;
 read(tf,c);
 if c<>char($bf) then exit;
-read_header:=true;
+result:=true; //if BOM header is found, the function is successful
 end;
 
 function upredeletefile(s:ansistring):boolean;
@@ -2927,29 +2933,62 @@ reset(f);
 blockread(f,sbuf,8,n);
 close(f);
 if n<8 then exit;
+//most common
+if (sbuf[0]=80) and (sbuf[1]=75) then begin result:=fext+'/ZIP'; exit; end;
 if (sbuf[0]=55) and (sbuf[1]=122) and (sbuf[2]=188) and (sbuf[3]=175) and (sbuf[4]=39) and (sbuf[5]=28) then begin result:=fext+'/7Z'; exit; end;
-if (sbuf[0]=42) and (sbuf[1]=42) and (sbuf[2]=65) and (sbuf[3]=67) and (sbuf[4]=69) and (sbuf[5]=42) and (sbuf[6]=42) then begin result:=fext+'/ACE'; exit; end;
-if (sbuf[0]=65) and (sbuf[1]=114) and (sbuf[2]=67) then begin result:=fext+'/FREEARC'; exit; end;
+if (sbuf[0]=82) and (sbuf[1]=97) and (sbuf[2]=114) and (sbuf[3]=33) and (sbuf[4]=26) and (sbuf[5]=7) and (sbuf[6]=0) then begin result:=fext+'/RAR4-'; exit; end;
+if (sbuf[0]=82) and (sbuf[1]=97) and (sbuf[2]=114) and (sbuf[3]=33) and (sbuf[4]=26) and (sbuf[5]=7) and (sbuf[6]=1) then begin result:=fext+'/RAR5+'; exit; end;
+//offset 257 if (sbuf[0]=117) and (sbuf[1]=115) and (sbuf[2]=116) and (sbuf[3]=97) and (sbuf[4]=114) then begin result:=fext+'/TAR'; exit; end;
+//less common
+//offset 7 if (sbuf[0]=42) and (sbuf[1]=42) and (sbuf[2]=65) and (sbuf[3]=67) and (sbuf[4]=69) and (sbuf[5]=42) and (sbuf[6]=42) then begin result:=fext+'/ACE'; exit; end;
+if (sbuf[0]=65) and (sbuf[1]=73) and (sbuf[2]=2) then begin result:=fext+'/APPIMAGE'; exit; end;
+if (sbuf[0]=96) and (sbuf[1]=234) then begin result:=fext+'/ARJ'; exit; end;
 if (sbuf[0]=66) and (sbuf[1]=67) and (sbuf[2]=77) then begin result:=fext+'/BCM'; exit; end;
 if (sbuf[0]=225) and (sbuf[1]=80) and (sbuf[2]=220) then begin result:=fext+'/BR'; exit; end;
 if (sbuf[0]=66) and (sbuf[1]=90) and (sbuf[2]=104) then begin result:=fext+'/BZIP2'; exit; end;
 if (sbuf[0]=77) and (sbuf[1]=83) and (sbuf[2]=67) and (sbuf[3]=70) then begin result:=fext+'/CAB'; exit; end;
+if (sbuf[0]=73) and (sbuf[1]=84) and (sbuf[2]=83) and (sbuf[3]=70) and (sbuf[4]=3) and (sbuf[5]=0) and (sbuf[6]=0) and (sbuf[7]=0) then begin result:=fext+'/CHM'; exit; end;
+if (sbuf[0]=208) and (sbuf[1]=207) and (sbuf[2]=17) and (sbuf[3]=224) and (sbuf[4]=161) and (sbuf[5]=177) and (sbuf[6]=26) and (sbuf[7]=225) then begin result:=fext+'/COMPOUND'; exit; end;
 if (sbuf[0]=48) and (sbuf[1]=55) and (sbuf[2]=48) and (sbuf[3]=55) and (sbuf[4]=48) then begin result:=fext+'/CPIO'; exit; end;
+if (sbuf[0]=33) and (sbuf[1]=60) and (sbuf[2]=97) and (sbuf[3]=114) and (sbuf[4]=99) and (sbuf[5]=104) and (sbuf[6]=62) then begin result:=fext+'/DEB'; exit; end;
+//offset end-512 if (sbuf[0]=107) and (sbuf[1]=111) and (sbuf[2]=108) and (sbuf[3]=121) then begin result:=fext+'/DMG'; exit; end;
+if (sbuf[0]=127) and (sbuf[1]=69) and (sbuf[2]=76) and (sbuf[3]=70) then begin result:=fext+'/ELF'; exit; end;
+if (sbuf[0]=77) and (sbuf[1]=90) then begin result:=fext+'/EXE'; exit; end;
+if (sbuf[0]=65) and (sbuf[1]=114) and (sbuf[2]=67) then begin result:=fext+'/FREEARC'; exit; end;
 if (sbuf[0]=31) and (sbuf[1]=139) then begin result:=fext+'/GZIP'; exit; end;
-if (sbuf[0]=45) and (sbuf[1]=108) and (sbuf[2]=104) then begin result:=fext+'/LZH'; exit; end;
+//offset 0x8001 if (sbuf[0]=67) and (sbuf[1]=68) and (sbuf[2]=48) and (sbuf[3]=48) and (sbuf[4]=49) then begin result:=fext+'/ISO'; exit; end;
+if (sbuf[0]=4) and (sbuf[1]=34) and (sbuf[2]=77) and (sbuf[3]=24) then begin result:=fext+'/LZ4'; exit; end;
+if (sbuf[2]=45) and (sbuf[3]=108) and (sbuf[4]=104) then begin result:=fext+'/LZH'; exit; end; //offset 2
+if (sbuf[0]=76) and (sbuf[1]=90) and (sbuf[2]=73) and (sbuf[3]=80) then begin result:=fext+'/LZIP'; exit; end;
+if (sbuf[0]=79) and (sbuf[1]=103) and (sbuf[2]=103) and (sbuf[3]=83) then begin result:=fext+'/OGG'; exit; end;
+if (sbuf[0]=37) and (sbuf[1]=80) and (sbuf[2]=68) and (sbuf[3]=70) and (sbuf[4]=45) then begin result:=fext+'/PDF'; exit; end;
 if (sbuf[0]=234) and (sbuf[1]=01) then begin result:=fext+'/PEA'; exit; end;
-if (sbuf[0]=82) and (sbuf[1]=97) and (sbuf[2]=114) and (sbuf[3]=33) and (sbuf[4]=26) and (sbuf[5]=7) and (sbuf[6]=0) then begin result:=fext+'/RAR<4'; exit; end;
-if (sbuf[0]=82) and (sbuf[1]=97) and (sbuf[2]=114) and (sbuf[3]=33) and (sbuf[4]=26) and (sbuf[5]=7) and (sbuf[6]=1) then begin result:=fext+'/RAR5'; exit; end;
-if (sbuf[0]=117) and (sbuf[1]=115) and (sbuf[2]=116) and (sbuf[3]=97) and (sbuf[4]=114) then begin result:=fext+'/TAR'; exit; end;
+if (sbuf[0]=81) and (sbuf[1]=70) and (sbuf[2]=73) then begin result:=fext+'/QCOW'; exit; end;
+if (sbuf[0]=237) and (sbuf[1]=171) and (sbuf[2]=238) and (sbuf[3]=219) then begin result:=fext+'/RPM'; exit; end;
+if ((sbuf[0]=67) and (sbuf[1]=87) and (sbuf[2]=83)) or ((sbuf[0]=70) and (sbuf[1]=87) and (sbuf[2]=83)) then begin result:=fext+'/SWF'; exit; end;
+if (sbuf[0]=60) and (sbuf[1]=60) and (sbuf[2]=60) and (sbuf[3]=32) and (sbuf[4]=79) and (sbuf[5]=114) and (sbuf[6]=97) and (sbuf[7]=99) then begin result:=fext+'/VDI'; exit; end;
+if (sbuf[0]=99) and (sbuf[1]=111) and (sbuf[2]=110) and (sbuf[3]=101) and (sbuf[4]=99) and (sbuf[5]=116) and (sbuf[6]=105) and (sbuf[7]=120) then begin result:=fext+'/VHD'; exit; end;
+if (sbuf[0]=118) and (sbuf[1]=104) and (sbuf[2]=100) and (sbuf[3]=120) and (sbuf[4]=102) and (sbuf[5]=105) and (sbuf[6]=108) and (sbuf[7]=101) then begin result:=fext+'/VHDX'; exit; end;
+if (sbuf[0]=75) and (sbuf[1]=68) and (sbuf[2]=77) then begin result:=fext+'/VMDK'; exit; end;
+if (sbuf[0]=73) and (sbuf[1]=87) and (sbuf[2]=65) and (sbuf[3]=68) then begin result:=fext+'/WAD'; exit; end;
 if (sbuf[0]=77) and (sbuf[1]=83) and (sbuf[2]=87) and (sbuf[3]=73) and (sbuf[4]=77) then begin result:=fext+'/WIM'; exit; end;
 if (sbuf[0]=120) and (sbuf[1]=97) and (sbuf[2]=114) and (sbuf[3]=73) and (sbuf[4]=33) then begin result:=fext+'/XAR'; exit; end;
 if (sbuf[0]=253) and (sbuf[1]=55) and (sbuf[2]=122) and (sbuf[3]=88) and (sbuf[4]=90) and (sbuf[5]=0) and (sbuf[6]=28) then begin result:=fext+'/XZ'; exit; end;
-if ((sbuf[0]=31) and (sbuf[1]=157))
-or ((sbuf[0]=31) and (sbuf[1]=160)) then begin result:=fext+'/Z'; exit; end;
-if (sbuf[0]=80) and (sbuf[1]=75) then begin result:=fext+'/ZIP'; exit; end;
+if ((sbuf[0]=31) and (sbuf[1]=157)) or ((sbuf[0]=31) and (sbuf[1]=160)) then begin result:=fext+'/Z'; exit; end;
 if (sbuf[0]=40) and (sbuf[1]=181) and (sbuf[2]=47) and (sbuf[3]=253) then begin result:=fext+'/ZST'; exit; end;
 except
 end;
+end;
+
+function pathistmp(s:ansistring):boolean;
+begin
+result:=false;
+if (pos(STR_TMP,s)) or
+   (pos(STR_PZWORKTMP,s)) or
+   (pos(STR_STMP,s)) or
+   (pos(STR_TMPEXT,s)) or
+   (pos(STR_TMPDD,s)) or
+   (pos(STR_PEAZIPTMP,s))<>0 then result:=true;
 end;
 
 //split a string in words separated by space: ignore empty strings, ignore quotes
@@ -2972,24 +3011,21 @@ for i:=0 to sarr.Count-1 do
 result:=sfin.Count;
 end;
 
-//split a string in words separated by space: ignore empty strings, use custom quote character
-function peasplitstring_custquote(s:AnsiString; qchar:Char; var sfin:TStringList):integer;
-var
-   sarr:TStringList;
-   i:integer;
+//launch TProcess with command line or parameters: pmode 0 use cl in Process.CommandLine; pmode 1 Process.ParseCmdLine cl, don't assign a value to Process.CommandLine (even empty CommandLine disables Parameters)
+function peapexecute(var P:TProcessUTF8; var cl:ansistring): integer;
 begin
 result:=-1;
-if s='' then exit;
-sarr:=TStringList.Create;
-sarr.Delimiter:=' ';
-sarr.QuoteChar:=qchar;//do not count words in sections quoted with the custom character
-sarr.StrictDelimiter:=False;//do not count line ending
-sarr.DelimitedText:=s;
-for i:=0 to sarr.Count-1 do
+case pmode of //some composite command strings on Windows cannot be correctly passwed with pmode=1, i.e. add rar comment
+   0: P.CommandLine:=cl;
+   1: {$IFDEF MSWINDOWS}P.ParseCmdLine(cl);{$ELSE}P.ParseCmdLine(cl,True);{$ENDIF}//ReadBackslash set to true for non-Windows systems: when using parameters, non_Windows escaping uses \ character to escape the true string delimiter character
+end;
+P.Execute;
+if logcommands=1 then
    begin
-   if sarr[i]<>'' then sfin.Add(sarr[i]);//remove empty strings (multiple separators)
+   if not Assigned(cllog) then cllog:=TStringList.Create;
+   cllog.Add(cl);
    end;
-result:=sfin.Count;
+result:=0;
 end;
 
 end.

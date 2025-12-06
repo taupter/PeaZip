@@ -234,6 +234,9 @@ unit pea; //Main form of pea executable, providing GUI to file tools, pea/unpea 
                                 Improved Text preview
                                 Refactored sources to improve readability
                                 Updated crypto/hash library units to apply pure Pascal implementation of algorithms for any arbitrary non-x86/x86_64 architecture
+ 1.28     20251125  G.Tani      Can now automatically avoid saving reports in PeaZip's own temporary work paths
+                                From report's window context menu it is now possible to explore path of selected item
+                                Improved usability on non-Windows systems
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 
@@ -376,6 +379,7 @@ type
     ShapeEncryptProgress: TShape;
     SpinEditSplitSize: TSpinEdit;
     TimerAction: TTimer;
+    TimerDropInput: TTimer;
     procedure ButtonClosePeaClick(Sender: TObject);
     procedure ButtonEncryptCancelClick(Sender: TObject);
     procedure ButtonPWOKClick(Sender: TObject);
@@ -410,6 +414,7 @@ type
     procedure pmhelpClick(Sender: TObject);
     procedure pmrunasadminClick(Sender: TObject);
     procedure TimerActionTimer(Sender: TObject);
+    procedure TimerDropInputTimer(Sender: TObject);
   private
     { private declarations }
   public
@@ -419,7 +424,7 @@ type
   Type fileofbyte = file of byte;
 
 const
-  P_RELEASE          = '1.27'; //declares release version for the entire build
+  P_RELEASE          = '1.28'; //declares release version for the entire build
   //PEAUTILS_RELEASE   = '1.3'; //declares for reference last peautils release
   PEA_FILEFORMAT_VER = 1;
   PEA_FILEFORMAT_REV = 6; //version and revision declared to be implemented must match with the ones in pea_utils, otherwise a warning will be raised (form caption)
@@ -461,11 +466,11 @@ var
    obj_tags,exp_obj_tags,volume_tags,exp_volume_tags:TFoundListArray64;
    Bfd,Bmail,Bhd,Bdvd,Binfo,Blog,Bok,Bcancel,Butils,Badmin:TBitmap;
    fshown:boolean;
+   pmode:integer;
    //theming
    conf:text;
    opacity,closepolicy,qscale,qscaleimages,pspacing,pzooming,alttabstyle,ensmall,gridaltcolor,highlighttabs,temperature,contrast,decostyle:integer;
    executable_path,resource_path,binpath,sharepath,persistent_source,color1,color2,color3,color4,color5:string;
-   csvsep:ansistring;
 
 {
 PEA features can be called using different modes of operation:
@@ -2291,6 +2296,7 @@ procedure evaluate_output;
 begin
 if upcase(out_param) = 'AUTONAME' then out_param:=in_folder+in_name;
 out_file:=extractfilename(out_param);
+cutextension(out_file);
 out_path:=extractfilepath(out_param);
 if out_file='' then out_file:=in_name; //if no output name is explicitly given, the output name is assumed to be the name of the first input file
 if out_path='' then out_path:=in_folder; //if no output path is explicitly given, the output path is assumed to be the path of the first input file
@@ -5027,7 +5033,7 @@ for j:=3 to paramcount do
       if level='RECYCLE' then
                begin
                {$IFDEF MSWINDOWS}//recycle (Windows)
-               in_param:=escapefilename(paramstr(j),desk_env);
+               in_param:=paramstr(j);
                findfirst(in_param, faAnyFile, sr);
                s := StrPas(sr.FindData.cAlternateFileName);
                if s='' then s:= extractfilename(in_param);
@@ -5036,7 +5042,7 @@ for j:=3 to paramcount do
                recyclefile_fromname(s);
                {$ENDIF}
                {$IFDEF DARWIN}//move to trash (macOS)
-               in_param:=escapefilename(paramstr(j),desk_env);
+               in_param:=paramstr(j);
                findfirst(in_param, faAnyFile, sr);
                s:= extractfilename(in_param);
                s := extractfilepath(in_param) + s;
@@ -5736,8 +5742,7 @@ P[1].Options := [poWaitOnExit,poNoConsole];
 {$ELSE}
 P[1].Options := [poWaitOnExit];
 {$ENDIF}
-P[1].CommandLine:=cl;
-P[1].Execute;
+peapexecute(P[1],cl);
 P[1].Free;
 tsout:=datetimetotimestamp(now);
 times:=((tsout.date-tsin.date)*24*60*60*1000)+tsout.time-tsin.time;
@@ -5759,8 +5764,7 @@ for i:=1 to 16 do
    P[i].Options := [poNoConsole];
    {$ENDIF}
    cl:=executable_path+'pea'+EXEEXT+' BENCHINT MULTI '+inttostr(i)+' 16';
-   P[i].CommandLine:=cl;
-   P[i].Execute;
+   peapexecute(P[i],cl);
    end;
 
 while (p[1].Running=true)  or
@@ -6944,9 +6948,8 @@ result:=false;
 if s='' then exit;
 cl:='powershell.exe Get-Content '''+s+'*'' -Stream Zone.Identifier';
 P:=tprocessutf8.Create(nil);
-P.CommandLine:=cl;
 p.Options:=[poWaitOnExit,poNoConsole];
-P.Execute;
+peapexecute(p,cl);
 if P.ExitCode=0 then result:=true; //motw found, else error is raised and result is <>0
 P.Free;
 {$ENDIF}
@@ -6966,17 +6969,15 @@ cl:='powershell.exe Get-Content '''+s+'*'' -Stream Zone.Identifier';
 
 i:=0;
 j:=0;
-P:=tprocessutf8.Create(nil);
-P.CommandLine:=cl;
 M := TMemoryStream.Create;
 BytesRead := 0;
 M2 := TMemoryStream.Create;
 BytesRead2 := 0;
-P.Options := [poUsePipes, poNoConsole];
-
 M.SetSize(32*1024);
 M2.SetSize(32*1024);
-P.Execute;
+P:=tprocessutf8.Create(nil);
+P.Options := [poUsePipes, poNoConsole];
+peapexecute(p,cl);
 
 while P.Running do
    begin
@@ -7893,7 +7894,7 @@ in_param:='';
 cl:='';
 for i:=0 to ListMemoUtilsInput.Lines.Count do
    if length(ListMemoUtilsInput.Lines[i])>1 then
-      in_param:=in_param+stringdelim(ListMemoUtilsInput.Lines[i])+' ';
+      in_param:=in_param+stringdelim(escapefilename(ListMemoUtilsInput.Lines[i],desk_env))+' ';
 case ComboBoxUtils.ItemIndex of
    21: begin end;
    22: begin end;
@@ -7931,10 +7932,8 @@ case ComboBoxUtils.ItemIndex of
          {$ELSE}
          P.Options := [poWaitOnExit];
          {$ENDIF}
-         cl:=(cl);
-         P.CommandLine:=cl;
          if validatecl(cl)<>0 then begin MessageDlg('Operation stopped, potentially dangerous command detected (i.e. command concatenation not allowed within the program): '+cl, mtWarning, [mbOK], 0); exit; end;
-         P.Execute;
+         peapexecute(p,cl);
          P.Free;
          i:=0;
          repeat
@@ -7974,10 +7973,8 @@ P:=TProcessUTF8.Create(nil);
 {$IFDEF MSWINDOWS}
 P.Options := [poNoConsole];
 {$ENDIF}
-cl:=(cl);
-P.CommandLine:=cl;
 if validatecl(cl)<>0 then begin MessageDlg('Operation stopped, potentially dangerous command detected (i.e. command concatenation not allowed within the program): '+cl, mtWarning, [mbOK], 0); exit; end;
-P.Execute;
+peapexecute(p,cl);
 P.Free;
 end;
 
@@ -8323,6 +8320,8 @@ setcurrentdir(executable_path);
    resource_path:=executable_path+'res'+directoryseparator;
 {$ENDIF}
 SetFocusedControl(EditPW);
+pmode:=0;
+list_utils.pmode:=pmode;
 getdesk_env(desk_env,caption_build,delimiter);
 UnitReport.desk_env:=desk_env;
 height_set:=false;
@@ -8379,7 +8378,7 @@ try
    readln(conf,dummy); pzooming:=strtoint(dummy);
    readln(conf,dummy); pspacing:=strtoint(dummy);
    readln(conf,dummy); temperature:=strtoint(dummy);
-   readconf_relativeline(3,dummy); csvsep:=dummy;
+   readconf_relativeline(3,dummy); try pmode:=strtoint(dummy); except pmode:=0; end; list_utils.pmode:=pmode;
    readconf_relativeline(2,dummy); closepolicy:=strtoint(dummy);
    CloseFile(conf);
    if opacity<0 then opacity:=0;
@@ -8420,7 +8419,6 @@ except
 end;
 UnitReport.color1:=color1;
 UnitReport.color2:=color2;
-UnitReport.csvsep:=csvsep;
 UnitReport.alttabstyle:=alttabstyle;
 UnitReport.highlighttabs:=highlighttabs;
 FormPea.LabelOpen.visible:=false;
@@ -8462,8 +8460,9 @@ begin
 if FormPea.PanelUtils.visible=false then exit;
 if ListMemoUtilsInput.Enabled=false then exit;
 for i := 0 to High(FileNames) do
-     if testname(escapefilename(FileNames[i],desk_env))=0 then
-        ListMemoUtilsInput.Append(escapefilename(FileNames[i],desk_env));
+     if testname(FileNames[i])=0 then
+        ListMemoUtilsInput.Append(FileNames[i]);
+TimerDropInput.Enabled:=true;
 end;
 
 procedure set_items_height;
@@ -8785,6 +8784,18 @@ if control=true then exit;
 if interacting=true then exit;
 control:=true;
 parse_action;
+end;
+
+procedure TFormPea.TimerDropInputTimer(Sender: TObject);
+var
+   i:integer;
+begin
+TimerDropInput.Enabled:=false;
+{$IFNDEF MSWINDOWS}
+for i:=0 to FormPea.ListMemoUtilsInput.Lines.Count-1 do
+   if pos('file:///',FormPea.ListMemoUtilsInput.Lines[i])=1 then
+      FormPea.ListMemoUtilsInput.Lines.Delete(i);
+{$ENDIF}
 end;
 
 initialization

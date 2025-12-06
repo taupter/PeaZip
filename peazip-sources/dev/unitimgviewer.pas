@@ -76,6 +76,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FormDblClick(Sender: TObject);
     procedure FormMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
+    procedure FormResize(Sender: TObject);
     procedure ImageViewerClick(Sender: TObject);
     procedure ImageViewerDblClick(Sender: TObject);
     procedure ImageViewerMouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -138,7 +139,7 @@ var
   txt_rename,txt_name_provide,txt_checkname_failed,imageviewername,fun:ansistring;
   imgviewerzoom,imgviewersizeh,imgviewersizew,imgviewersrc:integer;
   filesizebase,desk_env,erasepasses:byte;
-  viewerbusy:boolean;
+  viewerbusy,formissnapped:boolean;
 
 procedure applyzoom(mode:ansistring);
 
@@ -160,11 +161,22 @@ Application.ProcessMessages;
 viewerbusy:=false;
 end;
 
+procedure snaptosize;
+begin
+if formissnapped=true then exit;
+if (FormImgViewer.BorderStyle<>bsNone) and (FormImgViewer.WindowState<>wsMaximized) then
+   begin
+   FormImgViewer.Height:=FormImgViewer.ImageViewer.Height;
+   FormImgViewer.Width:=FormImgViewer.ImageViewer.Width;
+   formissnapped:=true;
+   end;
+end;
+
 procedure applyzoom(mode:ansistring);
 var
   BImageViewer:TBitmap;
   zoomedimgviewersizeh,zoomedimgviewersizew:integer;
-  zoomstring,pfinfo,mby:ansistring;
+  zoomstring,pfinfo,mby,sizetimestr:ansistring;
 begin
 try
 if viewerbusy=true then exit;
@@ -174,6 +186,7 @@ if not FileExists(FormImgViewer.StringGridImgViewer.Cells[12,UnitImgViewer.imgvi
    errorloadimg(0);
    exit;
    end;
+formissnapped:=false;
 case mode of
  'in': if imgviewerzoom<22 then imgviewerzoom:=imgviewerzoom+1 else begin viewerbusy:=false; exit; end;
  'out': if imgviewerzoom>0 then imgviewerzoom:=imgviewerzoom-1 else begin viewerbusy:=false; exit; end;
@@ -192,10 +205,9 @@ case mode of
  'open': imgviewerzoom:=33; //if larger fit to smallest screen dimension, else 100%
  end;
 //FormImgViewer.ImageViewer.Visible:=False;
-FormImgViewer.Caption:=FormImgViewer.StringGridImgViewer.Cells[1,UnitImgViewer.imgviewersrc]+
- ' '+nicenumber(FormImgViewer.StringGridImgViewer.Cells[3,UnitImgViewer.imgviewersrc],filesizebase)+
- ' '+FormImgViewer.StringGridImgViewer.Cells[5,UnitImgViewer.imgviewersrc]+
- ' ...';
+sizetimestr:=trim(nicenumber(FormImgViewer.StringGridImgViewer.Cells[3,UnitImgViewer.imgviewersrc],filesizebase))+
+ ' '+trim(FormImgViewer.StringGridImgViewer.Cells[5,UnitImgViewer.imgviewersrc]);
+FormImgViewer.Caption:=FormImgViewer.StringGridImgViewer.Cells[1,UnitImgViewer.imgviewersrc]+' '+sizetimestr+ ' ...';
 Application.ProcessMessages;
 BImageViewer:=TBitmap.Create;
 BImageViewer.Transparent:=true;
@@ -405,10 +417,8 @@ case imgviewerzoom of
     imgviewerzoom:=10;
     end;
  end;
-FormImgViewer.Caption:=FormImgViewer.StringGridImgViewer.Cells[1,UnitImgViewer.imgviewersrc]+
- ' '+nicenumber(FormImgViewer.StringGridImgViewer.Cells[3,UnitImgViewer.imgviewersrc],filesizebase)+
- ' '+FormImgViewer.StringGridImgViewer.Cells[5,UnitImgViewer.imgviewersrc]+
- ' [ '+inttostr(imgviewersizew)+' * '+inttostr(imgviewersizeh)+' @ '+pfinfo+' '+mby+' ] '+zoomstring;
+FormImgViewer.Caption:=FormImgViewer.StringGridImgViewer.Cells[1,UnitImgViewer.imgviewersrc]+' '+sizetimestr+
+ ' | '+inttostr(imgviewersizew)+'*'+inttostr(imgviewersizeh)+'@'+pfinfo+' '+mby+' | '+zoomstring;
 if zoomedimgviewersizeh<2 then zoomedimgviewersizeh:=2;
 if zoomedimgviewersizew<2 then zoomedimgviewersizew:=2;
 Application.ProcessMessages;
@@ -418,11 +428,7 @@ FormImgViewer.ImageViewer.Height:=BImageViewer.Height;
 FormImgViewer.ImageViewer.Width:=BImageViewer.Width;
 FormImgViewer.ImageViewer.Picture.Bitmap:=BImageViewer;
 if FormImgViewer.ImageViewer.Visible=False then FormImgViewer.ImageViewer.Visible:=True;
-if (FormImgViewer.BorderStyle<>bsNone) and (FormImgViewer.WindowState<>wsMaximized) then
-   begin
-   FormImgViewer.Height:=BImageViewer.Height;
-   FormImgViewer.Width:=BImageViewer.Width;
-   end;
+snaptosize;
 BImageViewer.Free;
 Application.ProcessMessages;
 viewerbusy:=false;
@@ -543,9 +549,8 @@ if pMessageWarningYesNo(pstr+char($0D)+char($0A)+char($0D)+char($0A)+in_name)=6 
    P:=tprocessutf8.Create(nil);
    {$IFDEF MSWINDOWS}P.Options := [poNoConsole, poWaitOnExit];{$ELSE}P.Options := [poWaitOnExit];{$ENDIF}
    cl:=bin_name+' WIPE '+eraselevel+' '+in_param;
-   P.CommandLine:=cl;
    if validatecl(cl)<>0 then begin pMessageWarningOK(txt_2_7_validatecl+' '+cl); exit; end;
-   P.Execute;
+   peapexecute(P,cl);
    P.Free;
    open_next_item;
    end;
@@ -652,6 +657,14 @@ else
 ImageViewer.Cursor:=FormImgViewer.Cursor;
 except
 end;
+end;
+
+procedure TFormImgViewer.FormResize(Sender: TObject);
+begin
+if (FormImgViewer.BorderStyle<>bsNone) and (FormImgViewer.WindowState<>wsMaximized) then
+   snaptosize
+else
+   formissnapped:=false;
 end;
 
 procedure TFormImgViewer.ImageViewerMouseMove(Sender: TObject;
