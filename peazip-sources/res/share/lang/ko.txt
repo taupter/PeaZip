@@ -2,16 +2,16 @@
 Korean - 한국어
 10.8
 번역자: Sleepy, EhangB
-최근 교정: 20250812 by EhangB
+최근 교정: 20251220 by EhangB
 교정 일자: 20110531 by Sleep
 
 === PeaZip text group ===
 
-txt_10_8_log: Commands log
-txt_10_8_rv: Create recovery volumes
-txt_10_8_bk: Execute small workloads in background
-txt_10_8_params: Pass command line as separate parameters
-txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
+txt_10_8_log: 명령 로그
+txt_10_8_rv: 복구 볼륨 생성
+txt_10_8_bk: 백그라운드에서 소규모 워크로드 실행
+txt_10_8_params: 명령줄을 별도의 매개변수로 전달
+txt_10_8_untarerr: TAR 이름이 아카이브 이름과 일치하지 않습니다. 아카이브를 열어 TAR 콘텐츠를 수동으로 추출할 수 있습니다.
 txt_10_7_errload: 이미지를 표시할 수 없습니다
 txt_10_7_errfile: 파일을 찾을 수 없습니다
 txt_10_7_first: 처음
