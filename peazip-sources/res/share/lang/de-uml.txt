@@ -3,13 +3,13 @@ German - Deutsch
 10.9
 Translated by: Vacon
 Last rev. by: Andrain
-Last rev.: 20251209
+Last rev.: 20260207
 
 === PeaZip text group ===
 
-txt_10_9_deletearchive: Delete archive
-txt_10_9_kfl: Keyfile size limited to first 100MB
-txt_10_9_mb: Middle mouse button click
+txt_10_9_deletearchive: Archiv löschen
+txt_10_9_kfl: Schlüsseldateigröße auf die ersten 100 MB begrenzt
+txt_10_9_mb: Klick der mittleren Maustaste
 txt_10_8_log: Befehlsprotokoll
 txt_10_8_rv: Wiederherstellungsvolumes erstellen
 txt_10_8_bk: Kleine Arbeitslasten im Hintergrund ausführen
@@ -1520,3 +1520,4 @@ FAQ: https://peazip.github.io/peazip-help-faq.html
 
 Vielen Dank an die zahlreichen Menschen die zur Entwicklung des PeaZip-Projekts beigetragen haben und die die Open-Source Komponenten entwickelt haben, die in diesem Projekt verwendet werden (auf der Website kann eine vollständige Liste eingesehen werden), und alle Benutzer, die das Projekt durch Rückmeldungen, Erfahrungen und Ratschläge unterstützt haben.
  	  	 
+
