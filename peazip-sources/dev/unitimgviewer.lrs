@@ -2,7 +2,8 @@
 
 LazarusResources.Add('TFormImgViewer','FORMDATA',[
   'TPF0'#14'TFormImgViewer'#13'FormImgViewer'#4'Left'#2#20#6'Height'#3#240#0#3
-  +'Top'#2'P'#5'Width'#3'@'#1#12'ClientHeight'#3#240#0#11'ClientWidth'#3'@'#1#21
+  +'Top'#2'P'#5'Width'#3'@'#1#18'HorzScrollBar.Page'#2#1#18'VertScrollBar.Page'
+  +#3#180#0#10'AutoScroll'#9#12'ClientHeight'#3#240#0#11'ClientWidth'#3'@'#1#21
   +'Constraints.MinHeight'#3#240#0#20'Constraints.MinWidth'#3'@'#1#13'DesignTim'
   +'ePPI'#2'x'#9'PopupMenu'#7#11'PopupViewer'#10'LCLVersion'#6#7'4.2.0.0'#7'OnC'
   +'lick'#7#9'FormClick'#8'OnCreate'#7#10'FormCreate'#10'OnDblClick'#7#12'FormD'
@@ -13,7 +14,7 @@ LazarusResources.Add('TFormImgViewer','FORMDATA',[
   +#2'x'#9'PopupMenu'#7#11'PopupViewer'#7'OnClick'#7#16'ImageViewerClick'#10'On'
   +'DblClick'#7#19'ImageViewerDblClick'#11'OnMouseMove'#7#20'ImageViewerMouseMo'
   +'ve'#0#0#11'TStringGrid'#19'StringGridImgViewer'#20'AnchorSideRight.Side'#7#9
-  +'asrBottom'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#2'p'#6'Height'#2
+  +'asrBottom'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#2#0#6'Height'#2
   +','#3'Top'#3#184#0#5'Width'#3#200#0#7'Anchors'#11#0#8'AutoEdit'#8#11'BorderS'
   +'tyle'#7#6'bsNone'#8'ColCount'#2#19#15'DefaultColWidth'#2#25#16'DefaultRowHe'
   +'ight'#2#22#9'FixedCols'#2#0#4'Flat'#9#13'GridLineWidth'#2#0#7'Options'#11#15
@@ -64,8 +65,8 @@ LazarusResources.Add('TFormImgViewer','FORMDATA',[
   +'20Click'#0#0#9'TMenuItem'#7'mzoom25'#7'Caption'#6#3'25%'#8'ShortCut'#3'4@'#7
   +'OnClick'#7#12'mzoom25Click'#0#0#9'TMenuItem'#7'mzoom33'#7'Caption'#6#3'33%'
   +#8'ShortCut'#3'3@'#7'OnClick'#7#12'mzoom33Click'#0#0#9'TMenuItem'#7'mzoom50'
-  +#7'Caption'#6#3'50%'#8'ShortCut'#3'2@'#7'OnClick'#7#12'mzoom50Click'#0#0#9'T'
-  ,'MenuItem'#8'mzoom100'#7'Caption'#6#4'100%'#8'ShortCut'#2'1'#7'OnClick'#7#13
+  ,#7'Caption'#6#3'50%'#8'ShortCut'#3'2@'#7'OnClick'#7#12'mzoom50Click'#0#0#9'T'
+  +'MenuItem'#8'mzoom100'#7'Caption'#6#4'100%'#8'ShortCut'#2'1'#7'OnClick'#7#13
   +'mzoom100Click'#0#0#9'TMenuItem'#8'mzoom200'#7'Caption'#6#4'200%'#8'ShortCut'
   +#2'2'#7'OnClick'#7#13'mzoom200Click'#0#0#9'TMenuItem'#8'mzoom300'#7'Caption'
   +#6#4'300%'#8'ShortCut'#2'3'#7'OnClick'#7#13'mzoom300Click'#0#0#9'TMenuItem'#8

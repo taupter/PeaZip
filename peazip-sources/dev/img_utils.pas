@@ -121,8 +121,8 @@ case sl of
    //'.webp', //not supported 1.0.8
    '.gif',
    '.png',
-   '.tif','.tiff': supportedimgtype:=true
-   else supportedimgtype:=false;
+   '.tif','.tiff': result:=true
+   else result:=false;
 end;
 end;
 

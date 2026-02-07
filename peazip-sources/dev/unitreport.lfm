@@ -496,7 +496,7 @@ object FormReport: TFormReport
   object SaveDialogReport: TSaveDialog
     Title = 'Save as'
     Left = 464
-    Top = 472
+    Top = 464
   end
   object PopupMenu1: TPopupMenu
     Left = 293
@@ -537,7 +537,7 @@ object FormReport: TFormReport
     end
   end
   object PopupMenuEncoding: TPopupMenu
-    Left = 880
+    Left = 896
     Top = 4
     object encansi: TMenuItem
       Caption = 'ANSI'
@@ -572,19 +572,49 @@ object FormReport: TFormReport
       Caption = '-'
     end
     object encwwrap: TMenuItem
-      Caption = 'Word wrap'
+      Caption = 'Word wrap (Ctrl+W)'
       OnClick = encwwrapClick
+    end
+    object Separator5: TMenuItem
+      Caption = '-'
+    end
+    object FZoomIn: TMenuItem
+      Caption = 'Zoom + (Ctrl++)'
+      OnClick = FZoomInClick
+    end
+    object FZoomReset: TMenuItem
+      Caption = 'Zoom reset (Ctrl+0)'
+      OnClick = FZoomResetClick
+    end
+    object FZoomOut: TMenuItem
+      Caption = 'Zoom - (Ctrl+-)'
+      OnClick = FZoomOutClick
+    end
+    object Separator6: TMenuItem
+      Caption = '-'
+    end
+    object FontBold: TMenuItem
+      Caption = 'Bold (Ctrl+B)'
+      OnClick = FontBoldClick
+    end
+    object FontMonotype: TMenuItem
+      Caption = 'Monotype (Ctrl+M)'
+      OnClick = FontMonotypeClick
+    end
+    object FontSet: TMenuItem
+      Caption = 'Monotype font'
+      OnClick = FontSetClick
     end
     object Separator3: TMenuItem
       Caption = '-'
     end
     object enccasesensitive: TMenuItem
-      Caption = 'Case sensitive'
+      Caption = 'Case sensitive search (Ctrl+S)'
       OnClick = enccasesensitiveClick
     end
   end
   object ActionListFind: TActionList
-    Left = 912
+    Left = 936
     Top = 4
     object peafindnext: TAction
       Caption = 'peafindnext'
@@ -601,5 +631,68 @@ object FormReport: TFormReport
       ShortCut = 16454
       OnExecute = peafindExecute
     end
+    object fontzoomin: TAction
+      Caption = 'fontzoomin'
+      ShortCut = 16422
+      OnExecute = fontzoominExecute
+    end
+    object fontzoomreset: TAction
+      Caption = 'fontzoomreset'
+      ShortCut = 16432
+      OnExecute = fontzoomresetExecute
+    end
+    object fontzoomout: TAction
+      Caption = 'fontzoomout'
+      ShortCut = 16424
+      OnExecute = fontzoomoutExecute
+    end
+    object fonzoomplus: TAction
+      Caption = 'fonzoomplus'
+      ShortCut = 16571
+      OnExecute = fonzoomplusExecute
+    end
+    object fonzoomplusn: TAction
+      Caption = 'fonzoomplusn'
+      ShortCut = 16491
+      OnExecute = fonzoomplusnExecute
+    end
+    object fontzoomminus: TAction
+      Caption = 'fontzoomminus'
+      ShortCut = 16573
+      OnExecute = fontzoomminusExecute
+    end
+    object fontzoomminusn: TAction
+      Caption = 'fontzoomminusn'
+      ShortCut = 16493
+      OnExecute = fontzoomminusnExecute
+    end
+    object peawordwrap: TAction
+      Caption = 'peawordwrap'
+      ShortCut = 16471
+      OnExecute = peawordwrapExecute
+    end
+    object peacasesearch: TAction
+      Caption = 'peacasesearch'
+      ShortCut = 16467
+      OnExecute = peacasesearchExecute
+    end
+    object peamonotypefont: TAction
+      Caption = 'peamonotypefont'
+      ShortCut = 16461
+      OnExecute = peamonotypefontExecute
+    end
+    object peabold: TAction
+      Caption = 'peabold'
+      ShortCut = 16450
+      OnExecute = peaboldExecute
+    end
+  end
+  object FontDialogMemo: TFontDialog
+    Title = 'Monotype font'
+    MinFontSize = 0
+    MaxFontSize = 0
+    Options = [fdFixedPitchOnly, fdNoSizeSel, fdNoStyleSel]
+    Left = 616
+    Top = 464
   end
 end

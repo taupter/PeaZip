@@ -6,8 +6,8 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  ActnList, Grids, Menus, Process, StdCtrls, UTF8Process, LCLType, UnitDlg,
-  UnitInput, img_utils, list_utils, externalprograms;
+  ActnList, Grids, Menus, Process, StdCtrls, UTF8Process, LCLType, LCLIntf,
+  UnitDlg, UnitInput, img_utils, list_utils, externalprograms;
 
 type
 
@@ -175,7 +175,7 @@ end;
 procedure applyzoom(mode:ansistring);
 var
   BImageViewer:TBitmap;
-  zoomedimgviewersizeh,zoomedimgviewersizew:integer;
+  zoomedimgviewersizeh,zoomedimgviewersizew,sheight,swidth:integer;
   zoomstring,pfinfo,mby,sizetimestr:ansistring;
 begin
 try
@@ -187,6 +187,19 @@ if not FileExists(FormImgViewer.StringGridImgViewer.Cells[12,UnitImgViewer.imgvi
    exit;
    end;
 formissnapped:=false;
+
+//detect usable vertical and horizontal size in windowed mode
+if FormImgViewer.BorderStyle<>bsNone then
+   begin
+   sheight:=GetSystemMetrics(SM_CYFULLSCREEN);
+   swidth:=GetSystemMetrics(SM_CXFULLSCREEN);
+   end
+else
+   begin
+   sheight:=Screen.Height;
+   swidth:=Screen.Width;
+   end;
+
 case mode of
  'in': if imgviewerzoom<22 then imgviewerzoom:=imgviewerzoom+1 else begin viewerbusy:=false; exit; end;
  'out': if imgviewerzoom>0 then imgviewerzoom:=imgviewerzoom-1 else begin viewerbusy:=false; exit; end;
@@ -367,44 +380,44 @@ case imgviewerzoom of
    zoomstring:='1000%';
    end;
  30: begin
-     if ((Screen.Width*100) div imgviewersizew) < ((Screen.Height*100) div imgviewersizeh) then
+     if ((swidth*100) div imgviewersizew) < ((sheight*100) div imgviewersizeh) then
         begin
-        zoomedimgviewersizew:=Screen.Width;
-        zoomedimgviewersizeh:=(imgviewersizeh*Screen.Width) div imgviewersizew;
+        zoomedimgviewersizew:=swidth;
+        zoomedimgviewersizeh:=(imgviewersizeh*swidth) div imgviewersizew;
         end
      else
         begin
-        zoomedimgviewersizeh:=Screen.Height;
-        zoomedimgviewersizew:=(imgviewersizew*Screen.Height) div imgviewersizeh;
+        zoomedimgviewersizeh:=sheight;
+        zoomedimgviewersizew:=(imgviewersizew*sheight) div imgviewersizeh;
         end;
      zoomstring:=' '+FormImgViewer.mzoomfit.Caption;
      imgviewerzoom:=10;
      end;
  31:
    begin
-   zoomedimgviewersizeh:=Screen.Height;
-   zoomedimgviewersizew:=(imgviewersizew*Screen.Height) div imgviewersizeh;
+   zoomedimgviewersizeh:=sheight;
+   zoomedimgviewersizew:=(imgviewersizew*sheight) div imgviewersizeh;
    zoomstring:=' '+FormImgViewer.mzoomfith.Caption;
    imgviewerzoom:=10;
    end;
  32:
    begin
-   zoomedimgviewersizew:=Screen.Width;
-   zoomedimgviewersizeh:=(imgviewersizeh*Screen.Width) div imgviewersizew;
+   zoomedimgviewersizew:=swidth;
+   zoomedimgviewersizeh:=(imgviewersizeh*swidth) div imgviewersizew;
    zoomstring:=' '+FormImgViewer.mzoomfitw.Caption;
    imgviewerzoom:=10;
    end;
   33:
     begin
-    if ((Screen.Width*100) div imgviewersizew) < ((Screen.Height*100) div imgviewersizeh) then
+    if ((swidth*100) div imgviewersizew) < ((sheight*100) div imgviewersizeh) then
        begin
-       zoomedimgviewersizew:=Screen.Width;
-       zoomedimgviewersizeh:=(imgviewersizeh*Screen.Width) div imgviewersizew;
+       zoomedimgviewersizew:=swidth;
+       zoomedimgviewersizeh:=(imgviewersizeh*swidth) div imgviewersizew;
        end
     else
        begin
-       zoomedimgviewersizeh:=Screen.Height;
-       zoomedimgviewersizew:=(imgviewersizew*Screen.Height) div imgviewersizeh;
+       zoomedimgviewersizeh:=sheight;
+       zoomedimgviewersizew:=(imgviewersizew*sheight) div imgviewersizeh;
        end;
     if (imgviewersizew<zoomedimgviewersizew) and (imgviewersizeh<zoomedimgviewersizeh) then
        begin
@@ -429,6 +442,24 @@ FormImgViewer.ImageViewer.Width:=BImageViewer.Width;
 FormImgViewer.ImageViewer.Picture.Bitmap:=BImageViewer;
 if FormImgViewer.ImageViewer.Visible=False then FormImgViewer.ImageViewer.Visible:=True;
 snaptosize;
+
+//the default fullscreen windowed mode is forced to show the horizontal scroll bar if needed (autoscroll seems forcing only the vertical one)
+if (FormImgViewer.WindowState=wsMaximized) and (FormImgViewer.BorderStyle<>bsNone) and (zoomedimgviewersizew>Screen.Width) then
+   begin
+   FormImgViewer.AutoScroll:=true;
+   FormImgViewer.ImageViewer.AnchorSideLeft.Side:=asrLeft;
+   FormImgViewer.HorzScrollBar.position:=(FormImgViewer.HorzScrollBar.Range - ((FormImgViewer.HorzScrollBar.Range*Screen.Width) div zoomedimgviewersizew)) div 2;
+   end
+else
+   FormImgViewer.ImageViewer.AnchorSideLeft.Side:=asrCenter;
+
+//avoid placing the window's controls outside the screen
+if (FormImgViewer.WindowState<>wsMaximized) then
+   begin
+   if FormImgViewer.Top<0 then FormImgViewer.Top:=0;
+   if FormImgViewer.Left<0 then FormImgViewer.Left:=0;
+   end;
+
 BImageViewer.Free;
 Application.ProcessMessages;
 viewerbusy:=false;
@@ -449,6 +480,7 @@ else
    FormImgViewer.BorderStyle:=bsSizeable;
    FormImgViewer.WindowState:=wsMaximized;
    end;
+applyzoom('open'); //restore default zoom when toggling the immersive mode (windowed mode has usable screen size different from full screen mode)
 end;
 
 procedure open_first_item;

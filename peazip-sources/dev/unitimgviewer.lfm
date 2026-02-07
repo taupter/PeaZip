@@ -3,6 +3,9 @@ object FormImgViewer: TFormImgViewer
   Height = 240
   Top = 80
   Width = 320
+  HorzScrollBar.Page = 1
+  VertScrollBar.Page = 180
+  AutoScroll = True
   ClientHeight = 240
   ClientWidth = 320
   Constraints.MinHeight = 240
@@ -32,7 +35,7 @@ object FormImgViewer: TFormImgViewer
   object StringGridImgViewer: TStringGrid
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 112
+    Left = 0
     Height = 44
     Top = 184
     Width = 200

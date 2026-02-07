@@ -127,7 +127,7 @@ object FormPea: TFormPea
     Visible = False
     OnClick = LabelLogPeaClick
   end
-  object PanelTools: TPanel
+  object PanelDecrypt: TPanel
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = LabelOpStatus
@@ -141,117 +141,292 @@ object FormPea: TFormPea
     ClientWidth = 700
     ParentBackground = False
     ParentFont = False
-    TabOrder = 7
-    object LabelToolsInput: TLabel
-      AnchorSideLeft.Control = ImageInfoTools
+    TabOrder = 1
+    object LabelDecryptInput: TLabel
+      AnchorSideLeft.Control = ImageInfoDecrypt
       AnchorSideLeft.Side = asrBottom
-      AnchorSideTop.Control = ImageInfoTools
-      AnchorSideRight.Control = PanelTools
+      AnchorSideTop.Control = PanelDecrypt
+      AnchorSideRight.Control = PanelDecrypt
       AnchorSideRight.Side = asrBottom
+      Cursor = crHandPoint
       Left = 61
       Height = 20
       Top = 30
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
+      Width = 37
       BorderSpacing.Left = 15
-      BorderSpacing.Right = 15
+      BorderSpacing.Top = 30
       Caption = 'Input:'
       ParentFont = False
+      OnClick = LabelDecryptInputClick
     end
-    object ImageInfoTools: TImage
-      AnchorSideLeft.Control = PanelTools
-      AnchorSideTop.Control = PanelTools
+    object LabelDecryptOutput: TLabel
+      AnchorSideLeft.Control = LabelDecrypt
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelDecryptInput
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = PanelDecrypt
+      AnchorSideRight.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 116
+      Height = 20
+      Top = 30
+      Width = 49
+      Caption = 'Output:'
+      ParentFont = False
+      OnClick = LabelDecryptOutputClick
+    end
+    object LabelDecryptInfo: TLabel
+      AnchorSideLeft.Control = LabelDecryptInput
+      AnchorSideTop.Control = LabelDecryptOutput
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelDecrypt
+      AnchorSideRight.Side = asrBottom
+      Left = 61
+      Height = 20
+      Top = 65
+      Width = 624
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 15
+      BorderSpacing.Right = 15
+      Caption = 'Using:'
+      ParentFont = False
+    end
+    object LabelDecryptResult1: TLabel
+      AnchorSideLeft.Control = LabelDecryptInput
+      AnchorSideTop.Control = LabelDecryptInfo
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelDecrypt
+      AnchorSideRight.Side = asrBottom
+      Left = 61
+      Height = 20
+      Top = 93
+      Width = 624
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 15
+      Caption = ' '
+      ParentFont = False
+    end
+    object LabelDecryptResult2: TLabel
+      AnchorSideLeft.Control = LabelDecryptInput
+      AnchorSideTop.Control = LabelDecryptResult1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelDecrypt
+      AnchorSideRight.Side = asrBottom
+      Left = 61
+      Height = 20
+      Top = 121
+      Width = 624
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 8
+      BorderSpacing.Right = 15
+      Caption = ' '
+      ParentFont = False
+    end
+    object ImageInfoDecrypt: TImage
+      AnchorSideLeft.Control = PanelDecrypt
+      AnchorSideTop.Control = LabelDecryptInput
+      AnchorSideTop.Side = asrCenter
       Left = 30
       Height = 16
-      Top = 30
+      Top = 32
       Width = 16
       AutoSize = True
       BorderSpacing.Left = 30
-      BorderSpacing.Top = 30
       Transparent = True
     end
-    object LabelToolsResult1: TLabel
-      AnchorSideLeft.Control = LabelToolsInput
-      AnchorSideTop.Control = LabelToolsInput
+    object ButtonDecryptCancel: TBitBtn
       AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelTools
+      AnchorSideRight.Control = PanelDecrypt
       AnchorSideRight.Side = asrBottom
-      Left = 61
-      Height = 1
-      Top = 54
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 4
-      BorderSpacing.Right = 15
-      ParentFont = False
-    end
-    object LabelToolsResult2: TLabel
-      AnchorSideLeft.Control = LabelToolsInput
-      AnchorSideTop.Control = LabelToolsResult1
-      AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelTools
-      AnchorSideRight.Side = asrBottom
-      Left = 61
-      Height = 1
-      Top = 59
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 4
-      BorderSpacing.Right = 15
-      ParentFont = False
-    end
-    object ButtonToolsCancel: TBitBtn
-      AnchorSideRight.Control = PanelUtils
-      AnchorSideRight.Side = asrBottom
-      AnchorSideBottom.Control = PanelTools
+      AnchorSideBottom.Control = PanelDecrypt
       AnchorSideBottom.Side = asrBottom
-      Left = 594
+      Left = 591
       Height = 30
-      Top = 203
+      Top = 211
       Width = 94
       Anchors = [akRight, akBottom]
       AutoSize = True
       BorderSpacing.Right = 15
-      BorderSpacing.Bottom = 8
       Caption = '   Cancel   '
       ParentFont = False
       TabOrder = 0
-      Visible = False
-      OnClick = ButtonToolsCancelClick
+      OnClick = ButtonEncryptCancelClick
     end
-    object LabelToolsElapsed: TLabel
-      AnchorSideLeft.Control = LabelToolsInput
-      AnchorSideTop.Control = LabelToolsResult2
-      AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelTools
+    object LabelDecrypt: TLabel
+      AnchorSideLeft.Control = LabelDecryptInput
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelDecryptInput
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = PanelDecrypt
       AnchorSideRight.Side = asrBottom
-      Left = 61
-      Height = 1
-      Top = 64
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 4
-      BorderSpacing.Right = 15
+      Left = 98
+      Height = 20
+      Top = 30
+      Width = 18
+      Caption = ' > '
       ParentFont = False
     end
-    object ButtonToolsOK: TBitBtn
-      AnchorSideRight.Control = PanelUtils
+    object LabelDecryptProgress: TLabel
+      AnchorSideLeft.Control = LabelDecryptOutput
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelDecryptInput
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = PanelDecrypt
       AnchorSideRight.Side = asrBottom
-      AnchorSideBottom.Control = PanelTools
+      Left = 165
+      Height = 20
+      Top = 30
+      Width = 4
+      Caption = ' '
+      ParentFont = False
+    end
+  end
+  object PanelEncrypt: TPanel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = LabelOpStatus
+    Left = 0
+    Height = 241
+    Top = 0
+    Width = 700
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 241
+    ClientWidth = 700
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 2
+    object LabelEncryptInput: TLabel
+      AnchorSideLeft.Control = ImageInfoEncrypt
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = PanelEncrypt
+      AnchorSideRight.Control = PanelEncrypt
+      AnchorSideRight.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 61
+      Height = 20
+      Top = 30
+      Width = 37
+      BorderSpacing.Left = 15
+      BorderSpacing.Top = 30
+      Caption = 'Input:'
+      Font.Color = 13391121
+      ParentFont = False
+      OnClick = LabelEncryptInputClick
+    end
+    object LabelEncryptOutput: TLabel
+      AnchorSideLeft.Control = LabelEncrypt
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelEncryptInput
+      AnchorSideTop.Side = asrCenter
+      Cursor = crHandPoint
+      Left = 116
+      Height = 20
+      Top = 30
+      Width = 49
+      BorderSpacing.Top = 8
+      Caption = 'Output:'
+      Font.Color = 13391121
+      ParentFont = False
+      OnClick = LabelEncryptOutputClick
+    end
+    object LabelEncryptSettings: TLabel
+      AnchorSideLeft.Control = LabelEncryptInput
+      AnchorSideTop.Control = LabelEncryptInput
+      AnchorSideTop.Side = asrBottom
+      Left = 61
+      Height = 20
+      Top = 65
+      Width = 629
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 15
+      Caption = 'Using:'
+      ParentFont = False
+    end
+    object LabelEncryptResult1: TLabel
+      AnchorSideLeft.Control = LabelEncryptInput
+      AnchorSideTop.Control = LabelEncryptSettings
+      AnchorSideTop.Side = asrBottom
+      Left = 61
+      Height = 20
+      Top = 93
+      Width = 629
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 8
+      Caption = 'Input details:'
+      ParentFont = False
+      Visible = False
+    end
+    object LabelEncryptResult2: TLabel
+      AnchorSideLeft.Control = LabelEncryptInput
+      AnchorSideTop.Control = LabelEncryptResult1
+      AnchorSideTop.Side = asrBottom
+      Left = 61
+      Height = 20
+      Top = 121
+      Width = 629
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 8
+      Caption = 'Output details:'
+      ParentFont = False
+      Visible = False
+    end
+    object ImageInfoEncrypt: TImage
+      AnchorSideLeft.Control = PanelEncrypt
+      AnchorSideTop.Control = LabelEncryptInput
+      AnchorSideTop.Side = asrCenter
+      Left = 30
+      Height = 16
+      Top = 32
+      Width = 16
+      AutoSize = True
+      BorderSpacing.Left = 30
+      Transparent = True
+    end
+    object ButtonEncryptCancel: TBitBtn
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelEncrypt
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = PanelEncrypt
       AnchorSideBottom.Side = asrBottom
-      Left = 618
+      Left = 591
       Height = 30
-      Top = 203
-      Width = 70
+      Top = 211
+      Width = 94
       Anchors = [akRight, akBottom]
       AutoSize = True
       BorderSpacing.Right = 15
-      BorderSpacing.Bottom = 8
-      Caption = '   OK   '
+      Caption = '   Cancel   '
       ParentFont = False
-      TabOrder = 1
-      Visible = False
-      OnClick = ButtonToolsOKClick
+      TabOrder = 0
+      OnClick = ButtonEncryptCancelClick
+    end
+    object LabelDetailsOut: TLabel
+      AnchorSideLeft.Control = LabelEncryptOutput
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelEncryptInput
+      AnchorSideTop.Side = asrCenter
+      Left = 165
+      Height = 20
+      Top = 30
+      Width = 4
+      BorderSpacing.Top = 8
+      Caption = ' '
+      ParentFont = False
+    end
+    object LabelEncrypt: TLabel
+      AnchorSideLeft.Control = LabelEncryptInput
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = LabelEncryptInput
+      AnchorSideTop.Side = asrCenter
+      Left = 98
+      Height = 20
+      Top = 30
+      Width = 18
+      BorderSpacing.Top = 8
+      Caption = ' > '
+      ParentFont = False
     end
   end
   object PanelRFSinteractive: TPanel
@@ -476,310 +651,6 @@ object FormPea: TFormPea
       ParentBackground = False
       ParentFont = False
       TabOrder = 6
-    end
-  end
-  object PanelEncrypt: TPanel
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
-    AnchorSideBottom.Control = LabelOpStatus
-    Left = 0
-    Height = 241
-    Top = 0
-    Width = 700
-    Anchors = [akTop, akLeft, akRight, akBottom]
-    BevelOuter = bvNone
-    ClientHeight = 241
-    ClientWidth = 700
-    ParentBackground = False
-    ParentFont = False
-    TabOrder = 2
-    object LabelEncryptInput: TLabel
-      AnchorSideLeft.Control = ImageInfoEncrypt
-      AnchorSideLeft.Side = asrBottom
-      AnchorSideTop.Control = PanelEncrypt
-      AnchorSideRight.Control = PanelEncrypt
-      AnchorSideRight.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 30
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 15
-      BorderSpacing.Top = 30
-      BorderSpacing.Right = 15
-      Caption = 'Input:'
-      ParentFont = False
-    end
-    object LabelEncryptOutput: TLabel
-      AnchorSideLeft.Control = LabelEncryptInput
-      AnchorSideTop.Control = LabelEncryptInput
-      AnchorSideTop.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 58
-      Width = 629
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 8
-      Caption = 'Output:'
-      ParentFont = False
-    end
-    object LabelEncryptSettings: TLabel
-      AnchorSideLeft.Control = LabelEncryptInput
-      AnchorSideTop.Control = LabelEncryptOutput
-      AnchorSideTop.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 93
-      Width = 629
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 15
-      Caption = 'Using:'
-      ParentFont = False
-    end
-    object LabelEncryptResult1: TLabel
-      AnchorSideLeft.Control = LabelEncryptInput
-      AnchorSideTop.Control = LabelEncryptSettings
-      AnchorSideTop.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 121
-      Width = 629
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 8
-      Caption = 'Input details:'
-      ParentFont = False
-    end
-    object LabelEncryptResult2: TLabel
-      AnchorSideLeft.Control = LabelEncryptInput
-      AnchorSideTop.Control = LabelEncryptResult1
-      AnchorSideTop.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 149
-      Width = 629
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 8
-      Caption = 'Output details:'
-      ParentFont = False
-    end
-    object LabelDetails: TLabel
-      AnchorSideLeft.Side = asrCenter
-      AnchorSideTop.Control = LabelEncryptOutput
-      AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelDetails
-      Cursor = crHandPoint
-      Left = 28
-      Height = 35
-      Top = 93
-      Width = 18
-      Anchors = [akTop, akRight]
-      BorderSpacing.Top = 15
-      BorderSpacing.Right = 15
-      Caption = '+'
-      Font.Color = clGrayText
-      Font.Height = -25
-      Font.Style = [fsBold]
-      ParentFont = False
-      OnClick = LabelDetailsClick
-    end
-    object ImageInfoEncrypt: TImage
-      AnchorSideLeft.Control = PanelEncrypt
-      AnchorSideTop.Control = LabelEncryptInput
-      AnchorSideTop.Side = asrCenter
-      Left = 30
-      Height = 16
-      Top = 32
-      Width = 16
-      AutoSize = True
-      BorderSpacing.Left = 30
-      Transparent = True
-    end
-    object PanelDetails: TPanel
-      AnchorSideLeft.Control = LabelEncryptInput
-      AnchorSideTop.Control = LabelEncryptOutput
-      AnchorSideTop.Side = asrBottom
-      AnchorSideBottom.Control = ButtonEncryptCancel
-      Left = 61
-      Height = 118
-      Top = 93
-      Width = 629
-      Anchors = [akTop, akLeft, akRight, akBottom]
-      BorderSpacing.Top = 15
-      BevelOuter = bvNone
-      ClientHeight = 118
-      ClientWidth = 629
-      ParentBackground = False
-      ParentFont = False
-      TabOrder = 0
-      object ShapeEncrypt: TShape
-        Left = 0
-        Height = 6
-        Top = 12
-        Width = 250
-      end
-      object ShapeEncryptProgress: TShape
-        Left = 0
-        Height = 6
-        Top = 12
-        Width = 250
-        Brush.Color = clHighlight
-      end
-      object LabelDetailsOut: TLabel
-        AnchorSideTop.Control = ShapeEncrypt
-        AnchorSideTop.Side = asrBottom
-        Left = 0
-        Height = 20
-        Top = 26
-        Width = 209
-        BorderSpacing.Top = 8
-        Caption = 'Compression ratio: calculating...'
-        ParentFont = False
-      end
-    end
-    object ButtonEncryptCancel: TBitBtn
-      AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelEncrypt
-      AnchorSideRight.Side = asrBottom
-      AnchorSideBottom.Control = PanelEncrypt
-      AnchorSideBottom.Side = asrBottom
-      Left = 591
-      Height = 30
-      Top = 211
-      Width = 94
-      Anchors = [akRight, akBottom]
-      AutoSize = True
-      BorderSpacing.Right = 15
-      Caption = '   Cancel   '
-      ParentFont = False
-      TabOrder = 1
-      OnClick = ButtonEncryptCancelClick
-    end
-  end
-  object PanelDecrypt: TPanel
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
-    AnchorSideBottom.Control = LabelOpStatus
-    Left = 0
-    Height = 241
-    Top = 0
-    Width = 700
-    Anchors = [akTop, akLeft, akRight, akBottom]
-    BevelOuter = bvNone
-    ClientHeight = 241
-    ClientWidth = 700
-    ParentBackground = False
-    ParentFont = False
-    TabOrder = 1
-    object LabelDecryptInput: TLabel
-      AnchorSideLeft.Control = ImageInfoDecrypt
-      AnchorSideLeft.Side = asrBottom
-      AnchorSideTop.Control = PanelDecrypt
-      AnchorSideRight.Control = PanelDecrypt
-      AnchorSideRight.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 30
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 15
-      BorderSpacing.Top = 30
-      BorderSpacing.Right = 15
-      Caption = 'Input:'
-      ParentFont = False
-    end
-    object LabelDecryptOutput: TLabel
-      AnchorSideLeft.Control = LabelDecryptInput
-      AnchorSideTop.Control = LabelDecryptInput
-      AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelDecrypt
-      AnchorSideRight.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 58
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 8
-      BorderSpacing.Right = 15
-      Caption = 'Output:'
-      ParentFont = False
-    end
-    object LabelDecryptInfo: TLabel
-      AnchorSideLeft.Control = LabelDecryptInput
-      AnchorSideTop.Control = LabelDecryptOutput
-      AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelDecrypt
-      AnchorSideRight.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 108
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 30
-      BorderSpacing.Right = 15
-      Caption = 'Using:'
-      ParentFont = False
-    end
-    object LabelDecryptResult1: TLabel
-      AnchorSideLeft.Control = LabelDecryptInput
-      AnchorSideTop.Control = LabelDecryptInfo
-      AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelDecrypt
-      AnchorSideRight.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 136
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 8
-      BorderSpacing.Right = 15
-      Caption = ' '
-      ParentFont = False
-    end
-    object LabelDecryptResult2: TLabel
-      AnchorSideLeft.Control = LabelDecryptInput
-      AnchorSideTop.Control = LabelDecryptResult1
-      AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelDecrypt
-      AnchorSideRight.Side = asrBottom
-      Left = 61
-      Height = 20
-      Top = 164
-      Width = 624
-      Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Top = 8
-      BorderSpacing.Right = 15
-      Caption = ' '
-      ParentFont = False
-    end
-    object ImageInfoDecrypt: TImage
-      AnchorSideLeft.Control = PanelDecrypt
-      AnchorSideTop.Control = LabelDecryptInput
-      AnchorSideTop.Side = asrCenter
-      Left = 30
-      Height = 16
-      Top = 32
-      Width = 16
-      AutoSize = True
-      BorderSpacing.Left = 30
-      Transparent = True
-    end
-    object ButtonDecryptCancel: TBitBtn
-      AnchorSideTop.Side = asrBottom
-      AnchorSideRight.Control = PanelDecrypt
-      AnchorSideRight.Side = asrBottom
-      AnchorSideBottom.Control = PanelDecrypt
-      AnchorSideBottom.Side = asrBottom
-      Left = 591
-      Height = 30
-      Top = 211
-      Width = 94
-      Anchors = [akRight, akBottom]
-      AutoSize = True
-      BorderSpacing.Right = 15
-      Caption = '   Cancel   '
-      ParentFont = False
-      TabOrder = 0
-      OnClick = ButtonEncryptCancelClick
     end
   end
   object PanelUtils: TPanel
@@ -1067,6 +938,133 @@ object FormPea: TFormPea
       end
     end
   end
+  object PanelTools: TPanel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = LabelOpStatus
+    Left = 0
+    Height = 241
+    Top = 0
+    Width = 700
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelOuter = bvNone
+    ClientHeight = 241
+    ClientWidth = 700
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 7
+    object LabelToolsInput: TLabel
+      AnchorSideLeft.Control = ImageInfoTools
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = ImageInfoTools
+      AnchorSideRight.Control = PanelTools
+      AnchorSideRight.Side = asrBottom
+      Left = 61
+      Height = 20
+      Top = 30
+      Width = 624
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 15
+      BorderSpacing.Right = 15
+      Caption = 'Input:'
+      ParentFont = False
+    end
+    object ImageInfoTools: TImage
+      AnchorSideLeft.Control = PanelTools
+      AnchorSideTop.Control = PanelTools
+      Left = 30
+      Height = 16
+      Top = 30
+      Width = 16
+      AutoSize = True
+      BorderSpacing.Left = 30
+      BorderSpacing.Top = 30
+      Transparent = True
+    end
+    object LabelToolsResult1: TLabel
+      AnchorSideLeft.Control = LabelToolsInput
+      AnchorSideTop.Control = LabelToolsInput
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelTools
+      AnchorSideRight.Side = asrBottom
+      Left = 61
+      Height = 1
+      Top = 54
+      Width = 624
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 15
+      ParentFont = False
+    end
+    object LabelToolsResult2: TLabel
+      AnchorSideLeft.Control = LabelToolsInput
+      AnchorSideTop.Control = LabelToolsResult1
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelTools
+      AnchorSideRight.Side = asrBottom
+      Left = 61
+      Height = 1
+      Top = 59
+      Width = 624
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 15
+      ParentFont = False
+    end
+    object ButtonToolsCancel: TBitBtn
+      AnchorSideRight.Control = PanelUtils
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = PanelTools
+      AnchorSideBottom.Side = asrBottom
+      Left = 594
+      Height = 30
+      Top = 203
+      Width = 94
+      Anchors = [akRight, akBottom]
+      AutoSize = True
+      BorderSpacing.Right = 15
+      BorderSpacing.Bottom = 8
+      Caption = '   Cancel   '
+      ParentFont = False
+      TabOrder = 0
+      Visible = False
+      OnClick = ButtonToolsCancelClick
+    end
+    object LabelToolsElapsed: TLabel
+      AnchorSideLeft.Control = LabelToolsInput
+      AnchorSideTop.Control = LabelToolsResult2
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = PanelTools
+      AnchorSideRight.Side = asrBottom
+      Left = 61
+      Height = 1
+      Top = 64
+      Width = 624
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 15
+      ParentFont = False
+    end
+    object ButtonToolsOK: TBitBtn
+      AnchorSideRight.Control = PanelUtils
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = PanelTools
+      AnchorSideBottom.Side = asrBottom
+      Left = 618
+      Height = 30
+      Top = 203
+      Width = 70
+      Anchors = [akRight, akBottom]
+      AutoSize = True
+      BorderSpacing.Right = 15
+      BorderSpacing.Bottom = 8
+      Caption = '   OK   '
+      ParentFont = False
+      TabOrder = 1
+      Visible = False
+      OnClick = ButtonToolsOKClick
+    end
+  end
   object PanelPW: TPanel
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
@@ -1092,7 +1090,7 @@ object FormPea: TFormPea
       AnchorSideTop.Side = asrBottom
       Left = 61
       Height = 20
-      Top = 182
+      Top = 184
       Width = 312
       BorderSpacing.Left = 15
       BorderSpacing.Top = 15
@@ -1135,7 +1133,7 @@ object FormPea: TFormPea
       AnchorSideTop.Side = asrBottom
       Left = 122
       Height = 20
-      Top = 210
+      Top = 212
       Width = 58
       Alignment = taRightJustify
       BorderSpacing.Left = 8
@@ -1148,11 +1146,13 @@ object FormPea: TFormPea
       AnchorSideTop.Control = EditConfirm
       AnchorSideTop.Side = asrBottom
       Left = 160
-      Height = 6
+      Height = 8
       Top = 137
       Width = 6
       BorderSpacing.Top = 8
       Brush.Color = clRed
+      Pen.Color = clNone
+      Pen.Style = psClear
     end
     object LabelPS: TLabel
       AnchorSideLeft.Control = ShapePW
@@ -1161,7 +1161,7 @@ object FormPea: TFormPea
       Left = 160
       Height = 20
       Hint = 'Esteem of entropy contained in the typed'#13#10'passphrase, has only an informative value'
-      Top = 147
+      Top = 149
       Width = 4
       Alignment = taRightJustify
       BorderSpacing.Top = 4
@@ -1202,7 +1202,7 @@ object FormPea: TFormPea
       Cursor = crHandPoint
       Left = 30
       Height = 16
-      Top = 184
+      Top = 186
       Width = 16
       AutoSize = True
       BorderSpacing.Left = 30
@@ -1215,7 +1215,7 @@ object FormPea: TFormPea
       AnchorSideTop.Side = asrBottom
       Left = 61
       Height = 20
-      Top = 210
+      Top = 212
       Width = 53
       Alignment = taRightJustify
       BorderSpacing.Top = 8
@@ -1330,17 +1330,17 @@ object FormPea: TFormPea
     Interval = 100
     OnTimer = TimerActionTimer
     Left = 400
-    Top = 272
+    Top = 273
   end
   object OpenDialogKeyFile: TOpenDialog
     FilterIndex = 0
-    Left = 352
+    Left = 353
     Top = 193
   end
   object ImageListPea: TImageList
     Height = 48
     Width = 48
-    Left = 472
+    Left = 473
     Top = 193
     Bitmap = {
       4C7A0A00000030000000300000006B0600000000000078DAED9DBB6E5D451440
@@ -1405,7 +1405,7 @@ object FormPea: TFormPea
   end
   object peautilsmenu: TPopupMenu
     Left = 280
-    Top = 272
+    Top = 273
     object pmhelp: TMenuItem
       Caption = 'Online support (F1)'
       OnClick = pmhelpClick
@@ -1428,7 +1428,7 @@ object FormPea: TFormPea
   end
   object MainMenu1: TMainMenu
     Left = 144
-    Top = 272
+    Top = 273
     object mainmenuhelp: TMenuItem
       Caption = 'Help (F1)'
       ShortCut = 112
@@ -1439,7 +1439,7 @@ object FormPea: TFormPea
   object ImageListPea_dark: TImageList
     Height = 48
     Width = 48
-    Left = 592
+    Left = 593
     Top = 193
     Bitmap = {
       4C7A0A0000003000000030000000680600000000000078DAED9D3B6F1D451480

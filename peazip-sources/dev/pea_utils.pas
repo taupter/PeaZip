@@ -477,7 +477,7 @@ procedure evaluate_password ( pw: ansistring;                                   
                               var pw_strength:dword);                           //entropy bits evaluation
 
 //function to prepend keyfile to password string (used for non-pea encryption)
-function prepend_keyfile(var pw:ansistring; keyfilename:ansistring):integer;
+function prepend_keyfile(var pw:ansistring; keyfilename:ansistring; kflimit:integer):integer;
 
 procedure checkdom(var dom,s:ansistring);
 
@@ -2342,7 +2342,7 @@ pw_strength:=pw_len+qbonus+i*3;
 if pw_strength>pw_len*7 then pw_strength:=pw_len*7;//rule out extra bonus if result is over realistic max (useful for short strings)
 end;
 
-function prepend_keyfile(var pw:ansistring; keyfilename:ansistring):integer;
+function prepend_keyfile(var pw:ansistring; keyfilename:ansistring; kflimit:integer):integer;
 var
    sbuf:array [1..32767] of byte;
    n:integer;
@@ -2351,7 +2351,7 @@ var
    SHA256Digest:TSHA256Digest;
    f:file of byte;
 begin
-prepend_keyfile:=-1;
+result:=-1;
 try
    filemode:=0;
    assignfile(f,keyfilename);
@@ -2370,14 +2370,14 @@ repeat
    blockread(f,sbuf,sizeof(sbuf),n);
    if n<>0 then
       begin
-      inc(k,n);
+      if kflimit<>0 then inc(k,n);//0 do not limit keyfile size
       SHA256Update(SHA256Context,@sbuf,n);
       end;
-until n<>sizeof(sbuf);
+until (n<>sizeof(sbuf)) or (k>100*1024*1024);
 close(f);
 SHA256Final(SHA256Context,SHA256Digest);
 pw:=base64str(@SHA256Digest,sizeof(SHA256Digest))+pw;
-prepend_keyfile:=0;
+result:=0;
 end;
 
 procedure checkdom(var dom,s:ansistring);

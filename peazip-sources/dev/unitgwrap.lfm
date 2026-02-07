@@ -954,9 +954,9 @@ object FormGwrap: TFormGwrap
             Left = 0
             Height = 20
             Top = 33
-            Width = 99
+            Width = 47
             BorderSpacing.Top = 8
-            Caption = 'Input file from '
+            Caption = 'Action '
             ParentFont = False
           end
           object l2: TLabel
@@ -967,41 +967,41 @@ object FormGwrap: TFormGwrap
             AnchorSideRight.Control = PanelTask
             AnchorSideRight.Side = asrBottom
             Cursor = crHandPoint
-            Left = 99
+            Left = 47
             Height = 20
             Top = 33
-            Width = 30
+            Width = 34
             BorderSpacing.Top = 4
-            Caption = 'path'
+            Caption = 'input'
             Font.Color = 13391121
             ParentFont = False
             PopupMenu = PopupMenuTask
             OnClick = l2Click
           end
           object l3: TLabel
-            AnchorSideLeft.Control = l2
+            AnchorSideLeft.Control = lspac1
             AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = l2
+            AnchorSideTop.Control = l1
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = PanelTask
             AnchorSideRight.Side = asrBottom
-            Left = 129
+            Left = 85
             Height = 20
             Top = 33
-            Width = 22
+            Width = 18
             BorderSpacing.Top = 4
-            Caption = ' to '
+            Caption = 'to '
             ParentFont = False
           end
           object l4: TLabel
             AnchorSideLeft.Control = l3
             AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = l3
+            AnchorSideTop.Control = l1
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = PanelTask
             AnchorSideRight.Side = asrBottom
             Cursor = crHandPoint
-            Left = 151
+            Left = 103
             Height = 20
             Top = 33
             Width = 78
@@ -1025,15 +1025,15 @@ object FormGwrap: TFormGwrap
             ParentFont = False
           end
           object l5: TLabel
-            AnchorSideLeft.Control = l4
+            AnchorSideLeft.Control = lspac2
             AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = l4
+            AnchorSideTop.Control = l1
             AnchorSideTop.Side = asrCenter
-            Left = 229
+            Left = 185
             Height = 20
             Top = 33
-            Width = 12
-            Caption = '--'
+            Width = 4
+            Caption = ' '
             ParentFont = False
           end
           object LabelAction: TLabel
@@ -1052,15 +1052,14 @@ object FormGwrap: TFormGwrap
             ParentFont = False
           end
           object l6: TLabel
-            AnchorSideLeft.Control = l5
+            AnchorSideLeft.Control = lspac3
             AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = l5
+            AnchorSideTop.Control = l1
             AnchorSideTop.Side = asrCenter
-            Left = 249
+            Left = 193
             Height = 1
             Top = 43
             Width = 1
-            BorderSpacing.Left = 8
             BorderSpacing.Right = 15
             ParentFont = False
             Visible = False
@@ -1077,6 +1076,42 @@ object FormGwrap: TFormGwrap
             Width = 34
             BorderSpacing.Top = 4
             Caption = 'Input'
+            ParentFont = False
+          end
+          object lspac1: TLabel
+            AnchorSideLeft.Control = l2
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = l1
+            AnchorSideTop.Side = asrCenter
+            Left = 81
+            Height = 20
+            Top = 33
+            Width = 4
+            Caption = ' '
+            ParentFont = False
+          end
+          object lspac2: TLabel
+            AnchorSideLeft.Control = l4
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = l1
+            AnchorSideTop.Side = asrCenter
+            Left = 181
+            Height = 20
+            Top = 33
+            Width = 4
+            Caption = ' '
+            ParentFont = False
+          end
+          object lspac3: TLabel
+            AnchorSideLeft.Control = l5
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = l1
+            AnchorSideTop.Side = asrCenter
+            Left = 189
+            Height = 20
+            Top = 33
+            Width = 4
+            Caption = ' '
             ParentFont = False
           end
         end

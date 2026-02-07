@@ -197,6 +197,7 @@ type
     ButtonStopAll: TBitBtn;
     CheckBoxHalt: TCheckBox;
     ImageTask: TImage;
+    lspac1: TLabel;
     LabelSaveReport: TLabel;
     LabelSavePJ: TLabel;
     LabelKeep: TLabel;
@@ -225,6 +226,8 @@ type
     LabelTitle3: TLabel;
     LabelTitle4: TLabel;
     LabelWarning: TLabel;
+    lspac2: TLabel;
+    lspac3: TLabel;
     MemoTmp: TMemo;
     MemoConsole: TMemo;
     pmCompact: TMenuItem;
@@ -992,7 +995,7 @@ if FormGwrap.SaveDialogTask.Execute then
    for i:=0 to FormGwrap.StringGridReport.Rowcount-1 do writeln(t,FormGwrap.StringGridReport.Cells[0,i]);
    writeln(t,'');
    writeln(t,FormGwrap.LabelAction.Caption);
-   writeln(t,FormGwrap.l1.Caption+FormGwrap.l2.Caption+FormGwrap.l3.Caption+FormGwrap.l4.Caption+FormGwrap.l5.Caption);
+   writeln(t,FormGwrap.l1.Caption+FormGwrap.l2.Caption+' '+FormGwrap.l3.Caption+FormGwrap.l4.Caption+' '+FormGwrap.l5.Caption);
    writeln(t,txt_input+' '+FormGwrap.LabelInfo1.Caption);
    writeln(t,txt_output+' '+FormGwrap.LabelInfo2.Caption);
    writeln(t,FormGwrap.l6.Caption);
@@ -1053,23 +1056,34 @@ procedure setwrap;
 var lsz:integer;
 begin
 lsz:=0;
-if FormGwrap.l2.visible=true then lsz:=lsz+FormGwrap.l2.Width;
 if FormGwrap.l3.visible=true then lsz:=lsz+FormGwrap.l3.Width;
 if FormGwrap.l4.visible=true then lsz:=lsz+FormGwrap.l4.Width;
 if FormGwrap.l5.visible=true then lsz:=lsz+FormGwrap.l5.Width;
 if FormGwrap.l6.visible=true then lsz:=lsz+FormGwrap.l6.Width;
-if FormGwrap.l1.Width>FormGwrap.PanelTask.Width-(lsz) then
+lsz:=lsz+FormGwrap.lspac2.Width+FormGwrap.lspac3.Width;
+if FormGwrap.l1.Width+FormGwrap.l2.Width+FormGwrap.lspac1.Width>FormGwrap.PanelTask.Width-(lsz) then
    begin
-   FormGwrap.l2.AnchorSide[akTop].Side:=asrBottom;
-   FormGwrap.l2.AnchorSide[akLeft].Control:=FormGwrap.PanelTask;
-   FormGwrap.l2.AnchorSide[akLeft].Side:=asrLeft;
+   FormGwrap.l3.AnchorSide[akTop].Side:=asrBottom;
+   FormGwrap.l3.AnchorSide[akLeft].Control:=FormGwrap.PanelTask;
+   FormGwrap.l3.AnchorSide[akLeft].Side:=asrLeft;
+   FormGwrap.l4.AnchorSide[akTop].Side:=asrBottom;
+   FormGwrap.l5.AnchorSide[akTop].Side:=asrBottom;
+   FormGwrap.l6.AnchorSide[akTop].Side:=asrBottom;
+   FormGwrap.lspac2.AnchorSide[akTop].Side:=asrBottom;
+   FormGwrap.lspac3.AnchorSide[akTop].Side:=asrBottom;
    end
 else
    begin
-   FormGwrap.l2.AnchorSide[akTop].Side := asrCenter;
-   FormGwrap.l2.AnchorSide[akLeft].Control:=FormGwrap.l1;
-   FormGwrap.l2.AnchorSide[akLeft].Side:=asrRight;
+   FormGwrap.l3.AnchorSide[akTop].Side := asrCenter;
+   FormGwrap.l3.AnchorSide[akLeft].Control:=FormGwrap.lspac1;
+   FormGwrap.l3.AnchorSide[akLeft].Side:=asrRight;
+   FormGwrap.l4.AnchorSide[akTop].Side:=asrCenter;
+   FormGwrap.l5.AnchorSide[akTop].Side:=asrCenter;
+   FormGwrap.l6.AnchorSide[akTop].Side:=asrCenter;
+   FormGwrap.lspac2.AnchorSide[akTop].Side:=asrCenter;
+   FormGwrap.lspac3.AnchorSide[akTop].Side:=asrCenter;
    end;
+FormGwrap.lspac2.Visible:=FormGwrap.l4.Visible;
 end;
 
 procedure progress10; //progress counter
@@ -1110,7 +1124,7 @@ if umode=0 then //not 7z / p7zip
             if insize<>0 then percentout:=(outsize*1000000) div insize;
          if outsize>0 then
             begin
-            if (percentout>0) then FormGwrap.LabelInfo2.Caption:=nicenumber(inttostr(outsize),filesizebase)+' ('+inttostr(percentout div 10000)+'%)'
+            if (percentout>0) and (percentout<1200000) then FormGwrap.LabelInfo2.Caption:=nicenumber(inttostr(outsize),filesizebase)+' ('+inttostr(percentout div 10000)+'%)'
             else FormGwrap.LabelInfo2.Caption:=nicenumber(inttostr(outsize),filesizebase);
             if tdiff<>0 then speed:=outsize div tdiff * 1000;
             if speed>0 then
@@ -1174,15 +1188,13 @@ else //7z / p7zip
             if outsize>0 then
                begin
                FormGwrap.LabelInfo2.Caption:=nicenumber(inttostr(outsize),filesizebase);
-
                if pfun='7Z' then
                   if (insize>0) and (iperc>0) then
                      begin
                      percentout:=(((outsize*100) div iperc)*1000000) div insize; //Compression ratio projection
                      //percentout:=(outsize*1000000) div insize; //actual input/output ratio
-                     FormGwrap.LabelInfo2.Caption:=FormGwrap.LabelInfo2.Caption+' (cr '+inttostr(percentout div 10000)+'%)';
+                     if (percentout>0) and (percentout<1200000) then FormGwrap.LabelInfo2.Caption:=FormGwrap.LabelInfo2.Caption+' (cr '+inttostr(percentout div 10000)+'%)';
                      end;
-
                if tdiff<>0 then speed:=outsize div tdiff * 1000;
                if speed>0 then
                   FormGwrap.LabelInfo2.Caption:=FormGwrap.LabelInfo2.Caption+' @ '+nicenumber(inttostr(speed),filesizebase)+'/s';
@@ -1202,14 +1214,14 @@ if iperc>0 then
    end;
 
 if (pfun<>'UN7Z') and (pfun<>'7Z') then
-   l5.Caption:=', '+nicetime(inttostr(tdiff))
+   l5.Caption:='| '+nicetime(inttostr(tdiff))
 else
    begin
    if (iperc>0) and (iperc<100) then
       if iperc>ipercp then
          remtime:=(tdiff*(100-iperc)) div iperc;
-   if remtime>0 then l5.Caption:=', '+nicetime(inttostr(tdiff))+', '+txt_6_9_remaining+' '+nicetime(inttostr(remtime))
-   else l5.Caption:=', '+nicetime(inttostr(tdiff));
+   if remtime>0 then l5.Caption:='| '+nicetime(inttostr(tdiff))+', '+txt_6_9_remaining+' '+nicetime(inttostr(remtime))
+   else l5.Caption:='| '+nicetime(inttostr(tdiff));
    end;
 if (iperc>0) and (iperc<100) then ipercp:=iperc;
 if ShapeGlobalProgress.visible=true then gperc:=(ShapeGlobalProgress.Width * 100) div FormGwrap.Width
@@ -1254,16 +1266,19 @@ FormGwrap.l2.Caption:='';
 FormGwrap.l3.Caption:='';
 FormGwrap.l4.Caption:='';
 if psubfun='archive' then
-   FormGwrap.LabelAction.Caption:=paction+' '+upcase(ExtractFileExt(poutname))+parcstr
+   if paction<>'' then
+      FormGwrap.LabelAction.Caption:=paction+' '+upcase(ExtractFileExt(poutname))+parcstr
+   else
+      FormGwrap.LabelAction.Caption:=upcase(ExtractFileExt(poutname))+parcstr //new archive (implicit)
 else
    FormGwrap.LabelAction.Caption:=paction;
 parcstr:='';
 FormGwrap.l2.Hint:='';
 FormGwrap.l4.Hint:='';
 case modeofuse of
-   1 : s1:=txt_5_3_test+' '+extractfilename(in_name);
-   4 : s1:=txt_5_3_info+' '+extractfilename(in_name);
-   5 : s1:=txt_5_3_list+' '+extractfilename(in_name);
+   1 : s1:=txt_5_3_test+' ';
+   4 : s1:=txt_5_3_info+' ';
+   5 : s1:=txt_5_3_list+' ';
    end;
 case modeofuse of
    3 :
@@ -1284,9 +1299,9 @@ case modeofuse of
    s:=extractfilepath(in_name);
    if s<>'' then
       if s[length(s)]=directoryseparator then s:=copy(s,1,length(s)-1);
-   s2:=extractfilename(s);
+   s2:=extractfilename(in_name);
    {$IFDEF MSWINDOWS}if length(s2) = 2 then else{$ENDIF} s2:=extractfilename(s2);
-   FormGwrap.l1.Caption:=(s1+' '+txt_5_0_in+' ');
+   FormGwrap.l1.Caption:=s1;
    FormGwrap.l2.Caption:=s2;
    FormGwrap.l2.Hint:=s;
    pcapt:=FormGwrap.l1.Caption+FormGwrap.l2.Caption;
@@ -1311,16 +1326,13 @@ case optype of
       if outpath[length(outpath)]=directoryseparator then s2:=copy(outpath,1,length(outpath)-1)
       else s2:=outpath;
    {$IFDEF MSWINDOWS}if length(s2) = 2 then else{$ENDIF} s2:=extractfilename(s2);
-   s:=extractfilepath(in_name);
-   s:=copy(s,1,length(s)-1);
-   {$IFDEF MSWINDOWS}if length(s) = 2 then else{$ENDIF} s:=extractfilename(s);
-   s1:=txt_5_0_extract+' '+extractfilename(in_name)+' '+txt_5_0_from+' ';
-   FormGwrap.l1.Caption:=(s1);
-   FormGwrap.l2.Caption:=(s);
-   FormGwrap.l2.Hint:=(extractfilepath(in_name));
-   FormGwrap.l3.Caption:=' '+txt_5_0_to+' ';
-   FormGwrap.l4.Caption:=(s2);
-   FormGwrap.l4.Hint:=(extractfilepath(outpath));
+   s1:=txt_5_0_extract+' ';
+   FormGwrap.l1.Caption:=s1;
+   FormGwrap.l2.Caption:=extractfilename(in_name);
+   FormGwrap.l2.Hint:=extractfilepath(in_name);
+   FormGwrap.l3.Caption:=txt_5_0_to+' ';
+   FormGwrap.l4.Caption:=s2;
+   FormGwrap.l4.Hint:=extractfilepath(outpath);
    pcapt:=FormGwrap.l1.Caption+FormGwrap.l2.Caption+' '+FormGwrap.l3.Caption+FormGwrap.l4.Caption;
    FormGwrap.l1.Visible:=true;
    FormGwrap.l2.Visible:=true;
@@ -1333,16 +1345,14 @@ case optype of
 else
    begin
    case psubfun of
-      'repair': s1:=txt_7_4_recover+' '+extractfilename(outpath);
-      'rrec': s1:=txt_rr+' '+extractfilename(outpath);
-      else s1:=txt_create+' '+extractfilename(outpath); //don't work properly for arc since needs no directoryseparator after outpath
+      'repair': s1:=txt_7_4_recover+' ';
+      'rrec': s1:=txt_rr+' ';
+      else s1:=txt_create+' '; //don't work properly for arc since needs no directoryseparator after outpath
    end;
-   s2:=extractfilepath(outpath);
-   s2:=copy(s2,1,length(s2)-1);
-   {$IFDEF MSWINDOWS}if length(s2) = 2 then else{$ENDIF} s2:=extractfilename(s2);
-   FormGwrap.l1.Caption:=(s1+' '+txt_5_0_in+' ');
-   FormGwrap.l2.Caption:=(s2);
-   FormGwrap.l2.Hint:=(extractfilepath(outpath));
+   s2:=extractfilename(outpath);
+   FormGwrap.l1.Caption:=s1;
+   FormGwrap.l2.Caption:=s2;
+   FormGwrap.l2.Hint:=extractfilepath(outpath);
    pcapt:=FormGwrap.l1.Caption+FormGwrap.l2.Caption;
    FormGwrap.l1.Visible:=true;
    FormGwrap.l2.Visible:=true;
@@ -2061,7 +2071,9 @@ if (outsize>0) then
       begin
       cratio:=outsize * 100;
       cratio:=cratio div insize;
-      FormGwrap.LabelInfo2.Caption:=nicenumber(inttostr(outsize),filesizebase)+' ('+inttostr(cratio)+'%)';
+      FormGwrap.LabelInfo2.Caption:=nicenumber(inttostr(outsize),filesizebase);
+      if (cratio>0) and (cratio<120) then
+         FormGwrap.LabelInfo2.Caption:=FormGwrap.LabelInfo2.Caption+' ('+inttostr(cratio)+'%)';
       end
    else
       FormGwrap.LabelInfo2.Caption:=nicenumber(inttostr(outsize),filesizebase)
@@ -2072,7 +2084,7 @@ speed1:=0;
 speed2:=0;
 if tdiff<>0 then speed1:=pinsize div tdiff * 1000;
 if tdiff<>0 then speed2:=outsize div tdiff * 1000;
-FormGwrap.l5.Caption:=', '+nicetime(inttostr(tdiff));
+FormGwrap.l5.Caption:='| '+nicetime(inttostr(tdiff));
 setwrap;
 if speed1>0 then FormGwrap.LabelInfo1.Caption:=FormGwrap.LabelInfo1.Caption+' @ '+nicenumber(inttostr(speed1),filesizebase)+'/s';
 if speed2>0 then FormGwrap.LabelInfo2.Caption:=FormGwrap.LabelInfo2.Caption+' @ '+nicenumber(inttostr(speed2),filesizebase)+'/s';
@@ -2083,7 +2095,7 @@ if modeofuse>=20 then
    FormGwrap.StringGridReport.Cells[0,1]:='';
    FormGwrap.StringGridReport.Cells[0,2]:=txt_input+' '+FormGwrap.LabelInfo1.Caption;
    FormGwrap.StringGridReport.Cells[0,3]:=txt_output+' '+FormGwrap.LabelInfo2.Caption;
-   FormGwrap.StringGridReport.Cells[0,4]:=FormGwrap.l6.Caption+FormGwrap.l5.Caption;
+   FormGwrap.StringGridReport.Cells[0,4]:=FormGwrap.l6.Caption+' '+FormGwrap.l5.Caption;
    //FormGwrap.StringGrid1.AutosizeColumns;
    end;
 FormGwrap.l7.Caption:=txt_input+' '+FormGwrap.LabelInfo1.Caption+' '+txt_output+' '+FormGwrap.LabelInfo2.Caption;

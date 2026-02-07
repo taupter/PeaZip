@@ -237,6 +237,10 @@ unit pea; //Main form of pea executable, providing GUI to file tools, pea/unpea 
  1.28     20251125  G.Tani      Can now automatically avoid saving reports in PeaZip's own temporary work paths
                                 From report's window context menu it is now possible to explore path of selected item
                                 Improved usability on non-Windows systems
+ 1.29     20251224  G.Tani      Text preview can now detect BOM headers for UTF-7, UTF-8, Unicode-BE, and Unicode-LE, set bold, change font to monotype (optionally select custom monotype font), and zoom in / out / reset font size
+                                Hex preview uses monotype font set in Text preview
+                                Updated pea, rfs, and unpea GUI
+                                Optimized startup sequence
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 
@@ -316,6 +320,10 @@ type
     ImageInfoPW: TImage;
     ImageListPea: TImageList;
     ImageSplit: TImage;
+    LabelDecrypt: TLabel;
+    LabelDecryptProgress: TLabel;
+    LabelDetailsOut: TLabel;
+    LabelEncrypt: TLabel;
     LabelSplitSize: TLabel;
     LabelControlalgo: TLabel;
     LabelConfirm: TLabel;
@@ -324,7 +332,6 @@ type
     LabelDecryptInfo: TLabel;
     LabelDecryptResult1: TLabel;
     LabelDecryptResult2: TLabel;
-    LabelDetails: TLabel;
     LabelEncryptInput: TLabel;
     LabelEncryptOutput: TLabel;
     LabelEncryptSettings: TLabel;
@@ -337,7 +344,6 @@ type
     LabelOpenfileSearch: TLabel;
     LabelOpenfileSelect: TLabel;
     LabelOpenfileSep: TLabel;
-    LabelDetailsOut: TLabel;
     LabelPS: TLabel;
     LabelPW: TLabel;
     LabelKeyFileName: TLabel;
@@ -367,7 +373,6 @@ type
     OpenDialogInput: TOpenDialog;
     PanelDecrypt: TPanel;
     PanelEncrypt: TPanel;
-    PanelDetails: TPanel;
     PanelPW: TPanel;
     PanelUtils: TPanel;
     PanelRFSinteractive: TPanel;
@@ -375,8 +380,6 @@ type
     peautilsmenu: TPopupMenu;
     ProgressBarPea: TProgressBar;
     ShapePW: TShape;
-    ShapeEncrypt: TShape;
-    ShapeEncryptProgress: TShape;
     SpinEditSplitSize: TSpinEdit;
     TimerAction: TTimer;
     TimerDropInput: TTimer;
@@ -399,7 +402,10 @@ type
     procedure FormDropFiles(Sender: TObject; const FileNames: array of String);
     procedure FormShow(Sender: TObject);
     procedure ImageUtilsClick(Sender: TObject);
-    procedure LabelDetailsClick(Sender: TObject);
+    procedure LabelDecryptInputClick(Sender: TObject);
+    procedure LabelDecryptOutputClick(Sender: TObject);
+    procedure LabelEncryptInputClick(Sender: TObject);
+    procedure LabelEncryptOutputClick(Sender: TObject);
     procedure LabelKeyFileClick(Sender: TObject);
     procedure LabelLogPeaClick(Sender: TObject);
     procedure LabelOpenClick(Sender: TObject);
@@ -424,7 +430,7 @@ type
   Type fileofbyte = file of byte;
 
 const
-  P_RELEASE          = '1.28'; //declares release version for the entire build
+  P_RELEASE          = '1.29'; //declares release version for the entire build
   //PEAUTILS_RELEASE   = '1.3'; //declares for reference last peautils release
   PEA_FILEFORMAT_VER = 1;
   PEA_FILEFORMAT_REV = 6; //version and revision declared to be implemented must match with the ones in pea_utils, otherwise a warning will be raised (form caption)
@@ -450,10 +456,10 @@ const
 var
   FormPea: TFormPea;
    wbuf1,wbuf2:array[0..1114111] of byte; //>1MB wide buffers (1MB+ 64KB)
-   fun,pw,keyfile_name,output,vol_algo,graphicsfolder,caption_build,delimiter,confpath:ansistring;
+   fun,pw,keyfile_name,output,vol_algo,graphicsfolder,caption_build,delimiter,confpath,peaparamin,peaparamout,decinname,decoutname:ansistring;
    vol_size:qword;
    desk_env:byte;
-   interacting,control,details,height_set,toolactioncancelled:boolean;
+   interacting,control,height_set,toolactioncancelled:boolean;
    ment,kent,fent,ment_sample: THashContext;
    mentd: TWhirlDigest;
    mentd_sample: TSHA256Digest;
@@ -467,8 +473,9 @@ var
    Bfd,Bmail,Bhd,Bdvd,Binfo,Blog,Bok,Bcancel,Butils,Badmin:TBitmap;
    fshown:boolean;
    pmode:integer;
+
    //theming
-   conf:text;
+   conf,conftextpreview:text;
    opacity,closepolicy,qscale,qscaleimages,pspacing,pzooming,alttabstyle,ensmall,gridaltcolor,highlighttabs,temperature,contrast,decostyle:integer;
    executable_path,resource_path,binpath,sharepath,persistent_source,color1,color2,color3,color4,color5:string;
 
@@ -1461,6 +1468,14 @@ FormPea.Caption:=tcapt;
 Application.ProcessMessages;
 end;
 
+procedure update_pea_progress;
+begin
+if FormPea.ProgressBarPea.Position=0 then exit;
+if compr<>'PCOMPRESS0' then out_size:=prog_compsize
+else out_size:=prog_size;
+FormPea.LabelDetailsOut.Caption:=' '+inttostr(FormPea.ProgressBarPea.Position)+'% | cr '+inttostr( (out_size * 100) div (((in_size+1)* FormPea.ProgressBarPea.Position) div 100) )+'%';
+end;
+
 procedure compress_file;
 {
 PCOMPRESS1..3 is a deflate-based scheme of compression that allows decompression
@@ -1524,6 +1539,7 @@ while ((numread<>0) and (total<file_size)) do
                   ch_size,
                   ch_res);
    FormPea.ProgressBarPea.Position:=prog_size div cent_size;
+   update_pea_progress;
    Application.ProcessMessages;
    end;
 // uncompressed size of last buffer field (since it can not match the buffer size), dword
@@ -1559,6 +1575,7 @@ while ((numread<>0) and (total<file_size)) do
                   ch_size,
                   ch_res);
    FormPea.ProgressBarPea.Position:=prog_size div cent_size;
+   update_pea_progress;
    Application.ProcessMessages;
    end;
 end;
@@ -1687,19 +1704,19 @@ if upcase(obj_algo)<>'NOALGO' then
 end;
 
 procedure first_gui_output;
-var i,k:integer;
+var i:integer;
 begin
 FormPea.ProgressBarPea.Position:=0;
 FormPea.ImageInfoEncrypt.Picture.Bitmap:=Binfo;
-FormPea.LabelEncryptInput.Caption:='Input: ';
-if length(in_param)>4 then k:=4 else k:=length(in_param);
-for i:=0 to k-1 do FormPea.LabelEncryptInput.Caption:=FormPea.LabelEncryptInput.Caption+in_param[i]+', ';
-if length(in_param)>4 then FormPea.LabelEncryptInput.Caption:=FormPea.LabelEncryptInput.Caption+' ...';
-FormPea.LabelEncryptOutput.Caption:='Output: '+out_param+'.*';
+FormPea.LabelEncryptInput.Caption:=extractfilename(in_param[0]);
+FormPea.LabelEncryptInput.Hint:=in_param[0];
+peaparamin:=extractfilepath(in_param[0]);
+if length(in_param)>1 then FormPea.LabelEncryptInput.Caption:=FormPea.LabelEncryptInput.Caption+' ...';
+FormPea.LabelEncryptOutput.Caption:=extractfilename(out_param)+'.*';
+FormPea.LabelEncryptOutput.Hint:=out_param;
+peaparamout:=extractfilepath(out_param);
 FormPea.LabelEncryptSettings.Caption:='Using: '+compr+'; stream: '+algo+', object(s): '+obj_algo+', volume(s): '+volume_algo;
 FormPea.LabelOpStatus.Caption:='Creating archive...';
-FormPea.PanelDetails.visible:=true;
-FormPea.LabelDetails.Visible:=true;
 end;
 
 procedure evaluate_volumes;
@@ -1736,7 +1753,7 @@ if out_file='' then extractdirname(out_param,out_path,out_file); //first input o
 if out_path='' then out_path:=executable_path;
 if setcurrentdir(out_path)<>true then out_path:=executable_path; //from this point output path is set as current path; if output path is missing or non accessible executable_path (path where the executable is in) is set as output path
 if out_path[length(out_path)]<>DirectorySeparator then out_path:=out_path+DirectorySeparator;
-FormPea.LabelEncryptOutput.Caption:='Output: '+out_path+out_file+'.*';
+FormPea.LabelEncryptOutput.Caption:=out_file+'.*';
 if exp_size>diskfree(0) then
    if (upcase(compr)='PCOMPRESS0') then
       if MessageDlg('Output path '+out_path+' seems to not have enough free space, you should continue only if it is a removable support and you have enough removable media. Continue anyway?',mtWarning,[mbYes, mbNo],0)=6 then
@@ -1808,7 +1825,7 @@ FormReport.StringGridOutput.AutosizeColumns;
 //operation parameters
 FormReport.LabelReport1.Caption:=FormPea.LabelEncryptSettings.Caption;
 //input
-FormReport.LabelReport2.Caption:='Archived '+inttostr(obj_ok)+' objects ('+inttostr(n_dirs)+' dirs, '+inttostr(obj_ok-n_dirs)+' files) of '+inttostr(n_input_files)+' ('+inttostr(n_input_files-obj_ok)+' not found); input '+inttostr(in_size)+' B';
+FormReport.LabelReport2.Caption:='Archived '+inttostr(obj_ok)+' objects ('+inttostr(n_dirs)+' dirs, '+inttostr(obj_ok-n_dirs)+' files) of '+inttostr(n_input_files)+' ('+inttostr(n_input_files-obj_ok)+' not found); input '+nicenumber(inttostr(in_size),0);
 if n_input_files-obj_ok=0 then FormPea.ImageInfoEncrypt.Picture.Bitmap:=Bok;
 //output
 FormReport.LabelReport3.Caption:=FormPea.LabelEncryptResult2.Caption;
@@ -1819,19 +1836,17 @@ end;
 procedure last_gui_output;
 begin
 FormPea.ProgressBarPea.Position:=100;
-FormPea.LabelEncryptOutput.Caption:='Output: '+out_path+out_name+'.*; tag: '+s;
+FormPea.LabelEncryptOutput.Caption:=out_name+'.*';
+FormPea.LabelEncryptResult1.Visible:=true;
+FormPea.LabelEncryptResult2.Visible:=true;
 if compr<>'PCOMPRESS0' then out_size:=prog_compsize
 else out_size:=prog_size;
-if ch_size<>1024*1024*1024*1024*1024-volume_authsize then FormPea.LabelEncryptResult2.Caption:=inttostr(j)+' volume(s), '+inttostr(ch_size+volume_authsize)+' B; total '+inttostr(out_size)+' B'
-else FormPea.LabelEncryptResult2.Caption:='Single volume, '+inttostr(out_size)+' B';
+if ch_size<>1024*1024*1024*1024*1024-volume_authsize then FormPea.LabelEncryptResult2.Caption:=inttostr(j)+' volume(s), '+nicenumber(inttostr(ch_size+volume_authsize),0)+'; total '+nicenumber(inttostr(out_size),0)
+else FormPea.LabelEncryptResult2.Caption:='Single volume, '+nicenumber(inttostr(out_size),0);
 if compr<>'PCOMPRESS0' then if in_size<>0 then FormPea.LabelEncryptResult2.Caption:=FormPea.LabelEncryptResult2.Caption+', '+inttostr((out_size * 100) div (in_size+1))+'% of input';
 do_report_PEA;
 FormPea.LabelEncryptResult1.Caption:=FormReport.LabelReport2.Caption;
-FormPea.LabelDetailsOut.Caption:=inttostr((out_size * 100) div (in_size+1))+'% of input size';
-if ((out_size * 200) div (in_size+1))<16 then FormPea.ShapeEncryptProgress.Width:=16
-else
-   if ((out_size * 200) div (in_size+1))>300 then FormPea.ShapeEncryptProgress.Width:=300
-   else FormPea.ShapeEncryptProgress.Width:=(out_size * 200) div (in_size+1);
+FormPea.LabelDetailsOut.Caption:='';
 end;
 
 begin
@@ -2289,7 +2304,8 @@ while no_more_files=false do
    end;
 n_chunks:=j-1;
 cent_size:=(exp_space div 100)+1;
-FormPea.LabelDecryptInput.Caption:='Input: '+in_name+'.*, expected '+inttostr(n_chunks)+' volume(s), total '+inttostr(exp_space)+' B';
+FormPea.LabelDecryptInput.Caption:=extractfilename(in_name);
+FormPea.LabelDecryptInput.Hint:='Input: '+in_name+'.*, expected '+inttostr(n_chunks)+' volume(s), total '+inttostr(exp_space)+' B';
 end;
 
 procedure evaluate_output;
@@ -2303,7 +2319,8 @@ if out_path='' then out_path:=in_folder; //if no output path is explicitly given
 if out_path='' then out_path:=executable_path;
 if setcurrentdir(out_path)<>true then out_path:=executable_path; //from this point output path is set as current path; if output path is missing or non accessible executable_path is set as output path
 if out_path[length(out_path)]<>DirectorySeparator then out_path:=out_path+DirectorySeparator;
-FormPea.LabelDecryptOutput.Caption:='Output: '+out_path+out_file+DirectorySeparator;
+FormPea.LabelDecryptOutput.Caption:=out_file+DirectorySeparator;
+FormPea.LabelDecryptOutput.Hint:='Output: '+out_path+out_file+DirectorySeparator;
 if exp_space>diskfree(0) then
    if (upcase(compr)='PCOMPRESS0') then
       if MessageDlg('Output path '+out_path+' seems to not have enough free space, you should continue only if it is a removable support and you have enough removable media. Continue anyway?',mtWarning,[mbYes, mbNo],0)=6 then
@@ -3168,7 +3185,7 @@ for k:=0 to j-2 do
 FormReport.StringGridOutput.AutosizeColumns;
 FormReport.LabelReport1.Caption:=in_folder+in_name+'.* -> '+out_path+out_file+DirectorySeparator;
 FormReport.LabelReport2.Caption:=FormPea.LabelDecryptInfo.Caption;
-FormReport.LabelReport3.Caption:='Input: '+inttostr(j-1)+' volume(s), '+inttostr(wrk_space)+' B -> Extracted '+inttostr(obj_ok)+' objects ('+inttostr(n_dirs)+' dirs, '+inttostr(obj_ok-n_dirs)+' files) of '+inttostr(n_input_files)+' ('+inttostr(n_input_files-obj_ok)+' not extracted); total output: '+inttostr(out_size)+' B';
+FormReport.LabelReport3.Caption:='Input: '+inttostr(j-1)+' volume(s), '+nicenumber(inttostr(wrk_space),0)+' -> Extracted '+inttostr(obj_ok)+' objects ('+inttostr(n_dirs)+' dirs, '+inttostr(obj_ok-n_dirs)+' files) of '+inttostr(n_input_files)+' ('+inttostr(n_input_files-obj_ok)+' not extracted); total output: '+nicenumber(inttostr(out_size),0);
 FormReport.LabelReport4.Caption:=FormPea.LabelDecryptResult1.Caption+' '+FormPea.LabelDecryptResult2.Caption
 end;
 
@@ -3214,8 +3231,10 @@ obj_error:=false;
 volume_error:=false;
 FormPea.ProgressBarPea.Position:=0;
 FormPea.ImageInfoDecrypt.Picture.Bitmap:=Binfo;
-FormPea.LabelDecryptInput.Caption:='Input: '+in_qualified_name;
-FormPea.LabelDecryptOutput.Caption:='Output: '+out_param;
+FormPea.LabelDecryptInput.Caption:=extractfilename(in_qualified_name);
+FormPea.LabelDecryptOutput.Caption:=extractfilename(out_param);
+decinname:=in_qualified_name;
+decoutname:=out_param;
 FormPea.LabelOpStatus.Caption:='Opening archive...';
 in_folder:=extractfilepath(in_qualified_name);
 if in_folder='' then in_folder:=executable_path;
@@ -3423,7 +3442,8 @@ if upcase(struct_param)='EXTRACT2DIR' then //save objects with shortest path in 
       until out_created=true;
    setcurrentdir(out_param);
    end;
-FormPea.LabelDecryptOutput.Caption:='Output: '+out_path+out_file+DirectorySeparator;
+FormPea.LabelDecryptOutput.Caption:=out_file+DirectorySeparator;
+FormPea.LabelDecryptOutput.Hint:='Output: '+out_path+out_file+DirectorySeparator;
 //if compression is used, get compression buffer size; since at present revision level a single stream is included in an archive, the stream specific compression buffer size is read as first 4 bytes after the headers area
 if compr<>'PCOMPRESS0' then
    begin
@@ -3793,6 +3813,7 @@ while (chunks_ok=true) and (end_of_archive=false) do
                dword2bytebuf(compsize,sbuf1,0);
                update_obj_control_algo(sbuf1,4);
                FormPea.ProgressBarPea.Position:=(wrk_space) div cent_size;
+               FormPea.LabelDecryptProgress.Caption:=' '+inttostr(FormPea.ProgressBarPea.Position)+'%';
                Application.ProcessMessages;
                end;
             if fs=0 then //end of compressed file, control if uncompsize of last block matches to what expected
@@ -3827,6 +3848,7 @@ while (chunks_ok=true) and (end_of_archive=false) do
             internal_error('IO error writing data');
             end;
             FormPea.ProgressBarPea.Position:=(wrk_space) div cent_size;
+            FormPea.LabelDecryptProgress.Caption:=' '+inttostr(FormPea.ProgressBarPea.Position)+'%';
             Application.ProcessMessages;
             if fs=0 then
                begin
@@ -3928,10 +3950,13 @@ while (chunks_ok=true) and (end_of_archive=false) do
       else check_chunk(in_folder,j,chunks_ok);
    until (chunks_ok=true) or (end_of_archive=true);
    end;
-FormPea.LabelDecryptInput.Caption:='Input: '+in_name+'.*, '+inttostr(j-1)+' volume(s), '+inttostr(wrk_space)+' B';
-FormPea.LabelDecryptOutput.Caption:='Output: '+out_path+out_file+DirectorySeparator;
+FormPea.LabelDecryptInput.Caption:=extractfilename(in_name);
+FormPea.LabelDecryptInput.Hint:='Input: '+in_name+'.*, '+inttostr(j-1)+' volume(s), '+inttostr(wrk_space)+' B';
+FormPea.LabelDecryptOutput.Caption:=out_file+DirectorySeparator;
+FormPea.LabelDecryptOutput.Hint:='Output: '+out_path+out_file+DirectorySeparator;
 FormPea.LabelDecryptResult2.Caption:='Done '+struct_param+' on archive';
 FormPea.ProgressBarPea.Position:=100;
+FormPea.LabelDecryptProgress.Caption:='';
 setcurrentdir(out_path);
 do_report_unpea;
 timing(ts_start,wrk_space);
@@ -4261,6 +4286,7 @@ while ((numread<>0) and (total<file_size)) do
                   ch_size,
                   ch_res);
    FormPea.ProgressBarPea.Position:=prog_size div cent_size;
+   FormPea.LabelDetailsOut.Caption:=' '+inttostr(FormPea.ProgressBarPea.Position)+'%';
    Application.ProcessMessages;
    end;
 end;
@@ -4268,12 +4294,14 @@ end;
 procedure first_gui_output;
 begin
 FormPea.ProgressBarPea.Position:=0;
-FormPea.LabelEncryptInput.Caption:='Input: '+in_qualified_name;
-FormPea.LabelEncryptOutput.Caption:='Output: '+out_param;
+FormPea.LabelEncryptInput.Caption:=extractfilename(in_qualified_name);
+FormPea.LabelEncryptInput.Hint:=in_qualified_name;
+peaparamout:=extractfilepath(in_qualified_name);
+FormPea.LabelEncryptOutput.Caption:=extractfilename(out_param)+'.*';
+FormPea.LabelEncryptOutput.Hint:=out_param+'.*';
+peaparamout:=extractfilepath(out_param);
 FormPea.LabelEncryptSettings.Caption:='Integrity check algorithm: '+volume_algo;
 FormPea.LabelOpStatus.Caption:='Splitting file in volumes...';
-FormPea.PanelDetails.visible:=false;
-FormPea.LabelDetails.Visible:=false;
 end;
 
 procedure evaluate_volumes;
@@ -4297,7 +4325,7 @@ if out_path='' then out_path:=extractfilepath(in_qualified_name); //if no output
 if out_path='' then out_path:=executable_path;
 if setcurrentdir(out_path)<>true then out_path:=executable_path; //from this point output path is set as current path; if output path is missing or non accessible executable_path (path where the executable is in) is set as output path
 if out_path[length(out_path)]<>DirectorySeparator then out_path:=out_path+DirectorySeparator;
-FormPea.LabelEncryptOutput.Caption:='Output: '+out_path+out_file;
+FormPea.LabelEncryptOutput.Caption:=out_file;
 if exp_size>diskfree(0) then
    if MessageDlg('Output path '+out_path+' seems to not have enough free space, you should continue only if it is a removable support and you have enough removable media. Continue anyway?',mtWarning,[mbYes, mbNo],0)=6 then
    else halt(-3);
@@ -4338,7 +4366,7 @@ FormReport.StringGridOutput.AutosizeColumns;
 //operation parameters
 FormReport.LabelReport1.Caption:=FormPea.LabelEncryptSettings.Caption;
 //input
-FormReport.LabelReport2.Caption:='Split '+in_qualified_name+'; input '+inttostr(file_size)+' B';
+FormReport.LabelReport2.Caption:='Split '+in_qualified_name+'; input '+nicenumber(inttostr(file_size),0);
 //output
 FormReport.LabelReport3.Caption:=FormPea.LabelEncryptResult2.Caption;
 //output name
@@ -4348,10 +4376,13 @@ end;
 procedure last_gui_output;
 begin
 FormPea.ProgressBarPea.Position:=100;
-FormPea.LabelEncryptOutput.Caption:='Output: '+out_path+out_name+'.*';
+FormPea.LabelDetailsOut.Caption:='';
+FormPea.LabelEncryptOutput.Caption:=out_name+'.*';
+FormPea.LabelEncryptResult1.Visible:=true;
+FormPea.LabelEncryptResult2.Visible:=true;
 out_size:=prog_size;
-if ch_size<>1024*1024*1024*1024*1024 then FormPea.LabelEncryptResult2.Caption:=inttostr(j)+' volume(s) of '+inttostr(ch_size)+' B; total output '+inttostr(out_size)+' B'
-else FormPea.LabelEncryptResult2.Caption:='Single volume archive of '+inttostr(out_size)+' B';
+if ch_size<>1024*1024*1024*1024*1024 then FormPea.LabelEncryptResult2.Caption:=inttostr(j)+' volume(s) of '+nicenumber(inttostr(ch_size),0)+'; total output '+nicenumber(inttostr(out_size),0)
+else FormPea.LabelEncryptResult2.Caption:='Single volume archive of '+nicenumber(inttostr(out_size),0);
 if upcase(volume_algo)<>'NOALGO' then FormPea.LabelEncryptResult2.Caption:=FormPea.LabelEncryptResult2.Caption+' + '+inttostr(check_size)+' B (check tags)';
 do_report_rfs;
 FormPea.LabelEncryptResult1.Caption:=FormReport.LabelReport2.Caption;
@@ -4560,7 +4591,8 @@ while no_more_files=false do
    end;
 n_chunks:=j-1;
 prog_size:=(exp_space div 100)+1;
-FormPea.LabelDecryptInput.Caption:='Input: '+in_name+'.*, expected '+inttostr(n_chunks)+' volume(s), total '+inttostr(exp_space)+' B';
+FormPea.LabelDecryptInput.Caption:=extractfilename(in_name);
+FormPea.LabelDecryptInput.Hint:='Input: '+in_name+'.*, expected '+inttostr(n_chunks)+' volume(s), total '+inttostr(exp_space)+' B';
 end;
 
 procedure evaluate_output;
@@ -4587,7 +4619,8 @@ if out_path='' then out_path:=extractfilepath(in_qualified_name); //if no output
 if out_path='' then out_path:=executable_path;
 if setcurrentdir(out_path)<>true then out_path:=executable_path; //from this point output path is set as current path; if output path is missing or non accessible executable_path (path where the executable is in) is set as output path
 if out_path[length(out_path)]<>DirectorySeparator then out_path:=out_path+DirectorySeparator;
-FormPea.LabelDecryptOutput.Caption:='Input: '+out_path+out_file;
+FormPea.LabelDecryptOutput.Caption:=out_file;
+FormPea.LabelDecryptOutput.Hint:='Input: '+out_path+out_file;
 if exp_space>diskfree(0) then
    if MessageDlg('Output path '+out_path+' seems to not have enough free space. Continue anyway?',mtWarning,[mbYes, mbNo],0)=6 then
    else halt(-3);
@@ -4728,7 +4761,7 @@ for k:=0 to j-2 do
 FormReport.StringGridOutput.AutosizeColumns;
 FormReport.LabelReport1.Caption:=in_qualified_name+' -> '+out_param;
 FormReport.LabelReport2.Caption:=FormPea.LabelDecryptInfo.Caption;
-FormReport.LabelReport3.Caption:='Total output '+inttostr(wrk_space)+' B';
+FormReport.LabelReport3.Caption:='Total output '+nicenumber(inttostr(wrk_space),0);
 FormReport.LabelReport4.Caption:='Joined '+inttostr(j-1)+' volume(s)';
 end;
 
@@ -4741,13 +4774,15 @@ FormPea.PanelEncrypt.visible:=false;
 FormPea.Caption:='File join';
 ts_start:=datetimetotimestamp(now);
 FormPea.ProgressBarPea.Position:=0;
-FormPea.LabelDecryptInput.Caption:='Input: '+in_qualified_name;
+FormPea.LabelDecryptInput.Caption:=extractfilename(in_qualified_name);
 if extractfileext(in_qualified_name)<>'.001' then
   begin
   MessageDlg('Please select the file with .001 extension to start joining file parts', mtWarning, [mbOK], 0);
   exit;
   end;
-FormPea.LabelDecryptOutput.Caption:='Output: '+out_param;
+FormPea.LabelDecryptOutput.Caption:=extractfilename(out_param);
+decinname:=in_qualified_name;
+decoutname:=out_param;
 FormPea.LabelOpStatus.Caption:='Joining volumes...';
 in_folder:=extractfilepath(in_qualified_name);
 in_file:=extractfilename(in_qualified_name);
@@ -4760,7 +4795,6 @@ evaluate_output;
 // process the data
 chunks_ok:=true;
 wrk_space:=0;
-FormPea.ProgressBarPea.Position:=5;
 j:=0;
 filenamed:=false;
 repeat //avoid to overwrite files
@@ -4775,7 +4809,8 @@ if j>0 then out_file:=out_file+' - '+inttostr(j)+extractfileext(out_file);
 assignfile(f_out,out_path+out_file);
 {$I-}rewrite(f_out);{$I+}
 if IOResult<>0 then internal_error('IO error creating output file '+out_path+out_file);
-FormPea.LabelDecryptOutput.Caption:='Output: '+out_path+out_file;
+FormPea.LabelDecryptOutput.Caption:=out_file;
+FormPea.LabelDecryptOutput.Hint:='Output: '+out_path+out_file;
 j:=1;
 try
    assignfile(f_check,in_folder+in_name+'.check');
@@ -4840,6 +4875,7 @@ while chunks_ok=true do
       check_volume;
       j:=j+1;
       FormPea.ProgressBarPea.Position:=wrk_space div prog_size;
+      FormPea.LabelDecryptProgress.Caption:=' '+inttostr(FormPea.ProgressBarPea.Position)+'%';
       Application.ProcessMessages;
       end
    else chunks_ok:=false;
@@ -4851,10 +4887,13 @@ if upcase(volume_algo)<>'NOALGO' then
    {$I-}closefile(f_check);{$I+}
    if IOResult<>0 then internal_error('IO error closing check file '+in_folder+in_name+'.check');
    end;
-FormPea.LabelDecryptInput.Caption:='Input: '+in_name+'.*, got '+inttostr(j-1)+' volume(s), total '+inttostr(wrk_space)+' B';
-FormPea.LabelDecryptOutput.Caption:='Output: '+out_path+out_file;
+FormPea.LabelDecryptInput.Caption:=extractfilename(in_name);
+FormPea.LabelDecryptInput.Hint:='Input: '+in_name+'.*, got '+inttostr(j-1)+' volume(s), total '+inttostr(wrk_space)+' B';
+FormPea.LabelDecryptOutput.Caption:=out_file;
+FormPea.LabelDecryptOutput.Hint:='Output: '+out_path+out_file;
 FormPea.LabelDecryptResult1.Caption:='Volumes merged succesfully';
 FormPea.ProgressBarPea.Position:=100;
+FormPea.LabelDecryptProgress.Caption:='';
 setcurrentdir(extractfilepath(out_param));
 do_report_rfj;
 timing(ts_start,wrk_space);
@@ -7294,6 +7333,8 @@ procedure textpreview;
 var
    sizea:qword;
    i:integer;
+   testtext:text;
+   guesstype:ansistring;
 begin
 exitcode:=-1;
 if directoryexists(paramstr(2)) then
@@ -7355,6 +7396,21 @@ FormReport.MemoReport.Lines.BeginUpdate;
 FormReport.MemoReport.WordWrap:=false;
 FormReport.MemoReport.Lines.LoadFromFile(paramstr(2),intextfileenc);
 FormReport.MemoReport.Lines.EndUpdate;
+//guess if utf8 with BOM
+assignfile(testtext,paramstr(2));
+reset(testtext);
+UnitReport.isutf8withbom:=false;
+UnitReport.isutf16BEwithbom:=false;
+UnitReport.isutf16LEwithbom:=false;
+UnitReport.isutf7withbom:=false;
+UnitReport.isutf8withbom:=read_header_strict(testtext);
+reset(testtext);
+UnitReport.isutf16BEwithbom:=read_header_16BE(testtext);
+reset(testtext);
+UnitReport.isutf16LEwithbom:=read_header_16LE(testtext);
+reset(testtext);
+UnitReport.isutf7withbom:=read_header_7(testtext);
+CloseFile(testtext);
 except
 MessageDlg((paramstr(2))+' is not accessible (or not a file)', mtError, [mbOK], 0);
 halt(-3);
@@ -7375,11 +7431,30 @@ FormReport.LabelReport2.Caption:=FormPea.LabelToolsInput.Caption;
 FormReport.LabelReport3.Caption:=FormPea.LabelToolsResult1.Caption;
 FormReport.LabelReport4.Caption:='';
 {$IFDEF MSWINDOWS}FormReport.OutputT.TabVisible:=false;{$ENDIF}FormReport.NotebookReport.ShowTabs:=false;
-UnitReport.peatextstats;//works with the item being visible
-//In case of error loading the text with system default encoding try UTF-8, ANSI, and then return to Default encoding (displays error message in status string)
+//guess by header
+guesstype:='';
+if UnitReport.isutf8withbom=true then guesstype:='8';
+if UnitReport.isutf16BEwithbom=true then guesstype:='16BE';
+if UnitReport.isutf16LEwithbom=true then guesstype:='16LE';
+if UnitReport.isutf7withbom=true then guesstype:='7';
+//load with guessed encoding (so far by header only) or with default encoding (works with the item being visible)
+case guesstype of
+   '8' : FormReport.encutf8Click(nil);
+   '7' : FormReport.encutf7Click(nil);
+   '16BE' : FormReport.encunicodebeClick(nil);
+   '16LE' : FormReport.encunicodeleClick(nil);
+   else UnitReport.peatextstats;
+   end;
+//In case of loading error try UTF-8, ANSI, and then return to Default (error message displayed in status string if applicable)
 if UnitReport.peatextstats<0 then FormReport.encutf8Click(nil);
 if UnitReport.peatextstats<0 then FormReport.encansiClick(nil);
 if UnitReport.peatextstats<0 then FormReport.encdefaultClick(nil);
+//apply options
+if UnitReport.textcase='S' then UnitReport.setpeacasesensitivesearch;
+if UnitReport.textmonotype='M' then UnitReport.setpeamonotypefont;
+if UnitReport.textbold='B' then UnitReport.setpeabold;
+if UnitReport.textwrap='W' then UnitReport.memowordwrap; //recalculate text stats is word wrap is applied
+fontzoomset;
 FormPea.ButtonClosePea.Visible:=true;
 FormPea.LabelOpen.Visible:=true;
 FormPea.LabelOpen.Enabled:=false;
@@ -7416,14 +7491,23 @@ FormPea.LabelToolsResult2.Caption:='';
 FormPea.ProgressBarPea.Position:=0;
 FormReport.StringGridInput.RowCount:=1;
 FormReport.StringGridInput.ColCount:=3;
-FormReport.StringGridInput.Cells[0,0]:='Offset';
+FormReport.StringGridInput.Cells[0,0]:='Offset  ';
 FormReport.StringGridInput.Cells[1,0]:='00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F';
-FormReport.StringGridInput.Cells[2,0]:='Possible text';
-FormReport.StringGridInput.Font.Name:='Courier';
+FormReport.StringGridInput.Cells[2,0]:='Possible text   ';
 FormReport.StringGridInput.Font.Size:=10;
-FormReport.StringGridInput.ColWidths[0]:=96;
-FormReport.StringGridInput.ColWidths[1]:=460;
-FormReport.StringGridInput.ColWidths[2]:=180;
+if textmfont<>'' then
+   FormReport.StringGridInput.Font.Name:=textmfont
+else
+   {$IFDEF MSWINDOWS}
+   FormReport.StringGridInput.Font.Name:='Courier New';
+   {$ELSE}
+   {$IFDEF DARWIN}
+   FormReport.StringGridInput.Font.Name:='Courier New';
+   {$ELSE}
+   FormReport.StringGridInput.Font.Name:='DejaVu Sans Mono';
+   {$ENDIF}
+   {$ENDIF}
+FormReport.StringGridInput.AutosizeColumns;
 sizea:=0;
 try
 assignfile(fa,(paramstr(2)));
@@ -7546,8 +7630,6 @@ procedure call_pea;
 begin
 FormPea.PanelRFSinteractive.visible:=false;
 FormPea.PanelTools.visible:=false;
-FormPea.PanelDetails.Visible:=true;
-FormPea.LabelDetails.Visible:=true;
 if (upcase(paramstr(7))='TRIATS') or (upcase(paramstr(7))='TRITSA') or (upcase(paramstr(7))='TRISAT') or
    (upcase(paramstr(7))='SRIATS') or (upcase(paramstr(7))='SRITSA') or (upcase(paramstr(7))='SRISAT') or
    (upcase(paramstr(7))='HRIATS') or (upcase(paramstr(7))='HRITSA') or (upcase(paramstr(7))='HRISAT') or
@@ -8143,22 +8225,6 @@ except
 end;
 end;
 
-procedure TFormPea.LabelDetailsClick(Sender: TObject);
-begin
-if details=true then
-   begin
-   PanelDetails.visible:=true;
-   LabelDetails.Caption:='+';
-   details:=false;
-   end
-else
-   begin
-   PanelDetails.visible:=false;
-   LabelDetails.Caption:='-';
-   details:=true;
-   end;
-end;
-
 procedure TFormPea.LabelKeyFileClick(Sender: TObject);
 begin
 if OpenDialogKeyFile.Execute then
@@ -8303,11 +8369,37 @@ begin
 for i:=1 to nlines do readln(conf,dummy);
 end;
 
+procedure readconftextpreview;
+begin
+try
+assignfile(conftextpreview,(confpath+'textpreview.txt'));
+filemode:=0;
+reset(conftextpreview);
+readln(conftextpreview,UnitReport.dummy);
+readln(conftextpreview,UnitReport.textwrap);
+readln(conftextpreview,UnitReport.textcase);
+readln(conftextpreview,UnitReport.textbold);
+readln(conftextpreview,UnitReport.textmonotype);
+readln(conftextpreview,UnitReport.textmfont);
+readln(conftextpreview,dummy); UnitReport.textzoom:=strtoint(dummy);
+CloseFile(conftextpreview);
+except
+//default values
+textwrap:='w';
+textcase:='s';
+textbold:='b';
+textmonotype:='m';
+textmfont:='';
+textzoom:=100;
+CloseFile(conftextpreview);
+end;
+end;
+
 var
    s,dummy:ansistring;
    dummyint:integer;
 begin
-fshown:=false;
+interacting:=true;
 //valorize application's paths
 executable_path:=Application.location;
 if executable_path='' then extractfilepath(paramstr(0));
@@ -8361,6 +8453,8 @@ try
    {$IFDEF DARWIN}
    persistent_source:=confpath+'rnd';
    {$ENDIF}
+   UnitReport.confpath:=confpath;
+   readconftextpreview;
    assignfile(conf,(confpath+'conf.txt'));
    filemode:=0;
    reset(conf);
@@ -8432,11 +8526,8 @@ PanelEncrypt.visible:=false;
 PanelPW.visible:=false;
 PanelRFSinteractive.visible:=false;
 PanelTools.visible:=false;
-LabelDetails.visible:=false;
-PanelDetails.visible:=false;
-details:=false;
 control:=false;
-interacting:=true;
+fshown:=false;
 end;
 
 function testname(name:ansistring):integer; //test if an object is already listed in ListMemo
@@ -8527,9 +8618,13 @@ if pzooming<>100 then
    end;
 
 FormPea.Color:=StringToColor(color2);
-FormPea.LabelDetails.Font.Color:=pgray;
+FormPea.LabelEncryptInput.Font.Color:=ptextaccent;
+FormPea.LabelEncryptOutput.Font.Color:=ptextaccent;
+FormPea.LabelDecryptInput.Font.Color:=ptextaccent;
+FormPea.LabelDecryptOutput.Font.Color:=ptextaccent;
 FormPea.LabelOpenfileSelect.Font.Color:=ptextaccent;
 FormPea.LabelOpenfileSearch.Font.Color:=ptextaccent;
+FormPea.LabelKeyFile.Font.Color:=ptextaccent;
 FormReport.Color:=StringToColor(color2);
 FormReport.ShapeTitleREPb1.Brush.Color:=StringToColor(colhigh);
 FormReport.ShapeTitleREPb2.Brush.Color:=StringToColor(colmid);
@@ -8696,6 +8791,26 @@ shellexecutew(FormPea.handle, PWideChar('find'), PWideChar(''), PWideChar(''), P
 {$IFDEF NETBSD}cp_search_linuxlike(desk_env);{$ENDIF}
 {$IFDEF OPENBSD}cp_search_linuxlike(desk_env);{$ENDIF}
 {$IFDEF DARWIN}cp_search_linuxlike(desk_env);{$ENDIF}
+end;
+
+procedure TFormPea.LabelEncryptInputClick(Sender: TObject);
+begin
+cp_open(extractfilepath(peaparamin),desk_env);//pea,rfs
+end;
+
+procedure TFormPea.LabelEncryptOutputClick(Sender: TObject);
+begin
+cp_open(peaparamout,desk_env);//pea,rfs
+end;
+
+procedure TFormPea.LabelDecryptInputClick(Sender: TObject);
+begin
+cp_open(extractfilepath(decinname),desk_env);//unpea,rfj
+end;
+
+procedure TFormPea.LabelDecryptOutputClick(Sender: TObject);
+begin
+cp_open(extractfilepath(decoutname),desk_env);//unpea,rfj
 end;
 
 procedure TFormPea.LabelOpenClick(Sender: TObject);

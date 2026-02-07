@@ -1,8 +1,10 @@
-Notes to 10.8 release
+Notes to 10.9 release
 
 Modified existing text
-txt_8_1_ed: Error(s) detected.
-txt_cl: Command line
+txt_10_7_images: Image viewer
+txt_10_0_tp: Text viewer
+txt_2_4_hexp: Hex viewer
+txt_savejobdefinition_hint: Export the task defined in the GUI as CLI script
 
 = GENERAL NOTES =
 

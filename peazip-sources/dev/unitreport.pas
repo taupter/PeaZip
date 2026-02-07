@@ -44,6 +44,7 @@ unit UnitReport; //Form for reporting results of completed task, with options to
  0.25     20210502  G.Tani      Batch and hidden *_report modes now save report to output path without requiring user interaction
  0.26     20231216  G.Tani      Updated theming
  0.27     20251014  G.Tani      New text preview
+ 0.28     20251224  G.Tani      Improved text preview, options are now persistent
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
@@ -81,6 +82,25 @@ type
   { TFormReport }
 
   TFormReport = class(TForm)
+    peabold: TAction;
+    FontSet: TMenuItem;
+    FontBold: TMenuItem;
+    Separator6: TMenuItem;
+    peamonotypefont: TAction;
+    peacasesearch: TAction;
+    FontDialogMemo: TFontDialog;
+    FontMonotype: TMenuItem;
+    peawordwrap: TAction;
+    fontzoomminusn: TAction;
+    fontzoomminus: TAction;
+    fonzoomplusn: TAction;
+    fonzoomplus: TAction;
+    fontzoomin: TAction;
+    fontzoomreset: TAction;
+    fontzoomout: TAction;
+    FZoomIn: TMenuItem;
+    FZoomReset: TMenuItem;
+    FZoomOut: TMenuItem;
     MenuItemOpenPath: TMenuItem;
     Separator4: TMenuItem;
     peafind: TAction;
@@ -134,12 +154,18 @@ type
     PopupMenu1: TPopupMenu;
     SaveDialogReport: TSaveDialog;
     Separator2: TMenuItem;
+    Separator5: TMenuItem;
     Shapelinkrep1: TShape;
     Shapelinkrep2: TShape;
     ShapeTitleREPb1: TShape;
     ShapeTitleREPb2: TShape;
     StringGridInput: TStringGrid;
     StringGridOutput: TStringGrid;
+    procedure FontBoldClick(Sender: TObject);
+    procedure FontMonotypeClick(Sender: TObject);
+    procedure fontzoomminusExecute(Sender: TObject);
+    procedure fontzoomminusnExecute(Sender: TObject);
+    procedure fonzoomplusExecute(Sender: TObject);
     procedure ButtonCloseClick(Sender: TObject);
     procedure ButtonFindTextClick(Sender: TObject);
     procedure EditFindTextChange(Sender: TObject);
@@ -154,6 +180,10 @@ type
     procedure encutf7Click(Sender: TObject);
     procedure encutf8Click(Sender: TObject);
     procedure encwwrapClick(Sender: TObject);
+    procedure fontzoominExecute(Sender: TObject);
+    procedure fontzoomoutExecute(Sender: TObject);
+    procedure fontzoomresetExecute(Sender: TObject);
+    procedure fonzoomplusnExecute(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -178,10 +208,18 @@ type
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
+    procedure FZoomInClick(Sender: TObject);
+    procedure FZoomResetClick(Sender: TObject);
+    procedure FZoomOutClick(Sender: TObject);
+    procedure FontSetClick(Sender: TObject);
     procedure MenuItemOpenPathClick(Sender: TObject);
+    procedure peaboldExecute(Sender: TObject);
+    procedure peacasesearchExecute(Sender: TObject);
     procedure peafindExecute(Sender: TObject);
     procedure peafindnextExecute(Sender: TObject);
     procedure peafindprevExecute(Sender: TObject);
+    procedure peamonotypefontExecute(Sender: TObject);
+    procedure peawordwrapExecute(Sender: TObject);
     procedure StringGridInputHeaderClick(Sender: TObject; IsColumn: Boolean;
       Index: Integer);
     procedure StringGridInputMouseDown(Sender: TObject; Button: TMouseButton;
@@ -198,16 +236,22 @@ procedure save_report(s,reptype,repopt,modparam,out_path:ansistring);
 procedure clicklabel_rep(var a: TLabel; var b:TShape);
 procedure save_hashfn;
 function peatextstats:integer;
+procedure memowordwrap;
+procedure setpeacasesensitivesearch;
+procedure setpeamonotypefont;
+procedure setpeabold;
+procedure fontzoomset;
   
 var
   FormReport: TFormReport;
    t:text;
    //theming
-   conf:text;
-   opacity,grid1index,grid2index,alttabstyle,highlighttabs,psearchpos,texstatsresult:integer;
+   conftextpreview:text;
+   opacity,grid1index,grid2index,alttabstyle,highlighttabs,psearchpos,texstatsresult,textzoom:integer;
    desk_env:byte;
-   confpath,intextfile,sizeastr:ansistring;
-   grid1switch,grid2switch,needclose,noreportdetails,peacasesensitive:boolean;
+   confpath,intextfile,sizeastr,textwrap,textbold,textcase,textmonotype,textmfont:ansistring;
+   grid1switch,grid2switch,needclose,noreportdetails,peacasesensitive,isutf8withbom,
+   isutf16BEwithbom,isutf16LEwithbom,isutf7withbom:boolean;
    executable_path,dummy,color1,color2,color3,color4,color5:string;
    Binfo,Bloadlayout:TBitmap;
    activelabel_rep:TLabel;
@@ -470,6 +514,24 @@ end;
 
 { TFormReport }
 
+procedure saveconf;
+begin
+try
+assignfile(conftextpreview,(confpath+'textpreview.txt'));
+rewrite(conftextpreview);
+writeln(conftextpreview,'[Text preview]');
+writeln(conftextpreview,textwrap);
+writeln(conftextpreview,textcase);
+writeln(conftextpreview,textbold);
+writeln(conftextpreview,textmonotype);
+writeln(conftextpreview,textmfont);
+writeln(conftextpreview,inttostr(textzoom));
+CloseFile(conftextpreview);
+except
+CloseFile(conftextpreview);
+end;
+end;
+
 procedure conditional_stop;
 begin
 if FormReport.Caption='List' then Application.Terminate;
@@ -481,7 +543,11 @@ if FormReport.Caption='Environment variables' then Application.Terminate;
 if FormReport.LabelReport1.Caption='Hex preview' then Application.Terminate;
 if FormReport.LabelReport1.Caption='Text preview' then Application.Terminate;
 if FormReport.Caption='MoTW' then Application.Terminate;
-if needclose=true then Application.Terminate;
+if needclose=true then
+   begin
+   saveconf;
+   Application.Terminate;
+   end;
 end;
 
 procedure TFormReport.ButtonCloseClick(Sender: TObject);
@@ -592,6 +658,10 @@ if FormReport.encunicodebe.Checked=true then result:='Unicode-BE';
 if FormReport.encunicodele.Checked=true then result:='Unicode-LE';
 if FormReport.encutf7.Checked=true then result:='UTF-7';
 if FormReport.encutf8.Checked=true then result:='UTF-8';
+if (result='UTF-8') and (isutf8withbom=true) then result:='UTF-8 with BOM';
+if (result='UTF-7') and (isutf7withbom=true) then result:='UTF-7 with BOM';
+if (result='Unicode-BE') and (isutf8withbom=true) then result:='Unicode-BE with BOM';
+if (result='Unicode-LE') and (isutf8withbom=true) then result:='Unicode-LE with BOM';
 end;
 
 function peatextstats:integer;
@@ -659,11 +729,17 @@ except
 end;
 end;
 
-procedure TFormReport.enccasesensitiveClick(Sender: TObject);
+procedure setpeacasesensitivesearch;
 begin
 peacasesensitive:=not(peacasesensitive);
-enccasesensitive.Checked:=peacasesensitive;
+FormReport.enccasesensitive.Checked:=peacasesensitive;
+if FormReport.enccasesensitive.Checked=True then textcase:='S' else textcase:='s';
 SetLength(peaprevpos,0);
+end;
+
+procedure TFormReport.enccasesensitiveClick(Sender: TObject);
+begin
+setpeacasesensitivesearch;
 end;
 
 procedure TFormReport.encdefaultClick(Sender: TObject);
@@ -736,11 +812,194 @@ except
 end;
 end;
 
+procedure memowordwrap;
+begin
+FormReport.MemoReport.WordWrap:=not(FormReport.MemoReport.WordWrap);
+FormReport.encwwrap.Checked:=FormReport.MemoReport.WordWrap;
+if FormReport.encwwrap.Checked=True then textwrap:='W' else textwrap:='w';
+peatextstats; //needs to recalculate text stats when word wrap is changed
+end;
+
+procedure setpeabold;
+begin
+FormReport.MemoReport.Font.Bold:=not(FormReport.MemoReport.Font.Bold);
+FormReport.FontBold.Checked:=FormReport.MemoReport.Font.Bold;
+if FormReport.FontBold.Checked=True then textbold:='B' else textbold:='b';
+end;
+
 procedure TFormReport.encwwrapClick(Sender: TObject);
 begin
-MemoReport.WordWrap:=not(MemoReport.WordWrap);
-encwwrap.Checked:=MemoReport.WordWrap;
-peatextstats;
+memowordwrap;
+end;
+
+procedure TFormReport.peawordwrapExecute(Sender: TObject);
+begin
+memowordwrap;
+end;
+
+procedure fontzoomset;
+var
+   relzoom:integer;
+begin
+relzoom:=textzoom-100;
+if relzoom=0 then exit;
+with FormReport do
+begin
+if relzoom>0 then //enlarge size
+   begin
+   if GetFontData(MemoReport.Font.Handle).Height<0 then
+      MemoReport.Font.Height:=GetFontData(MemoReport.Font.Handle).Height-2*relzoom
+   else
+      MemoReport.Font.Height:=GetFontData(MemoReport.Font.Handle).Height+2*relzoom;
+   end
+else //decrease size
+   begin
+   if (GetFontData(MemoReport.Font.Handle).Height>=-2*-relzoom) and (GetFontData(MemoReport.Font.Handle).Height<=2*-relzoom) then exit;
+      if GetFontData(MemoReport.Font.Handle).Height<0 then
+         MemoReport.Font.Height:=GetFontData(MemoReport.Font.Handle).Height+2*-relzoom
+      else
+         MemoReport.Font.Height:=GetFontData(MemoReport.Font.Handle).Height-2*-relzoom;
+   end;
+end;
+end;
+
+procedure fontzoomincrease;
+begin
+with FormReport do
+begin
+if GetFontData(MemoReport.Font.Handle).Height<0 then
+   MemoReport.Font.Height:=GetFontData(MemoReport.Font.Handle).Height-2
+else
+   MemoReport.Font.Height:=GetFontData(MemoReport.Font.Handle).Height+2;
+end;
+textzoom:=textzoom+1;
+end;
+
+procedure fontzoomdecrease;
+begin
+with FormReport do
+begin
+if (GetFontData(MemoReport.Font.Handle).Height>=-2) and (GetFontData(MemoReport.Font.Handle).Height<=2) then exit;
+if GetFontData(MemoReport.Font.Handle).Height<0 then
+   MemoReport.Font.Height:=GetFontData(MemoReport.Font.Handle).Height+2
+else
+   MemoReport.Font.Height:=GetFontData(MemoReport.Font.Handle).Height-2;
+end;
+textzoom:=textzoom-1;
+end;
+
+procedure TFormReport.fontzoominExecute(Sender: TObject);
+begin
+fontzoomincrease;
+end;
+
+procedure TFormReport.fonzoomplusExecute(Sender: TObject);
+begin
+fontzoomincrease;
+end;
+
+procedure TFormReport.fonzoomplusnExecute(Sender: TObject);
+begin
+fontzoomincrease;
+end;
+
+procedure TFormReport.FZoomInClick(Sender: TObject);
+begin
+fontzoomincrease;
+end;
+
+procedure TFormReport.fontzoomminusExecute(Sender: TObject);
+begin
+fontzoomdecrease;
+end;
+
+procedure setpeamonotypefont;
+begin
+if textmonotype='m' then
+   begin
+   FormReport.MemoReport.Font.Name:=DefFontData.Name;
+   FormReport.FontMonotype.Checked:=false;
+   textmonotype:='m';
+   end
+else
+   try
+   if textmfont<>'' then
+      FormReport.MemoReport.Font.Name:=textmfont
+   else
+      {$IFDEF MSWINDOWS}
+      FormReport.MemoReport.Font.Name:='Courier New';
+      {$ELSE}
+      {$IFDEF DARWIN}
+      FormReport.MemoReport.Font.Name:='Courier New';
+      {$ELSE}
+      FormReport.MemoReport.Font.Name:='DejaVu Sans Mono';
+      {$ENDIF}
+      {$ENDIF}
+   FormReport.FontMonotype.Checked:=true;
+   textmonotype:='M';
+   except
+   FormReport.MemoReport.Font.Name:=DefFontData.Name;
+   FormReport.FontMonotype.Checked:=false;
+   textmonotype:='m';
+   textmfont:='';
+   end;
+end;
+
+procedure changepeamonotypefont;
+begin
+if textmonotype='m' then
+   textmonotype:='M'
+else
+   textmonotype:='m';
+setpeamonotypefont;
+end;
+
+procedure TFormReport.FontMonotypeClick(Sender: TObject);
+begin
+changepeamonotypefont;
+end;
+
+procedure TFormReport.FontBoldClick(Sender: TObject);
+begin
+setpeabold;
+end;
+
+procedure TFormReport.fontzoomminusnExecute(Sender: TObject);
+begin
+fontzoomdecrease;
+end;
+
+procedure TFormReport.fontzoomoutExecute(Sender: TObject);
+begin
+fontzoomdecrease;
+end;
+
+procedure TFormReport.FZoomOutClick(Sender: TObject);
+begin
+fontzoomdecrease;
+end;
+
+procedure TFormReport.FontSetClick(Sender: TObject);
+begin
+if FontDialogMemo.Execute then
+   begin
+   //MemoReport.Font:=FontDialogMemo.Font;
+   textmfont:=FontDialogMemo.Font.Name;
+   textmonotype:='M';
+   setpeamonotypefont;
+   end;
+end;
+
+procedure TFormReport.fontzoomresetExecute(Sender: TObject);
+begin
+MemoReport.Font.Size:=0;
+textzoom:=100;
+end;
+
+procedure TFormReport.FZoomResetClick(Sender: TObject);
+begin
+MemoReport.Font.Size:=0;
+textzoom:=100;
 end;
 
 procedure TFormReport.FormClose(Sender: TObject; var CloseAction: TCloseAction
@@ -811,7 +1070,6 @@ else
       FormReport.LabelTitleREP2.BorderSpacing.Left:=0;
       end;
       end;
-
 end;
 
 procedure TFormReport.LabelCaseClick(Sender: TObject);
@@ -1044,6 +1302,16 @@ if StringGridInput.Row>0 then
    cp_open(extractfilepath(StringGridInput.Cells[0,StringGridInput.Row]),desk_env);
 end;
 
+procedure TFormReport.peaboldExecute(Sender: TObject);
+begin
+setpeabold;
+end;
+
+procedure TFormReport.peacasesearchExecute(Sender: TObject);
+begin
+setpeacasesensitivesearch;
+end;
+
 procedure TFormReport.peafindExecute(Sender: TObject);
 begin
 if FormReport.Visible<>true then exit;
@@ -1063,6 +1331,11 @@ begin
 if FormReport.Visible<>true then exit;
 if FormReport.LabelReport1.Caption<>'Text preview' then exit;
 peafindprevtext;
+end;
+
+procedure TFormReport.peamonotypefontExecute(Sender: TObject);
+begin
+changepeamonotypefont;
 end;
 
 procedure TFormReport.StringGridInputHeaderClick(Sender: TObject;

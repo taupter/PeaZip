@@ -452,6 +452,9 @@ function testext(s: ansistring): integer;
 //test what backend should handle a given file
 function testinput(infile: ansistring; testdir: boolean): integer;
 
+//test if file type can be possibly read as plain text
+function istexttype(s:ansistring):boolean;
+
 //quickly test potential compression ratio of a given file
 function testpcomp(var s:ansistring):integer;
 
@@ -522,6 +525,9 @@ function unpadaddress(s:ansistring):ansistring;
 procedure write_header(var tf:text); //write UTF-8 with BOM text file header
 function read_header(var tf:text; fm:integer):boolean; //read optional UTF-8 with BOM text file header
 function read_header_strict(var tf:text):boolean; //read mandatory UTF-8 with BOM text file header
+function read_header_16BE(var tf:text):boolean; //detect UTF-16 BE BOM
+function read_header_16LE(var tf:text):boolean; //detect UTF-16 LE BOM
+function read_header_7(var tf:text):boolean; //detect UTF-7 BOM
 function udeletefile(s:ansistring):boolean; //on Windows changes file attributes to allow file to be deleted
 function upredeletefile(s:ansistring):boolean; //on Windows changes file attributes to allow file to be deleted separately
 
@@ -1195,9 +1201,10 @@ if filegetattr(s) and faDirectory = 0 then //object is a file
       end;
    '.rar':
       begin
-      s_ext:='.r01';
-      j:=0;
-      if FindFirst(s_path + s_name + s_ext, faAnyFile, r)=0 then //multipart rar .rxx
+      s_ext:='.r00';
+      if FindFirst(s_path + s_name + s_ext, faAnyFile, r)=0 then //legacy multipart rar .rxx
+         begin
+         j:=-1;
          repeat
             j := j + 1;
             if j < 10 then s_ext := '.r0' + IntToStr(j)
@@ -1206,10 +1213,35 @@ if filegetattr(s) and faDirectory = 0 then //object is a file
             if k = 0 then
                fsize := fsize + r.Size;
             FindClose(r);
-         until k <> 0
+         until k <> 0;
+         s_ext:='.s00';
+         j:=-1;
+         repeat
+            j := j + 1;
+            if j < 10 then s_ext := '.s0' + IntToStr(j)
+            else s_ext := '.s' + IntToStr(j);
+            k := FindFirst(s_path + s_name + s_ext, faAnyFile, r);
+            if k = 0 then
+               fsize := fsize + r.Size;
+            FindClose(r);
+         until k <> 0;
+         s_ext:='.t00';
+         j:=-1;
+         repeat
+            j := j + 1;
+            if j < 10 then s_ext := '.t0' + IntToStr(j)
+            else s_ext := '.t' + IntToStr(j);
+            k := FindFirst(s_path + s_name + s_ext, faAnyFile, r);
+            if k = 0 then
+               fsize := fsize + r.Size;
+            FindClose(r);
+         until k <> 0;
+         //continue with u, v, w, etc
+         end
       else
          begin
          s_ext:='.rar';
+         j:=0;
          if pos('.part',lowercase(extractfileext(s_name)))<>0 then //multipart rar .partx.rar
             begin
             sh_ext:=lowercase(extractfileext(s_name));
@@ -2209,12 +2241,12 @@ begin
     '.bz', '.bz2', '.bzip2', '.bzip', '.tbz2', '.tbz', '.tbzip2', '.tbzip', '.tb2': testext := 1;
     '.gz', '.gzip', '.tgz', '.tpz', '.cpgz' : testext := 2;
     '.tar', '.cbt': testext := 5;
-    '.zip', '.cbz', '.smzip', '.ppmd': testext := 6;
+    '.zip', '.cbz', '.smzip', '.ppmd': testext := 6; //, '.z01' operations should not be initiated from those volumes
     '.arj': testext := 7;
     '.cpio': testext := 10;
     '.lz': testext := 11;
     '.lzh': testext := 12;
-    '.rar', '.cbr', '.r00', '.r01': testext := 13;
+    '.rar', '.cbr': testext := 13;//, '.r00' operations should not be initiated from those volumes
     '.00':
        begin
        cutextension(s);
@@ -2271,6 +2303,7 @@ begin
     '.gem': testext := 134; //Ruby gem package
     '.apk', '.xapk', '.apkm', '.apks', '.aab': testext := 135; //Android packages (.zip derived)
     '.mcaddon', '.mcmeta', '.mcpack', '.mcproject', '.mcstructure', '.mctemplate', '.mcworld': testext := 136; //Minecraft packages (.zip derived)
+    //'.app' macOS app bundles are not assigned as file extension, being treated as folders
 
     //200..499 filesystems
     '.iso': testext := 200;
@@ -2353,11 +2386,30 @@ begin
     1001, 1002, 1003: testinput := 6;//quad
     3001: testinput := 7;//ace
     4001, 4002: testinput := 9;//freearc
-    5001: testinput:=11;
-    5002: testinput:=12;
+    5001: testinput:=11;//brotli
+    5002: testinput:=12;//zstandard
     10000: testinput := 4; //use 7z backend to handle split archives
     10001: testinput := 1; //Pea
   end;
+end;
+
+function istexttype(s:ansistring):boolean;
+var
+  sl:ansistring;
+begin
+sl:=lowercase(s);
+case sl of
+   '.txt','.asc','.readme',
+   '.bat','.pif','.scr','.vbs','.cmd','.reg','.sh','.command','.csh',
+   '.ini','.inf','.cfg','.config',
+   '.lst','.log',
+   '.lnk',
+   '.csv',
+   '.eml',
+   '.html','.htm','.xml','.xhtml','.xht','.mht','.url',
+   '.md','.markdown': result:=true
+   else result:=false;
+end;
 end;
 
 function testpcomp(var s:ansistring):integer;
@@ -2366,7 +2418,7 @@ var
 begin
 ext:=lowercase(extractfileext(s));
 case ext of
-   '.lnk','.txt','.rtf','.wri','.ini','.log','.mid',
+   '.lnk','.txt','.rtf','.wri','.ini','.log','.mid','.midi',
    '.htm','.html','.xml','.mht','.url','.css','.xhtml',
    '.bat','.pif','.scr','.vbs','.cmd','.reg',
    '.pas','.pp','.h','.c','.hh','.cpp','.cc','.cxx','.hxx','.cs','.java','.pl','.pm','.php','.py','.p','rb',
@@ -2844,6 +2896,44 @@ if c<>char($bb) then exit;
 read(tf,c);
 if c<>char($bf) then exit;
 result:=true; //if BOM header is found, the function is successful
+end;
+
+function read_header_16BE(var tf:text):boolean;
+var
+   c:char;
+begin
+result:=false;
+read(tf,c);
+if c<>char($fe) then exit;
+read(tf,c);
+if c<>char($ff) then exit;
+result:=true; //if BOM 16BE header is found, the function is successful
+end;
+
+function read_header_16LE(var tf:text):boolean;
+var
+   c:char;
+begin
+result:=false;
+read(tf,c);
+if c<>char($ff) then exit;
+read(tf,c);
+if c<>char($fe) then exit;
+result:=true; //if BOM 16BE header is found, the function is successful
+end;
+
+function read_header_7(var tf:text):boolean;
+var
+   c:char;
+begin
+result:=false;
+read(tf,c);
+if c<>char($2b) then exit;
+read(tf,c);
+if c<>char($2f) then exit;
+read(tf,c);
+if c<>char($76) then exit;
+result:=true; //if UTF-7 BOM header is found, the function is successful
 end;
 
 function upredeletefile(s:ansistring):boolean;

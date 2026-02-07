@@ -55,6 +55,7 @@ type
 var
   FormKF: TFormKF;
   persistent_source,txt_keyfile_notcreated,txt_error_openfile,st:ansistring;
+  dkflimit:integer;
   SHA512Context: THashContext;
   SHA512Digest: TSHA512Digest;
   WhirlContext_File: THashContext;
@@ -227,7 +228,7 @@ if OpenDialogKF.Execute then
    if OpenDialogKF.Filename<>'' then
       begin
       hpw:='';
-      prepend_keyfile(hpw,OpenDialogKF.Filename);
+      prepend_keyfile(hpw,OpenDialogKF.Filename,dkflimit);
       EditPWfromhash.Caption:=hpw;
       end;
 except
