@@ -2,14 +2,14 @@
 Korean - 한국어
 10.9
 번역자: Sleepy, EhangB
-최근 교정: 20251220 by EhangB
+최근 교정: 20260207 by EhangB
 교정 일자: 20110531 by Sleep
 
 === PeaZip text group ===
 
-txt_10_9_deletearchive: Delete archive
-txt_10_9_kfl: Keyfile size limited to first 100MB
-txt_10_9_mb: Middle mouse button click
+txt_10_9_deletearchive: 아카이브 삭제
+txt_10_9_kfl: 키파일 크기는 처음 100MB로 제한됩니다
+txt_10_9_mb: 마우스 가운데 버튼 클릭
 txt_10_8_log: 명령 로그
 txt_10_8_rv: 복구 볼륨 생성
 txt_10_8_bk: 백그라운드에서 소규모 워크로드 실행
