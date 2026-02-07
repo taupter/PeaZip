@@ -80,6 +80,14 @@ In example, for PeaZip Flatpak, all Desktop Environment integration paths sugges
 ~/.var/app/io.github.peazip.PeaZip/
 which is the root directory of the sandboxed environment creted by Flatpak for PeaZip app.
 
+Invoking PeaZip in such environment will then requires some changes:
+
+Exec=peazip 
+strings can be replaced with 
+Exec=flatpak run --fileforwarding io.github.peazip.PeaZip
+
+and %* parameters can be replaced with @@ '$basedir/$*' @@
+
 Refer to package manager's documentation for more details about how the sandboxed paths are managed, and translated in actual paths for the host system.
 
 
