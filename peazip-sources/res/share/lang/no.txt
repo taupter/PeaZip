@@ -1,12 +1,15 @@
 ﻿=== PeaZip language file ===
 Norwegian - Norsk
-10.8
+10.9
 Oversatt av: Rune C. Akselsen, Arne Hanssen og Imre K. Eilertsen
 Sist rev. av: Imre Eilertsen
 Sist revidert: 20251120
 
 === PeaZip text group ===
 
+txt_10_9_deletearchive: Delete archive
+txt_10_9_kfl: Keyfile size limited to first 100MB
+txt_10_9_mb: Middle mouse button click
 txt_10_8_log: Commands log
 txt_10_8_rv: Create recovery volumes
 txt_10_8_bk: Execute small workloads in background

@@ -1,12 +1,15 @@
 ﻿=== PeaZip language file ===
 Spanish - Español
-10.8
+10.9
 Traducido por: Francisco Javier F. Serrador, Mario López, Nosi_982, Anonymous, José M. Ciordia, ChrisTVH
 Última rev. Por: ChrisTVH
 Última rev.: 10/30/2025
 
 === PeaZip text group ===
 
+txt_10_9_deletearchive: Delete archive
+txt_10_9_kfl: Keyfile size limited to first 100MB
+txt_10_9_mb: Middle mouse button click
 txt_10_8_log: Commands log
 txt_10_8_rv: Create recovery volumes
 txt_10_8_bk: Execute small workloads in background

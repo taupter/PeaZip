@@ -1,12 +1,15 @@
 ﻿=== PeaZip language file ===
 Ukrainian - Українська
-10.8
+10.9
 Переклад: Василь Мельник(VMenik, GIT = VMelnikV), Решетнюк В.В.(IxI_JOKER_IxI), Міщенко О.С., sasha[at]mishchenko.tk, Пилипчук О.П., pilipchukap[at]rambler[dot]ru, ViktorOn , Oleksandr (yupiter43@gmail.com)
 Останній раз ред.: Aleksandr (yupiter43@gmail.com)
 Останнє ред.: 30.11.2025
 
 === PeaZip text group ===
 
+txt_10_9_deletearchive: Delete archive
+txt_10_9_kfl: Keyfile size limited to first 100MB
+txt_10_9_mb: Middle mouse button click
 txt_10_8_log: Commands log
 txt_10_8_rv: Create recovery volumes
 txt_10_8_bk: Execute small workloads in background

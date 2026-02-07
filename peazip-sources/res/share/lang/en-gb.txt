@@ -1,12 +1,15 @@
 ﻿=== PeaZip language file ===
 English (United Kingdom)
-10.8
+10.9
 Translated by: Robert Readman
 Last rev. by: Chris Brooker
 Last rev.: 20241106
 
 === PeaZip text group ===
 
+txt_10_9_deletearchive: Delete archive
+txt_10_9_kfl: Keyfile size limited to first 100MB
+txt_10_9_mb: Middle mouse button click
 txt_10_8_log: Commands log
 txt_10_8_rv: Create recovery volumes
 txt_10_8_bk: Execute small workloads in background
@@ -22,7 +25,7 @@ txt_10_7_keep: Keep output files if extraction ends in error or is cancelled
 txt_10_7_next: Next
 txt_10_7_prev: Previous
 txt_10_7_pwh: Password from hash
-txt_10_7_images: View images
+txt_10_7_images: Image viewer
 txt_10_7_thumbnails: View thumbnails
 txt_10_6_virtual: Dynamic virtual mode
 txt_10_5_fr: (full report)
@@ -50,7 +53,7 @@ txt_10_0_ptarxz: High compression, TAR.XZ
 txt_10_0_ptargz: Medium compression, TAR.GZ
 txt_10_0_comp: Pure compression formats only accept a single file as input. Archive conversion towards those formats will fail if the source contains multiple files or folders, which cannot be determined in advance.
 txt_10_0_save: Save
-txt_10_0_tp: Text preview
+txt_10_0_tp: Text viewer
 txt_9_9_uac: Current user cannot write to this output path. Do you want to run PeaZip with UAC elevation?
 TXT_9_9_kdf: KDF rounds
 txt_9_9_utc: Show timestamps as UTC
@@ -716,7 +719,7 @@ txt_2_4_deletebookmarks: Do you want to delete the list of bookmarked files and 
 txt_2_4_documents: Documents
 txt_2_4_wenc: Encyclopedia
 txt_2_4_extractfrom: Extract from
-txt_2_4_hexp: Hex preview
+txt_2_4_hexp: Hex viewer
 txt_2_4_operation: Operation
 txt_2_4_path: path is not writeable (i.e. full, or read-only). Do you want to select a writeable output path?
 txt_2_4_removefromclipboard: Remove from clipboard
@@ -1147,7 +1150,7 @@ txt_savehistory: Save history data
 txt_save_infolder: Save in folder (auto)
 txt_savejob: Save task definition as script
 txt_savejobdefinition: Save task definition as script
-txt_savejobdefinition_hint: Save task definition as plain text; you can use it from your scripts
+txt_savejobdefinition_hint: Export the task defined in the GUI as CLI script
 txt_savelayout: Save layout
 txt_save_winstate: Save main window state
 txt_search: Search (recursive, may take some time)

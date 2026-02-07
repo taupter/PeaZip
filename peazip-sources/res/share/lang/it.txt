@@ -1,12 +1,15 @@
 ﻿=== PeaZip language file ===
 Italian - Italiano
-10.8
+10.9
 Tradotto da: Giorgio Tani
 Ultima rev. di: Giorgio Tani
-Ultima rev.: 20250327
+Ultima rev.: 20260114
 
 === PeaZip text group ===
 
+txt_10_9_deletearchive: Cancella archivio
+txt_10_9_kfl: Keyfile limitato ai primi 100MB
+txt_10_9_mb: Click tasto centrale del mouse
 txt_10_8_log: Log dei lavori
 txt_10_8_rv: Crea recovery volumes
 txt_10_8_bk: Esegui lavori brevi in background
@@ -50,7 +53,7 @@ txt_10_0_ptarxz: Compressione alta, TAR.XZ
 txt_10_0_ptargz: Compressione media, TAR.GZ
 txt_10_0_comp: I formati di compressione pura accettano un solo file come input. La conversione di archivi verso tali formati fallirà se l'input è composto da più file o da cartelle (non determinabile in anticipo).
 txt_10_0_save: Salva
-txt_10_0_tp: Visualizza come testo
+txt_10_0_tp: Visualizza testo
 txt_9_9_uac: L'utente non ha i diritti di scrittura per questa destinazione. Riavviare PeaZip con elevazione UAC?
 TXT_9_9_kdf: Iterazioni KDF
 txt_9_9_utc: Data e ora UTC
@@ -1147,7 +1150,7 @@ txt_savehistory: Salva cronologia
 txt_save_infolder: Salva in cartella (automatico)
 txt_savejob: Salva definizione lavoro come script
 txt_savejobdefinition: Salva definizione lavoro come script
-txt_savejobdefinition_hint: Salva definizione del lavoro come file di testo
+txt_savejobdefinition_hint: Esportare la definizione del lavoro (GUI) come file di script (CLI)
 txt_savelayout: Salva layout
 txt_save_winstate: Salva stato della finestra
 txt_search: Ricerca (ricorsiva, può richiedere molto tempo)
