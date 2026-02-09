@@ -9,7 +9,7 @@
 
 </div>
 
-PeaZip is a free archive manager utility for BSD, Linux, macOS, and Windows, which offers a cross-platform Open Source alternative to proprietary software (WinZip, WinRar, etc.), also available a portable package not requiring installation.
+PeaZip is a free archive manager utility for BSD, Linux, macOS, and Windows, which offers a cross-platform Open Source alternative to proprietary software (WinZip, WinRar, etc.), also available as portable package not requiring installation.
 
 Works with 200+ archive types and variants (7z, ace, arc, brotli, bz2, cab, gz, iso, pea, rar, tar, wim, zip, zipx, zpaq, zstandard...), handles spanned archives (001, r01, z01...).
 
@@ -34,13 +34,13 @@ PeaZip also provides a capable file manager: bookmarking, search, instant conten
 ![PeaZip maximum compression benchmark](https://peazip.github.io/maximum-compression-benchmark.png)
 
 ## Build Instructions
-- Sources are available in the [peazip-sources Git directory](https://github.com/peazip/PeaZip/blob/sources/peazip-sources/readme.txt), alongside detailed instructions for compiling the binaries and building installable and portable packages for various target systems.
+- Sources are available in the [peazip-sources Git directory](https://github.com/peazip/PeaZip/blob/sources/peazip-sources/) repository, and from [Sources webpage](https://peazip.github.io/peazip-sources.html), alongside detailed instructions for compiling the binaries and building installable and portable packages for various target systems.
 - Source snapshots for each release can be found in the Releases section as `peazip-x.y.z.src.zip` packages.
 - PeaZip is written in **Lazarus/FreePascal**, and Windows installers are scripted using **InnoSetup**,  also using a Delphi/Pascal-like syntax.
 
 ## Useful Links
 - **[Downloads](https://peazip.github.io)**
-- **[Add-ons & Plugins (UNRAR5, UNACE...)](https://peazip.github.io/peazip-add-ons.html)**
+- **[Plugins](https://peazip.github.io/peazip-add-ons.html)**
 - **[Themes](https://peazip.github.io/peazip-themes.html)**
 - **[Compiling & Building Instructions](https://peazip.github.io/peazip-sources.html)**
 - **[Support](https://peazip.github.io/peazip-help.html)**
