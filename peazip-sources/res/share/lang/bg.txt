@@ -1,15 +1,15 @@
-﻿=== PeaZip language file ===
+=== PeaZip language file ===
 Български / Bulgarian
 10.9
 Превод: Любомир Симеонов
 Корекция: Живко Жеков
-Последна корекция: 20251207
+Последна корекция: 20260212
 
 === PeaZip text group ===
 
-txt_10_9_deletearchive: Delete archive
-txt_10_9_kfl: Keyfile size limited to first 100MB
-txt_10_9_mb: Middle mouse button click
+txt_10_9_deletearchive: Изтриване на архив
+txt_10_9_kfl: Размерът на ключовия файл е ограничен до първи 100MB
+txt_10_9_mb: Клик среден бутон мишка
 txt_10_8_log: Лог команди
 txt_10_8_rv: Създай томове за възстановяване
 txt_10_8_bk: Изпълнявай малки натоварвания във фонов режим
