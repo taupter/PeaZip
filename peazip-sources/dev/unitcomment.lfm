@@ -19,22 +19,22 @@ object FormComment: TFormComment
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = ButtonSaveComment
-    Left = 15
-    Height = 303
-    Top = 15
-    Width = 572
+    Left = 30
+    Height = 273
+    Top = 30
+    Width = 542
     Anchors = [akTop, akLeft, akRight, akBottom]
-    BorderSpacing.Left = 15
-    BorderSpacing.Top = 15
-    BorderSpacing.Right = 15
-    BorderSpacing.Bottom = 15
+    BorderSpacing.Left = 30
+    BorderSpacing.Top = 30
+    BorderSpacing.Right = 30
+    BorderSpacing.Bottom = 30
     BorderStyle = bsNone
     Color = clWindow
     ScrollBars = ssAutoVertical
     TabOrder = 0
   end
   object ButtonSaveComment: TButton
-    AnchorSideRight.Control = MemoComment
+    AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = Owner
     AnchorSideBottom.Side = asrBottom
@@ -44,13 +44,14 @@ object FormComment: TFormComment
     Width = 124
     Anchors = [akRight, akBottom]
     AutoSize = True
+    BorderSpacing.Right = 15
     BorderSpacing.Bottom = 15
     Caption = 'Save comment'
     TabOrder = 1
     OnClick = ButtonSaveCommentClick
   end
   object LabelResetComment: TLabel
-    AnchorSideLeft.Control = MemoComment
+    AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = ButtonSaveComment
     AnchorSideTop.Side = asrCenter
     AnchorSideBottom.Side = asrCenter
@@ -59,6 +60,7 @@ object FormComment: TFormComment
     Height = 20
     Top = 338
     Width = 36
+    BorderSpacing.Left = 15
     Caption = 'Reset'
     Font.Color = 13391121
     ParentFont = False

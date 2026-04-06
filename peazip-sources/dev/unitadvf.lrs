@@ -18,49 +18,49 @@ LazarusResources.Add('TFormAdvf','FORMDATA',[
   +'g.Top'#2#15#7'Caption'#6#20'Use advanced filters'#8'TabOrder'#2#5#7'Visible'
   +#8#7'OnClick'#7#23'CheckBoxAdvFiltersClick'#0#0#6'TLabel'#15'LabelAdvInclude'
   +#22'AnchorSideLeft.Control'#7#9'PanelAdvf'#21'AnchorSideTop.Control'#7#18'Ch'
-  +'eckBoxAdvRecurse'#18'AnchorSideTop.Side'#7#9'asrCenter'#4'Left'#2#15#6'Heig'
-  +'ht'#2#20#3'Top'#2' '#5'Width'#2'P'#18'BorderSpacing.Left'#2#15#7'Caption'#6
+  +'eckBoxAdvRecurse'#18'AnchorSideTop.Side'#7#9'asrCenter'#4'Left'#2#30#6'Heig'
+  +'ht'#2#20#3'Top'#2' '#5'Width'#2'P'#18'BorderSpacing.Left'#2#30#7'Caption'#6
   +#12'Include only'#0#0#9'TCheckBox'#18'CheckBoxAdvRecurse'#23'AnchorSideRight'
   +'.Control'#7#14'MemoAdvInclude'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'Le'
-  +'ft'#3#248#1#6'Height'#2#24#3'Top'#2#30#5'Width'#3#231#0#7'Anchors'#11#5'akT'
+  +'ft'#3#233#1#6'Height'#2#24#3'Top'#2#30#5'Width'#3#231#0#7'Anchors'#11#5'akT'
   +'op'#7'akRight'#0#17'BorderSpacing.Top'#2#30#7'Caption'#6'"Inclusion filters'
   +' recourse subdirs'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#0#0#0
   +#5'TMemo'#14'MemoAdvInclude'#22'AnchorSideLeft.Control'#7#15'LabelAdvInclude'
   +#21'AnchorSideTop.Control'#7#18'CheckBoxAdvRecurse'#18'AnchorSideTop.Side'#7
   +#9'asrBottom'#23'AnchorSideRight.Control'#7#9'PanelAdvf'#20'AnchorSideRight.'
-  +'Side'#7#9'asrBottom'#4'Left'#2#15#6'Height'#2'Z'#3'Top'#2'>'#5'Width'#3#208
+  +'Side'#7#9'asrBottom'#4'Left'#2#30#6'Height'#2'Z'#3'Top'#2'>'#5'Width'#3#178
   +#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#17'BorderSpacing.Top'#2#8#19
-  +'BorderSpacing.Right'#2#15#21'Constraints.MinHeight'#2'Z'#11'ParentColor'#9
+  +'BorderSpacing.Right'#2#30#21'Constraints.MinHeight'#2'Z'#11'ParentColor'#9
   +#10'ScrollBars'#7#10'ssAutoBoth'#8'TabOrder'#2#1#0#0#6'TLabel'#15'LabelAdvEx'
   +'clude'#22'AnchorSideLeft.Control'#7#15'LabelAdvInclude'#21'AnchorSideTop.Co'
   +'ntrol'#7#19'CheckBoxAdvRecurse1'#18'AnchorSideTop.Side'#7#9'asrCenter'#4'Le'
-  +'ft'#2#15#6'Height'#2#20#3'Top'#3'2'#1#5'Width'#2'@'#7'Caption'#6#10'Exclusi'
+  +'ft'#2#30#6'Height'#2#20#3'Top'#3'2'#1#5'Width'#2'@'#7'Caption'#6#10'Exclusi'
   +'on:'#0#0#9'TCheckBox'#19'CheckBoxAdvRecurse1'#21'AnchorSideTop.Control'#7#18
   +'MemoAdvIncludeAlso'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRigh'
   +'t.Control'#7#14'MemoAdvInclude'#20'AnchorSideRight.Side'#7#9'asrBottom'#4'L'
-  +'eft'#3#245#1#6'Height'#2#24#3'Top'#3'0'#1#5'Width'#3#234#0#7'Anchors'#11#5
+  +'eft'#3#230#1#6'Height'#2#24#3'Top'#3'0'#1#5'Width'#3#234#0#7'Anchors'#11#5
   +'akTop'#7'akRight'#0#17'BorderSpacing.Top'#2#15#7'Caption'#6'"Exclusion filt'
   +'ers recourse subdirs'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#6#0
   +#0#5'TMemo'#14'MemoAdvExclude'#22'AnchorSideLeft.Control'#7#15'LabelAdvInclu'
   +'de'#21'AnchorSideTop.Control'#7#19'CheckBoxAdvRecurse1'#18'AnchorSideTop.Si'
   +'de'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#14'MemoAdvInclude'#20'Anch'
-  +'orSideRight.Side'#7#9'asrBottom'#4'Left'#2#15#6'Height'#2'Z'#3'Top'#3'P'#1#5
-  +'Width'#3#208#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#17'BorderSpaci'
+  +'orSideRight.Side'#7#9'asrBottom'#4'Left'#2#30#6'Height'#2'Z'#3'Top'#3'P'#1#5
+  +'Width'#3#178#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#17'BorderSpaci'
   +'ng.Top'#2#8#21'Constraints.MinHeight'#2'Z'#11'ParentColor'#9#10'ScrollBars'
   +#7#10'ssAutoBoth'#8'TabOrder'#2#4#0#0#5'TMemo'#18'MemoAdvIncludeAlso'#22'Anc'
   +'horSideLeft.Control'#7#15'LabelAdvInclude'#21'AnchorSideTop.Control'#7#22'C'
   +'heckBoxAdvRecurseAlso'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideR'
   +'ight.Control'#7#14'MemoAdvInclude'#20'AnchorSideRight.Side'#7#9'asrBottom'#4
-  +'Left'#2#15#6'Height'#2'Z'#3'Top'#3#199#0#5'Width'#3#208#2#7'Anchors'#11#5'a'
+  +'Left'#2#30#6'Height'#2'Z'#3'Top'#3#199#0#5'Width'#3#178#2#7'Anchors'#11#5'a'
   +'kTop'#6'akLeft'#7'akRight'#0#17'BorderSpacing.Top'#2#8#21'Constraints.MinHe'
   +'ight'#2'Z'#11'ParentColor'#9#10'ScrollBars'#7#10'ssAutoBoth'#8'TabOrder'#2#3
   +#0#0#6'TLabel'#19'LabelAdvIncludeAlso'#22'AnchorSideLeft.Control'#7#15'Label'
   +'AdvInclude'#21'AnchorSideTop.Control'#7#22'CheckBoxAdvRecurseAlso'#18'Ancho'
-  +'rSideTop.Side'#7#9'asrCenter'#4'Left'#2#15#6'Height'#2#20#3'Top'#3#169#0#5
+  +'rSideTop.Side'#7#9'asrCenter'#4'Left'#2#30#6'Height'#2#20#3'Top'#3#169#0#5
   +'Width'#2'O'#7'Caption'#6#12'Include also'#0#0#9'TCheckBox'#22'CheckBoxAdvRe'
   +'curseAlso'#21'AnchorSideTop.Control'#7#14'MemoAdvInclude'#18'AnchorSideTop.'
   +'Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#14'MemoAdvInclude'#20'An'
-  +'chorSideRight.Side'#7#9'asrBottom'#4'Left'#3#248#1#6'Height'#2#24#3'Top'#3
+  +'chorSideRight.Side'#7#9'asrBottom'#4'Left'#3#233#1#6'Height'#2#24#3'Top'#3
   +#167#0#5'Width'#3#231#0#7'Anchors'#11#5'akTop'#7'akRight'#0#17'BorderSpacing'
   +'.Top'#2#15#7'Caption'#6'"Inclusion filters recourse subdirs'#7'Checked'#9#5
   +'State'#7#9'cbChecked'#8'TabOrder'#2#2#0#0#0#12'TButtonPanel'#15'ButtonPanel'

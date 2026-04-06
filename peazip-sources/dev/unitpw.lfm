@@ -82,10 +82,10 @@ object FormPW: TFormPW
       Left = 225
       Height = 28
       Top = 30
-      Width = 460
+      Width = 445
       Anchors = [akTop, akLeft, akRight]
       BorderSpacing.Top = 30
-      BorderSpacing.Right = 15
+      BorderSpacing.Right = 30
       EchoMode = emPassword
       PasswordChar = '*'
       TabOrder = 0
@@ -100,11 +100,11 @@ object FormPW: TFormPW
       Left = 225
       Height = 28
       Top = 102
-      Width = 428
+      Width = 413
       Anchors = [akTop, akLeft, akRight]
       BorderSpacing.Top = 8
       BorderSpacing.Bottom = 8
-      TabOrder = 4
+      TabOrder = 3
     end
     object ButtonPWkeyfile: TButton
       AnchorSideTop.Control = EditPWkeyfile
@@ -112,7 +112,7 @@ object FormPW: TFormPW
       AnchorSideRight.Side = asrBottom
       AnchorSideBottom.Control = EditPWkeyfile
       AnchorSideBottom.Side = asrBottom
-      Left = 653
+      Left = 638
       Height = 28
       Top = 102
       Width = 32
@@ -120,7 +120,7 @@ object FormPW: TFormPW
       BorderSpacing.InnerBorder = 5
       Caption = '...'
       PopupMenu = PopupMenupw
-      TabOrder = 3
+      TabOrder = 2
       OnClick = ButtonPWkeyfileClick
     end
     object EditPWconfirm: TEdit
@@ -132,7 +132,7 @@ object FormPW: TFormPW
       Left = 225
       Height = 28
       Top = 66
-      Width = 460
+      Width = 445
       Anchors = [akTop, akLeft, akRight]
       BorderSpacing.Top = 8
       EchoMode = emPassword
@@ -174,7 +174,7 @@ object FormPW: TFormPW
       ClientHeight = 131
       ClientWidth = 670
       ParentBackground = False
-      TabOrder = 5
+      TabOrder = 4
       object CheckBoxShowPWField: TCheckBox
         AnchorSideLeft.Control = CheckBoxEncFn
         AnchorSideTop.Control = CheckBoxKeepPW
@@ -234,11 +234,11 @@ object FormPW: TFormPW
       Left = 225
       Height = 28
       Top = 102
-      Width = 460
+      Width = 445
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
       ParentBackground = False
-      TabOrder = 2
+      TabOrder = 5
     end
   end
   object ButtonPanelPW: TButtonPanel
@@ -310,6 +310,10 @@ object FormPW: TFormPW
     object mpwmreset: TMenuItem
       Caption = 'Reset'
       OnClick = mpwmresetClick
+    end
+    object mpwpr: TMenuItem
+      Caption = 'Rate password'
+      OnClick = mpwprClick
     end
     object mpwspacer1: TMenuItem
       Caption = '-'

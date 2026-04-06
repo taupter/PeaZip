@@ -45,10 +45,14 @@ object FormDrop: TFormDrop
       Pen.Color = 13743258
     end
     object ImageDragOp: TImage
-      Left = 15
+      AnchorSideLeft.Control = PanelDragDrop
+      AnchorSideTop.Control = PanelDragDrop
+      Left = 30
       Height = 40
-      Top = 15
+      Top = 30
       Width = 40
+      BorderSpacing.Left = 30
+      BorderSpacing.Top = 30
       Transparent = True
     end
     object LabelDragTitle: TLabel
@@ -58,13 +62,13 @@ object FormDrop: TFormDrop
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = PanelDragDrop
       AnchorSideRight.Side = asrBottom
-      Left = 65
+      Left = 85
       Height = 20
-      Top = 25
-      Width = 320
+      Top = 40
+      Width = 285
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 10
-      BorderSpacing.Right = 15
+      BorderSpacing.Left = 15
+      BorderSpacing.Right = 30
       Caption = 'Label1'
       WordWrap = True
     end
@@ -74,9 +78,9 @@ object FormDrop: TFormDrop
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = ImageDragOp
       AnchorSideRight.Side = asrBottom
-      Left = 65
+      Left = 85
       Height = 20
-      Top = 65
+      Top = 80
       Width = 20
       Transparent = True
     end
@@ -86,9 +90,9 @@ object FormDrop: TFormDrop
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = ImageDragOp
       AnchorSideRight.Side = asrBottom
-      Left = 65
+      Left = 85
       Height = 20
-      Top = 95
+      Top = 110
       Width = 20
       Transparent = True
     end
@@ -99,14 +103,14 @@ object FormDrop: TFormDrop
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelDragDrop
       AnchorSideRight.Side = asrBottom
-      Left = 95
+      Left = 120
       Height = 20
-      Top = 95
-      Width = 290
+      Top = 110
+      Width = 250
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 10
+      BorderSpacing.Left = 15
       BorderSpacing.Top = 10
-      BorderSpacing.Right = 15
+      BorderSpacing.Right = 30
       Caption = 'Label1'
       WordWrap = True
     end
@@ -117,14 +121,14 @@ object FormDrop: TFormDrop
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelDragDrop
       AnchorSideRight.Side = asrBottom
-      Left = 95
+      Left = 120
       Height = 20
-      Top = 65
-      Width = 290
+      Top = 80
+      Width = 250
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 10
+      BorderSpacing.Left = 15
       BorderSpacing.Top = 20
-      BorderSpacing.Right = 15
+      BorderSpacing.Right = 30
       Caption = 'Label1'
       WordWrap = True
     end

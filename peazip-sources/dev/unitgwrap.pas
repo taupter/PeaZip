@@ -1208,7 +1208,13 @@ if ShapeGlobalProgress.visible=true then ShapeGlobalProgress.Width:=pprogbarprev
 if iperc>0 then
    begin
    LabelPerc.Caption:=inttostr(iperc)+'% ';
-   FormGwrap.Caption:=pprogn+' '+LabelPerc.Caption+pcapt;
+   if pprogn<>'' then
+      if FormGwrap.Width>0 then
+         FormGwrap.Caption:=inttostr((ShapeGlobalProgress.Width * 100) div FormGwrap.Width)+'% '+pprogn+' | '+LabelPerc.Caption+pcapt
+      else
+         FormGwrap.Caption:=pprogn+' | '+LabelPerc.Caption+pcapt
+   else
+      FormGwrap.Caption:=LabelPerc.Caption+pcapt;
    FormGwrap.TrayIconTask.Hint:=FormGwrap.Caption;
    FormGwrap.pm2restore.Caption:=FormGwrap.Caption;
    end;
@@ -1676,7 +1682,7 @@ application.ProcessMessages;
 savegwpos;
 if (pproglast=true) or (FormGwrap.ShapeGlobalProgress.Visible=false) then
    begin
-   sleep(500);
+   if pautoclose<>4 then sleep(500);//maximize speed if it is not required to make the user look at the result
    savegwpos;
    FormGwrap.Visible:=false;
    exbackground:=false;
@@ -1777,6 +1783,7 @@ if pprogfirst=true then
    ppause:=false;
    FormGwrap.ButtonPause.Caption:='   '+txt_pause+'   ';
    prevpause:=false;
+   FormGwrap.ShapeGlobalProgress.Width:=0;
    end;
 if ppause=false then
    begin
@@ -1817,7 +1824,14 @@ stri:='';
 astri:='';
 bstri:='';
 if modeofuse<>2 then FormGwrap.LabelPerc.Caption:='0% ' else FormGwrap.LabelPerc.Caption:='';
-FormGwrap.Caption:=pprogn+' '+pcapt;
+
+if pprogn<>'' then
+   if FormGwrap.Width>0 then
+      FormGwrap.Caption:=inttostr((FormGwrap.ShapeGlobalProgress.Width * 100) div FormGwrap.Width)+'% '+pprogn+' | 0% '+pcapt
+   else
+      FormGwrap.Caption:=pprogn+' | 0% '+pcapt
+else
+   FormGwrap.Caption:='0% '+pcapt;
 FormGwrap.TrayIconTask.Hint:=FormGwrap.Caption;
 FormGwrap.pm2restore.Caption:=FormGwrap.Caption;
 FormGwrap.StringGridReport.Rowcount:=1;
@@ -1966,7 +1980,14 @@ FormGwrap.StringGridReport.Rowcount:=1;
 FormGwrap.TimerProgress.enabled:=false;
 FormGwrap.LabelPerc.caption:='100% ';
 iperc:=100;
-FormGwrap.Caption:=pprogn+' '+pcapt;
+
+if pprogn<>'' then
+   if FormGwrap.Width>0 then
+      FormGwrap.Caption:=inttostr((FormGwrap.ShapeGlobalProgress.Width * 100) div FormGwrap.Width)+'% '+pprogn+' | 100% '+pcapt
+   else
+      FormGwrap.Caption:=pprogn+' | 100% '+pcapt
+else
+   FormGwrap.Caption:='100% '+pcapt;
 FormGwrap.TrayIconTask.Hint:=FormGwrap.Caption;
 FormGwrap.pm2restore.Caption:=FormGwrap.Caption;
 pstarted:=false;
@@ -2137,11 +2158,11 @@ FormGwrap.shapeProgress3.Visible:=false;
 FormGwrap.shapeProgress2.Visible:=false;
 FormGwrap.shapeProgress1.Visible:=false;
 case exit_code of
-   0: FormGwrap.Caption:=pprogn+' '+txt_done+' '+pcapt;
-   255: FormGwrap.Caption:=pprogn+' '+txt_halted+' '+pcapt;
+   0: if pprogn<>'' then FormGwrap.Caption:=pprogn+' '+txt_done+' '+pcapt else FormGwrap.Caption:=txt_done+' '+pcapt;
+   255: if pprogn<>'' then FormGwrap.Caption:=pprogn+' '+txt_halted+' '+pcapt else FormGwrap.Caption:=txt_halted+' '+pcapt;
    else
       begin
-      FormGwrap.Caption:=pprogn+' '+txt_error+' '+pcapt;
+      if pprogn<>'' then FormGwrap.Caption:=pprogn+' '+txt_error+' '+pcapt else FormGwrap.Caption:=txt_error+' '+pcapt;
       if (modeofuse<>2) and (modeofuse<>3) then
          begin
          FormGwrap.LabelWarning.Visible:=true;

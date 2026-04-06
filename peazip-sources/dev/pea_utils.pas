@@ -472,9 +472,12 @@ function read_filelist ( listfile_param:ansistring;                             
 //create cl string for command line
 function pw4cl(sw:ansistring; var pw:ansistring):integer;
 
-//evaluate password strength;
+//evaluate password strength
 procedure evaluate_password ( pw: ansistring;                                   //password
                               var pw_strength:dword);                           //entropy bits evaluation
+
+//readable form for evaluate password rating
+function ratepw(pw,pr1,pr2,pr3,pr4:ansistring): ansistring;
 
 //function to prepend keyfile to password string (used for non-pea encryption)
 function prepend_keyfile(var pw:ansistring; keyfilename:ansistring; kflimit:integer):integer;
@@ -2340,6 +2343,21 @@ while length(s)>0 do
    end;
 pw_strength:=pw_len+qbonus+i*3;
 if pw_strength>pw_len*7 then pw_strength:=pw_len*7;//rule out extra bonus if result is over realistic max (useful for short strings)
+end;
+
+function ratepw(pw,pr1,pr2,pr3,pr4:ansistring): ansistring;
+var
+   pw_strength:dword;
+   s:ansistring;
+begin
+evaluate_password(pw,pw_strength);
+if pw_strength<24 then s:=pr1
+else
+   if pw_strength<48 then s:=pr2
+   else
+      if pw_strength<72 then s:=pr3
+      else s:=pr4;
+result:='('+inttostr(pw_strength)+') '+s;
 end;
 
 function prepend_keyfile(var pw:ansistring; keyfilename:ansistring; kflimit:integer):integer;

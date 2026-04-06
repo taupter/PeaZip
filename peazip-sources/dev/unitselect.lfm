@@ -63,10 +63,10 @@ object FormSelect: TFormSelect
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = ComboBoxSelect2
       AnchorSideRight.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 28
       Top = 73
-      Width = 570
+      Width = 540
       Anchors = [akTop, akLeft, akRight]
       BorderSpacing.Top = 15
       DropDownCount = 24
@@ -79,14 +79,14 @@ object FormSelect: TFormSelect
       AnchorSideTop.Control = PanelSelect
       AnchorSideRight.Control = PanelSelect
       AnchorSideRight.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 28
       Top = 30
-      Width = 570
+      Width = 540
       Anchors = [akTop, akLeft, akRight]
-      BorderSpacing.Left = 15
+      BorderSpacing.Left = 30
       BorderSpacing.Top = 30
-      BorderSpacing.Right = 15
+      BorderSpacing.Right = 30
       ItemHeight = 20
       Style = csDropDownList
       TabOrder = 0
@@ -96,7 +96,7 @@ object FormSelect: TFormSelect
       AnchorSideTop.Control = ComboBoxSelect1
       AnchorSideTop.Side = asrBottom
       Cursor = crHandPoint
-      Left = 15
+      Left = 30
       Height = 20
       Top = 131
       Width = 60
@@ -112,7 +112,7 @@ object FormSelect: TFormSelect
       AnchorSideTop.Control = LabelSelectAll
       AnchorSideTop.Side = asrCenter
       Cursor = crHandPoint
-      Left = 111
+      Left = 126
       Height = 20
       Top = 131
       Width = 100
@@ -127,7 +127,7 @@ object FormSelect: TFormSelect
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = LabelSelectAll
       AnchorSideTop.Side = asrCenter
-      Left = 90
+      Left = 105
       Height = 20
       Top = 131
       Width = 6
@@ -140,7 +140,7 @@ object FormSelect: TFormSelect
       AnchorSideTop.Control = LabelSelectAll
       AnchorSideTop.Side = asrBottom
       Cursor = crHandPoint
-      Left = 15
+      Left = 30
       Height = 20
       Top = 166
       Width = 110

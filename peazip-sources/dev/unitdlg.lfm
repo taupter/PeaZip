@@ -22,10 +22,10 @@ object FormDlg: TFormDlg
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = PanelDlg
-    Left = 70
+    Left = 85
     Height = 96
     Top = 30
-    Width = 600
+    Width = 585
     Anchors = [akTop, akLeft, akRight, akBottom]
     BorderSpacing.Left = 15
     BorderSpacing.Top = 30
@@ -165,11 +165,11 @@ object FormDlg: TFormDlg
   object ImageDlg: TImage
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner
-    Left = 15
+    Left = 30
     Height = 40
     Top = 30
     Width = 40
-    BorderSpacing.Left = 15
+    BorderSpacing.Left = 30
     BorderSpacing.Top = 30
     Transparent = True
   end

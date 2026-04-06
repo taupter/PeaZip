@@ -16,85 +16,84 @@ LazarusResources.Add('TFormKF','FORMDATA',[
   +'seMove'#0#9'TGroupBox'#10'GroupBoxKF'#22'AnchorSideLeft.Control'#7#13'EditS'
   +'uggestPW'#21'AnchorSideTop.Control'#7#12'PanelKeyfile'#23'AnchorSideRight.C'
   +'ontrol'#7#17'SpinEditSuggestPW'#20'AnchorSideRight.Side'#7#9'asrBottom'#24
-  +'AnchorSideBottom.Control'#7#13'ButtonPanelKF'#4'Left'#2#15#6'Height'#2'P'#3
-  +'Top'#3'i'#1#5'Width'#3#208#2#7'Anchors'#11#6'akLeft'#7'akRight'#8'akBottom'
+  +'AnchorSideBottom.Control'#7#13'ButtonPanelKF'#4'Left'#2#30#6'Height'#2'P'#3
+  +'Top'#3'i'#1#5'Width'#3#178#2#7'Anchors'#11#6'akLeft'#7'akRight'#8'akBottom'
   +#0#20'BorderSpacing.Bottom'#2#15#7'Caption'#6#23'Enthropy sampling tools'#12
-  +'ClientHeight'#2'7'#11'ClientWidth'#3#204#2#16'ParentBackground'#8#8'TabOrde'
+  +'ClientHeight'#2'7'#11'ClientWidth'#3#174#2#16'ParentBackground'#8#8'TabOrde'
   +'r'#2#7#11'OnMouseMove'#7#19'GroupBoxKFMouseMove'#0#5'TEdit'#7'EditEnt'#22'A'
   +'nchorSideLeft.Control'#7#10'GroupBoxKF'#21'AnchorSideTop.Control'#7#10'Grou'
   +'pBoxKF'#18'AnchorSideTop.Side'#7#9'asrCenter'#23'AnchorSideRight.Control'#7
-  +#16'ButtonKFLoadFile'#4'Left'#2#15#6'Height'#2#28#3'Top'#2#13#5'Width'#3'H'#2
-  +#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#18'BorderSpacing.Left'#2#15#19
-  +'BorderSpacing.Right'#2#8#8'TabOrder'#2#0#4'Text'#6#17'Enter random keys'#10
-  +'OnKeyPress'#7#15'EditEntKeyPress'#0#0#7'TButton'#16'ButtonKFLoadFile'#22'An'
-  +'chorSideLeft.Control'#7#7'EditEnt'#21'AnchorSideTop.Control'#7#7'EditEnt'#18
-  +'AnchorSideTop.Side'#7#9'asrCenter'#23'AnchorSideRight.Control'#7#10'GroupBo'
-  +'xKF'#20'AnchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7
-  +#7'EditEnt'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#3'_'#2#6'Height'
-  +#2#28#3'Top'#2#13#5'Width'#2'^'#7'Anchors'#11#5'akTop'#7'akRight'#8'akBottom'
-  +#0#8'AutoSize'#9#19'BorderSpacing.Right'#2#15#25'BorderSpacing.InnerBorder'#2
-  +#5#7'Caption'#6#9'Load file'#8'TabOrder'#2#1#7'OnClick'#7#21'ButtonKFLoadFil'
-  +'eClick'#0#0#0#7'TButton'#8'ButtonKF'#22'AnchorSideLeft.Control'#7#13'EditSu'
-  +'ggestPW'#21'AnchorSideTop.Control'#7#8'ShapeKF1'#18'AnchorSideTop.Side'#7#9
-  +'asrBottom'#23'AnchorSideRight.Control'#7#17'SpinEditSuggestPW'#20'AnchorSid'
-  +'eRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#13'ButtonPanelKF'
-  +#4'Left'#2#15#6'Height'#2#30#3'Top'#3#159#0#5'Width'#3#208#2#7'Anchors'#11#5
-  +'akTop'#6'akLeft'#7'akRight'#0#8'AutoSize'#9#17'BorderSpacing.Top'#2#15#20'B'
-  +'orderSpacing.Bottom'#2#8#7'Caption'#6#14'Create KeyFile'#8'TabOrder'#2#4#7
-  +'OnClick'#7#13'ButtonKFClick'#0#0#5'TEdit'#13'EditSuggestPW'#22'AnchorSideLe'
-  +'ft.Control'#7#12'PanelKeyfile'#21'AnchorSideTop.Control'#7#12'PanelKeyfile'
-  +#23'AnchorSideRight.Control'#7#17'SpinEditSuggestPW'#24'AnchorSideBottom.Con'
-  +'trol'#7#8'ButtonKF'#4'Left'#2#15#6'Height'#2#28#3'Top'#2#30#5'Width'#3'n'#2
-  +#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#18'BorderSpacing.Left'#2#15#17
-  +'BorderSpacing.Top'#2#30#19'BorderSpacing.Right'#2#8#20'BorderSpacing.Bottom'
-  +#2#15#8'TabOrder'#2#0#0#0#9'TSpinEdit'#17'SpinEditSuggestPW'#21'AnchorSideTo'
-  +'p.Control'#7#13'EditSuggestPW'#23'AnchorSideRight.Control'#7#12'PanelKeyfil'
-  +'e'#20'AnchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#13
-  +'EditSuggestPW'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#3#133#2#6'H'
-  +'eight'#2#28#3'Top'#2#30#5'Width'#2'Z'#7'Anchors'#11#5'akTop'#7'akRight'#8'a'
-  +'kBottom'#0#19'BorderSpacing.Right'#2#15#8'MaxValue'#2'@'#8'MinValue'#2#4#8
-  +'TabOrder'#2#1#5'Value'#2#12#0#0#7'TButton'#15'ButtonSuggestPW'#22'AnchorSid'
-  +'eLeft.Control'#7#13'EditSuggestPW'#21'AnchorSideTop.Control'#7#17'SpinEditS'
-  +'uggestPW'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'
-  +#7#17'SpinEditSuggestPW'#20'AnchorSideRight.Side'#7#9'asrBottom'#21'AnchorSi'
-  +'deBottom.Side'#7#9'asrBottom'#4'Left'#2#15#6'Height'#2#30#3'Top'#2'B'#5'Wid'
-  +'th'#3#208#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#8'AutoSize'#9#17
-  +'BorderSpacing.Top'#2#8#7'Caption'#6#16'Suggest password'#8'TabOrder'#2#2#7
-  +'OnClick'#7#20'ButtonSuggestPWClick'#0#0#12'TButtonPanel'#13'ButtonPanelKF'#4
-  +'Left'#2#15#6'Height'#2#30#3'Top'#3#200#1#5'Width'#3#208#2#7'Anchors'#11#7'a'
-  +'kRight'#8'akBottom'#0#18'BorderSpacing.Left'#2#15#19'BorderSpacing.Right'#2
-  +#15#20'BorderSpacing.Bottom'#2#15#20'BorderSpacing.Around'#2#0#13'OKButton.N'
-  +'ame'#6#8'OKButton'#23'OKButton.DefaultCaption'#9#16'OKButton.Enabled'#8#15
-  ,'HelpButton.Name'#6#10'HelpButton'#25'HelpButton.DefaultCaption'#9#18'HelpBu'
-  +'tton.Enabled'#8#16'CloseButton.Name'#6#11'CloseButton'#26'CloseButton.Defau'
-  +'ltCaption'#9#17'CancelButton.Name'#6#12'CancelButton'#27'CancelButton.Defau'
-  +'ltCaption'#9#20'CancelButton.Enabled'#8#8'TabOrder'#2#8#11'ShowButtons'#11#7
-  +'pbClose'#0#10'ShowGlyphs'#11#0#9'ShowBevel'#8#0#12'TProgressBar'#13'Progres'
-  +'sBarKF'#22'AnchorSideLeft.Control'#7#11'ImageInfoKF'#19'AnchorSideLeft.Side'
-  +#7#9'asrBottom'#21'AnchorSideTop.Control'#7#13'ButtonPanelKF'#18'AnchorSideT'
-  +'op.Side'#7#9'asrCenter'#4'Left'#2#28#6'Height'#2#12#3'Top'#2#9#5'Width'#2'}'
-  +#18'BorderSpacing.Left'#2#8#19'BorderSpacing.Right'#2#8#3'Max'#3#0#16#8'Posi'
-  +'tion'#2#16#4'Step'#2#1#8'TabOrder'#2#4#0#0#6'TImage'#11'ImageInfoKF'#22'Anc'
-  +'horSideLeft.Control'#7#13'ButtonPanelKF'#21'AnchorSideTop.Control'#7#13'But'
-  +'tonPanelKF'#18'AnchorSideTop.Side'#7#9'asrCenter'#6'Cursor'#7#11'crHandPoin'
-  +'t'#4'Left'#2#0#6'Height'#2#20#3'Top'#2#5#5'Width'#2#20#11'Transparent'#9#7
-  +'OnClick'#7#16'ImageInfoKFClick'#0#0#0#9'TCheckBox'#17'CheckBoxSuggestPW'#22
-  +'AnchorSideLeft.Control'#7#13'EditSuggestPW'#21'AnchorSideTop.Control'#7#15
-  +'ButtonSuggestPW'#18'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#15#6'Heigh'
-  +'t'#2#24#3'Top'#2'h'#5'Width'#3#22#1#17'BorderSpacing.Top'#2#8#7'Caption'#6
-  +'''Limit characters to letters and numbers'#7'Checked'#9#5'State'#7#9'cbChec'
-  +'ked'#8'TabOrder'#2#3#0#0#5'TEdit'#14'EditPWfromhash'#22'AnchorSideLeft.Cont'
-  +'rol'#7#12'PanelKeyfile'#21'AnchorSideTop.Control'#7#8'ShapeKF2'#18'AnchorSi'
-  +'deTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#17'SpinEditSuggest'
-  +'PW'#20'AnchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#8
-  +'ButtonKF'#4'Left'#2#15#6'Height'#2#28#3'Top'#3#220#0#5'Width'#3#208#2#7'Anc'
-  +'hors'#11#5'akTop'#6'akLeft'#7'akRight'#0#18'BorderSpacing.Left'#2#15#17'Bor'
-  +'derSpacing.Top'#2#15#8'TabOrder'#2#5#0#0#7'TButton'#16'ButtonPWfromhash'#22
-  +'AnchorSideLeft.Control'#7#13'EditSuggestPW'#21'AnchorSideTop.Control'#7#14
-  +'EditPWfromhash'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Co'
-  +'ntrol'#7#17'SpinEditSuggestPW'#20'AnchorSideRight.Side'#7#9'asrBottom'#21'A'
-  +'nchorSideBottom.Side'#7#9'asrBottom'#4'Left'#2#15#6'Height'#2#30#3'Top'#3#0
-  +#1#5'Width'#3#208#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#8'AutoSize'
+  +#16'ButtonKFLoadFile'#4'Left'#2#0#6'Height'#2#28#3'Top'#2#13#5'Width'#3'H'#2
+  +#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#19'BorderSpacing.Right'#2#8#8
+  +'TabOrder'#2#0#4'Text'#6#17'Enter random keys'#10'OnKeyPress'#7#15'EditEntKe'
+  +'yPress'#0#0#7'TButton'#16'ButtonKFLoadFile'#22'AnchorSideLeft.Control'#7#7
+  +'EditEnt'#21'AnchorSideTop.Control'#7#7'EditEnt'#18'AnchorSideTop.Side'#7#9
+  +'asrCenter'#23'AnchorSideRight.Control'#7#10'GroupBoxKF'#20'AnchorSideRight.'
+  +'Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#7'EditEnt'#21'AnchorSid'
+  +'eBottom.Side'#7#9'asrBottom'#4'Left'#3'P'#2#6'Height'#2#28#3'Top'#2#13#5'Wi'
+  +'dth'#2'^'#7'Anchors'#11#5'akTop'#7'akRight'#8'akBottom'#0#8'AutoSize'#9#25
+  +'BorderSpacing.InnerBorder'#2#5#7'Caption'#6#9'Load file'#8'TabOrder'#2#1#7
+  +'OnClick'#7#21'ButtonKFLoadFileClick'#0#0#0#7'TButton'#8'ButtonKF'#22'Anchor'
+  +'SideLeft.Control'#7#13'EditSuggestPW'#21'AnchorSideTop.Control'#7#8'ShapeKF'
+  +'1'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#17'S'
+  +'pinEditSuggestPW'#20'AnchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBott'
+  +'om.Control'#7#13'ButtonPanelKF'#4'Left'#2#30#6'Height'#2#30#3'Top'#3#159#0#5
+  +'Width'#3#178#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#8'AutoSize'#9
+  +#17'BorderSpacing.Top'#2#15#20'BorderSpacing.Bottom'#2#8#7'Caption'#6#14'Cre'
+  +'ate KeyFile'#8'TabOrder'#2#4#7'OnClick'#7#13'ButtonKFClick'#0#0#5'TEdit'#13
+  +'EditSuggestPW'#22'AnchorSideLeft.Control'#7#12'PanelKeyfile'#21'AnchorSideT'
+  +'op.Control'#7#12'PanelKeyfile'#23'AnchorSideRight.Control'#7#17'SpinEditSug'
+  +'gestPW'#24'AnchorSideBottom.Control'#7#8'ButtonKF'#4'Left'#2#30#6'Height'#2
+  +#28#3'Top'#2#30#5'Width'#3'P'#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0
+  +#18'BorderSpacing.Left'#2#30#17'BorderSpacing.Top'#2#30#19'BorderSpacing.Rig'
+  +'ht'#2#8#20'BorderSpacing.Bottom'#2#15#8'TabOrder'#2#0#0#0#9'TSpinEdit'#17'S'
+  +'pinEditSuggestPW'#21'AnchorSideTop.Control'#7#13'EditSuggestPW'#23'AnchorSi'
+  +'deRight.Control'#7#12'PanelKeyfile'#20'AnchorSideRight.Side'#7#9'asrBottom'
+  +#24'AnchorSideBottom.Control'#7#13'EditSuggestPW'#21'AnchorSideBottom.Side'#7
+  +#9'asrBottom'#4'Left'#3'v'#2#6'Height'#2#28#3'Top'#2#30#5'Width'#2'Z'#7'Anch'
+  +'ors'#11#5'akTop'#7'akRight'#8'akBottom'#0#19'BorderSpacing.Right'#2#30#8'Ma'
+  +'xValue'#2'@'#8'MinValue'#2#4#8'TabOrder'#2#1#5'Value'#2#12#0#0#7'TButton'#15
+  +'ButtonSuggestPW'#22'AnchorSideLeft.Control'#7#13'EditSuggestPW'#21'AnchorSi'
+  +'deTop.Control'#7#17'SpinEditSuggestPW'#18'AnchorSideTop.Side'#7#9'asrBottom'
+  +#23'AnchorSideRight.Control'#7#17'SpinEditSuggestPW'#20'AnchorSideRight.Side'
+  +#7#9'asrBottom'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#2#30#6'Heig'
+  +'ht'#2#30#3'Top'#2'B'#5'Width'#3#178#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'ak'
+  +'Right'#0#8'AutoSize'#9#17'BorderSpacing.Top'#2#8#7'Caption'#6#16'Suggest pa'
+  +'ssword'#8'TabOrder'#2#2#7'OnClick'#7#20'ButtonSuggestPWClick'#0#0#12'TButto'
+  +'nPanel'#13'ButtonPanelKF'#4'Left'#2#15#6'Height'#2#30#3'Top'#3#200#1#5'Widt'
+  +'h'#3#208#2#7'Anchors'#11#7'akRight'#8'akBottom'#0#18'BorderSpacing.Left'#2
+  +#15#19'BorderSpacing.Right'#2#15#20'BorderSpacing.Bottom'#2#15#20'BorderSpac'
+  +'ing.Around'#2#0#13'OKButton.Name'#6#8'OKButton'#23'OKButton.DefaultCaption'
+  +#9#16'OKButton.Enabled'#8#15'HelpButton.Name'#6#10'HelpButton'#25'HelpButton'
+  ,'.DefaultCaption'#9#18'HelpButton.Enabled'#8#16'CloseButton.Name'#6#11'Close'
+  +'Button'#26'CloseButton.DefaultCaption'#9#17'CancelButton.Name'#6#12'CancelB'
+  +'utton'#27'CancelButton.DefaultCaption'#9#20'CancelButton.Enabled'#8#8'TabOr'
+  +'der'#2#8#11'ShowButtons'#11#7'pbClose'#0#10'ShowGlyphs'#11#0#9'ShowBevel'#8
+  +#0#12'TProgressBar'#13'ProgressBarKF'#22'AnchorSideLeft.Control'#7#11'ImageI'
+  +'nfoKF'#19'AnchorSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#13
+  +'ButtonPanelKF'#18'AnchorSideTop.Side'#7#9'asrCenter'#4'Left'#2#28#6'Height'
+  +#2#12#3'Top'#2#9#5'Width'#2'}'#18'BorderSpacing.Left'#2#8#19'BorderSpacing.R'
+  +'ight'#2#8#3'Max'#3#0#16#8'Position'#2#16#4'Step'#2#1#8'TabOrder'#2#4#0#0#6
+  +'TImage'#11'ImageInfoKF'#22'AnchorSideLeft.Control'#7#13'ButtonPanelKF'#21'A'
+  +'nchorSideTop.Control'#7#13'ButtonPanelKF'#18'AnchorSideTop.Side'#7#9'asrCen'
+  +'ter'#6'Cursor'#7#11'crHandPoint'#4'Left'#2#0#6'Height'#2#20#3'Top'#2#5#5'Wi'
+  +'dth'#2#20#11'Transparent'#9#7'OnClick'#7#16'ImageInfoKFClick'#0#0#0#9'TChec'
+  +'kBox'#17'CheckBoxSuggestPW'#22'AnchorSideLeft.Control'#7#13'EditSuggestPW'
+  +#21'AnchorSideTop.Control'#7#15'ButtonSuggestPW'#18'AnchorSideTop.Side'#7#9
+  +'asrBottom'#4'Left'#2#30#6'Height'#2#24#3'Top'#2'h'#5'Width'#3#22#1#17'Borde'
+  +'rSpacing.Top'#2#8#7'Caption'#6'''Limit characters to letters and numbers'#7
+  +'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#3#0#0#5'TEdit'#14'EditPWfr'
+  +'omhash'#22'AnchorSideLeft.Control'#7#13'EditSuggestPW'#21'AnchorSideTop.Con'
+  +'trol'#7#8'ShapeKF2'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRigh'
+  +'t.Control'#7#17'SpinEditSuggestPW'#20'AnchorSideRight.Side'#7#9'asrBottom'
+  +#24'AnchorSideBottom.Control'#7#8'ButtonKF'#4'Left'#2#30#6'Height'#2#28#3'To'
+  +'p'#3#220#0#5'Width'#3#178#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#17
+  +'BorderSpacing.Top'#2#15#8'TabOrder'#2#5#0#0#7'TButton'#16'ButtonPWfromhash'
+  +#22'AnchorSideLeft.Control'#7#13'EditSuggestPW'#21'AnchorSideTop.Control'#7
+  +#14'EditPWfromhash'#18'AnchorSideTop.Side'#7#9'asrBottom'#23'AnchorSideRight'
+  +'.Control'#7#17'SpinEditSuggestPW'#20'AnchorSideRight.Side'#7#9'asrBottom'#21
+  +'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#2#30#6'Height'#2#30#3'Top'#3#0
+  +#1#5'Width'#3#178#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#8'AutoSize'
   +#9#17'BorderSpacing.Top'#2#8#7'Caption'#6#18'Password from hash'#8'TabOrder'
   +#2#6#7'OnClick'#7#21'ButtonPWfromhashClick'#0#0#6'TShape'#8'ShapeKF1'#22'Anc'
   +'horSideLeft.Control'#7#12'PanelKeyfile'#21'AnchorSideTop.Control'#7#17'Chec'

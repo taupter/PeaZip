@@ -74,7 +74,7 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = ComboBoxAction
       AnchorSideTop.Side = asrBottom
-      Left = 63
+      Left = 78
       Height = 28
       Top = 88
       Width = 115
@@ -90,7 +90,7 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Control = LabelH
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = SpinEditW
-      Left = 246
+      Left = 261
       Height = 28
       Top = 88
       Width = 115
@@ -106,7 +106,7 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = SpinEditW
       AnchorSideTop.Side = asrCenter
-      Left = 381
+      Left = 396
       Height = 24
       Top = 90
       Width = 33
@@ -120,7 +120,7 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Control = LabelW
       AnchorSideTop.Control = SpinEditW
       AnchorSideTop.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 24
       Top = 131
       Width = 161
@@ -135,7 +135,7 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Control = ComboBoxAction
       AnchorSideTop.Control = SpinEditW
       AnchorSideTop.Side = asrCenter
-      Left = 15
+      Left = 30
       Height = 20
       Top = 92
       Width = 40
@@ -145,7 +145,7 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Control = SpinEditW
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = LabelW
-      Left = 193
+      Left = 208
       Height = 20
       Top = 92
       Width = 45
@@ -157,7 +157,7 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = CheckBoxAspectRatio
       AnchorSideTop.Side = asrBottom
-      Left = 74
+      Left = 89
       Height = 28
       Top = 170
       Width = 115
@@ -184,7 +184,7 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Control = LabelW
       AnchorSideTop.Control = ComboBoxConvert
       AnchorSideTop.Side = asrCenter
-      Left = 15
+      Left = 30
       Height = 20
       Top = 174
       Width = 51
@@ -195,7 +195,7 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = ComboBoxConvert
       AnchorSideTop.Side = asrCenter
-      Left = 197
+      Left = 212
       Height = 28
       Top = 170
       Width = 90
@@ -208,13 +208,12 @@ object FormImgRes: TFormImgRes
       AnchorSideLeft.Control = PanelImgRes
       AnchorSideTop.Control = PanelImgRes
       AnchorSideRight.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 28
       Top = 30
       Width = 500
-      BorderSpacing.Left = 15
+      BorderSpacing.Left = 30
       BorderSpacing.Top = 30
-      BorderSpacing.Right = 15
       ItemHeight = 20
       ItemIndex = 1
       Items.Strings = (

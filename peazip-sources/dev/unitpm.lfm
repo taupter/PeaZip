@@ -150,8 +150,8 @@ object FormPM: TFormPM
         object LableListPath1: TLabel
           AnchorSideTop.Control = EditUn7zaPW
           AnchorSideTop.Side = asrCenter
-          AnchorSideRight.Control = EditUn7zaPW
-          Left = 121
+          AnchorSideRight.Control = ButtonEditNamePw
+          Left = 109
           Height = 20
           Top = 159
           Width = 64
@@ -163,27 +163,29 @@ object FormPM: TFormPM
         object LableListPath2: TLabel
           AnchorSideTop.Control = EditName3
           AnchorSideTop.Side = asrCenter
-          AnchorSideRight.Control = EditUn7zaPW
-          Left = 137
+          AnchorSideRight.Control = LableListPath1
+          AnchorSideRight.Side = asrBottom
+          Cursor = crHandPoint
+          Left = 125
           Height = 20
           Top = 231
           Width = 48
           Anchors = [akTop, akRight]
-          BorderSpacing.Right = 15
           Caption = 'Keyfile:'
+          Font.Color = 13391121
           ParentFont = False
+          OnClick = LableListPath2Click
         end
         object LableListPath3: TLabel
-          AnchorSideLeft.Control = LableListPath2
           AnchorSideTop.Control = EditUn7zaPW1
           AnchorSideTop.Side = asrCenter
-          AnchorSideRight.Control = EditUn7zaPW
-          Left = 129
+          AnchorSideRight.Control = LableListPath1
+          AnchorSideRight.Side = asrBottom
+          Left = 117
           Height = 20
           Top = 195
           Width = 56
           Anchors = [akTop, akRight]
-          BorderSpacing.Right = 15
           Caption = 'Confirm:'
           ParentFont = False
         end
@@ -192,11 +194,11 @@ object FormPM: TFormPM
           AnchorSideTop.Side = asrBottom
           AnchorSideRight.Control = LablePMHint
           AnchorSideRight.Side = asrBottom
-          Left = 200
+          Left = 220
           Height = 28
           Top = 155
-          Width = 535
-          Anchors = [akTop, akLeft, akRight]
+          Width = 500
+          Anchors = [akTop, akRight]
           BorderSpacing.Top = 30
           EchoMode = emPassword
           ParentFont = False
@@ -208,10 +210,10 @@ object FormPM: TFormPM
           AnchorSideTop.Control = EditUn7zaPW1
           AnchorSideTop.Side = asrBottom
           AnchorSideRight.Control = ButtonEditName3
-          Left = 200
+          Left = 220
           Height = 28
           Top = 227
-          Width = 503
+          Width = 468
           Anchors = [akTop, akLeft, akRight]
           BorderSpacing.Top = 8
           ParentFont = False
@@ -223,7 +225,7 @@ object FormPM: TFormPM
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = EditName3
           AnchorSideBottom.Side = asrBottom
-          Left = 703
+          Left = 688
           Height = 28
           Top = 227
           Width = 32
@@ -241,10 +243,10 @@ object FormPM: TFormPM
           AnchorSideTop.Side = asrBottom
           AnchorSideRight.Control = LablePMHint
           AnchorSideRight.Side = asrBottom
-          Left = 200
+          Left = 220
           Height = 28
           Top = 191
-          Width = 535
+          Width = 500
           Anchors = [akTop, akLeft, akRight]
           BorderSpacing.Top = 8
           EchoMode = emPassword
@@ -257,30 +259,31 @@ object FormPM: TFormPM
           AnchorSideTop.Control = PanelPWMaster
           AnchorSideRight.Control = PanelPWMaster
           AnchorSideRight.Side = asrBottom
-          Left = 15
+          Left = 30
           Height = 95
           Top = 30
-          Width = 720
+          Width = 690
           Anchors = [akTop, akLeft, akRight]
           AutoSize = False
-          BorderSpacing.Left = 15
+          BorderSpacing.Left = 30
           BorderSpacing.Top = 30
-          BorderSpacing.Right = 15
+          BorderSpacing.Right = 30
           Caption = 'It is recommended to set a password (and optionally a keyfile) to encrypt password list, in this way authentication will be required before opening the password manager.'
           ParentFont = False
           WordWrap = True
         end
         object EditUn7zaPW2: TEdit
-          AnchorSideTop.Control = LablePMHint
-          AnchorSideTop.Side = asrBottom
-          AnchorSideRight.Control = LablePMHint
+          AnchorSideLeft.Control = EditUn7zaPW
+          AnchorSideTop.Control = EditUn7zaPW
+          AnchorSideRight.Control = EditUn7zaPW
           AnchorSideRight.Side = asrBottom
-          Left = 200
+          AnchorSideBottom.Control = EditUn7zaPW
+          AnchorSideBottom.Side = asrBottom
+          Left = 220
           Height = 28
           Top = 155
-          Width = 535
-          Anchors = [akTop, akLeft, akRight]
-          BorderSpacing.Top = 30
+          Width = 500
+          Anchors = [akTop, akLeft, akRight, akBottom]
           EchoMode = emPassword
           ParentFont = False
           PasswordChar = '*'
@@ -292,15 +295,45 @@ object FormPM: TFormPM
           AnchorSideTop.Control = EditUn7zaPW1
           AnchorSideTop.Side = asrBottom
           AnchorSideRight.Control = ButtonEditName3
-          Left = 200
+          Left = 220
           Height = 28
           Top = 227
-          Width = 503
+          Width = 468
           Anchors = [akTop, akLeft, akRight]
           BorderSpacing.Top = 8
           ParentFont = False
           TabOrder = 5
           Visible = False
+        end
+        object PanelKF: TPanel
+          AnchorSideLeft.Control = EditName3
+          AnchorSideTop.Control = EditName3
+          AnchorSideRight.Control = ButtonEditName3
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = EditName3
+          AnchorSideBottom.Side = asrBottom
+          Left = 220
+          Height = 28
+          Top = 227
+          Width = 500
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BevelOuter = bvNone
+          ParentBackground = False
+          TabOrder = 6
+        end
+        object ButtonEditNamePw: TSpeedButton
+          AnchorSideTop.Control = EditUn7zaPW
+          AnchorSideRight.Control = EditUn7zaPW
+          AnchorSideBottom.Control = EditUn7zaPW
+          AnchorSideBottom.Side = asrBottom
+          Left = 188
+          Height = 28
+          Top = 155
+          Width = 32
+          Anchors = [akTop, akRight, akBottom]
+          BorderSpacing.InnerBorder = 5
+          Flat = True
+          OnClick = ButtonEditNamePwClick
         end
       end
     end
@@ -562,6 +595,13 @@ object FormPM: TFormPM
       Caption = 'Note/description'
       OnClick = mnoteClick
     end
+    object Separator1: TMenuItem
+      Caption = '-'
+    end
+    object MenuItemPR: TMenuItem
+      Caption = 'Rate password'
+      OnClick = MenuItemPRClick
+    end
     object mpmspacer2: TMenuItem
       Caption = '-'
     end
@@ -592,8 +632,8 @@ object FormPM: TFormPM
     end
   end
   object PopupMenupwm: TPopupMenu
-    Left = 210
-    Top = 430
+    Left = 384
+    Top = 140
     object mpwreset: TMenuItem
       Caption = 'Reset keyfile'
       OnClick = mpwresetClick
@@ -613,7 +653,19 @@ object FormPM: TFormPM
     Title = ' '
     FilterIndex = 0
     Options = [ofCreatePrompt, ofEnableSizing, ofViewDetail]
-    Left = 460
-    Top = 260
+    Left = 296
+    Top = 430
+  end
+  object PopupMenuPW: TPopupMenu
+    Left = 264
+    Top = 140
+    object MenuItemPWreset: TMenuItem
+      Caption = 'Reset'
+      OnClick = MenuItemPWresetClick
+    end
+    object MenuItemPRsingle: TMenuItem
+      Caption = 'Rate password'
+      OnClick = MenuItemPRsingleClick
+    end
   end
 end

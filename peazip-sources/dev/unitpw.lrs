@@ -30,26 +30,26 @@ LazarusResources.Add('TFormPW','FORMDATA',[
   +'F'#5'Width'#2'8'#7'Anchors'#11#5'akTop'#7'akRight'#0#7'Caption'#6#8'Confirm'
   +':'#0#0#5'TEdit'#10'EditPWpass'#21'AnchorSideTop.Control'#7#11'PanelPWOpen'
   +#23'AnchorSideRight.Control'#7#11'PanelPWOpen'#20'AnchorSideRight.Side'#7#9
-  +'asrBottom'#4'Left'#3#225#0#6'Height'#2#28#3'Top'#2#30#5'Width'#3#204#1#7'An'
+  +'asrBottom'#4'Left'#3#225#0#6'Height'#2#28#3'Top'#2#30#5'Width'#3#189#1#7'An'
   +'chors'#11#5'akTop'#6'akLeft'#7'akRight'#0#17'BorderSpacing.Top'#2#30#19'Bor'
-  +'derSpacing.Right'#2#15#8'EchoMode'#7#10'emPassword'#12'PasswordChar'#6#1'*'
+  +'derSpacing.Right'#2#30#8'EchoMode'#7#10'emPassword'#12'PasswordChar'#6#1'*'
   +#8'TabOrder'#2#0#8'OnChange'#7#16'EditPWpassChange'#10'OnKeyPress'#7#18'Edit'
   +'PWpassKeyPress'#0#0#5'TEdit'#13'EditPWkeyfile'#22'AnchorSideLeft.Control'#7
   +#10'EditPWpass'#21'AnchorSideTop.Control'#7#13'EditPWconfirm'#18'AnchorSideT'
   +'op.Side'#7#9'asrBottom'#23'AnchorSideRight.Control'#7#15'ButtonPWkeyfile'#4
-  +'Left'#3#225#0#6'Height'#2#28#3'Top'#2'f'#5'Width'#3#172#1#7'Anchors'#11#5'a'
+  +'Left'#3#225#0#6'Height'#2#28#3'Top'#2'f'#5'Width'#3#157#1#7'Anchors'#11#5'a'
   +'kTop'#6'akLeft'#7'akRight'#0#17'BorderSpacing.Top'#2#8#20'BorderSpacing.Bot'
-  +'tom'#2#8#8'TabOrder'#2#4#0#0#7'TButton'#15'ButtonPWkeyfile'#21'AnchorSideTo'
+  +'tom'#2#8#8'TabOrder'#2#3#0#0#7'TButton'#15'ButtonPWkeyfile'#21'AnchorSideTo'
   +'p.Control'#7#13'EditPWkeyfile'#23'AnchorSideRight.Control'#7#10'EditPWpass'
   +#20'AnchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#13'E'
-  +'ditPWkeyfile'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#3#141#2#6'He'
-  +'ight'#2#28#3'Top'#2'f'#5'Width'#2' '#7'Anchors'#11#5'akTop'#7'akRight'#8'ak'
-  +'Bottom'#0#25'BorderSpacing.InnerBorder'#2#5#7'Caption'#6#3'...'#9'PopupMenu'
-  +#7#11'PopupMenupw'#8'TabOrder'#2#3#7'OnClick'#7#20'ButtonPWkeyfileClick'#0#0
+  +'ditPWkeyfile'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#3'~'#2#6'Hei'
+  +'ght'#2#28#3'Top'#2'f'#5'Width'#2' '#7'Anchors'#11#5'akTop'#7'akRight'#8'akB'
+  +'ottom'#0#25'BorderSpacing.InnerBorder'#2#5#7'Caption'#6#3'...'#9'PopupMenu'
+  +#7#11'PopupMenupw'#8'TabOrder'#2#2#7'OnClick'#7#20'ButtonPWkeyfileClick'#0#0
   +#5'TEdit'#13'EditPWconfirm'#22'AnchorSideLeft.Control'#7#10'EditPWpass'#21'A'
   +'nchorSideTop.Control'#7#10'EditPWpass'#18'AnchorSideTop.Side'#7#9'asrBottom'
   +#23'AnchorSideRight.Control'#7#10'EditPWpass'#20'AnchorSideRight.Side'#7#9'a'
-  +'srBottom'#4'Left'#3#225#0#6'Height'#2#28#3'Top'#2'B'#5'Width'#3#204#1#7'Anc'
+  +'srBottom'#4'Left'#3#225#0#6'Height'#2#28#3'Top'#2'B'#5'Width'#3#189#1#7'Anc'
   +'hors'#11#5'akTop'#6'akLeft'#7'akRight'#0#17'BorderSpacing.Top'#2#8#8'EchoMo'
   +'de'#7#10'emPassword'#12'PasswordChar'#6#1'*'#8'TabOrder'#2#1#10'OnKeyPress'
   +#7#18'EditPWpassKeyPress'#0#0#12'TSpeedButton'#16'ButtonEditNamePw'#21'Ancho'
@@ -66,7 +66,7 @@ LazarusResources.Add('TFormPW','FORMDATA',[
   +#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#8'akBottom'#0#8'AutoSize'#9#18
   +'BorderSpacing.Left'#2#30#17'BorderSpacing.Top'#2#30#10'BevelOuter'#7#6'bvNo'
   ,'ne'#12'ClientHeight'#3#131#0#11'ClientWidth'#3#158#2#16'ParentBackground'#8
-  +#8'TabOrder'#2#5#0#9'TCheckBox'#19'CheckBoxShowPWField'#22'AnchorSideLeft.Co'
+  +#8'TabOrder'#2#4#0#9'TCheckBox'#19'CheckBoxShowPWField'#22'AnchorSideLeft.Co'
   +'ntrol'#7#13'CheckBoxEncFn'#21'AnchorSideTop.Control'#7#14'CheckBoxKeepPW'#18
   +'AnchorSideTop.Side'#7#9'asrBottom'#4'Left'#2#0#6'Height'#2#24#3'Top'#2'T'#5
   +'Width'#2'|'#17'BorderSpacing.Top'#2#4#7'Caption'#6#13'Show password'#8'TabO'
@@ -87,9 +87,9 @@ LazarusResources.Add('TFormPW','FORMDATA',[
   +'SideTop.Control'#7#13'EditPWkeyfile'#23'AnchorSideRight.Control'#7#15'Butto'
   +'nPWkeyfile'#20'AnchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Con'
   +'trol'#7#13'EditPWkeyfile'#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#3
-  +#225#0#6'Height'#2#28#3'Top'#2'f'#5'Width'#3#204#1#7'Anchors'#11#5'akTop'#6
+  +#225#0#6'Height'#2#28#3'Top'#2'f'#5'Width'#3#189#1#7'Anchors'#11#5'akTop'#6
   +'akLeft'#7'akRight'#8'akBottom'#0#10'BevelOuter'#7#6'bvNone'#16'ParentBackgr'
-  +'ound'#8#8'TabOrder'#2#2#0#0#0#12'TButtonPanel'#13'ButtonPanelPW'#22'AnchorS'
+  +'ound'#8#8'TabOrder'#2#5#0#0#0#12'TButtonPanel'#13'ButtonPanelPW'#22'AnchorS'
   +'ideLeft.Control'#7#5'Owner'#23'AnchorSideRight.Control'#7#5'Owner'#20'Ancho'
   +'rSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#5'Owner'#21
   +'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#2#15#6'Height'#2#30#3'Top'#3
@@ -112,14 +112,15 @@ LazarusResources.Add('TFormPW','FORMDATA',[
   +'pwexploreClick'#0#0#0#11'TOpenDialog'#12'OpenDialogKF'#5'Title'#6#9'Open fi'
   +'le'#11'FilterIndex'#2#0#4'Left'#3#204#1#3'Top'#2'P'#0#0#10'TPopupMenu'#14'P'
   +'opupMenupwman'#4'Left'#3#130#0#3'Top'#2#20#0#9'TMenuItem'#9'mpwmreset'#7'Ca'
-  +'ption'#6#5'Reset'#7'OnClick'#7#14'mpwmresetClick'#0#0#9'TMenuItem'#10'mpwsp'
-  +'acer1'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#7'mpwman1'#7'OnClick'#7#12'mpwman'
-  +'1Click'#0#0#9'TMenuItem'#7'mpwman2'#7'OnClick'#7#12'mpwman2Click'#0#0#9'TMe'
-  +'nuItem'#7'mpwman3'#7'OnClick'#7#12'mpwman3Click'#0#0#9'TMenuItem'#7'mpwman4'
-  +#7'OnClick'#7#12'mpwman4Click'#0#0#9'TMenuItem'#7'mpwman5'#7'OnClick'#7#12'm'
-  +'pwman5Click'#0#0#9'TMenuItem'#7'mpwman6'#7'OnClick'#7#12'mpwman6Click'#0#0#9
-  +'TMenuItem'#7'mpwman7'#7'OnClick'#7#12'mpwman7Click'#0#0#9'TMenuItem'#7'mpwm'
-  +'an8'#7'OnClick'#7#12'mpwman8Click'#0#0#9'TMenuItem'#10'mpwspacer2'#7'Captio'
-  +'n'#6#1'-'#0#0#9'TMenuItem'#6'mpwman'#7'Caption'#6#16'Password manager'#7'On'
-  +'Click'#7#11'mpwmanClick'#0#0#0#0
+  +'ption'#6#5'Reset'#7'OnClick'#7#14'mpwmresetClick'#0#0#9'TMenuItem'#5'mpwpr'
+  +#7'Caption'#6#13'Rate password'#7'OnClick'#7#10'mpwprClick'#0#0#9'TMenuItem'
+  +#10'mpwspacer1'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#7'mpwman1'#7'OnClick'#7#12
+  +'mpwman1Click'#0#0#9'TMenuItem'#7'mpwman2'#7'OnClick'#7#12'mpwman2Click'#0#0
+  +#9'TMenuItem'#7'mpwman3'#7'OnClick'#7#12'mpwman3Click'#0#0#9'TMenuItem'#7'mp'
+  +'wman4'#7'OnClick'#7#12'mpwman4Click'#0#0#9'TMenuItem'#7'mpwman5'#7'OnClick'
+  +#7#12'mpwman5Click'#0#0#9'TMenuItem'#7'mpwman6'#7'OnClick'#7#12'mpwman6Click'
+  +#0#0#9'TMenuItem'#7'mpwman7'#7'OnClick'#7#12'mpwman7Click'#0#0#9'TMenuItem'#7
+  +'mpwman8'#7'OnClick'#7#12'mpwman8Click'#0#0#9'TMenuItem'#10'mpwspacer2'#7'Ca'
+  +'ption'#6#1'-'#0#0#9'TMenuItem'#6'mpwman'#7'Caption'#6#16'Password manager'#7
+  +'OnClick'#7#11'mpwmanClick'#0#0#0#0
 ]);

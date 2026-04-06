@@ -37,7 +37,7 @@ object FormInput: TFormInput
       AnchorSideTop.Side = asrBottom
       AnchorSideBottom.Control = PanelInput
       AnchorSideBottom.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 24
       Top = 152
       Width = 254
@@ -51,7 +51,7 @@ object FormInput: TFormInput
       AnchorSideLeft.Control = Editinputquery
       AnchorSideTop.Control = Editinputquery
       AnchorSideTop.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 1
       Top = 73
       Width = 1
@@ -62,7 +62,7 @@ object FormInput: TFormInput
       AnchorSideTop.Control = Editinputquery
       AnchorSideTop.Side = asrBottom
       Cursor = crHandPoint
-      Left = 15
+      Left = 30
       Height = 20
       Top = 88
       Width = 56
@@ -78,7 +78,7 @@ object FormInput: TFormInput
       AnchorSideTop.Control = Labelinputspacer1
       AnchorSideTop.Side = asrCenter
       Cursor = crHandPoint
-      Left = 107
+      Left = 122
       Height = 20
       Top = 88
       Width = 48
@@ -95,7 +95,7 @@ object FormInput: TFormInput
       AnchorSideTop.Control = Labelinputspacer1
       AnchorSideTop.Side = asrCenter
       Cursor = crHandPoint
-      Left = 191
+      Left = 206
       Height = 20
       Top = 88
       Width = 74
@@ -111,7 +111,7 @@ object FormInput: TFormInput
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = LabelLow
       AnchorSideTop.Side = asrCenter
-      Left = 86
+      Left = 101
       Height = 20
       Top = 88
       Width = 6
@@ -124,7 +124,7 @@ object FormInput: TFormInput
       AnchorSideTop.Control = LabelTimestamp
       AnchorSideTop.Side = asrBottom
       Cursor = crHandPoint
-      Left = 15
+      Left = 30
       Height = 20
       Top = 123
       Width = 157
@@ -139,7 +139,7 @@ object FormInput: TFormInput
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = Labelappdirn
       AnchorSideTop.Side = asrCenter
-      Left = 187
+      Left = 202
       Height = 20
       Top = 123
       Width = 6
@@ -153,7 +153,7 @@ object FormInput: TFormInput
       AnchorSideTop.Control = LabelTimestamp
       AnchorSideTop.Side = asrBottom
       Cursor = crHandPoint
-      Left = 208
+      Left = 223
       Height = 20
       Top = 123
       Width = 159
@@ -169,7 +169,7 @@ object FormInput: TFormInput
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = LabelLow
       AnchorSideTop.Side = asrCenter
-      Left = 170
+      Left = 185
       Height = 20
       Top = 88
       Width = 6
@@ -182,16 +182,16 @@ object FormInput: TFormInput
       AnchorSideTop.Control = PanelInput
       AnchorSideRight.Control = PanelInput
       AnchorSideRight.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 28
       Top = 30
-      Width = 670
+      Width = 640
       Anchors = [akTop, akLeft, akRight]
       AutoComplete = True
       AutoCompleteText = [cbactEnabled, cbactEndOfLineComplete, cbactSearchAscending]
-      BorderSpacing.Left = 15
+      BorderSpacing.Left = 30
       BorderSpacing.Top = 30
-      BorderSpacing.Right = 15
+      BorderSpacing.Right = 30
       ItemHeight = 20
       TabOrder = 0
     end
@@ -201,7 +201,7 @@ object FormInput: TFormInput
       AnchorSideTop.Control = Labelinputspacer1
       AnchorSideTop.Side = asrCenter
       Cursor = crHandPoint
-      Left = 301
+      Left = 316
       Height = 20
       Top = 88
       Width = 55
@@ -218,7 +218,7 @@ object FormInput: TFormInput
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = LabelLow
       AnchorSideTop.Side = asrCenter
-      Left = 280
+      Left = 295
       Height = 20
       Top = 88
       Width = 6

@@ -10,7 +10,7 @@ LazarusResources.Add('TFormDlg','FORMDATA',[
   +'ol'#7#8'ImageDlg'#19'AnchorSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.C'
   +'ontrol'#7#5'Owner'#23'AnchorSideRight.Control'#7#5'Owner'#20'AnchorSideRigh'
   +'t.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#8'PanelDlg'#4'Left'#2
-  +'F'#6'Height'#2'`'#3'Top'#2#30#5'Width'#3'X'#2#7'Anchors'#11#5'akTop'#6'akLe'
+  +'U'#6'Height'#2'`'#3'Top'#2#30#5'Width'#3'I'#2#7'Anchors'#11#5'akTop'#6'akLe'
   +'ft'#7'akRight'#8'akBottom'#0#18'BorderSpacing.Left'#2#15#17'BorderSpacing.T'
   +'op'#2#30#19'BorderSpacing.Right'#2#30#20'BorderSpacing.Bottom'#2#30#7'Capti'
   +'on'#6#1' '#8'WordWrap'#9#0#0#6'TPanel'#8'PanelDlg'#22'AnchorSideLeft.Contro'
@@ -56,7 +56,7 @@ LazarusResources.Add('TFormDlg','FORMDATA',[
   +#8'AutoSize'#9#18'BorderSpacing.Left'#2#8#20'BorderSpacing.Bottom'#2#15#7'Ca'
   +'ption'#6#10'Yes to all'#20'Constraints.MinWidth'#2'n'#11'ModalResult'#2#10#8
   +'TabOrder'#2#1#0#0#0#6'TImage'#8'ImageDlg'#22'AnchorSideLeft.Control'#7#5'Ow'
-  +'ner'#21'AnchorSideTop.Control'#7#5'Owner'#4'Left'#2#15#6'Height'#2'('#3'Top'
-  +#2#30#5'Width'#2'('#18'BorderSpacing.Left'#2#15#17'BorderSpacing.Top'#2#30#11
+  +'ner'#21'AnchorSideTop.Control'#7#5'Owner'#4'Left'#2#30#6'Height'#2'('#3'Top'
+  +#2#30#5'Width'#2'('#18'BorderSpacing.Left'#2#30#17'BorderSpacing.Top'#2#30#11
   +'Transparent'#9#0#0#0
 ]);

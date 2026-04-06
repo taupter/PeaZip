@@ -31,6 +31,7 @@ type
     LabelPWpass: TLabel;
     LabelPWkeyfile: TLabel;
     LabelPWconfirm: TLabel;
+    mpwpr: TMenuItem;
     mpwspacer2: TMenuItem;
     PanelKF: TPanel;
     PanelPWOpen1: TPanel;
@@ -71,6 +72,7 @@ type
     procedure mpwman8Click(Sender: TObject);
     procedure mpwmanClick(Sender: TObject);
     procedure mpwmresetClick(Sender: TObject);
+    procedure mpwprClick(Sender: TObject);
     procedure mpwresetClick(Sender: TObject);
   private
     { private declarations }
@@ -86,7 +88,7 @@ const
 var
   FormPW: TFormPW;
   desk_env,showpwfield:byte;
-  caption_build,delimiter,wincomspec,winver,validate_txt,txt_pw:ansistring;
+  caption_build,delimiter,wincomspec,winver,validate_txt,txt_pw,txt_pr1,txt_pr2,txt_pr3,txt_pr4:ansistring;
   activelabel_pw:TLabel;
 
 implementation
@@ -291,6 +293,12 @@ begin
 EditPWpass.Text:='';
 EditPWconfirm.Text:='';
 EditPWkeyfile.Text:='';
+end;
+
+procedure TFormPW.mpwprClick(Sender: TObject);
+begin
+if FormPW.EditPWpass.Caption='' then exit;
+pMessageInfoOK(ratepw(FormPW.EditPWpass.Caption,txt_pr1,txt_pr2,txt_pr3,txt_pr4));
 end;
 
 procedure TFormPW.mpwresetClick(Sender: TObject);

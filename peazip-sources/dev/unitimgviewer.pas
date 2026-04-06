@@ -390,21 +390,21 @@ case imgviewerzoom of
         zoomedimgviewersizeh:=sheight;
         zoomedimgviewersizew:=(imgviewersizew*sheight) div imgviewersizeh;
         end;
-     zoomstring:=' '+FormImgViewer.mzoomfit.Caption;
+     zoomstring:=FormImgViewer.mzoomfit.Caption;
      imgviewerzoom:=10;
      end;
  31:
    begin
    zoomedimgviewersizeh:=sheight;
    zoomedimgviewersizew:=(imgviewersizew*sheight) div imgviewersizeh;
-   zoomstring:=' '+FormImgViewer.mzoomfith.Caption;
+   zoomstring:=FormImgViewer.mzoomfith.Caption;
    imgviewerzoom:=10;
    end;
  32:
    begin
    zoomedimgviewersizew:=swidth;
    zoomedimgviewersizeh:=(imgviewersizeh*swidth) div imgviewersizew;
-   zoomstring:=' '+FormImgViewer.mzoomfitw.Caption;
+   zoomstring:=FormImgViewer.mzoomfitw.Caption;
    imgviewerzoom:=10;
    end;
   33:
@@ -426,7 +426,7 @@ case imgviewerzoom of
        zoomstring:='100%';
        end
     else
-       zoomstring:=' '+FormImgViewer.mzoomfit.Caption;
+       zoomstring:=FormImgViewer.mzoomfit.Caption;
     imgviewerzoom:=10;
     end;
  end;

@@ -17,6 +17,7 @@ type
   { TFormPM }
 
   TFormPM = class(TForm)
+    ButtonEditNamePw: TSpeedButton;
     LabelPMadd: TLabel;
     LabelPMremove: TLabel;
     ButtonEditName3: TButton;
@@ -35,8 +36,14 @@ type
     LableListPath3: TLabel;
     LablePMHint: TLabel;
     MemoPM: TMemo;
+    MenuItemPWreset: TMenuItem;
+    MenuItemPRsingle: TMenuItem;
+    PopupMenuPW: TPopupMenu;
+    Separator1: TMenuItem;
+    MenuItemPR: TMenuItem;
     mpmspacer3: TMenuItem;
     PageControlPM: TPanel;
+    PanelKF: TPanel;
     PanelPWMaster: TPanel;
     PanelTitlePMTabAlign: TPanel;
     PanelTitlePM: TPanel;
@@ -65,6 +72,7 @@ type
     StringGridPM1: TStringGrid;
     TabSheetMasterPW: TPanel;
     TabSheetPWlist: TPanel;
+    procedure ButtonEditNamePwClick(Sender: TObject);
     procedure LabelPMaddClick(Sender: TObject);
     procedure LabelPMremoveClick(Sender: TObject);
     procedure ButtonEditName3Click(Sender: TObject);
@@ -77,6 +85,10 @@ type
     procedure LabelTitlePM2Click(Sender: TObject);
     procedure LabelTitlePM2MouseEnter(Sender: TObject);
     procedure LabelTitlePM2MouseLeave(Sender: TObject);
+    procedure LableListPath2Click(Sender: TObject);
+    procedure MenuItemPRClick(Sender: TObject);
+    procedure MenuItemPRsingleClick(Sender: TObject);
+    procedure MenuItemPWresetClick(Sender: TObject);
     procedure mnoteClick(Sender: TObject);
     procedure mpwClick(Sender: TObject);
     procedure mnewClick(Sender: TObject);
@@ -109,7 +121,7 @@ var
   Column,Row,alttabstyle,highlighttabs,previndex:integer;
   desk_env:byte;
   pmfilet:text;
-  txt_clear:AnsiString;
+  txt_clear,txt_pr1,txt_pr2,txt_pr3,txt_pr4:AnsiString;
   activelabel_pm:TLabel;
   tabpencol,tablowcol,tabbrushcol,tabbrushhighcol:tcolor;
 
@@ -317,6 +329,32 @@ begin
 if (alttabstyle<>1) and (alttabstyle<>4) then exitlabel_pm(LabelTitlePM2,ShapeTitlePMb2) else exitlabel_pm(LabelTitlePM2,Shapelinkpm2);
 end;
 
+procedure TFormPM.LableListPath2Click(Sender: TObject);
+begin
+PanelKF.Visible:=not(PanelKF.Visible);
+end;
+
+procedure TFormPM.MenuItemPRClick(Sender: TObject);
+begin
+if FormPM.StringGridPM.Row=0 then exit;
+pMessageInfoOK(ratepw(FormPM.StringGridPM.Cells[1,FormPM.StringGridPM.Row],txt_pr1,txt_pr2,txt_pr3,txt_pr4));
+end;
+
+procedure TFormPM.MenuItemPRsingleClick(Sender: TObject);
+begin
+if FormPM.EditUn7zaPW.Caption='' then exit;
+pMessageInfoOK(ratepw(FormPM.EditUn7zaPW.Caption,txt_pr1,txt_pr2,txt_pr3,txt_pr4));
+end;
+
+procedure TFormPM.MenuItemPWresetClick(Sender: TObject);
+begin
+EditUn7zaPW.Text:='';
+EditUn7zaPW1.Text:='';
+EditUn7zaPW2.Text:='';
+EditName3.Text:='';
+EditName4.Text:='';
+end;
+
 procedure TFormPM.ButtonEditName3Click(Sender: TObject);
 begin
 if OpenDialogKFM.Execute then
@@ -341,6 +379,15 @@ procedure TFormPM.LabelPMaddClick(Sender: TObject);
 begin
 if (alttabstyle<>1) and (alttabstyle<>4) then clicklabel_pm(LabelTitlePM1,ShapeTitlePMb1) else clicklabel_pm(LabelTitlePM1,Shapelinkpm1);
 new_pm;
+end;
+
+procedure TFormPM.ButtonEditNamePwClick(Sender: TObject);
+var p:tpoint;
+begin
+p.x:=buttoneditnamepw.left;
+p.y:=PageControlPM.top+buttoneditnamepw.top+buttoneditnamepw.height;
+p:=clienttoscreen(p);
+popupmenupw.popup(p.x,p.y);
 end;
 
 procedure TFormPM.LabelPMremoveClick(Sender: TObject);

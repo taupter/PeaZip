@@ -30,6 +30,7 @@ unit img_utils;
  0.19     20191125  G.Tani      Improved and extended functions related to load and resize transparent bitmaps
  0.20     20211012  G.Tani      Added temperature parameter to modpropcolor to create warmer or colder shades of color
  0.21     20220810  G.Tani      Modified color temperature scaling
+ 0.22     20260219  G.Tani      Added alternative rendering routines with custom interpolation modes to resize graphic
 
 (C) Copyright 2010 Giorgio Tani giorgio.tani.software@gmail.com
 The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
@@ -54,7 +55,7 @@ The program is released under GNU LGPL http://www.gnu.org/licenses/lgpl.txt
 
 interface
 
-uses {$IFDEF MSWINDOWS}Windows,{$ENDIF} Classes, SysUtils, Forms, ExtCtrls, Graphics {$IFDEF MSWINDOWS}, Shellapi, Activex{$ENDIF};
+uses {$IFDEF MSWINDOWS}Windows,{$ENDIF} Classes, SysUtils, Forms, ExtCtrls, Graphics {$IFDEF MSWINDOWS}, Shellapi, Activex{$ENDIF},LCLType, LazCanvas, IntfGraphics;
 
 type
    TFoundList = array of ansistring; //dynamic array of ansistring, each time a new file is found new space is allocated (function rList)
@@ -95,6 +96,7 @@ DECO_SPACE = 4; //6 px empty border
 
 var
 relwindowcolor: TColor;
+renderinterpolation:integer;
 
 implementation
 
@@ -124,6 +126,40 @@ case sl of
    '.tif','.tiff': result:=true
    else result:=false;
 end;
+end;
+
+//stretch source bitmap into w h sized dest bitmap, can then be copied in desired position in larger bitmap with bitmap.Canvas.Draw to preserve spacing
+//can help adapting the look of icons on some widgetsets, using a sharp or soft interpolation algorithm instead of the native one (standard stretchdraw)
+procedure StretchDrawBitmapToBitmap(SourceBitmap, DestBitmap: TBitmap; w,h:integer);
+var
+  DestIntfImage, SourceIntfImage: TLazIntfImage;
+  DestCanvas: TLazCanvas;
+begin
+  DestIntfImage := TLazIntfImage.Create(0, 0);
+  try
+    DestIntfImage.LoadFromBitmap(DestBitmap.Handle, 0);
+    DestCanvas := TLazCanvas.Create(DestIntfImage);
+    try
+      SourceIntfImage := TLazIntfImage.Create(0, 0);
+      try
+        SourceIntfImage.LoadFromBitmap(SourceBitmap.Handle, 0);
+        if renderinterpolation=1 then
+           DestCanvas.Interpolation := TFPSharpInterpolation.Create;
+        try
+          DestCanvas.StretchDraw(0, 0, w, h, SourceIntfImage);
+          DestBitmap.LoadFromIntfImage(DestIntfImage);
+        finally
+          DestCanvas.Interpolation.Free;
+        end;
+      finally
+        SourceIntfImage.Free;
+      end;
+    finally
+      DestCanvas.Free;
+    end;
+  finally
+    DestIntfImage.Free;
+  end;
 end;
 
 procedure autoscale_image(aform:Tform; var aimage:Timage; var ascale,iscale:double);
@@ -179,7 +215,7 @@ end;
 procedure scale_bitmap(var abitmap:tbitmap; isize, deco:integer; var ascale:double);
 //scale image (keeping in account border size), place the bitmap centered in a square of given size
 var
-  iwidth,iheight : Integer;
+  iwidth,iheight,w,h : Integer;
   rect : TRect;
   bbitmap:tbitmap;
 begin
@@ -194,10 +230,12 @@ begin
 
    iwidth:=abitmap.Width;
    iheight:=abitmap.Height;
-   rect.Left := (isize-round(iwidth*ascale)) div 2;
-   rect.Top := (isize-round(iheight*ascale)) div 2;
-   rect.Right:=rect.Left+Round(iwidth*ascale);
-   rect.Bottom:=rect.Top+Round(iheight*ascale);
+   w:=round(iwidth*ascale);
+   h:=round(iheight*ascale);
+   rect.Left := (isize-w) div 2;
+   rect.Top := (isize-h) div 2;
+   rect.Right:=rect.Left+w;
+   rect.Bottom:=rect.Top+h;
 
    if deco=DECO_SHADOW then
    begin
@@ -419,21 +457,34 @@ rect.Left := 0;
 rect.Top := 0;
 rect.Right:=wsize;
 rect.Bottom:=hsize;
-bbitmap.Canvas.StretchDraw(rect, abitmap);
+if renderinterpolation=0 then
+   bbitmap.Canvas.StretchDraw(rect, abitmap)
+else
+   StretchDrawBitmapToBitmap(abitmap,bbitmap,wsize,hsize);
 abitmap.Assign(bbitmap);
+{$IFDEF LCLGTK2}
+if renderinterpolation<>0 then //on GTK2 this method seems to always apply white background
+   begin
+   abitmap.Transparent:=true;
+   abitmap.TransparentColor:=clWhite;
+   end;
+{$ENDIF}
 bbitmap.free;
 result:=0;
 end;
 
 procedure get_pformscaling(var refsize, qscale, qscaleimages:integer);
+//scale accordingly to system metrics, jumping to scaling levels which can work nice as multipliers
 begin
-   if refsize<3 then refsize:=25;
-   qscale:=(100000*refsize) div 25000;
-   if qscale<110 then qscale:=100 //small icons = 16px
+if refsize<3 then refsize:=25;
+qscale:=(100000*refsize) div 25000;
+if qscale<110 then qscale:=100 //small icons = 16px
+else
+   if qscale<135 then qscale:=125 //20
    else
-      if qscale<135 then qscale:=125 //20
+      if qscale<160 then qscale:=150 //24
       else
-         if qscale<165 then qscale:=150 //24
+         if qscale<185 then qscale:=175 //28
          else
             if qscale<220 then qscale:=200 //32
             else
@@ -448,12 +499,10 @@ begin
                            if qscale<660 then qscale:=600 //96
                            else
                               if qscale<880 then qscale:=800 //128
-                              else qscale:=1000; //160
+                              else
+                                 if qscale<1100 then qscale:=1000; //160
+                                 ////no upper limitation if scaled over 10x
 qscaleimages:=qscale;
-{case qscaleimages of //avoid some multiples that usually does not scale well, falling back to alternative similar scaling factor
-   125: qscaleimages:=115;
-   250: qscaleimages:=200;
-end;}
 end;
 
 function setpbitmap(var abitmap:TBitmap; virtualsize:integer):integer;//wrapper for resize_bitmap for square icons
@@ -678,6 +727,29 @@ begin
   cbtot:=(r+g+b) div 3;
   result := cbtot;
 end;
+
+{
+//limited usefulness: getwindowdc is currently (Laz 4.2) not cross platform and does not work correctly in Windows (unless taking client area only), some systems now prevents screenshots, the action needs to be implemented on all forms to be used while main form is hidden or modal form is in foreground, and app menu get hidden anyway
+//uses LCLIntf
+procedure takescreenshot(s:AnsiString);
+var
+  ScreenDC: HDC;
+  aimage:Timage;
+  ForegroundWindow: HWND;
+  WindowRect: TRect;
+begin
+  Application.ProcessMessages;
+  aimage:=TImage.Create(nil);
+  ScreenDC := GetDC(0);
+  try
+    aimage.Picture.Bitmap.LoadFromDevice(ScreenDC);
+    aimage.Picture.SaveToFile(s+formatdatetime('yyyymmdd_hh.nn.ss.ms_',now)+'screenshot.png');
+  finally
+    aimage.Free;
+    ReleaseDC(0, ScreenDC);
+  end;
+end;
+}
 
 end.
 

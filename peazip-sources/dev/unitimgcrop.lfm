@@ -72,11 +72,11 @@ object FormImgCrop: TFormImgCrop
       AnchorSideLeft.Control = PanelCrop
       AnchorSideTop.Control = SpinEditL
       AnchorSideTop.Side = asrCenter
-      Left = 15
+      Left = 30
       Height = 20
       Top = 92
       Width = 25
-      BorderSpacing.Left = 15
+      BorderSpacing.Left = 30
       Caption = 'Left'
     end
     object SpinEditL: TSpinEdit
@@ -84,7 +84,7 @@ object FormImgCrop: TFormImgCrop
       AnchorSideLeft.Side = asrBottom
       AnchorSideTop.Control = SpinEditT
       AnchorSideTop.Side = asrBottom
-      Left = 48
+      Left = 63
       Height = 28
       Top = 88
       Width = 115
@@ -102,13 +102,13 @@ object FormImgCrop: TFormImgCrop
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelCrop
       AnchorSideRight.Side = asrBottom
-      Left = 470
+      Left = 455
       Height = 28
       Top = 88
       Width = 115
       Anchors = [akTop, akRight]
       BorderSpacing.Top = 30
-      BorderSpacing.Right = 15
+      BorderSpacing.Right = 30
       MaxValue = 64000
       TabOrder = 3
       Value = 10
@@ -118,7 +118,7 @@ object FormImgCrop: TFormImgCrop
       AnchorSideTop.Control = SpinEditR
       AnchorSideTop.Side = asrCenter
       AnchorSideRight.Control = SpinEditR
-      Left = 427
+      Left = 412
       Height = 20
       Top = 92
       Width = 35

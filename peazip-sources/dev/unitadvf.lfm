@@ -50,17 +50,17 @@ object FormAdvf: TFormAdvf
       AnchorSideLeft.Control = PanelAdvf
       AnchorSideTop.Control = CheckBoxAdvRecurse
       AnchorSideTop.Side = asrCenter
-      Left = 15
+      Left = 30
       Height = 20
       Top = 32
       Width = 80
-      BorderSpacing.Left = 15
+      BorderSpacing.Left = 30
       Caption = 'Include only'
     end
     object CheckBoxAdvRecurse: TCheckBox
       AnchorSideRight.Control = MemoAdvInclude
       AnchorSideRight.Side = asrBottom
-      Left = 504
+      Left = 489
       Height = 24
       Top = 30
       Width = 231
@@ -77,13 +77,13 @@ object FormAdvf: TFormAdvf
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = PanelAdvf
       AnchorSideRight.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 90
       Top = 62
-      Width = 720
+      Width = 690
       Anchors = [akTop, akLeft, akRight]
       BorderSpacing.Top = 8
-      BorderSpacing.Right = 15
+      BorderSpacing.Right = 30
       Constraints.MinHeight = 90
       ParentColor = True
       ScrollBars = ssAutoBoth
@@ -93,7 +93,7 @@ object FormAdvf: TFormAdvf
       AnchorSideLeft.Control = LabelAdvInclude
       AnchorSideTop.Control = CheckBoxAdvRecurse1
       AnchorSideTop.Side = asrCenter
-      Left = 15
+      Left = 30
       Height = 20
       Top = 306
       Width = 64
@@ -104,7 +104,7 @@ object FormAdvf: TFormAdvf
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = MemoAdvInclude
       AnchorSideRight.Side = asrBottom
-      Left = 501
+      Left = 486
       Height = 24
       Top = 304
       Width = 234
@@ -121,10 +121,10 @@ object FormAdvf: TFormAdvf
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = MemoAdvInclude
       AnchorSideRight.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 90
       Top = 336
-      Width = 720
+      Width = 690
       Anchors = [akTop, akLeft, akRight]
       BorderSpacing.Top = 8
       Constraints.MinHeight = 90
@@ -138,10 +138,10 @@ object FormAdvf: TFormAdvf
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = MemoAdvInclude
       AnchorSideRight.Side = asrBottom
-      Left = 15
+      Left = 30
       Height = 90
       Top = 199
-      Width = 720
+      Width = 690
       Anchors = [akTop, akLeft, akRight]
       BorderSpacing.Top = 8
       Constraints.MinHeight = 90
@@ -153,7 +153,7 @@ object FormAdvf: TFormAdvf
       AnchorSideLeft.Control = LabelAdvInclude
       AnchorSideTop.Control = CheckBoxAdvRecurseAlso
       AnchorSideTop.Side = asrCenter
-      Left = 15
+      Left = 30
       Height = 20
       Top = 169
       Width = 79
@@ -164,7 +164,7 @@ object FormAdvf: TFormAdvf
       AnchorSideTop.Side = asrBottom
       AnchorSideRight.Control = MemoAdvInclude
       AnchorSideRight.Side = asrBottom
-      Left = 504
+      Left = 489
       Height = 24
       Top = 167
       Width = 231

@@ -241,6 +241,7 @@ unit pea; //Main form of pea executable, providing GUI to file tools, pea/unpea 
                                 Hex preview uses monotype font set in Text preview
                                 Updated pea, rfs, and unpea GUI
                                 Optimized startup sequence
+ 1.30     20260401  G.Tani      Recompiled with updated rendering routines, fixes
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 
@@ -430,7 +431,7 @@ type
   Type fileofbyte = file of byte;
 
 const
-  P_RELEASE          = '1.29'; //declares release version for the entire build
+  P_RELEASE          = '1.30'; //declares release version for the entire build
   //PEAUTILS_RELEASE   = '1.3'; //declares for reference last peautils release
   PEA_FILEFORMAT_VER = 1;
   PEA_FILEFORMAT_REV = 6; //version and revision declared to be implemented must match with the ones in pea_utils, otherwise a warning will be raised (form caption)
@@ -472,7 +473,7 @@ var
    obj_tags,exp_obj_tags,volume_tags,exp_volume_tags:TFoundListArray64;
    Bfd,Bmail,Bhd,Bdvd,Binfo,Blog,Bok,Bcancel,Butils,Badmin:TBitmap;
    fshown:boolean;
-   pmode:integer;
+   pmode,renderinterpolation:integer;
 
    //theming
    conf,conftextpreview:text;
@@ -8371,6 +8372,14 @@ end;
 
 procedure readconftextpreview;
 begin
+//default values
+textwrap:='w';
+textcase:='s';
+textbold:='b';
+textmonotype:='m';
+textmfont:='';
+textzoom:=100;
+if FileExists(confpath+'textpreview.txt') then
 try
 assignfile(conftextpreview,(confpath+'textpreview.txt'));
 filemode:=0;
@@ -8384,14 +8393,10 @@ readln(conftextpreview,UnitReport.textmfont);
 readln(conftextpreview,dummy); UnitReport.textzoom:=strtoint(dummy);
 CloseFile(conftextpreview);
 except
-//default values
-textwrap:='w';
-textcase:='s';
-textbold:='b';
-textmonotype:='m';
-textmfont:='';
-textzoom:=100;
+try
 CloseFile(conftextpreview);
+except
+end;
 end;
 end;
 
@@ -8472,8 +8477,9 @@ try
    readln(conf,dummy); pzooming:=strtoint(dummy);
    readln(conf,dummy); pspacing:=strtoint(dummy);
    readln(conf,dummy); temperature:=strtoint(dummy);
-   readconf_relativeline(3,dummy); try pmode:=strtoint(dummy); except pmode:=0; end; list_utils.pmode:=pmode;
-   readconf_relativeline(2,dummy); closepolicy:=strtoint(dummy);
+   readconf_relativeline(5,dummy); closepolicy:=strtoint(dummy);
+   readconf_relativeline(42,dummy); try pmode:=strtoint(dummy); except pmode:=0; end; list_utils.pmode:=pmode;
+   readconf_relativeline(18,dummy); try renderinterpolation:=strtoint(dummy); except renderinterpolation:=0; end; img_utils.renderinterpolation:=renderinterpolation;
    CloseFile(conf);
    if opacity<0 then opacity:=0;
    if opacity>100 then opacity:=100;
@@ -8568,7 +8574,7 @@ Width:=560*qscale div 100;
 Height:=270*qscale div 100;
 FormReport.Width:=800*qscale div 100;
 FormReport.Height:=420*qscale div 100;
-qscale:=(qscale*pzooming) div 100;
+//qscale:=(qscale*pzooming) div 100;
 qscaleimages:=(qscaleimages*pzooming) div 100;
 //tabs
 tabheight:=36*qscale div 100;
