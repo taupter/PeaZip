@@ -1,12 +1,25 @@
 ﻿=== PeaZip language file ===
-English
-10.9
+Portuguese (Brazil)
+11.0
 Translated by: Giorgio Tani
 Last rev. by: Giorgio Tani
 Last rev.: 20260114
 
 === PeaZip text group ===
 
+txt_11_0_adv: Advanced and format-specific options
+txt_11_0_bt: Batch test archives
+txt_11_0_good: Good
+txt_11_0_items: items
+txt_11_0_native: Native
+txt_11_0_pr: Rate password entropy
+txt_11_0_rendering: Rendering
+txt_11_0_sch: Schedule execution of the task defined in the GUI as CLI script
+txt_11_0_sharp: Sharp
+txt_11_0_soft: Soft
+txt_11_0_strong: Strong
+txt_11_0_vw: Very weak
+txt_11_0_w: Weak
 txt_10_9_deletearchive: Excluir arquivo
 txt_10_9_kfl: Tamanho do arquivo-chave limitado aos primeiros 100 MB
 txt_10_9_mb: Clique no botão do meio do mouse
