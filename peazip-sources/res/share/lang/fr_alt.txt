@@ -3,23 +3,23 @@ Français
 11.0
 Translated by: Jean-Michel Coinus
 Last rev. by: Jean-Michel Coinus
-Last rev.: 20260207
+Last rev.: 20260406
 
 === PeaZip text group ===
 
-txt_11_0_adv: Advanced and format-specific options
-txt_11_0_bt: Batch test archives
-txt_11_0_good: Good
-txt_11_0_items: items
-txt_11_0_native: Native
-txt_11_0_pr: Rate password entropy
-txt_11_0_rendering: Rendering
-txt_11_0_sch: Schedule execution of the task defined in the GUI as CLI script
-txt_11_0_sharp: Sharp
-txt_11_0_soft: Soft
-txt_11_0_strong: Strong
-txt_11_0_vw: Very weak
-txt_11_0_w: Weak
+txt_11_0_adv: Avancé et options spécifiques au format
+txt_11_0_bt: Test d'archives par lot
+txt_11_0_good: Bon
+txt_11_0_items: éléments
+txt_11_0_native: Natif
+txt_11_0_pr: Niveau d'entropie du mot de passe
+txt_11_0_rendering: Rendu
+txt_11_0_sch: Planifier la tâche définie dans l'interface comme script de commandes
+txt_11_0_sharp: Fort
+txt_11_0_soft: Faible
+txt_11_0_strong: Robuste
+txt_11_0_vw: Très faible
+txt_11_0_w: Insuffisant
 txt_10_9_deletearchive: Supprimer l'archive
 txt_10_9_kfl: Taille du fichier clé limitée à 100 Mo
 txt_10_9_mb: Clic du bouton du milieu
