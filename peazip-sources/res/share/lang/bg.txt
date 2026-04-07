@@ -1,25 +1,25 @@
-﻿=== PeaZip language file ===
+=== PeaZip language file ===
 Български / Bulgarian
-11.0
+10.9
 Превод: Любомир Симеонов
 Корекция: Живко Жеков
-Последна корекция: 20260212
+Последна корекция: 20260406
 
 === PeaZip text group ===
 
-txt_11_0_adv: Advanced and format-specific options
-txt_11_0_bt: Batch test archives
-txt_11_0_good: Good
-txt_11_0_items: items
-txt_11_0_native: Native
-txt_11_0_pr: Rate password entropy
-txt_11_0_rendering: Rendering
-txt_11_0_sch: Schedule execution of the task defined in the GUI as CLI script
-txt_11_0_sharp: Sharp
-txt_11_0_soft: Soft
-txt_11_0_strong: Strong
-txt_11_0_vw: Very weak
-txt_11_0_w: Weak
+txt_11_0_adv: Разширени и специфични за формата опции
+txt_11_0_bt: Пакетен тест на архиви
+txt_11_0_good: Добър
+txt_11_0_items: елементи
+txt_11_0_native: Собствен
+txt_11_0_pr: Оцени ентропия на парола
+txt_11_0_rendering: Рендеринг
+txt_11_0_sch: График за изпълнение на задачата, определена в GUI като скрипт за клиринг
+txt_11_0_sharp: Остра
+txt_11_0_soft: Мека
+txt_11_0_strong: Силна
+txt_11_0_vw: Много слаба
+txt_11_0_w: Слаба
 txt_10_9_deletearchive: Изтриване на архив
 txt_10_9_kfl: Размерът на ключовия файл е ограничен до първи 100MB
 txt_10_9_mb: Клик среден бутон мишка
