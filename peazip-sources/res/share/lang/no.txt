@@ -1,33 +1,33 @@
 ﻿=== PeaZip language file ===
 Norwegian - Norsk
 11.0
-Oversatt av: Rune C. Akselsen, Arne Hanssen og Imre K. Eilertsen
-Sist rev. av: Imre Eilertsen
-Sist revidert: 20251120
+Oversatt av: Rune C. Akselsen, Arne Hanssen og Imre Eilertsen
+Sist rev. av: Arne Hanssen
+Sist revidert: 20260408
 
 === PeaZip text group ===
 
-txt_11_0_adv: Advanced and format-specific options
-txt_11_0_bt: Batch test archives
-txt_11_0_good: Good
-txt_11_0_items: items
-txt_11_0_native: Native
-txt_11_0_pr: Rate password entropy
+txt_11_0_adv: Avanserte og format-spesifikke valg
+txt_11_0_bt: Batch-test arkiver
+txt_11_0_good: God
+txt_11_0_items: enheter
+txt_11_0_native: Innebygde
+txt_11_0_pr: Vurder passordets entropi
 txt_11_0_rendering: Rendering
 txt_11_0_sch: Schedule execution of the task defined in the GUI as CLI script
-txt_11_0_sharp: Sharp
-txt_11_0_soft: Soft
-txt_11_0_strong: Strong
-txt_11_0_vw: Very weak
-txt_11_0_w: Weak
-txt_10_9_deletearchive: Delete archive
-txt_10_9_kfl: Keyfile size limited to first 100MB
-txt_10_9_mb: Middle mouse button click
-txt_10_8_log: Commands log
-txt_10_8_rv: Create recovery volumes
-txt_10_8_bk: Execute small workloads in background
-txt_10_8_params: Pass command line as separate parameters
-txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
+txt_11_0_sharp: Skarp
+txt_11_0_soft: Myk
+txt_11_0_strong: Sterk
+txt_11_0_vw: Veldig svak
+txt_11_0_w: Svak
+txt_10_9_deletearchive: Slett arkiv
+txt_10_9_kfl: Nøkkelfil-størrelse begrenset til de første 100MB
+txt_10_9_mb: Mitre muse-knapp klikk
+txt_10_8_log: Kommando logg
+txt_10_8_rv: Opprett gjenopprettings-volum
+txt_10_8_bk: Utfør mindre oppgaver i bakgrunnen
+txt_10_8_params: Send kommandolinje som separate parametre
+txt_10_8_untarerr: TAR navn er ikke likt arkiv navn. Det er mulig å prøve å åpne arkivet for manuelt å hente ut TAR innholdet.
 txt_10_7_errload: Kan ikke vise bilde
 txt_10_7_errfile: Filen ble ikke funnet
 txt_10_7_first: Først
