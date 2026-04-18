@@ -1,33 +1,33 @@
 ﻿=== PeaZip language file ===
 Ukrainian - Українська
 11.0
-Переклад: Василь Мельник(VMenik, GIT = VMelnikV), Решетнюк В.В.(IxI_JOKER_IxI), Міщенко О.С., sasha[at]mishchenko.tk, Пилипчук О.П., pilipchukap[at]rambler[dot]ru, ViktorOn , Oleksandr (yupiter43@gmail.com)
-Останній раз ред.: Aleksandr (yupiter43@gmail.com)
-Останнє ред.: 30.11.2025
+Переклад: Aleksandr (Git- @Vertuhai), Василь Мельник(GIT = VMelnikV), Решетнюк В.В.(IxI_JOKER_IxI), Міщенко О.С., sasha[at]mishchenko.tk, Пилипчук О.П., pilipchukap[at]rambler[dot]ru, ViktorOn
+Останній раз ред.: Aleksandr (Git- @Vertuhai)
+Останнє ред.: 18.04.2026
 
 === PeaZip text group ===
 
-txt_11_0_adv: Advanced and format-specific options
-txt_11_0_bt: Batch test archives
-txt_11_0_good: Good
-txt_11_0_items: items
-txt_11_0_native: Native
-txt_11_0_pr: Rate password entropy
-txt_11_0_rendering: Rendering
-txt_11_0_sch: Schedule execution of the task defined in the GUI as CLI script
-txt_11_0_sharp: Sharp
-txt_11_0_soft: Soft
-txt_11_0_strong: Strong
-txt_11_0_vw: Very weak
-txt_11_0_w: Weak
-txt_10_9_deletearchive: Delete archive
-txt_10_9_kfl: Keyfile size limited to first 100MB
-txt_10_9_mb: Middle mouse button click
-txt_10_8_log: Commands log
-txt_10_8_rv: Create recovery volumes
-txt_10_8_bk: Execute small workloads in background
-txt_10_8_params: Pass command line as separate parameters
-txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
+txt_11_0_adv: Розширені та специфічні для формату параметри
+txt_11_0_bt: Архів пакетних тестів
+txt_11_0_good: Добре
+txt_11_0_items: предмети
+txt_11_0_native: Нативний
+txt_11_0_pr: Оцінити ентропію пароля
+txt_11_0_rendering: Рендеринг
+txt_11_0_sch: Запланувати виконання завдання, визначеного в GUI як CLI скрипт
+txt_11_0_sharp: Різкий
+txt_11_0_soft: М'який
+txt_11_0_strong: Сильний
+txt_11_0_vw: Дуже слабкий
+txt_11_0_w: Слабкий
+txt_10_9_deletearchive: Видалити архів
+txt_10_9_kfl: Розмір файлу ключа обмежений першими 100MB
+txt_10_9_mb: Натискання середньої кнопки миші
+txt_10_8_log: Журнал команд
+txt_10_8_rv: Створення томів відновлення
+txt_10_8_bk: Виконувати невеликі робочі навантаження у фоновому режимі
+txt_10_8_params: Надіслати командний рядок як окремі параметри
+txt_10_8_untarerr: Ім'я TAR не збігається з ім'ям архіву. Можна спробувати відкрити архів та вручну витягти вміст TAR.
 txt_10_7_errload: Не вдається відобразити зображення
 txt_10_7_errfile: Файл не знайдено
 txt_10_7_first: Перший
