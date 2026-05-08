@@ -2,39 +2,39 @@
 Turkish (Türkçe)
 11.0
 Çeviren: Osman Öz, Cihan Alkan, Muhammed Emin Subaşı, Onur Gevinoğlu
-Son güncelleyen: Onur Gevinoğlu
-Son güncelleme: 16 Haziran 2025
+Son güncelleyen: Osman Öz
+Son güncelleme: 07 Mayıs 2026
 
 === PeaZip text group ===
 
-txt_11_0_adv: Advanced and format-specific options
-txt_11_0_bt: Batch test archives
-txt_11_0_good: Good
-txt_11_0_items: items
-txt_11_0_native: Native
-txt_11_0_pr: Rate password entropy
-txt_11_0_rendering: Rendering
-txt_11_0_sch: Schedule execution of the task defined in the GUI as CLI script
-txt_11_0_sharp: Sharp
-txt_11_0_soft: Soft
-txt_11_0_strong: Strong
-txt_11_0_vw: Very weak
-txt_11_0_w: Weak
-txt_10_9_deletearchive: Delete archive
-txt_10_9_kfl: Keyfile size limited to first 100MB
-txt_10_9_mb: Middle mouse button click
-txt_10_8_log: Commands log
-txt_10_8_rv: Create recovery volumes
-txt_10_8_bk: Execute small workloads in background
-txt_10_8_params: Pass command line as separate parameters
-txt_10_8_untarerr: TAR name does not match archive name. It is possible to try to open the archive to manually extract the TAR content.
+txt_11_0_adv: Gelişmiş ve biçime özgü seçenekler
+txt_11_0_bt: Toplu test arşivleri
+txt_11_0_good: İyi
+txt_11_0_items: öğeler
+txt_11_0_native: Yerel
+txt_11_0_pr: Parola entropisini değerlendir
+txt_11_0_rendering: İşleme
+txt_11_0_sch: GUI'de tanımlanan görevin CLI betiği olarak yürütülmesini planla
+txt_11_0_sharp: Keskin
+txt_11_0_soft: Yumuşak
+txt_11_0_strong: Güçlü
+txt_11_0_vw: Çok zayıf
+txt_11_0_w: Zayıf
+txt_10_9_deletearchive: Arşivi sil
+txt_10_9_kfl: Anahtar dosyası boyutu ilk 100 MB ile sınırlıdır
+txt_10_9_mb: Orta fare düğmesi tıklaması
+txt_10_8_log: Komut günlüğü
+txt_10_8_rv: Kurtarma birimleri oluştur
+txt_10_8_bk: Küçük iş yüklerini arka planda yürüt
+txt_10_8_params: Komut satırını ayrı parametreler olarak geçir
+txt_10_8_untarerr: TAR adı arşiv adıyla eşleşmiyor. TAR içeriğini manuel olarak çıkartmak için arşivi açmayı deneyebilirsiniz.
 txt_10_7_errload: Görüntülenemiyor
 txt_10_7_errfile: Dosya bulunamadı
 txt_10_7_first: İlk
 txt_10_7_fit: Ekrana sığdır
 txt_10_7_fith: Ekran yüksekliğine sığdır
 txt_10_7_fitw: Ekran genişliğine sığdır
-txt_10_7_keep: Çıkarma hatayla biterse veya iptal edilirse çıktı dosyalarını tut
+txt_10_7_keep: Çıkartma hatayla biterse veya iptal edilirse çıktı dosyalarını tut
 txt_10_7_next: Sonraki
 txt_10_7_prev: Önceki
 txt_10_7_pwh: Karmadan (hash) parola
@@ -52,10 +52,10 @@ txt_10_5_ntfsalt: Bu format, Mark of The Web dahil olmak üzere NTFS Alternatif 
 txt_10_4_moving: (Taşıma)
 txt_10_3_classic: Klasik
 txt_10_3_ascii: Şu anki arşiv formatı için yalnızca ASCII karakterlerinin (büyük-küçük harf, rakamlar ve özel karakterler) kullanılması önerilir.
-txt_10_3_minimal: Minimal
+txt_10_3_minimal: En az
 txt_10_3_m: Modern
 txt_10_3_pm: Postmodern
-txt_10_3_aw: Çözüm: Şifre isteminde “Şifreyi etkileşimli olarak girmeyi zorla” seçeneğini işaretleyin veya arka uç ikili dosyaları için Konsol modunu ayarlayın.
+txt_10_3_aw: Çözüm: Şifre isteminde "Şifreyi etkileşimli olarak girmeyi zorla" seçeneğini işaretleyin veya arka uç ikili dosyaları için Konsol modunu ayarlayın.
 txt_10_2_savecopy: Kopyasını kaydet
 txt_10_1_full: Tam
 txt_10_1_kdfw: KDF iş yükü
@@ -115,7 +115,7 @@ txt_9_1_7zs: 7z / p7zip sözdizimi seviyesi
 txt_9_1_ac: Arşiv dönüştürme komut dosyaları kullanıcının etkileşimine izin verir
 txt_9_1_closeall: Tümünü kapat
 txt_9_1_enlargeicons: Dosya tarayıcı simgelerini büyüt
-txt_9_1_ef: Boş klasörleri arşivleme ve çıkarma işlemlerinden hariç tut (7z / p7zip)
+txt_9_1_ef: Boş klasörleri arşivleme ve çıkartma işlemlerinden hariç tut (7z / p7zip)
 txt_9_1_nw: Yeni pencere aç
 txt_9_1_qdup: Hızlı tekilleştirme yordamını kullan
 txt_9_0_autoexttar: Sıkıştırılmış TAR.* dosyalarından TAR arşivini otomatik ayıkla
@@ -139,8 +139,8 @@ txt_8_8_cb: Buton rengi
 txt_8_8_centered: Merkezi butonlar
 txt_8_8_light: Aydınlık
 txt_8_8_lnk: Bağlantı
-txt_8_8_intnote: Konsol sekmesinde komut satırını oluşturmak için "Etkileşimli çıkarma" seçeneğinin (Seçenekler > Ayarlar > Arşiv yöneticisinde) yoksayıldığını lütfen unutmayın.
-txt_8_8_snz: Zone.Identifier akışını yay (Windows)
+txt_8_8_intnote: Konsol sekmesinde komut satırını oluşturmak için "Etkileşimli çıkartma" seçeneğinin (Seçenekler > Ayarlar > Arşiv yöneticisinde) yoksayıldığını lütfen unutmayın.
+txt_8_8_snz: Bölge Tanımlayıcısını (MoTW) Yay (Windows, NTFS)
 txt_8_8_sm: Küçük simgelerin boyutu
 txt_8_8_solcol: Katı çubuk
 txt_8_8_snoi: Mağaza sahibi/grup kimlikleri (TAR, Linux)
@@ -150,8 +150,8 @@ txt_8_8_altt: Sekme stili
 txt_8_8_autotest: Biçim tarafından destekleniyorsa, arşivleri oluşturulduktan sonra test et
 txt_8_8_cw: Pencere rengi
 txt_8_7_csvhelp: uluslararası standart "," Latin yerellerinde yaygın ";"
-txt_8_7_after: Arşivleme / çıkarma işleminden sonra
-txt_8_7_bintest: binaryler test edildi
+txt_8_7_after: Arşivleme / çıkartma işleminden sonra
+txt_8_7_bintest: ikililer test edildi
 txt_8_7_csv: CSV ayırıcı
 txt_8_7_hok: PeaZip tarafından kullanılan binary dosyalarının hash'i beklenen değerlerle eşleşiyor
 txt_8_7_mo: Arşiv yöneticisi seçeneklerini ayarla
@@ -172,10 +172,10 @@ txt_8_5_listlarge: Liste, büyük
 txt_8_5_loadlayout: Başlangıçta yükleme düzeni
 txt_8_5_samplescripts: Örnek komut dosyaları
 txt_8_4_keepopenerrorslist: Hata raporunu incelemek için durdur, liste
-txt_8_3_mbubin: Binary
+txt_8_3_mbubin: İkili
 txt_8_3_cw: Çalışma dizini değiştirilsin mi? Bu, geçici çalışma dosyalarını sıfırlayacak ve uygulamayı yeniden başlatacaktır.
 txt_8_3_temperature: Renk sıcaklığı
-txt_8_3_mbudec: Decimal
+txt_8_3_mbudec: Ondalık
 txt_8_3_htab: Sekmeleri vurgula
 txt_8_3_maxarg: Maksimum argüman uzunluğu
 txt_8_3_mbu: Çok baytlı birim
@@ -202,7 +202,7 @@ txt_8_1_togglearc: Arşiv içeriğinin düzgün görünmesini listelemek zaman a
 txt_8_1_preparsehint: Büyük arşivlerin ön ayrıştırılmasını sınırlayan performansları optimize edin. Ön ayrıştırma, arşiv içeriğindeki olası sorunları önceden tespit etmek içindir.
 txt_8_1_slow: Yavaş
 txt_8_1_vslow: Çok Yavaş
-txt_8_1_volumes: volumes
+txt_8_1_volumes: birimler
 txt_8_0_altcol: Alternatif ızgara rengi
 txt_8_0_forcebrowse: Kurallı olmayan arşiv türlerine göz atın (kaplar, disk görüntüleri, yükleyiciler,...)
 txt_8_0_commonalgo: Ortak algoritmalar
@@ -221,17 +221,17 @@ txt_7_8_destexistfile: Hedef zaten işlenmiş dosyalar içeriyor. Aynı ada sahi
 txt_7_8_dd: Sürükle ve bırak
 txt_7_8_priorityhigh: Yüksek
 txt_7_8_priorityidle: Boşta
-txt_7_8_rel: Etkileşimli çıkarma
+txt_7_8_rel: Etkileşimli çıkartma
 txt_7_8_prioritynormal: Normal
 txt_7_8_priorityrealtime: Gerçek zamanlı
 txt_7_8_requirerestart: [PeaZip'in yeniden başlatılmasını gerektirir]
 txt_7_8_tpriority: Görev önceliği
 txt_7_8_update: Güncelle
-txt_7_7_noneall: Yok (önizleme yok, Sürükle ve Bırak çıkarma yok)
+txt_7_7_noneall: Yok (önizleme yok, Sürükle ve Bırak çıkartma yok)
 txt_7_7_nonetemp: Yok, gerekirse Kullanıcıda
 txt_7_7_outtemp: Çıktı, Kullanıcıda önizleme
 txt_7_7_sys7zreq: Yüklenmesi için p7zip-full veya eşdeğeri gerekir
-txt_7_7_tw: Arşiv oluşturma, düzenleme, önizleme ve Sürükle ve Bırak çıkarma için geçici çalışma klasörü.
+txt_7_7_tw: Arşiv oluşturma, düzenleme, önizleme ve Sürükle ve Bırak çıkartma için geçici çalışma klasörü.
 txt_7_7_sys7z: Linux'ta sistem 7z kullanın
 txt_7_6_zipenc: 7z/p7zip ZIP dosya adlarını kodlama
 txt_7_6_color: Renk
@@ -254,7 +254,7 @@ txt_7_5_autoclosesingle: Göz atma eylemi gerçekleşmediyse ayıklamadan sonra 
 txt_7_5_cutlen: Adı belirtilen uzunlukta kes
 txt_7_5_cutlenw: Adı belirtilen uzunlukta kes (4..255), adlandırma çakışmaları daha sonra manuel olarak düzeltilebilir
 txt_7_5_dragnone: Hedefi kilitlemeyin
-txt_7_5_specialbrowse: Dosyaya ihtiyaç duyabileceği ekstra verileri sağlamak için her şeyi çıkarmak ister misiniz?
+txt_7_5_specialbrowse: Dosyaya ihtiyaç duyabileceği ekstra verileri sağlamak için her şeyi çıkartmak ister misiniz?
 txt_7_5_ee: Özel dosya türleri için her şeyi ayıklayın
 txt_7_5_draghide: Bırakma hedefini gizle
 txt_7_5_draglh: Hedefi kilitle ve gizle
@@ -272,15 +272,15 @@ txt_7_4_lockconfirm: Kilitli arşivler daha fazla değiştirilemez, bu arşivi k
 txt_7_4_recover: Arşivi onar
 txt_7_4_tcurr: Arşiv zaman damgasını mevcut sistem saatinden ayarla
 txt_7_4_setarc: Arşivleme seçeneklerini ayarla
-txt_7_4_setext: Çıkarma seçeneklerini ayarla
+txt_7_4_setext: Çıkartma seçeneklerini ayarla
 txt_7_4_swzipx: Düşürülmeyen zip arşivleri için zipx uzantısına geçin
 txt_7_3_archiveerrors: [arşiv hatalar içerebilir]
 txt_7_3_archiveerrorshint: Arşiv geçerli olmayabilir (eksik, bozuk veya standart olmayan veriler nedeniyle), ayrıntılı bilgi için testi çalıştırmak mümkündür. Arşivin içerik tablosu şifrelenmişse, taramadan önce şifre gereklidir.
-txt_7_3_clickextall: Etkinleştirmek için "Tümünü çıkar" ı tıklayın
-txt_7_3_noconfdel: Arşivleme / çıkarma işleminden sonra silme için onay istemeyin
+txt_7_3_clickextall: Etkinleştirmek için "Tümünü çıkart" ı tıklayın
+txt_7_3_noconfdel: Arşivleme / çıkartma işleminden sonra silme için onay istemeyin
 txt_7_3_profile7zfastest: Hızlı sıkıştırma, en hızlı 7Z
-txt_7_3_maxbr: Daha fazla bellek kullanarak Brotli sıkıştırmasını en üst düzeye çıkarın (bazı çıkarıcılar ile uyumsuz olabilir)
-txt_7_3_maxzstd: Daha fazla bellek kullanarak Zstandard sıkıştırmayı en üst düzeye çıkarın
+txt_7_3_maxbr: Daha fazla bellek kullanarak Brotli sıkıştırmasını en üst düzeye çıkartın (bazı çıkartıcılar ile uyumsuz olabilir)
+txt_7_3_maxzstd: Daha fazla bellek kullanarak Zstandard sıkıştırmayı en üst düzeye çıkartın
 txt_7_3_profile7zfast: Orta sıkıştırma, 7Z hızlı
 txt_7_3_stl: En son dosyadan arşiv zaman damgasını ayarla
 txt_7_2_altcomp: Alternatif sıkıştırma, ARC
@@ -304,7 +304,7 @@ txt_7_1_typetosearch: Geçerli yolda aramak için yazın
 txt_7_1_type_description_zstd: Zstandard: Facebook'tan hızlı sıkıştırıcı, çok hızlı açıcı
 txt_7_0_af: Klasörlerin içeriğini analiz et
 txt_7_0_autoopentar: tar.* dosyalarının içindeki tek tar arşivini otomatik açın
-txt_7_0_exttmppath: İçerik şu durumlarda geçici çalışma yolunun dışına çıkarılacak: 
+txt_7_0_exttmppath: İçerik şu durumlarda geçici çalışma yolunun dışına çıkartılacak: 
 txt_6_9_autou: Arşivlerdeki değiştirilmiş dosyaları otomatik güncelle
 txt_6_9_forceu: Arşivlerdeki değiştirilmiş dosyaları zorla güncelle
 txt_6_9_opuns: Geçerli arşiv türü için işlem desteklenmiyor
@@ -428,7 +428,7 @@ txt_5_3_profilenormal: Çoğu çıkartıcılar ile uyumlu normal ZIP sıkıştı
 txt_5_3_profileveryfast: Büyük multimedya dosyaları için çok hızlı ZIP sıkıştırma
 txt_5_3_profilepassword: 7Z formatında şifre ile koruyun
 txt_5_3_profile10mb: Posta eki sınırlamaları için çıktıyı 25 MB'ın altında tutun
-txt_5_3_profilesfx: Otomatik çıkarma, alıcı için bir çıkarma yazılımı gerekmez
+txt_5_3_profilesfx: Otomatik çıkartma, alıcı için bir çıkartma yazılımı gerektirmez
 txt_5_3_cml: Sistem bağlamı menü dili
 txt_5_3_cmlmessage: İstenen bağlam menüsü dilini çift tıklayın ve kayıt defteri birleştirmeyi onaylayın. Uygulama kurulduğunda/güncellendiğinde veya Sistem entegrasyon sihirbazı kullanıldıktan sonra bu ayarın yeniden uygulanması gerekir.
 txt_5_3_exc: Dışlama filtreleri, içerme filtrelerinde geçerlidir
@@ -578,7 +578,7 @@ txt_3_7_tracker: Sorun İzleyici
 txt_3_7_sort: Şuna göre sırala
 txt_3_7_swapbars: Araç çubuğu/Adres çubuğu değişimi
 txt_3_7_themedbars: Temalı çubuklar
-txt_3_6_ignoredd: Sürükle ve bırakmayla çıkarmak için yolları her zaman yoksay
+txt_3_6_ignoredd: Sürükle ve bırakmayla çıkartmak için yolları her zaman yoksay
 txt_3_6_close: Kapat
 txt_3_6_resetapps: Uygulamaları (dosya ilişkilendirmelerini geçersiz kılan, dosyaları açmak için özelleştirilebilir program ve komut grubu) sıfırlamak istiyor musunuz?
 txt_3_6_ethemes: Mevcut Temalar
@@ -652,7 +652,7 @@ txt_2_8_convertdelete: Dönüştürme için geçici olarak oluşturulan dosya ve
 txt_2_8_details: Ayrıntılar
 txt_2_8_parallel: Mümkün olduğunda görevleri paralel olarak yürütün
 txt_2_8_convertnote: Her halükarda orijinal arşivler değiştirilmemiştir, kullanıcının bunları tutma veya kaldırma konusunda kontrol sahibi olmasını sağlamak için
-txt_2_8_custom: PeaZip tarafından doğrudan desteklenmemektedir, ancak çıkarma aşamasında PeaZip'i "Gelişmiş" sekmesinde özel dosya türlerini işleyecek şekilde ayarlayabilirsiniz. Bu dosyayı açmaya devam edilsin mi?
+txt_2_8_custom: PeaZip tarafından doğrudan desteklenmemektedir, ancak çıkartma aşamasında PeaZip'i "Gelişmiş" sekmesinde özel dosya türlerini işleyecek şekilde ayarlayabilirsiniz. Bu dosyayı açmaya devam edilsin mi?
 txt_2_8_unitrecommend: Çıkartmanız (sağ tık > seçileni çıkart) veya dosya sistemlerini bilgisayarın kökünden açmanız önerilir (sistem araçları > Birimi arşiv olarak aç)
 txt_2_8_viewasarchive: Birimi arşiv olarak aç
 txt_2_8_nounit: Hiçbir birim seçilmedi
@@ -921,7 +921,7 @@ txt_eqorolder: Seçilen nesnenin aynısı veya daha eski
 txt_eqorsmaller: Seçilen nesnenin aynısı veya daha küçük
 txt_equal: Seçilen nesnenin aynısı
 txt_erase_hint: Güvenli silme: rastgele veriler, maske boyutu, yeniden adlandırma ile üzerine yaz, son olarak sil
-txt_extraction_error: Seçilen nesne çıkarılırken hata oluştu. Arşiv şifre korumalıysa lütfen bunu sağlayın
+txt_extraction_error: Seçilen nesne çıkartılırken hata oluştu. Arşiv şifre korumalıysa lütfen bunu sağlayın
 txt_exclude_hint: Her satıra bir tane olmak üzere dosyaları hariç tut; * ve ? joker karakterlere; " ve ' sınırlayıcılara gerek yoktur
 txt_exclusion_recourse: Hariç tutma, özyineleme alt dizinlerini filtreler
 txt_exclusion: Hariç tut:
@@ -1056,7 +1056,7 @@ txt_morerecent: Seçilen nesneden daha yeni
 txt_ent_hint: Fareyi hareket ettirin, düzenleme alanına tuşları girin, sistemden entropi toplamak için dosyaları yükleyin...
 txt_moveto: Taşı...
 txt_mypc: Bilgisayarın kökü
-txt_list_na: n/a
+txt_list_na: Yok
 txt_name: Ad
 txt_naming: Adlandırma politikası
 txt_unit_remote: Ağ sürücüsü
@@ -1208,10 +1208,10 @@ txt_list_nostats: istatistikler mevcut değil
 txt_status: Durum
 txt_level_store: Depola
 txt_stream_control: Akış kontrolü
-txt_strip: UPX'ten önce çıkar (önerilen)
+txt_strip: UPX'ten önce çıkart (önerilen)
 txt_keyfile_created: Anahtar Dosya başarıyla oluşturuldu:
 txt_suggestpw: Rastgele şifre oluştur
-txt_noupx: Semboller çıkarıldı, UPX sıkıştırması atlandı
+txt_noupx: Semboller çıkartıldı, UPX sıkıştırması atlandı
 txt_syntax: Sözdizimi:
 txt_sysbenchmark: Sistem karşılaştırması
 txt_benchmark: Sistem karşılaştırması birkaç dakika sürecek ve mevcut tüm CPU ve bellek kaynaklarını kullanacaktır. Karşılaştırma sırasında sistem yanıt vermeyebilir; yine de çalıştırılsın mı?
@@ -1302,7 +1302,7 @@ txt_5_0_from: itibaren
 txt_5_0_in: içinde
 txt_5_0_to: için
 txt_4_5_search: arama
-txt_4_0_drag: Çıkarmak için arşivi buraya sürükleyin veya 
+txt_4_0_drag: Çıkartmak için arşivi buraya sürükleyin veya 
 txt_4_0_dragorselect: Buraya sürükleyin veya dosya seçin
 txt_4_0_select: dosya seçin
 txt_3_6_selectdir: Dizin seçin
@@ -1404,15 +1404,15 @@ Sistemden
 PeaZip'te bir arşivi açın, yani çift tıklama ile veya bir arşivi PeaZip penceresine veya simgesine sürükleyin
 - tüm seçenekleri (çıktı yolu, şifre, adlandırma ilkesi, yeni bir dizine çıkartma vb.) ayarlamaya izin veren onay iletişim kutusundan yalnızca seçili nesneleri çıkartmak için araç çubuğunda veya bağlam menüsünde "Çıkart" ı tıklayın
 - dosyaları ve klasörleri istenen hedefe sürükleyin, yalnızca seçilen içerik çıkartılır (daha fazla bilgi için PeaZip'te sürükle ve bırak ile ilgili bölüme bakın)
-- araç çubuğundaki “Çıkart” ın sağındaki hızlı çıkartma açılır düğmesine tıklayın, tüm arşivi doğrudan en yaygın hedeflere (onay iletişim kutusunu atlayarak) çıkartmaya ve en önemli seçenekleri ayarlamaya olanak tanır; klavye kısayolları: Ctrl+E (veya F12) tüm arşivi çıkartır, çıktı dizini ister; Ctrl+Alt+E mevcut klasöründeki arşivi çıkartır; Ctrl+Shift+E masaüstüne çıkartır; Ctrl+Alt+Shift+E belgelere çıkartır; Ctrl+0 önceki yola çıkartır; Ctrl+1..8, yer imi 1..8 yoluna çıkartır (tanımlanmışsa)
+- araç çubuğundaki "Çıkart" ın sağındaki hızlı çıkartma açılır düğmesine tıklayın, tüm arşivi doğrudan en yaygın hedeflere (onay iletişim kutusunu atlayarak) çıkartmaya ve en önemli seçenekleri ayarlamaya olanak tanır; klavye kısayolları: Ctrl+E (veya F12) tüm arşivi çıkartır, çıktı dizini ister; Ctrl+Alt+E mevcut klasöründeki arşivi çıkartır; Ctrl+Shift+E masaüstüne çıkartır; Ctrl+Alt+Shift+E belgelere çıkartır; Ctrl+0 önceki yola çıkartır; Ctrl+1..8, yer imi 1..8 yoluna çıkartır (tanımlanmışsa)
 
-PeaZip'i açın, bir veya daha fazla arşiv seçin ve araç çubuğunda veya bağlam menüsünde “Çıkart” a tıklayın veya önceki noktada açıklandığı gibi hızlı çıkartma hedeflerini kullanın.
+PeaZip'i açın, bir veya daha fazla arşiv seçin ve araç çubuğunda veya bağlam menüsünde "Çıkart" a tıklayın veya önceki noktada açıklandığı gibi hızlı çıkartma hedeflerini kullanın.
 
 ARŞİVDEN SADECE SEÇİLEN NESNELERİ ÇIKARTMAK
 PeaZip'te bir arşivi açın, yani çift tıklama ile veya bir arşivi PeaZip penceresine veya simgesine sürükleyin
 - araç çubuğunda "Çıkart" a tıklayın: sadece seçilen öğeler çıkartılır
 - dosyaları ve klasörleri istenen hedefe sürükleyin, sadece seçilen içerik çıkartılır
-- içerik menüsüne sağ tıklayıp “Çıkart” grubunda “Seçileni çıkart” (yalnızca seçilen öğeleri çıkartmak için) veya “Görüntüleneni çıkart” (mevcut dizinin veya geçerli arama filtresinin içeriğini çıkartmak için) seçeneğini tıklayın
+- içerik menüsüne sağ tıklayıp "Çıkart" grubunda "Seçileni çıkart" (yalnızca seçilen öğeleri çıkartmak için) veya "Görüntüleneni çıkart" (mevcut dizinin veya geçerli arama filtresinin içeriğini çıkartmak için) seçeneğini tıklayın
 
 BİR ARŞİVE GÖZ ATMAK VEYA ÇIKARTMAK İÇİN BİR ŞİFRE GİRMEK
 Bir şifre ve isteğe bağlı olarak bir anahtar dosyası girmek için asma kilit simgesine tıklayın.
@@ -1420,7 +1420,7 @@ Simge hem PeaZip’in dosya tarayıcısının durum çubuğunda hem de arşiv ç
 
 ARŞİV OLUŞTURMAK
 Sistemden
-- arşivlenecek nesnelere sağ tıklayın ve bağlam menüsünde veya Gönder menüsünde "Arşive ekle" ye tıklayın. Arşiv oluşturma onay iletişim kutusunu açar, “Gelişmiş” sekmesinde daha fazla seçenek bulunur; arşivi oluşturmak için Tamam'ı tıklayın.
+- arşivlenecek nesnelere sağ tıklayın ve bağlam menüsünde veya Gönder menüsünde "Arşive ekle" ye tıklayın. Arşiv oluşturma onay iletişim kutusunu açar, "Gelişmiş" sekmesinde daha fazla seçenek bulunur; arşivi oluşturmak için Tamam'ı tıklayın.
 - alternatif olarak, dosyaları/klasörleri PeaZip’in penceresine veya kısayoluna sürükleyin; aynı arşiv oluşturma arayüzü gösterilecektir.
 
 PeaZip'ten 
@@ -1431,12 +1431,12 @@ PeaZip'te bir arşiv açın (yani çift tıklamayla veya PeaZip'in penceresine v
 Arşiv oluşturma onay iletişim kutusunu açar, mevcut arşivi güncellemek için Tamam'ı tıklatın.
 
 KÜÇÜK DOSYALARDA ARŞİV BÖLMESİ OLUŞTURMAK
-Önceki noktalarda açıklandığı gibi bir arşiv oluştururken, arşivin bölüneceği çıktı dosyaları (birimler) için bir boyut seçmek üzere “Tek birim” açılır menüsünü tıklayın.
+Önceki noktalarda açıklandığı gibi bir arşiv oluştururken, arşivin bölüneceği çıktı dosyaları (birimler) için bir boyut seçmek üzere "Tek birim" açılır menüsünü tıklayın.
 En yaygın arşiv türleri bu seçeneği destekler.
 
 ŞİFRELENMİŞ ARŞİV OLUŞTURMAK
 Bir şifre ve isteğe bağlı olarak bir anahtar dosyası girmek için asma kilit simgesine tıklayın; simge hem PeaZip’in dosya tarayıcısının durum çubuğunda hem de arşiv oluşturma arayüzünde bulunur.
-Arşivde bulunan dosya ve dizin adlarını gizlemek için “Ayrıca dosya adlarını şifrele” seçeneğini işaretleyin, lütfen arşivin yalnızca 7Z ve ARC gibi bu işlevi destekleyen bir biçimde oluşturulacağını unutmayın.
+Arşivde bulunan dosya ve dizin adlarını gizlemek için "Ayrıca dosya adlarını şifrele" seçeneğini işaretleyin, lütfen arşivin yalnızca 7Z ve ARC gibi bu işlevi destekleyen bir biçimde oluşturulacağını unutmayın.
 Arşiv oluşturma arayüzünde, asma kilit simgesinin yanında, şifrelemenin ayarlanıp ayarlanmadığını ve geçerli arşiv biçiminin şifrelemeyi destekleyip desteklemediğini görsel olarak bildiren bir uyarı olduğunu unutmayın.
 
 AYRI ARŞİV OLUŞTURMAK
@@ -1444,10 +1444,10 @@ Arşivlenecek nesneleri ekleyin (PeaZip'in "Ekle" düğmesiyle veya sistem bağl
 
 ARŞİVLERİ DÖNÜŞTÜRMEK
 PeaZip'ten dönüştürülecek arşivleri seçin ve araç çubuğundaki veya bağlam menüsündeki "Dönüştür" düğmesine tıklayın, arşiv olmayan dosya ve klasörler de eklenebilir, fark sıkıştırma aşamasından önce arşivlerde çıkartılır.
-“Varolan arşivleri dönüştür” anahtarı “Her nesneyi ayrı bir arşive ekle” (varsayılan) ile birlikte kullanıldığında, listelenen arşivlerin toplu dönüştürmesini gerçekleştirir, bu anahtar arşivinin dönüşümü olmadan giriş verilerini tek bir arşivde birleştirmek, orijinal verilerin sıkıştırılmamış biçiminden yeniden sıkıştırılmasına izin verdiği için sıkıştırma verimliliğinin artırılması anlamına gelir.
+“Varolan arşivleri dönüştür” anahtarı "Her nesneyi ayrı bir arşive ekle" (varsayılan) ile birlikte kullanıldığında, listelenen arşivlerin toplu dönüştürmesini gerçekleştirir, bu anahtar arşivinin dönüşümü olmadan giriş verilerini tek bir arşivde birleştirmek, orijinal verilerin sıkıştırılmamış biçiminden yeniden sıkıştırılmasına izin verdiği için sıkıştırma verimliliğinin artırılması anlamına gelir.
 
 BELİRTİLEN BİR BİÇİMDE VE SEÇİLMİŞ SIKIŞTIRMA SEVİYESİ İLE DOĞRUDAN ARŞİVLER OLUŞTURMAK
-Seçenekler menüsündeki “Sistem entegrasyonu” prosedürünü kullanarak doğrudan bir ZİP, 7Z veya kendi kendine açılan arşive seçilen dosyaları/klasörleri eklemek için bağlam menüsü girişlerini etkinleştirmek mümkündür.
+Seçenekler menüsündeki "Sistem entegrasyonu" prosedürünü kullanarak doğrudan bir ZİP, 7Z veya kendi kendine açılan arşive seçilen dosyaları/klasörleri eklemek için bağlam menüsü girişlerini etkinleştirmek mümkündür.
 Zip ve 7Z biçimleri için, bağlam menüsü girişlerinin seçilen biçim için varsayılan sıkıştırma seviyesini atlayarak en hızlı, normal veya ultra seviyeye sıkıştırılmasını sağlamak da mümkündür.
 
 ŞİFRE YÖNETİCİSİ
