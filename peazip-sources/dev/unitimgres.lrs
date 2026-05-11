@@ -5,15 +5,15 @@ LazarusResources.Add('TFormImgRes','FORMDATA',[
   +#236#1#5'Width'#3'X'#2#8'AutoSize'#9#7'Caption'#6#6'Resize'#12'ClientHeight'
   +#3'x'#1#11'ClientWidth'#3'X'#2#5'Color'#7#8'clWindow'#21'Constraints.MinHeig'
   +'ht'#3'w'#1#20'Constraints.MinWidth'#3'X'#2#13'DesignTimePPI'#2'x'#8'Positio'
-  +'n'#7#14'poScreenCenter'#8'ShowHint'#9#10'LCLVersion'#6#7'4.2.0.0'#8'OnCreat'
-  +'e'#7#10'FormCreate'#0#12'TButtonPanel'#17'ButtonPanelImgRes'#4'Left'#2#15#6
-  +'Height'#2#30#3'Top'#3'K'#1#5'Width'#3':'#2#18'BorderSpacing.Left'#2#15#19'B'
-  +'orderSpacing.Right'#2#15#20'BorderSpacing.Bottom'#2#15#20'BorderSpacing.Aro'
-  +'und'#2#0#13'OKButton.Name'#6#8'OKButton'#23'OKButton.DefaultCaption'#9#15'H'
-  +'elpButton.Name'#6#10'HelpButton'#25'HelpButton.DefaultCaption'#9#18'HelpBut'
-  +'ton.Enabled'#8#16'CloseButton.Name'#6#11'CloseButton'#26'CloseButton.Defaul'
-  +'tCaption'#9#19'CloseButton.Enabled'#8#17'CancelButton.Name'#6#12'CancelButt'
-  +'on'#27'CancelButton.DefaultCaption'#9#8'TabOrder'#2#0#11'ShowButtons'#11#4
+  +'n'#7#16'poMainFormCenter'#8'ShowHint'#9#10'LCLVersion'#6#7'4.2.0.0'#8'OnCre'
+  +'ate'#7#10'FormCreate'#0#12'TButtonPanel'#17'ButtonPanelImgRes'#4'Left'#2#15
+  +#6'Height'#2#30#3'Top'#3'K'#1#5'Width'#3':'#2#18'BorderSpacing.Left'#2#15#19
+  +'BorderSpacing.Right'#2#15#20'BorderSpacing.Bottom'#2#15#20'BorderSpacing.Ar'
+  +'ound'#2#0#13'OKButton.Name'#6#8'OKButton'#23'OKButton.DefaultCaption'#9#15
+  +'HelpButton.Name'#6#10'HelpButton'#25'HelpButton.DefaultCaption'#9#18'HelpBu'
+  +'tton.Enabled'#8#16'CloseButton.Name'#6#11'CloseButton'#26'CloseButton.Defau'
+  +'ltCaption'#9#19'CloseButton.Enabled'#8#17'CancelButton.Name'#6#12'CancelBut'
+  +'ton'#27'CancelButton.DefaultCaption'#9#8'TabOrder'#2#0#11'ShowButtons'#11#4
   +'pbOK'#8'pbCancel'#0#10'ShowGlyphs'#11#0#9'ShowBevel'#8#0#6'TImage'#15'Image'
   +'InfoImgRes'#22'AnchorSideLeft.Control'#7#17'ButtonPanelImgRes'#21'AnchorSid'
   +'eTop.Control'#7#17'ButtonPanelImgRes'#18'AnchorSideTop.Side'#7#9'asrCenter'

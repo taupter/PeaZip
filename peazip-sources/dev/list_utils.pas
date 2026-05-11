@@ -542,8 +542,10 @@ function pathistmp(s:ansistring):boolean;
 //split a string in words separated by space: ignore empty strings, ignore quotes
 function peasplitstring(s:AnsiString; var sfin:TStringList):integer;
 
-//launch TProcess with command line or parameters: pmode 0 use cl in Process.CommandLine; pmode 1 Process.ParseCmdLine cl, don't assign a value to Process.CommandLine (even empty CommandLine disables Parameters)
+//launch TProcess with command line or parameters, optional log: pmode 0 use cl in Process.CommandLine; pmode 1 Process.ParseCmdLine cl, don't assign a value to Process.CommandLine (even empty CommandLine disables Parameters)
 function peapexecute(var P:TProcessUTF8; var cl:ansistring): integer;
+//launch TProcess with parameters, optional log
+function peapparamexecute(var P:TProcessUTF8): integer;
 
 implementation
 
@@ -1885,6 +1887,9 @@ begin
 end;
 
 function correctdelimiter(s:AnsiString): AnsiString;
+//TProcess does not expand variables ($, ~, %%) even if weak quotes " are used, neither in parameters nor in commandline
+//UNLESS the process itself runs the command through a shell (cmd.exe, /bin/sh, bash, xterm, gnome-terminal, konsole, open on macOS...)
+//in this specific case it is necessary to carefully evaluate if weak quotes " are applied AND a variable expansion character is used without strong quotes '
 begin
 result := '''';
 {$IFDEF MSWINDOWS}
@@ -2133,7 +2138,11 @@ for i := 0 to 31 do if pos(char(i), s) <> 0 then exit; //illegal characters
 delimch := correctdelimiter(s);
 
 s1:=s;
-if (pos('bin'+directoryseparator+'7z',s)<>0) or (pos('bin'+directoryseparator+'arc',s)<>0) or (pos('Rar.exe',s)<>0) then
+
+//does not currently apply pw field exceptions if using system binaries (sys7zlin>0)
+if (pos('bin'+directoryseparator+'7z',s)<>0) or //catches 7z and alias7z
+   (pos('bin'+directoryseparator+'arc',s)<>0) or
+   (pos('Rar.exe',s)<>0) then
    if pos(delimch+'-p',s)<>0 then
       begin
       s1:=copy(s,pos(delimch+'-p',s)+3,length(s)-pos(delimch+'-p',s)-2);
@@ -2148,7 +2157,8 @@ if (pos('bin'+directoryseparator+'7z',s)<>0) or (pos('bin'+directoryseparator+'a
       s1:=copy(s,1,pos(' -p',s))+s1;
       end;
 
-if (pos('bin'+directoryseparator+'arc',s)<>0) or (pos('Rar.exe',s)<>0) then
+if (pos('bin'+directoryseparator+'arc',s)<>0) or
+   (pos('Rar.exe',s)<>0) then
    if pos(delimch+'-hp',s)<>0 then
       begin
       s1:=copy(s,pos(delimch+'-hp',s)+4,length(s)-pos(delimch+'-hp',s)-3);
@@ -3101,7 +3111,7 @@ for i:=0 to sarr.Count-1 do
 result:=sfin.Count;
 end;
 
-//launch TProcess with command line or parameters: pmode 0 use cl in Process.CommandLine; pmode 1 Process.ParseCmdLine cl, don't assign a value to Process.CommandLine (even empty CommandLine disables Parameters)
+//launch TProcess with command line or parameters, optional log: pmode 0 use cl in Process.CommandLine; pmode 1 Process.ParseCmdLine cl, don't assign a value to Process.CommandLine (even empty CommandLine disables Parameters)
 function peapexecute(var P:TProcessUTF8; var cl:ansistring): integer;
 begin
 result:=-1;
@@ -3110,6 +3120,29 @@ case pmode of //some composite command strings on Windows cannot be correctly pa
    1: {$IFDEF MSWINDOWS}P.ParseCmdLine(cl);{$ELSE}P.ParseCmdLine(cl,True);{$ENDIF}//ReadBackslash set to true for non-Windows systems: when using parameters, non_Windows escaping uses \ character to escape the true string delimiter character
 end;
 P.Execute;
+if logcommands=1 then
+   begin
+   if not Assigned(cllog) then cllog:=TStringList.Create;
+   cllog.Add(cl);
+   end;
+result:=0;
+end;
+
+//launch TProcess with parameters, optional log
+function peapparamexecute(var P:TProcessUTF8): integer;
+var
+   i:integer;
+   cl:ansistring;
+begin
+result:=-1;
+P.Execute;
+
+cl:=P.Executable;
+for i:=0 to P.Parameters.Count-1 do
+begin
+  cl:=cl+' '+P.Parameters[i];
+end;
+
 if logcommands=1 then
    begin
    if not Assigned(cllog) then cllog:=TStringList.Create;

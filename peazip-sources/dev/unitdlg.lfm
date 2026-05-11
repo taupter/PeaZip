@@ -12,7 +12,7 @@ object FormDlg: TFormDlg
   Constraints.MinHeight = 200
   Constraints.MinWidth = 500
   DesignTimePPI = 120
-  Position = poScreenCenter
+  Position = poMainFormCenter
   ShowHint = True
   LCLVersion = '4.2.0.0'
   object LabelDlg: TLabel
@@ -172,5 +172,13 @@ object FormDlg: TFormDlg
     BorderSpacing.Left = 30
     BorderSpacing.Top = 30
     Transparent = True
+  end
+  object ActionListDlg: TActionList
+    Left = 608
+    object ActionDlgExit: TAction
+      Caption = 'ActionDlgExit'
+      ShortCut = 27
+      OnExecute = ActionDlgExitExecute
+    end
   end
 end

@@ -6,13 +6,15 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, LResources, Forms, Controls, Graphics, Dialogs,
-  ButtonPanel, StdCtrls, Buttons, ExtCtrls;
+  ButtonPanel, StdCtrls, Buttons, ExtCtrls, ActnList;
 
 type
 
   { TFormDlg }
 
   TFormDlg = class(TForm)
+    ActionDlgExit: TAction;
+    ActionListDlg: TActionList;
     babort: TBitBtn;
     bcancel: TBitBtn;
     bno: TBitBtn;
@@ -22,6 +24,7 @@ type
     ImageDlg: TImage;
     LabelDlg: TLabel;
     PanelDlg: TPanel;
+    procedure ActionDlgExitExecute(Sender: TObject);
   private
     { private declarations }
   public
@@ -163,6 +166,13 @@ FormDlg.bok.hint:=txt_7_2_updateclear;
 {$IFDEF DARWIN}result:=pMessageDlg(s, txt_info, false, false, true, true, true, false);{$ELSE}result:=pMessageDlg(s, txt_info, true, false, true, true, true, false);{$ENDIF}
 txt_2_7_ok:=stemp;
 FormDlg.bok.hint:='';
+end;
+
+{ TFormDlg }
+
+procedure TFormDlg.ActionDlgExitExecute(Sender: TObject);
+begin
+ModalResult:=mrCancel;
 end;
 
 initialization

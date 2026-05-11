@@ -10,7 +10,7 @@ object FormKF: TFormKF
   Constraints.MinHeight = 500
   Constraints.MinWidth = 750
   DesignTimePPI = 120
-  Position = poScreenCenter
+  Position = poMainFormCenter
   ShowHint = True
   LCLVersion = '4.2.0.0'
   OnClose = FormClose
@@ -167,17 +167,17 @@ object FormKF: TFormKF
       BorderSpacing.Around = 0
       OKButton.Name = 'OKButton'
       OKButton.DefaultCaption = True
-      OKButton.Enabled = False
       HelpButton.Name = 'HelpButton'
       HelpButton.DefaultCaption = True
       HelpButton.Enabled = False
       CloseButton.Name = 'CloseButton'
       CloseButton.DefaultCaption = True
+      CloseButton.Enabled = False
       CancelButton.Name = 'CancelButton'
       CancelButton.DefaultCaption = True
       CancelButton.Enabled = False
       TabOrder = 8
-      ShowButtons = [pbClose]
+      ShowButtons = [pbOK]
       ShowGlyphs = []
       ShowBevel = False
       object ProgressBarKF: TProgressBar
@@ -303,5 +303,13 @@ object FormKF: TFormKF
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
     Left = 480
     Top = 340
+  end
+  object ActionListKF: TActionList
+    Left = 520
+    object ActionKFExit: TAction
+      Caption = 'ActionKFExit'
+      ShortCut = 27
+      OnExecute = ActionKFExitExecute
+    end
   end
 end

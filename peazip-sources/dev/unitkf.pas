@@ -8,13 +8,15 @@ uses
   UnitDlg, Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs,
   StdCtrls, ExtCtrls, Spin, ComCtrls,
   hash, sha512, whirl512, sha1, sha256, mem_util,
-  pea_utils, Buttons, ButtonPanel;
+  pea_utils, Buttons, ButtonPanel, ActnList;
 
 type
 
   { TFormKF }
 
   TFormKF = class(TForm)
+    ActionKFExit: TAction;
+    ActionListKF: TActionList;
     ButtonKF: TButton;
     ButtonKFLoadFile: TButton;
     ButtonPanelKF: TButtonPanel;
@@ -33,6 +35,7 @@ type
     ShapeKF1: TShape;
     ShapeKF2: TShape;
     SpinEditSuggestPW: TSpinEdit;
+    procedure ActionKFExitExecute(Sender: TObject);
     procedure ButtonKFClick(Sender: TObject);
     procedure ButtonKFLoadFileClick(Sender: TObject);
     procedure ButtonPWfromhashClick(Sender: TObject);
@@ -190,6 +193,11 @@ blockwrite(keyf,keyarr,256,numwritten); //write 256 byte (2048 bit) keyarr to fi
 closefile(keyf);
 get_fingerprint (fingerprint,false);
 ProgressBarKF.Position:=0;
+end;
+
+procedure TFormKF.ActionKFExitExecute(Sender: TObject);
+begin
+ModalResult:=mrCancel;
 end;
 
 procedure TFormKF.ButtonKFLoadFileClick(Sender: TObject);

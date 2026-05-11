@@ -9,7 +9,7 @@ object FormComment: TFormComment
   ClientWidth = 602
   Color = clWindow
   DesignTimePPI = 120
-  Position = poScreenCenter
+  Position = poMainFormCenter
   ShowHint = True
   LCLVersion = '4.2.0.0'
   OnDropFiles = FormDropFiles
@@ -126,6 +126,22 @@ object FormComment: TFormComment
     ParentFont = False
     OnClick = LabelSavetofileClick
   end
+  object ButtonCancelComment: TButton
+    AnchorSideRight.Control = ButtonSaveComment
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 385
+    Height = 30
+    Top = 333
+    Width = 70
+    Anchors = [akRight, akBottom]
+    AutoSize = True
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 15
+    Caption = 'Cancel'
+    TabOrder = 2
+    OnClick = ButtonCancelCommentClick
+  end
   object OpenDialogFC: TOpenDialog
     Title = 'Open file'
     Left = 112
@@ -138,5 +154,13 @@ object FormComment: TFormComment
     Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
     Left = 224
     Top = 280
+  end
+  object ActionListComment: TActionList
+    Left = 512
+    object ActionCommentExit: TAction
+      Caption = 'ActionCommentExit'
+      ShortCut = 27
+      OnExecute = ActionCommentExitExecute
+    end
   end
 end

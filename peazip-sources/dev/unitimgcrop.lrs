@@ -5,10 +5,10 @@ LazarusResources.Add('TFormImgCrop','FORMDATA',[
   +#3#20#2#5'Width'#3'X'#2#8'AutoSize'#9#7'Caption'#6#4'Crop'#12'ClientHeight'#3
   +#20#1#11'ClientWidth'#3'X'#2#5'Color'#7#8'clWindow'#21'Constraints.MinHeight'
   +#3#19#1#20'Constraints.MinWidth'#3'X'#2#13'DesignTimePPI'#2'x'#8'Position'#7
-  +#14'poScreenCenter'#8'ShowHint'#9#10'LCLVersion'#6#7'4.2.0.0'#0#12'TButtonPa'
-  +'nel'#18'ButtonPanelImgCrop'#4'Left'#2#15#6'Height'#2#30#3'Top'#3#231#0#5'Wi'
-  +'dth'#3':'#2#18'BorderSpacing.Left'#2#15#19'BorderSpacing.Right'#2#15#20'Bor'
-  +'derSpacing.Bottom'#2#15#20'BorderSpacing.Around'#2#0#13'OKButton.Name'#6#8
+  +#16'poMainFormCenter'#8'ShowHint'#9#10'LCLVersion'#6#7'4.2.0.0'#0#12'TButton'
+  +'Panel'#18'ButtonPanelImgCrop'#4'Left'#2#15#6'Height'#2#30#3'Top'#3#231#0#5
+  +'Width'#3':'#2#18'BorderSpacing.Left'#2#15#19'BorderSpacing.Right'#2#15#20'B'
+  +'orderSpacing.Bottom'#2#15#20'BorderSpacing.Around'#2#0#13'OKButton.Name'#6#8
   +'OKButton'#23'OKButton.DefaultCaption'#9#15'HelpButton.Name'#6#10'HelpButton'
   +#25'HelpButton.DefaultCaption'#9#18'HelpButton.Enabled'#8#16'CloseButton.Nam'
   +'e'#6#11'CloseButton'#26'CloseButton.DefaultCaption'#9#19'CloseButton.Enable'

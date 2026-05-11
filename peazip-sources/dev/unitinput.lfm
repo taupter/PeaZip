@@ -11,7 +11,7 @@ object FormInput: TFormInput
   Constraints.MinHeight = 250
   Constraints.MinWidth = 700
   DesignTimePPI = 120
-  Position = poScreenCenter
+  Position = poMainFormCenter
   ShowHint = True
   LCLVersion = '4.2.0.0'
   object PanelInput: TPanel

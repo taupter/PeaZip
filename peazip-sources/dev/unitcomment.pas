@@ -6,14 +6,17 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  list_utils;
+  ActnList, list_utils;
 
 type
 
   { TFormComment }
 
   TFormComment = class(TForm)
+    ActionCommentExit: TAction;
+    ActionListComment: TActionList;
     ButtonSaveComment: TButton;
+    ButtonCancelComment: TButton;
     LabelSavetofile: TLabel;
     LabelResetComment: TLabel;
     LabelLoadfromfile: TLabel;
@@ -22,6 +25,8 @@ type
     MemoComment: TMemo;
     OpenDialogFC: TOpenDialog;
     SaveDialogFC: TSaveDialog;
+    procedure ActionCommentExitExecute(Sender: TObject);
+    procedure ButtonCancelCommentClick(Sender: TObject);
     procedure ButtonSaveCommentClick(Sender: TObject);
     procedure FormDropFiles(Sender: TObject; const FileNames: array of string);
     procedure LabelLoadfromfileClick(Sender: TObject);
@@ -44,6 +49,16 @@ implementation
 procedure TFormComment.ButtonSaveCommentClick(Sender: TObject);
 begin
 ModalResult:=mrOK;
+end;
+
+procedure TFormComment.ButtonCancelCommentClick(Sender: TObject);
+begin
+ModalResult:=mrCancel;
+end;
+
+procedure TFormComment.ActionCommentExitExecute(Sender: TObject);
+begin
+ModalResult:=mrCancel;
 end;
 
 procedure commentfromfile(commentfile:ansistring);

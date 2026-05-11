@@ -9,27 +9,65 @@ object FormPaths: TFormPaths
   Constraints.MinHeight = 300
   Constraints.MinWidth = 600
   DesignTimePPI = 120
-  Position = poScreenCenter
+  Position = poMainFormCenter
   LCLVersion = '4.2.0.0'
   object MemoPaths: TMemo
     AnchorSideLeft.Control = Owner
     AnchorSideTop.Control = Owner
     AnchorSideRight.Control = Owner
     AnchorSideRight.Side = asrBottom
-    AnchorSideBottom.Control = Owner
-    AnchorSideBottom.Side = asrBottom
+    AnchorSideBottom.Control = ButtonPanelPaths
     Left = 30
-    Height = 241
+    Height = 211
     Top = 30
     Width = 690
     Anchors = [akTop, akLeft, akRight, akBottom]
     BorderSpacing.Left = 30
     BorderSpacing.Top = 30
     BorderSpacing.Right = 30
-    BorderSpacing.Bottom = 30
+    BorderSpacing.Bottom = 15
     BorderStyle = bsNone
     ParentColor = True
     ScrollBars = ssAutoVertical
     TabOrder = 0
+  end
+  object ButtonPanelPaths: TButtonPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 15
+    Height = 30
+    Top = 256
+    Width = 720
+    BorderSpacing.Left = 15
+    BorderSpacing.Right = 15
+    BorderSpacing.Bottom = 15
+    BorderSpacing.Around = 0
+    OKButton.Name = 'OKButton'
+    OKButton.DefaultCaption = True
+    HelpButton.Name = 'HelpButton'
+    HelpButton.DefaultCaption = True
+    HelpButton.Enabled = False
+    CloseButton.Name = 'CloseButton'
+    CloseButton.DefaultCaption = True
+    CloseButton.Enabled = False
+    CancelButton.Name = 'CancelButton'
+    CancelButton.DefaultCaption = True
+    CancelButton.Enabled = False
+    TabOrder = 1
+    ShowButtons = [pbOK]
+    ShowGlyphs = []
+    ShowBevel = False
+  end
+  object ActionListPaths: TActionList
+    Left = 664
+    Top = 8
+    object ActionathsExit: TAction
+      Caption = 'ActionathsExit'
+      ShortCut = 27
+      OnExecute = ActionathsExitExecute
+    end
   end
 end

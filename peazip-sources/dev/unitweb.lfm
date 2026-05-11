@@ -10,7 +10,7 @@ object FormWeb: TFormWeb
   Constraints.MinHeight = 400
   Constraints.MinWidth = 750
   DesignTimePPI = 120
-  Position = poScreenCenter
+  Position = poMainFormCenter
   LCLVersion = '4.2.0.0'
   object ButtonPanelWeb: TButtonPanel
     AnchorSideLeft.Control = Owner

@@ -2,12 +2,12 @@ object Formpeach: TFormpeach
   Left = 167
   Height = 600
   Top = 35
-  Width = 1022
+  Width = 1024
   HelpKeyword = 'fsNormal'
   AllowDropFiles = True
   Caption = 'PeaZip'
   ClientHeight = 600
-  ClientWidth = 1022
+  ClientWidth = 1024
   Color = clWindow
   Constraints.MinHeight = 400
   Constraints.MinWidth = 800
@@ -25,7 +25,7 @@ object Formpeach: TFormpeach
     AnchorSideLeft.Side = asrBottom
     AnchorSideTop.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 273
+    Left = 275
     Height = 254
     Top = 104
     Width = 749
@@ -48,9 +48,9 @@ object Formpeach: TFormpeach
     AnchorSideRight.Control = OptionsAdd
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = PanelAddArchiveOut
-    Left = 2978
+    Left = 3062
     Height = 256
-    Top = 826
+    Top = 846
     Width = 1024
     Anchors = []
     BorderSpacing.Bottom = 18
@@ -124,9 +124,9 @@ object Formpeach: TFormpeach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 1058
+    Left = 1113
     Height = 80
-    Top = 190
+    Top = 196
     Width = 699
     Anchors = []
     BorderStyle = bsNone
@@ -148,9 +148,9 @@ object Formpeach: TFormpeach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 1081
+    Left = 1136
     Height = 80
-    Top = 190
+    Top = 196
     Width = 693
     Anchors = []
     BorderStyle = bsNone
@@ -171,7 +171,7 @@ object Formpeach: TFormpeach
     AnchorSideLeft.Side = asrBottom
     AnchorSideTop.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 446
+    Left = 448
     Height = 254
     Top = 104
     Width = 576
@@ -221,9 +221,9 @@ object Formpeach: TFormpeach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 1078
+    Left = 1133
     Height = 80
-    Top = 190
+    Top = 196
     Width = 690
     Anchors = []
     BorderStyle = bsNone
@@ -246,9 +246,9 @@ object Formpeach: TFormpeach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 1078
+    Left = 1133
     Height = 80
-    Top = 162
+    Top = 168
     Width = 690
     Anchors = []
     BorderStyle = bsNone
@@ -270,9 +270,9 @@ object Formpeach: TFormpeach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 1066
+    Left = 1117
     Height = 80
-    Top = 107
+    Top = 113
     Width = 652
     Anchors = []
     AutoEdit = False
@@ -294,9 +294,9 @@ object Formpeach: TFormpeach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Side = asrBottom
-    Left = 1066
+    Left = 1117
     Height = 80
-    Top = 134
+    Top = 140
     Width = 652
     Anchors = []
     BorderStyle = bsNone
@@ -319,9 +319,9 @@ object Formpeach: TFormpeach
     AnchorSideRight.Control = PanelFilters
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = SplitterBottom
-    Left = 1086
+    Left = 1133
     Height = 451
-    Top = 477
+    Top = 513
     Width = 590
     Anchors = []
     AutoSort = False
@@ -393,9 +393,9 @@ object Formpeach: TFormpeach
     AnchorSideRight.Side = asrBottom
     AnchorSideBottom.Control = Panelnav
     AnchorSideBottom.Side = asrBottom
-    Left = 1013
+    Left = 1030
     Height = 329
-    Top = 1774
+    Top = 1798
     Width = 200
     Anchors = []
     BorderStyle = bsNone
@@ -424,11 +424,11 @@ object Formpeach: TFormpeach
     Left = 0
     Height = 600
     Top = 0
-    Width = 1022
+    Width = 1024
     Anchors = [akTop, akLeft, akRight, akBottom]
     BevelOuter = bvNone
     ClientHeight = 600
-    ClientWidth = 1022
+    ClientWidth = 1024
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
@@ -441,11 +441,11 @@ object Formpeach: TFormpeach
       Left = 0
       Height = 600
       Top = 0
-      Width = 1022
+      Width = 1024
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
       ClientHeight = 600
-      ClientWidth = 1022
+      ClientWidth = 1024
       ParentBackground = False
       ParentFont = False
       TabOrder = 1
@@ -460,11 +460,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 516
         Top = 36
-        Width = 1022
+        Width = 1024
         Anchors = [akTop, akLeft, akRight, akBottom]
         BevelOuter = bvNone
         ClientHeight = 516
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 1
@@ -478,10 +478,10 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 516
           Top = 0
-          Width = 1022
+          Width = 1024
           Anchors = [akTop, akLeft, akRight, akBottom]
           ClientHeight = 516
-          ClientWidth = 1022
+          ClientWidth = 1024
           ParentBackground = False
           ParentFont = False
           TabOrder = 3
@@ -492,7 +492,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = ConsoleExtract
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 442
             Top = 49
             Width = 800
@@ -635,13 +635,13 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 516
           Top = 0
-          Width = 1022
+          Width = 1024
           HorzScrollBar.Page = 1
           VertScrollBar.Page = 512
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 516
-          ClientWidth = 1022
+          ClientWidth = 1024
           ParentBackground = False
           ParentFont = False
           TabOrder = 2
@@ -652,7 +652,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = ScheduleExtract
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 516
             Top = 0
             Width = 800
@@ -1271,13 +1271,13 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 516
           Top = 0
-          Width = 1022
+          Width = 1024
           HorzScrollBar.Page = 1
           VertScrollBar.Page = 466
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 516
-          ClientWidth = 1022
+          ClientWidth = 1024
           ParentBackground = False
           ParentFont = False
           TabOrder = 1
@@ -1285,7 +1285,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelExtAdv
             AnchorSideTop.Control = CheckBoxAutoHaltE
             AnchorSideTop.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 19
             Top = 126
             Width = 447
@@ -1299,7 +1299,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = CheckBoxExtNotArchives
             AnchorSideTop.Control = CheckBoxExtNotArchives
             AnchorSideTop.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 19
             Top = 151
             Width = 367
@@ -1316,7 +1316,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrBottom
             AnchorSideBottom.Control = OptionsExtractAdv
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 199
             Top = 317
             Width = 800
@@ -1550,16 +1550,16 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = OptionsExtractAdv
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 87
             Top = 182
-            Width = 911
+            Width = 912
             Anchors = [akTop, akLeft, akRight]
             AutoSize = True
             BorderSpacing.Top = 12
             BevelOuter = bvNone
             ClientHeight = 87
-            ClientWidth = 911
+            ClientWidth = 912
             Enabled = False
             ParentBackground = False
             ParentFont = False
@@ -1708,7 +1708,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbAdvfExt
             AnchorSideTop.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 19
             Top = 101
             Width = 207
@@ -1722,7 +1722,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelmoreoptExt
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 19
             Top = 76
             Width = 123
@@ -1737,7 +1737,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = CheckBoxExtNotArchives
             AnchorSideTop.Side = asrBottom
-            Left = 490
+            Left = 491
             Height = 19
             Top = 151
             Width = 54
@@ -1757,7 +1757,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelExtAdv
             AnchorSideRight.Side = asrBottom
             Cursor = crHandPoint
-            Left = 111
+            Left = 112
             Height = 15
             Top = 48
             Width = 133
@@ -1778,13 +1778,13 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 516
           Top = 0
-          Width = 1022
+          Width = 1024
           HorzScrollBar.Page = 75
           VertScrollBar.Page = 387
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 516
-          ClientWidth = 1022
+          ClientWidth = 1024
           ParentBackground = False
           ParentFont = False
           TabOrder = 0
@@ -1807,7 +1807,7 @@ object Formpeach: TFormpeach
             Left = 0
             Height = 257
             Top = 0
-            Width = 1022
+            Width = 1024
             Anchors = [akTop, akLeft, akRight, akBottom]
             BorderSpacing.Bottom = 18
             BorderStyle = bsNone
@@ -1842,7 +1842,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = OptionsExtract
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 217
             Top = 275
             Width = 819
@@ -2238,14 +2238,14 @@ object Formpeach: TFormpeach
             Left = 32
             Height = 19
             Top = 119
-            Width = 958
+            Width = 960
             Anchors = [akTop, akLeft, akRight]
             AutoSize = True
             BorderSpacing.Left = 32
             BorderSpacing.Right = 32
             BevelOuter = bvNone
             ClientHeight = 19
-            ClientWidth = 958
+            ClientWidth = 960
             Font.Color = clSilver
             Font.Height = -15
             ParentBackground = False
@@ -2260,7 +2260,7 @@ object Formpeach: TFormpeach
               AnchorSideRight.Control = PanelHintExtract
               AnchorSideRight.Side = asrBottom
               AnchorSideBottom.Side = asrBottom
-              Left = 462
+              Left = 463
               Height = 20
               Top = -1
               Width = 34
@@ -2284,7 +2284,7 @@ object Formpeach: TFormpeach
             Left = 0
             Height = 1
             Top = 256
-            Width = 1022
+            Width = 1024
             Anchors = [akLeft, akRight, akBottom]
             BevelOuter = bvNone
             Color = clActiveBorder
@@ -2298,7 +2298,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = panelspacerextract
             AnchorSideTop.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 1
             Top = 257
             Width = 800
@@ -2318,11 +2318,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 36
         Top = 0
-        Width = 1022
+        Width = 1024
         Anchors = [akTop, akLeft, akRight]
         BevelOuter = bvNone
         ClientHeight = 36
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 2
@@ -2333,7 +2333,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrBottom
-          Left = 584
+          Left = 585
           Height = 32
           Top = 6
           Width = 84
@@ -2351,7 +2351,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrBottom
-          Left = 505
+          Left = 506
           Height = 32
           Top = 6
           Width = 79
@@ -2369,7 +2369,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrBottom
-          Left = 427
+          Left = 428
           Height = 32
           Top = 6
           Width = 78
@@ -2387,7 +2387,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrBottom
-          Left = 355
+          Left = 356
           Height = 32
           Top = 6
           Width = 72
@@ -2403,7 +2403,7 @@ object Formpeach: TFormpeach
           AnchorSideLeft.Side = asrBottom
           AnchorSideTop.Control = ShapeTitleExtractb2
           AnchorSideTop.Side = asrCenter
-          Left = 427
+          Left = 428
           Height = 15
           Top = 15
           Width = 78
@@ -2419,7 +2419,7 @@ object Formpeach: TFormpeach
           AnchorSideLeft.Side = asrBottom
           AnchorSideTop.Control = ShapeTitleExtractb3
           AnchorSideTop.Side = asrCenter
-          Left = 505
+          Left = 506
           Height = 15
           Top = 15
           Width = 79
@@ -2435,7 +2435,7 @@ object Formpeach: TFormpeach
           AnchorSideLeft.Side = asrBottom
           AnchorSideTop.Control = ShapeTitleExtractb4
           AnchorSideTop.Side = asrCenter
-          Left = 584
+          Left = 585
           Height = 15
           Top = 15
           Width = 84
@@ -2450,7 +2450,7 @@ object Formpeach: TFormpeach
           AnchorSideLeft.Control = PanelTitleExtractTabAlign
           AnchorSideTop.Control = ShapeTitleExtractb1
           AnchorSideTop.Side = asrCenter
-          Left = 355
+          Left = 356
           Height = 15
           Top = 15
           Width = 72
@@ -2466,7 +2466,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrBottom
-          Left = 974
+          Left = 976
           Height = 36
           Top = 0
           Width = 48
@@ -2484,7 +2484,7 @@ object Formpeach: TFormpeach
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrCenter
           Cursor = crHandPoint
-          Left = 911
+          Left = 913
           Height = 15
           Top = 10
           Width = 51
@@ -2502,7 +2502,7 @@ object Formpeach: TFormpeach
           AnchorSideTop.Control = PanelTitleExtract
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Side = asrBottom
-          Left = 355
+          Left = 356
           Height = 1
           Top = 0
           Width = 313
@@ -2517,7 +2517,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrBottom
-          Left = 355
+          Left = 356
           Height = 6
           Top = 30
           Width = 72
@@ -2535,7 +2535,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrBottom
-          Left = 427
+          Left = 428
           Height = 6
           Top = 30
           Width = 78
@@ -2553,7 +2553,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrBottom
-          Left = 505
+          Left = 506
           Height = 6
           Top = 30
           Width = 79
@@ -2571,7 +2571,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleExtract
           AnchorSideBottom.Side = asrBottom
-          Left = 584
+          Left = 585
           Height = 6
           Top = 30
           Width = 84
@@ -2592,11 +2592,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 48
         Top = 552
-        Width = 1022
+        Width = 1024
         Anchors = [akLeft, akRight, akBottom]
         BevelOuter = bvNone
         ClientHeight = 48
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
@@ -2604,7 +2604,7 @@ object Formpeach: TFormpeach
           AnchorSideTop.Control = PanelActExt
           AnchorSideTop.Side = asrCenter
           AnchorSideRight.Control = ButtonExtCancel
-          Left = 812
+          Left = 814
           Height = 25
           Top = 12
           Width = 96
@@ -2624,7 +2624,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = PanelActExt
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Side = asrCenter
-          Left = 914
+          Left = 916
           Height = 25
           Top = 12
           Width = 96
@@ -2711,11 +2711,11 @@ object Formpeach: TFormpeach
       Left = 0
       Height = 600
       Top = 0
-      Width = 1022
+      Width = 1024
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
       ClientHeight = 600
-      ClientWidth = 1022
+      ClientWidth = 1024
       ParentBackground = False
       ParentFont = False
       TabOrder = 2
@@ -2729,11 +2729,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 48
         Top = 552
-        Width = 1022
+        Width = 1024
         Anchors = [akLeft, akRight, akBottom]
         BevelOuter = bvNone
         ClientHeight = 48
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
@@ -2760,7 +2760,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ButtonArchiveOK
           AnchorSideBottom.Control = ButtonArchiveOK
           AnchorSideBottom.Side = asrBottom
-          Left = 786
+          Left = 788
           Height = 25
           Top = 12
           Width = 26
@@ -2774,7 +2774,7 @@ object Formpeach: TFormpeach
           AnchorSideTop.Control = PanelActAdd
           AnchorSideTop.Side = asrCenter
           AnchorSideRight.Control = ButtonArchiveCancel
-          Left = 812
+          Left = 814
           Height = 25
           Top = 12
           Width = 96
@@ -2794,7 +2794,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = PanelActAdd
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Side = asrCenter
-          Left = 914
+          Left = 916
           Height = 25
           Top = 12
           Width = 96
@@ -2864,11 +2864,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 36
         Top = 0
-        Width = 1022
+        Width = 1024
         Anchors = [akTop, akLeft, akRight]
         BevelOuter = bvNone
         ClientHeight = 36
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 2
@@ -2879,7 +2879,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrBottom
-          Left = 570
+          Left = 571
           Height = 32
           Top = 6
           Width = 84
@@ -2897,7 +2897,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrBottom
-          Left = 491
+          Left = 492
           Height = 32
           Top = 6
           Width = 79
@@ -2915,7 +2915,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrBottom
-          Left = 413
+          Left = 414
           Height = 32
           Top = 6
           Width = 78
@@ -2933,7 +2933,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrBottom
-          Left = 355
+          Left = 356
           Height = 32
           Top = 6
           Width = 58
@@ -2949,7 +2949,7 @@ object Formpeach: TFormpeach
           AnchorSideLeft.Side = asrBottom
           AnchorSideTop.Control = ShapeTitleAddb2
           AnchorSideTop.Side = asrCenter
-          Left = 413
+          Left = 414
           Height = 15
           Top = 15
           Width = 78
@@ -2965,7 +2965,7 @@ object Formpeach: TFormpeach
           AnchorSideLeft.Side = asrBottom
           AnchorSideTop.Control = ShapeTitleAddb3
           AnchorSideTop.Side = asrCenter
-          Left = 491
+          Left = 492
           Height = 15
           Top = 15
           Width = 79
@@ -2981,7 +2981,7 @@ object Formpeach: TFormpeach
           AnchorSideLeft.Side = asrBottom
           AnchorSideTop.Control = ShapeTitleAddb4
           AnchorSideTop.Side = asrCenter
-          Left = 570
+          Left = 571
           Height = 15
           Top = 15
           Width = 84
@@ -2996,7 +2996,7 @@ object Formpeach: TFormpeach
           AnchorSideLeft.Control = PanelTitleAddTabAlign
           AnchorSideTop.Control = ShapeTitleAddb1
           AnchorSideTop.Side = asrCenter
-          Left = 355
+          Left = 356
           Height = 15
           Top = 15
           Width = 58
@@ -3012,7 +3012,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrBottom
-          Left = 974
+          Left = 976
           Height = 36
           Top = 0
           Width = 48
@@ -3029,7 +3029,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = LabelAddFiles
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrCenter
-          Left = 819
+          Left = 821
           Height = 1
           Top = 17
           Width = 1
@@ -3043,7 +3043,7 @@ object Formpeach: TFormpeach
           AnchorSideTop.Control = PanelTitleAdd
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Side = asrBottom
-          Left = 355
+          Left = 356
           Height = 1
           Top = 0
           Width = 313
@@ -3058,7 +3058,7 @@ object Formpeach: TFormpeach
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrCenter
           Cursor = crHandPoint
-          Left = 832
+          Left = 834
           Height = 15
           Top = 10
           Width = 54
@@ -3076,7 +3076,7 @@ object Formpeach: TFormpeach
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrCenter
           Cursor = crHandPoint
-          Left = 898
+          Left = 900
           Height = 15
           Top = 10
           Width = 64
@@ -3093,7 +3093,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrBottom
-          Left = 355
+          Left = 356
           Height = 6
           Top = 30
           Width = 58
@@ -3110,7 +3110,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrBottom
-          Left = 413
+          Left = 414
           Height = 6
           Top = 30
           Width = 78
@@ -3127,7 +3127,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrBottom
-          Left = 491
+          Left = 492
           Height = 6
           Top = 30
           Width = 79
@@ -3144,7 +3144,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelTitleAdd
           AnchorSideBottom.Side = asrBottom
-          Left = 570
+          Left = 571
           Height = 6
           Top = 30
           Width = 84
@@ -3166,11 +3166,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 516
         Top = 36
-        Width = 1022
+        Width = 1024
         Anchors = [akTop, akLeft, akRight, akBottom]
         BevelOuter = bvNone
         ClientHeight = 516
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 1
@@ -3184,10 +3184,10 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 516
           Top = 0
-          Width = 1022
+          Width = 1024
           Anchors = [akTop, akLeft, akRight, akBottom]
           ClientHeight = 516
-          ClientWidth = 1022
+          ClientWidth = 1024
           ParentBackground = False
           ParentFont = False
           TabOrder = 3
@@ -3198,7 +3198,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = ConsoleAdd
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 442
             Top = 49
             Width = 800
@@ -3344,13 +3344,13 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 516
           Top = 0
-          Width = 1022
+          Width = 1024
           HorzScrollBar.Page = 1
           VertScrollBar.Page = 512
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 516
-          ClientWidth = 1022
+          ClientWidth = 1024
           ParentBackground = False
           ParentFont = False
           TabOrder = 0
@@ -3361,7 +3361,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = ScheduleAdd
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 516
             Top = 0
             Width = 800
@@ -3981,13 +3981,13 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 516
           Top = 0
-          Width = 1022
+          Width = 1024
           HorzScrollBar.Page = 1
           VertScrollBar.Page = 516
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 516
-          ClientWidth = 1005
+          ClientWidth = 1007
           ParentBackground = False
           ParentFont = False
           TabOrder = 2
@@ -3996,7 +3996,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbAdvfAdd
             AnchorSideTop.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 102
+            Left = 103
             Height = 19
             Top = 101
             Width = 207
@@ -4010,7 +4010,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelmoreoptAdd
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Side = asrBottom
-            Left = 102
+            Left = 103
             Height = 19
             Top = 76
             Width = 123
@@ -4024,7 +4024,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelArchiveTypeOpt
             AnchorSideTop.Control = CheckBoxAutoHaltA
             AnchorSideTop.Side = asrBottom
-            Left = 102
+            Left = 103
             Height = 19
             Top = 126
             Width = 223
@@ -4038,7 +4038,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = cbEncExtension
             AnchorSideTop.Control = cbEncExtension
             AnchorSideTop.Side = asrBottom
-            Left = 102
+            Left = 103
             Height = 19
             Top = 151
             Width = 188
@@ -4054,7 +4054,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = CheckBoxDate
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Side = asrBottom
-            Left = 302
+            Left = 303
             Height = 23
             Top = 149
             Width = 200
@@ -4084,7 +4084,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = OptionsAddAdv
             AnchorSideBottom.Side = asrBottom
-            Left = 102
+            Left = 103
             Height = 451
             Top = 268
             Width = 800
@@ -6413,7 +6413,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = cbEncExtension
             AnchorSideTop.Control = CheckBoxForceConvert
             AnchorSideTop.Side = asrBottom
-            Left = 102
+            Left = 103
             Height = 19
             Top = 201
             Width = 114
@@ -6428,7 +6428,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = cbCustomExtension
             AnchorSideTop.Side = asrCenter
-            Left = 228
+            Left = 229
             Height = 23
             Top = 199
             Width = 64
@@ -6440,7 +6440,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = cbEncExtension
             AnchorSideTop.Control = CheckBoxDate
             AnchorSideTop.Side = asrBottom
-            Left = 102
+            Left = 103
             Height = 19
             Top = 176
             Width = 203
@@ -6456,7 +6456,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelArchiveTypeOpt
             AnchorSideRight.Side = asrBottom
             Cursor = crHandPoint
-            Left = 102
+            Left = 103
             Height = 15
             Top = 48
             Width = 133
@@ -6477,13 +6477,13 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 516
           Top = 0
-          Width = 1022
+          Width = 1024
           HorzScrollBar.Page = 75
           VertScrollBar.Page = 368
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 516
-          ClientWidth = 1022
+          ClientWidth = 1024
           ParentBackground = False
           ParentFont = False
           TabOrder = 1
@@ -6495,7 +6495,7 @@ object Formpeach: TFormpeach
             Left = 0
             Height = 276
             Top = 0
-            Width = 1022
+            Width = 1024
             Anchors = [akTop, akLeft, akRight, akBottom]
             BorderSpacing.Bottom = 18
             BorderStyle = bsNone
@@ -6533,14 +6533,14 @@ object Formpeach: TFormpeach
             Left = 32
             Height = 19
             Top = 129
-            Width = 958
+            Width = 960
             Anchors = [akTop, akLeft, akRight]
             AutoSize = True
             BorderSpacing.Left = 32
             BorderSpacing.Right = 32
             BevelOuter = bvNone
             ClientHeight = 19
-            ClientWidth = 958
+            ClientWidth = 960
             Font.Color = clSilver
             Font.Height = -15
             ParentBackground = False
@@ -6554,7 +6554,7 @@ object Formpeach: TFormpeach
               AnchorSideTop.Side = asrCenter
               AnchorSideRight.Side = asrBottom
               AnchorSideBottom.Side = asrBottom
-              Left = 462
+              Left = 463
               Height = 20
               Top = -1
               Width = 34
@@ -6577,7 +6577,7 @@ object Formpeach: TFormpeach
             Left = 0
             Height = 1
             Top = 275
-            Width = 1022
+            Width = 1024
             Anchors = [akLeft, akRight, akBottom]
             BevelOuter = bvNone
             Color = clActiveBorder
@@ -6591,7 +6591,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = PanelSpacerAdd
             AnchorSideTop.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 1
             Top = 276
             Width = 800
@@ -6607,7 +6607,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = OptionsAdd
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 198
             Top = 294
             Width = 792
@@ -7148,7 +7148,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = PanelAddArchiveOut
             AnchorSideBottom.Side = asrBottom
-            Left = 111
+            Left = 112
             Height = 198
             Top = 294
             Width = 792
@@ -7323,11 +7323,11 @@ object Formpeach: TFormpeach
       Left = 0
       Height = 600
       Top = 0
-      Width = 1022
+      Width = 1024
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
       ClientHeight = 600
-      ClientWidth = 1022
+      ClientWidth = 1024
       ParentBackground = False
       ParentFont = False
       TabOrder = 3
@@ -7342,11 +7342,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 600
         Top = 0
-        Width = 1022
+        Width = 1024
         Anchors = [akTop, akLeft, akRight, akBottom]
         BevelOuter = bvNone
         ClientHeight = 600
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
@@ -7361,13 +7361,13 @@ object Formpeach: TFormpeach
           Left = 181
           Height = 513
           Top = 39
-          Width = 841
+          Width = 843
           HorzScrollBar.Page = 218
           VertScrollBar.Page = 513
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 513
-          ClientWidth = 824
+          ClientWidth = 826
           ParentBackground = False
           ParentFont = False
           TabOrder = 2
@@ -7375,7 +7375,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PageOpt3
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = PageOpt3
-            Left = 112
+            Left = 113
             Height = 1
             Top = 0
             Width = 600
@@ -7389,7 +7389,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbDefaultFormat
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbDefaultFormat
-            Left = 112
+            Left = 113
             Height = 15
             Top = 763
             Width = 77
@@ -7402,7 +7402,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = Labeloamext1
             AnchorSideTop.Side = asrBottom
-            Left = 201
+            Left = 202
             Height = 23
             Top = 759
             Width = 260
@@ -7482,7 +7482,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxIgnorePaths
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 1061
             Width = 249
@@ -7496,7 +7496,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxIgnoreDisp
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 1086
             Width = 242
@@ -7510,7 +7510,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = cbautoclosesingleextract
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 1036
             Width = 219
@@ -7524,7 +7524,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = lsetdefaultout_arc
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 15
             Top = 984
             Width = 40
@@ -7537,7 +7537,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = Labelextevfor
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 1211
             Width = 275
@@ -7555,7 +7555,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine3
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 1
             Top = 47
             Width = 600
@@ -7573,7 +7573,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxUTC
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 273
             Width = 186
@@ -7587,7 +7587,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxForceBrowse
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 173
             Width = 195
@@ -7602,7 +7602,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbtree
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 362
             Width = 93
@@ -7616,7 +7616,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxAutoExtTarConvert
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 502
             Width = 194
@@ -7632,7 +7632,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxClosePeaZip
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 621
             Width = 332
@@ -7647,7 +7647,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = CheckBoxzipxswitch
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 894
             Width = 111
@@ -7662,7 +7662,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = editExtEvForWhat
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 1250
             Width = 115
@@ -7676,7 +7676,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = cbtimecreated
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 863
             Width = 293
@@ -7692,7 +7692,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = Labeloamext
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 1011
             Width = 329
@@ -7706,7 +7706,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = cbExtEvForWhen
             AnchorSideTop.Side = asrCenter
-            Left = 112
+            Left = 113
             Height = 15
             Top = 1190
             Width = 202
@@ -7719,7 +7719,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = CheckBoxSkipenc
             AnchorSideTop.Side = asrBottom
-            Left = 326
+            Left = 327
             Height = 23
             Top = 1186
             Width = 120
@@ -7746,7 +7746,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = CheckBoxSkipenc
             AnchorSideTop.Side = asrBottom
-            Left = 458
+            Left = 459
             Height = 23
             Top = 1186
             Width = 160
@@ -7771,7 +7771,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxAutoTest
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 15
             Top = 738
             Width = 43
@@ -7785,7 +7785,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelConfigurearc
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 921
             Width = 168
@@ -7801,7 +7801,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelConfigureext
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 1277
             Width = 164
@@ -7817,7 +7817,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = cbdefaultaction
             AnchorSideTop.Side = asrBottom
-            Left = 145
+            Left = 146
             Height = 23
             Top = 327
             Width = 300
@@ -7844,7 +7844,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Control = cbExtEvForHow
             AnchorSideRight.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 23
             Top = 1215
             Width = 506
@@ -7858,7 +7858,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxEditArchives
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 148
             Width = 199
@@ -7875,7 +7875,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbtree
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbDefaultFormat
-            Left = 112
+            Left = 113
             Height = 15
             Top = 331
             Width = 21
@@ -7888,7 +7888,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = CheckBoxForceOpen
             AnchorSideTop.Side = asrBottom
-            Left = 258
+            Left = 259
             Height = 23
             Top = 298
             Width = 240
@@ -7917,7 +7917,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbdefaultaction
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbDefaultFormat
-            Left = 112
+            Left = 113
             Height = 15
             Top = 302
             Width = 134
@@ -7929,7 +7929,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxIgnoreSel
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 1111
             Width = 234
@@ -7943,7 +7943,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxExcludeEF
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 223
             Width = 133
@@ -7959,7 +7959,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = CheckBoxForceLayout
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbDefaultFormat
-            Left = 251
+            Left = 252
             Height = 1
             Top = 232
             Width = 1
@@ -7971,7 +7971,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxSmartFolder
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 1161
             Width = 157
@@ -7985,7 +7985,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = Labeloafter
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 596
             Width = 200
@@ -8000,7 +8000,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = CheckBoxNoConf
             AnchorSideTop.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 646
             Width = 223
@@ -8014,7 +8014,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxEnumd
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 838
             Width = 122
@@ -8030,7 +8030,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxAC
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 813
             Width = 180
@@ -8046,7 +8046,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxExtAnd
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 1136
             Width = 108
@@ -8060,7 +8060,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxAutoOpenTar
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 15
             Top = 569
             Width = 153
@@ -8073,7 +8073,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = Labeloambrowser
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 123
             Width = 218
@@ -8090,7 +8090,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = CheckBoxAutoOpen
             AnchorSideTop.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 671
             Width = 158
@@ -8104,7 +8104,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = Labeloamtar
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 452
             Width = 219
@@ -8120,7 +8120,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxAutoExtTar
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 477
             Width = 139
@@ -8134,7 +8134,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = cbDefaultFormat
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 788
             Width = 280
@@ -8150,7 +8150,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxForceEdit
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 198
             Width = 193
@@ -8163,7 +8163,7 @@ object Formpeach: TFormpeach
           object Labelo3: TLabel
             AnchorSideLeft.Control = BevelTitleOpt3
             AnchorSideTop.Control = PageOpt3
-            Left = 112
+            Left = 113
             Height = 23
             Top = 12
             Width = 136
@@ -8180,7 +8180,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = CheckBoxForceEdit
             AnchorSideTop.Side = asrCenter
-            Left = 319
+            Left = 320
             Height = 23
             Top = 171
             Width = 74
@@ -8207,7 +8207,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = LabelConfigurePw
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 15
             Top = 425
             Width = 22
@@ -8220,7 +8220,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = CheckBoxForceLayout
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 248
             Width = 212
@@ -8234,7 +8234,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine3
             AnchorSideTop.Control = BevelTitleOpt3
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 15
             Top = 96
             Width = 47
@@ -8248,7 +8248,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = CheckBoxAutoOpenTar
             AnchorSideTop.Side = asrCenter
-            Left = 318
+            Left = 319
             Height = 23
             Top = 500
             Width = 120
@@ -8811,11 +8811,11 @@ object Formpeach: TFormpeach
           Left = 181
           Height = 48
           Top = 552
-          Width = 841
+          Width = 843
           Anchors = [akLeft, akRight, akBottom]
           BevelOuter = bvNone
           ClientHeight = 48
-          ClientWidth = 841
+          ClientWidth = 843
           ParentBackground = False
           ParentFont = False
           TabOrder = 8
@@ -8824,7 +8824,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = ButtonOptOK
             AnchorSideBottom.Control = ButtonOptCancel
             AnchorSideBottom.Side = asrBottom
-            Left = 529
+            Left = 531
             Height = 25
             Top = 11
             Width = 96
@@ -8842,7 +8842,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = PanelActOptions
             AnchorSideBottom.Side = asrCenter
-            Left = 733
+            Left = 735
             Height = 25
             Top = 11
             Width = 96
@@ -8859,7 +8859,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = ButtonOptCancel
             AnchorSideBottom.Control = PanelActOptions
             AnchorSideBottom.Side = asrCenter
-            Left = 631
+            Left = 633
             Height = 25
             Top = 11
             Width = 96
@@ -8893,7 +8893,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = NotebookOpt
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Side = asrBottom
-          Left = 630
+          Left = 632
           Height = 23
           Top = 8
           Width = 360
@@ -8940,13 +8940,13 @@ object Formpeach: TFormpeach
           Left = 181
           Height = 513
           Top = 39
-          Width = 841
+          Width = 843
           HorzScrollBar.Page = 1
           VertScrollBar.Page = 271
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 513
-          ClientWidth = 841
+          ClientWidth = 843
           ParentBackground = False
           ParentFont = False
           TabOrder = 3
@@ -8957,7 +8957,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine5
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 36
             Top = 80
             Width = 600
@@ -9088,7 +9088,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PageOpt5
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = PageOpt5
-            Left = 120
+            Left = 121
             Height = 1
             Top = 0
             Width = 600
@@ -9104,7 +9104,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine5
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = LabelResetApp1
-            Left = 120
+            Left = 121
             Height = 370
             Top = 128
             Width = 600
@@ -9165,7 +9165,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine5
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = LabelResetApp1
-            Left = 120
+            Left = 121
             Height = 370
             Top = 128
             Width = 600
@@ -9257,7 +9257,7 @@ object Formpeach: TFormpeach
             AnchorSideBottom.Control = PageOpt5
             AnchorSideBottom.Side = asrBottom
             Cursor = crHandPoint
-            Left = 120
+            Left = 121
             Height = 15
             Top = 498
             Width = 97
@@ -9274,7 +9274,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine5
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 1
             Top = 47
             Width = 600
@@ -9291,7 +9291,7 @@ object Formpeach: TFormpeach
           object Labelo5: TLabel
             AnchorSideLeft.Control = BevelTitleOpt5
             AnchorSideTop.Control = PageOpt5
-            Left = 120
+            Left = 121
             Height = 23
             Top = 12
             Width = 100
@@ -9315,13 +9315,13 @@ object Formpeach: TFormpeach
           Left = 181
           Height = 513
           Top = 39
-          Width = 841
+          Width = 843
           HorzScrollBar.Page = 329
           VertScrollBar.Page = 513
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 513
-          ClientWidth = 824
+          ClientWidth = 826
           ParentBackground = False
           ParentFont = False
           TabOrder = 5
@@ -9333,7 +9333,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = PageOpt6
             AnchorSideBottom.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 32
             Top = 732
             Width = 600
@@ -9350,7 +9350,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine6
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 32
             Top = 849
             Width = 600
@@ -9368,7 +9368,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = themesave_label
             AnchorSideBottom.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 124
             Top = 740
             Width = 600
@@ -9382,7 +9382,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PageOpt6
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = PageOpt6
-            Left = 112
+            Left = 113
             Height = 1
             Top = 0
             Width = 600
@@ -9396,7 +9396,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = Edit3
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 312
+            Left = 313
             Height = 15
             Top = 849
             Width = 37
@@ -9411,7 +9411,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = Edit1
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = Edit1
-            Left = 211
+            Left = 212
             Height = 15
             Top = 760
             Width = 69
@@ -9425,7 +9425,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = Edit2
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = Edit1
-            Left = 243
+            Left = 244
             Height = 15
             Top = 789
             Width = 37
@@ -9439,7 +9439,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = Edit3
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = Edit1
-            Left = 241
+            Left = 242
             Height = 15
             Top = 818
             Width = 39
@@ -9452,7 +9452,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = LabelTheme
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Side = asrCenter
-            Left = 312
+            Left = 313
             Height = 15
             Top = 436
             Width = 3
@@ -9465,7 +9465,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ColorButton1
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 220
+            Left = 221
             Height = 15
             Top = 165
             Width = 60
@@ -9478,7 +9478,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ComboBoxTheme
             AnchorSideTop.Control = ComboBoxTheme
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 21
             Top = 162
             Width = 80
@@ -9495,7 +9495,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ColorButton1
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 398
+            Left = 399
             Height = 15
             Top = 165
             Width = 28
@@ -9510,7 +9510,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
             Cursor = crHandPoint
-            Left = 244
+            Left = 245
             Height = 15
             Top = 137
             Width = 36
@@ -9524,7 +9524,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = SpinEditOpacity
             AnchorSideTop.Control = cbzooming
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 756
             Width = 288
@@ -9536,7 +9536,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = Edit1
             AnchorSideTop.Control = Edit1
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 785
             Width = 288
@@ -9548,7 +9548,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = Edit1
             AnchorSideTop.Control = Edit2
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 814
             Width = 288
@@ -9565,7 +9565,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine6
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 1
             Top = 47
             Width = 600
@@ -9583,7 +9583,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ColorButton1
             AnchorSideTop.Control = CheckBoxAltgridcol
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 627
             Width = 80
@@ -9599,7 +9599,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = SpinEditOpacity
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 398
+            Left = 399
             Height = 15
             Top = 631
             Width = 28
@@ -9613,7 +9613,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = SpinEditOpacity
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = SpinEditOpacity
-            Left = 239
+            Left = 240
             Height = 15
             Top = 631
             Width = 41
@@ -9628,7 +9628,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ComboBoxTheme
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 524
+            Left = 525
             Height = 16
             Top = 136
             Width = 16
@@ -9641,7 +9641,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ComboBoxTheme
             AnchorSideTop.Control = ColorButton3
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 21
             Top = 216
             Width = 80
@@ -9656,7 +9656,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ComboBoxTheme
             AnchorSideTop.Control = ColorButton1
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 21
             Top = 189
             Width = 80
@@ -9673,7 +9673,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ColorButton2
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 398
+            Left = 399
             Height = 15
             Top = 219
             Width = 28
@@ -9689,7 +9689,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ColorButton3
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 398
+            Left = 399
             Height = 15
             Top = 192
             Width = 28
@@ -9703,7 +9703,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelDefaultColor2
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 252
+            Left = 253
             Height = 15
             Top = 219
             Width = 28
@@ -9716,7 +9716,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ColorButton3
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 221
+            Left = 222
             Height = 15
             Top = 192
             Width = 59
@@ -9729,7 +9729,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine6
             AnchorSideTop.Control = cbAltTabStyle
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 15
             Top = 569
             Width = 55
@@ -9744,7 +9744,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelDefaultColor2
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 432
+            Left = 433
             Height = 15
             Top = 219
             Width = 3
@@ -9758,7 +9758,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ColorButton2
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 441
+            Left = 442
             Height = 15
             Top = 219
             Width = 37
@@ -9774,7 +9774,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Control = ColorButton3
             AnchorSideRight.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 353
             Width = 80
@@ -9798,7 +9798,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbspacing
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 238
+            Left = 239
             Height = 15
             Top = 357
             Width = 42
@@ -9813,7 +9813,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelDefaultColor1
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 432
+            Left = 433
             Height = 15
             Top = 165
             Width = 3
@@ -9827,7 +9827,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelDefaultColor1
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 441
+            Left = 442
             Height = 15
             Top = 165
             Width = 37
@@ -9842,7 +9842,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ComboBoxTheme
             AnchorSideTop.Control = ColorButton2
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 49
             Top = 243
             Width = 80
@@ -9859,7 +9859,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = baboutthemes
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 133
             Width = 200
@@ -9882,7 +9882,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbAccentToolBar
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 238
+            Left = 239
             Height = 15
             Top = 386
             Width = 42
@@ -9895,7 +9895,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ColorButton2
             AnchorSideTop.Control = cbspacing
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 382
             Width = 150
@@ -9923,7 +9923,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbAltBar
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 212
+            Left = 213
             Height = 15
             Top = 444
             Width = 68
@@ -9936,7 +9936,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ColorButton2
             AnchorSideTop.Control = cbSolidAddress
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 440
             Width = 220
@@ -9959,7 +9959,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbAltTabs
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 205
+            Left = 206
             Height = 15
             Top = 473
             Width = 75
@@ -9972,7 +9972,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ColorButton2
             AnchorSideTop.Control = cbAltBar
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 469
             Width = 220
@@ -9997,7 +9997,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = cbAltBar
             AnchorSideTop.Control = cbAltTabs
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 498
             Width = 160
@@ -10023,7 +10023,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = LabelColorToolbar
             AnchorSideTop.Side = asrCenter
-            Left = 474
+            Left = 475
             Height = 19
             Top = 384
             Width = 110
@@ -10038,7 +10038,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbAltTabStyle
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 230
+            Left = 231
             Height = 15
             Top = 502
             Width = 50
@@ -10051,7 +10051,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = cbAltBar
             AnchorSideTop.Control = cbAccentToolBar
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 411
             Width = 150
@@ -10079,7 +10079,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbSolidAddress
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 218
+            Left = 219
             Height = 15
             Top = 415
             Width = 62
@@ -10092,7 +10092,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ColorButton2
             AnchorSideTop.Control = LabelAdvThemes
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 19
             Top = 596
             Width = 120
@@ -10108,7 +10108,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Control = ColorButton3
             AnchorSideRight.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 656
             Width = 50
@@ -10133,7 +10133,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbSmallIconSize
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 198
+            Left = 199
             Height = 15
             Top = 660
             Width = 82
@@ -10148,7 +10148,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Control = ColorButton3
             AnchorSideRight.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 23
             Top = 685
             Width = 80
@@ -10177,7 +10177,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbzooming
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 231
+            Left = 232
             Height = 15
             Top = 689
             Width = 49
@@ -10190,7 +10190,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = tbtemperature
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 183
+            Left = 184
             Height = 15
             Top = 260
             Width = 97
@@ -10202,7 +10202,7 @@ object Formpeach: TFormpeach
           object Labelo6: TLabel
             AnchorSideLeft.Control = PanelLine6
             AnchorSideTop.Control = PageOpt6
-            Left = 112
+            Left = 113
             Height = 23
             Top = 12
             Width = 61
@@ -10218,7 +10218,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = BevelTitleOpt6
             AnchorSideTop.Control = BevelTitleOpt6
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 25
             Top = 96
             Width = 51
@@ -10234,7 +10234,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ComboBoxTheme
             AnchorSideTop.Control = tbtemperature
             AnchorSideTop.Side = asrBottom
-            Left = 312
+            Left = 313
             Height = 49
             Top = 298
             Width = 80
@@ -10250,7 +10250,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = tbcontrast
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ColorButton1
-            Left = 235
+            Left = 236
             Height = 15
             Top = 315
             Width = 45
@@ -10264,7 +10264,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = cbSolidAddress
             AnchorSideTop.Side = asrBottom
-            Left = 544
+            Left = 545
             Height = 23
             Top = 440
             Width = 150
@@ -10295,14 +10295,14 @@ object Formpeach: TFormpeach
           Left = 181
           Height = 513
           Top = 39
-          Width = 841
+          Width = 843
           HorzScrollBar.Page = 1
           VertScrollBar.Page = 246
           Anchors = [akTop, akLeft, akRight, akBottom]
           AutoSize = True
           BorderStyle = bsNone
           ClientHeight = 513
-          ClientWidth = 841
+          ClientWidth = 843
           ParentBackground = False
           ParentFont = False
           TabOrder = 4
@@ -10310,7 +10310,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PageOpt7
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = PageOpt7
-            Left = 120
+            Left = 121
             Height = 1
             Top = 0
             Width = 600
@@ -10327,7 +10327,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = PageOpt7
             AnchorSideBottom.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 282
             Top = 219
             Width = 600
@@ -10349,7 +10349,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = BevelTitleOpt7
             AnchorSideTop.Side = asrBottom
-            Left = 223
+            Left = 224
             Height = 25
             Top = 96
             Width = 52
@@ -10367,7 +10367,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = baboutsupport
             AnchorSideTop.Side = asrCenter
-            Left = 287
+            Left = 288
             Height = 25
             Top = 96
             Width = 32
@@ -10384,7 +10384,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = baboutsupport
             AnchorSideTop.Side = asrCenter
-            Left = 331
+            Left = 332
             Height = 25
             Top = 96
             Width = 47
@@ -10400,7 +10400,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine7
             AnchorSideTop.Control = baboutchangelog
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 25
             Top = 170
             Width = 136
@@ -10419,7 +10419,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine7
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 1
             Top = 47
             Width = 600
@@ -10436,7 +10436,7 @@ object Formpeach: TFormpeach
           object Labelo7: TLabel
             AnchorSideLeft.Control = BevelTitleOpt7
             AnchorSideTop.Control = PageOpt7
-            Left = 120
+            Left = 121
             Height = 23
             Top = 12
             Width = 38
@@ -10452,7 +10452,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine7
             AnchorSideTop.Control = BevelTitleOpt7
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 25
             Top = 96
             Width = 91
@@ -10468,7 +10468,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine7
             AnchorSideTop.Control = baboutsupport
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 25
             Top = 133
             Width = 68
@@ -10485,7 +10485,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = baboutsupport
             AnchorSideTop.Side = asrBottom
-            Left = 200
+            Left = 201
             Height = 25
             Top = 133
             Width = 30
@@ -10510,14 +10510,14 @@ object Formpeach: TFormpeach
           Left = 181
           Height = 513
           Top = 39
-          Width = 841
+          Width = 843
           HorzScrollBar.Page = 1
           VertScrollBar.Page = 222
           Anchors = [akTop, akLeft, akRight, akBottom]
           AutoSize = True
           BorderStyle = bsNone
           ClientHeight = 513
-          ClientWidth = 841
+          ClientWidth = 843
           ParentBackground = False
           ParentFont = False
           TabOrder = 6
@@ -10525,7 +10525,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PageOpt8
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = PageOpt8
-            Left = 120
+            Left = 121
             Height = 1
             Top = 0
             Width = 600
@@ -10538,19 +10538,23 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine8
             AnchorSideTop.Control = baboutup
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            AnchorSideRight.Control = PanelLine8
+            AnchorSideRight.Side = asrBottom
+            Left = 121
             Height = 15
             Top = 145
-            Width = 3
+            Width = 600
+            Anchors = [akTop, akLeft, akRight]
             BorderSpacing.Top = 24
             Caption = ' '
             ParentFont = False
+            WordWrap = True
           end
           object baboutup: TSpeedButton
             AnchorSideLeft.Control = PanelLine8
             AnchorSideTop.Control = BevelTitleOpt8
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 25
             Top = 96
             Width = 53
@@ -10569,7 +10573,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine8
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 1
             Top = 47
             Width = 600
@@ -10588,7 +10592,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = LabelAbout
             AnchorSideTop.Side = asrBottom
-            Left = 202
+            Left = 203
             Height = 31
             Top = 160
             Width = 82
@@ -10602,7 +10606,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine8
             AnchorSideTop.Control = baboutbin
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 31
             Top = 191
             Width = 82
@@ -10617,7 +10621,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = baboutbin
             AnchorSideTop.Side = asrBottom
-            Left = 202
+            Left = 203
             Height = 31
             Top = 191
             Width = 82
@@ -10631,7 +10635,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine8
             AnchorSideTop.Control = LabelAbout
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 31
             Top = 160
             Width = 82
@@ -10644,7 +10648,7 @@ object Formpeach: TFormpeach
           object Labelo8: TLabel
             AnchorSideLeft.Control = BevelTitleOpt8
             AnchorSideTop.Control = PageOpt8
-            Left = 120
+            Left = 121
             Height = 23
             Top = 12
             Width = 50
@@ -10661,7 +10665,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = BevelTitleOpt8
             AnchorSideTop.Side = asrBottom
-            Left = 185
+            Left = 186
             Height = 25
             Top = 96
             Width = 49
@@ -10675,729 +10679,6 @@ object Formpeach: TFormpeach
             OnClick = baboutpluginsClick
           end
         end
-        object PageOpt2: TScrollBox
-          AnchorSideLeft.Control = SplitterOptions
-          AnchorSideLeft.Side = asrBottom
-          AnchorSideTop.Control = EditOptSearch
-          AnchorSideTop.Side = asrBottom
-          AnchorSideRight.Control = NotebookOpt
-          AnchorSideRight.Side = asrBottom
-          AnchorSideBottom.Control = PanelActOptions
-          Left = 181
-          Height = 513
-          Top = 39
-          Width = 841
-          HorzScrollBar.Page = 1
-          VertScrollBar.Page = 513
-          Anchors = [akTop, akLeft, akRight, akBottom]
-          BorderStyle = bsNone
-          ClientHeight = 513
-          ClientWidth = 824
-          ParentBackground = False
-          ParentFont = False
-          TabOrder = 10
-          object PanelLine2: TPanel
-            AnchorSideLeft.Control = PageOpt2
-            AnchorSideLeft.Side = asrCenter
-            AnchorSideTop.Control = PageOpt2
-            Left = 112
-            Height = 1
-            Top = 0
-            Width = 600
-            BevelOuter = bvNone
-            ParentBackground = False
-            ParentFont = False
-            TabOrder = 17
-          end
-          object BevelTitleOpt2: TPanel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = Labelo2
-            AnchorSideTop.Side = asrBottom
-            AnchorSideRight.Control = PanelLine2
-            AnchorSideRight.Side = asrBottom
-            AnchorSideBottom.Side = asrBottom
-            Left = 112
-            Height = 1
-            Top = 47
-            Width = 600
-            Anchors = [akTop, akLeft, akRight]
-            BorderSpacing.Top = 12
-            BevelOuter = bvNone
-            Color = 553621811
-            Constraints.MaxWidth = 800
-            ParentBackground = False
-            ParentColor = False
-            ParentFont = False
-            TabOrder = 16
-          end
-          object ImageInfoEncoding: TImage
-            AnchorSideLeft.Control = CheckBoxEncoding
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = CheckBoxEncoding
-            AnchorSideTop.Side = asrCenter
-            AnchorSideRight.Control = CheckBoxEncoding
-            AnchorSideRight.Side = asrBottom
-            Cursor = crHandPoint
-            Left = 629
-            Height = 16
-            Top = 182
-            Width = 16
-            BorderSpacing.Left = 6
-            Transparent = True
-            OnClick = ImageInfoEncodingClick
-          end
-          object Labelconsoleencoding: TLabel
-            AnchorSideLeft.Control = BevelTitleOpt2
-            AnchorSideTop.Control = ComboBoxConsoleEncoding
-            AnchorSideTop.Side = asrCenter
-            AnchorSideRight.Control = ComboBoxConsoleEncoding
-            Left = 112
-            Height = 15
-            Top = 156
-            Width = 156
-            Caption = '7z console text encoding -scc'
-            ParentFont = False
-          end
-          object CheckBoxEncoding: TCheckBox
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = ComboBoxConsoleEncoding
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 19
-            Top = 181
-            Width = 511
-            BorderSpacing.Top = 6
-            Caption = 'Display archived object''s name as UTF-8 text; uncheck to replace extended characters with "?"'
-            Checked = True
-            ParentFont = False
-            State = cbChecked
-            TabOrder = 3
-            OnClick = CheckBoxEncodingClick
-          end
-          object ComboBoxConsoleEncoding: TComboBox
-            AnchorSideLeft.Control = Labelconsoleencoding
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = cbEncoding
-            AnchorSideTop.Side = asrBottom
-            Left = 280
-            Height = 23
-            Top = 152
-            Width = 100
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 6
-            ItemHeight = 15
-            ItemIndex = 0
-            Items.Strings = (
-              'UTF-8'
-              'WIN'
-              'DOS'
-            )
-            ParentFont = False
-            Style = csDropDownList
-            TabOrder = 2
-            Text = 'UTF-8'
-            OnChange = ComboBoxConsoleEncodingChange
-          end
-          object Labeloaenc: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = BevelTitleOpt2
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 15
-            Top = 96
-            Width = 50
-            BorderSpacing.Top = 48
-            Caption = 'Encoding'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object LabelConf: TLabel
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideBottom.Side = asrCenter
-            Left = 774
-            Height = 15
-            Top = 980613466
-            Width = 3
-            Anchors = []
-            BorderSpacing.Left = 8
-            Caption = ' '
-            ParentFont = False
-            Visible = False
-          end
-          object Labeloaui: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = ComboBoxSD
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 15
-            Top = 454
-            Width = 94
-            BorderSpacing.Top = 48
-            Caption = 'Backend binaries'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object ImageInfoBinaries: TImage
-            AnchorSideLeft.Control = Labeloaui
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = Labeloaui
-            AnchorSideTop.Side = asrCenter
-            Cursor = crHandPoint
-            Left = 212
-            Height = 16
-            Top = 453
-            Width = 16
-            BorderSpacing.Left = 6
-            Transparent = True
-            OnClick = ImageInfoBinariesClick
-          end
-          object cbBinaries: TComboBox
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = CheckBoxParams
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 23
-            Top = 728
-            Width = 160
-            BorderSpacing.Top = 12
-            Constraints.MaxWidth = 600
-            ItemHeight = 15
-            ItemIndex = 2
-            Items.Strings = (
-              'console: native interface'
-              'graphic + console'
-              'graphic: wrapped by PeaLauncher'
-            )
-            ParentFont = False
-            Style = csDropDownList
-            TabOrder = 13
-            Text = 'graphic: wrapped by PeaLauncher'
-            OnChange = cbBinariesChange
-          end
-          object cbBinariesStop: TComboBox
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = cbBinaries
-            AnchorSideTop.Side = asrBottom
-            AnchorSideRight.Side = asrBottom
-            Left = 112
-            Height = 23
-            Top = 757
-            Width = 360
-            BorderSpacing.Top = 6
-            Constraints.MaxWidth = 600
-            ItemHeight = 15
-            Items.Strings = (
-              '0'
-              '1'
-              '2'
-              '3'
-              '4'
-            )
-            ParentFont = False
-            Style = csDropDownList
-            TabOrder = 14
-            OnChange = cbBinariesStopChange
-          end
-          object ComboBoxLibre: TComboBox
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = cbBinariesStop
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 23
-            Top = 786
-            Width = 320
-            BorderSpacing.Top = 6
-            ItemHeight = 15
-            ItemIndex = 0
-            Items.Strings = (
-              '0'
-              '1'
-              '2'
-            )
-            ParentFont = False
-            Style = csDropDownList
-            TabOrder = 15
-            Text = '0'
-            OnChange = ComboBoxLibreChange
-          end
-          object LabelOpenDesktop: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = LabelConfigureSendTo
-            AnchorSideTop.Side = asrBottom
-            AnchorSideRight.Control = EditDesk
-            Cursor = crHandPoint
-            Left = 112
-            Height = 15
-            Top = 356
-            Width = 43
-            BorderSpacing.Top = 12
-            Caption = 'Desktop'
-            Font.Color = 13391121
-            ParentFont = False
-            OnClick = LabelOpenDesktopClick
-          end
-          object EditDesk: TEdit
-            AnchorSideLeft.Control = LabelCustomDesktop
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = LabelOpenDesktop
-            AnchorSideTop.Side = asrCenter
-            Left = 236
-            Height = 23
-            Top = 352
-            Width = 360
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 12
-            ParentFont = False
-            ReadOnly = True
-            TabOrder = 4
-            Visible = False
-          end
-          object ButtonEditDesk: TButton
-            AnchorSideLeft.Control = EditDesk
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = EditDesk
-            AnchorSideRight.Side = asrBottom
-            AnchorSideBottom.Control = EditDesk
-            AnchorSideBottom.Side = asrBottom
-            Left = 596
-            Height = 23
-            Top = 352
-            Width = 24
-            Anchors = [akTop, akLeft, akBottom]
-            BorderSpacing.InnerBorder = 4
-            Caption = '...'
-            ParentFont = False
-            TabOrder = 5
-            Visible = False
-            OnClick = ButtonEditDeskClick
-          end
-          object LabelcbSD: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = ComboBoxSD
-            AnchorSideTop.Side = asrCenter
-            AnchorSideRight.Control = EditDesk
-            Left = 112
-            Height = 15
-            Top = 387
-            Width = 105
-            BorderSpacing.Top = 12
-            Caption = 'Start browsing from'
-            ParentFont = False
-          end
-          object ComboBoxSD: TComboBox
-            AnchorSideLeft.Control = LabelcbSD
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = LabelOpenDesktop
-            AnchorSideTop.Side = asrBottom
-            Left = 229
-            Height = 23
-            Top = 383
-            Width = 240
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 12
-            ItemHeight = 15
-            ItemIndex = 0
-            Items.Strings = (
-              'Last visited directory'
-              'Computer''s root'
-              'Home'
-              'Desktop'
-              'Custom directory'
-            )
-            ParentFont = False
-            Style = csDropDownList
-            TabOrder = 6
-            Text = 'Last visited directory'
-            OnChange = ComboBoxSDChange
-          end
-          object LabelcbSDcustom: TLabel
-            AnchorSideLeft.Control = ComboBoxSD
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = ComboBoxSD
-            AnchorSideTop.Side = asrCenter
-            AnchorSideRight.Control = EditDesk
-            Cursor = crHandPoint
-            Left = 481
-            Height = 1
-            Top = 394
-            Width = 1
-            BorderSpacing.Left = 12
-            ParentFont = False
-          end
-          object Labelogpaths: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = CheckBoxEncoding
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 15
-            Top = 248
-            Width = 30
-            BorderSpacing.Top = 48
-            Caption = 'Paths'
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object LabelOpenConf: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = Labelogpaths
-            AnchorSideTop.Side = asrBottom
-            AnchorSideBottom.Side = asrCenter
-            Cursor = crHandPoint
-            Left = 112
-            Height = 15
-            Top = 275
-            Width = 26
-            BorderSpacing.Top = 12
-            Caption = 'Conf'
-            Font.Color = 13391121
-            ParentFont = False
-            OnClick = LabelOpenConfClick
-          end
-          object LabelAppPath: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = LabelOpenConf
-            AnchorSideTop.Side = asrBottom
-            Cursor = crHandPoint
-            Left = 112
-            Height = 15
-            Top = 302
-            Width = 110
-            BorderSpacing.Top = 12
-            Caption = 'Open PeaZip''s folder'
-            Font.Color = 13391121
-            ParentFont = False
-            OnClick = LabelAppPathClick
-          end
-          object LabelConfigureSendTo: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = LabelAppPath
-            AnchorSideTop.Side = asrBottom
-            Cursor = crHandPoint
-            Left = 112
-            Height = 15
-            Top = 329
-            Width = 171
-            BorderSpacing.Top = 12
-            Caption = 'Open user''s SendTo menu folder'
-            Font.Color = 13391121
-            ParentFont = False
-            OnClick = LabelConfigureSendToClick
-          end
-          object cbEncoding: TComboBox
-            AnchorSideLeft.Control = LabelEncoding
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = Labeloaenc
-            AnchorSideTop.Side = asrBottom
-            Left = 301
-            Height = 23
-            Top = 123
-            Width = 220
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 12
-            ItemHeight = 15
-            ItemIndex = 0
-            Items.Strings = (
-              'Local, UTF-8 for extra symbols'
-              'Force UTF-8'
-              'Force local'
-              'Custom codepage'
-            )
-            ParentFont = False
-            Style = csDropDownList
-            TabOrder = 0
-            Text = 'Local, UTF-8 for extra symbols'
-            OnChange = cbEncodingChange
-          end
-          object EditEncoding: TEdit
-            AnchorSideLeft.Control = cbEncoding
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = cbEncoding
-            Left = 533
-            Height = 23
-            Hint = 'I.e:'#13#10'437 IBM PC'#13#10'850 DOS Latin'#13#10'852 DOS Latin II'#13#10'858 DOS Euro'#13#10'866 DOS Russian'#13#10'874 Thai'#13#10'932 Japanese'#13#10'936 Chinese Simplified'#13#10'949 Korean'#13#10'950 Chinese Traditional'#13#10'1250 Central Europe'#13#10'1251 Cyrillic'#13#10'1252 Western'#13#10'1253 Greek'#13#10'1254 Turkish'#13#10'1255 Hebrew'#13#10'1256 Arabic'#13#10'1257 Baltic'#13#10'1258 Vietnamese'#13#10'20866 Russian'#13#10'21866 Ukrainian'#13#10'65001 UTF-8'#13#10'...'
-            Top = 123
-            Width = 72
-            BorderSpacing.Left = 12
-            ParentFont = False
-            TabOrder = 1
-            Visible = False
-          end
-          object LabelEncoding: TLabel
-            AnchorSideLeft.Control = BevelTitleOpt2
-            AnchorSideTop.Control = cbEncoding
-            AnchorSideTop.Side = asrCenter
-            Left = 112
-            Height = 15
-            Top = 127
-            Width = 177
-            Caption = '7z / p7zip ZIP filenames encoding'
-            ParentFont = False
-          end
-          object Labelcb18: TLabel
-            AnchorSideLeft.Control = LabelOpenDesktop
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = LabelConfigureSendTo
-            AnchorSideTop.Side = asrBottom
-            AnchorSideRight.Control = EditDesk
-            Cursor = crHandPoint
-            Left = 167
-            Height = 15
-            Top = 356
-            Width = 3
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 12
-            Caption = '|'
-            ParentFont = False
-            OnClick = LabelOpenDesktopClick
-          end
-          object LabelCustomDesktop: TLabel
-            AnchorSideLeft.Control = Labelcb18
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = LabelConfigureSendTo
-            AnchorSideTop.Side = asrBottom
-            AnchorSideRight.Control = EditDesk
-            Cursor = crHandPoint
-            Left = 182
-            Height = 15
-            Top = 356
-            Width = 42
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 12
-            Caption = 'Custom'
-            Font.Color = 13391121
-            ParentFont = False
-            OnClick = LabelCustomDesktopClick
-          end
-          object CheckBoxExtrac32: TCheckBox
-            AnchorSideLeft.Control = CheckBox7zunrar5
-            AnchorSideTop.Control = CheckBox7zunrar5
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 19
-            Top = 622
-            Width = 148
-            BorderSpacing.Top = 6
-            Caption = '(Windows) Extrac32 CAB'
-            ParentFont = False
-            TabOrder = 12
-            Visible = False
-            OnClick = CheckBoxExtrac32Click
-          end
-          object CheckBox7zunrar5: TCheckBox
-            AnchorSideLeft.Control = Labeloaui
-            AnchorSideTop.Control = ComboBoxSyntaxLevel
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 19
-            Top = 597
-            Width = 116
-            BorderSpacing.Top = 6
-            Caption = '7z / p7zip UNRAR5'
-            Checked = True
-            ParentFont = False
-            State = cbChecked
-            TabOrder = 11
-            OnClick = CheckBox7zunrar5Click
-          end
-          object Labelsyntaxlevel: TLabel
-            AnchorSideLeft.Control = BevelTitleOpt2
-            AnchorSideTop.Control = ComboBoxSyntaxLevel
-            AnchorSideTop.Side = asrCenter
-            AnchorSideRight.Control = ComboBoxConsoleEncoding
-            Left = 112
-            Height = 15
-            Top = 572
-            Width = 114
-            Caption = '7z / p7zip syntax level'
-            ParentFont = False
-          end
-          object ComboBoxSyntaxLevel: TComboBox
-            AnchorSideLeft.Control = Labelsyntaxlevel
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = Editalias
-            AnchorSideTop.Side = asrBottom
-            Left = 238
-            Height = 23
-            Top = 568
-            Width = 100
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 6
-            ItemHeight = 15
-            ItemIndex = 0
-            Items.Strings = (
-              'Latest'
-              '23.01'
-              '21.07'
-              '17.05'
-              '16.02'
-            )
-            ParentFont = False
-            Style = csDropDownList
-            TabOrder = 10
-            Text = 'Latest'
-            OnChange = ComboBoxSyntaxLevelChange
-          end
-          object Labelo2: TLabel
-            AnchorSideLeft.Control = BevelTitleOpt2
-            AnchorSideTop.Control = PageOpt2
-            Left = 112
-            Height = 23
-            Top = 12
-            Width = 79
-            BorderSpacing.Top = 12
-            BorderSpacing.Right = 128
-            BorderSpacing.Bottom = 12
-            Caption = 'Advanced'
-            Font.Height = -17
-            Font.Style = [fsBold]
-            ParentFont = False
-          end
-          object ComboBoxMaxArg: TComboBox
-            AnchorSideLeft.Control = labelmaxarg
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = ComboBoxSysbin
-            AnchorSideTop.Side = asrBottom
-            Left = 229
-            Height = 23
-            Top = 510
-            Width = 92
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 6
-            ItemHeight = 15
-            ItemIndex = 2
-            Items.Strings = (
-              '32KB'
-              '64KB'
-              '128KB'
-              '256KB'
-              '512KB'
-              '1MB'
-              '1.5MB'
-              '2MB'
-            )
-            ParentFont = False
-            Style = csDropDownList
-            TabOrder = 8
-            Text = '128KB'
-            OnChange = ComboBoxMaxArgChange
-          end
-          object labelmaxarg: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = ComboBoxMaxArg
-            AnchorSideTop.Side = asrCenter
-            Left = 112
-            Height = 15
-            Top = 514
-            Width = 105
-            Caption = 'Max arguments size'
-            ParentFont = False
-          end
-          object Labelalias: TLabel
-            AnchorSideLeft.Control = BevelTitleOpt2
-            AnchorSideTop.Control = Editalias
-            AnchorSideTop.Side = asrCenter
-            AnchorSideRight.Control = ComboBoxConsoleEncoding
-            Left = 112
-            Height = 15
-            Top = 543
-            Width = 76
-            Caption = '7z / p7zip alias'
-            ParentFont = False
-          end
-          object Editalias: TEdit
-            AnchorSideLeft.Control = Labelalias
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = ComboBoxMaxArg
-            AnchorSideTop.Side = asrBottom
-            Left = 200
-            Height = 23
-            Top = 539
-            Width = 100
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 6
-            TabOrder = 9
-            Text = '7z'
-          end
-          object ComboBoxSysbin: TComboBox
-            AnchorSideLeft.Control = LabelSysBin
-            AnchorSideLeft.Side = asrBottom
-            AnchorSideTop.Control = Labeloaui
-            AnchorSideTop.Side = asrBottom
-            Left = 352
-            Height = 23
-            Top = 481
-            Width = 100
-            BorderSpacing.Left = 12
-            BorderSpacing.Top = 12
-            ItemHeight = 15
-            ItemIndex = 0
-            Items.Strings = (
-              'No'
-              '7z / p7zip'
-              'All'
-            )
-            ParentFont = False
-            Style = csDropDownList
-            TabOrder = 7
-            Text = 'No'
-            OnChange = ComboBoxSysbinChange
-          end
-          object LabelSysBin: TLabel
-            AnchorSideLeft.Control = PanelLine2
-            AnchorSideTop.Control = ComboBoxSysbin
-            AnchorSideTop.Side = asrCenter
-            Left = 112
-            Height = 15
-            Hint = 'Requires p7zip-full or equivalent to be installed'
-            Top = 485
-            Width = 228
-            BorderSpacing.Top = 6
-            Caption = 'Use system binaries from $PATH if available'
-            ParentFont = False
-          end
-          object CheckBoxParams: TCheckBox
-            AnchorSideLeft.Control = CheckBox7zunrar5
-            AnchorSideTop.Control = CheckBoxLog
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 19
-            Top = 697
-            Width = 150
-            BorderSpacing.Top = 6
-            Caption = 'Pass separate parameters'
-            ParentFont = False
-            TabOrder = 18
-            OnClick = CheckBoxParamsClick
-          end
-          object CheckBoxBackground: TCheckBox
-            AnchorSideLeft.Control = CheckBox7zunrar5
-            AnchorSideTop.Control = CheckBoxExtrac32
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 19
-            Top = 647
-            Width = 222
-            BorderSpacing.Top = 6
-            Caption = 'Execute small workload in background'
-            ParentFont = False
-            TabOrder = 19
-            OnClick = CheckBoxBackgroundClick
-          end
-          object CheckBoxLog: TCheckBox
-            AnchorSideLeft.Control = CheckBox7zunrar5
-            AnchorSideTop.Control = CheckBoxBackground
-            AnchorSideTop.Side = asrBottom
-            Left = 112
-            Height = 19
-            Top = 672
-            Width = 107
-            BorderSpacing.Top = 6
-            Caption = 'Keep log of tasks'
-            ParentFont = False
-            TabOrder = 20
-            OnClick = CheckBoxLogClick
-          end
-        end
         object PageOpt4: TScrollBox
           AnchorSideLeft.Control = SplitterOptions
           AnchorSideLeft.Side = asrBottom
@@ -11409,13 +10690,13 @@ object Formpeach: TFormpeach
           Left = 181
           Height = 513
           Top = 39
-          Width = 841
+          Width = 843
           HorzScrollBar.Page = 1
           VertScrollBar.Page = 503
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 513
-          ClientWidth = 841
+          ClientWidth = 843
           ParentBackground = False
           ParentFont = False
           TabOrder = 7
@@ -11423,7 +10704,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PageOpt4
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = PageOpt4
-            Left = 120
+            Left = 121
             Height = 1
             Top = 0
             Width = 600
@@ -11436,7 +10717,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine4
             AnchorSideTop.Control = cbqdup
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 15
             Top = 366
             Width = 49
@@ -11451,7 +10732,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = Editcommonalgo
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Side = asrBottom
-            Left = 216
+            Left = 217
             Height = 23
             Top = 480
             Width = 128
@@ -11475,7 +10756,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbHashFormat
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbHashFormat
-            Left = 120
+            Left = 121
             Height = 15
             Top = 484
             Width = 84
@@ -11487,7 +10768,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbBrowserHash
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbHashFormat
-            Left = 120
+            Left = 121
             Height = 15
             Top = 156
             Width = 134
@@ -11500,7 +10781,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ComboBoxKiB
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Side = asrBottom
-            Left = 266
+            Left = 267
             Height = 23
             Top = 152
             Width = 128
@@ -11538,7 +10819,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine4
             AnchorSideTop.Control = ComboBoxPasses
             AnchorSideTop.Side = asrCenter
-            Left = 120
+            Left = 121
             Height = 15
             Top = 397
             Width = 70
@@ -11551,7 +10832,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = Labeloptsub1
             AnchorSideTop.Side = asrBottom
-            Left = 202
+            Left = 203
             Height = 23
             Top = 393
             Width = 80
@@ -11579,7 +10860,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine4
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 1
             Top = 47
             Width = 600
@@ -11599,7 +10880,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ComboBoxPasses
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Side = asrBottom
-            Left = 266
+            Left = 267
             Height = 23
             Top = 422
             Width = 200
@@ -11640,7 +10921,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbHash
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbHashFormat
-            Left = 120
+            Left = 121
             Height = 15
             Top = 426
             Width = 134
@@ -11652,7 +10933,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = Editcommonalgo
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbHashFormat
-            Left = 120
+            Left = 121
             Height = 15
             Top = 455
             Width = 108
@@ -11664,7 +10945,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = cbHash
             AnchorSideTop.Side = asrBottom
-            Left = 240
+            Left = 241
             Height = 23
             Top = 451
             Width = 420
@@ -11679,7 +10960,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = Labeloptsub8
             AnchorSideTop.Side = asrBottom
-            Left = 172
+            Left = 173
             Height = 23
             Top = 123
             Width = 160
@@ -11702,7 +10983,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine4
             AnchorSideTop.Control = ComboBoxKiB
             AnchorSideTop.Side = asrCenter
-            Left = 120
+            Left = 121
             Height = 15
             Top = 127
             Width = 40
@@ -11713,7 +10994,7 @@ object Formpeach: TFormpeach
           object Labelo4: TLabel
             AnchorSideLeft.Control = BevelTitleOpt4
             AnchorSideTop.Control = PageOpt4
-            Left = 120
+            Left = 121
             Height = 23
             Top = 12
             Width = 104
@@ -11729,7 +11010,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine4
             AnchorSideTop.Control = cbshowhidden
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 19
             Top = 299
             Width = 135
@@ -11745,7 +11026,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine4
             AnchorSideTop.Control = BevelTitleOpt4
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 15
             Top = 96
             Width = 47
@@ -11760,7 +11041,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbmiddlebutton
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Side = asrBottom
-            Left = 389
+            Left = 390
             Height = 23
             Top = 210
             Width = 160
@@ -11786,7 +11067,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ComboBoxsec
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbHashFormat
-            Left = 120
+            Left = 121
             Height = 15
             Top = 214
             Width = 257
@@ -11798,10 +11079,10 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ComboBoxsec
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 23
             Top = 239
-            Width = 499
+            Width = 500
             Anchors = [akTop, akLeft, akRight]
             BorderSpacing.Top = 6
             ParentFont = False
@@ -11812,7 +11093,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine4
             AnchorSideTop.Control = editExtEvForSec
             AnchorSideTop.Side = asrBottom
-            Left = 120
+            Left = 121
             Height = 19
             Top = 274
             Width = 111
@@ -11831,7 +11112,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbBrowserHash
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Side = asrBottom
-            Left = 247
+            Left = 248
             Height = 23
             Top = 181
             Width = 160
@@ -11858,12 +11139,721 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = cbmiddlebutton
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = cbHashFormat
-            Left = 120
+            Left = 121
             Height = 15
             Top = 185
             Width = 115
             Caption = 'Middle mouse button'
             ParentFont = False
+          end
+        end
+        object PageOpt2: TScrollBox
+          AnchorSideLeft.Control = SplitterOptions
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = EditOptSearch
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = NotebookOpt
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = PanelActOptions
+          Left = 181
+          Height = 513
+          Top = 39
+          Width = 843
+          HorzScrollBar.Page = 1
+          VertScrollBar.Page = 513
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BorderStyle = bsNone
+          ClientHeight = 513
+          ClientWidth = 826
+          ParentBackground = False
+          ParentFont = False
+          TabOrder = 10
+          object PanelLine2: TPanel
+            AnchorSideLeft.Control = PageOpt2
+            AnchorSideLeft.Side = asrCenter
+            AnchorSideTop.Control = PageOpt2
+            Left = 113
+            Height = 1
+            Top = 0
+            Width = 600
+            BevelOuter = bvNone
+            ParentBackground = False
+            ParentFont = False
+            TabOrder = 17
+          end
+          object BevelTitleOpt2: TPanel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = Labelo2
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = PanelLine2
+            AnchorSideRight.Side = asrBottom
+            AnchorSideBottom.Side = asrBottom
+            Left = 113
+            Height = 1
+            Top = 47
+            Width = 600
+            Anchors = [akTop, akLeft, akRight]
+            BorderSpacing.Top = 12
+            BevelOuter = bvNone
+            Color = 553621811
+            Constraints.MaxWidth = 800
+            ParentBackground = False
+            ParentColor = False
+            ParentFont = False
+            TabOrder = 16
+          end
+          object ImageInfoEncoding: TImage
+            AnchorSideLeft.Control = CheckBoxEncoding
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = CheckBoxEncoding
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = CheckBoxEncoding
+            AnchorSideRight.Side = asrBottom
+            Cursor = crHandPoint
+            Left = 630
+            Height = 16
+            Top = 182
+            Width = 16
+            BorderSpacing.Left = 6
+            Transparent = True
+            OnClick = ImageInfoEncodingClick
+          end
+          object Labelconsoleencoding: TLabel
+            AnchorSideLeft.Control = BevelTitleOpt2
+            AnchorSideTop.Control = ComboBoxConsoleEncoding
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = ComboBoxConsoleEncoding
+            Left = 113
+            Height = 15
+            Top = 156
+            Width = 156
+            Caption = '7z console text encoding -scc'
+            ParentFont = False
+          end
+          object CheckBoxEncoding: TCheckBox
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = ComboBoxConsoleEncoding
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 19
+            Top = 181
+            Width = 511
+            BorderSpacing.Top = 6
+            Caption = 'Display archived object''s name as UTF-8 text; uncheck to replace extended characters with "?"'
+            Checked = True
+            ParentFont = False
+            State = cbChecked
+            TabOrder = 3
+            OnClick = CheckBoxEncodingClick
+          end
+          object ComboBoxConsoleEncoding: TComboBox
+            AnchorSideLeft.Control = Labelconsoleencoding
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = cbEncoding
+            AnchorSideTop.Side = asrBottom
+            Left = 281
+            Height = 23
+            Top = 152
+            Width = 100
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 6
+            ItemHeight = 15
+            ItemIndex = 0
+            Items.Strings = (
+              'UTF-8'
+              'WIN'
+              'DOS'
+            )
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 2
+            Text = 'UTF-8'
+            OnChange = ComboBoxConsoleEncodingChange
+          end
+          object Labeloaenc: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = BevelTitleOpt2
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 15
+            Top = 96
+            Width = 50
+            BorderSpacing.Top = 48
+            Caption = 'Encoding'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object LabelConf: TLabel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideBottom.Side = asrCenter
+            Left = 776
+            Height = 15
+            Top = -2025510536
+            Width = 3
+            Anchors = []
+            BorderSpacing.Left = 8
+            Caption = ' '
+            ParentFont = False
+            Visible = False
+          end
+          object Labeloaui: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = ComboBoxSD
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 15
+            Top = 454
+            Width = 94
+            BorderSpacing.Top = 48
+            Caption = 'Backend binaries'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object ImageInfoBinaries: TImage
+            AnchorSideLeft.Control = Labeloaui
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = Labeloaui
+            AnchorSideTop.Side = asrCenter
+            Cursor = crHandPoint
+            Left = 213
+            Height = 16
+            Top = 453
+            Width = 16
+            BorderSpacing.Left = 6
+            Transparent = True
+            OnClick = ImageInfoBinariesClick
+          end
+          object cbBinaries: TComboBox
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = CheckBoxParams
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 23
+            Top = 703
+            Width = 160
+            BorderSpacing.Top = 12
+            Constraints.MaxWidth = 600
+            ItemHeight = 15
+            ItemIndex = 2
+            Items.Strings = (
+              'console: native interface'
+              'graphic + console'
+              'graphic: wrapped by PeaLauncher'
+            )
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 13
+            Text = 'graphic: wrapped by PeaLauncher'
+            OnChange = cbBinariesChange
+          end
+          object cbBinariesStop: TComboBox
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = cbBinaries
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Side = asrBottom
+            Left = 113
+            Height = 23
+            Top = 732
+            Width = 360
+            BorderSpacing.Top = 6
+            Constraints.MaxWidth = 600
+            ItemHeight = 15
+            Items.Strings = (
+              '0'
+              '1'
+              '2'
+              '3'
+              '4'
+            )
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 14
+            OnChange = cbBinariesStopChange
+          end
+          object ComboBoxLibre: TComboBox
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = cbBinariesStop
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 23
+            Top = 761
+            Width = 320
+            BorderSpacing.Top = 6
+            ItemHeight = 15
+            ItemIndex = 0
+            Items.Strings = (
+              '0'
+              '1'
+              '2'
+            )
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 15
+            Text = '0'
+            OnChange = ComboBoxLibreChange
+          end
+          object LabelOpenDesktop: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = LabelConfigureSendTo
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = EditDesk
+            Cursor = crHandPoint
+            Left = 113
+            Height = 15
+            Top = 356
+            Width = 43
+            BorderSpacing.Top = 12
+            Caption = 'Desktop'
+            Font.Color = 13391121
+            ParentFont = False
+            OnClick = LabelOpenDesktopClick
+          end
+          object EditDesk: TEdit
+            AnchorSideLeft.Control = LabelCustomDesktop
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = LabelOpenDesktop
+            AnchorSideTop.Side = asrCenter
+            Left = 237
+            Height = 23
+            Top = 352
+            Width = 360
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 12
+            ParentFont = False
+            ReadOnly = True
+            TabOrder = 4
+            Visible = False
+          end
+          object ButtonEditDesk: TButton
+            AnchorSideLeft.Control = EditDesk
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = EditDesk
+            AnchorSideRight.Side = asrBottom
+            AnchorSideBottom.Control = EditDesk
+            AnchorSideBottom.Side = asrBottom
+            Left = 597
+            Height = 23
+            Top = 352
+            Width = 24
+            Anchors = [akTop, akLeft, akBottom]
+            BorderSpacing.InnerBorder = 4
+            Caption = '...'
+            ParentFont = False
+            TabOrder = 5
+            Visible = False
+            OnClick = ButtonEditDeskClick
+          end
+          object LabelcbSD: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = ComboBoxSD
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = EditDesk
+            Left = 113
+            Height = 15
+            Top = 387
+            Width = 105
+            BorderSpacing.Top = 12
+            Caption = 'Start browsing from'
+            ParentFont = False
+          end
+          object ComboBoxSD: TComboBox
+            AnchorSideLeft.Control = LabelcbSD
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = LabelOpenDesktop
+            AnchorSideTop.Side = asrBottom
+            Left = 230
+            Height = 23
+            Top = 383
+            Width = 240
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 12
+            ItemHeight = 15
+            ItemIndex = 0
+            Items.Strings = (
+              'Last visited directory'
+              'Computer''s root'
+              'Home'
+              'Desktop'
+              'Custom directory'
+            )
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 6
+            Text = 'Last visited directory'
+            OnChange = ComboBoxSDChange
+          end
+          object LabelcbSDcustom: TLabel
+            AnchorSideLeft.Control = ComboBoxSD
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ComboBoxSD
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = EditDesk
+            Cursor = crHandPoint
+            Left = 482
+            Height = 1
+            Top = 394
+            Width = 1
+            BorderSpacing.Left = 12
+            ParentFont = False
+          end
+          object Labelogpaths: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = CheckBoxEncoding
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 15
+            Top = 248
+            Width = 30
+            BorderSpacing.Top = 48
+            Caption = 'Paths'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object LabelOpenConf: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = Labelogpaths
+            AnchorSideTop.Side = asrBottom
+            AnchorSideBottom.Side = asrCenter
+            Cursor = crHandPoint
+            Left = 113
+            Height = 15
+            Top = 275
+            Width = 26
+            BorderSpacing.Top = 12
+            Caption = 'Conf'
+            Font.Color = 13391121
+            ParentFont = False
+            OnClick = LabelOpenConfClick
+          end
+          object LabelAppPath: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = LabelOpenConf
+            AnchorSideTop.Side = asrBottom
+            Cursor = crHandPoint
+            Left = 113
+            Height = 15
+            Top = 302
+            Width = 110
+            BorderSpacing.Top = 12
+            Caption = 'Open PeaZip''s folder'
+            Font.Color = 13391121
+            ParentFont = False
+            OnClick = LabelAppPathClick
+          end
+          object LabelConfigureSendTo: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = LabelAppPath
+            AnchorSideTop.Side = asrBottom
+            Cursor = crHandPoint
+            Left = 113
+            Height = 15
+            Top = 329
+            Width = 171
+            BorderSpacing.Top = 12
+            Caption = 'Open user''s SendTo menu folder'
+            Font.Color = 13391121
+            ParentFont = False
+            OnClick = LabelConfigureSendToClick
+          end
+          object cbEncoding: TComboBox
+            AnchorSideLeft.Control = LabelEncoding
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = Labeloaenc
+            AnchorSideTop.Side = asrBottom
+            Left = 302
+            Height = 23
+            Top = 123
+            Width = 220
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 12
+            ItemHeight = 15
+            ItemIndex = 0
+            Items.Strings = (
+              'Local, UTF-8 for extra symbols'
+              'Force UTF-8'
+              'Force local'
+              'Custom codepage'
+            )
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 0
+            Text = 'Local, UTF-8 for extra symbols'
+            OnChange = cbEncodingChange
+          end
+          object EditEncoding: TEdit
+            AnchorSideLeft.Control = cbEncoding
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = cbEncoding
+            Left = 534
+            Height = 23
+            Hint = 'I.e:'#13#10'437 IBM PC'#13#10'850 DOS Latin'#13#10'852 DOS Latin II'#13#10'858 DOS Euro'#13#10'866 DOS Russian'#13#10'874 Thai'#13#10'932 Japanese'#13#10'936 Chinese Simplified'#13#10'949 Korean'#13#10'950 Chinese Traditional'#13#10'1250 Central Europe'#13#10'1251 Cyrillic'#13#10'1252 Western'#13#10'1253 Greek'#13#10'1254 Turkish'#13#10'1255 Hebrew'#13#10'1256 Arabic'#13#10'1257 Baltic'#13#10'1258 Vietnamese'#13#10'20866 Russian'#13#10'21866 Ukrainian'#13#10'65001 UTF-8'#13#10'...'
+            Top = 123
+            Width = 72
+            BorderSpacing.Left = 12
+            ParentFont = False
+            TabOrder = 1
+            Visible = False
+          end
+          object LabelEncoding: TLabel
+            AnchorSideLeft.Control = BevelTitleOpt2
+            AnchorSideTop.Control = cbEncoding
+            AnchorSideTop.Side = asrCenter
+            Left = 113
+            Height = 15
+            Top = 127
+            Width = 177
+            Caption = '7z / p7zip ZIP filenames encoding'
+            ParentFont = False
+          end
+          object Labelcb18: TLabel
+            AnchorSideLeft.Control = LabelOpenDesktop
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = LabelConfigureSendTo
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = EditDesk
+            Cursor = crHandPoint
+            Left = 168
+            Height = 15
+            Top = 356
+            Width = 3
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 12
+            Caption = '|'
+            ParentFont = False
+            OnClick = LabelOpenDesktopClick
+          end
+          object LabelCustomDesktop: TLabel
+            AnchorSideLeft.Control = Labelcb18
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = LabelConfigureSendTo
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = EditDesk
+            Cursor = crHandPoint
+            Left = 183
+            Height = 15
+            Top = 356
+            Width = 42
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 12
+            Caption = 'Custom'
+            Font.Color = 13391121
+            ParentFont = False
+            OnClick = LabelCustomDesktopClick
+          end
+          object CheckBoxExtrac32: TCheckBox
+            AnchorSideLeft.Control = CheckBox7zunrar5
+            AnchorSideTop.Control = CheckBox7zunrar5
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 19
+            Top = 622
+            Width = 148
+            BorderSpacing.Top = 6
+            Caption = '(Windows) Extrac32 CAB'
+            ParentFont = False
+            TabOrder = 12
+            Visible = False
+            OnClick = CheckBoxExtrac32Click
+          end
+          object CheckBox7zunrar5: TCheckBox
+            AnchorSideLeft.Control = Labeloaui
+            AnchorSideTop.Control = ComboBoxSyntaxLevel
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 19
+            Top = 597
+            Width = 116
+            BorderSpacing.Top = 6
+            Caption = '7z / p7zip UNRAR5'
+            Checked = True
+            ParentFont = False
+            State = cbChecked
+            TabOrder = 11
+            OnClick = CheckBox7zunrar5Click
+          end
+          object Labelsyntaxlevel: TLabel
+            AnchorSideLeft.Control = BevelTitleOpt2
+            AnchorSideTop.Control = ComboBoxSyntaxLevel
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = ComboBoxConsoleEncoding
+            Left = 113
+            Height = 15
+            Top = 572
+            Width = 114
+            Caption = '7z / p7zip syntax level'
+            ParentFont = False
+          end
+          object ComboBoxSyntaxLevel: TComboBox
+            AnchorSideLeft.Control = Labelsyntaxlevel
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = Editalias
+            AnchorSideTop.Side = asrBottom
+            Left = 239
+            Height = 23
+            Top = 568
+            Width = 100
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 6
+            ItemHeight = 15
+            ItemIndex = 0
+            Items.Strings = (
+              'Latest'
+              '23.01'
+              '21.07'
+              '17.05'
+              '16.02'
+            )
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 10
+            Text = 'Latest'
+            OnChange = ComboBoxSyntaxLevelChange
+          end
+          object Labelo2: TLabel
+            AnchorSideLeft.Control = BevelTitleOpt2
+            AnchorSideTop.Control = PageOpt2
+            Left = 113
+            Height = 23
+            Top = 12
+            Width = 79
+            BorderSpacing.Top = 12
+            BorderSpacing.Right = 128
+            BorderSpacing.Bottom = 12
+            Caption = 'Advanced'
+            Font.Height = -17
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object ComboBoxMaxArg: TComboBox
+            AnchorSideLeft.Control = labelmaxarg
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ComboBoxSysbin
+            AnchorSideTop.Side = asrBottom
+            Left = 230
+            Height = 23
+            Top = 510
+            Width = 92
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 6
+            ItemHeight = 15
+            ItemIndex = 2
+            Items.Strings = (
+              '32KB'
+              '64KB'
+              '128KB'
+              '256KB'
+              '512KB'
+              '1MB'
+              '1.5MB'
+              '2MB'
+            )
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 8
+            Text = '128KB'
+            OnChange = ComboBoxMaxArgChange
+          end
+          object labelmaxarg: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = ComboBoxMaxArg
+            AnchorSideTop.Side = asrCenter
+            Left = 113
+            Height = 15
+            Top = 514
+            Width = 105
+            Caption = 'Max arguments size'
+            ParentFont = False
+          end
+          object Labelalias: TLabel
+            AnchorSideLeft.Control = BevelTitleOpt2
+            AnchorSideTop.Control = Editalias
+            AnchorSideTop.Side = asrCenter
+            AnchorSideRight.Control = ComboBoxConsoleEncoding
+            Left = 113
+            Height = 15
+            Top = 543
+            Width = 76
+            Caption = '7z / p7zip alias'
+            ParentFont = False
+          end
+          object Editalias: TEdit
+            AnchorSideLeft.Control = Labelalias
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = ComboBoxMaxArg
+            AnchorSideTop.Side = asrBottom
+            Left = 201
+            Height = 23
+            Top = 539
+            Width = 100
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 6
+            TabOrder = 9
+            Text = '7z'
+          end
+          object ComboBoxSysbin: TComboBox
+            AnchorSideLeft.Control = LabelSysBin
+            AnchorSideLeft.Side = asrBottom
+            AnchorSideTop.Control = Labeloaui
+            AnchorSideTop.Side = asrBottom
+            Left = 353
+            Height = 23
+            Top = 481
+            Width = 100
+            BorderSpacing.Left = 12
+            BorderSpacing.Top = 12
+            ItemHeight = 15
+            ItemIndex = 0
+            Items.Strings = (
+              'No'
+              '7z / p7zip'
+              'All'
+            )
+            ParentFont = False
+            Style = csDropDownList
+            TabOrder = 7
+            Text = 'No'
+            OnChange = ComboBoxSysbinChange
+          end
+          object LabelSysBin: TLabel
+            AnchorSideLeft.Control = PanelLine2
+            AnchorSideTop.Control = ComboBoxSysbin
+            AnchorSideTop.Side = asrCenter
+            Left = 113
+            Height = 15
+            Hint = 'Requires p7zip-full or equivalent to be installed'
+            Top = 485
+            Width = 228
+            BorderSpacing.Top = 6
+            Caption = 'Use system binaries from $PATH if available'
+            ParentFont = False
+          end
+          object CheckBoxParams: TCheckBox
+            AnchorSideLeft.Control = CheckBox7zunrar5
+            AnchorSideTop.Control = CheckBoxBackground
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 19
+            Top = 672
+            Width = 150
+            BorderSpacing.Top = 6
+            Caption = 'Pass separate parameters'
+            ParentFont = False
+            TabOrder = 18
+            OnClick = CheckBoxParamsClick
+          end
+          object CheckBoxBackground: TCheckBox
+            AnchorSideLeft.Control = CheckBox7zunrar5
+            AnchorSideTop.Control = CheckBoxExtrac32
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 19
+            Top = 647
+            Width = 222
+            BorderSpacing.Top = 6
+            Caption = 'Execute small workload in background'
+            ParentFont = False
+            TabOrder = 19
+            OnClick = CheckBoxBackgroundClick
           end
         end
         object PageOpt1: TScrollBox
@@ -11877,13 +11867,13 @@ object Formpeach: TFormpeach
           Left = 181
           Height = 513
           Top = 39
-          Width = 841
+          Width = 843
           HorzScrollBar.Page = 656
           VertScrollBar.Page = 513
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ClientHeight = 513
-          ClientWidth = 824
+          ClientWidth = 826
           ParentBackground = False
           ParentFont = False
           TabOrder = 1
@@ -11891,7 +11881,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PageOpt1
             AnchorSideLeft.Side = asrCenter
             AnchorSideTop.Control = PageOpt1
-            Left = 112
+            Left = 113
             Height = 1
             Top = 0
             Width = 600
@@ -11904,7 +11894,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = CheckBoxDragDrop
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 210
             Width = 76
@@ -11921,7 +11911,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ComboBoxLanguage
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 127
             Width = 63
@@ -11937,7 +11927,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrCenter
             AnchorSideRight.Control = ComboBoxWD
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 618
             Width = 95
@@ -11977,7 +11967,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = CheckBoxBrowseNotVerbose
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 441
             Width = 275
@@ -11992,7 +11982,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = LabelDoc
             AnchorSideTop.Side = asrBottom
-            Left = 219
+            Left = 220
             Height = 23
             Top = 614
             Width = 400
@@ -12018,7 +12008,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = CheckBoxzcopy
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 466
             Width = 378
@@ -12032,7 +12022,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = CheckBoxShowVolatile
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 15
             Top = 302
             Width = 78
@@ -12047,9 +12037,9 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Side = asrBottom
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
-            Top = 724
+            Top = 749
             Width = 105
             BorderSpacing.Top = 12
             Caption = 'Reset "Open with..."'
@@ -12063,9 +12053,9 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = CheckBoxArchiveHistory
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 334
+            Left = 335
             Height = 15
-            Top = 695
+            Top = 720
             Width = 67
             BorderSpacing.Left = 12
             Caption = 'Reset history'
@@ -12078,9 +12068,9 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelResetOpenWith
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
-            Top = 751
+            Top = 776
             Width = 90
             BorderSpacing.Top = 12
             Caption = 'Reset bookmarks'
@@ -12094,9 +12084,9 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelResetBookmarks
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 229
+            Left = 230
             Height = 15
-            Top = 778
+            Top = 803
             Width = 131
             BorderSpacing.Left = 12
             BorderSpacing.Top = 12
@@ -12109,7 +12099,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = CheckBoxnetworkinfo
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 15
             Top = 533
             Width = 97
@@ -12122,9 +12112,9 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = CheckBoxSkipDel
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
-            Top = 693
+            Top = 718
             Width = 195
             BorderSpacing.Top = 6
             Caption = 'Save history of latest used archive'
@@ -12140,9 +12130,9 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = CheckBoxSkipDel
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 373
+            Left = 374
             Height = 15
-            Top = 670
+            Top = 695
             Width = 92
             BorderSpacing.Left = 12
             Caption = 'Reset peazip-tmp'
@@ -12154,7 +12144,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = ComboBoxPriority
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 416
             Width = 57
@@ -12171,7 +12161,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = ComboBoxLanguage
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 158
             Width = 317
@@ -12188,7 +12178,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Control = PanelLine1
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 1
             Top = 47
             Width = 600
@@ -12207,9 +12197,9 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = CheckBoxArchiveHistory
             AnchorSideTop.Side = asrCenter
-            Left = 319
+            Left = 320
             Height = 15
-            Top = 695
+            Top = 720
             Width = 3
             BorderSpacing.Left = 12
             Caption = '|'
@@ -12220,9 +12210,9 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = LabelResetPM
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 23
-            Top = 805
+            Top = 830
             Width = 400
             BorderSpacing.Top = 12
             ItemHeight = 15
@@ -12243,7 +12233,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = ComboBoxWD
             AnchorSideTop.Side = asrCenter
-            Left = 631
+            Left = 632
             Height = 1
             Top = 625
             Width = 1
@@ -12254,7 +12244,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = LabelConfigurePeaZip
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 185
             Width = 221
@@ -12271,7 +12261,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = Labelogperf
             AnchorSideTop.Side = asrBottom
-            Left = 166
+            Left = 167
             Height = 23
             Top = 329
             Width = 360
@@ -12289,13 +12279,13 @@ object Formpeach: TFormpeach
             ParentFont = False
             Style = csDropDownList
             TabOrder = 5
-            OnChange = ComboBoxBrowserChange
+            OnCloseUp = ComboBoxBrowserCloseUp
           end
           object LabelPrebrowse: TLabel
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = ComboBoxBrowser
             AnchorSideTop.Side = asrCenter
-            Left = 112
+            Left = 113
             Height = 15
             Top = 333
             Width = 42
@@ -12307,7 +12297,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = CheckBoxDragDrop
             AnchorSideTop.Side = asrCenter
-            Left = 345
+            Left = 346
             Height = 23
             Top = 183
             Width = 200
@@ -12330,7 +12320,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = ComboBoxPriority
             AnchorSideTop.Side = asrCenter
-            Left = 112
+            Left = 113
             Height = 15
             Top = 391
             Width = 68
@@ -12342,7 +12332,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = ComboBoxVirtual
             AnchorSideTop.Side = asrBottom
-            Left = 192
+            Left = 193
             Height = 23
             Top = 387
             Width = 120
@@ -12366,9 +12356,9 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = CheckBoxLimitKFSize
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
-            Top = 668
+            Top = 693
             Width = 234
             BorderSpacing.Top = 6
             Caption = 'Skip delete temporary work files if locked'
@@ -12383,9 +12373,9 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = CheckBoxSkipDel
             AnchorSideTop.Side = asrCenter
-            Left = 358
+            Left = 359
             Height = 15
-            Top = 670
+            Top = 695
             Width = 3
             BorderSpacing.Left = 12
             Caption = '|'
@@ -12397,7 +12387,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = Labelogmisc
             AnchorSideTop.Side = asrBottom
-            Left = 187
+            Left = 188
             Height = 23
             Top = 123
             Width = 120
@@ -12469,7 +12459,7 @@ object Formpeach: TFormpeach
           object Labelo1: TLabel
             AnchorSideLeft.Control = BevelTitleOpt1
             AnchorSideTop.Control = PageOpt1
-            Left = 112
+            Left = 113
             Height = 23
             Top = 12
             Width = 61
@@ -12485,7 +12475,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = ComboBoxLanguage
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Side = asrCenter
-            Left = 319
+            Left = 320
             Height = 25
             Top = 124
             Width = 72
@@ -12503,9 +12493,9 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = LabelResetBookmarks
             AnchorSideTop.Side = asrBottom
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
-            Top = 778
+            Top = 803
             Width = 90
             BorderSpacing.Top = 12
             Caption = 'Set PM password'
@@ -12518,9 +12508,9 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = LabelPMpw
             AnchorSideTop.Side = asrCenter
-            Left = 214
+            Left = 215
             Height = 15
-            Top = 778
+            Top = 803
             Width = 3
             BorderSpacing.Left = 12
             Caption = '|'
@@ -12533,7 +12523,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Control = ComboBoxWD
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 560
             Width = 135
@@ -12549,7 +12539,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Side = asrBottom
             AnchorSideRight.Control = ComboBoxWD
             Cursor = crHandPoint
-            Left = 112
+            Left = 113
             Height = 15
             Top = 587
             Width = 155
@@ -12563,7 +12553,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = BevelTitleOpt1
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 15
             Top = 96
             Width = 25
@@ -12576,7 +12566,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = CheckBoxShowHints
             AnchorSideTop.Control = CheckBoxShowHints
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
             Top = 235
             Width = 131
@@ -12591,7 +12581,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Side = asrBottom
             AnchorSideTop.Control = ComboBoxBrowser
             AnchorSideTop.Side = asrBottom
-            Left = 241
+            Left = 242
             Height = 23
             Top = 358
             Width = 200
@@ -12617,7 +12607,7 @@ object Formpeach: TFormpeach
             AnchorSideLeft.Control = PanelLine1
             AnchorSideTop.Control = ComboBoxVirtual
             AnchorSideTop.Side = asrCenter
-            Left = 112
+            Left = 113
             Height = 15
             Top = 362
             Width = 117
@@ -12626,11 +12616,11 @@ object Formpeach: TFormpeach
           end
           object CheckBoxLimitKFSize: TCheckBox
             AnchorSideLeft.Control = PanelLine1
-            AnchorSideTop.Control = ComboBoxWD
+            AnchorSideTop.Control = CheckBoxLog
             AnchorSideTop.Side = asrBottom
-            Left = 112
+            Left = 113
             Height = 19
-            Top = 643
+            Top = 668
             Width = 194
             BorderSpacing.Top = 6
             Caption = 'Keyfile size limited to first 100 MB'
@@ -12639,6 +12629,20 @@ object Formpeach: TFormpeach
             State = cbChecked
             TabOrder = 19
             OnClick = CheckBoxLimitKFSizeClick
+          end
+          object CheckBoxLog: TCheckBox
+            AnchorSideLeft.Control = PanelLine1
+            AnchorSideTop.Control = ComboBoxWD
+            AnchorSideTop.Side = asrBottom
+            Left = 113
+            Height = 19
+            Top = 643
+            Width = 107
+            BorderSpacing.Top = 6
+            Caption = 'Keep log of tasks'
+            ParentFont = False
+            TabOrder = 20
+            OnClick = CheckBoxLogClick
           end
         end
       end
@@ -12652,11 +12656,11 @@ object Formpeach: TFormpeach
       Left = 0
       Height = 600
       Top = 0
-      Width = 1022
+      Width = 1024
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
       ClientHeight = 600
-      ClientWidth = 1022
+      ClientWidth = 1024
       FullRepaint = False
       ParentBackground = False
       ParentFont = False
@@ -12669,11 +12673,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 48
         Top = 0
-        Width = 1022
+        Width = 1024
         Anchors = [akTop, akLeft, akRight]
         BevelOuter = bvNone
         ClientHeight = 48
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 0
@@ -12682,7 +12686,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = BtnStyle
           AnchorSideBottom.Control = PanelBarOpen
           AnchorSideBottom.Side = asrBottom
-          Left = 782
+          Left = 784
           Height = 48
           Top = 0
           Width = 192
@@ -12901,7 +12905,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = PanelBarOpen
           AnchorSideBottom.Side = asrBottom
-          Left = 974
+          Left = 976
           Height = 48
           Top = 0
           Width = 48
@@ -13424,7 +13428,7 @@ object Formpeach: TFormpeach
           AnchorSideTop.Side = asrCenter
           AnchorSideRight.Control = BtnStyle
           Cursor = crHandPoint
-          Left = 900
+          Left = 902
           Height = 15
           Top = 17
           Width = 62
@@ -13449,12 +13453,12 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 507
         Top = 93
-        Width = 1022
+        Width = 1024
         Anchors = [akTop, akLeft, akRight, akBottom]
         BorderSpacing.Top = 4
         BevelOuter = bvNone
         ClientHeight = 507
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 1
@@ -13468,11 +13472,11 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 32
           Top = 308
-          Width = 1022
+          Width = 1024
           Anchors = [akTop, akLeft, akRight]
           BevelOuter = bvNone
           ClientHeight = 32
-          ClientWidth = 1022
+          ClientWidth = 1024
           Color = cl3DLight
           ParentBackground = False
           ParentColor = False
@@ -13486,7 +13490,7 @@ object Formpeach: TFormpeach
             AnchorSideTop.Control = PanelInfoGeneral
             AnchorSideTop.Side = asrCenter
             Cursor = crHandPoint
-            Left = 488
+            Left = 489
             Height = 15
             Top = 9
             Width = 47
@@ -13508,7 +13512,7 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 167
           Top = 340
-          Width = 1022
+          Width = 1024
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           DefaultRowHeight = 18
@@ -13538,7 +13542,7 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 167
           Top = 340
-          Width = 1022
+          Width = 1024
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           ColCount = 12
@@ -13573,7 +13577,7 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 167
           Top = 340
-          Width = 1022
+          Width = 1024
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderStyle = bsNone
           DefaultRowHeight = 18
@@ -13602,7 +13606,7 @@ object Formpeach: TFormpeach
           Left = 209
           Height = 308
           Top = 0
-          Width = 813
+          Width = 815
           AllocBy = 1024
           Anchors = [akTop, akLeft, akRight, akBottom]
           AutoSort = False
@@ -13801,7 +13805,7 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 1
           Top = 308
-          Width = 1022
+          Width = 1024
           Align = alNone
           Anchors = [akLeft, akRight, akBottom]
           Color = clWindow
@@ -13821,11 +13825,11 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 167
           Top = 340
-          Width = 1022
+          Width = 1024
           Anchors = [akTop, akLeft, akRight, akBottom]
           BevelOuter = bvNone
           ClientHeight = 167
-          ClientWidth = 1022
+          ClientWidth = 1024
           FullRepaint = False
           ParentBackground = False
           ParentFont = False
@@ -13842,7 +13846,7 @@ object Formpeach: TFormpeach
             Left = 0
             Height = 136
             Top = 31
-            Width = 1022
+            Width = 1024
             Anchors = [akTop, akLeft, akRight, akBottom]
             BorderSpacing.Top = 6
             BorderStyle = bsNone
@@ -13866,7 +13870,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = PanelClipboard
             AnchorSideBottom.Side = asrBottom
-            Left = 918
+            Left = 920
             Height = 19
             Top = 6
             Width = 92
@@ -14098,11 +14102,11 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 32
           Top = 475
-          Width = 1022
+          Width = 1024
           Anchors = [akLeft, akRight, akBottom]
           BevelOuter = bvNone
           ClientHeight = 32
-          ClientWidth = 1022
+          ClientWidth = 1024
           ParentBackground = False
           ParentFont = False
           PopupMenu = pmstatus
@@ -14212,7 +14216,7 @@ object Formpeach: TFormpeach
             AnchorSideRight.Side = asrBottom
             AnchorSideBottom.Control = PanelBottom
             AnchorSideBottom.Side = asrBottom
-            Left = 990
+            Left = 992
             Height = 30
             Top = 1
             Width = 32
@@ -14265,11 +14269,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 40
         Top = 49
-        Width = 1022
+        Width = 1024
         Anchors = [akTop, akLeft, akRight]
         BevelOuter = bvNone
         ClientHeight = 40
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 2
@@ -14284,7 +14288,7 @@ object Formpeach: TFormpeach
           Left = 129
           Height = 32
           Top = 4
-          Width = 724
+          Width = 726
           Anchors = [akTop, akLeft, akRight]
           BorderSpacing.Left = 1
           BorderSpacing.Right = 1
@@ -14301,7 +14305,7 @@ object Formpeach: TFormpeach
           Left = 132
           Height = 30
           Top = 5
-          Width = 718
+          Width = 720
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderSpacing.Left = 3
           BorderSpacing.Top = 1
@@ -14324,7 +14328,7 @@ object Formpeach: TFormpeach
           Left = 162
           Height = 15
           Top = 13
-          Width = 658
+          Width = 660
           Anchors = [akTop, akLeft, akRight]
           BorderStyle = bsNone
           Constraints.MinWidth = 13
@@ -14346,7 +14350,7 @@ object Formpeach: TFormpeach
           Left = 162
           Height = 15
           Top = 13
-          Width = 658
+          Width = 660
           Anchors = [akTop, akLeft, akRight]
           BorderStyle = bsNone
           ParentColor = True
@@ -14367,12 +14371,12 @@ object Formpeach: TFormpeach
           Left = 162
           Height = 30
           Top = 5
-          Width = 658
+          Width = 660
           Anchors = [akTop, akLeft, akRight, akBottom]
           BevelOuter = bvNone
           ChildSizing.ShrinkHorizontal = crsScaleChilds
           ClientHeight = 30
-          ClientWidth = 658
+          ClientWidth = 660
           Color = clWindow
           ParentBackground = False
           ParentColor = False
@@ -15428,7 +15432,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = PanelSPaddress
           AnchorSideBottom.Control = PanelAddress
           AnchorSideBottom.Side = asrBottom
-          Left = 820
+          Left = 822
           Height = 30
           Top = 5
           Width = 30
@@ -15510,13 +15514,13 @@ object Formpeach: TFormpeach
           Left = 641
           Height = 30
           Top = 5
-          Width = 148
+          Width = 150
           Anchors = [akTop, akLeft, akRight, akBottom]
           BorderSpacing.Left = 1
           BorderSpacing.Right = 1
           BevelOuter = bvNone
           ClientHeight = 30
-          ClientWidth = 148
+          ClientWidth = 150
           Color = clWindow
           ParentBackground = False
           ParentColor = False
@@ -15532,7 +15536,7 @@ object Formpeach: TFormpeach
             Left = 4
             Height = 15
             Top = 8
-            Width = 144
+            Width = 146
             Anchors = [akTop, akLeft, akRight]
             BorderSpacing.Left = 3
             BorderStyle = bsNone
@@ -15554,7 +15558,7 @@ object Formpeach: TFormpeach
             Left = 4
             Height = 15
             Top = 8
-            Width = 141
+            Width = 143
             Anchors = [akTop, akLeft, akRight, akBottom]
             BorderSpacing.Right = 3
             BorderStyle = bsNone
@@ -15570,7 +15574,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = PanelListSearch
           AnchorSideBottom.Control = PanelAddress
           AnchorSideBottom.Side = asrBottom
-          Left = 790
+          Left = 792
           Height = 30
           Top = 5
           Width = 30
@@ -15609,7 +15613,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = PanelListSearch
           AnchorSideBottom.Control = PanelAddress
           AnchorSideBottom.Side = asrBottom
-          Left = 756
+          Left = 758
           Height = 30
           Top = 5
           Width = 64
@@ -15658,7 +15662,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Side = asrBottom
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 990
+          Left = 992
           Height = 32
           Top = 4
           Width = 32
@@ -15673,7 +15677,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ImageFlatconvert
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 862
+          Left = 864
           Height = 32
           Top = 4
           Width = 32
@@ -15689,7 +15693,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ImageFlattestmore
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 926
+          Left = 928
           Height = 32
           Top = 4
           Width = 32
@@ -15704,7 +15708,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ImageFlat
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 958
+          Left = 960
           Height = 32
           Top = 4
           Width = 32
@@ -15718,7 +15722,7 @@ object Formpeach: TFormpeach
           AnchorSideTop.Control = PanelListBar
           AnchorSideTop.Side = asrCenter
           AnchorSideRight.Control = ImageFlatadd
-          Left = 854
+          Left = 856
           Height = 8
           Top = 16
           Width = 8
@@ -15732,7 +15736,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ImageFlatext
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 894
+          Left = 896
           Height = 32
           Top = 4
           Width = 32
@@ -15748,7 +15752,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ImageFlattestmore
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 926
+          Left = 928
           Height = 32
           Top = 4
           Width = 32
@@ -15762,7 +15766,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ImageFlatdup
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 894
+          Left = 896
           Height = 32
           Top = 4
           Width = 32
@@ -15776,7 +15780,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ImageFlatfolder
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 862
+          Left = 864
           Height = 32
           Top = 4
           Width = 32
@@ -15791,7 +15795,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ImageFlatdup
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 894
+          Left = 896
           Height = 32
           Top = 4
           Width = 32
@@ -15805,7 +15809,7 @@ object Formpeach: TFormpeach
           AnchorSideRight.Control = ImageFlattransform
           AnchorSideBottom.Control = ShapeListBar
           AnchorSideBottom.Side = asrBottom
-          Left = 862
+          Left = 864
           Height = 32
           Top = 4
           Width = 32
@@ -15826,7 +15830,7 @@ object Formpeach: TFormpeach
           Left = 135
           Height = 1
           Top = 35
-          Width = 712
+          Width = 714
           Anchors = [akLeft, akRight, akBottom]
           BorderSpacing.Left = 6
           BorderSpacing.Right = 6
@@ -15842,11 +15846,11 @@ object Formpeach: TFormpeach
         Left = 0
         Height = 1
         Top = 48
-        Width = 1022
+        Width = 1024
         Anchors = [akTop, akLeft, akRight]
         BevelOuter = bvNone
         ClientHeight = 1
-        ClientWidth = 1022
+        ClientWidth = 1024
         ParentBackground = False
         ParentFont = False
         TabOrder = 3
@@ -15858,7 +15862,7 @@ object Formpeach: TFormpeach
           Left = 0
           Height = 1
           Top = 0
-          Width = 1022
+          Width = 1024
           DragReorder = True
           Sections = <          
             item
@@ -15890,7 +15894,7 @@ object Formpeach: TFormpeach
       Left = 0
       Height = 600
       Top = 0
-      Width = 1022
+      Width = 1024
       Anchors = [akTop, akLeft, akRight, akBottom]
       BevelOuter = bvNone
       Color = clWindow
@@ -18336,40 +18340,270 @@ object Formpeach: TFormpeach
       object Separator30: TMenuItem
         Caption = '-'
       end
-      object mexttob1: TMenuItem
-        Caption = 'mexttob1'
-        OnClick = mexttob1Click
+      object mextto_Last: TMenuItem
+        Caption = 'mextto_Last'
+        OnClick = mextto_LastClick
       end
-      object mexttob2: TMenuItem
-        Caption = 'mexttob2'
-        OnClick = mexttob2Click
+      object mexttobook: TMenuItem
+        Caption = 'mexttobook'
+        object mexttob1: TMenuItem
+          Caption = 'mexttob1'
+          OnClick = mexttob1Click
+        end
+        object mexttob2: TMenuItem
+          Caption = 'mexttob2'
+          OnClick = mexttob2Click
+        end
+        object mexttob3: TMenuItem
+          Caption = 'mexttob3'
+          OnClick = mexttob3Click
+        end
+        object mexttob4: TMenuItem
+          Caption = 'mexttob4'
+          OnClick = mexttob4Click
+        end
+        object mexttob5: TMenuItem
+          Caption = 'mexttob5'
+          OnClick = mexttob5Click
+        end
+        object mexttob6: TMenuItem
+          Caption = 'mexttob6'
+          OnClick = mexttob6Click
+        end
+        object mexttob7: TMenuItem
+          Caption = 'mexttob7'
+          OnClick = mexttob7Click
+        end
+        object mexttob8: TMenuItem
+          Caption = 'mexttob8'
+          OnClick = mexttob8Click
+        end
+        object mexttob9: TMenuItem
+          Caption = 'mexttob9'
+          OnClick = mexttob9Click
+        end
+        object mexttob10: TMenuItem
+          Caption = 'mexttob10'
+          OnClick = mexttob10Click
+        end
+        object mexttob11: TMenuItem
+          Caption = 'mexttob11'
+          OnClick = mexttob11Click
+        end
+        object mexttob12: TMenuItem
+          Caption = 'mexttob12'
+          OnClick = mexttob12Click
+        end
+        object mexttob13: TMenuItem
+          Caption = 'mexttob13'
+          OnClick = mexttob13Click
+        end
+        object mexttob14: TMenuItem
+          Caption = 'mexttob14'
+          OnClick = mexttob14Click
+        end
+        object mexttob15: TMenuItem
+          Caption = 'mexttob15'
+          OnClick = mexttob15Click
+        end
+        object mexttob16: TMenuItem
+          Caption = 'mexttob16'
+          OnClick = mexttob16Click
+        end
+        object mexttob17: TMenuItem
+          Caption = 'mexttob17'
+          OnClick = mexttob17Click
+        end
+        object mexttob18: TMenuItem
+          Caption = 'mexttob18'
+          OnClick = mexttob18Click
+        end
+        object mexttob19: TMenuItem
+          Caption = 'mexttob19'
+          OnClick = mexttob19Click
+        end
+        object mexttob20: TMenuItem
+          Caption = 'mexttob20'
+          OnClick = mexttob20Click
+        end
+        object mexttob21: TMenuItem
+          Caption = 'mexttob21'
+          OnClick = mexttob21Click
+        end
+        object mexttob22: TMenuItem
+          Caption = 'mexttob22'
+          OnClick = mexttob22Click
+        end
+        object mexttob23: TMenuItem
+          Caption = 'mexttob23'
+          OnClick = mexttob23Click
+        end
       end
-      object mexttob3: TMenuItem
-        Caption = 'mexttob3'
-        OnClick = mexttob3Click
-      end
-      object mexttob4: TMenuItem
-        Caption = 'mexttob4'
-        OnClick = mexttob4Click
-      end
-      object mexttob5: TMenuItem
-        Caption = 'mexttob5'
-        OnClick = mexttob5Click
-      end
-      object mexttob6: TMenuItem
-        Caption = 'mexttob6'
-        OnClick = mexttob6Click
-      end
-      object mexttob7: TMenuItem
-        Caption = 'mexttob7'
-        OnClick = mexttob7Click
-      end
-      object mexttob8: TMenuItem
-        Caption = 'mexttob8'
-        OnClick = mexttob8Click
-      end
-      object Separator31: TMenuItem
-        Caption = '-'
+      object mexttofs: TMenuItem
+        Caption = 'mexttofs'
+        object mextto1: TMenuItem
+          Caption = 'mextto1'
+          OnClick = mextto1Click
+        end
+        object mextto2: TMenuItem
+          Caption = 'mextto2'
+          OnClick = mextto2Click
+        end
+        object mextto3: TMenuItem
+          Caption = 'mextto3'
+          OnClick = mextto3Click
+        end
+        object mextto4: TMenuItem
+          Caption = 'mextto4'
+          OnClick = mextto4Click
+        end
+        object mextto5: TMenuItem
+          Caption = 'mextto5'
+          OnClick = mextto5Click
+        end
+        object mextto6: TMenuItem
+          Caption = 'mextto6'
+          OnClick = mextto6Click
+        end
+        object mextto7: TMenuItem
+          Caption = 'mextto7'
+          OnClick = mextto7Click
+        end
+        object mextto8: TMenuItem
+          Caption = 'mextto8'
+          OnClick = mextto8Click
+        end
+        object mextto9: TMenuItem
+          Caption = 'mextto9'
+          OnClick = mextto9Click
+        end
+        object mextto10: TMenuItem
+          Caption = 'mextto10'
+          OnClick = mextto10Click
+        end
+        object mextto11: TMenuItem
+          Caption = 'mextto11'
+          OnClick = mextto11Click
+        end
+        object mextto12: TMenuItem
+          Caption = 'mextto12'
+          OnClick = mextto12Click
+        end
+        object mextto13: TMenuItem
+          Caption = 'mextto13'
+          OnClick = mextto13Click
+        end
+        object mextto14: TMenuItem
+          Caption = 'mextto14'
+          OnClick = mextto14Click
+        end
+        object mextto15: TMenuItem
+          Caption = 'mextto15'
+          OnClick = mextto15Click
+        end
+        object mextto16: TMenuItem
+          Caption = 'mextto16'
+          OnClick = mextto16Click
+        end
+        object mextto17: TMenuItem
+          Caption = 'mextto17'
+          OnClick = mextto17Click
+        end
+        object mextto18: TMenuItem
+          Caption = 'mextto18'
+          OnClick = mextto18Click
+        end
+        object mextto19: TMenuItem
+          Caption = 'mextto19'
+          OnClick = mextto19Click
+        end
+        object mextto20: TMenuItem
+          Caption = 'mextto20'
+          OnClick = mextto20Click
+        end
+        object mextto21: TMenuItem
+          Caption = 'mextto21'
+          OnClick = mextto21Click
+        end
+        object mextto22: TMenuItem
+          Caption = 'mextto22'
+          OnClick = mextto22Click
+        end
+        object mextto23: TMenuItem
+          Caption = 'mextto23'
+          OnClick = mextto23Click
+        end
+        object mextto24: TMenuItem
+          Caption = 'mextto24'
+          OnClick = mextto24Click
+        end
+        object mextto25: TMenuItem
+          Caption = 'mextto25'
+          OnClick = mextto25Click
+        end
+        object mextto26: TMenuItem
+          Caption = 'mextto26'
+          OnClick = mextto26Click
+        end
+        object Separator31: TMenuItem
+          Caption = '-'
+        end
+        object mextto_home: TMenuItem
+          Caption = 'mextto_home'
+          OnClick = mextto_homeClick
+        end
+        object mextto_desktop: TMenuItem
+          Caption = 'mextto_desktop'
+          OnClick = mextto_desktopClick
+        end
+        object mextto_downloads: TMenuItem
+          Caption = 'mextto_downloads'
+          OnClick = mextto_downloadsClick
+        end
+        object mextto_documents: TMenuItem
+          Caption = 'mextto_documents'
+          OnClick = mextto_documentsClick
+        end
+        object mextto_music: TMenuItem
+          Caption = 'mextto_music'
+          OnClick = mextto_musicClick
+        end
+        object mextto_pictures: TMenuItem
+          Caption = 'mextto_pictures'
+          OnClick = mextto_picturesClick
+        end
+        object mextto_videos: TMenuItem
+          Caption = 'mextto_videos'
+          OnClick = mextto_videosClick
+        end
+        object mextto_dropbox: TMenuItem
+          Caption = 'Dropbox'
+          OnClick = mextto_dropboxClick
+        end
+        object mextto_googledrive: TMenuItem
+          Caption = 'Google Drive'
+          OnClick = mextto_googledriveClick
+        end
+        object mextto_onedrive: TMenuItem
+          Caption = 'OneDrive'
+          OnClick = mextto_onedriveClick
+        end
+        object mextto_shp: TMenuItem
+          Caption = 'Sharepoint Workspaces'
+          OnClick = mextto_shpClick
+        end
+        object mextto_y: TMenuItem
+          Caption = 'Yandex Disk'
+          OnClick = mextto_yClick
+        end
+        object mextto_pubhome: TMenuItem
+          Caption = 'mextto_pubhome'
+          OnClick = mextto_pubhomeClick
+        end
+        object mextto_pubdoc: TMenuItem
+          Caption = 'mextto_pubdoc'
+          OnClick = mextto_pubdocClick
+        end
       end
       object mexttohistory: TMenuItem
         Caption = 'History'
@@ -18483,6 +18717,10 @@ object Formpeach: TFormpeach
           Caption = 'mexttoc8'
           OnClick = mexttoc8Click
         end
+      end
+      object mextto_here: TMenuItem
+        Caption = 'mextto_here'
+        OnClick = mextto_hereClick
       end
     end
     object MenuItemExtAllHere: TMenuItem
@@ -20182,86 +20420,86 @@ object Formpeach: TFormpeach
     end
     object smfs1: TMenuItem
       Caption = 'Filesystem'
-      object MenuItemOpen_pc: TMenuItem
-        Caption = 'Computer''s root'
-        object pojdn1: TMenuItem
-          OnClick = pojdn1Click
-        end
-        object pojdn2: TMenuItem
-          OnClick = pojdn2Click
-        end
-        object pojdn3: TMenuItem
-          OnClick = pojdn3Click
-        end
-        object pojdn4: TMenuItem
-          OnClick = pojdn4Click
-        end
-        object pojdn5: TMenuItem
-          OnClick = pojdn5Click
-        end
-        object pojdn6: TMenuItem
-          OnClick = pojdn6Click
-        end
-        object pojdn7: TMenuItem
-          OnClick = pojdn7Click
-        end
-        object pojdn8: TMenuItem
-          OnClick = pojdn8Click
-        end
-        object pojdn9: TMenuItem
-          OnClick = pojdn9Click
-        end
-        object pojdn10: TMenuItem
-          OnClick = pojdn10Click
-        end
-        object pojdn11: TMenuItem
-          OnClick = pojdn11Click
-        end
-        object pojdn12: TMenuItem
-          OnClick = pojdn12Click
-        end
-        object pojdn13: TMenuItem
-          OnClick = pojdn13Click
-        end
-        object pojdn14: TMenuItem
-          OnClick = pojdn14Click
-        end
-        object pojdn15: TMenuItem
-          OnClick = pojdn15Click
-        end
-        object pojdn16: TMenuItem
-          OnClick = pojdn16Click
-        end
-        object pojdn17: TMenuItem
-          OnClick = pojdn17Click
-        end
-        object pojdn18: TMenuItem
-          OnClick = pojdn18Click
-        end
-        object pojdn19: TMenuItem
-          OnClick = pojdn19Click
-        end
-        object pojdn20: TMenuItem
-          OnClick = pojdn20Click
-        end
-        object pojdn21: TMenuItem
-          OnClick = pojdn21Click
-        end
-        object pojdn22: TMenuItem
-          OnClick = pojdn22Click
-        end
-        object pojdn23: TMenuItem
-          OnClick = pojdn23Click
-        end
-        object pojdn24: TMenuItem
-          OnClick = pojdn24Click
-        end
-        object pojdn25: TMenuItem
-          OnClick = pojdn25Click
-        end
-        object pojdn26: TMenuItem
-          OnClick = pojdn26Click
-        end
+      object pojdn1: TMenuItem
+        OnClick = pojdn1Click
+      end
+      object pojdn2: TMenuItem
+        OnClick = pojdn2Click
+      end
+      object pojdn3: TMenuItem
+        OnClick = pojdn3Click
+      end
+      object pojdn4: TMenuItem
+        OnClick = pojdn4Click
+      end
+      object pojdn5: TMenuItem
+        OnClick = pojdn5Click
+      end
+      object pojdn6: TMenuItem
+        OnClick = pojdn6Click
+      end
+      object pojdn7: TMenuItem
+        OnClick = pojdn7Click
+      end
+      object pojdn8: TMenuItem
+        OnClick = pojdn8Click
+      end
+      object pojdn9: TMenuItem
+        OnClick = pojdn9Click
+      end
+      object pojdn10: TMenuItem
+        OnClick = pojdn10Click
+      end
+      object pojdn11: TMenuItem
+        OnClick = pojdn11Click
+      end
+      object pojdn12: TMenuItem
+        OnClick = pojdn12Click
+      end
+      object pojdn13: TMenuItem
+        OnClick = pojdn13Click
+      end
+      object pojdn14: TMenuItem
+        OnClick = pojdn14Click
+      end
+      object pojdn15: TMenuItem
+        OnClick = pojdn15Click
+      end
+      object pojdn16: TMenuItem
+        OnClick = pojdn16Click
+      end
+      object pojdn17: TMenuItem
+        OnClick = pojdn17Click
+      end
+      object pojdn18: TMenuItem
+        OnClick = pojdn18Click
+      end
+      object pojdn19: TMenuItem
+        OnClick = pojdn19Click
+      end
+      object pojdn20: TMenuItem
+        OnClick = pojdn20Click
+      end
+      object pojdn21: TMenuItem
+        OnClick = pojdn21Click
+      end
+      object pojdn22: TMenuItem
+        OnClick = pojdn22Click
+      end
+      object pojdn23: TMenuItem
+        OnClick = pojdn23Click
+      end
+      object pojdn24: TMenuItem
+        OnClick = pojdn24Click
+      end
+      object pojdn25: TMenuItem
+        OnClick = pojdn25Click
+      end
+      object pojdn26: TMenuItem
+        OnClick = pojdn26Click
+      end
+      object Separator55: TMenuItem
+        Caption = '-'
       end
       object MenuItemOpen_home1: TMenuItem
         Caption = 'User''s home'
@@ -20295,10 +20533,6 @@ object Formpeach: TFormpeach
         Caption = 'Dropbox'
         OnClick = MenuItemOpen_dropboxClick
       end
-      object MenuItemOpen_myboxfiles: TMenuItem
-        Caption = 'My Box Files'
-        OnClick = MenuItemOpen_myboxfilesClick
-      end
       object MenuItemOpen_googledrive: TMenuItem
         Caption = 'Google Drive'
         OnClick = MenuItemOpen_googledriveClick
@@ -20307,13 +20541,13 @@ object Formpeach: TFormpeach
         Caption = 'OneDrive'
         OnClick = MenuItemOpen_onedriveClick
       end
-      object MenuItemOpen_skydrive: TMenuItem
-        Caption = 'SkyDrive'
-        OnClick = MenuItemOpen_skydriveClick
+      object MenuItemOpen_shp: TMenuItem
+        Caption = 'Sharepoint Workspaces'
+        OnClick = MenuItemOpen_shpClick
       end
-      object MenuItemOpen_ubuntuone: TMenuItem
-        Caption = 'Ubuntu One'
-        OnClick = MenuItemOpen_ubuntuoneClick
+      object MenuItemOpen_y: TMenuItem
+        Caption = 'Yandex Disk'
+        OnClick = MenuItemOpen_yClick
       end
       object MenuItemOpen_pubhome: TMenuItem
         Caption = 'Home - Public'
@@ -20944,86 +21178,86 @@ object Formpeach: TFormpeach
     end
     object pmbreadfs: TMenuItem
       Caption = 'fs'
-      object pmJump1: TMenuItem
-        Caption = 'Computer''s root'
-        object pmjd1: TMenuItem
-          OnClick = pmjd1Click
-        end
-        object pmjd2: TMenuItem
-          OnClick = pmjd2Click
-        end
-        object pmjd3: TMenuItem
-          OnClick = pmjd3Click
-        end
-        object pmjd4: TMenuItem
-          OnClick = pmjd4Click
-        end
-        object pmjd5: TMenuItem
-          OnClick = pmjd5Click
-        end
-        object pmjd6: TMenuItem
-          OnClick = pmjd6Click
-        end
-        object pmjd7: TMenuItem
-          OnClick = pmjd7Click
-        end
-        object pmjd8: TMenuItem
-          OnClick = pmjd8Click
-        end
-        object pmjd9: TMenuItem
-          OnClick = pmjd9Click
-        end
-        object pmjd10: TMenuItem
-          OnClick = pmjd10Click
-        end
-        object pmjd11: TMenuItem
-          OnClick = pmjd11Click
-        end
-        object pmjd12: TMenuItem
-          OnClick = pmjd12Click
-        end
-        object pmjd13: TMenuItem
-          OnClick = pmjd13Click
-        end
-        object pmjd14: TMenuItem
-          OnClick = pmjd14Click
-        end
-        object pmjd15: TMenuItem
-          OnClick = pmjd15Click
-        end
-        object pmjd16: TMenuItem
-          OnClick = pmjd16Click
-        end
-        object pmjd17: TMenuItem
-          OnClick = pmjd17Click
-        end
-        object pmjd18: TMenuItem
-          OnClick = pmjd18Click
-        end
-        object pmjd19: TMenuItem
-          OnClick = pmjd19Click
-        end
-        object pmjd20: TMenuItem
-          OnClick = pmjd20Click
-        end
-        object pmjd21: TMenuItem
-          OnClick = pmjd21Click
-        end
-        object pmjd22: TMenuItem
-          OnClick = pmjd22Click
-        end
-        object pmjd23: TMenuItem
-          OnClick = pmjd23Click
-        end
-        object pmjd24: TMenuItem
-          OnClick = pmjd24Click
-        end
-        object pmjd25: TMenuItem
-          OnClick = pmjd25Click
-        end
-        object pmjd26: TMenuItem
-          OnClick = pmjd26Click
-        end
+      object pmjd1: TMenuItem
+        OnClick = pmjd1Click
+      end
+      object pmjd2: TMenuItem
+        OnClick = pmjd2Click
+      end
+      object pmjd3: TMenuItem
+        OnClick = pmjd3Click
+      end
+      object pmjd4: TMenuItem
+        OnClick = pmjd4Click
+      end
+      object pmjd5: TMenuItem
+        OnClick = pmjd5Click
+      end
+      object pmjd6: TMenuItem
+        OnClick = pmjd6Click
+      end
+      object pmjd7: TMenuItem
+        OnClick = pmjd7Click
+      end
+      object pmjd8: TMenuItem
+        OnClick = pmjd8Click
+      end
+      object pmjd9: TMenuItem
+        OnClick = pmjd9Click
+      end
+      object pmjd10: TMenuItem
+        OnClick = pmjd10Click
+      end
+      object pmjd11: TMenuItem
+        OnClick = pmjd11Click
+      end
+      object pmjd12: TMenuItem
+        OnClick = pmjd12Click
+      end
+      object pmjd13: TMenuItem
+        OnClick = pmjd13Click
+      end
+      object pmjd14: TMenuItem
+        OnClick = pmjd14Click
+      end
+      object pmjd15: TMenuItem
+        OnClick = pmjd15Click
+      end
+      object pmjd16: TMenuItem
+        OnClick = pmjd16Click
+      end
+      object pmjd17: TMenuItem
+        OnClick = pmjd17Click
+      end
+      object pmjd18: TMenuItem
+        OnClick = pmjd18Click
+      end
+      object pmjd19: TMenuItem
+        OnClick = pmjd19Click
+      end
+      object pmjd20: TMenuItem
+        OnClick = pmjd20Click
+      end
+      object pmjd21: TMenuItem
+        OnClick = pmjd21Click
+      end
+      object pmjd22: TMenuItem
+        OnClick = pmjd22Click
+      end
+      object pmjd23: TMenuItem
+        OnClick = pmjd23Click
+      end
+      object pmjd24: TMenuItem
+        OnClick = pmjd24Click
+      end
+      object pmjd25: TMenuItem
+        OnClick = pmjd25Click
+      end
+      object pmjd26: TMenuItem
+        OnClick = pmjd26Click
+      end
+      object Separator53: TMenuItem
+        Caption = '-'
       end
       object pmJump3: TMenuItem
         Caption = 'Home'
@@ -21057,10 +21291,6 @@ object Formpeach: TFormpeach
         Caption = 'Dropbox'
         OnClick = pmqjdropboxClick
       end
-      object pmqjmyboxfiles: TMenuItem
-        Caption = 'My Box Files'
-        OnClick = pmqjmyboxfilesClick
-      end
       object pmqjgoogledrive: TMenuItem
         Caption = 'Google Drive'
         OnClick = pmqjgoogledriveClick
@@ -21069,40 +21299,37 @@ object Formpeach: TFormpeach
         Caption = 'OneDrive'
         OnClick = pmqjonedriveClick
       end
-      object pmqjskydrive: TMenuItem
-        Caption = 'SkyDrive'
-        OnClick = pmqjskydriveClick
+      object pmqjshp: TMenuItem
+        Caption = 'Sharepoint Workspaces'
+        OnClick = pmqjshpClick
       end
-      object pmqjubuntuone: TMenuItem
-        Caption = 'Ubuntu One'
-        OnClick = pmqjubuntuoneClick
+      object pmqjy: TMenuItem
+        Caption = 'Yandex Disk'
+        OnClick = pmqjyClick
       end
-      object pmqjmore: TMenuItem
-        Caption = '...'
-        object pmjumpapple: TMenuItem
-          Caption = 'Apple'
-          OnClick = pmjumpappleClick
-        end
-        object pmjumppubhome: TMenuItem
-          Caption = 'Home - Public'
-          OnClick = pmjumppubhomeClick
-        end
-        object pmjumppubdoc: TMenuItem
-          Caption = 'Documents - Public'
-          OnClick = pmjumppubdocClick
-        end
-        object pmjumprecent: TMenuItem
-          Caption = 'Recent'
-          OnClick = pmjumprecentClick
-        end
-        object pmjumplibraries: TMenuItem
-          Caption = 'Libraries'
-          OnClick = pmjumplibrariesClick
-        end
-        object pmjumpsearches: TMenuItem
-          Caption = 'Searches'
-          OnClick = pmjumpsearchesClick
-        end
+      object pmjumpapple: TMenuItem
+        Caption = 'Apple'
+        OnClick = pmjumpappleClick
+      end
+      object pmjumppubhome: TMenuItem
+        Caption = 'Home - Public'
+        OnClick = pmjumppubhomeClick
+      end
+      object pmjumppubdoc: TMenuItem
+        Caption = 'Documents - Public'
+        OnClick = pmjumppubdocClick
+      end
+      object pmjumprecent: TMenuItem
+        Caption = 'Recent'
+        OnClick = pmjumprecentClick
+      end
+      object pmjumplibraries: TMenuItem
+        Caption = 'Libraries'
+        OnClick = pmjumplibrariesClick
+      end
+      object pmjumpsearches: TMenuItem
+        Caption = 'Searches'
+        OnClick = pmjumpsearchesClick
       end
     end
     object pmbc: TMenuItem
@@ -25982,7 +26209,7 @@ object Formpeach: TFormpeach
     Top = 538
   end
   object PopupPathArchive: TPopupMenu
-    Left = 40
+    Left = 38
     Top = 288
     object mpathreset1: TMenuItem
       Caption = 'Last used'
@@ -26085,86 +26312,86 @@ object Formpeach: TFormpeach
     end
     object smfsa1: TMenuItem
       Caption = 'Filesystem'
-      object MenuItemArchive_pc: TMenuItem
-        Caption = 'Computer''s root'
-        object pajdn1: TMenuItem
-          OnClick = pajdn1Click
-        end
-        object pajdn2: TMenuItem
-          OnClick = pajdn2Click
-        end
-        object pajdn3: TMenuItem
-          OnClick = pajdn3Click
-        end
-        object pajdn4: TMenuItem
-          OnClick = pajdn4Click
-        end
-        object pajdn5: TMenuItem
-          OnClick = pajdn5Click
-        end
-        object pajdn6: TMenuItem
-          OnClick = pajdn6Click
-        end
-        object pajdn7: TMenuItem
-          OnClick = pajdn7Click
-        end
-        object pajdn8: TMenuItem
-          OnClick = pajdn8Click
-        end
-        object pajdn9: TMenuItem
-          OnClick = pajdn9Click
-        end
-        object pajdn10: TMenuItem
-          OnClick = pajdn10Click
-        end
-        object pajdn11: TMenuItem
-          OnClick = pajdn11Click
-        end
-        object pajdn12: TMenuItem
-          OnClick = pajdn12Click
-        end
-        object pajdn13: TMenuItem
-          OnClick = pajdn13Click
-        end
-        object pajdn14: TMenuItem
-          OnClick = pajdn14Click
-        end
-        object pajdn15: TMenuItem
-          OnClick = pajdn15Click
-        end
-        object pajdn16: TMenuItem
-          OnClick = pajdn16Click
-        end
-        object pajdn17: TMenuItem
-          OnClick = pajdn17Click
-        end
-        object pajdn18: TMenuItem
-          OnClick = pajdn18Click
-        end
-        object pajdn19: TMenuItem
-          OnClick = pajdn19Click
-        end
-        object pajdn20: TMenuItem
-          OnClick = pajdn20Click
-        end
-        object pajdn21: TMenuItem
-          OnClick = pajdn21Click
-        end
-        object pajdn22: TMenuItem
-          OnClick = pajdn22Click
-        end
-        object pajdn23: TMenuItem
-          OnClick = pajdn23Click
-        end
-        object pajdn24: TMenuItem
-          OnClick = pajdn24Click
-        end
-        object pajdn25: TMenuItem
-          OnClick = pajdn25Click
-        end
-        object pajdn26: TMenuItem
-          OnClick = pajdn26Click
-        end
+      object pajdn1: TMenuItem
+        OnClick = pajdn1Click
+      end
+      object pajdn2: TMenuItem
+        OnClick = pajdn2Click
+      end
+      object pajdn3: TMenuItem
+        OnClick = pajdn3Click
+      end
+      object pajdn4: TMenuItem
+        OnClick = pajdn4Click
+      end
+      object pajdn5: TMenuItem
+        OnClick = pajdn5Click
+      end
+      object pajdn6: TMenuItem
+        OnClick = pajdn6Click
+      end
+      object pajdn7: TMenuItem
+        OnClick = pajdn7Click
+      end
+      object pajdn8: TMenuItem
+        OnClick = pajdn8Click
+      end
+      object pajdn9: TMenuItem
+        OnClick = pajdn9Click
+      end
+      object pajdn10: TMenuItem
+        OnClick = pajdn10Click
+      end
+      object pajdn11: TMenuItem
+        OnClick = pajdn11Click
+      end
+      object pajdn12: TMenuItem
+        OnClick = pajdn12Click
+      end
+      object pajdn13: TMenuItem
+        OnClick = pajdn13Click
+      end
+      object pajdn14: TMenuItem
+        OnClick = pajdn14Click
+      end
+      object pajdn15: TMenuItem
+        OnClick = pajdn15Click
+      end
+      object pajdn16: TMenuItem
+        OnClick = pajdn16Click
+      end
+      object pajdn17: TMenuItem
+        OnClick = pajdn17Click
+      end
+      object pajdn18: TMenuItem
+        OnClick = pajdn18Click
+      end
+      object pajdn19: TMenuItem
+        OnClick = pajdn19Click
+      end
+      object pajdn20: TMenuItem
+        OnClick = pajdn20Click
+      end
+      object pajdn21: TMenuItem
+        OnClick = pajdn21Click
+      end
+      object pajdn22: TMenuItem
+        OnClick = pajdn22Click
+      end
+      object pajdn23: TMenuItem
+        OnClick = pajdn23Click
+      end
+      object pajdn24: TMenuItem
+        OnClick = pajdn24Click
+      end
+      object pajdn25: TMenuItem
+        OnClick = pajdn25Click
+      end
+      object pajdn26: TMenuItem
+        OnClick = pajdn26Click
+      end
+      object Separator54: TMenuItem
+        Caption = '-'
       end
       object MenuItemArchive_home1: TMenuItem
         Caption = 'User''s home'
@@ -26198,10 +26425,6 @@ object Formpeach: TFormpeach
         Caption = 'Dropbox'
         OnClick = MenuItemArchive_dropboxClick
       end
-      object MenuItemArchive_myboxfiles: TMenuItem
-        Caption = 'My Box Files'
-        OnClick = MenuItemArchive_myboxfilesClick
-      end
       object MenuItemArchive_googledrive: TMenuItem
         Caption = 'Google Drive'
         OnClick = MenuItemArchive_googledriveClick
@@ -26210,13 +26433,13 @@ object Formpeach: TFormpeach
         Caption = 'OneDrive'
         OnClick = MenuItemArchive_onedriveClick
       end
-      object MenuItemArchive_skydrive: TMenuItem
-        Caption = 'SkyDrive'
-        OnClick = MenuItemArchive_skydriveClick
+      object MenuItemArchive_shp: TMenuItem
+        Caption = 'Sharepoint Workspaces'
+        OnClick = MenuItemArchive_shpClick
       end
-      object MenuItemArchive_ubuntuone: TMenuItem
-        Caption = 'Ubuntu One'
-        OnClick = MenuItemArchive_ubuntuoneClick
+      object MenuItemArchive_y: TMenuItem
+        Caption = 'Yandex Disk'
+        OnClick = MenuItemArchive_yClick
       end
       object MenuItemArchive_pubhome: TMenuItem
         Caption = 'Home - Public'

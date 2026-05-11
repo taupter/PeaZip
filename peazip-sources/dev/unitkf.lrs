@@ -4,25 +4,25 @@ LazarusResources.Add('TFormKF','FORMDATA',[
   'TPF0'#7'TFormKF'#6'FormKF'#4'Left'#3#145#0#6'Height'#3#245#1#3'Top'#3#232#0#5
   +'Width'#3#238#2#7'Caption'#6#6'FormKF'#12'ClientHeight'#3#245#1#11'ClientWid'
   +'th'#3#238#2#5'Color'#7#8'clWindow'#21'Constraints.MinHeight'#3#244#1#20'Con'
-  +'straints.MinWidth'#3#238#2#13'DesignTimePPI'#2'x'#8'Position'#7#14'poScreen'
-  +'Center'#8'ShowHint'#9#10'LCLVersion'#6#7'4.2.0.0'#7'OnClose'#7#9'FormClose'
-  +#0#6'TPanel'#12'PanelKeyfile'#22'AnchorSideLeft.Control'#7#5'Owner'#21'Ancho'
-  +'rSideTop.Control'#7#5'Owner'#23'AnchorSideRight.Control'#7#5'Owner'#20'Anch'
-  +'orSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#5'Owner'#21
-  +'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#2#0#6'Height'#3#245#1#3'Top'#2
-  +#0#5'Width'#3#238#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#8'akBottom'#0
-  +#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#3#245#1#11'ClientWidth'#3#238#2
-  +#16'ParentBackground'#8#8'TabOrder'#2#0#11'OnMouseMove'#7#21'PanelKeyfileMou'
-  +'seMove'#0#9'TGroupBox'#10'GroupBoxKF'#22'AnchorSideLeft.Control'#7#13'EditS'
-  +'uggestPW'#21'AnchorSideTop.Control'#7#12'PanelKeyfile'#23'AnchorSideRight.C'
-  +'ontrol'#7#17'SpinEditSuggestPW'#20'AnchorSideRight.Side'#7#9'asrBottom'#24
-  +'AnchorSideBottom.Control'#7#13'ButtonPanelKF'#4'Left'#2#30#6'Height'#2'P'#3
-  +'Top'#3'i'#1#5'Width'#3#178#2#7'Anchors'#11#6'akLeft'#7'akRight'#8'akBottom'
-  +#0#20'BorderSpacing.Bottom'#2#15#7'Caption'#6#23'Enthropy sampling tools'#12
-  +'ClientHeight'#2'7'#11'ClientWidth'#3#174#2#16'ParentBackground'#8#8'TabOrde'
-  +'r'#2#7#11'OnMouseMove'#7#19'GroupBoxKFMouseMove'#0#5'TEdit'#7'EditEnt'#22'A'
-  +'nchorSideLeft.Control'#7#10'GroupBoxKF'#21'AnchorSideTop.Control'#7#10'Grou'
-  +'pBoxKF'#18'AnchorSideTop.Side'#7#9'asrCenter'#23'AnchorSideRight.Control'#7
+  +'straints.MinWidth'#3#238#2#13'DesignTimePPI'#2'x'#8'Position'#7#16'poMainFo'
+  +'rmCenter'#8'ShowHint'#9#10'LCLVersion'#6#7'4.2.0.0'#7'OnClose'#7#9'FormClos'
+  +'e'#0#6'TPanel'#12'PanelKeyfile'#22'AnchorSideLeft.Control'#7#5'Owner'#21'An'
+  +'chorSideTop.Control'#7#5'Owner'#23'AnchorSideRight.Control'#7#5'Owner'#20'A'
+  +'nchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'#7#5'Owner'
+  +#21'AnchorSideBottom.Side'#7#9'asrBottom'#4'Left'#2#0#6'Height'#3#245#1#3'To'
+  +'p'#2#0#5'Width'#3#238#2#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#8'akBot'
+  +'tom'#0#10'BevelOuter'#7#6'bvNone'#12'ClientHeight'#3#245#1#11'ClientWidth'#3
+  +#238#2#16'ParentBackground'#8#8'TabOrder'#2#0#11'OnMouseMove'#7#21'PanelKeyf'
+  +'ileMouseMove'#0#9'TGroupBox'#10'GroupBoxKF'#22'AnchorSideLeft.Control'#7#13
+  +'EditSuggestPW'#21'AnchorSideTop.Control'#7#12'PanelKeyfile'#23'AnchorSideRi'
+  +'ght.Control'#7#17'SpinEditSuggestPW'#20'AnchorSideRight.Side'#7#9'asrBottom'
+  +#24'AnchorSideBottom.Control'#7#13'ButtonPanelKF'#4'Left'#2#30#6'Height'#2'P'
+  +#3'Top'#3'i'#1#5'Width'#3#178#2#7'Anchors'#11#6'akLeft'#7'akRight'#8'akBotto'
+  +'m'#0#20'BorderSpacing.Bottom'#2#15#7'Caption'#6#23'Enthropy sampling tools'
+  +#12'ClientHeight'#2'7'#11'ClientWidth'#3#174#2#16'ParentBackground'#8#8'TabO'
+  +'rder'#2#7#11'OnMouseMove'#7#19'GroupBoxKFMouseMove'#0#5'TEdit'#7'EditEnt'#22
+  +'AnchorSideLeft.Control'#7#10'GroupBoxKF'#21'AnchorSideTop.Control'#7#10'Gro'
+  +'upBoxKF'#18'AnchorSideTop.Side'#7#9'asrCenter'#23'AnchorSideRight.Control'#7
   +#16'ButtonKFLoadFile'#4'Left'#2#0#6'Height'#2#28#3'Top'#2#13#5'Width'#3'H'#2
   +#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#19'BorderSpacing.Right'#2#8#8
   +'TabOrder'#2#0#4'Text'#6#17'Enter random keys'#10'OnKeyPress'#7#15'EditEntKe'
@@ -64,11 +64,11 @@ LazarusResources.Add('TFormKF','FORMDATA',[
   +'h'#3#208#2#7'Anchors'#11#7'akRight'#8'akBottom'#0#18'BorderSpacing.Left'#2
   +#15#19'BorderSpacing.Right'#2#15#20'BorderSpacing.Bottom'#2#15#20'BorderSpac'
   +'ing.Around'#2#0#13'OKButton.Name'#6#8'OKButton'#23'OKButton.DefaultCaption'
-  +#9#16'OKButton.Enabled'#8#15'HelpButton.Name'#6#10'HelpButton'#25'HelpButton'
-  ,'.DefaultCaption'#9#18'HelpButton.Enabled'#8#16'CloseButton.Name'#6#11'Close'
-  +'Button'#26'CloseButton.DefaultCaption'#9#17'CancelButton.Name'#6#12'CancelB'
-  +'utton'#27'CancelButton.DefaultCaption'#9#20'CancelButton.Enabled'#8#8'TabOr'
-  +'der'#2#8#11'ShowButtons'#11#7'pbClose'#0#10'ShowGlyphs'#11#0#9'ShowBevel'#8
+  +#9#15'HelpButton.Name'#6#10'HelpButton'#25'HelpButton.DefaultCaption'#9#18'H'
+  ,'elpButton.Enabled'#8#16'CloseButton.Name'#6#11'CloseButton'#26'CloseButton.'
+  +'DefaultCaption'#9#19'CloseButton.Enabled'#8#17'CancelButton.Name'#6#12'Canc'
+  +'elButton'#27'CancelButton.DefaultCaption'#9#20'CancelButton.Enabled'#8#8'Ta'
+  +'bOrder'#2#8#11'ShowButtons'#11#4'pbOK'#0#10'ShowGlyphs'#11#0#9'ShowBevel'#8
   +#0#12'TProgressBar'#13'ProgressBarKF'#22'AnchorSideLeft.Control'#7#11'ImageI'
   +'nfoKF'#19'AnchorSideLeft.Side'#7#9'asrBottom'#21'AnchorSideTop.Control'#7#13
   +'ButtonPanelKF'#18'AnchorSideTop.Side'#7#9'asrCenter'#4'Left'#2#28#6'Height'
@@ -112,5 +112,8 @@ LazarusResources.Add('TFormKF','FORMDATA',[
   +#2#0#7'Options'#11#17'ofOverwritePrompt'#14'ofEnableSizing'#12'ofViewDetail'
   +#0#4'Left'#3#3#2#3'Top'#3'T'#1#0#0#11'TOpenDialog'#12'OpenDialogKF'#5'Title'
   +#6#12'Open file(s)'#11'FilterIndex'#2#0#7'Options'#11#18'ofAllowMultiSelect'
-  +#14'ofEnableSizing'#12'ofViewDetail'#0#4'Left'#3#224#1#3'Top'#3'T'#1#0#0#0
+  +#14'ofEnableSizing'#12'ofViewDetail'#0#4'Left'#3#224#1#3'Top'#3'T'#1#0#0#11
+  +'TActionList'#12'ActionListKF'#4'Left'#3#8#2#0#7'TAction'#12'ActionKFExit'#7
+  +'Caption'#6#12'ActionKFExit'#8'ShortCut'#2#27#9'OnExecute'#7#19'ActionKFExit'
+  +'Execute'#0#0#0#0
 ]);

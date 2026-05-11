@@ -205,37 +205,34 @@ unit peach; //Main form of PeaZip, organized in file browser, archiving, extract
  1.84     20251201  G.Tani     10.8.0
  1.85     20260203  G.Tani     10.9.0
  1.86     20260405  G.Tani     11.0.0
+ 1.87     20260508  G.Tani     11.1.0
 
 BACKEND
-7z/p7zip 26.00
-Pea 1.30
+7z/p7zip backed updated to 26.01
+(Linux, aarch64 and x86_64) Replaced 7zalt with Tino Reichardt 7-Zip ZS 25.01 - v1.5.7 - Release 4
+Pea 1.31
 
 CODE
-Options > Settings, Browser optimization levels improved and optimized to better fit more user cases, generally improving speed on larger archives, and making performances more uniform for different archive types
- Archive folders content calculation step is now better matched with browser optimization level
- Archive pre-parsing step (TOC verification) is improved for various cases, up to -87% time if archive TOC is not ordered by name, and up to -94% for very large archives over 100Ks items regardless TOC order
- Archive treeview rendering step improved, -30% time, and is now better matched with browser optimization level
+Legacy code cleanup
+QOL improvements
+ Added info popup if Browser optimization (Options > Settings, Performances group) is set to fast or no pre-parse, to inform some archive TOC and data issues may go unnoticed, even preventing archive content to be correctly displayed in some cases.
+ Minor performances optimization in pre-parsing step for very large archives, up to -15% time for reference 250K items archive
+ Modal forms are now positioned centered to main form, consistently with most apps
+ Modal forms confirm and cancel action made as consistent as possible with standard OK/Cancel buttons and Esc/Enter keys
 Various fixes
- Fixed auto ask password for encrypted ARC files
- Fixed inconsistencies of icons for Bookmarks, Session history, and Tabs
- Fixed preserve archive breadcrumb on forced refresh events
- Fixed translation of special folders names in Bookmarks
- Prevented starting multiple "auto open tar" events in compressed tar.* archives, unless the archive is closed and re-opened
+ Fixed browsing archives when 7z alias is set
+ Fixed hiding comment label in status bar when archive comment is deleted
+ Fixed Windows context menu direct archive creation entries, now enumerate directory content consistently with other functions
+Security fixes
+ (.pea format) Fixed path traversal evasion on extraction, enforcing canonicalization of names (archiving and extraction) and explicit rejection of relative paths stored in name fields (extraction), vulnerability and poc reported by Harshit Gupta
+ (Windows) Fixed sanitization of input for functions invoking PowerShell, vulnerability and poc reported by Harshit Gupta
 
 FILE MANAGER
-Added Batch test archives function (Test dropdown menu, File manager group) to test multiple archives without interruption (except for asking for password, if needed) reporting success or failure result in the file manager (CRC column)
-Improved file manager
- (GTK2) enabled virtual mode by default over 16K items
- Improved Bookmarks, it is now possible to add Search and Flat view bookmars of filesystem items (previously working only inside archives)
- Improved keeping, and focusing, selection on navigation operations
- Internal Drag & Drop > Copy to / Move to does no longer change directory, consistently with internal Drag & Drop > Extract functions
- Internal Drag & Drop (extract, copy, move) now supports dropping items to the Breadcrumb bar and to the Tab bar
-Minor UI revamp
- Added alternative icon rendering styles (Native, Sharp, and Soft) in Style "..." menu, File manager submenu, to improve blending the visual aspect of the app on different widgetsets
- Improved fractional scaling and zooming
- Updated icons and Themes to work consistently in all widgesets
-Task progress window caption now shows global progress percentage when running a batch of multiple archiving or extraction tasks
-Updated Password Manager UI, and added function to rate password entropy both in Password Manager and in Password Prompt screens
+Context menu > Extract to... submenu now mimics the output path picker menu in archiving / extraction screens for ease of use
+ Added extract to Last used and Selected item's path entries
+ Added Filesystem submenu containing the entries for most common filesystem destinations
+ Moved bookmarks entries in the Bookmarks submenu
+ Moved units in root level of Filesystem submenu
 
 EXTRACTION and ARCHIVING
 
@@ -557,6 +554,71 @@ type
    { TFormPeach }
 
    TFormPeach = class(TForm)
+     CheckBoxLog: TCheckBox;
+     mexttob9: TMenuItem;
+     mexttob10: TMenuItem;
+     mexttob11: TMenuItem;
+     mexttob12: TMenuItem;
+     mexttob13: TMenuItem;
+     mexttob14: TMenuItem;
+     mexttob15: TMenuItem;
+     mexttob16: TMenuItem;
+     mexttob17: TMenuItem;
+     mexttob18: TMenuItem;
+     mexttob19: TMenuItem;
+     mexttob20: TMenuItem;
+     mexttob21: TMenuItem;
+     mexttob22: TMenuItem;
+     mexttob23: TMenuItem;
+     Separator55: TMenuItem;
+     Separator54: TMenuItem;
+     Separator53: TMenuItem;
+     Separator31: TMenuItem;
+     mextto_home: TMenuItem;
+     mextto_desktop: TMenuItem;
+     mextto_downloads: TMenuItem;
+     mextto_documents: TMenuItem;
+     mextto_music: TMenuItem;
+     mextto_pictures: TMenuItem;
+     mextto_videos: TMenuItem;
+     mextto_dropbox: TMenuItem;
+     mextto_googledrive: TMenuItem;
+     mextto_onedrive: TMenuItem;
+     mextto_shp: TMenuItem;
+     mextto_y: TMenuItem;
+     mextto_pubhome: TMenuItem;
+     mextto_pubdoc: TMenuItem;
+     mextto23: TMenuItem;
+     mextto24: TMenuItem;
+     mextto25: TMenuItem;
+     mextto26: TMenuItem;
+     mextto2: TMenuItem;
+     mextto3: TMenuItem;
+     mextto4: TMenuItem;
+     mextto5: TMenuItem;
+     mextto6: TMenuItem;
+     mextto7: TMenuItem;
+     mextto8: TMenuItem;
+     mextto9: TMenuItem;
+     mextto10: TMenuItem;
+     mextto11: TMenuItem;
+     mextto12: TMenuItem;
+     mextto13: TMenuItem;
+     mextto14: TMenuItem;
+     mextto15: TMenuItem;
+     mextto16: TMenuItem;
+     mextto17: TMenuItem;
+     mextto18: TMenuItem;
+     mextto19: TMenuItem;
+     mextto20: TMenuItem;
+     mextto21: TMenuItem;
+     mextto22: TMenuItem;
+     mextto1: TMenuItem;
+     Separator30: TMenuItem;
+     mexttobook: TMenuItem;
+     mexttofs: TMenuItem;
+     mextto_Last: TMenuItem;
+     mextto_here: TMenuItem;
      pmtabrefresh: TMenuItem;
      pmbatchtest: TMenuItem;
      pmrender: TMenuItem;
@@ -569,7 +631,6 @@ type
      cbmiddlebutton: TComboBox;
      cbRARrv: TCheckBox;
      cbshowhidden: TCheckBox;
-     CheckBoxLog: TCheckBox;
      CheckBoxParams: TCheckBox;
      CheckBoxBackground: TCheckBox;
      CheckBoxShowVolatile: TCheckBox;
@@ -1128,14 +1189,12 @@ type
      MenuItemArchive_googledrive: TMenuItem;
      MenuItemArchive_home1: TMenuItem;
      MenuItemArchive_music: TMenuItem;
-     MenuItemArchive_myboxfiles: TMenuItem;
      MenuItemArchive_onedrive: TMenuItem;
-     MenuItemArchive_pc: TMenuItem;
      MenuItemArchive_pictures: TMenuItem;
      MenuItemArchive_pubdoc: TMenuItem;
      MenuItemArchive_pubhome: TMenuItem;
-     MenuItemArchive_skydrive: TMenuItem;
-     MenuItemArchive_ubuntuone: TMenuItem;
+     MenuItemArchive_shp: TMenuItem;
+     MenuItemArchive_y: TMenuItem;
      MenuItemArchive_videos: TMenuItem;
      mpathdesk1: TMenuItem;
      mpathexplore1: TMenuItem;
@@ -1374,8 +1433,6 @@ type
      mexttob8: TMenuItem;
      mextto: TMenuItem;
      mexttob1: TMenuItem;
-     Separator30: TMenuItem;
-     Separator31: TMenuItem;
      Separator38: TMenuItem;
      Separator46: TMenuItem;
      SeparatorDE: TMenuItem;
@@ -2496,8 +2553,6 @@ type
      po_zerofree: TMenuItem;
      MenuItem56: TMenuItem;
      po_zerofile: TMenuItem;
-     pmqjmyboxfiles: TMenuItem;
-     MenuItemOpen_myboxfiles: TMenuItem;
      mtaskscheduler: TMenuItem;
      mscheduledscripts: TMenuItem;
      CheckBoxClip: TCheckBox;
@@ -2590,18 +2645,17 @@ type
      MenuItemOpen_dropbox: TMenuItem;
      MenuItemOpen_googledrive: TMenuItem;
      MenuItemOpen_onedrive: TMenuItem;
-     MenuItemOpen_skydrive: TMenuItem;
-     MenuItemOpen_ubuntuone: TMenuItem;
+     MenuItemOpen_shp: TMenuItem;
+     MenuItemOpen_y: TMenuItem;
      MenuItem73: TMenuItem;
      pmorganizebookmarks: TMenuItem;
      pmrsearch: TMenuItem;
      MenuItemOpen_organizebookmarks: TMenuItem;
      PanelInfoGeneral: TPanel;
-     pmqjmore: TMenuItem;
      pmqjgoogledrive: TMenuItem;
      pmqjonedrive: TMenuItem;
-     pmqjskydrive: TMenuItem;
-     pmqjubuntuone: TMenuItem;
+     pmqjshp: TMenuItem;
+     pmqjy: TMenuItem;
      pmisTIFF: TMenuItem;
      pmif1: TMenuItem;
      pmif2: TMenuItem;
@@ -3035,7 +3089,6 @@ type
      pmjb24: TMenuItem;
      pmjumpsbook: TMenuItem;
      MenuItem29: TMenuItem;
-     MenuItemOpen_pc: TMenuItem;
      pmjb1: TMenuItem;
      MenuItemOpen_desktop1: TMenuItem;
      MenuItemOpen_documents1: TMenuItem;
@@ -3358,7 +3411,6 @@ type
       po_addtoarchive: TMenuItem;
       mRefresh: TMenuItem;
       pmJump2: TMenuItem;
-      pmJump1: TMenuItem;
       pcustom3: TMenuItem;
       pcustom2: TMenuItem;
       pcustom1: TMenuItem;
@@ -3481,6 +3533,7 @@ type
       procedure CheckBoxLogClick(Sender: TObject);
       procedure CheckBoxParamsClick(Sender: TObject);
       procedure CheckBoxZstdErrPolicyClick(Sender: TObject);
+      procedure ComboBoxBrowserCloseUp(Sender: TObject);
       procedure ComboBoxPAQThreadsChange(Sender: TObject);
       procedure ComboBoxVirtualChange(Sender: TObject);
       procedure ctrlarcMouseEnter(Sender: TObject);
@@ -3558,6 +3611,63 @@ type
       procedure MenuItemPreBrowserClick(Sender: TObject);
       procedure MenuItemCopypathsMenuClick(Sender: TObject);
       procedure MenuItemViewImageClick(Sender: TObject);
+      procedure mextto10Click(Sender: TObject);
+      procedure mextto11Click(Sender: TObject);
+      procedure mextto12Click(Sender: TObject);
+      procedure mextto13Click(Sender: TObject);
+      procedure mextto14Click(Sender: TObject);
+      procedure mextto15Click(Sender: TObject);
+      procedure mextto16Click(Sender: TObject);
+      procedure mextto17Click(Sender: TObject);
+      procedure mextto18Click(Sender: TObject);
+      procedure mextto19Click(Sender: TObject);
+      procedure mextto1Click(Sender: TObject);
+      procedure mextto20Click(Sender: TObject);
+      procedure mextto21Click(Sender: TObject);
+      procedure mextto22Click(Sender: TObject);
+      procedure mextto23Click(Sender: TObject);
+      procedure mextto24Click(Sender: TObject);
+      procedure mextto25Click(Sender: TObject);
+      procedure mextto26Click(Sender: TObject);
+      procedure mextto2Click(Sender: TObject);
+      procedure mextto3Click(Sender: TObject);
+      procedure mextto4Click(Sender: TObject);
+      procedure mextto5Click(Sender: TObject);
+      procedure mextto6Click(Sender: TObject);
+      procedure mextto7Click(Sender: TObject);
+      procedure mextto8Click(Sender: TObject);
+      procedure mextto9Click(Sender: TObject);
+      procedure mexttob10Click(Sender: TObject);
+      procedure mexttob11Click(Sender: TObject);
+      procedure mexttob12Click(Sender: TObject);
+      procedure mexttob13Click(Sender: TObject);
+      procedure mexttob14Click(Sender: TObject);
+      procedure mexttob15Click(Sender: TObject);
+      procedure mexttob16Click(Sender: TObject);
+      procedure mexttob17Click(Sender: TObject);
+      procedure mexttob18Click(Sender: TObject);
+      procedure mexttob19Click(Sender: TObject);
+      procedure mexttob20Click(Sender: TObject);
+      procedure mexttob21Click(Sender: TObject);
+      procedure mexttob22Click(Sender: TObject);
+      procedure mexttob23Click(Sender: TObject);
+      procedure mexttob9Click(Sender: TObject);
+      procedure mextto_desktopClick(Sender: TObject);
+      procedure mextto_documentsClick(Sender: TObject);
+      procedure mextto_downloadsClick(Sender: TObject);
+      procedure mextto_dropboxClick(Sender: TObject);
+      procedure mextto_googledriveClick(Sender: TObject);
+      procedure mextto_hereClick(Sender: TObject);
+      procedure mextto_homeClick(Sender: TObject);
+      procedure mextto_LastClick(Sender: TObject);
+      procedure mextto_musicClick(Sender: TObject);
+      procedure mextto_onedriveClick(Sender: TObject);
+      procedure mextto_picturesClick(Sender: TObject);
+      procedure mextto_pubdocClick(Sender: TObject);
+      procedure mextto_pubhomeClick(Sender: TObject);
+      procedure mextto_shpClick(Sender: TObject);
+      procedure mextto_yClick(Sender: TObject);
+      procedure mextto_videosClick(Sender: TObject);
       procedure mlogClick(Sender: TObject);
       procedure pmbatchtestClick(Sender: TObject);
       procedure pmextdeskClick(Sender: TObject);
@@ -3759,7 +3869,6 @@ type
       procedure ComboBox7zMethodCloseUp(Sender: TObject);
       procedure ComboBox7zLevelCloseUp(Sender: TObject);
       procedure cbLevelCloseUp(Sender: TObject);
-      procedure ComboBoxBrowserChange(Sender: TObject);
       procedure ComboBoxDragChange(Sender: TObject);
       procedure ComboBoxKiBChange(Sender: TObject);
       procedure ComboBoxLanguageCloseUp(Sender: TObject);
@@ -4614,24 +4723,22 @@ type
       procedure MenuItemArchive_dropboxClick(Sender: TObject);
       procedure MenuItemArchive_googledriveClick(Sender: TObject);
       procedure MenuItemArchive_musicClick(Sender: TObject);
-      procedure MenuItemArchive_myboxfilesClick(Sender: TObject);
       procedure MenuItemArchive_picturesClick(Sender: TObject);
       procedure MenuItemArchive_onedriveClick(Sender: TObject);
-      procedure MenuItemArchive_skydriveClick(Sender: TObject);
-      procedure MenuItemArchive_ubuntuoneClick(Sender: TObject);
+      procedure MenuItemArchive_shpClick(Sender: TObject);
+      procedure MenuItemArchive_yClick(Sender: TObject);
       procedure MenuItemArchive_videosClick(Sender: TObject);
       procedure MenuItemEnumerateClick(Sender: TObject);
       procedure menuitemopenhomeClick(Sender: TObject);
       procedure MenuItemOpen_dropboxClick(Sender: TObject);
       procedure MenuItemOpen_googledriveClick(Sender: TObject);
       procedure MenuItemOpen_musicClick(Sender: TObject);
-      procedure MenuItemOpen_myboxfilesClick(Sender: TObject);
       procedure MenuItemOpen_organizebookmarksClick(Sender: TObject);
       procedure MenuItemOpen_picturesClick(Sender: TObject);
       procedure MenuItemOpen_powershellClick(Sender: TObject);
       procedure MenuItemOpen_onedriveClick(Sender: TObject);
-      procedure MenuItemOpen_skydriveClick(Sender: TObject);
-      procedure MenuItemOpen_ubuntuoneClick(Sender: TObject);
+      procedure MenuItemOpen_shpClick(Sender: TObject);
+      procedure MenuItemOpen_yClick(Sender: TObject);
       procedure MenuItemOpen_videosClick(Sender: TObject);
       procedure MenuItemPowerShellClick(Sender: TObject);
       procedure mfwdClick(Sender: TObject);
@@ -4842,10 +4949,9 @@ type
       procedure pmpowershellClick(Sender: TObject);
       procedure pmqjdropboxClick(Sender: TObject);
       procedure pmqjgoogledriveClick(Sender: TObject);
-      procedure pmqjmyboxfilesClick(Sender: TObject);
       procedure pmqjonedriveClick(Sender: TObject);
-      procedure pmqjskydriveClick(Sender: TObject);
-      procedure pmqjubuntuoneClick(Sender: TObject);
+      procedure pmqjshpClick(Sender: TObject);
+      procedure pmqjyClick(Sender: TObject);
       procedure pmqnointdirClick(Sender: TObject);
       procedure pmquickdeskClick(Sender: TObject);
       procedure pmquickhomeClick(Sender: TObject);
@@ -5921,7 +6027,7 @@ const
   HSHAREPATH    = '';//hardcoded path for other data (non binary, non configuration)
   WS_EX_LAYERED = $80000;
   LWA_ALPHA     = $2;
-  PEAZIPVERSION = '11.0';
+  PEAZIPVERSION = '11.1';
   PEAZIPREVISION= '.0';
   SPECEXTCONST  = '001 bat exe htm html msi r01 z01';
   {$IFDEF MSWINDOWS}
@@ -6067,7 +6173,7 @@ var
    archive_content,wincomspec,delimiter,desktop_path,prevpanel,winver,majmin,indir,destdir,
    prev_destdir,local_desktop,home_path,confpath,currentcomp,currentfs,usr_documents,usr_music,usr_videos,usr_pictures,users_root,
    public_documents,public_home,usr_recent,usr_searches,applebk,usr_libraries,usr_downloads,usr_sendto,
-   shared_dropbox,shared_googledrive,shared_onedrive,shared_skydrive,shared_ubuntuone,shared_myboxfiles,
+   shared_dropbox,shared_googledrive,shared_onedrive,shared_sharepointwork,shared_yandex,
    usr_name,lastobj,lastobjarch,custedit1,custedit2,custedit3,custedit4,custedit5,
    custedit6,custedit7,custedit8,custedit9,custedit10,custedit11,custedit12,custedit13,
    custedit14,custedit15,custedit16,prevcaption,advedit1before,advedit2before,advedit3before,
@@ -6165,6 +6271,7 @@ var
 
    lang_file:ansistring;
    //text strings
+   txt_11_1_pp,
    txt_11_0_native,txt_11_0_rendering,txt_11_0_sharp,txt_11_0_soft,txt_11_0_pr,txt_11_0_good,txt_11_0_strong,txt_11_0_vw,txt_11_0_w,txt_11_0_adv,txt_11_0_sch,txt_11_0_items,txt_11_0_bt,
    txt_10_9_deletearchive,txt_10_9_kfl,txt_10_9_mb,
    txt_10_8_untarerr,txt_10_8_params,txt_10_8_rv,txt_10_8_bk,txt_10_8_log,
@@ -7411,8 +7518,8 @@ if (s1 = usr_videos) or (s1 = txt_5_0_videos) then
    result:=Bvideo;
    exit;
    end;
-if (s1 = shared_dropbox) or (s1 = shared_myboxfiles) or (s1 = shared_googledrive)
-   or (s1 = shared_onedrive) or (s1 = shared_skydrive) or (s1 = shared_ubuntuone)then
+if (s1 = shared_dropbox) or (s1 = shared_googledrive)
+   or (s1 = shared_onedrive) or (s1 = shared_sharepointwork) or (s1 = shared_yandex)then
    begin
    result:=Bcloudfolder;
    exit;
@@ -7545,8 +7652,8 @@ if FormPeach.StringGridList.Cells[1,arow]<>'' then
       if s = usr_music then result:=12;
       if s = usr_pictures then result:=17;
       if s = usr_videos then result:=15;
-      if (s = shared_dropbox) or (s = shared_myboxfiles) or (s = shared_googledrive)
-      or (s = shared_onedrive) or (s = shared_skydrive) or (s = shared_ubuntuone)then result:=44;
+      if (s = shared_dropbox) or (s = shared_googledrive)
+      or (s = shared_onedrive) or (s = shared_sharepointwork) or (s = shared_yandex)then result:=44;
       end
    else
       result:=geticon(fullname,fulltype,pc);
@@ -7629,8 +7736,8 @@ if s = usr_videos then
    result:=15;
    exit;
    end;
-if (s = shared_dropbox) or (s = shared_myboxfiles) or (s = shared_googledrive)
-   or (s = shared_onedrive) or (s = shared_skydrive) or (s = shared_ubuntuone)then
+if (s = shared_dropbox) or (s = shared_googledrive)
+   or (s = shared_onedrive) or (s = shared_sharepointwork) or (s = shared_yandex)then
    begin
    result:=44;
    exit;
@@ -9006,14 +9113,15 @@ with FormPeach do
    mBookmarks.Bitmap:=BBookmark;
    smBookmarks1.Bitmap:=BBookmark;
    smBookmarksa1.Bitmap:=BBookmark;
-   MenuItemOpen_pc.Bitmap:=Bsystemtools;
-   MenuItemArchive_pc.Bitmap:=Bsystemtools;
+   mexttobook.Bitmap:=BBookmark;
    smfs1.Bitmap:=Broot;
    smfsa1.Bitmap:=Broot;
+   mexttofs.Bitmap:=Broot;
    pmjumpapple.Bitmap:=bfolder;
    pmJumppubhome.Bitmap:=bfolder;
    MenuItemArchive_pubhome.Bitmap:=bfolder;
    MenuItemOpen_pubhome.Bitmap:=bfolder;
+   mextto_pubhome.Bitmap:=bfolder;
    MenuItemArchive_home1.Bitmap:=bhomefolder;
    MenuItemArchive_documents1.Bitmap:=bfilesupported;
    MenuItemArchive_downloads.Bitmap:=Bdownloadfolder;
@@ -9023,15 +9131,22 @@ with FormPeach do
    MenuItemArchive_pubdoc.Bitmap:=bfolder;
    MenuItemOpenhome.Bitmap:=Bhomefolder;
    MenuItemOpen_home1.Bitmap:=bhomefolder;
+   mextto_home.Bitmap:=bhomefolder;
    pmquickhome.Bitmap:=Bhomefolder;
    pmquickdesk.Bitmap:=Bdesk;
    pmquickdownloads.Bitmap:=Bdownloadfolder;
    MenuItemOpen_documents1.Bitmap:=bfilesupported;
+   mextto_documents.Bitmap:=bfilesupported;
    MenuItemOpen_downloads1.Bitmap:=Bdownloadfolder;
+   mextto_downloads.Bitmap:=Bdownloadfolder;
    MenuItemOpen_music.Bitmap:=baudio;
+   mextto_music.Bitmap:=baudio;
    MenuItemOpen_pictures.Bitmap:=bimage;
+   mextto_pictures.Bitmap:=bimage;
    MenuItemOpen_videos.Bitmap:=bvideo;
+   mextto_videos.Bitmap:=bvideo;
    MenuItemOpen_pubdoc.Bitmap:=bfolder;
+   mextto_pubdoc.Bitmap:=bfolder;
    pmjump3.Bitmap:=Bhomefolder;
    pmjumpdocuments.Bitmap:=BFileSupported;
    pmjumppubdoc.Bitmap:=bfolder;
@@ -9132,32 +9247,34 @@ with FormPeach do
    MenuItemExtAllTo.Bitmap:=Bextractall;
    po_securedelete.Bitmap:=Bstop;
    pmsecuredelete.Bitmap:=Bstop;
-   pmjump1.Bitmap:=Bsystemtools;
-   pmqjmore.Bitmap:=bfolder;
    pmjump2.Bitmap:=Bdesk;
    pmqjdropbox.Bitmap:=Bcloudfolder;
-   pmqjmyboxfiles.Bitmap:=Bcloudfolder;
    pmqjgoogledrive.Bitmap:=Bcloudfolder;
    pmqjonedrive.Bitmap:=Bcloudfolder;
-   pmqjskydrive.Bitmap:=Bcloudfolder;
-   pmqjubuntuone.Bitmap:=Bcloudfolder;
+   pmqjshp.Bitmap:=Bcloudfolder;
+   pmqjy.Bitmap:=Bcloudfolder;
    MenuItemOpen_dropbox.Bitmap:=Bcloudfolder;
-   MenuItemOpen_myboxfiles.Bitmap:=Bcloudfolder;
+   mextto_dropbox.Bitmap:=Bcloudfolder;
    MenuItemOpen_googledrive.Bitmap:=Bcloudfolder;
+   mextto_googledrive.Bitmap:=Bcloudfolder;
    MenuItemOpen_onedrive.Bitmap:=Bcloudfolder;
-   MenuItemOpen_skydrive.Bitmap:=Bcloudfolder;
-   MenuItemOpen_ubuntuone.Bitmap:=Bcloudfolder;
+   mextto_onedrive.Bitmap:=Bcloudfolder;
+   MenuItemOpen_shp.Bitmap:=Bcloudfolder;
+   mextto_shp.Bitmap:=Bcloudfolder;
+   MenuItemOpen_y.Bitmap:=Bcloudfolder;
+   mextto_y.Bitmap:=Bcloudfolder;
    MenuItemArchive_dropbox.Bitmap:=Bcloudfolder;
-   MenuItemArchive_myboxfiles.Bitmap:=Bcloudfolder;
    MenuItemArchive_googledrive.Bitmap:=Bcloudfolder;
    MenuItemArchive_onedrive.Bitmap:=Bcloudfolder;
-   MenuItemArchive_skydrive.Bitmap:=Bcloudfolder;
-   MenuItemArchive_ubuntuone.Bitmap:=Bcloudfolder;
+   MenuItemArchive_shp.Bitmap:=Bcloudfolder;
+   MenuItemArchive_y.Bitmap:=Bcloudfolder;
    MenuItemOpen_desktop1.Bitmap:=Bdesk;
+   mextto_desktop.Bitmap:=Bdesk;
    mpathdesk1.Bitmap:=Bdesk;
    mhistory.Bitmap:=Bplaceshistory;
    smhistorya1.Bitmap:=Bplaceshistory;
    smhistory1.Bitmap:=Bplaceshistory;
+   mexttohistory.Bitmap:=Bplaceshistory;
    po_test.Bitmap:=Btestall;
    pmtabsclose.Bitmap:=Bdelete;
    pmtabsbookmarkadd.Bitmap:=BBookmarkadd;
@@ -9313,8 +9430,8 @@ if (s = usr_videos) or (s=txt_5_0_videos) then
    sg.Canvas.Draw(l,t,Bvideo);
    exit;
    end;
-if (s = shared_dropbox) or (s = shared_myboxfiles) or (s = shared_googledrive)
-   or (s = shared_onedrive) or (s = shared_skydrive) or (s = shared_ubuntuone)then
+if (s = shared_dropbox) or (s = shared_googledrive)
+   or (s = shared_onedrive) or (s = shared_sharepointwork) or (s = shared_yandex)then
    begin
    sg.Canvas.Draw(l,t,Bcloudfolder);
    exit;
@@ -12589,7 +12706,6 @@ pmembf5.Bitmap:=pmjb5.Bitmap;
 pmembf6.Bitmap:=pmjb6.Bitmap;
 pmembf7.Bitmap:=pmjb7.Bitmap;
 pmembf8.Bitmap:=pmjb8.Bitmap;
-
 mexttob1.caption:=pnb1.caption;
 mexttob2.caption:=pnb2.caption;
 mexttob3.caption:=pnb3.caption;
@@ -12598,6 +12714,21 @@ mexttob5.caption:=pnb5.caption;
 mexttob6.caption:=pnb6.caption;
 mexttob7.caption:=pnb7.caption;
 mexttob8.caption:=pnb8.caption;
+mexttob9.caption:=pnb9.caption;
+mexttob10.caption:=pnb10.caption;
+mexttob11.caption:=pnb11.caption;
+mexttob12.caption:=pnb12.caption;
+mexttob13.caption:=pnb13.caption;
+mexttob14.caption:=pnb14.caption;
+mexttob15.caption:=pnb15.caption;
+mexttob16.caption:=pnb16.caption;
+mexttob17.caption:=pnb17.caption;
+mexttob18.caption:=pnb18.caption;
+mexttob19.caption:=pnb19.caption;
+mexttob20.caption:=pnb20.caption;
+mexttob21.caption:=pnb21.caption;
+mexttob22.caption:=pnb22.caption;
+mexttob23.caption:=pnb23.caption;
 mexttob1.visible:=pnb1.visible;
 mexttob2.visible:=pnb2.visible;
 mexttob3.visible:=pnb3.visible;
@@ -12606,6 +12737,21 @@ mexttob5.visible:=pnb5.visible;
 mexttob6.visible:=pnb6.visible;
 mexttob7.visible:=pnb7.visible;
 mexttob8.visible:=pnb8.visible;
+mexttob9.visible:=pnb9.visible;
+mexttob10.visible:=pnb10.visible;
+mexttob11.visible:=pnb11.visible;
+mexttob12.visible:=pnb12.visible;
+mexttob13.visible:=pnb13.visible;
+mexttob14.visible:=pnb14.visible;
+mexttob15.visible:=pnb15.visible;
+mexttob16.visible:=pnb16.visible;
+mexttob17.visible:=pnb17.visible;
+mexttob18.visible:=pnb18.visible;
+mexttob19.visible:=pnb19.visible;
+mexttob20.visible:=pnb20.visible;
+mexttob21.visible:=pnb21.visible;
+mexttob22.visible:=pnb22.visible;
+mexttob23.visible:=pnb23.visible;
 mexttob1.Bitmap:=pnb1.Bitmap;
 mexttob2.Bitmap:=pnb2.Bitmap;
 mexttob3.Bitmap:=pnb3.Bitmap;
@@ -12614,6 +12760,22 @@ mexttob5.Bitmap:=pnb5.Bitmap;
 mexttob6.Bitmap:=pnb6.Bitmap;
 mexttob7.Bitmap:=pnb7.Bitmap;
 mexttob8.Bitmap:=pnb8.Bitmap;
+mexttob9.Bitmap:=pnb9.Bitmap;
+mexttob10.Bitmap:=pnb10.Bitmap;
+mexttob11.Bitmap:=pnb11.Bitmap;
+mexttob12.Bitmap:=pnb12.Bitmap;
+mexttob13.Bitmap:=pnb13.Bitmap;
+mexttob14.Bitmap:=pnb14.Bitmap;
+mexttob15.Bitmap:=pnb15.Bitmap;
+mexttob16.Bitmap:=pnb16.Bitmap;
+mexttob17.Bitmap:=pnb17.Bitmap;
+mexttob18.Bitmap:=pnb18.Bitmap;
+mexttob19.Bitmap:=pnb19.Bitmap;
+mexttob20.Bitmap:=pnb20.Bitmap;
+mexttob21.Bitmap:=pnb21.Bitmap;
+mexttob22.Bitmap:=pnb22.Bitmap;
+mexttob23.Bitmap:=pnb23.Bitmap;
+
 CopyMenuItems(mBookmarks,pmnavbooks.Items,0);
 end;
 populatetree;
@@ -13927,6 +14089,32 @@ pojdn23.Visible:=false;
 pojdn24.Visible:=false;
 pojdn25.Visible:=false;
 pojdn26.Visible:=false;
+mextto1.Visible:=false;
+mextto2.Visible:=false;
+mextto3.Visible:=false;
+mextto4.Visible:=false;
+mextto5.Visible:=false;
+mextto6.Visible:=false;
+mextto7.Visible:=false;
+mextto8.Visible:=false;
+mextto9.Visible:=false;
+mextto10.Visible:=false;
+mextto11.Visible:=false;
+mextto12.Visible:=false;
+mextto13.Visible:=false;
+mextto14.Visible:=false;
+mextto15.Visible:=false;
+mextto16.Visible:=false;
+mextto17.Visible:=false;
+mextto18.Visible:=false;
+mextto19.Visible:=false;
+mextto20.Visible:=false;
+mextto21.Visible:=false;
+mextto22.Visible:=false;
+mextto23.Visible:=false;
+mextto24.Visible:=false;
+mextto25.Visible:=false;
+mextto26.Visible:=false;
 pajdn1.Visible:=false;
 pajdn2.Visible:=false;
 pajdn3.Visible:=false;
@@ -16589,6 +16777,7 @@ FormComment.MemoComment.Hint:=txt_9_4_hintcomment;
 FormComment.LabelResetComment.Caption:=txt_reset;
 FormComment.LabelLoadfromfile.Caption:=txt_loadfile;
 FormComment.ButtonSaveComment.Caption:=txt_9_4_savecomment;
+FormComment.ButtonCancelComment.Caption:=txt_2_7_cancel;
 FormComment.OpenDialogFC.Title:=txt_open_file;
 FormComment.SaveDialogFC.Title:=txt_saveas;
 UnitComment.pdesk:=local_desktop;
@@ -16612,7 +16801,7 @@ ButtonPWfromhash.Caption:=txt_10_7_pwh;
 ButtonSuggestPW.Caption:=txt_suggestpw;
 ImageInfoKF.Picture.Bitmap:=Binfo;
 ImageInfoKF.Transparent:=true;
-ButtonPanelKF.Closebutton.Caption:=txt_3_6_close;
+ButtonPanelKF.Okbutton.Caption:=txt_2_7_ok;
 SaveDialogKF.Title:=txt_saveas;
 OpenDialogKF.Title:=txt_open_file;
 CheckBoxSuggestPW.Caption:=txt_4_7_spchar;
@@ -16704,6 +16893,18 @@ UnitImgViewer.txt_checkname_failed:=txt_checkname_failed;
 FormImgViewer.mtrash.Visible:=false;
 {$ENDIF}
 {$ENDIF}
+end;
+
+procedure prepare_FormPaths;
+var
+   nsel:integer;
+   strsel:ansistring;
+begin
+with FormPaths do
+begin
+//set text
+ButtonPanelPaths.OKButton.Caption:=txt_2_7_ok;
+end;
 end;
 
 {///////////////////////////////////////////////////////////////////////////////
@@ -17255,6 +17456,7 @@ HPAQ8O_LIN_X,
 //aarch64
 HPEA_LIN_A_GTK2,
 H7Z_LIN_A,
+H7ZALT_LIN_A,
 HBROTLI_LIN_A,
 HZSTD_LIN_A
 {$ENDIF}
@@ -17612,6 +17814,7 @@ if not(checkdirexists(public_documents)) then
    FormPeach.pmJumppubdoc.Visible:=false;
    FormPeach.MenuItemArchive_pubdoc.Visible:=false;
    FormPeach.MenuItemOpen_pubdoc.Visible:=false;
+   FormPeach.mextto_pubdoc.Visible:=false;
    Result:=1;
    end
 else Result:=0;
@@ -17635,6 +17838,7 @@ if not(checkdirexists(public_home)) then
    FormPeach.pmJumppubhome.Visible:=false;
    FormPeach.MenuItemArchive_pubhome.Visible:=false;
    FormPeach.MenuItemOpen_pubhome.Visible:=false;
+   FormPeach.mextto_pubhome.Visible:=false;
    Result:=1;
    end
 else Result:=0;
@@ -17740,27 +17944,20 @@ function sysgetshared:integer;
 begin
 sysgetshared:=-1;
 shared_dropbox:='';
-shared_myboxfiles:='';
 shared_googledrive:='';
 shared_onedrive:='';
-shared_skydrive:='';
-shared_ubuntuone:='';
+shared_sharepointwork:='';
+shared_yandex:='';
 FormPeach.pmqjdropbox.visible:=false;
-FormPeach.pmqjmyboxfiles.visible:=false;
 FormPeach.pmqjgoogledrive.visible:=false;
 FormPeach.pmqjonedrive.visible:=false;
-FormPeach.pmqjskydrive.visible:=false;
-FormPeach.pmqjubuntuone.visible:=false;
+FormPeach.pmqjshp.visible:=false;
+FormPeach.pmqjy.visible:=false;
 {$IFDEF MSWINDOWS}
 if checkdirexists(home_path+'Dropbox') then
    begin
    shared_dropbox:=home_path+'Dropbox\';
    FormPeach.pmqjdropbox.visible:=true;
-   end;
-if checkdirexists(usr_documents+'My Box Files') then
-   begin
-   shared_myboxfiles:=usr_documents+'My Box Files\';
-   FormPeach.pmqjmyboxfiles.visible:=true;
    end;
 if checkdirexists(home_path+'Google Drive') then
    begin
@@ -17774,29 +17971,32 @@ if checkdirexists(home_path+'OneDrive') then
    end;
 if checkdirexists(home_path+'Workspaces') then
    begin
-   shared_skydrive:=home_path+'Workspaces\';
-   FormPeach.pmqjskydrive.visible:=true;
+   shared_sharepointwork:=home_path+'Workspaces\';
+   FormPeach.pmqjshp.visible:=true;
    end;
 if checkdirexists(home_path+'YandexDisk') then
    begin
-   shared_ubuntuone:=home_path+'YandexDisk\';
-   FormPeach.pmqjubuntuone.visible:=true;
+   shared_yandex:=home_path+'YandexDisk\';
+   FormPeach.pmqjy.visible:=true;
    end;
 {$ENDIF}
 {$IFDEF LINUX}
 {$ENDIF}
 FormPeach.MenuItemArchive_dropbox.visible:=FormPeach.pmqjdropbox.visible;
-FormPeach.MenuItemArchive_myboxfiles.visible:=FormPeach.pmqjmyboxfiles.visible;
 FormPeach.MenuItemArchive_googledrive.visible:=FormPeach.pmqjgoogledrive.visible;
 FormPeach.MenuItemArchive_onedrive.visible:=FormPeach.pmqjonedrive.visible;
-FormPeach.MenuItemArchive_skydrive.visible:=FormPeach.pmqjskydrive.visible;
-FormPeach.MenuItemArchive_ubuntuone.visible:=FormPeach.pmqjubuntuone.visible;
+FormPeach.MenuItemArchive_shp.visible:=FormPeach.pmqjshp.visible;
+FormPeach.MenuItemArchive_y.visible:=FormPeach.pmqjy.visible;
 FormPeach.MenuItemOpen_dropbox.visible:=FormPeach.pmqjdropbox.visible;
-FormPeach.MenuItemOpen_myboxfiles.visible:=FormPeach.pmqjmyboxfiles.visible;
 FormPeach.MenuItemOpen_googledrive.visible:=FormPeach.pmqjgoogledrive.visible;
 FormPeach.MenuItemOpen_onedrive.visible:=FormPeach.pmqjonedrive.visible;
-FormPeach.MenuItemOpen_skydrive.visible:=FormPeach.pmqjskydrive.visible;
-FormPeach.MenuItemOpen_ubuntuone.visible:=FormPeach.pmqjubuntuone.visible;
+FormPeach.MenuItemOpen_shp.visible:=FormPeach.pmqjshp.visible;
+FormPeach.MenuItemOpen_y.visible:=FormPeach.pmqjy.visible;
+FormPeach.mextto_dropbox.visible:=FormPeach.pmqjdropbox.visible;
+FormPeach.mextto_googledrive.visible:=FormPeach.pmqjgoogledrive.visible;
+FormPeach.mextto_onedrive.visible:=FormPeach.pmqjonedrive.visible;
+FormPeach.mextto_shp.visible:=FormPeach.pmqjshp.visible;
+FormPeach.mextto_y.visible:=FormPeach.pmqjy.visible;
 sysgetshared:=0;
 end;
 
@@ -18047,6 +18247,7 @@ begin
 valorize_text:=-1;
 try
 readln(t,s);
+readln(t,s); txt_11_1_pp:=copy(s,pos(':',s)+2,length(s)-pos(':',s));
 readln(t,s); txt_11_0_adv:=copy(s,pos(':',s)+2,length(s)-pos(':',s));
 readln(t,s); txt_11_0_bt:=copy(s,pos(':',s)+2,length(s)-pos(':',s));
 readln(t,s); txt_11_0_good:=copy(s,pos(':',s)+2,length(s)-pos(':',s));
@@ -19730,8 +19931,11 @@ MenuItemArchive_music.caption:=txt_5_0_music;
 MenuItemArchive_pictures.caption:=txt_5_0_pictures;
 MenuItemArchive_videos.caption:=txt_5_0_videos;
 MenuItemOpen_music.caption:=txt_5_0_music;
+mextto_music.caption:=txt_5_0_music;
 MenuItemOpen_pictures.caption:=txt_5_0_pictures;
+mextto_pictures.caption:=txt_5_0_pictures;
 MenuItemOpen_videos.caption:=txt_5_0_videos;
+mextto_videos.caption:=txt_5_0_videos;
 pmbc.caption:=txt_list_history;
 pmhbc0.caption:=txt_5_0_bc;
 pmnavbc0.caption:=txt_5_0_bc;
@@ -19929,6 +20133,7 @@ pmjb24.Caption:=txt_bookmarks+'...';
 mr9.Caption:=txt_list_history+'...';
 pmhr9.Caption:=txt_list_history+'...';
 smbookmarks1.Caption:=txt_bookmarks;
+mexttobook.Caption:=txt_bookmarks;
 smbookmarksa1.Caption:=txt_bookmarks;
 smHistory1.Caption:=txt_list_history;
 pmExploremenu.Caption:=txt_open_path;
@@ -19943,7 +20148,9 @@ pnbce0.Caption:=txt_5_0_bc;
 smHistorya1.Caption:=txt_list_history;
 smfs1.Caption:=txt_fs;
 smfsa1.Caption:=txt_fs;
+mexttofs.Caption:=txt_fs;
 MenuItemOpen_Last.Caption:=txt_lastused;
+mextto_Last.Caption:=txt_lastused;
 mpathreset1.Caption:=txt_lastused;
 MenuItemArchive_home1.Caption:=txt_2_9_home;
 mpathdesk1.Caption:=txt_desktop;
@@ -19953,6 +20160,7 @@ menuitemextexplore.Caption:=txt_explore_path;
 mdefarcset.Caption:=txt_7_6_setcurdef;
 mdefextset.Caption:=txt_7_6_setcurdef;
 MenuItemOpen_here.Caption:=txt_2_7_selpath;
+mextto_here.Caption:=txt_2_7_selpath;
 mpathself1.Caption:=txt_2_7_selpath;
 pmjumpsbook.Caption:=txt_bookmarks;
 pmbreadfs.Caption:=txt_fs;
@@ -19996,6 +20204,7 @@ MenuItemToolsj.Caption:=txt_searchfor+' SHA256 / Jotti VirusScan';
 MenuItemToolsv.Caption:=txt_searchfor+' SHA256 / VirusTotal';
 MenuItemToolhexp.Caption:=txt_2_4_hexp;
 MenuItemOpen_documents1.Caption:=txt_2_4_documents;
+mextto_documents.Caption:=txt_2_4_documents;
 pmJumpDocuments.Caption:=txt_2_4_documents;
 pmquickhome.Caption:=txt_2_9_home;
 pmquickdesk.Caption:=txt_desktop;
@@ -20006,15 +20215,18 @@ pmquicksd.Caption:=txt_searchanddrag;
 pmJumppubhome.Caption:=txt_2_9_home+' - '+txt_2_9_public;
 MenuItemArchive_pubhome.Caption:=txt_2_9_home+' - '+txt_2_9_public;
 MenuItemOpen_pubhome.Caption:=txt_2_9_home+' - '+txt_2_9_public;
+mextto_pubhome.Caption:=txt_2_9_home+' - '+txt_2_9_public;
 pmJumppubdoc.Caption:=txt_2_4_documents+' - '+txt_2_9_public;
 pmjumprecent.Caption:=txt_list_history;
 pmjumpdownloads.Caption:=txt_3_1_downloads;
 pmjumpsearches.Caption:=txt_3_1_src;
 pmjumplibraries.Caption:=txt_3_1_lib;
 MenuItemOpen_downloads1.Caption:=txt_3_1_downloads;
+mextto_downloads.Caption:=txt_3_1_downloads;
 MenuItemArchive_downloads.Caption:=txt_3_1_downloads;
 MenuItemArchive_pubdoc.Caption:=txt_2_4_documents+' - '+txt_2_9_public;
 MenuItemOpen_pubdoc.Caption:=txt_2_4_documents+' - '+txt_2_9_public;
+mextto_pubdoc.Caption:=txt_2_4_documents+' - '+txt_2_9_public;
 pclip_removeitem.Caption:=txt_2_4_removefromclipboard;
 pclip_clearclip.Caption:=txt_2_4_clearclipboard;
 CheckBoxAltgridcol.Caption:=txt_8_0_altcol;
@@ -20923,7 +21135,9 @@ pmsearchdrag.Caption:=txt_searchanddrag;
 pmsearchweb.Caption:=txt_search_web;
 MenuItemOpenhome.Caption:=txt_2_9_home;
 MenuItemOpen_home1.Caption:=txt_2_9_home;
+mextto_home.Caption:=txt_2_9_home;
 MenuItemOpen_desktop1.Caption:=txt_desktop;
+mextto_desktop.Caption:=txt_desktop;
 MenuItemOpen_path.Caption:=txt_open_path;
 MenuItemOpen_archive.Caption:=txt_openarchive;
 MenuItemOpenWeb.Caption:=txt_search_web;
@@ -20940,9 +21154,6 @@ pmtestcontextselected.Caption:=txt_testsel;
 pmqeall.Caption:=txt_ext_all+' (Ctrl+L)';
 pmqedisplayed.Caption:=txt_ext_disp+' (Ctrl+S)';
 pmqeselected.Caption:=txt_ext_sel+' (Ctrl+E)';
-pmJump1.Caption:=txt_mypc;
-MenuItemOpen_pc.Caption:=txt_mypc;
-MenuItemArchive_pc.Caption:=txt_mypc;
 pmJump3.Caption:=txt_2_9_home;
 pmJump2.Caption:=txt_desktop;
 pmsoppath.Caption:=txt_open_path;
@@ -21096,11 +21307,11 @@ var
 begin
 valorize_headers:=-1;
 readln(t,s);//translator(s)
-langstrhint:=langstrhint+' - '+s;
+langstrhint:=langstrhint+char($0d)+char($0a)+s;
 readln(t,s);//last revision's translator(s)
-langstrhint:=langstrhint+' - '+s;
+langstrhint:=langstrhint+char($0d)+char($0a)+s;
 readln(t,s);//last revision date
-langstrhint:=langstrhint+' - '+s;
+langstrhint:=langstrhint+char($0d)+char($0a)+s;
 readln(t,s);
 readln(t,s);//peazip text group
 if s<>'=== PeaZip text group ===' then exit
@@ -21127,7 +21338,7 @@ try
    readln(t,s);//language
    langstrhint:=s;
    readln(t,s); //version; PEAZIPREVISION is ignored since revisions are meant to share the same text
-   langstrhint:=langstrhint+' - '+s;
+   langstrhint:=langstrhint+char($0d)+char($0a)+s;
    i:=-1;
       if valorize_headers=0 then i:=valorize_text;
    if i=0 then assign_guitext
@@ -21167,6 +21378,7 @@ end;
 
 procedure load_default_texts;
 begin
+txt_11_1_pp:='Skipping pre-parse step the app may not detect possible archive issues in advance, and may not display correctly some archives. Anyway, extraction is unaffected by this setting.';
 txt_11_0_adv:='Advanced and format-specific options';
 txt_11_0_bt:='Batch test archives';
 txt_11_0_good:='Good';
@@ -22615,11 +22827,12 @@ sysgetshared;
 get_desktop_path(desktop_path);
 get_home_path(home_path);
 get_home_subpaths(usr_documents,usr_downloads,usr_music,usr_pictures,usr_videos);
-FormPeach.pmqjmore.Visible:=false;
 FormPeach.MenuItemArchive_pubdoc.Visible:=false;
 FormPeach.MenuItemOpen_pubdoc.Visible:=false;
+FormPeach.mextto_pubdoc.Visible:=false;
 FormPeach.MenuItemArchive_pubhome.Visible:=false;
 FormPeach.MenuItemOpen_pubhome.Visible:=false;
+FormPeach.mextto_pubhome.Visible:=false;
 {$ENDIF}
 getapplebk;
 if checkdirexists(home_path) then
@@ -27841,17 +28054,6 @@ if checkdirexists(home_path+'Dropbox') then
    begin
    writeln(book,'0');
    writeln(book,home_path+'Dropbox\');
-   writeln(book,'*');
-   writeln(book,'');
-   writeln(book,'');
-   writeln(book,'');
-   writeln(book,'');
-   writeln(book,'');
-   end;
-if checkdirexists(usr_documents+'My Box Files') then
-   begin
-   writeln(book,'0');
-   writeln(book,usr_documents+'My Box Files\');
    writeln(book,'*');
    writeln(book,'');
    writeln(book,'');
@@ -35334,7 +35536,7 @@ procedure scan_omitted_dirs(var nfolders:integer);//search for directories not e
 var
    i,j,rc,rc2,dc,dc2,sle,fwrk,offs,offs1,offsize:integer;
    searchsize,searchsizefolders,tsize,tcsize:qword;
-   s,st,dirstr,slowc,altspecbrowse,rspecbrowse:ansistring;
+   s,st,dirstr,slowc,altspecbrowse,rspecbrowse,spath,sprev:ansistring;
    prebrowsed:boolean;
 
 procedure findaltroot;
@@ -35412,6 +35614,7 @@ for j:=1 to FormPeach.StringGridAddressAllFolders.RowCount-1 do
    dirstr:=dirstr+(FormPeach.StringGridAddressAllFolders.Cells[12,j])+'*';
 dirstr:=lowercase(dirstr);
 FormPeach.StringGridAddressAllFolders.RowCount:=rc+1024;
+sprev:='';
 offs:=1;
 if nfolders<2048 then offsize:=1024
 else
@@ -35420,7 +35623,8 @@ else
 for i:=1 to FormPeach.StringGridList.RowCount-1 do
    begin
    s:=FormPeach.StringGridList.Cells[12,i];
-   if dirExtractFilePath(s)<>dirExtractFilePath(FormPeach.StringGridList.Cells[12,i-1]) then //filter is less efficient (slower search) if files are not ordered by name; files are ordered in zip, not ordered in 7z and rar if sort by extension option is used in creating the archive
+   spath:=dirExtractFilePath(s);
+   if spath<>sprev then //filter is less efficient (slower search) if files are not ordered by name; files are ordered in zip, not ordered in 7z and rar if sort by extension option is used in creating the archive
       repeat
       s:=dirExtractFilePath(s);
       if (s<>'') and (s<>'/') and (s<>'\') and (s<>DirectorySeparator)
@@ -35436,7 +35640,7 @@ for i:=1 to FormPeach.StringGridList.RowCount-1 do
          if offs<>0 then break
          else
             begin
-            if offs1<>1 then offs:=posex('*'+slowc+'*',dirstr,1);
+            if offs1<>1 then offs:=posex('*'+slowc+'*',dirstr,1);//tested possible optimizations with inlining, and custom posex function stopping at required offset, but improvements are minimal
             if offs<>0 then break
             else
                begin
@@ -35472,6 +35676,7 @@ for i:=1 to FormPeach.StringGridList.RowCount-1 do
          if (s<>'') then specbrowse:=FormPeach.StringGridAddressAllFolders.Cells[12,rc-1];
          end;
       until (s='') or (s='\') or (s='/') or (s=DirectorySeparator);// or (s=DirectorySeparator+DirectorySeparator);
+   sprev:=spath;
    if i and ((16*1024)-1) = 0 then Application.ProcessMessages;
    end;
 dirstr:='';
@@ -36078,7 +36283,7 @@ begin
 result:=-1;
 in_param:=stringdelim(escapefilename((FormPeach.EditOpenIn.Text),desk_env));
 if fun='UN7Z' then exe_name:=alias7z;
-bin_name:=stringdelim(escapefilename(binpath,desk_env)+exe_name+DirectorySeparator+exe_name+EXEEXT);
+bin_name:=stringdelim(escapefilename(binpath,desk_env)+'7z'+DirectorySeparator+exe_name+EXEEXT);
 if sys7zlin>0 then bin_name:=exe_name+EXEEXT;
 pw:=FormPW.EditPWpass.Text;
 if FormPW.EditPWkeyfile.Text<>'' then
@@ -37729,7 +37934,7 @@ subsection EXECUTE commands
 function execute_cl(cl,mode:ansistring):integer;
 var
   P: tprocessutf8;
-  i,BytesRead,j,BytesRead2:integer;
+  i,BytesRead,j,BytesRead2,meminc,membuf,membuf2:integer;
   skipped_prebrowse:boolean;
   M,M2:TmemoryStream;
   nfiles,ndirs,tsize,browselimitsize:QWord;
@@ -37770,6 +37975,12 @@ case prebrowse of
    1,2: browselimitsize:=192*1024*1024; //pre-parse 1.5M+ / list 0.5M files approx
    3,4,5: browselimitsize:=64*1024*1024; //0.5M+ / 160K (5 excludes pre-parsing)
    end;
+
+//small tuning is possible optimizing memory increment sizes
+meminc:=8*1024*1024;
+membuf:=16*1024;
+membuf2:=4*1024;
+
 peapexecute(P,cl);
 
 if (pipepw<>'') and (poUsePipes in P.Options) then
@@ -37789,7 +38000,7 @@ while P.Running do
    i:=0;
    if P.output.NumBytesAvailable>0 then //optimized for speed, larger buffer
    begin
-   if BytesRead+16*1024>=M.Size then M.SetSize(BytesRead + 8*1024*1024);
+   if BytesRead+membuf>=M.Size then M.SetSize(BytesRead + meminc);
    if prebrowse>0 then
       begin
       if BytesRead>browselimitsize then
@@ -37802,20 +38013,20 @@ while P.Running do
          break;
          end;
       end;
-   i := P.Output.Read((M.Memory + BytesRead)^, 16*1024);
+   i := P.Output.Read((M.Memory + BytesRead)^, membuf);
    end
    else i:=0;
 
    if P.Stderr.NumBytesAvailable>0 then
    begin
-   if BytesRead2+4*1024>=M2.Size then M2.SetSize(BytesRead2 + 8*1024*1024);
-   j := P.Stderr.Read((M2.Memory + BytesRead2)^, 4*1024);
+   if BytesRead2+membuf2>=M2.Size then M2.SetSize(BytesRead2 + meminc);
+   j := P.Stderr.Read((M2.Memory + BytesRead2)^, membuf2);
    end
    else j:=0;
 
    if i > 0 then Inc(BytesRead, i);
    if j > 0 then Inc(BytesRead2, j);
-   //if (i=0) and (j=0) then sleep(100); //deactivated as slower
+   //if (i=0) and (j=0) then sleep(100); //deactivated as slower, loop needs to run as fast as possible
    if FormPeach.Visible=true then Application.ProcessMessages;
    end;
 
@@ -38053,7 +38264,7 @@ cl:=wincomspec+' /k cd /d "'+s+'"';
 {$ELSE}//system needs to support konsole, gnome-tem or xterm
 case desk_env of
    0: begin cl:='xterm'; end;//unknown, not win or osx
-   1: begin cl:='gnome-terminal --working-directory='+stringdelim(escapefilename(s,desk_env)); end;//Gnome
+   1: begin cl:='gnome-terminal '+stringdelim('--working-directory='+escapefilename(s,desk_env)); end;//Gnome
    2: begin cl:='konsole --workdir '+stringdelim(escapefilename(s,desk_env)); end;//KDE
    20: begin cl:='open -a Terminal '+stringdelim(escapefilename(s,desk_env)); end;//macOS
    end;
@@ -38126,11 +38337,16 @@ end;
 
 procedure open_ps(s:ansistring);
 var
-   cl:ansistring;
+   P:TProcessUTF8;
 begin
 {$IFDEF MSWINDOWS}
-if winver='nt6+' then cl:='powershell.exe -NoExit -Command "Set-Location '''+s+'''"' else exit;
-execute_cl_process(cl);
+P:=tprocessutf8.Create(nil);
+P.Executable:='powershell.exe';
+P.Parameters.Add('-NoExit');
+P.Parameters.Add('-Command');
+P.Parameters.Add('Set-Location '+QuotedStr(s));
+peapparamexecute(P);
+P.Free;
 {$ENDIF}
 end;
 
@@ -38481,9 +38697,11 @@ end;
 
 procedure getntfsads(streamtype:ansistring); //only for files
 var
-   cl,s,s1:ansistring;
+   s:ansistring;
+   P:TProcessUTF8;
 begin
 {$IFDEF MSWINDOWS}
+if winver<>'nt6+' then exit;
 if fun='FILEBROWSER' then
    if FormPeach.EditOpenIn.Text=txt_mypc then exit
    else
@@ -38495,9 +38713,13 @@ if fun='FILEBROWSER' then
          end
 else s:=FormPeach.EditOpenIn.Text;
 if s='' then exit;
-if streamtype='*' then s1:='Get-Item' else s1:='Get-Content';
-if winver='nt6+' then cl:='powershell.exe -NoExit '+s1+' '''+s+''' -Stream '+streamtype else exit;
-execute_cl_process(cl);
+P:=tprocessutf8.Create(nil);
+P.Executable:='powershell.exe';
+P.Parameters.Add('-NoExit');
+if streamtype='*' then P.Parameters.Add('Get-Item '+QuotedStr(s)) else P.Parameters.Add('Get-Content '+QuotedStr(s+'*'));
+P.Parameters.Add('-Stream '+streamtype);
+peapparamexecute(P);
+P.Free;
 {$ENDIF}
 end;
 
@@ -40953,6 +41175,13 @@ countingunits:=false;
 {$ENDIF}
 end;
 
+procedure copyunitmenu(a:TMenuItem; var b:TMenuItem);
+begin
+b.Visible:=a.Visible;
+b.Caption:=a.Caption;
+b.Bitmap:=a.Bitmap;
+end;
+
 procedure populatepcmenu;
 {$IFDEF MSWINDOWS}
 var
@@ -41054,468 +41283,416 @@ if devname[1]<>'' then
    FormPeach.pmjd1.Visible:=true;
    FormPeach.pmjd1.Caption:=devname[1];
    FormPeach.pmjd1.bitmap:=setpcmenuicon(devtype[1]);
-   FormPeach.pojdn1.Visible:=true;
-   FormPeach.pojdn1.Caption:=devname[1];
-   FormPeach.pojdn1.bitmap:=FormPeach.pmjd1.bitmap;
-   FormPeach.pajdn1.Visible:=true;
-   FormPeach.pajdn1.Caption:=devname[1];
-   FormPeach.pajdn1.bitmap:=FormPeach.pmjd1.bitmap;
+   copyunitmenu(FormPeach.pmjd1,FormPeach.pojdn1);
+   copyunitmenu(FormPeach.pmjd1,FormPeach.pajdn1);
+   copyunitmenu(FormPeach.pmjd1,FormPeach.mextto1);
    end
 else
    begin
    FormPeach.pmjd1.Visible:=false;
    FormPeach.pojdn1.Visible:=false;
    FormPeach.pajdn1.Visible:=false;
+   FormPeach.mextto1.Visible:=false;
    end;
 if devname[2]<>'' then
    begin
    FormPeach.pmjd2.Visible:=true;
    FormPeach.pmjd2.Caption:=devname[2];
    FormPeach.pmjd2.bitmap:=setpcmenuicon(devtype[2]);
-   FormPeach.pojdn2.Visible:=true;
-   FormPeach.pojdn2.Caption:=devname[2];
-   FormPeach.pojdn2.bitmap:=FormPeach.pmjd2.bitmap;
-   FormPeach.pajdn2.Visible:=true;
-   FormPeach.pajdn2.Caption:=devname[2];
-   FormPeach.pajdn2.bitmap:=FormPeach.pmjd2.bitmap;
+   copyunitmenu(FormPeach.pmjd2,FormPeach.pojdn2);
+   copyunitmenu(FormPeach.pmjd2,FormPeach.pajdn2);
+   copyunitmenu(FormPeach.pmjd2,FormPeach.mextto2);
    end
 else
    begin
    FormPeach.pmjd2.Visible:=false;
    FormPeach.pojdn2.Visible:=false;
    FormPeach.pajdn2.Visible:=false;
+   FormPeach.mextto2.Visible:=false;
    end;
 if devname[3]<>'' then
    begin
    FormPeach.pmjd3.Visible:=true;
    FormPeach.pmjd3.Caption:=devname[3];
    FormPeach.pmjd3.bitmap:=setpcmenuicon(devtype[3]);
-   FormPeach.pojdn3.Visible:=true;
-   FormPeach.pojdn3.Caption:=devname[3];
-   FormPeach.pojdn3.bitmap:=FormPeach.pmjd3.bitmap;
-   FormPeach.pajdn3.Visible:=true;
-   FormPeach.pajdn3.Caption:=devname[3];
-   FormPeach.pajdn3.bitmap:=FormPeach.pmjd3.bitmap;
+   copyunitmenu(FormPeach.pmjd3,FormPeach.pojdn3);
+   copyunitmenu(FormPeach.pmjd3,FormPeach.pajdn3);
+   copyunitmenu(FormPeach.pmjd3,FormPeach.mextto3);
    end
 else
    begin
    FormPeach.pmjd3.Visible:=false;
    FormPeach.pojdn3.Visible:=false;
    FormPeach.pajdn3.Visible:=false;
+   FormPeach.mextto3.Visible:=false;
    end;
 if devname[4]<>'' then
    begin
    FormPeach.pmjd4.Visible:=true;
    FormPeach.pmjd4.Caption:=devname[4];
    FormPeach.pmjd4.bitmap:=setpcmenuicon(devtype[4]);
-   FormPeach.pojdn4.Visible:=true;
-   FormPeach.pojdn4.Caption:=devname[4];
-   FormPeach.pojdn4.bitmap:=FormPeach.pmjd4.bitmap;
-   FormPeach.pajdn4.Visible:=true;
-   FormPeach.pajdn4.Caption:=devname[4];
-   FormPeach.pajdn4.bitmap:=FormPeach.pmjd4.bitmap;
+   copyunitmenu(FormPeach.pmjd4,FormPeach.pojdn4);
+   copyunitmenu(FormPeach.pmjd4,FormPeach.pajdn4);
+   copyunitmenu(FormPeach.pmjd4,FormPeach.mextto4);
    end
 else
    begin
    FormPeach.pmjd4.Visible:=false;
    FormPeach.pojdn4.Visible:=false;
    FormPeach.pajdn4.Visible:=false;
+   FormPeach.mextto4.Visible:=false;
    end;
 if devname[5]<>'' then
    begin
    FormPeach.pmjd5.Visible:=true;
    FormPeach.pmjd5.Caption:=devname[5];
    FormPeach.pmjd5.bitmap:=setpcmenuicon(devtype[5]);
-   FormPeach.pojdn5.Visible:=true;
-   FormPeach.pojdn5.Caption:=devname[5];
-   FormPeach.pojdn5.bitmap:=FormPeach.pmjd5.bitmap;
-   FormPeach.pajdn5.Visible:=true;
-   FormPeach.pajdn5.Caption:=devname[5];
-   FormPeach.pajdn5.bitmap:=FormPeach.pmjd5.bitmap;
+   copyunitmenu(FormPeach.pmjd5,FormPeach.pojdn5);
+   copyunitmenu(FormPeach.pmjd5,FormPeach.pajdn5);
+   copyunitmenu(FormPeach.pmjd5,FormPeach.mextto5);
    end
 else
    begin
    FormPeach.pmjd5.Visible:=false;
    FormPeach.pojdn5.Visible:=false;
    FormPeach.pajdn5.Visible:=false;
+   FormPeach.mextto5.Visible:=false;
    end;
 if devname[6]<>'' then
    begin
    FormPeach.pmjd6.Visible:=true;
    FormPeach.pmjd6.Caption:=devname[6];
    FormPeach.pmjd6.bitmap:=setpcmenuicon(devtype[6]);
-   FormPeach.pojdn6.Visible:=true;
-   FormPeach.pojdn6.Caption:=devname[6];
-   FormPeach.pojdn6.bitmap:=FormPeach.pmjd6.bitmap;
-   FormPeach.pajdn6.Visible:=true;
-   FormPeach.pajdn6.Caption:=devname[6];
-   FormPeach.pajdn6.bitmap:=FormPeach.pmjd6.bitmap;
+   copyunitmenu(FormPeach.pmjd6,FormPeach.pojdn6);
+   copyunitmenu(FormPeach.pmjd6,FormPeach.pajdn6);
+   copyunitmenu(FormPeach.pmjd6,FormPeach.mextto6);
    end
 else
    begin
    FormPeach.pmjd6.Visible:=false;
    FormPeach.pojdn6.Visible:=false;
    FormPeach.pajdn6.Visible:=false;
+   FormPeach.mextto6.Visible:=false;
    end;
 if devname[7]<>'' then
    begin
    FormPeach.pmjd7.Visible:=true;
    FormPeach.pmjd7.Caption:=devname[7];
    FormPeach.pmjd7.bitmap:=setpcmenuicon(devtype[7]);
-   FormPeach.pojdn7.Visible:=true;
-   FormPeach.pojdn7.Caption:=devname[7];
-   FormPeach.pojdn7.bitmap:=FormPeach.pmjd7.bitmap;
-   FormPeach.pajdn7.Visible:=true;
-   FormPeach.pajdn7.Caption:=devname[7];
-   FormPeach.pajdn7.bitmap:=FormPeach.pmjd7.bitmap;
+   copyunitmenu(FormPeach.pmjd7,FormPeach.pojdn7);
+   copyunitmenu(FormPeach.pmjd7,FormPeach.pajdn7);
+   copyunitmenu(FormPeach.pmjd7,FormPeach.mextto7);
    end
 else
    begin
    FormPeach.pmjd7.Visible:=false;
    FormPeach.pojdn7.Visible:=false;
    FormPeach.pajdn7.Visible:=false;
+   FormPeach.mextto7.Visible:=false;
    end;
 if devname[8]<>'' then
    begin
    FormPeach.pmjd8.Visible:=true;
    FormPeach.pmjd8.Caption:=devname[8];
    FormPeach.pmjd8.bitmap:=setpcmenuicon(devtype[8]);
-   FormPeach.pojdn8.Visible:=true;
-   FormPeach.pojdn8.Caption:=devname[8];
-   FormPeach.pojdn8.bitmap:=FormPeach.pmjd8.bitmap;
-   FormPeach.pajdn8.Visible:=true;
-   FormPeach.pajdn8.Caption:=devname[8];
-   FormPeach.pajdn8.bitmap:=FormPeach.pmjd8.bitmap;
+   copyunitmenu(FormPeach.pmjd8,FormPeach.pojdn8);
+   copyunitmenu(FormPeach.pmjd8,FormPeach.pajdn8);
+   copyunitmenu(FormPeach.pmjd8,FormPeach.mextto8);
    end
 else
    begin
    FormPeach.pmjd8.Visible:=false;
    FormPeach.pojdn8.Visible:=false;
    FormPeach.pajdn8.Visible:=false;
+   FormPeach.mextto8.Visible:=false;
    end;
 if devname[9]<>'' then
    begin
    FormPeach.pmjd9.Visible:=true;
    FormPeach.pmjd9.Caption:=devname[9];
    FormPeach.pmjd9.bitmap:=setpcmenuicon(devtype[9]);
-   FormPeach.pojdn9.Visible:=true;
-   FormPeach.pojdn9.Caption:=devname[9];
-   FormPeach.pojdn9.bitmap:=FormPeach.pmjd9.bitmap;
-   FormPeach.pajdn9.Visible:=true;
-   FormPeach.pajdn9.Caption:=devname[9];
-   FormPeach.pajdn9.bitmap:=FormPeach.pmjd9.bitmap;
+   copyunitmenu(FormPeach.pmjd9,FormPeach.pojdn9);
+   copyunitmenu(FormPeach.pmjd9,FormPeach.pajdn9);
+   copyunitmenu(FormPeach.pmjd9,FormPeach.mextto9);
    end
 else
    begin
    FormPeach.pmjd9.Visible:=false;
    FormPeach.pojdn9.Visible:=false;
    FormPeach.pajdn9.Visible:=false;
+   FormPeach.mextto9.Visible:=false;
    end;
 if devname[10]<>'' then
    begin
    FormPeach.pmjd10.Visible:=true;
    FormPeach.pmjd10.Caption:=devname[10];
    FormPeach.pmjd10.bitmap:=setpcmenuicon(devtype[10]);
-   FormPeach.pojdn10.Visible:=true;
-   FormPeach.pojdn10.Caption:=devname[10];
-   FormPeach.pojdn10.bitmap:=FormPeach.pmjd10.bitmap;
-   FormPeach.pajdn10.Visible:=true;
-   FormPeach.pajdn10.Caption:=devname[10];
-   FormPeach.pajdn10.bitmap:=FormPeach.pmjd10.bitmap;
+   copyunitmenu(FormPeach.pmjd10,FormPeach.pojdn10);
+   copyunitmenu(FormPeach.pmjd10,FormPeach.pajdn10);
+   copyunitmenu(FormPeach.pmjd10,FormPeach.mextto10);
    end
 else
    begin
    FormPeach.pmjd10.Visible:=false;
    FormPeach.pojdn10.Visible:=false;
    FormPeach.pajdn10.Visible:=false;
+   FormPeach.mextto10.Visible:=false;
    end;
 if devname[11]<>'' then
    begin
    FormPeach.pmjd11.Visible:=true;
    FormPeach.pmjd11.Caption:=devname[11];
    FormPeach.pmjd11.bitmap:=setpcmenuicon(devtype[11]);
-   FormPeach.pojdn11.Visible:=true;
-   FormPeach.pojdn11.Caption:=devname[11];
-   FormPeach.pojdn11.bitmap:=FormPeach.pmjd11.bitmap;
-   FormPeach.pajdn11.Visible:=true;
-   FormPeach.pajdn11.Caption:=devname[11];
-   FormPeach.pajdn11.bitmap:=FormPeach.pmjd11.bitmap;
+   copyunitmenu(FormPeach.pmjd11,FormPeach.pojdn11);
+   copyunitmenu(FormPeach.pmjd11,FormPeach.pajdn11);
+   copyunitmenu(FormPeach.pmjd11,FormPeach.mextto11);
    end
 else
    begin
    FormPeach.pmjd11.Visible:=false;
    FormPeach.pojdn11.Visible:=false;
    FormPeach.pajdn11.Visible:=false;
+   FormPeach.mextto11.Visible:=false;
    end;
 if devname[12]<>'' then
    begin
    FormPeach.pmjd12.Visible:=true;
    FormPeach.pmjd12.Caption:=devname[12];
    FormPeach.pmjd12.bitmap:=setpcmenuicon(devtype[12]);
-   FormPeach.pojdn12.Visible:=true;
-   FormPeach.pojdn12.Caption:=devname[12];
-   FormPeach.pojdn12.bitmap:=FormPeach.pmjd12.bitmap;
-   FormPeach.pajdn12.Visible:=true;
-   FormPeach.pajdn12.Caption:=devname[12];
-   FormPeach.pajdn12.bitmap:=FormPeach.pmjd12.bitmap;
+   copyunitmenu(FormPeach.pmjd12,FormPeach.pojdn12);
+   copyunitmenu(FormPeach.pmjd12,FormPeach.pajdn12);
+   copyunitmenu(FormPeach.pmjd12,FormPeach.mextto12);
    end
 else
    begin
    FormPeach.pmjd12.Visible:=false;
    FormPeach.pojdn12.Visible:=false;
    FormPeach.pajdn12.Visible:=false;
+   FormPeach.mextto12.Visible:=false;
    end;
 if devname[13]<>'' then
    begin
    FormPeach.pmjd13.Visible:=true;
    FormPeach.pmjd13.Caption:=devname[13];
    FormPeach.pmjd13.bitmap:=setpcmenuicon(devtype[13]);
-   FormPeach.pojdn13.Visible:=true;
-   FormPeach.pojdn13.Caption:=devname[13];
-   FormPeach.pojdn13.bitmap:=FormPeach.pmjd13.bitmap;
-   FormPeach.pajdn13.Visible:=true;
-   FormPeach.pajdn13.Caption:=devname[13];
-   FormPeach.pajdn13.bitmap:=FormPeach.pmjd13.bitmap;
+   copyunitmenu(FormPeach.pmjd13,FormPeach.pojdn13);
+   copyunitmenu(FormPeach.pmjd13,FormPeach.pajdn13);
+   copyunitmenu(FormPeach.pmjd13,FormPeach.mextto13);
    end
 else
    begin
    FormPeach.pmjd13.Visible:=false;
    FormPeach.pojdn13.Visible:=false;
    FormPeach.pajdn13.Visible:=false;
+   FormPeach.mextto13.Visible:=false;
    end;
 if devname[14]<>'' then
    begin
    FormPeach.pmjd14.Visible:=true;
    FormPeach.pmjd14.Caption:=devname[14];
    FormPeach.pmjd14.bitmap:=setpcmenuicon(devtype[14]);
-   FormPeach.pojdn14.Visible:=true;
-   FormPeach.pojdn14.Caption:=devname[14];
-   FormPeach.pojdn14.bitmap:=FormPeach.pmjd14.bitmap;
-   FormPeach.pajdn14.Visible:=true;
-   FormPeach.pajdn14.Caption:=devname[14];
-   FormPeach.pajdn14.bitmap:=FormPeach.pmjd14.bitmap;
+   copyunitmenu(FormPeach.pmjd14,FormPeach.pojdn14);
+   copyunitmenu(FormPeach.pmjd14,FormPeach.pajdn14);
+   copyunitmenu(FormPeach.pmjd14,FormPeach.mextto14);
    end
 else
    begin
    FormPeach.pmjd14.Visible:=false;
    FormPeach.pojdn14.Visible:=false;
    FormPeach.pajdn14.Visible:=false;
+   FormPeach.mextto14.Visible:=false;
    end;
 if devname[15]<>'' then
    begin
    FormPeach.pmjd15.Visible:=true;
    FormPeach.pmjd15.Caption:=devname[15];
    FormPeach.pmjd15.bitmap:=setpcmenuicon(devtype[15]);
-   FormPeach.pojdn15.Visible:=true;
-   FormPeach.pojdn15.Caption:=devname[15];
-   FormPeach.pojdn15.bitmap:=FormPeach.pmjd15.bitmap;
-   FormPeach.pajdn15.Visible:=true;
-   FormPeach.pajdn15.Caption:=devname[15];
-   FormPeach.pajdn15.bitmap:=FormPeach.pmjd15.bitmap;
+   copyunitmenu(FormPeach.pmjd15,FormPeach.pojdn15);
+   copyunitmenu(FormPeach.pmjd15,FormPeach.pajdn15);
+   copyunitmenu(FormPeach.pmjd15,FormPeach.mextto15);
    end
 else
    begin
    FormPeach.pmjd15.Visible:=false;
    FormPeach.pojdn15.Visible:=false;
    FormPeach.pajdn15.Visible:=false;
+   FormPeach.mextto15.Visible:=false;
    end;
 if devname[16]<>'' then
    begin
    FormPeach.pmjd16.Visible:=true;
    FormPeach.pmjd16.Caption:=devname[16];
    FormPeach.pmjd16.bitmap:=setpcmenuicon(devtype[16]);
-   FormPeach.pojdn16.Visible:=true;
-   FormPeach.pojdn16.Caption:=devname[16];
-   FormPeach.pojdn16.bitmap:=FormPeach.pmjd16.bitmap;
-   FormPeach.pajdn16.Visible:=true;
-   FormPeach.pajdn16.Caption:=devname[16];
-   FormPeach.pajdn16.bitmap:=FormPeach.pmjd16.bitmap;
+   copyunitmenu(FormPeach.pmjd16,FormPeach.pojdn16);
+   copyunitmenu(FormPeach.pmjd16,FormPeach.pajdn16);
+   copyunitmenu(FormPeach.pmjd16,FormPeach.mextto16);
    end
 else
    begin
    FormPeach.pmjd16.Visible:=false;
    FormPeach.pojdn16.Visible:=false;
    FormPeach.pajdn16.Visible:=false;
+   FormPeach.mextto16.Visible:=false;
    end;
 if devname[17]<>'' then
    begin
    FormPeach.pmjd17.Visible:=true;
    FormPeach.pmjd17.Caption:=devname[17];
    FormPeach.pmjd17.bitmap:=setpcmenuicon(devtype[17]);
-   FormPeach.pojdn17.Visible:=true;
-   FormPeach.pojdn17.Caption:=devname[17];
-   FormPeach.pojdn17.bitmap:=FormPeach.pmjd17.bitmap;
-   FormPeach.pajdn17.Visible:=true;
-   FormPeach.pajdn17.Caption:=devname[17];
-   FormPeach.pajdn17.bitmap:=FormPeach.pmjd17.bitmap;
+   copyunitmenu(FormPeach.pmjd17,FormPeach.pojdn17);
+   copyunitmenu(FormPeach.pmjd17,FormPeach.pajdn17);
+   copyunitmenu(FormPeach.pmjd17,FormPeach.mextto17);
    end
 else
    begin
    FormPeach.pmjd17.Visible:=false;
    FormPeach.pojdn17.Visible:=false;
    FormPeach.pajdn17.Visible:=false;
+   FormPeach.mextto17.Visible:=false;
    end;
 if devname[18]<>'' then
    begin
    FormPeach.pmjd18.Visible:=true;
    FormPeach.pmjd18.Caption:=devname[18];
    FormPeach.pmjd18.bitmap:=setpcmenuicon(devtype[18]);
-   FormPeach.pojdn18.Visible:=true;
-   FormPeach.pojdn18.Caption:=devname[18];
-   FormPeach.pojdn18.bitmap:=FormPeach.pmjd18.bitmap;
-   FormPeach.pajdn18.Visible:=true;
-   FormPeach.pajdn18.Caption:=devname[18];
-   FormPeach.pajdn18.bitmap:=FormPeach.pmjd18.bitmap;
+   copyunitmenu(FormPeach.pmjd18,FormPeach.pojdn18);
+   copyunitmenu(FormPeach.pmjd18,FormPeach.pajdn18);
+   copyunitmenu(FormPeach.pmjd18,FormPeach.mextto18);
    end
 else
    begin
    FormPeach.pmjd18.Visible:=false;
    FormPeach.pojdn18.Visible:=false;
    FormPeach.pajdn18.Visible:=false;
+   FormPeach.mextto18.Visible:=false;
    end;
 if devname[19]<>'' then
    begin
    FormPeach.pmjd19.Visible:=true;
    FormPeach.pmjd19.Caption:=devname[19];
    FormPeach.pmjd19.bitmap:=setpcmenuicon(devtype[19]);
-   FormPeach.pojdn19.Visible:=true;
-   FormPeach.pojdn19.Caption:=devname[19];
-   FormPeach.pojdn19.bitmap:=FormPeach.pmjd19.bitmap;
-   FormPeach.pajdn19.Visible:=true;
-   FormPeach.pajdn19.Caption:=devname[19];
-   FormPeach.pajdn19.bitmap:=FormPeach.pmjd19.bitmap;
+   copyunitmenu(FormPeach.pmjd19,FormPeach.pojdn19);
+   copyunitmenu(FormPeach.pmjd19,FormPeach.pajdn19);
+   copyunitmenu(FormPeach.pmjd19,FormPeach.mextto19);
    end
 else
    begin
    FormPeach.pmjd19.Visible:=false;
    FormPeach.pojdn19.Visible:=false;
    FormPeach.pajdn19.Visible:=false;
+   FormPeach.mextto19.Visible:=false;
    end;
 if devname[20]<>'' then
    begin
    FormPeach.pmjd20.Visible:=true;
    FormPeach.pmjd20.Caption:=devname[20];
    FormPeach.pmjd20.bitmap:=setpcmenuicon(devtype[20]);
-   FormPeach.pojdn20.Visible:=true;
-   FormPeach.pojdn20.Caption:=devname[20];
-   FormPeach.pojdn20.bitmap:=FormPeach.pmjd20.bitmap;
-   FormPeach.pajdn20.Visible:=true;
-   FormPeach.pajdn20.Caption:=devname[20];
-   FormPeach.pajdn20.bitmap:=FormPeach.pmjd20.bitmap;
+   copyunitmenu(FormPeach.pmjd20,FormPeach.pojdn20);
+   copyunitmenu(FormPeach.pmjd20,FormPeach.pajdn20);
+   copyunitmenu(FormPeach.pmjd20,FormPeach.mextto20);
    end
 else
    begin
    FormPeach.pmjd20.Visible:=false;
    FormPeach.pojdn20.Visible:=false;
    FormPeach.pajdn20.Visible:=false;
+   FormPeach.mextto20.Visible:=false;
    end;
 if devname[21]<>'' then
    begin
    FormPeach.pmjd21.Visible:=true;
    FormPeach.pmjd21.Caption:=devname[21];
    FormPeach.pmjd21.bitmap:=setpcmenuicon(devtype[21]);
-   FormPeach.pojdn21.Visible:=true;
-   FormPeach.pojdn21.Caption:=devname[21];
-   FormPeach.pojdn21.bitmap:=FormPeach.pmjd21.bitmap;
-   FormPeach.pajdn21.Visible:=true;
-   FormPeach.pajdn21.Caption:=devname[21];
-   FormPeach.pajdn21.bitmap:=FormPeach.pmjd21.bitmap;
+   copyunitmenu(FormPeach.pmjd21,FormPeach.pojdn21);
+   copyunitmenu(FormPeach.pmjd21,FormPeach.pajdn21);
+   copyunitmenu(FormPeach.pmjd21,FormPeach.mextto21);
    end
 else
    begin
    FormPeach.pmjd21.Visible:=false;
    FormPeach.pojdn21.Visible:=false;
    FormPeach.pajdn21.Visible:=false;
+   FormPeach.mextto21.Visible:=false;
    end;
 if devname[22]<>'' then
    begin
    FormPeach.pmjd22.Visible:=true;
    FormPeach.pmjd22.Caption:=devname[22];
    FormPeach.pmjd22.bitmap:=setpcmenuicon(devtype[22]);
-   FormPeach.pojdn22.Visible:=true;
-   FormPeach.pojdn22.Caption:=devname[22];
-   FormPeach.pojdn22.bitmap:=FormPeach.pmjd22.bitmap;
-   FormPeach.pajdn22.Visible:=true;
-   FormPeach.pajdn22.Caption:=devname[22];
-   FormPeach.pajdn22.bitmap:=FormPeach.pmjd22.bitmap;
+   copyunitmenu(FormPeach.pmjd22,FormPeach.pojdn22);
+   copyunitmenu(FormPeach.pmjd22,FormPeach.pajdn22);
+   copyunitmenu(FormPeach.pmjd22,FormPeach.mextto22);
    end
 else
    begin
    FormPeach.pmjd22.Visible:=false;
    FormPeach.pojdn22.Visible:=false;
    FormPeach.pajdn22.Visible:=false;
+   FormPeach.mextto22.Visible:=false;
    end;
 if devname[23]<>'' then
    begin
    FormPeach.pmjd23.Visible:=true;
    FormPeach.pmjd23.Caption:=devname[23];
    FormPeach.pmjd23.bitmap:=setpcmenuicon(devtype[23]);
-   FormPeach.pojdn23.Visible:=true;
-   FormPeach.pojdn23.Caption:=devname[23];
-   FormPeach.pojdn23.bitmap:=FormPeach.pmjd23.bitmap;
-   FormPeach.pajdn23.Visible:=true;
-   FormPeach.pajdn23.Caption:=devname[23];
-   FormPeach.pajdn23.bitmap:=FormPeach.pmjd23.bitmap;
+   copyunitmenu(FormPeach.pmjd23,FormPeach.pojdn23);
+   copyunitmenu(FormPeach.pmjd23,FormPeach.pajdn23);
+   copyunitmenu(FormPeach.pmjd23,FormPeach.mextto23);
    end
 else
    begin
    FormPeach.pmjd23.Visible:=false;
    FormPeach.pojdn23.Visible:=false;
    FormPeach.pajdn23.Visible:=false;
+   FormPeach.mextto23.Visible:=false;
    end;
 if devname[24]<>'' then
    begin
    FormPeach.pmjd24.Visible:=true;
    FormPeach.pmjd24.Caption:=devname[24];
    FormPeach.pmjd24.bitmap:=setpcmenuicon(devtype[24]);
-   FormPeach.pojdn24.Visible:=true;
-   FormPeach.pojdn24.Caption:=devname[24];
-   FormPeach.pojdn24.bitmap:=FormPeach.pmjd24.bitmap;
-   FormPeach.pajdn24.Visible:=true;
-   FormPeach.pajdn24.Caption:=devname[24];
-   FormPeach.pajdn24.bitmap:=FormPeach.pmjd24.bitmap;
+   copyunitmenu(FormPeach.pmjd24,FormPeach.pojdn24);
+   copyunitmenu(FormPeach.pmjd24,FormPeach.pajdn24);
+   copyunitmenu(FormPeach.pmjd24,FormPeach.mextto24);
    end
 else
    begin
    FormPeach.pmjd24.Visible:=false;
    FormPeach.pojdn24.Visible:=false;
    FormPeach.pajdn24.Visible:=false;
+   FormPeach.mextto24.Visible:=false;
    end;
 if devname[25]<>'' then
    begin
    FormPeach.pmjd25.Visible:=true;
    FormPeach.pmjd25.Caption:=devname[25];
    FormPeach.pmjd25.bitmap:=setpcmenuicon(devtype[25]);
-   FormPeach.pojdn25.Visible:=true;
-   FormPeach.pojdn25.Caption:=devname[25];
-   FormPeach.pojdn25.bitmap:=FormPeach.pmjd25.bitmap;
-   FormPeach.pajdn25.Visible:=true;
-   FormPeach.pajdn25.Caption:=devname[25];
-   FormPeach.pajdn25.bitmap:=FormPeach.pmjd25.bitmap;
+   copyunitmenu(FormPeach.pmjd25,FormPeach.pojdn25);
+   copyunitmenu(FormPeach.pmjd25,FormPeach.pajdn25);
+   copyunitmenu(FormPeach.pmjd25,FormPeach.mextto25);
    end
 else
    begin
    FormPeach.pmjd25.Visible:=false;
    FormPeach.pojdn25.Visible:=false;
    FormPeach.pajdn25.Visible:=false;
+   FormPeach.mextto25.Visible:=false;
    end;
 if devname[26]<>'' then
    begin
    FormPeach.pmjd26.Visible:=true;
    FormPeach.pmjd26.Caption:=devname[26];
    FormPeach.pmjd26.bitmap:=setpcmenuicon(devtype[26]);
-   FormPeach.pojdn26.Visible:=true;
-   FormPeach.pojdn26.Caption:=devname[26];
-   FormPeach.pojdn26.bitmap:=FormPeach.pmjd26.bitmap;
-   FormPeach.pajdn26.Visible:=true;
-   FormPeach.pajdn26.Caption:=devname[26];
-   FormPeach.pajdn26.bitmap:=FormPeach.pmjd26.bitmap;
+   copyunitmenu(FormPeach.pmjd26,FormPeach.pojdn26);
+   copyunitmenu(FormPeach.pmjd26,FormPeach.pajdn26);
+   copyunitmenu(FormPeach.pmjd26,FormPeach.mextto26);
    end
 else
    begin
    FormPeach.pmjd26.Visible:=false;
    FormPeach.pojdn26.Visible:=false;
    FormPeach.pajdn26.Visible:=false;
+   FormPeach.mextto26.Visible:=false;
    end;
 //set up to date icons to bookmarked units
 populatebookmarks;
@@ -42510,13 +42687,6 @@ case jumpdest of
    FormPeach.EditOpenIn.Text:=s;
    listdir(s,false,false);
    end;
-   'myboxfiles':
-   begin
-   FormPeach.EditUn7zaFilter.Text:='*';
-   s:=shared_myboxfiles;
-   FormPeach.EditOpenIn.Text:=s;
-   listdir(s,false,false);
-   end;
    'googledrive':
    begin
    FormPeach.EditUn7zaFilter.Text:='*';
@@ -42534,14 +42704,14 @@ case jumpdest of
    'sharepoint':
    begin
    FormPeach.EditUn7zaFilter.Text:='*';
-   s:=shared_skydrive;
+   s:=shared_sharepointwork;
    FormPeach.EditOpenIn.Text:=s;
    listdir(s,false,false);
    end;
    'yandexdisk':
    begin
    FormPeach.EditUn7zaFilter.Text:='*';
-   s:=shared_ubuntuone;
+   s:=shared_yandex;
    FormPeach.EditOpenIn.Text:=s;
    listdir(s,false,false);
    end;
@@ -43467,7 +43637,8 @@ else
    end;
 end;
 FormPaths.Caption:=txt_5_5_copypath;
-FormPaths.Visible:=true;
+//FormPaths.Visible:=true;
+FormPaths.ShowModal;
 end;
 
 procedure setshowthumbnails(i:integer);
@@ -44459,7 +44630,7 @@ var
   i:integer;
 begin
 if FormPeach.ProgressBar2.Visible=false then
-   if pcount<40 then //expire at first refresh after 2 seconds
+   if pcount<60 then //expire at first refresh after 3 seconds
       pcount:=pcount+1
    else
       begin
@@ -46868,12 +47039,6 @@ if shared_dropbox<>'' then
       ImageIndex:=44;
       SelectedIndex:=44;
       end;
-if shared_myboxfiles<>'' then
-   with TreeViewNav.Items.Add(TreeViewNav.selected,'My Box Files') do
-      begin
-      ImageIndex:=44;
-      SelectedIndex:=44;
-      end;
 if shared_googledrive<>'' then
    with TreeViewNav.Items.Add(TreeViewNav.selected,'Google Drive') do
       begin
@@ -46886,13 +47051,13 @@ if shared_onedrive<>'' then
       ImageIndex:=44;
       SelectedIndex:=44;
       end;
-if shared_skydrive<>'' then
+if shared_sharepointwork<>'' then
    with TreeViewNav.Items.Add(TreeViewNav.selected,'Sharepoint Workspaces') do
       begin
       ImageIndex:=44;
       SelectedIndex:=44;
       end;
-if shared_ubuntuone<>'' then
+if shared_yandex<>'' then
    with TreeViewNav.Items.Add(TreeViewNav.selected,'Yandex Disk') do
       begin
       ImageIndex:=44;
@@ -47925,8 +48090,8 @@ if s = usr_videos then
    result:=15;
    exit;
    end;
-if (s = shared_dropbox) or (s = shared_myboxfiles) or (s = shared_googledrive)
-   or (s = shared_onedrive) or (s = shared_skydrive) or (s = shared_ubuntuone)then
+if (s = shared_dropbox) or (s = shared_googledrive)
+   or (s = shared_onedrive) or (s = shared_sharepointwork) or (s = shared_yandex)then
    begin
    result:=44;
    exit;
@@ -47996,8 +48161,8 @@ if s = usr_videos then
    result:=15;
    exit;
    end;
-if (s = shared_dropbox) or (s = shared_myboxfiles) or (s = shared_googledrive)
-   or (s = shared_onedrive) or (s = shared_skydrive) or (s = shared_ubuntuone)then
+if (s = shared_dropbox) or (s = shared_googledrive)
+   or (s = shared_onedrive) or (s = shared_sharepointwork) or (s = shared_yandex)then
    begin
    result:=44;
    exit;
@@ -48058,7 +48223,6 @@ if (targetnode.parent<>nil) then
       if TargetNode.Text=txt_5_0_pictures then begin jumpto('usrpictures'); exit; end;
       if TargetNode.Text=txt_5_0_videos then begin jumpto('usrvideos'); exit; end;
       if TargetNode.Text='Dropbox' then begin jumpto('dropbox'); exit; end;
-      if TargetNode.Text='My Box Files' then begin jumpto('myboxfiles'); exit; end;
       if TargetNode.Text='Google Drive' then begin jumpto('googledrive'); exit; end;
       if TargetNode.Text='OneDrive' then begin jumpto('onedrive'); exit; end;
       if TargetNode.Text='Sharepoint Workspaces' then begin jumpto('sharepoint'); exit; end;
@@ -48235,11 +48399,10 @@ if addrfs=txt_5_0_music then result:=usr_music;
 if addrfs=txt_5_0_pictures then result:=usr_pictures;
 if addrfs=txt_5_0_videos then result:= usr_videos;
 if addrfs='Dropbox' then result:=shared_dropbox;
-if addrfs='My Box Files' then result:=shared_myboxfiles;
 if addrfs='Google Drive' then result:=shared_googledrive;
 if addrfs='OneDrive' then result:=shared_onedrive;
-if addrfs='Sharepoint Workspaces' then result:=shared_skydrive;
-if addrfs='Yandex Disk' then result:=shared_ubuntuone;
+if addrfs='Sharepoint Workspaces' then result:=shared_sharepointwork;
+if addrfs='Yandex Disk' then result:=shared_yandex;
 {$IFNDEF MSWINDOWS}
 if addrfs='media' then result:='/media/';
 if addrfs='mnt' then result:='/mnt/';
@@ -54218,6 +54381,11 @@ if commentstring<>'' then
    begin
    FormPeach.LabelComment.Caption:=upcase(txt_7_4_comment);
    FormPeach.LabelComment.Hint:=commentstring;
+   end
+else
+   begin
+   FormPeach.LabelComment.Caption:='';
+   FormPeach.LabelComment.Hint:='';
    end;
 end;
 
@@ -54249,6 +54417,11 @@ case fun of
          begin
          FormPeach.LabelComment.Caption:=upcase(txt_7_4_comment);
          FormPeach.LabelComment.Hint:=FormComment.MemoComment.Text;
+         end
+      else
+         begin
+         FormPeach.LabelComment.Caption:='';
+         FormPeach.LabelComment.Hint:='';
          end;
       end;
    end;
@@ -56147,6 +56320,7 @@ dn:=((paramstr(3)));
 getarccaption(STR_7Z);
 FormPeach.TimerWinContext.enabled:=true;
 stayopen:=false;
+if completeshowpea=true then if enumd=1 then begin updatelayout(''); end;
 go_semaphorearchive;
 end;
 
@@ -56168,6 +56342,7 @@ dn:=(paramstr(3));
 getarccaption(archtype);
 FormPeach.TimerWinContext.enabled:=true;
 stayopen:=false;
+if completeshowpea=true then if enumd=1 then begin updatelayout(''); end;
 go_semaphorearchive;
 end;
 
@@ -56213,6 +56388,7 @@ dn:=((paramstr(3)));
 getarccaption(STR_ZIP);
 FormPeach.TimerWinContext.enabled:=true;
 stayopen:=false;
+if completeshowpea=true then if enumd=1 then begin updatelayout(''); end;
 go_semaphorearchive;
 end;
 
@@ -56226,6 +56402,7 @@ multiaddupdating:=false;
 dn:=((paramstr(2)));
 FormPeach.TimerWinContext.enabled:=true;
 stayopen:=false;
+if completeshowpea=true then if enumd=1 then begin updatelayout(''); end;
 go_semaphorearchive;
 end;
 
@@ -62862,6 +63039,14 @@ begin
 CheckBoxZstdErrPolicy_onclick;
 end;
 
+procedure TFormPeach.ComboBoxBrowserCloseUp(Sender: TObject);
+begin
+if openstarted=true then
+   if FormPeach.Visible=true then
+      if ComboBoxBrowser.ItemIndex>=4 then pMessageInfoOK(txt_11_1_pp);
+on_CheckBoxPrebrowse_click;
+end;
+
 procedure TFormPeach.ComboBoxPAQThreadsChange(Sender: TObject);
 begin
 on_ComboBoxPAQ2Change;
@@ -63524,12 +63709,310 @@ begin
 previewinternal;
 end;
 
+procedure qexpc(inname:AnsiString);
+var
+   s:ansistring;
+begin
+s:=inname;
+s:=copy(s,2,2)+directoryseparator;
+quickextract(extractfilepath(s),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto10Click(Sender: TObject);
+begin
+qexpc(mextto10.Caption);
+end;
+
+procedure TFormPeach.mextto11Click(Sender: TObject);
+begin
+qexpc(mextto11.Caption);
+end;
+
+procedure TFormPeach.mextto12Click(Sender: TObject);
+begin
+qexpc(mextto12.Caption);
+end;
+
+procedure TFormPeach.mextto13Click(Sender: TObject);
+begin
+qexpc(mextto13.Caption);
+end;
+
+procedure TFormPeach.mextto14Click(Sender: TObject);
+begin
+qexpc(mextto14.Caption);
+end;
+
+procedure TFormPeach.mextto15Click(Sender: TObject);
+begin
+qexpc(mextto15.Caption);
+end;
+
+procedure TFormPeach.mextto16Click(Sender: TObject);
+begin
+qexpc(mextto16.Caption);
+end;
+
+procedure TFormPeach.mextto17Click(Sender: TObject);
+begin
+qexpc(mextto17.Caption);
+end;
+
+procedure TFormPeach.mextto18Click(Sender: TObject);
+begin
+qexpc(mextto18.Caption);
+end;
+
+procedure TFormPeach.mextto19Click(Sender: TObject);
+begin
+qexpc(mextto19.Caption);
+end;
+
+procedure TFormPeach.mextto1Click(Sender: TObject);
+begin
+qexpc(mextto1.Caption);
+end;
+
+procedure TFormPeach.mextto20Click(Sender: TObject);
+begin
+qexpc(mextto20.Caption);
+end;
+
+procedure TFormPeach.mextto21Click(Sender: TObject);
+begin
+qexpc(mextto21.Caption);
+end;
+
+procedure TFormPeach.mextto22Click(Sender: TObject);
+begin
+qexpc(mextto22.Caption);
+end;
+
+procedure TFormPeach.mextto23Click(Sender: TObject);
+begin
+qexpc(mextto23.Caption);
+end;
+
+procedure TFormPeach.mextto24Click(Sender: TObject);
+begin
+qexpc(mextto24.Caption);
+end;
+
+procedure TFormPeach.mextto25Click(Sender: TObject);
+begin
+qexpc(mextto25.Caption);
+end;
+
+procedure TFormPeach.mextto26Click(Sender: TObject);
+begin
+qexpc(mextto26.Caption);
+end;
+
+procedure TFormPeach.mextto2Click(Sender: TObject);
+begin
+qexpc(mextto2.Caption);
+end;
+
+procedure TFormPeach.mextto3Click(Sender: TObject);
+begin
+qexpc(mextto3.Caption);
+end;
+
+procedure TFormPeach.mextto4Click(Sender: TObject);
+begin
+qexpc(mextto4.Caption);
+end;
+
+procedure TFormPeach.mextto5Click(Sender: TObject);
+begin
+qexpc(mextto5.Caption);
+end;
+
+procedure TFormPeach.mextto6Click(Sender: TObject);
+begin
+qexpc(mextto6.Caption);
+end;
+
+procedure TFormPeach.mextto7Click(Sender: TObject);
+begin
+qexpc(mextto7.Caption);
+end;
+
+procedure TFormPeach.mextto8Click(Sender: TObject);
+begin
+qexpc(mextto8.Caption);
+end;
+
+procedure TFormPeach.mextto9Click(Sender: TObject);
+begin
+qexpc(mextto9.Caption);
+end;
+
+procedure TFormPeach.mexttob10Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob10.Caption)<>'') then quickextract(extractfilepath(mexttob10.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob11Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob11.Caption)<>'') then quickextract(extractfilepath(mexttob11.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob12Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob12.Caption)<>'') then quickextract(extractfilepath(mexttob12.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob13Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob13.Caption)<>'') then quickextract(extractfilepath(mexttob13.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob14Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob14.Caption)<>'') then quickextract(extractfilepath(mexttob14.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob15Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob15.Caption)<>'') then quickextract(extractfilepath(mexttob15.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob16Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob16.Caption)<>'') then quickextract(extractfilepath(mexttob16.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob17Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob17.Caption)<>'') then quickextract(extractfilepath(mexttob17.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob18Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob18.Caption)<>'') then quickextract(extractfilepath(mexttob18.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob19Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob19.Caption)<>'') then quickextract(extractfilepath(mexttob19.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob20Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob20.Caption)<>'') then quickextract(extractfilepath(mexttob20.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob21Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob21.Caption)<>'') then quickextract(extractfilepath(mexttob21.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob22Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob22.Caption)<>'') then quickextract(extractfilepath(mexttob22.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob23Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob23.Caption)<>'') then quickextract(extractfilepath(mexttob23.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mexttob9Click(Sender: TObject);
+begin
+if (extractfilepath(mexttob9.Caption)<>'') then quickextract(extractfilepath(mexttob9.Caption),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_desktopClick(Sender: TObject);
+begin
+quickextract(extractfilepath(local_desktop),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_documentsClick(Sender: TObject);
+begin
+quickextract(extractfilepath(usr_documents),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_downloadsClick(Sender: TObject);
+begin
+quickextract(extractfilepath(usr_downloads),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_dropboxClick(Sender: TObject);
+begin
+quickextract(extractfilepath(shared_dropbox),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_googledriveClick(Sender: TObject);
+begin
+quickextract(extractfilepath(shared_googledrive),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_hereClick(Sender: TObject);
+begin
+if checklistsel=0 then
+   quickextract(extractfilepath(StringGridList.Cells[12,StringGridList.Row]),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_homeClick(Sender: TObject);
+begin
+quickextract(extractfilepath(home_path),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_LastClick(Sender: TObject);
+begin
+if lastoutpath='' then lastoutpath:=local_desktop;
+mextto_Last.Caption:=txt_lastused+' '+extractfilepath(lastoutpath);
+quickextract(extractfilepath(lastoutpath),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_musicClick(Sender: TObject);
+begin
+quickextract(extractfilepath(usr_music),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_onedriveClick(Sender: TObject);
+begin
+quickextract(extractfilepath(shared_onedrive),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_picturesClick(Sender: TObject);
+begin
+quickextract(extractfilepath(usr_pictures),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_pubdocClick(Sender: TObject);
+begin
+quickextract(extractfilepath(public_documents),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_pubhomeClick(Sender: TObject);
+begin
+quickextract(extractfilepath(public_home),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_shpClick(Sender: TObject);
+begin
+quickextract(extractfilepath(shared_sharepointwork),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_yClick(Sender: TObject);
+begin
+quickextract(extractfilepath(shared_yandex),'*neutral','selected');
+end;
+
+procedure TFormPeach.mextto_videosClick(Sender: TObject);
+begin
+quickextract(extractfilepath(usr_videos),'*neutral','selected');
+end;
+
 procedure TFormPeach.mlogClick(Sender: TObject);
 begin
 FormPaths.MemoPaths.Clear;
 FormPaths.MemoPaths.Lines:=list_utils.cllog;
 FormPaths.Caption:=txt_10_8_log;
-FormPaths.Visible:=true;
+//FormPaths.Visible:=true;
+FormPaths.ShowModal;
 end;
 
 procedure TFormPeach.pmbatchtestClick(Sender: TObject);
@@ -63714,11 +64197,6 @@ end;
 procedure TFormPeach.ComboBox7zLevelCloseUp(Sender: TObject);
 begin
 on_ComboBoxArchiveCompressionLevelChange;
-end;
-
-procedure TFormPeach.ComboBoxBrowserChange(Sender: TObject);
-begin
-on_CheckBoxPrebrowse_click;
 end;
 
 procedure TFormPeach.ComboBoxDragChange(Sender: TObject);
@@ -64354,6 +64832,7 @@ p:=clienttoscreen(p);
 setrecenticons_extract_archive;
 if lastoutpath='' then lastoutpath:=local_desktop;
 MenuItemOpen_Last.Caption:=txt_lastused+' '+extractfilepath(lastoutpath);
+mextto_Last.Caption:=txt_lastused+' '+extractfilepath(lastoutpath);
 PopupPathExtract.PopUp(p.x,p.y);
 end;
 
@@ -66587,93 +67066,43 @@ cp_open(dom+'index.html',desk_env);
 end;
 
 procedure TFormPeach.MenuItemArchive_dropboxClick(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=shared_dropbox;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(shared_dropbox);
 end;
 
 procedure TFormPeach.MenuItemArchive_googledriveClick(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=shared_googledrive;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(shared_googledrive);
 end;
 
 procedure TFormPeach.MenuItemArchive_musicClick(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=usr_music;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
-end;
-
-procedure TFormPeach.MenuItemArchive_myboxfilesClick(Sender: TObject);
-var
-   s:ansistring;
-begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=shared_myboxfiles;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(usr_music);
 end;
 
 procedure TFormPeach.MenuItemArchive_picturesClick(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=usr_pictures;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(usr_pictures);
 end;
 
-procedure TFormPeach.MenuItemArchive_skydriveClick(Sender: TObject);
-var
-   s:ansistring;
+procedure TFormPeach.MenuItemArchive_shpClick(Sender: TObject);
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=shared_skydrive;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(shared_sharepointwork);
 end;
 
 procedure TFormPeach.MenuItemArchive_onedriveClick(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=shared_onedrive;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(shared_onedrive);
 end;
 
-procedure TFormPeach.MenuItemArchive_ubuntuoneClick(Sender: TObject);
-var
-   s:ansistring;
+procedure TFormPeach.MenuItemArchive_yClick(Sender: TObject);
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=shared_ubuntuone;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(shared_yandex);
 end;
 
 procedure TFormPeach.MenuItemArchive_videosClick(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=usr_videos;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(usr_videos);
 end;
 
 procedure TFormPeach.menuitemopenhomeClick(Sender: TObject);
@@ -66696,11 +67125,6 @@ begin
 FormPeach.EditOutExtract.Text:=extractfilepath(usr_music);
 end;
 
-procedure TFormPeach.MenuItemOpen_myboxfilesClick(Sender: TObject);
-begin
-FormPeach.EditOutExtract.Text:=extractfilepath(shared_myboxfiles);
-end;
-
 procedure TFormPeach.MenuItemOpen_organizebookmarksClick(Sender: TObject);
 begin
   do_organizebookmarks;
@@ -66721,14 +67145,14 @@ begin
 FormPeach.EditOutExtract.Text:=extractfilepath(shared_onedrive);
 end;
 
-procedure TFormPeach.MenuItemOpen_skydriveClick(Sender: TObject);
+procedure TFormPeach.MenuItemOpen_shpClick(Sender: TObject);
 begin
-FormPeach.EditOutExtract.Text:=extractfilepath(shared_skydrive);
+FormPeach.EditOutExtract.Text:=extractfilepath(shared_sharepointwork);
 end;
 
-procedure TFormPeach.MenuItemOpen_ubuntuoneClick(Sender: TObject);
+procedure TFormPeach.MenuItemOpen_yClick(Sender: TObject);
 begin
-FormPeach.EditOutExtract.Text:=extractfilepath(shared_ubuntuone);
+FormPeach.EditOutExtract.Text:=extractfilepath(shared_yandex);
 end;
 
 procedure TFormPeach.MenuItemOpen_videosClick(Sender: TObject);
@@ -68351,13 +68775,8 @@ cp_open(dom+'donations.html',desk_env);
 end;
 
 procedure TFormPeach.MenuItemArchive_downloadsClick(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=usr_downloads;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(usr_downloads)
 end;
 
 procedure TFormPeach.MenuItemExtAllHereClick(Sender: TObject);
@@ -68371,23 +68790,13 @@ do_extallto('selected');
 end;
 
 procedure TFormPeach.MenuItemArchive_pubdocClick(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=public_documents;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(public_documents);
 end;
 
 procedure TFormPeach.MenuItemArchive_pubhomeClick(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=public_home;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(public_home);
 end;
 
 procedure TFormPeach.MenuItemOpen_pubdocClick(Sender: TObject);
@@ -68617,23 +69026,13 @@ else
 end;
 
 procedure TFormPeach.MenuItemArchive_documents1Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=usr_documents;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(usr_documents);
 end;
 
 procedure TFormPeach.MenuItemArchive_home1Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=extractfilepath(home_path);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(home_path);
 end;
 
 procedure TFormPeach.MenuItemextexploreClick(Sender: TObject);
@@ -68723,13 +69122,8 @@ clicklabel_options(LabelTitleOptions1, ShapeOptions1);
 end;
 
 procedure TFormPeach.mpathdesk1Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilepath.Text:=local_desktop;
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+archivemenu_name(local_desktop);
 end;
 
 procedure TFormPeach.mpathexplore1Click(Sender: TObject);
@@ -69017,22 +69411,17 @@ begin
 jumpto('googledrive');
 end;
 
-procedure TFormPeach.pmqjmyboxfilesClick(Sender: TObject);
-begin
-jumpto('myboxfiles');
-end;
-
 procedure TFormPeach.pmqjonedriveClick(Sender: TObject);
 begin
 jumpto('onedrive');
 end;
 
-procedure TFormPeach.pmqjskydriveClick(Sender: TObject);
+procedure TFormPeach.pmqjshpClick(Sender: TObject);
 begin
 jumpto('sharepoint');
 end;
 
-procedure TFormPeach.pmqjubuntuoneClick(Sender: TObject);
+procedure TFormPeach.pmqjyClick(Sender: TObject);
 begin
 jumpto('yandexdisk');
 end;
@@ -69470,316 +69859,146 @@ begin
 openadvappn(1);
 end;
 
-procedure TFormPeach.pajdn10Click(Sender: TObject);
+procedure addpc(inname:AnsiString);
 var
    s:ansistring;
 begin
 suggest_outname(s,FormPeach.cbType.Text,0);
 FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn10.Caption;
+s:=inname;
 s:=copy(s,2,2)+directoryseparator;
 FormPeach.EditAddFilepath.Text:=s;
 FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+end;
+
+procedure TFormPeach.pajdn10Click(Sender: TObject);
+begin
+addpc(pajdn10.Caption);
 end;
 
 procedure TFormPeach.pajdn11Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn11.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn11.Caption);
 end;
 
 procedure TFormPeach.pajdn12Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn12.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn12.Caption);
 end;
 
 procedure TFormPeach.pajdn13Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn13.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn13.Caption);
 end;
 
 procedure TFormPeach.pajdn14Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn14.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn14.Caption);
 end;
 
 procedure TFormPeach.pajdn15Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn15.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn15.Caption);
 end;
 
 procedure TFormPeach.pajdn16Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn16.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn16.Caption);
 end;
 
 procedure TFormPeach.pajdn17Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn17.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn17.Caption);
 end;
 
 procedure TFormPeach.pajdn18Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn18.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn18.Caption);
 end;
 
 procedure TFormPeach.pajdn19Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn19.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn19.Caption);
 end;
 
 procedure TFormPeach.pajdn1Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn1.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn1.Caption);
 end;
 
 procedure TFormPeach.pajdn20Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn20.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn20.Caption);
 end;
 
 procedure TFormPeach.pajdn21Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn21.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn21.Caption);
 end;
 
 procedure TFormPeach.pajdn22Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn22.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn22.Caption);
 end;
 
 procedure TFormPeach.pajdn23Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn23.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn23.Caption);
 end;
 
 procedure TFormPeach.pajdn24Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn24.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn24.Caption);
 end;
 
 procedure TFormPeach.pajdn25Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn25.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn25.Caption);
 end;
 
 procedure TFormPeach.pajdn26Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn26.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn26.Caption);
 end;
 
 procedure TFormPeach.pajdn2Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn2.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn2.Caption);
 end;
 
 procedure TFormPeach.pajdn3Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn3.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn3.Caption);
 end;
 
 procedure TFormPeach.pajdn4Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn4.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn4.Caption);
 end;
 
 procedure TFormPeach.pajdn5Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn5.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn5.Caption);
 end;
 
 procedure TFormPeach.pajdn6Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn6.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn6.Caption);
 end;
 
 procedure TFormPeach.pajdn7Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn7.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn7.Caption);
 end;
 
 procedure TFormPeach.pajdn8Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn8.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn8.Caption);
 end;
 
 procedure TFormPeach.pajdn9Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-suggest_outname(s,FormPeach.cbType.Text,0);
-FormPeach.EditAddFilename.Text:=extractfilename(s);
-s:=pajdn9.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditAddFilepath.Text:=s;
-FormPeach.EditAddName.Text:=FormPeach.EditAddFilepath.Text+addext(FormPeach.EditAddFilename.Text);
+addpc(pajdn9.Caption);
 end;
 
 procedure TFormPeach.PanelClickAddressClick(Sender: TObject);
@@ -70783,238 +71002,145 @@ begin
 archivemenu_name(pnra8.Caption);
 end;
 
-procedure TFormPeach.pojdn10Click(Sender: TObject);
+procedure extpc(inname:AnsiString);
 var
    s:ansistring;
 begin
-s:=pojdn10.Caption;
+s:=inname;
 s:=copy(s,2,2)+directoryseparator;
 FormPeach.EditOutExtract.Text:=extractfilepath(s);
+end;
+
+procedure TFormPeach.pojdn10Click(Sender: TObject);
+begin
+extpc(pojdn10.Caption);
 end;
 
 procedure TFormPeach.pojdn11Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn11.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn11.Caption);
 end;
 
 procedure TFormPeach.pojdn12Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn12.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn12.Caption);
 end;
 
 procedure TFormPeach.pojdn13Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn13.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn13.Caption);
 end;
 
 procedure TFormPeach.pojdn14Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn14.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn14.Caption);
 end;
 
 procedure TFormPeach.pojdn15Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn15.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn15.Caption);
 end;
 
 procedure TFormPeach.pojdn16Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn16.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn16.Caption);
 end;
 
 procedure TFormPeach.pojdn17Click(Sender: TObject);
 var
    s:ansistring;
 begin
-s:=pojdn17.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn17.Caption);
 end;
 
 procedure TFormPeach.pojdn18Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn18.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn18.Caption);
 end;
 
 procedure TFormPeach.pojdn19Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn19.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn19.Caption);
 end;
 
 procedure TFormPeach.pojdn1Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn1.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn1.Caption);
 end;
 
 procedure TFormPeach.pojdn20Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn20.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn20.Caption);
 end;
 
 procedure TFormPeach.pojdn21Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn21.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn21.Caption);
 end;
 
 procedure TFormPeach.pojdn22Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn22.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn22.Caption);
 end;
 
 procedure TFormPeach.pojdn23Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn23.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn23.Caption);
 end;
 
 procedure TFormPeach.pojdn24Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn24.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn24.Caption);
 end;
 
 procedure TFormPeach.pojdn25Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn25.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn25.Caption);
 end;
 
 procedure TFormPeach.pojdn26Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn26.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn26.Caption);
 end;
 
 procedure TFormPeach.pojdn2Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn2.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn2.Caption);
 end;
 
 procedure TFormPeach.pojdn3Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn3.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn3.Caption);
 end;
 
 procedure TFormPeach.pojdn4Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn4.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn4.Caption);
 end;
 
 procedure TFormPeach.pojdn5Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn5.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn5.Caption);
 end;
 
 procedure TFormPeach.pojdn6Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn6.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn6.Caption);
 end;
 
 procedure TFormPeach.pojdn7Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn7.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn7.Caption);
 end;
 
 procedure TFormPeach.pojdn8Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn8.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn8.Caption);
 end;
 
 procedure TFormPeach.pojdn9Click(Sender: TObject);
-var
-   s:ansistring;
 begin
-s:=pojdn9.Caption;
-s:=copy(s,2,2)+directoryseparator;
-FormPeach.EditOutExtract.Text:=extractfilepath(s);
+extpc(pojdn9.Caption);
 end;
 
 procedure TFormPeach.PopupOpenPopup(Sender: TObject);
@@ -71033,6 +71159,8 @@ MenuItemExtAllTo.visible:=true;
 MenuItemExtAllHere.visible:=true;
 MenuItemExtAllHereSmart.visible:=true;
 MenuItemExtAllHereNew.visible:=true;
+if lastoutpath='' then lastoutpath:=local_desktop;
+mextto_Last.Caption:=txt_lastused+' '+extractfilepath(lastoutpath);
 if fun='FILEBROWSER' then
    begin
    if checkextinput_noduplicatecheck=false then
@@ -71663,6 +71791,7 @@ if pzoom<>100 then
 prepare_GUI; //give starting positions to panels (that in the RAD may be misplaced)
 if pimmersive=1 then set_pimmersive;
 prepare_FormComment;
+prepare_FormPaths;
 prepare_FormPW;
 prepare_FormPM;
 prepare_FormKF;
@@ -74583,7 +74712,7 @@ begin
 if winver<>'nt6+' then
    cl:='cmd /K wmic diskdrive get Status, DeviceID, InterfaceType, Model, Size'
 else
-   cl:='powershell.exe -NoExit Get-CimInstance -ClassName Win32_diskdrive | Select-Object Status, DeviceID, MediaType, InterfaceType, Model, @{n=''Size (GB)'';e={[math]::Round($_.Size/1GB,2)}}, LastErrorCode, ErrorDescription, ErrorCleared, NeedsCleaning';
+   cl:='powershell.exe -NoExit Get-CimInstance -ClassName Win32_diskdrive | Select-Object Status, DeviceID, MediaType, InterfaceType, Model, @{n=''Size (GB)'';e={[math]::Round($_.Size/1GB,2)}}, LastErrorCode, ErrorDescription, ErrorCleared, NeedsCleaning';//fixed parameters
 P:=tprocessutf8.Create(nil);
 if FormPeach.Visible=true then Application.ProcessMessages;
 //not needed, fixed string if validatecl(cl)<>0 then begin pMessageWarningOK(txt_2_7_validatecl+' '+cl); exit; end;

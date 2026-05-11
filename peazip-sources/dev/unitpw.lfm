@@ -12,7 +12,7 @@ object FormPW: TFormPW
   Constraints.MinHeight = 275
   Constraints.MinWidth = 700
   DesignTimePPI = 120
-  Position = poScreenCenter
+  Position = poMainFormCenter
   ShowHint = True
   LCLVersion = '4.2.0.0'
   OnCreate = FormCreate

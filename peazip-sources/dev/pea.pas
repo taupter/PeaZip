@@ -242,6 +242,8 @@ unit pea; //Main form of pea executable, providing GUI to file tools, pea/unpea 
                                 Updated pea, rfs, and unpea GUI
                                 Optimized startup sequence
  1.30     20260401  G.Tani      Recompiled with updated rendering routines, fixes
+ 1.31     20260506  G.Tani      (.pea format) Fixed path traversal evasion on extraction, enforcing canonicalization of names (archiving and extraction) and explicit rejection of relative paths stored in name field (extraction), vulnerability and poc reported by Harshit Gupta
+                                (Windows) Fixed sanitization of input for functions invoking PowerShell, vulnerability and poc reported by Harshit Gupta
 
 (C) Copyright 2006 Giorgio Tani giorgio.tani.software@gmail.com
 
@@ -431,7 +433,7 @@ type
   Type fileofbyte = file of byte;
 
 const
-  P_RELEASE          = '1.30'; //declares release version for the entire build
+  P_RELEASE          = '1.31'; //declares release version for the entire build
   //PEAUTILS_RELEASE   = '1.3'; //declares for reference last peautils release
   PEA_FILEFORMAT_VER = 1;
   PEA_FILEFORMAT_REV = 6; //version and revision declared to be implemented must match with the ones in pea_utils, otherwise a warning will be raised (form caption)
@@ -2013,6 +2015,8 @@ for i:=0 to n_input_files-1 do
    begin
    SetLength(obj_tags,length(obj_tags)+1);
    if status_files[i]=false then continue; //the object, during creation of the list, was not accessible
+   //enforce canonicalization of input names
+   in_files[i]:=ExpandFileName(in_files[i]);
    in_qualified_name:=in_files[i];
    addr:=i;
    k:=check_in(f_in,in_qualified_name,status_files,i);
@@ -3665,10 +3669,17 @@ while (chunks_ok=true) and (end_of_archive=false) do
             dword2decodedFileAttributes(fattrib,fattr_dec[nobj]);
             if fassigned=false then
                begin
-               //dodirseparators(fn);
                dodirseparators(fn);
                if upcase(struct_param)='EXTRACT2DIR' then
                   begin
+                  //explicit rejection of relative paths, enforce format specs about only absolute full qualified names being supported
+                  if fn<>ExpandFileName(fn) then internal_error('Relative filenames not supported '+fn);
+                  //additional check for relative paths, should be made redundant by previous check
+                  if (pos(directoryseparator+'..'+directoryseparator,fn)<>0) or (pos('/../',fn)<>0) or (pos('\..\',fn)<>0) or
+                  (pos('\../',fn)<>0) or (pos('/..\',fn)<>0) or
+                  (pos('..'+directoryseparator,fn)=1) or (pos('../',fn)=1) or (pos('..\',fn)=1) then internal_error('Relative filenames not supported '+fn);
+                  //enforce canonicalization of full qualified name as alternative security layer, should be made redundant by previous checks
+                  fn:=ExpandFileName(fn);
                   extract2dir;
                   if (total>0) and (fattrib and faDirectory <> 0) then //object is a dir
                      begin
@@ -6980,16 +6991,17 @@ end;
 
 function checkmotwf(s:ansistring):boolean; //true if motw is found, single file at time, need expanded input to recursively test dirs, input file name is checked before
 var
-   cl:ansistring;
    P:tprocessutf8;
 begin
 result:=false;
 {$IFDEF MSWINDOWS}
 if s='' then exit;
-cl:='powershell.exe Get-Content '''+s+'*'' -Stream Zone.Identifier';
 P:=tprocessutf8.Create(nil);
 p.Options:=[poWaitOnExit,poNoConsole];
-peapexecute(p,cl);
+P.Executable:='powershell.exe';
+P.Parameters.Add('Get-Content '+QuotedStr(s+'*'));
+P.Parameters.Add('-Stream Zone.Identifier');
+peapparamexecute(P);
 if P.ExitCode=0 then result:=true; //motw found, else error is raised and result is <>0
 P.Free;
 {$ENDIF}
@@ -6997,7 +7009,7 @@ end;
 
 function checkmotwd(s:ansistring):boolean;
 var
-  cl,stri:ansistring;
+  stri:ansistring;
   P: tprocessutf8;
   i,BytesRead,j,BytesRead2:integer;
   M,M2:TmemoryStream;
@@ -7005,8 +7017,6 @@ begin
 result:=false;
 {$IFDEF MSWINDOWS}
 if s='' then exit;
-cl:='powershell.exe Get-Content '''+s+'*'' -Stream Zone.Identifier';
-
 i:=0;
 j:=0;
 M := TMemoryStream.Create;
@@ -7017,7 +7027,10 @@ M.SetSize(32*1024);
 M2.SetSize(32*1024);
 P:=tprocessutf8.Create(nil);
 P.Options := [poUsePipes, poNoConsole];
-peapexecute(p,cl);
+P.Executable:='powershell.exe';
+P.Parameters.Add('Get-Content '+QuotedStr(s+'*'));
+P.Parameters.Add('-Stream Zone.Identifier');
+peapparamexecute(P);
 
 while P.Running do
    begin

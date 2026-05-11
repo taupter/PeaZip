@@ -5,16 +5,16 @@ LazarusResources.Add('TFormSelect','FORMDATA',[
   +#128#2#5'Width'#3'X'#2#8'AutoSize'#9#7'Caption'#6#6'Select'#12'ClientHeight'
   +#3#20#1#11'ClientWidth'#3'X'#2#5'Color'#7#8'clWindow'#21'Constraints.MinHeig'
   +'ht'#3#19#1#20'Constraints.MinWidth'#3'X'#2#13'DesignTimePPI'#2'x'#8'Positio'
-  +'n'#7#14'poScreenCenter'#10'LCLVersion'#6#7'4.2.0.0'#0#12'TButtonPanel'#17'B'
-  +'uttonPanelSelect'#22'AnchorSideLeft.Control'#7#5'Owner'#23'AnchorSideRight.'
-  +'Control'#7#5'Owner'#4'Left'#2#15#6'Height'#2#30#3'Top'#3#231#0#5'Width'#3':'
-  +#2#18'BorderSpacing.Left'#2#15#19'BorderSpacing.Right'#2#15#20'BorderSpacing'
-  +'.Bottom'#2#15#20'BorderSpacing.Around'#2#0#13'OKButton.Name'#6#8'OKButton'
-  +#23'OKButton.DefaultCaption'#9#15'HelpButton.Name'#6#10'HelpButton'#25'HelpB'
-  +'utton.DefaultCaption'#9#18'HelpButton.Enabled'#8#16'CloseButton.Name'#6#11
-  +'CloseButton'#26'CloseButton.DefaultCaption'#9#19'CloseButton.Enabled'#8#17
-  +'CancelButton.Name'#6#12'CancelButton'#27'CancelButton.DefaultCaption'#9#8'T'
-  +'abOrder'#2#0#11'ShowButtons'#11#4'pbOK'#8'pbCancel'#0#10'ShowGlyphs'#11#0#9
+  +'n'#7#16'poMainFormCenter'#10'LCLVersion'#6#7'4.2.0.0'#0#12'TButtonPanel'#17
+  +'ButtonPanelSelect'#22'AnchorSideLeft.Control'#7#5'Owner'#23'AnchorSideRight'
+  +'.Control'#7#5'Owner'#4'Left'#2#15#6'Height'#2#30#3'Top'#3#231#0#5'Width'#3
+  +':'#2#18'BorderSpacing.Left'#2#15#19'BorderSpacing.Right'#2#15#20'BorderSpac'
+  +'ing.Bottom'#2#15#20'BorderSpacing.Around'#2#0#13'OKButton.Name'#6#8'OKButto'
+  +'n'#23'OKButton.DefaultCaption'#9#15'HelpButton.Name'#6#10'HelpButton'#25'He'
+  +'lpButton.DefaultCaption'#9#18'HelpButton.Enabled'#8#16'CloseButton.Name'#6
+  +#11'CloseButton'#26'CloseButton.DefaultCaption'#9#19'CloseButton.Enabled'#8
+  +#17'CancelButton.Name'#6#12'CancelButton'#27'CancelButton.DefaultCaption'#9#8
+  +'TabOrder'#2#0#11'ShowButtons'#11#4'pbOK'#8'pbCancel'#0#10'ShowGlyphs'#11#0#9
   +'ShowBevel'#8#0#0#6'TPanel'#11'PanelSelect'#22'AnchorSideLeft.Control'#7#5'O'
   +'wner'#21'AnchorSideTop.Control'#7#5'Owner'#23'AnchorSideRight.Control'#7#5
   +'Owner'#20'AnchorSideRight.Side'#7#9'asrBottom'#24'AnchorSideBottom.Control'
