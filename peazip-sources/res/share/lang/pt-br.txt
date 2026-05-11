@@ -7,7 +7,7 @@ Last rev.: 20260114
 
 === PeaZip text group ===
 
-txt_11_1_pp: Skipping pre-parse step the app may not detect possible archive issues in advance, and may not display correctly some archives. Anyway, extraction is unaffected by this setting.
+txt_11_1_pp: Ignorando a etapa de pré-análise, o aplicativo pode não detectar possíveis problemas de arquivo com antecedência e pode não exibir corretamente alguns arquivos. De qualquer forma, a extração não é afetada por esta configuração.
 txt_11_0_adv: Opções avançadas e específicas de formato
 txt_11_0_bt: Testar arquivos em lote
 txt_11_0_good: Bom
