@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Italian - Italiano
-11.0
+11.1
 Tradotto da: Giorgio Tani
 Ultima rev. di: Giorgio Tani
 Ultima rev.: 20260114
 
 === PeaZip text group ===
 
+txt_11_1_pp: Saltando l'analisi degli archivi all'apertura alcuni problemi potrebbero non essere rilevati, e il contenuto potrebbe non essere mostrato correttamente nel browser. La possibilità di estrazione degli archivi non è comunque influenzata da questo parametro.
 txt_11_0_adv: Opzioni avanzate e specifiche per il formato
 txt_11_0_bt: Batch test archivi
 txt_11_0_good: Buono

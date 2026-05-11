@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Русский
-11.0
+11.1
 Перевод: Aleksandr (Git- @Vertuhai), Rytikov Slava, Dmitry Tsvetkov, xoxmodav, ViktorOn
 Посл. пров.: Aleksandr (Git- @Vertuhai)
 Посл. ред.: 18.04.2026
 
 === PeaZip text group ===
 
+txt_11_1_pp: Skipping pre-parse step the app may not detect possible archive issues in advance, and may not display correctly some archives. Anyway, extraction is unaffected by this setting.
 txt_11_0_adv: Расширенные и специфические для формата параметры
 txt_11_0_bt: Архив пакетных тестов
 txt_11_0_good: Хорошо

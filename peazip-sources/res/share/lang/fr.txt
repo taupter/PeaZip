@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Français
-11.0
+11.1
 Traduit par: Drake4478
 Dernière version par: Drake4478
 Date du: 6.04.2026
 
 === PeaZip text group ===
 
+txt_11_1_pp: Skipping pre-parse step the app may not detect possible archive issues in advance, and may not display correctly some archives. Anyway, extraction is unaffected by this setting.
 txt_11_0_adv: Options avancées et spécifiques au format
 txt_11_0_bt: Archives de tests par lot
 txt_11_0_good: bon

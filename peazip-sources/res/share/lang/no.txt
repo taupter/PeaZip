@@ -1,12 +1,13 @@
 ﻿=== PeaZip language file ===
 Norwegian - Norsk
-11.0
+11.1
 Oversatt av: Rune C. Akselsen, Arne Hanssen og Imre Eilertsen
 Sist rev. av: Arne Hanssen
 Sist revidert: 20260408
 
 === PeaZip text group ===
 
+txt_11_1_pp: Skipping pre-parse step the app may not detect possible archive issues in advance, and may not display correctly some archives. Anyway, extraction is unaffected by this setting.
 txt_11_0_adv: Avanserte og format-spesifikke valg
 txt_11_0_bt: Batch-test arkiver
 txt_11_0_good: God
