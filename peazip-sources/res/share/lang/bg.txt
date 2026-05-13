@@ -1,13 +1,13 @@
-﻿=== PeaZip language file ===
+=== PeaZip language file ===
 Български / Bulgarian
 11.1
 Превод: Любомир Симеонов
 Корекция: Живко Жеков
-Последна корекция: 20260406
+Последна корекция: 20260513
 
 === PeaZip text group ===
 
-txt_11_1_pp: Skipping pre-parse step the app may not detect possible archive issues in advance, and may not display correctly some archives. Anyway, extraction is unaffected by this setting.
+txt_11_1_pp: Пропускане на стъпката за предварителен анализ може да доведе приложението да не открие възможни проблеми с архивите предварително и да не показва правилно някои архиви. Въпреки това, извличането не се влияе от тази настройка.
 txt_11_0_adv: Разширени и специфични за формата опции
 txt_11_0_bt: Пакетен тест на архиви
 txt_11_0_good: Добър
