@@ -2,25 +2,25 @@
 Korean - 한국어
 11.1
 번역자: Sleepy, EhangB
-최근 교정: 20260207 by EhangB
+최근 교정: 20260523 by EhangB
 교정 일자: 20110531 by Sleep
 
 === PeaZip text group ===
 
-txt_11_1_pp: Skipping pre-parse step the app may not detect possible archive issues in advance, and may not display correctly some archives. Anyway, extraction is unaffected by this setting.
-txt_11_0_adv: Advanced and format-specific options
-txt_11_0_bt: Batch test archives
-txt_11_0_good: Good
-txt_11_0_items: items
-txt_11_0_native: Native
-txt_11_0_pr: Rate password entropy
-txt_11_0_rendering: Rendering
-txt_11_0_sch: Schedule execution of the task defined in the GUI as CLI script
-txt_11_0_sharp: Sharp
-txt_11_0_soft: Soft
-txt_11_0_strong: Strong
-txt_11_0_vw: Very weak
-txt_11_0_w: Weak
+txt_11_1_pp: 사전 분석 단계를 건너뛰면 앱이 아카이브의 잠재적 문제를 미리 감지하지 못할 수 있으며, 일부 아카이브가 제대로 표시되지 않을 수 있습니다. 어쨌든, 압축 해제 기능에는 이 설정이 영향을 미치지 않습니다.
+txt_11_0_adv: 고급 및 형식별 옵션
+txt_11_0_bt: 일괄 테스트 아카이브
+txt_11_0_good: 좋은
+txt_11_0_items: 아이템
+txt_11_0_native: 네이티브
+txt_11_0_pr: 비밀번호 엔트로피 평가
+txt_11_0_rendering: 렌더링
+txt_11_0_sch: GUI에서 정의된 작업을 CLI 스크립트로 예약 실행
+txt_11_0_sharp: 예리하게
+txt_11_0_soft: 부드럽게
+txt_11_0_strong: 강하게
+txt_11_0_vw: 매우 약하게
+txt_11_0_w: 약하게
 txt_10_9_deletearchive: 아카이브 삭제
 txt_10_9_kfl: 키파일 크기는 처음 100MB로 제한됩니다
 txt_10_9_mb: 마우스 가운데 버튼 클릭
