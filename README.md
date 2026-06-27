@@ -39,11 +39,10 @@ PeaZip also provides a capable file manager: bookmarking, search, instant conten
 - PeaZip is written in **Lazarus/FreePascal**, and Windows installers are scripted using **InnoSetup**,  also using a Delphi/Pascal-like syntax.
 
 ## Useful Links
-- **[Downloads](https://peazip.github.io)** | **[Themes](https://peazip.github.io/peazip-themes.html)**
-- **[Support](https://peazip.github.io/peazip-help.html)** | **[FAQ](https://peazip.github.io/peazip-help-faq.html)** | **[Issues tracker](https://peazip.github.io/peazip-more.html)**
+- **[Downloads](https://peazip.github.io)** | **[Themes](https://peazip.github.io/peazip-themes.html)** | **[Translations](https://github.com/peazip/PeaZip-Translations)**
+- **[FAQ](https://peazip.github.io/peazip-help-faq.html)** | **[Support](https://peazip.github.io/peazip-help.html)** | **[Issues tracker](https://peazip.github.io/peazip-more.html)**
 - **[Screenshots](https://peazip.github.io/screenshots-peazip-1.html)**
 - **[Benchmarks](https://peazip.github.io/peazip-compression-benchmark.html)**
 - **[Donations](https://peazip.github.io/donations.html)**
-- **[Translations](https://github.com/peazip/PeaZip-Translations)**
 
 ![License](https://img.shields.io/github/license/peazip/PeaZip)
