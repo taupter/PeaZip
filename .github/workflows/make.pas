@@ -178,7 +178,7 @@ uses
     DT := Time;
     if FileExists('.gitmodules') then
       if RunCommand('git', ['submodule', 'update', '--init', '--recursive',
-        '--force', '--remote'], Result, [poStderrToOutPut]) then
+        '--force'], Result, [poStderrToOutPut]) then
         OutLog(etInfo, Result)
       else
       begin
