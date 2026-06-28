@@ -1,4 +1,5 @@
 use/*/
+/docs/
 **/backup/
 **/lib/
 *.res
@@ -9,4 +10,3 @@ use/*/
 *.or
 *.so
 *.ppu
-
